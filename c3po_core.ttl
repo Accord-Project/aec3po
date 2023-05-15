@@ -47,7 +47,7 @@ c3po:Document a owl:Class ;
 c3po:DocumentSubdivision a owl:Class
 rdfs:subClassOf c3po:Document ;
 rdfs:label "Document Subdivision"@en ;
-skos:example """Paragraphs, sections,..."""@en
+skos:example """Paragraph, section, definition..."""@en
 
 dct:hasPart a owl:ObjectProperty ;
   rdfs:label "has Part"@en ;
@@ -61,7 +61,7 @@ dct:identifier a owl:ObjectProperty ;
   rdfs:label "Identifier"@en ;
   rdfs:comment """An unambiguous reference to the resource within a given context. """@en ;
   skos:example """To identify the document or a section within the document. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs. """@en ;
-  rdfs:domain c3po:Document ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( c3po:Document c3po:DocumentSubdivision c3po:Statement ) ] ;
   rdfs:range rdfs:Literal .
   
 dct:references a owl:ObjectProperty ;
@@ -81,6 +81,12 @@ rdfs:subClassOf c3po:DocumentSubdivision ;
   rdfs:comment """Something said in a building compliance-related document"""@en ;
   skos:example """Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."""@en ;
 
+dct:source a owl:ObjectProperty ;
+  rdfs:label "Source"@en ;
+  rdfs:comment """A related resource from which the described statement is derived. """@en ;
+  skos:example """Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."""@en ;
+  rdfs:domain c3po:Statement ;
+  rdfs:range rdfs:Literal .
 
 
 #################################################################
