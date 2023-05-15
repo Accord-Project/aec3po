@@ -88,6 +88,12 @@ dct:source a owl:ObjectProperty ;
   rdfs:domain c3po:Statement ;
   rdfs:range rdfs:Literal .
 
+c3po:hasText a owl:ObjectProperty ;
+  rdfs:label "has Text"@en ;
+  rdfs:comment """The original text as writen in the a compliance Document. """@en ;
+  rdfs:domain c3po:Statement ;
+  rdfs:range rdfs:Literal .
+
 
 #################################################################
 #    Statement type
