@@ -88,11 +88,11 @@ dct:source a owl:ObjectProperty ;
   rdfs:domain c3po:Statement ;
   rdfs:range rdfs:Literal .
 
-c3po:hasText a owl:ObjectProperty ;
-  rdfs:label "has Text"@en ;
-  rdfs:comment """The original text as writen in the a compliance Document. """@en ;
-  rdfs:domain c3po:Statement ;
-  rdfs:range rdfs:Literal .
+c3po:asText a owl:DatatypeProperty ;
+  rdfs:label "as text"@en ;
+  rdfs:comment """The text as written in a compliance related document or the content of a declarative or procedural check, that verifiers can use."""@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( c3po:DeclarativeCheck c3po:ProceduralCheck c3po:Statement) ] .
+
 
 
 #################################################################
@@ -463,12 +463,6 @@ c3po:ProceduralCheck a owl:Class ;
     rdfs:label "Procedural Check"@en ;
     rdfs:comment """Procedural checks are semantically described but opaque modules, implemented in any language or as REST API, invoked by micro-services.
 Alternatively, the check procedure may be given using a property such as c3po:asText."""@en .
-
-c3po:asText a owl:DatatypeProperty ;
-  rdfs:label "as text"@en ;
-  rdfs:comment """Provides the content of a declarative or procedural check, that verifiers can use."""@en ;
-  rdfs:domain [ a owl:Class ; owl:unionOf ( c3po:DeclarativeCheck c3po:ProceduralCheck ) ] .
-
 
 
 #################################################################
