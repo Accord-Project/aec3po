@@ -524,6 +524,24 @@ c3po:hasEvidence a owl:ObjectProperty ;
     rdfs:label "has evidence"@en ;
     rdfs:comment """Links a checking act to some evidence that demonstrates that this checking act is satisfied or unsatisfied."""@en .
 
+#################################################################
+#     Verifier 
+#################################################################
+
+c3po:LegalVerifier a owl:Class ;
+ rdfs:label "Legal Verifier"@en ;
+  rdfs:comment """ """@en .
+
+c3po:StateVerifier a owl:Clas ;
+	rdfs:subClassOf c3po:LegalVerifier.
+ 	rdfs:label "State Verifier"@en ;
+	rdfs:comment """ """@en .
+
+c3po:PrivateVerifier a owl:Clas ;
+	rdfs:subClassOf c3po:LegalVerifier.
+ 	rdfs:label "Provate Verifier"@en ;
+	rdfs:comment """ """@en .
+
 
 #################################################################
 #     General axioms
