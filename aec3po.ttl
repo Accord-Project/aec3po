@@ -44,7 +44,7 @@ aec3po:Document a owl:Class ;
   rdfs:comment """A document representing AEC regulations, guidelines, building codes etc."""@en ;
   skos:example """Approved Document A, Eurocode, Finish Regulations..."""@en ;
 
-aec3po:DocumentSubdivision a owl:Class
+aec3po:DocumentSubdivision a owl:Class ;
 rdfs:subClassOf aec3po:Document ;
 rdfs:label "Document Subdivision"@en ;
 skos:example """Paragraph, section, definition..."""@en
