@@ -1,0 +1,14 @@
+
+aec3po:hasPermittingStage a owl:ObjectProperty ;
+    rdfs:label "has permitting stage"@en ;
+    rdfs:comment """Links an entity to the permitting stage this entity pertains"""@en ;
+    rdfs:range aec3po:PermittingStage .
+
+aec3po:PermittingStage a owl:Class ;
+    rdfs:subClassOf aec3po:PermittingInfo ;
+    rdfs:label "Permitting Stage"@en ;
+    rdfs:comment """The permitting stage to which this statement pertains.
+This can be combined with the AdministrativeArea to populate this automatically, via a SWRL rule."""@en .
+
+aec3po:UK_Building_Control_Submission a aec3po:PermittingStage .
+aec3po:UK_Planning_Permission a cp3po:PermittingStage .

@@ -1,0 +1,38 @@
+@base <https://w3id.org/lbd/aec3po/> .
+@prefix aec3po: <> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix schema: <https://schema.org/> .
+
+aec3po:schemaorg a owl:Ontology ;
+    dct:title "Construction Compliance Checking and Permitting Ontology"@en ;
+    dct:description  "The schema.org module of the Construction Compliance Checking and Permitting ontology lists some of the classes and properties from schema.org that may be useful in the context of the ACCORD project."@en ;
+    dct:modified "2023-04-26"^^xsd:date ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ; 
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri <> .
+
+
+schema:MediaObject a rdfs:Class ;
+    rdfs:label "MediaObject" ;
+    rdfs:comment "A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset, i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 [[AudioObject]]s)." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+schema:3DModel a rdfs:Class ;
+    rdfs:label "3DModel" ;
+    rdfs:comment """A 3D model represents some kind of 3D content, which may have [[encoding]]s in one or more [[MediaObject]]s. Many 3D formats are available (e.g. see [Wikipedia](https://en.wikipedia.org/wiki/Category:3D_graphics_file_formats)); specific encoding formats can be represented using the [[encodingFormat]] property applied to the relevant [[MediaObject]]. For the
+case of a single file published after Zip compression, the convention of appending '+zip' to the [[encodingFormat]] can be used. Geospatial, AR/VR, artistic/animation, gaming, engineering and scientific content can all be represented using [[3DModel]].""" ;
+    rdfs:subClassOf schema:MediaObject ;
+    schema:isPartOf <http://pending.schema.org> ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/2140> .

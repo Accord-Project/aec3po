@@ -1,0 +1,38 @@
+@base <https://w3id.org/lbd/aec3po/> .
+@prefix aec3po: <> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>.
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix rdac: <http://www.rdaregistry.info/Elements/c/> .
+
+aec3po:rdac a owl:Ontology ;
+    dct:title "Construction Compliance Checking and Permitting Ontology"@en ;
+    dct:description  "The ELI module of the Construction Compliance Checking and Permitting ontology redefines the important classes and properties from the Resource Description and Access (RDA) RDF vocabulary."@en ;
+    dct:modified "2023-04-26"^^xsd:date ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ; 
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri <> .
+
+
+rdac:C10001 a owl:Class ;
+  rdfs:label "Work"@en ;
+  rdfs:comment "A distinct intellectual or artistic creation, that is, the intellectual or artistic content."@en ;
+  rdfs:isDefinedBy <http://www.rdaregistry.info/Elements/c/> .
+
+rdac:C10006 a owl:Class ;
+  rdfs:label "Expression"@en .
+  rdfs:comment "An intellectual or artistic realization of a work in the form of alpha-numeric, musical or choreographic notation, sound, image, object, movement, etc., or any combination of such forms."@en ;
+  rdfs:isDefinedBy <http://www.rdaregistry.info/Elements/c/> .
+

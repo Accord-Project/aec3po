@@ -1,0 +1,19 @@
+
+aec3po:hasDiscipline a owl:ObjectProperty ;
+    rdfs:label "has discipline"@en ;
+    rdfs:comment """Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."""@en ;
+    rdfs:range aec3po:Discipline .
+    # no domain, can be applied to many classes
+
+aec3po:Discipline a owl:Class ;
+    rdfs:subClassOf 
+    rdfs:label "Discipline"@en ;
+    rdfs:comment "The AEC discipline to which this statement pertains." .
+
+# use mixedCase for individuals 
+aec3po:architecture a aec3po:Discipline .
+aec3po:buildingServices a aec3po:Discipline .
+aec3po:construction a aec3po:Discipline .
+aec3po:planning a aec3po:Discipline .
+aec3po:structuralEngineering a aec3po:Discipline .
+

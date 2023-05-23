@@ -1,0 +1,22 @@
+
+aec3po:AdministrativeArea a owl:Class ;
+    owl:equivalentClass eli:AdministrativeArea ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Administrative Area"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept either in concept scheme eli:AdministrativeAreaTable or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit table published of the EU Publications Office)."@en ;
+    rdfs:seeAlso <https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu> .
+
+aec3po:hasAdministrativeArea a owl:Class ;
+    rdfs:label "has administrative area"@en ;
+    rdfs:comment "Links any object (feature of interest, procedure, statement, verifier, ...) to an administrative area."@en
+    rdfs:domain dul:Object ;
+    rdfs:range eli:AdministrativeArea ;
+    rdfs:seeAlso <https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu> .
+
+
+aec3po:England a aec3po:AdministrativeArea .
+aec3po:Estonia a aec3po:AdministrativeArea .
+aec3po:Finland a aec3po:AdministrativeArea .
+aec3po:Germany a aec3po:AdministrativeArea .
+aec3po:Italy a aec3po:AdministrativeArea .
+aec3po:Spain a aec3po:AdministrativeArea .
