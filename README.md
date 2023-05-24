@@ -24,6 +24,11 @@ T2.2  Development  of  the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA, 
 - Identify individual rules –uniquely identify them in some way.
 - Identify groups of rules.
 - Allow the specification of the logic to relate rules and groups of rules together.
+- From tbeach 2023-05-24: one needs to be able to roundtrip from the document to the ontology, and back, preserving the structure and most of the text.
+- From tbeach 2023-05-24: under DocumentSubdivision, one need diagrams, image files, ...
+- From tbeach 2023-05-24: under DocumentSubdivision, one need to describe tables, ...
+
+
 
 ## Competency Questions
 
