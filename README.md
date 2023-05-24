@@ -27,6 +27,23 @@ T2.2  Development  of  the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA, 
 
 ## Competency Questions
 
+## Pre-commits
+
+run `pre-commit install` to set up the git hook scripts:
+
+```
+$ pre-commit install
+pre-commit installed at .git/hooks/pre-commit
+```
+
+now `pre-commit` will run automatically on `git commit`!
+
+you can also run `pre-commit` once on all files:
+
+```
+pre-commit run --all-files
+```
+
 ## CI/CD pipeline
 
 A CI/CD pipeline must be developed to validate the ontology, generate the ontology artifacts, release the ontology.

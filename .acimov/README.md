@@ -28,4 +28,3 @@ Then call the script:
 ```
 python .acimov/publish.py
 ```
-

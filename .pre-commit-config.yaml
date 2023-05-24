@@ -1,6 +1,7 @@
 repos:
--   repo: https://gitlab.emse.fr/victor.charpenay1/samod-pre-commit-hooks.git
-    rev: 84ea956
+-   repo: https://gitlab.emse.fr/maxime.lefrancois/acimov-pre-commit-hooks.git
+    rev: 669e6a7
     hooks:
     -   id: check-turtle # this hook will check that `.ttl` files are valid Turtle 1.1 files.
     -   id: format-turtle # this hool will re-serialize each `.ttl` to ensure diff is always meaningful.
+        exclude: vocabularies/_shape.ttl

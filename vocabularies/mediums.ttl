@@ -1,37 +1,40 @@
-
-aec3po:hasMedium a owl:ObjectProperty ;
-    rdfs:label "has medium"@en ;
-    rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the medium it uses."
-    rdfs:range aec3po:Medium .
-    # no domain, can be applied to many classes
-
-aec3po:hasRequiredMedium a owl:ObjectProperty ;
-    rdfs:label "has required medium"@en ;
-    rdfs:comment "Links "
-    rdfs:range aec3po:Medium .
-    # no domain, can be applied to many classes
-
-aec3po:Medium a owl:Class ;
-    rdfs:subClassOf dul:InformationObject ;
-    rdfs:label "Medium"@en ;
-    rdfs:comment """A piece of information, such as a law, a norm, a drawing, a model."""@en .
-
-aec3po:Model a owl:Class ;
-    rdfs:label """Model"""@en ;
-    rdfs:comment """A design model of a building."""@en ;
-    rdfs:subClassOf aec3po:Medium .
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 aec3po:Document a owl:Class ;
     rdfs:label "Document"@en ;
-    rdfs:comment """A document is a written, drawn, presented, or memorialized representation of thought. (Source: Wikipedia)"""@en ;
+    rdfs:comment "A document is a written, drawn, presented, or memorialized representation of thought. (Source: Wikipedia)"@en ;
     rdfs:subClassOf aec3po:Medium .
 
 aec3po:Drawing a owl:Class ;
     rdfs:label "Drawing"@en ;
-    rdfs:comment """Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)"""@en ;
+    rdfs:comment "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)"@en ;
     rdfs:subClassOf aec3po:Medium .
 
 aec3po:Image a owl:Class ;
     rdfs:label "Image"@en ;
-    rdfs:comment """An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)"""@en ;
+    rdfs:comment "An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)"@en ;
     rdfs:subClassOf aec3po:Medium .
+
+aec3po:Model a owl:Class ;
+    rdfs:label "Model"@en ;
+    rdfs:comment "A design model of a building."@en ;
+    rdfs:subClassOf aec3po:Medium .
+
+aec3po:hasMedium a owl:ObjectProperty ;
+    rdfs:label "has medium"@en ;
+    rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the medium it uses." ;
+    rdfs:range aec3po:Medium .
+
+aec3po:hasRequiredMedium a owl:ObjectProperty ;
+    rdfs:label "has required medium"@en ;
+    rdfs:comment "Links " ;
+    rdfs:range aec3po:Medium .
+
+aec3po:Medium a owl:Class ;
+    rdfs:label "Medium"@en ;
+    rdfs:comment "A piece of information, such as a law, a norm, a drawing, a model."@en ;
+    rdfs:subClassOf dul:InformationObject .
+
