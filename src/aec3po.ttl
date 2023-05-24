@@ -1,4 +1,4 @@
-@bese <https://w3id.org/lbd/aec3po/> .
+@base <https://w3id.org/lbd/aec3po/> . test
 @prefix aec3po: <> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -42,12 +42,12 @@ skos:ConceptScheme a owl:Class .
 aec3po:Document a owl:Class ;
   rdfs:label "Document"@en ;
   rdfs:comment """A document representing AEC regulations, guidelines, building codes etc."""@en ;
-  skos:example """Approved Document A, Eurocode, Finish Regulations..."""@en ;
+  skos:example """Approved Document A, Eurocode, Finish Regulations..."""@en .
 
 aec3po:DocumentSubdivision a owl:Class ;
-rdfs:subClassOf aec3po:Document ;
-rdfs:label "Document Subdivision"@en ;
-skos:example """Paragraph, section, definition..."""@en
+  rdfs:subClassOf aec3po:Document ;
+  rdfs:label "Document Subdivision"@en ;
+  skos:example """Paragraph, section, definition..."""@en .
 
 dct:hasPart a owl:ObjectProperty ;
   rdfs:label "has Part"@en ;
@@ -79,7 +79,7 @@ aec3po:Statement a owl:Class ;
 rdfs:subClassOf aec3po:DocumentSubdivision ;
   rdfs:label "Statement"@en ;
   rdfs:comment """Something said in a building compliance-related document"""@en ;
-  skos:example """Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."""@en ;
+  skos:example """Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."""@en .
 
 dct:source a owl:ObjectProperty ;
   rdfs:label "Source"@en ;
@@ -116,8 +116,8 @@ aec3po:DefinitionStatement rdf:type owl:Class ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:HumanEvaluatedStatement rdf:type owl:Class ;
-    rdfs:subClassOf aec3po:Statement . 
-rdfs:comment """A type of check that is evaluated by a human. Those are primarily for issues of perception, e.g. "is aesthetically appropriate".""" . 
+    rdfs:subClassOf aec3po:Statement ; 
+    rdfs:comment """A type of check that is evaluated by a human. Those are primarily for issues of perception, e.g. "is aesthetically appropriate".""" . 
  
 aec3po:AndCheck a owl:Class ;
     rdfs:label "And Check"@en ;
@@ -273,7 +273,7 @@ aec3po:ClassificationDesign a owl:Class ;
      skos:Concept
      [  a owl:Restriction ;
         owl:onProperty skos:inScheme ;
-        owl:someValuesFrom skos:ConceptScheme .
+        owl:someValuesFrom skos:ConceptScheme 
      ]
    )
   ] .
@@ -290,11 +290,11 @@ aec3po:PropertyDesign a owl:Class ;
   rdfs:subClassOf 
     [ a owl:Restriction ;
       owl:onProperty [ owl:inverseOf aec3po:hasDesign ] ;
-      owl:allValuesFrom aec3po:Property ;
+      owl:allValuesFrom aec3po:Property 
     ] ,
     [  a owl:Restriction ;
       owl:onProperty aec3po:hasValue ;
-      owl:cardinality 1 .
+      owl:cardinality 1 
     ] .
     
 
@@ -347,7 +347,7 @@ aec3po:ComparisonOperator a owl:Class ;
      skos:Concept
      [  a owl:Restriction ;
         owl:onProperty skos:inScheme ;
-        owl:hasValue eli:ComparisonOperatorTable .
+        owl:hasValue eli:ComparisonOperatorTable 
      ]
    )
   ] .
@@ -532,14 +532,14 @@ aec3po:LegalVerifier a owl:Class ;
  rdfs:label "Legal Verifier"@en ;
   rdfs:comment """ """@en .
 
-aec3po:StateVerifier a owl:Clas ;
-  rdfs:subClassOf aec3po:LegalVerifier.
+aec3po:StateVerifier a owl:Class ;
+  rdfs:subClassOf aec3po:LegalVerifier ;
   rdfs:label "State Verifier"@en ;
   rdfs:comment """ """@en .
 
-aec3po:PrivateVerifier a owl:Clas ;
-  rdfs:subClassOf aec3po:LegalVerifier.
-  rdfs:label "Provate Verifier"@en ;
+aec3po:PrivateVerifier a owl:Class ;
+  rdfs:subClassOf aec3po:LegalVerifier ;
+  rdfs:label "Private Verifier"@en ;
   rdfs:comment """ """@en .
 
 
@@ -548,7 +548,7 @@ aec3po:PrivateVerifier a owl:Clas ;
 #################################################################
 
 
-[ a owl:AllDisjointClasses ;
+[] a owl:AllDisjointClasses ;
   owl:members ( aec3po:FeatureOfInterest
     aec3po:Property
     aec3po:PropertyKind
@@ -557,6 +557,5 @@ aec3po:PrivateVerifier a owl:Clas ;
     aec3po:Check
     aec3po:Verifier
     aec3po:Checking
-    )
-] .
+) .
 

@@ -1,0 +1,5 @@
+rdflib==6.0.0
+pylode==2.12.0
+pyparsing==2.4.7
+mistune==2.0.2
+pre-commit==2.20.0

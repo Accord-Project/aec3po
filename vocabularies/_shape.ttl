@@ -1,0 +1,32 @@
+# TODO: write SHACL shape for SKOS concept schemes
+
+# <<Ontology>> shape
+## there exists exactly one instance of owl:Ontology
+## identified <aec3po>/[a-z]+(_[a-z]+)*
+## with dct:title with english tag
+## with dct:description with english tag
+## with dct:modified (may be computed automatically)
+## with cc:license  <https://creativecommons.org/licenses/by/4.0/>
+## with vann:preferredNamespacePrefix "aec3po"
+## with vann:preferredNamespaceUri <>
+
+# <<ConceptClass>> shape
+## there exists exactly one rdfs:subClassOf skos:Concept
+## identified <aec3po>/([A-Z][a-z]+)+
+## it is rdf:type owl:Class 
+## it has some label @en
+## it has some comment @en
+## it is intersectionOf skos:Concept, and a blank node [ a owl:Restriction ; owl:onProperty skos:inScheme ; owl:hasValue <<ConceptScheme>>  ]
+
+# <<ConceptScheme>> shape
+## There exists exactly one instance of skos:ConceptScheme
+## identified <aec3po>/(([A-Z][a-z]+)+)Table
+## with some skos:hasTopConcept <<Concept>>
+## with some skos:definition @en
+
+# <<Concept>> shape
+## There exist an instance of skos:Concept
+## also instance of one <<ConceptClass>>
+## skos:inScheme <<ConceptScheme>>
+## skos:definition @en
+## skos:prefLabel @en .
