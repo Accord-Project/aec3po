@@ -1,0 +1,28 @@
+name: deploy
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        cache: 'pip'
+    - run: pip install -r .acimov/requirements.txt
+    - run: python .acimov/publish.py
+    # - name: rsync deployments
+    #   uses: burnett01/rsync-deployments@5.1
+    #   with:
+    #     switches: -a
+    #     path: public/
+    #     remote_path: /var/www/aec3po/html
+    #     remote_host: ci.mines-stetienne.fr
+    #     remote_user: accord
+    #     remote_key: ${{ secrets.SSH_PRIVATE }}
