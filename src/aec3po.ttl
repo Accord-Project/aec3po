@@ -11,37 +11,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-dct:hasPart a owl:ObjectProperty ;
-    rdfs:label "has Part"@en ;
-    rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
-    rdfs:domain aec3po:Document ;
-    rdfs:range aec3po:DocumentSubdivision ;
-    owl:inverseOf dct:isPartOf ;
-    skos:example "A document has as part of it paragraphs, sections, RASE tags etc. "@en .
-
-dct:identifier a owl:ObjectProperty ;
-    rdfs:label "Identifier"@en ;
-    rdfs:comment "An unambiguous reference to the resource within a given context. "@en ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( aec3po:Document aec3po:DocumentSubdivision aec3po:Statement ) ] ;
-    rdfs:range rdfs:Literal ;
-    skos:example "To identify the document or a section within the document. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs. "@en .
-
-dct:references a owl:ObjectProperty ;
-    rdfs:label "References"@en ;
-    rdfs:comment "A related resource that is referenced, cited, or otherwise pointed to by the described resource."@en ;
-    rdfs:domain aec3po:Document ;
-    rdfs:range rdfs:Literal ;
-    owl:inverseOf dct:isReferencedBy ;
-    skos:example "Ensure that the measured ceiling height is at least 2.4 meters (7.9 feet) in all habitable rooms. Refer to the Building Code Standards, Section 3.2.1, to verify the requirement for minimum ceiling heights. "@en .
-
-dct:source a owl:ObjectProperty ;
-    rdfs:label "Source"@en ;
-    rdfs:comment "A related resource from which the described statement is derived. "@en ;
-    rdfs:domain aec3po:Statement ;
-    rdfs:range rdfs:Literal ;
-    skos:example "Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en .
-
 aec3po:AndCheck a owl:Class ;
     rdfs:label "And Check"@en ;
     rdfs:comment "Check verified if and only if all of its sub-checks are verified."@en ;
@@ -86,23 +55,9 @@ aec3po:ComponentCheck a owl:Class ;
                                 owl:onProperty [ owl:inverseOf aec3po:forDesign ] ] ;
                         owl:onProperty aec3po:forDesign ] ) ] .
 
-aec3po:CompressiveForce a skos:Concept,
-        aec3po:PropertyKind ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:broader quantitykind:Force .
-
-aec3po:CrossSection a skos:Concept,
-        aec3po:PropertyKind ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:broader quantitykind:CrossSection .
-
 aec3po:DefinitionStatement a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
-
-aec3po:GammaM a skos:Concept,
-        aec3po:PropertyKind ;
-    rdfs:isDefinedBy aec3po:ontology .
 
 aec3po:HumanEvaluatedStatement a owl:Class ;
     rdfs:comment "A type of check that is evaluated by a human. Those are primarily for issues of perception, e.g. \"is aesthetically appropriate\"." ;
@@ -134,13 +89,13 @@ aec3po:PrivateVerifier a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
-aec3po:PropertyKindDesign a owl:Class ;
+aec3po:QuantityKindDesign a owl:Class ;
     rdfs:label "property kind design"@en ;
     rdfs:comment "Designs that constrain the value for some property kind."@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:seeAlso aec3po:comparisonOperators ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom aec3po:PropertyKind ;
+            owl:allValuesFrom aec3po:QuantityKind ;
             owl:onProperty [ owl:inverseOf aec3po:hasDesign ] ],
         [ a owl:Restriction ;
             owl:cardinality 1 ;
@@ -157,10 +112,6 @@ aec3po:StateVerifier a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
-aec3po:SystemStrength a skos:Concept,
-        aec3po:PropertyKind ;
-    rdfs:isDefinedBy aec3po:ontology .
-
 aec3po:asText a owl:DatatypeProperty ;
     rdfs:label "as text"@en ;
     rdfs:comment "The text as written in a compliance related document or the content of a declarative or procedural check, that verifiers can use."@en ;
@@ -168,40 +119,16 @@ aec3po:asText a owl:DatatypeProperty ;
             owl:unionOf ( aec3po:DeclarativeCheck aec3po:ProceduralCheck aec3po:Statement ) ] ;
     rdfs:isDefinedBy aec3po:ontology .
 
-aec3po:forPropertyKind a owl:ObjectProperty ;
+aec3po:forQuantityKind a owl:ObjectProperty ;
     rdfs:label "for property kind"@en ;
     rdfs:comment "Links any entity (check, verification, procedure execution) to some property kind it is "@en ;
     rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range aec3po:PropertyKind .
+    rdfs:range aec3po:QuantityKind .
 
 aec3po:hasEvidence a owl:ObjectProperty ;
     rdfs:label "has evidence"@en ;
     rdfs:comment "Links a checking act to some evidence that demonstrates that this checking act is satisfied or unsatisfied."@en ;
     rdfs:domain aec3po:Checking ;
-    rdfs:isDefinedBy aec3po:ontology .
-
-aec3po:hasProperty a owl:ObjectProperty ;
-    rdfs:label "has Property"@en ;
-    rdfs:comment "Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it."@en ;
-    rdfs:domain aec3po:FeatureOfInterest ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range aec3po:Property ;
-    skos:example "Links a space to the area property of that space, a wall to the U-value property of that wall..."@en .
-
-aec3po:hasPropertyKind a owl:ObjectProperty ;
-    rdfs:label "has property kind"@en ;
-    rdfs:comment "Links a property of a feature of interest to its kind"@en ;
-    rdfs:domain aec3po:Property ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range aec3po:PropertyKind ;
-    skos:example "A space area property to the property kind \"area\"."@en .
-
-aec3po:hasRequiredfc0k a skos:Concept,
-        aec3po:PropertyKind ;
-    rdfs:isDefinedBy aec3po:ontology .
-
-aec3po:kmod a skos:Concept,
-        aec3po:PropertyKind ;
     rdfs:isDefinedBy aec3po:ontology .
 
 aec3po:satisfied a owl:ObjectProperty ;
@@ -344,20 +271,6 @@ Links a OrCheck to the set of checks that at least one must verify."""@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Check .
 
-aec3po:hasValue a owl:DatatypeProperty,
-        owl:FunctionalProperty ;
-    rdfs:label "has value"@en ;
-    rdfs:comment "links a property design to the value of that property, expressed as a literal."@en ;
-    rdfs:domain aec3po:PropertyDesign ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:note "The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum"@en .
-
-aec3po:DocumentSubdivision a owl:Class ;
-    rdfs:label "Document Subdivision"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf aec3po:Document ;
-    skos:example "Paragraph, section, definition..."@en .
-
 aec3po:checked a owl:ObjectProperty ;
     rdfs:label "checked"@en ;
     rdfs:comment "Links a checking act to the feature of interest, property, design, check, or legal resource, it verified."@en ;
@@ -372,109 +285,6 @@ aec3po:hasDesign a owl:ObjectProperty ;
             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Design .
-
-aec3po:Document a owl:Class ;
-    rdfs:label "Document"@en ;
-    rdfs:comment "A document representing AEC regulations, guidelines, building codes etc."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:example "Approved Document A, Eurocode, Finish Regulations..."@en .
-
-aec3po:FeatureOfInterest a owl:Class ;
-    rdfs:label "Feature Of Interest"@en ;
-    rdfs:comment "The object whose conformance against checks is verified."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Object ;
-    skos:example "A building, a building space, a building element, the set of columns in a building, ..."@en ;
-    skos:note """It is expected that classes in other ontologies are used to multi-type instances of FeatureOfInterest.
-  For example a feature of interest may also be:
-  - a bot:Zone or a bot:Element
-  - a ifc:IfcRamp, a ifc:IfcSurfaceFeature"""@en .
-
-aec3po:Checking a owl:Class ;
-    rdfs:label "Checking"@en ;
-    rdfs:comment """Act of verifying a check to determine the conformance of some design. 
-    Links to Verifier that made the checking act ;
-    Links to the checks that were verified, either satified, or unsatisfied;
-    Links to the designs that were satisfied, or unsatisfied."""@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty aec3po:madeBy ;
-            owl:someValuesFrom aec3po:Verifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty aec3po:checked ],
-        dul:Event .
-
-aec3po:ComparisonOperator a owl:Class ;
-    rdfs:label "comparisonComparisonOperator"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:ComparisonOperatorTable"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf skos:Concept ;
-    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue eli:ComparisonOperatorTable ;
-                        owl:onProperty skos:inScheme ] ) ] .
-
-aec3po:Design a owl:Class ;
-    rdfs:label "Design"@en ;
-    rdfs:comment """A Description of some design of a feature of interest, in terms of structure, geometry, and function. 
-    May be linked to a feature of interest to describe the design it has, for example using the ClassificationDesign subclass.
-    May be linked to a check, verifier, or check result, to describe the kind of design it is for."""@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Design ;
-    skos:example """Example: 
-- the type of use of a building (Residential / Commercial)
-- the type of structural material (steel/ RC / timber)
-- the designed height of a building (High-rise, Mid-rise, Low-rise)
-- the area of space abc in IFC model xyz is 14 m2"""@en .
-
-aec3po:Property a owl:Class ;
-    rdfs:label "Property"@en ;
-    rdfs:comment "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Quality ;
-    skos:example "The height of a building, the area of a space, the U-value of a wall"@en .
-
-aec3po:Statement a owl:Class ;
-    rdfs:label "Statement"@en ;
-    rdfs:comment "Something said in a building compliance-related document"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf aec3po:DocumentSubdivision ;
-    skos:example "Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."@en .
-
-aec3po:ComparisonOperatorTable a skos:ConceptScheme ;
-    rdfs:label "Opeator table"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:definition """A set of values for the comparisonComparisonOperator.
-  C3PO includes a set of values for this table.
-  These values are :
-  - lt : lower than;
-  - le : lower or equal;
-  - eq : equals;
-  - ge : greater or equal;
-  - gt : greater than."""@en ;
-    skos:hasTopConcept aec3po:ComparisonOperator-eq,
-        aec3po:ComparisonOperator-ge,
-        aec3po:ComparisonOperator-gt,
-        aec3po:ComparisonOperator-le,
-        aec3po:ComparisonOperator-lt .
-
-aec3po:PropertyKind a owl:Class ;
-    rdfs:label "Property Kind"@en ;
-    rdfs:comment """Any region in a dimensional space, which can be used as a value for a quality of an entity.
-  It is expected that the property kinds are organized in a hierarchy of concepts using skos:broader/skos:narrower.
-  Property kinds may be taken from the QUDT Quantity Kind vocabulary http://qudt.org/2.1/vocab/quantitykind  """@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Region ;
-    skos:example "Length, Area, U-Value."@en ;
-    skos:note "Both PropertyKind and QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en .
-
-aec3po:Check a owl:Class ;
-    rdfs:label "Check"@en ;
-    rdfs:comment "A piece of information that operationalizes a clause, usually executed in order to control the conformance of some entity against a design. A Check is re-usable, and may be executed several times."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Method ;
-    skos:note """A Check may be linked to some Design through the `forDesign` property.
-    A Check may be linked to some Property Kind through the `forPropertyKind` property."""@en .
 
 skos:Concept a owl:Class .
 
@@ -494,5 +304,5 @@ aec3po:ontology a owl:Ontology ;
     skos:note "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( aec3po:FeatureOfInterest aec3po:Property aec3po:PropertyKind aec3po:Design eli:LegalResource aec3po:Check aec3po:Verifier aec3po:Checking ) .
+    owl:members ( aec3po:FeatureOfInterest aec3po:Property aec3po:QuantityKind aec3po:DocumentSubdivision aec3po:Check aec3po:Verifier aec3po:Checking ) .
 

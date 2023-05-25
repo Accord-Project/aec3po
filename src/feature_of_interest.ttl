@@ -1,0 +1,60 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aec3po:feature_of_interest a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description "The AEC3PO Feature of Interest module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance."@en ;
+    dct:modified "2023-05-25"^^xsd:date ;
+    dct:title "AEC3PO: Feature of Interest"@en ;
+    owl:imports aec3po:quantity_kinds ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri aec3po: .
+
+aec3po:FeatureOfInterest a owl:Class ;
+    rdfs:label "Feature Of Interest"@en ;
+    rdfs:comment "The object whose conformance against checks is verified."@en ;
+    rdfs:isDefinedBy aec3po:feature_of_interest ;
+    rdfs:subClassOf dul:Object ;
+    skos:example "A building, a building space, a building element, the set of columns in a building, ..."@en ;
+    skos:note """It is expected that classes in other ontologies are used to multi-type instances of FeatureOfInterest.
+  For example a feature of interest may also be:
+  - a bot:Zone or a bot:Element
+  - a ifc:IfcRamp, a ifc:IfcSurfaceFeature"""@en .
+
+aec3po:Property a owl:Class ;
+    rdfs:label "Property"@en ;
+    rdfs:comment "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en ;
+    rdfs:isDefinedBy aec3po:feature_of_interest ;
+    rdfs:subClassOf dul:Quality ;
+    skos:example "The height of a building, the area of a space, the U-value of a wall"@en .
+
+aec3po:hasProperty a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+    rdfs:label "has Property"@en ;
+    rdfs:comment "Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it."@en ;
+    rdfs:domain aec3po:FeatureOfInterest ;
+    rdfs:isDefinedBy aec3po:feature_of_interest ;
+    rdfs:range aec3po:Property ;
+    skos:example "Links a space to the area property of that space, a wall to the U-value property of that wall..."@en .
+
+aec3po:hasQuantityKind a owl:ObjectProperty ;
+    rdfs:label "has quantity kind"@en ;
+    rdfs:comment "Links a property of a feature of interest to its quantity kind"@en ;
+    rdfs:domain aec3po:Property ;
+    rdfs:isDefinedBy aec3po:feature_of_interest ;
+    rdfs:range aec3po:QuantityKind ;
+    skos:example "A space area property to the property kind \"area\"."@en .
+
+aec3po:hasValue a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label "has value"@en ;
+    rdfs:comment "links a property to its value, expressed as a literal."@en ;
+    rdfs:domain aec3po:Property ;
+    rdfs:isDefinedBy aec3po:feature_of_interest ;
+    skos:note "The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum"@en .

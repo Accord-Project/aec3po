@@ -67,8 +67,12 @@ def process_turtle_file(input_file_path:str, dest_path:str):
 
     # generate html documentation and rdf variants
     html = pylode.MakeDocco(input_data_file=input_file_path).document()
+    html_img = html.replace(
+        '<div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>',
+        f'<img src="{dest_path.split("/")[-1]}.png" />'
+    )
     with open(dest_path+ ".html", "w") as output:
-        output.write(html)
+        output.write(html_img)
     with open(dest_path+ ".ttl", "wb") as output:
         output.write(g.serialize(format='ttl', encoding='utf-8'))
     with open(dest_path+ ".rdf", "wb") as output:
@@ -92,13 +96,18 @@ def process_turtle_file(input_file_path:str, dest_path:str):
 RewriteCond %{{REQUEST_URI}} ^/aec3po/({"|".join(definedTerms)})$
 RewriteRule ^(.*)$ /aec3po/{dest_path[7:]}#$1 [R=303,NE]
             """)
-            
 
-for root, dirs, files in os.walk("src"):
-   for name in files:
-      if not name.endswith(".ttl") or name.startswith("_"):
-           continue
-      print(os.path.join(root, name))
-      input_file_path = os.path.join(root, name)
-      dest_path = os.path.join(dest, name)[0:-4]
-      process_turtle_file(input_file_path, dest_path)
+def process(input_file_path):
+    if not input_file_path.endswith(".ttl") or "/_" in input_file_path:
+        return
+    dest_path = os.path.join(dest, input_file_path[4:])[0:-4]
+    process_turtle_file(input_file_path, dest_path)
+    
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        for root, dirs, files in os.walk("src"):
+            for name in files:
+                process(os.path.join(root, name))
+    for input_file_path in sys.argv[1:]:
+        process(input_file_path)
+        
