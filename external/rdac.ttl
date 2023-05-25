@@ -20,9 +20,9 @@ rdac:C10006 a owl:Class ;
 aec3po:rdac a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description "The ELI module of the Construction Compliance Checking and Permitting ontology redefines the important classes and properties from the Resource Description and Access (RDA) RDF vocabulary."@en ;
+    dct:description "The ELI module of AEC3PO redefines the important classes and properties from the Resource Description and Access (RDA) RDF vocabulary."@en ;
     dct:modified "2023-04-26"^^xsd:date ;
-    dct:title "Construction Compliance Checking and Permitting Ontology"@en ;
+    dct:title "AEC3PO"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri aec3po: .
 

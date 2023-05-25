@@ -1,0 +1,36 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aec3po:UK_Building_Control_Submission a aec3po:PermittingStage ;
+    rdfs:isDefinedBy aec3po:permitting_stage ;
+    aec3po:forAdministrativeArea aec3po:England .
+
+aec3po:UK_Planning_Permission a aec3po:PermittingStage ;
+    rdfs:isDefinedBy aec3po:permitting_stage ;
+    aec3po:forAdministrativeArea aec3po:England .
+
+aec3po:hasPermittingStage a owl:ObjectProperty ;
+    rdfs:label "has permitting stage"@en ;
+    rdfs:comment "Links an entity to the permitting stage this entity pertains"@en ;
+    rdfs:isDefinedBy aec3po:permitting_stage ;
+    rdfs:range aec3po:PermittingStage .
+
+aec3po:PermittingStage a owl:Class ;
+    rdfs:label "Permitting Stage"@en ;
+    rdfs:comment "The permitting stage to which this statement pertains."@en ;
+    rdfs:isDefinedBy aec3po:permitting_stage .
+
+aec3po:permitting_stage a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description "Definition of a permitting stage concept scheme for AEC3PO."@en ;
+    dct:modified "2023-05-25"^^xsd:date ;
+    dct:title "AEC3PO: Permitting Stage"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri aec3po: .
+

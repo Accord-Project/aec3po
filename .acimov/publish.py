@@ -6,7 +6,7 @@ import shutil
 import subprocess
 import rdflib
 from rdflib import Graph, URIRef, Literal, BNode
-from rdflib.namespace import RDF, OWL, DCTERMS, XSD
+from rdflib.namespace import RDF, OWL, DCTERMS, XSD, RDFS
 import pylode
 import mistune
 
@@ -15,14 +15,12 @@ import mistune
 logging.basicConfig(level=logging.DEBUG)
 
 base = "https://w3id.org/lbd/aec3po/"
+dest = "public"
 
-os.makedirs("public", exist_ok=True)
-shutil.copytree("resources", "public", dirs_exist_ok=True)
+os.makedirs(dest, exist_ok=True)
+shutil.copytree("resources", dest, dirs_exist_ok=True)
 
-input_files = [f.path for f in os.scandir("src") if f.is_file()]
-
-for input_file_path in input_files:
-    dest_path = input_file_path.replace("src/" , "public/")[0:-4]
+def process_turtle_file(input_file_path:str, dest_path:str):
 
     # parse and check ttl syntax
     g = Graph()
@@ -81,3 +79,26 @@ for input_file_path in input_files:
         output.write(g.serialize(format='n3', encoding='utf-8'))
     with open(dest_path+ ".nt", "wb") as output:
         output.write(g.serialize(format='nt', encoding='utf-8'))
+
+    with open(f"{dest}/.htaccess", "a") as f:
+        definedTerms = []
+        for definedTerm in g.subjects(RDFS.isDefinedBy, ontology):
+            localName = str(definedTerm)[len(base):]
+            if localName == '':
+                continue
+            definedTerms.append(localName)
+        if len(definedTerms) != 0:
+            f.write(f"""
+RewriteCond %{{REQUEST_URI}} ^/aec3po/({"|".join(definedTerms)})$
+RewriteRule ^(.*)$ /aec3po/{dest_path[7:]}#$1 [R=303,NE]
+            """)
+            
+
+for root, dirs, files in os.walk("src"):
+   for name in files:
+      if not name.endswith(".ttl") or name.startswith("_"):
+           continue
+      print(os.path.join(root, name))
+      input_file_path = os.path.join(root, name)
+      dest_path = os.path.join(dest, name)[0:-4]
+      process_turtle_file(input_file_path, dest_path)

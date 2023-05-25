@@ -23,9 +23,9 @@ schema:MediaObject a rdfs:Class ;
 aec3po:schemaorg a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description "The schema.org module of the Construction Compliance Checking and Permitting ontology lists some of the classes and properties from schema.org that may be useful in the context of the ACCORD project."@en ;
+    dct:description "The schema.org module of AEC3PO lists some of the classes and properties from schema.org that may be useful in the context of the ACCORD project."@en ;
     dct:modified "2023-04-26"^^xsd:date ;
-    dct:title "Construction Compliance Checking and Permitting Ontology"@en ;
+    dct:title "AEC3PO"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri aec3po: .
 

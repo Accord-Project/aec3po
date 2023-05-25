@@ -17,12 +17,12 @@ jobs:
         cache: 'pip'
     - run: pip install -r .acimov/requirements.txt
     - run: python .acimov/publish.py
-    # - name: rsync deployments
-    #   uses: burnett01/rsync-deployments@5.1
-    #   with:
-    #     switches: -a
-    #     path: public/
-    #     remote_path: /var/www/aec3po/html
-    #     remote_host: ci.mines-stetienne.fr
-    #     remote_user: accord
-    #     remote_key: ${{ secrets.SSH_PRIVATE }}
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@5.1
+      with:
+        switches: -a
+        path: public/
+        remote_path: /var/www/aec3po/html
+        remote_host: ci.mines-stetienne.fr
+        remote_user: aec3po
+        remote_key: ${{ secrets.SSH_PRIVATE }}

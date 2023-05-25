@@ -1,0 +1,1097 @@
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eli: a owl:Ontology ;
+    rdfs:label "ELI Metadata Ontology"@en ;
+    dc1:creator "ELI task force"@en ;
+    vann:preferredNamespacePrefix "eli" ;
+    rdfs:comment """An ontology to describe legislation, based on the FRBR model, that encodes the ELI metadata fields.
+See the classes "LegalResource", "LegalExpression" and "Format" as entry points."""@en ;
+    rdfs:seeAlso eli:LegalResource ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> ;
+    owl:versionInfo 1.1 ;
+    skos:editorialNote """- The ELI ontology reuses the property names from the Metalex ontology (http://www.metalex.eu/) to express the FRBR skeleton hierarchy : is_realized_by/realizes, is_embodied_by/embodies, is_exemplified_by. This wording is also the one used in the original FRBR specifications. However, the decision has been made _not_ to align to the Metalex class names (BibliographicWork, BibliographicExpression, BibliographicManifestation), because ELI is specifically about publishing legal metadata on the web, and not structuring legal content in any document.
+
+- first_date_entry_in_force and date_no_longer_in_force could be aligned with dcterms:date
+
+- a class could be introduced for URI schemas to implement the URI schema registry
+
+- ELI does not use rdfs:subPropertyOf to relate its properties with DublinCore Terms, but instead a custom annotation properties "eli:isSpecificPropertyOf". ELI 1.1 chose to have 2 separate properties in certain situations to accomodate with cases where the value can be either a String or a reference to an identified object; this is the case for eli:publisher / eli:publisher_agent, or eli:rightsholder and eli:rightsholder_agent. This entails that this pair of properties cannot be both aligned with their respective DCTerms equivalent (dcterms:publisher and dcterms:rightsholder), since relating a property using rdfs:subPropertyOf necessary implies to declare the DCterms property as either a datatype property _or_ an objectProperty, but not both."""@en ;
+    skos:historyNote """* 1.1 *
+
+  - added the following properties :
+    - is_member_of / has_member
+    - number
+    - jurisdiction
+    - date_applicability
+    - applies / applied_by
+    - commences / commenced_by
+    - repeals / repealed_by
+    - corrects / corrected_by
+    - amends / amended_by
+    - is_another_publication_of / has_another_publication
+
+  - additionnal properties were also added to accomodate with situations where a property value can be either a literal or a URI :
+    - responsibility_of_agent vs. responsibility_of
+    - published_in_format vs. published_in
+    - publisher_agent vs. publisher
+    - rightsholder_agent vs. rightsholder
+
+  - the relations with DublinCore properties is now declared with a custom annotation property "eli:isSpecificPropertyOf" instead of rdfs:subPropertyOf to be able to relate both eli:publisher/eli:publisher_agent to dcterms:publisher, and eli:rightsholder/eli:rightsholder_agent to dcterms:rightsholder.
+
+  - added the class LegalResourceSubdivision
+
+  - the propery implements / implemented_by was deprecated in favor of applies / applied_by
+
+  - numerous definitions were improved and clarified
+
+  - all ontology items are documented with :
+    - their version of creation;
+    - their version of latest modification;
+    - an history note documenting the changes on the item;
+
+V1.1 is backward compatible with v1.0, with 1 following exception :
+  - starting from v1.1, is_member_of / has_member should be used instead of is_part_of / has_part for conceptual inclusions;
+
+Additionnally, ELI implementers are strongly encouraged to use applies / applied_by instead of implements / implemented_by; note however that implements/implemented_by currently remain in the ontology so publishers can take the time to transition smoothly.
+
+* 1.0 *
+
+  - added a set of values for the InForce table
+  - added definitions to tables
+  - minor fixes in definitions
+  - added rdfs:seeAlso from properties to corresponding tables
+  - cleaned the "whyThisIsNeeded" annotation
+
+* 0.6.1 *
+
+  - fixed typos in definitions
+
+* 0.6 *
+
+  - imported skos rather than redeclaring skos classes and properties
+  - changed domain of in_force, first_date_entry_into_force, date_no_longer_in_force to [LegalResource or LegalExpression] instead of LegalResource
+  - changed domain of language, title, title_short, title_alternative to LegalExpression instead of [LegalResource or LegalExpression]
+  - reworked the tables : don't use country and resource type tables from MDR, but declare local tables.
+  - integrated new definitions for all classes and properties
+
+* 0.5 *
+
+  - Renamed "Interpretation" into "LegalExpression" (and modified comments accordingly)
+  - Renamed the structural FRBR relations in accordance with Metalex ontology :
+    - is_legal_resource_of becomes "is_relaized_by"
+    - has_legalresource becomes "realizes"
+    - is_interpretation_of becomes "is_embodied_by"
+    - has_interpretation becomes "embodies"
+    - file becomes "is_exemplified_by"
+  - file has been made a subproperty of "has exemplar of manifestation" instead of "dc:hasPart"
+  - relevant_for is no more considered mandatory. Deleted comment that stated "we are seeking a way to express that relevant_for must have at least one value for LegalResource or one of its LegalInterpretation".
+
+* 0.4.1 *
+
+  - Added "publishes" property
+  - Enriched the note on "transposes" and "transposed by" to indicate they must point to / be expressed on LegalResource"""@en .
+
+eli:LegalResourceSubdivision a owl:Class ;
+    rdfs:label "Legal Resource Subdivision"@en ;
+    rdfs:comment "A component of a legal act, at an arbitrary level of precision, like a chapter, an article, an alinea, a paragraph or an list item. A subdivision can be linked with its parent and children subdivision using the properties eli:has_part / eli:is_part_of."@en ;
+    rdfs:subClassOf eli:LegalResource ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:amended_by a owl:ObjectProperty ;
+    rdfs:label "amended by"@en ;
+    rdfs:comment "Inverse of \"amends\". Indicates a resource that introduced legal changes in this resource. For modifications that don’t have a legal impact, use eli:corrected_by."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:subPropertyOf eli:changed_by ;
+    owl:inverseOf eli:amends ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:based_on a owl:ObjectProperty ;
+    rdfs:label "based on"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Inverse of \"basis_for\". Indicates that this legal resource is empowered by another one, typically a constitution, a treaty or an enabling act."@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    owl:inverseOf eli:basis_for ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition"@en .
+
+eli:cited_by a owl:ObjectProperty ;
+    rdfs:label "cited by"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Inverse of \"cites\""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range owl:Thing ;
+    owl:inverseOf eli:cites ;
+    owl:versionInfo "created in v1.0" .
+
+eli:commenced_by a owl:ObjectProperty ;
+    rdfs:label "commenced by"@en ;
+    rdfs:comment """Inverse of "commences". Indicates that this legal resource was set in force by another legal resource.
+Situations where a resource enters into force because of more than one resource are explicitely allowed."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:subPropertyOf eli:changed_by ;
+    owl:inverseOf eli:commences ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:consolidated_by a owl:ObjectProperty ;
+    rdfs:label "consolidated by"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Inverse of \"consolidates\". Indicates that this legal resource or expression is taken into account in a consolidated text (which is usually the product of an editorial process that revises the legislation)."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    owl:inverseOf eli:consolidates ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition"@en .
+
+eli:corrected_by a owl:ObjectProperty ;
+    rdfs:label "corrected by"@en ;
+    rdfs:comment "Inverse of \"corrects\". Indicates a resource that introduces textual modifications (like correction of spelling mistakes) with no legal change in this resource, expression or format; typically corrigenda in EU legislation. For modifications that have a legal impact, use eli:amended_by."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:Format eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    owl:inverseOf eli:corrects ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:date_applicability a owl:DatatypeProperty ;
+    rdfs:label "date of applicability"@en ;
+    rdfs:comment """The date at which the legislation becomes applicable. This is distinct from the date of entry into force : a text may come in force today, and state it will become applicable in 3 months.
+
+The group notes that applicability dates can lead to complex situations, e.g. a text with different applicability dates for different jurisdictions; specific extensions to the model should be used for such situations."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range xsd:date ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:date_document a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "date of the document"@en ;
+    eli:specificPropertyOf dc1:date ;
+    rdfs:comment "Date of adoption or signature (of the form yyyy-mm-dd)"@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range xsd:date ;
+    owl:versionInfo "created in v1.0" .
+
+eli:date_publication a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "date of publication"@en ;
+    eli:specificPropertyOf dc1:issued ;
+    rdfs:comment "Date of publication of the official version of the legislation, in hard copy or online, depending on what the official publication is, and when it was published. Publication dates at the level of legal expressions can be separately asserted, using standard Dublin Core properties."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range xsd:date ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "In v1.1, the domain was broaden to add LegalExpression."@en .
+
+eli:description a owl:DatatypeProperty ;
+    rdfs:label "description"@en ;
+    eli:specificPropertyOf dc1:description ;
+    rdfs:comment "An account of the resource (definition from Dubin Core), e.g a summary."@en ;
+    rdfs:range xsd:string ;
+    owl:versionInfo "created in v1.0" .
+
+eli:embodies a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "embodies"@en ;
+    rdfs:comment "Relates a physical format to the legal expression embodied in that format (definition adapted from RDA). Inverse of \"is_embodied_by\"."@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range eli:LegalExpression ;
+    rdfs:subPropertyOf <http://www.rdaregistry.info/Elements/m/#P30139> ;
+    owl:inverseOf eli:is_embodied_by ;
+    owl:versionInfo "created in v1.0",
+        "modified in 1.1"@en ;
+    skos:historyNote "In v1.1, this was declared functional (the constraint was missing in 1.0)"@en .
+
+eli:has_another_publication a owl:ObjectProperty ;
+    rdfs:label "has another publication"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Inverse of \"is_another_publication_of\"."@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:LegalResource ;
+    owl:inverseOf eli:is_another_publication_of ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:has_member a owl:ObjectProperty ;
+    rdfs:label "has member"@en ;
+    eli:specificPropertyOf dc1:hasPart ;
+    rdfs:comment "Indicates that this resource conceptually includes another one. For the notion of physical inclusion, use eli:has_part."@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:LegalResource ;
+    owl:inverseOf eli:is_member_of .
+
+eli:has_part a owl:ObjectProperty ;
+    rdfs:label "has part"@en ;
+    eli:specificPropertyOf dc1:hasPart ;
+    rdfs:comment "inverse of \"is_part_of\""@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:LegalResource ;
+    owl:inverseOf eli:is_part_of ;
+    owl:versionInfo "created in v1.0" .
+
+eli:id_local a owl:DatatypeProperty ;
+    rdfs:label "local id"@en ;
+    eli:specificPropertyOf dc1:identifier ;
+    rdfs:comment "The unique identifier used in a local reference system to maintain backwards compatibility. For examples the CELEX at EU level, or the NOR in France."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:Format eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a rdfs:Datatype ;
+            owl:unionOf ( xsd:anyURI xsd:string ) ] ;
+    owl:versionInfo "created in v1.0" .
+
+eli:in_force a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "in force"@en ;
+    eli:originalName "status"@en ;
+    rdfs:comment """A value indicating the legal force of a legal resource or a legal expression. A set of values is defined by ELI in the corresponding concept scheme. These values are :
+  - in force
+  - partially in force
+  - not in force"""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range eli:InForce ;
+    rdfs:seeAlso eli:InForce-inForce,
+        eli:InForce-notInForce,
+        eli:InForce-partiallyInForce,
+        eli:InForceTable ;
+    owl:versionInfo "created in v1.0" .
+
+eli:is_about a owl:ObjectProperty ;
+    rdfs:label "is about"@en ;
+    eli:specificPropertyOf dc1:subject ;
+    rdfs:comment "A subject for this legal resource. The use of Eurovoc (http://eurovoc.europa.eu) is encouraged to select values for this property. Member states are encouraged to align local values to Eurovoc."@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range skos:Concept ;
+    owl:versionInfo "created in v1.0" .
+
+eli:is_exemplified_by a owl:ObjectProperty ;
+    rdfs:label "is exemplified by"@en ;
+    rdfs:comment """Link to a concrete file URL.
+Relates a format to a single exemplar or instance of that format (definition adapted from RDA). """@en ;
+    rdfs:domain eli:Format ;
+    rdfs:subPropertyOf <http://rdaregistry.info/Elements/m/P30103> ;
+    owl:versionInfo "created in v1.0" .
+
+eli:is_realized_by a owl:ObjectProperty ;
+    rdfs:label "is realized by"@en ;
+    rdfs:comment "Relates a legal resource to a legal expression of this resource in the form of a \"sequence of signs\" (typically alpha-numeric characters in a legal context). (definition adapted from RDA). Inverse of \"realizes\"."@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:LegalExpression ;
+    rdfs:subPropertyOf <http://www.rdaregistry.info/Elements/w/#P10078> ;
+    owl:inverseOf eli:realizes ;
+    owl:versionInfo "created in v1.0" .
+
+eli:jurisdiction a owl:ObjectProperty ;
+    rdfs:label "jurisdiction"@en ;
+    rdfs:comment """The jurisdiction from which the legal resource originates. 
+
+The place identifier can be taken from the Administrative Territorial Unit table published of the EU Publications Office at http://publications.europa.eu/mdr/authority/atu. Member States don't have to recreate their own list of values."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range eli:AdministrativeArea ;
+    rdfs:subPropertyOf eli:relevant_for ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:language a owl:ObjectProperty ;
+    rdfs:label "language"@en ;
+    eli:specificPropertyOf dc1:language ;
+    rdfs:comment """The language of an expression.
+
+EU Publications Office provides a list of languages at http://publications.europa.eu/mdr/authority/language. This list is large enough so that member states should not have to declare local values.
+
+Note that, if needed, a language can also be stated on a legal resource using the DublinCore "language" property."""@en ;
+    rdfs:domain eli:LegalExpression ;
+    rdfs:range eli:Language ;
+    rdfs:seeAlso <http://publications.europa.eu/resource/authority/language> ;
+    owl:versionInfo "created in v1.0" .
+
+eli:legal_value a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "legal value"@en ;
+    rdfs:comment """The legal value associated with a specific format of a resource. A set of values is defined by ELI in the corresponding concept scheme. These values are :
+  - unofficial : no particular or special standing;
+  - official : published by an organisation with the public task of making the information available (e.g. a consolidated version of a EU directive) ;
+  - authoritative : the publisher gives some special status to the publication (e.g. "the Queens Printer" version of an Act of Parliament, or the OJ version of a EU Directive);
+  - definitive : the text is conclusively what the law says, (e.g. the digitally signed version of an OJ)."""@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range eli:LegalValue ;
+    rdfs:seeAlso eli:LegalValue-authoritative,
+        eli:LegalValue-definitive,
+        eli:LegalValue-official,
+        eli:LegalValue-unofficial,
+        eli:LegalValueTable ;
+    owl:versionInfo "created in v1.0" .
+
+eli:licence a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "licence"@en ;
+    eli:specificPropertyOf dc1:license ;
+    rdfs:comment "A legal document giving official permission to do something with the resource (Definition from Dublin Core)"@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range owl:Thing ;
+    owl:versionInfo "created in v1.0" .
+
+eli:number a owl:DatatypeProperty ;
+    rdfs:label "number"@en ;
+    rdfs:comment "An identifier or other disambiguating feature for a legal resource or legal expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range xsd:string ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:originalName a owl:AnnotationProperty .
+
+eli:passed_by a owl:ObjectProperty ;
+    rdfs:label "passed by"@en ;
+    eli:originalName "agent_document"@en ;
+    eli:specificPropertyOf dc1:creator ;
+    rdfs:comment """The person or organization that originally passed or made the law : typically parliament (for primary legislation) or government (for secondary legislation). This indicates the "legal author" of the law, as opposed to its physical author. 
+
+This property can be used multiple times to indicate both the agent that authored the text, and/or the agent that signed the text, thus turning it into an actual legislation.
+
+The relationship between current and any former law making body should be represented in the description of the agent itself.
+
+Member states are encouraged to make their own list of Agents. EU Publications Office provides a list of corporate bodies at http://publications.europa.eu/mdr/authority/corporate-body."""@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:Agent ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "In v1.1, the semantic of this property was broaden to encompass organisations/persons that « drafted the text » and « signed it »."@en .
+
+eli:related_to a owl:ObjectProperty ;
+    rdfs:label "related to"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Indicates a somehow related other document, not necessarily a legal resource. Note that citation links should use the cites property."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range owl:Thing ;
+    owl:versionInfo "created in v1.0" .
+
+eli:repealed_by a owl:ObjectProperty ;
+    rdfs:label "repealed by"@en ;
+    rdfs:comment "Inverse of \"repeals\". Indicates that this legal resource or legal expression is being completely canceled, abrogated or replaced by another legal resource. If a resource is partially repealed by another, this link can be used at the corresponding subdivision level being completely repealed."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:subPropertyOf eli:changed_by ;
+    owl:inverseOf eli:repeals ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:rights a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "rights"@en ;
+    eli:specificPropertyOf dc1:rights ;
+    rdfs:comment "Information about rights held in and over the resource (definition from Dublin Core). For example, that property can be used to provide a link to a page that describes the licensing terms."@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range xsd:string ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition and changed the range to xsd:string"@en .
+
+eli:rightsholder_agent a owl:ObjectProperty ;
+    rdfs:label "rightsholder agent"@en ;
+    eli:specificPropertyOf dc1:rightsholder ;
+    rdfs:comment """A person or organisation owning or managing rights over the resource (definition from Dublin Core).
+This property should be used when the value can be identified by a suitable URI; in the absence of such a URI, the property "rightsholder" should be used with a string value."""@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range eli:Agent ;
+    rdfs:seeAlso eli:rightsholder ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:specificPropertyOf a owl:AnnotationProperty ;
+    rdfs:label "specific property of"@en ;
+    rdfs:comment """Indicates that a property is, in a generic sense, a more specific property of another one. This does not entail the same logical reasoning as rdfs:subPropertyOf.
+This is used to indicate the alignement to DublinCore properties, without redeclaring the DublinCore property in Protégé, and without commiting to choose that a DubinCore property is either a datatype or an object property."""@en .
+
+eli:title a owl:DatatypeProperty ;
+    rdfs:label "title"@en ;
+    eli:specificPropertyOf dc1:title ;
+    rdfs:comment """The title, or name, of an expression. 
+
+Note that, if needed, a title can also be stated on a legal resource using the Dublin Core "title" property."""@en ;
+    rdfs:domain eli:LegalExpression ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso eli:title_alternative,
+        eli:title_short ;
+    owl:versionInfo "created in v1.0" .
+
+eli:type_document a owl:ObjectProperty ;
+    rdfs:label "type document"@en ;
+    eli:specificPropertyOf dc1:type ;
+    rdfs:comment """The type of a legal resource (e.g. "Directive", "Règlement grand ducal", "law", "règlement ministeriel", "draft proposition", "Parliamentary act", etc.). 
+Member states are encouraged to make their own list of values in the corresponding concept scheme. EU Publications Office provides a list of values for EU resource types at http://publications.europa.eu/mdr/authority/resource-type"""@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:ResourceType ;
+    rdfs:seeAlso eli:ResourceTypeTable ;
+    owl:versionInfo "created in v1.0" .
+
+eli:uri_schema a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "uri schema"@en ;
+    rdfs:comment "Schema describing the URI of an ELI instance. ELI uses URI template specifications (IETF RFC 6570). Schemes should be associated with member states and will be published in a registry."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:Format eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range owl:Thing ;
+    owl:versionInfo "created in v1.0" .
+
+eli:version a owl:ObjectProperty ;
+    rdfs:label "version"@en ;
+    rdfs:comment "A skos concept scheme, could be locally defined? Group proposal is to start with an initial ELI scheme, that might include concepts of \"Official Journal\" \"made\" \"consolidated\" \"proposed\" \"prospective\""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range eli:Version ;
+    rdfs:seeAlso eli:version_date ;
+    owl:versionInfo "created in v1.0" .
+
+eli:AdministrativeAreaTable a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Administrative area table"@en ;
+    skos:definition """A set of values for administrative areas.
+ELI does not include a set of values for this table."""@en .
+
+eli:InForce-inForce a eli:InForce,
+        owl:NamedIndividual,
+        skos:Concept ;
+    owl:versionInfo "created in v1.0"@en,
+        "modified in v1.1"@en ;
+    skos:definition "Indicates that a legal resource is in force."@en ;
+    skos:historyNote "v1.1 : improved definition"@en ;
+    skos:inScheme eli:InForceTable ;
+    skos:prefLabel "in force"@en ;
+    skos:topConceptOf eli:InForceTable .
+
+eli:InForce-notInForce a eli:InForce,
+        owl:NamedIndividual,
+        skos:Concept ;
+    owl:versionInfo "created in v1.0"@en,
+        "modified in v1.1"@en ;
+    skos:definition "Indicates that a legal resource is currently not in force."@en ;
+    skos:historyNote "v1.1 : improved definition"@en ;
+    skos:inScheme eli:InForceTable ;
+    skos:prefLabel "not in force"@en ;
+    skos:topConceptOf eli:InForceTable .
+
+eli:InForce-partiallyInForce a eli:InForce,
+        owl:NamedIndividual,
+        skos:Concept ;
+    owl:versionInfo "created in v1.0"@en,
+        "modified in v1.1"@en ;
+    skos:definition "Indicates that parts of the legal resource are in force, and parts are not."@en ;
+    skos:historyNote "v1.1 : improved definition"@en ;
+    skos:inScheme eli:InForceTable ;
+    skos:prefLabel "partially in force"@en ;
+    skos:topConceptOf eli:InForceTable .
+
+eli:Language a owl:Class ;
+    rdfs:label "Language"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme http://data.europa.eu/eli/ontology#language"@en ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue <http://publications.europa.eu/resource/authority/language> ;
+                        owl:onProperty skos:inScheme ] ) ] ;
+    owl:versionInfo "created in v1.0" .
+
+eli:ResourceType a owl:Class ;
+    rdfs:label "Resource type"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme eli:ResourceTypeTable"@en ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue eli:ResourceTypeTable ;
+                        owl:onProperty skos:inScheme ] ) ] ;
+    owl:versionInfo "created in v1.0" .
+
+eli:Version a owl:Class ;
+    rdfs:label "Version"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme eli:VersionTable"@en ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue eli:VersionTable ;
+                        owl:onProperty skos:inScheme ] ) ] ;
+    owl:versionInfo "created in v1.0" .
+
+eli:VersionTable a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Version table"@en ;
+    skos:definition """A set of values for the version of a legal resource.
+ELI does not include a set of values for this table."""@en .
+
+eli:amends a owl:ObjectProperty ;
+    rdfs:label "amends"@en ;
+    rdfs:comment "Indicates that this resource introduces legal changes in another resource. For modifications that don’t have a legal impact, use eli:corrects."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:subPropertyOf eli:changes ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:applied_by a owl:ObjectProperty ;
+    rdfs:label "applied by"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment """Inverse of "applies".
+
+Note that this property is expressed on a legal resource, not on one of its language-specific legal expression."""@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:seeAlso eli:transposed_by ;
+    owl:equivalentProperty eli:implemented_by ;
+    owl:inverseOf eli:applies ;
+    owl:versionInfo "created in v1.1"@en ;
+    skos:historyNote "v1.1 : this property was deprecated in favor of the more generic term \"applied_by\" to avoid confusion"@en .
+
+eli:basis_for a owl:ObjectProperty ;
+    rdfs:label "basis for"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Indicates that this legal resource or expression empowers another . Typically primary legislation is the basis for secondary legislation."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range eli:LegalResource ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition"@en .
+
+eli:cites a owl:ObjectProperty ;
+    rdfs:label "cites"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Citation in the text of the legislation. This may be at the legal resource or legal expression level, as required by the implementation context. This includes verbatim citation and citations in referrals."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range owl:Thing ;
+    owl:versionInfo "created in v1.0" .
+
+eli:commences a owl:ObjectProperty ;
+    rdfs:label "commences"@en ;
+    rdfs:comment """Indicates that this legal resource sets another legal resource into force.
+Note the the date of entry into force of the other resource should be modified accordingly.
+Note also that it is not possible to indicate when the entry into force should happen."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:subPropertyOf eli:changes ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:consolidates a owl:ObjectProperty ;
+    rdfs:label "consolidates"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Indicates that this consolidated legal resource or expression (which is usually the product of an editorial process that revises the legislation) takes into account another one. This property should be used multiple times to refer to both the original version or the previous consolidated version, and to the legislations making the change."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition"@en .
+
+eli:corrects a owl:ObjectProperty ;
+    rdfs:label "corrects"@en ;
+    rdfs:comment "Indicates that this resource introduces textual modifications (like correction of spelling mistakes) with no legal change in another resource, expression or format; typically corrigenda in EU legislation. For modifications that have a legal impact, use eli:amends."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:Format eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:date_no_longer_in_force a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "date no longer in force"@en ;
+    rdfs:comment "The last date any part of the legislation cease to be in force, if the date is known (can be seen as the end date of a dc:valid range for this resource)."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range xsd:date ;
+    rdfs:seeAlso eli:first_date_entry_in_force ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition so it symmetric to date_entry_into_force."@en .
+
+eli:first_date_entry_in_force a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "first date of entry into force"@en ;
+    rdfs:comment "The first date any part of the legal resource or legal expression came into force (can be seen as the start date of a dc:valid range for this resource)"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range xsd:date ;
+    rdfs:seeAlso eli:date_no_longer_in_force ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    owl:versionInfo "created in v1.0" .
+
+eli:format a owl:ObjectProperty ;
+    rdfs:label "format"@en ;
+    eli:specificPropertyOf dc1:format ;
+    rdfs:comment """The file format, physical medium, or dimensions of the resource (definition from Dublin Core).
+Possible URIs values should be taken from http://www.iana.org/assignments/media-types (e.g. http://www.iana.org/assignments/media-types/application/xml), and can serve as a basis for content negotiation for the server to return the appropriate file based on the client preference."""@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range owl:Thing ;
+    owl:versionInfo "created in v1.0" .
+
+eli:is_another_publication_of a owl:ObjectProperty ;
+    rdfs:label "is another publication of"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment """Indicates that this resource is a new publication, in a different official journal, of another resource already published elsewhere, and cannot be considered to be the same resource (owl:sameAs cannot be used to avoid potential duplication of certain metadata, like the date of publication, or the publisher).
+
+Note that this is different from the exceptionnal cases of "republication", where the same resource is actually republished in the same official journal a few days after its initial publication, in case of errors."""@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:LegalResource ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:is_embodied_by a owl:ObjectProperty ;
+    rdfs:label "is embodied by"@en ;
+    rdfs:comment "Relates a legal expression to a physical format of that expression (definition adapted from RDA). Inverse of \"embodies\"."@en ;
+    rdfs:domain eli:LegalExpression ;
+    rdfs:range eli:Format ;
+    rdfs:subPropertyOf <http://www.rdaregistry.info/Elements/e/#P20059> ;
+    owl:versionInfo "created in v1.0" .
+
+eli:is_member_of a owl:ObjectProperty ;
+    rdfs:label "is member of"@en ;
+    eli:specificPropertyOf dc1:isPartOf ;
+    rdfs:comment "Indicates that this resource is conceptually included in another one. Typically the successive temporal versions of a given legislation are conceptually members of a single « abstract » resource. For the notion of physical inclusion, use eli:is_part_of."@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:LegalResource ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:is_part_of a owl:ObjectProperty ;
+    rdfs:label "is part of"@en ;
+    eli:originalName "composed"@en ;
+    eli:specificPropertyOf dc1:isPartOf ;
+    rdfs:comment "A related resource in which the described resource is physically included. Covers the case of text included in an Official Journal, or an article included in a text. For the notion of conceptual/temporal inclusion, use eli:is_member_of."@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:LegalResource ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1" ;
+    skos:historyNote "Starting with v1.1, the notion of conceptual inclusion is expressed with eli:is_member_of instead of eli:is_part_of."@en .
+
+eli:published_in a owl:DatatypeProperty ;
+    rdfs:label "published in"@en ;
+    rdfs:comment """Reference to the Official Journal or other publication manifestation in which this format is published.
+This property should be used when the value cannot be identified by a suitable URI; if a URI is available, the property "published_in_format" should be used."""@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso eli:published_in_format ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : modified the range to xsd:string, and introduced the corresponding object property published_in_format."@en .
+
+eli:published_in_format a owl:ObjectProperty ;
+    rdfs:label "published in format"@en ;
+    rdfs:comment """Reference to the Official Journal or other publication manifestation in which this format is published.
+This property should be used when the value can be identified by a suitable URI; in the absence of such a URI, the property "published_in" should be used with a string value."""@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range eli:Format ;
+    rdfs:seeAlso eli:published_in ;
+    owl:inverseOf eli:publishes ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:publisher a owl:DatatypeProperty ;
+    rdfs:label "publisher"@en ;
+    eli:specificPropertyOf dc1:publisher ;
+    rdfs:comment """An entity responsible for making the resource available (definition from Dublin Core).
+This property should be used when the value cannot be identified by a suitable URI; if a URI is available, the property "publisher_agent" should be used."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:Format eli:LegalExpression ) ] ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso eli:publisher_agent ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : modified the range to xsd:string and introduced the corresponding object property publisher_agent."@en .
+
+eli:publisher_agent a owl:ObjectProperty ;
+    rdfs:label "publisher agent"@en ;
+    eli:specificPropertyOf dc1:publisher ;
+    rdfs:comment """An entity responsible for making the resource available (definition from Dublin Core).
+This property should be used when the value can be identified by a suitable URI; in the absence of such a URI, the property "publisher" should be used with a string value."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:Format eli:LegalExpression ) ] ;
+    rdfs:range eli:Agent ;
+    rdfs:seeAlso eli:publisher ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:publishes a owl:ObjectProperty ;
+    rdfs:label "publishes"@en ;
+    rdfs:comment "Inverse of \"published_in_format\". Note this property does not link a publisher with a resource, but rather a specific Format of a resource with a specific Format of another resource, indicating that the subject Format publishes the object Format."@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range eli:Format ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en .
+
+eli:realizes a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "realizes"@en ;
+    rdfs:comment "Relates a legal expression to the legal resource realised through that expression. (definition adapted from RDA). Inverse of \"is_realized_by\"."@en ;
+    rdfs:domain eli:LegalExpression ;
+    rdfs:range eli:LegalResource ;
+    rdfs:subPropertyOf <http://www.rdaregistry.info/Elements/e/#P20231> ;
+    owl:versionInfo "created in v1.0" .
+
+eli:relevant_for a owl:ObjectProperty ;
+    rdfs:label "relevant for"@en ;
+    eli:specificPropertyOf dc1:coverage ;
+    rdfs:comment """Refers to a place or an area associated with the resource. This covers the notions of jurisdiction, sovereignty, applicability or administrative area. The place identifier can be taken from the Administrative Territorial Unit table published of the EU Publications Office at http://publications.europa.eu/mdr/authority/atu. Member States don't have to recreate their own list of values.
+
+The group notes the limitations of what can be said with a single property; member states can refine this notion by declaring specific sub properties."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range eli:AdministrativeArea ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "Starting from v1.1, the values for this property can be taken from the named authority list published by the Office of Publications instead of defining new values."@en .
+
+eli:repeals a owl:ObjectProperty ;
+    rdfs:label "repeals"@en ;
+    rdfs:comment "Indicates that this legal resource or legal expression completely cancels, abrogates or replaces another. If a resource partially repeals another, this link can be used at the corresponding subdivision level being completely repealed."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:subPropertyOf eli:changes ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:responsibility_of a owl:DatatypeProperty ;
+    rdfs:label "responsibility of"@en ;
+    eli:originalName "service"@en ;
+    rdfs:comment """An individual, organisation or organisational unit that has some kind of responsibility for the legislation. Typically the ministry who is/was in charge of elaborating the legislation, or the adressee for potential questions about the legislation once it is published.
+This property should be used when the value cannot be identified by a suitable URI; if a URI is available, the property "responsibility_of_agent" should be used."""@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso eli:responsibility_of_agent ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : the definition was made more precise, with examples. Introduced the corresponding object property responsibility_of_agent."@en .
+
+eli:responsibility_of_agent a owl:ObjectProperty ;
+    rdfs:label "responsibility of agent"@en ;
+    rdfs:comment """An individual, organisation or organisational unit that has some kind of responsibility for the legislation. Typically the ministry who is/was in charge of elaborating the legislation, or the adressee for potential questions about the legislation once it is published.
+This property should be used when the value can be identified by a suitable URI; in the absence of such a URI, the property "responsibility_of" should be used with a string value."""@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range eli:Agent ;
+    rdfs:seeAlso eli:responsibility_of ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:rightsholder a owl:DatatypeProperty ;
+    rdfs:label "rights holder"@en ;
+    eli:specificPropertyOf dc1:rightsHolder ;
+    rdfs:comment """A person or organisation owning or managing rights over the resource (definition from Dublin Core).
+This property should be used when the value cannot be identified by a suitable URI; if a URI is available, the property "rightsholder_agent" should be used."""@en ;
+    rdfs:domain eli:Format ;
+    rdfs:range xsd:string ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : modified the range to xsd:string, and introduced the corresponding object property rightsholder_agent."@en .
+
+eli:title_alternative a owl:DatatypeProperty ;
+    rdfs:label "alternative title"@en ;
+    eli:specificPropertyOf dc1:alternative ;
+    rdfs:comment """An alternative title of the expression (if any).
+
+Note that, if needed, an alternative title can also be stated on a legal resource using the Dublin Core "alternative" property."""@en ;
+    rdfs:domain eli:LegalExpression ;
+    rdfs:range xsd:string ;
+    owl:versionInfo "created in v1.0" .
+
+eli:title_short a owl:DatatypeProperty ;
+    rdfs:label "short title"@en ;
+    eli:specificPropertyOf dc1:alternative ;
+    rdfs:comment "Established short title of the expression (if any)"@en ;
+    rdfs:domain eli:LegalExpression ;
+    rdfs:range xsd:string ;
+    owl:versionInfo "created in v1.0" .
+
+eli:transposed_by a owl:ObjectProperty ;
+    rdfs:label "transposed by"@en ;
+    rdfs:comment """Inverse of "transposes".
+
+Note that this property is expressed on a legal resource, not on one of its language-specific legal expression."""@en ;
+    rdfs:domain eli:LegalResource ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:seeAlso eli:implemented_by ;
+    rdfs:subPropertyOf eli:applied_by ;
+    owl:inverseOf eli:transposes ;
+    owl:versionInfo "created in v1.0" ;
+    skos:historyNote "v1.1 : this property was made a subproperty of \"applied_by\""@en .
+
+eli:version_date a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "version date"@en ;
+    eli:specificPropertyOf dc1:date ;
+    rdfs:comment "The point-in-time at which the provided description of the legislation is valid."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range xsd:date ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition"@en .
+
+<http://publications.europa.eu/resource/authority/atu> a owl:NamedIndividual,
+        skos:ConceptScheme .
+
+<http://rdaregistry.info/Elements/c/C10001> a owl:Class ;
+    rdfs:label "Work"@en .
+
+<http://rdaregistry.info/Elements/c/C10002> a owl:Class ;
+    rdfs:label "Agent"@en .
+
+<http://rdaregistry.info/Elements/c/C10006> a owl:Class ;
+    rdfs:label "Expression"@en .
+
+<http://rdaregistry.info/Elements/c/C10007> a owl:Class ;
+    rdfs:label "Manifestation"@en .
+
+<http://rdaregistry.info/Elements/m/P30103> a owl:ObjectProperty ;
+    rdfs:label "has exemplar of manifestation"@en .
+
+<http://www.rdaregistry.info/Elements/e/#P20059> a owl:ObjectProperty ;
+    rdfs:label "has manifestation of expression"@en .
+
+<http://www.rdaregistry.info/Elements/e/#P20231> a owl:ObjectProperty ;
+    rdfs:label "has work expressed"@en .
+
+<http://www.rdaregistry.info/Elements/m/#P30139> a owl:ObjectProperty ;
+    rdfs:label "has expression manifested"@en .
+
+<http://www.rdaregistry.info/Elements/w/#P10078> a owl:ObjectProperty ;
+    rdfs:label "has expression of work"@en .
+
+eli:AdministrativeArea a owl:Class ;
+    rdfs:label "Administrative Area"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept either in concept scheme eli:AdministrativeAreaTable or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit table published of the EU Publications Office)."@en ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( skos:Concept [ a owl:Class ;
+                        owl:unionOf ( [ a owl:Restriction ;
+                                    owl:hasValue eli:AdministrativeAreaTable ;
+                                    owl:onProperty skos:inScheme ] [ a owl:Restriction ;
+                                    owl:hasValue <http://publications.europa.eu/resource/authority/atu> ;
+                                    owl:onProperty skos:inScheme ] ) ] ) ] ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "Starting from v1.1, the values for administrative areas can be taken from the Administrative Territorial Unit table published of the EU Publications Office."@en .
+
+eli:LegalValue-definitive a eli:LegalValue,
+        owl:NamedIndividual,
+        skos:Concept ;
+    owl:versionInfo "created in v1.0"@en,
+        "modified in v1.1"@en ;
+    skos:broader eli:LegalValue-authoritative ;
+    skos:definition "Document for which the text is conclusively what the law says. (The digitally signed version of an Official Journal.)"@en ;
+    skos:example "The digitally signed version of an Official Journal."@en ;
+    skos:historyNote "v1.1 : improved definition"@en ;
+    skos:inScheme eli:LegalValueTable ;
+    skos:prefLabel "definitive"@en .
+
+eli:LegalValue-unofficial a eli:LegalValue,
+        owl:NamedIndividual,
+        skos:Concept ;
+    owl:versionInfo "created in v1.0"@en ;
+    skos:definition "Document has no particular or special standing."@en ;
+    skos:inScheme eli:LegalValueTable ;
+    skos:prefLabel "unofficial"@en ;
+    skos:topConceptOf eli:LegalValueTable .
+
+eli:ResourceTypeTable a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Resource type table"@en ;
+    skos:definition """A set of types for a legal resource.
+ELI does not include a set of values for this table."""@en .
+
+eli:applies a owl:ObjectProperty ;
+    rdfs:label "applies"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment """Indicates that this legislation (or part of a legislation) somehow conforms with another legislation. This is an informative link, and it has no legal value. For legally-binding links of transposition, use the property transposes. This can be used for example : 
+  - when a pre-existing law already conforms to a recent european directive (in that case it does not "transposes" it strictly speaking);
+  - when non-EU member states make sure their legislation is conformant with EU law without strictly speaking transposing it;
+  - when a legislation from a local authority conforms with a national legislation;
+
+Note that this should point to a LegalResource, not to a language-specific expression."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range eli:LegalResource ;
+    rdfs:seeAlso eli:transposes ;
+    owl:equivalentProperty eli:implements ;
+    owl:versionInfo "created in v1.1"@en .
+
+eli:implemented_by a owl:ObjectProperty ;
+    rdfs:label "implemented by"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "This property is deprecated. Use \"applied_by\" instead."@en ;
+    owl:deprecated true ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en .
+
+eli:implements a owl:ObjectProperty ;
+    rdfs:label "implements"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "This property is deprecated. Use \"applies\" instead."@en ;
+    owl:deprecated true ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : this property was deprecated in favor of the more generic term \"applies\" to avoid confusion."@en .
+
+eli:transposes a owl:ObjectProperty ;
+    rdfs:label "transposes"@en ;
+    rdfs:comment """Indicates that this legislation (or part of legislation) fulfills the objectives set by another legislation, by passing appropriate implementation measures. Typically, some legislations of European Union's member states or regions transpose European Directives. This indicates a legally binding link between the 2 legislations, at act or article level, from the original version of a national implementing measure to the legal resource Directive as published in the EU Official Journal. Can be used for transposition tables, once EU Publication Office has introduced ELI support down to the article level.
+
+Note that this should point to the legal resource of the Directive itself, not to one of its language-specific legal expression."""@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range eli:LegalResource ;
+    rdfs:seeAlso eli:implements ;
+    rdfs:subPropertyOf eli:applies ;
+    owl:versionInfo "created in v1.0" ;
+    skos:historyNote "v1.1 : this property was made a subproperty of \"applies\", and the definition was improved."@en .
+
+<http://publications.europa.eu/resource/authority/language> a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    skos:definition """A set of values for languages.
+ELI does not include a set of values for this table."""@en .
+
+eli:LegalValue-authoritative a eli:LegalValue,
+        owl:NamedIndividual,
+        skos:Concept ;
+    owl:versionInfo "created in v1.0"@en,
+        "modified in v1.1"@en ;
+    skos:broader eli:LegalValue-official ;
+    skos:definition "The publisher gives some special status to the publication of the document. (\"The Queens Printer\" version of a UK Act of Parliament). This status is specific to UK where no text can be considered « definitive »."@en ;
+    skos:example "\"The Queens Printer\" version of a UK Act of Parliament, or the Official Journal version of a EU Directive published by EU Publications Office."@en ;
+    skos:historyNote "v1.1 : improved definition"@en ;
+    skos:inScheme eli:LegalValueTable ;
+    skos:narrower eli:LegalValue-definitive ;
+    skos:prefLabel "authoritative"@en .
+
+eli:LegalValue-official a eli:LegalValue,
+        owl:NamedIndividual,
+        skos:Concept ;
+    owl:versionInfo "created in v1.0"@en,
+        "modified in v1.1"@en ;
+    skos:definition "Document is published by an organisation with the public task of making the information available (A consolidated version of a EU directive published by EU Publications Office.)"@en ;
+    skos:example "A consolidated version of a EU directive published by EU Publications Office."@en ;
+    skos:historyNote "v1.1 : improved definition"@en ;
+    skos:inScheme eli:LegalValueTable ;
+    skos:narrower eli:LegalValue-authoritative ;
+    skos:prefLabel "official"@en ;
+    skos:topConceptOf eli:LegalValueTable .
+
+eli:changed_by a owl:ObjectProperty ;
+    rdfs:label "changed by"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Inverse of « changes ». Indicates that this legal resource or expression is being legally changed by another. This encompasses the notions of amendment, replacement, repeal, or other types of change."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    owl:inverseOf eli:changes ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition"@en .
+
+eli:Agent a owl:Class ;
+    rdfs:label "Agent"@en ;
+    owl:equivalentClass <http://rdaregistry.info/Elements/c/C10002> ;
+    owl:versionInfo "created in v1.0" .
+
+eli:InForce a owl:Class ;
+    rdfs:label "In force"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme eli:InForceTable"@en ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue eli:InForceTable ;
+                        owl:onProperty skos:inScheme ] ) ] ;
+    owl:versionInfo "created in v1.0" .
+
+eli:changes a owl:ObjectProperty ;
+    rdfs:label "changes"@en ;
+    eli:specificPropertyOf dc1:relation ;
+    rdfs:comment "Indicates that this legal resource or expression legally changes another. This encompasses the notions of amendment, replacement, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change. Note, the property is to be used to express the existence of a change relationship between two acts rather than the existence of a consolidated version of the text that shows the result of the change. For consolidation relationships, use the \"consolidates\" and \"consolidated_by\" properties."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( eli:LegalExpression eli:LegalResource ) ] ;
+    owl:versionInfo "created in v1.0",
+        "modified in v1.1"@en ;
+    skos:historyNote "v1.1 : improved definition."@en .
+
+eli:LegalValue a owl:Class ;
+    rdfs:label "Legal value"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme eli:LegalValueTable"@en ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue eli:LegalValueTable ;
+                        owl:onProperty skos:inScheme ] ) ] ;
+    owl:versionInfo "created in v1.0" .
+
+xsd:date a rdfs:Datatype .
+
+eli:InForceTable a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "In force table"@en ;
+    skos:definition """A set of values for the legal force of a resource.
+ELI includes a set of values for this table."""@en .
+
+eli:LegalValueTable a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Legal value table"@en ;
+    skos:definition """A set of values for the legal value of a resource.
+ELI ontology includes a set of values for this table."""@en ;
+    skos:hasTopConcept eli:LegalValue-official,
+        eli:LegalValue-unofficial .
+
+eli:Format a owl:Class ;
+    rdfs:label "Format"@en ;
+    rdfs:comment """The physical embodiment of a legal expression, either on paper or in any electronic format (definition adapted from RDA).
+For example, any electronic or physical format of the legal expression (XML, TIFF, PDF, etc.) ; e.g. PDF version of act 3 of 2005.  (adapted from Akoma Ntoso)"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty eli:format ],
+        <http://rdaregistry.info/Elements/c/C10007> ;
+    owl:versionInfo "created in v1.0" .
+
+eli:LegalExpression a owl:Class ;
+    rdfs:label "Legal Expression"@en ;
+    rdfs:comment """The intellectual realisation of a legal resource in the form of a "sequence of signs" (typically alpha-numeric characters in a legal context) (definition adapted from RDA)
+For example, any version of the legal resource whose content is specified and different from others for any reason: language, versions, etc.;
+
+Note that ELI ontology accommodates different point of view on what should be considered a new legal resource, or a new legal expression of the same resource. Typically, a consolidated version can be viewed, in the context of ELI, either as separate legal resource (linked to original version and previous consolidated version using corresponding ELI relations), or as a different legal expression of the same legal resource."""@en ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10006> ;
+    owl:versionInfo "created in v1.0" .
+
+eli:LegalResource a owl:Class ;
+    rdfs:label "Legal Resource"@en ;
+    rdfs:comment """A distinct intellectual creation (i.e., the intellectual content). (definition adapted from RDA - Resource Description and Access, see http://www.rdaregistry.info/).
+For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (adapted from Akoma Ntoso)
+
+Legal resource can be linked together using properties defined in the model.
+A legal resource can represent a legal act or any component of a legal act, like an article.
+
+Note that ELI ontology accommodates different point of view on what should be considered a new legal resource, or a new legal expression of the same resource. Typically, a consolidated version can be viewed, in the context of ELI, either as separate legal resource (linked to original version and previous consolidated version using corresponding ELI relations), or as a different legal expression of the same legal resource."""@en ;
+    rdfs:subClassOf <http://rdaregistry.info/Elements/c/C10001> ;
+    owl:versionInfo "created in v1.0" .
+
