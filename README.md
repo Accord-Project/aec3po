@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The Architecture Engineering and Construction Compliance Checking and Permitting Ontology (AEC3PO) is a central .
+The Architecture Engineering and Construction Compliance Checking and Permitting Ontology (AEC3PO) is a central ontology developed in the context of the EU project ACCORD.
 
 It uses namespace `https://w3id.org/lbd/aec3po/`, prefixed `aec3po:`.
 
-ontology developed in the context of the EU project ACCORD 
+
 
 ## Ontology Requirements
 
