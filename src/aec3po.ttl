@@ -441,6 +441,34 @@ aec3po:Statement a owl:Class ;
     rdfs:subClassOf aec3po:DocumentSubdivision ;
     skos:example "Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."@en .
 
+
+aec3po:Appliances a owl:Class ;
+    rdfs:label "Requirement"@en ;
+    rdfs:comment """Represents the Appliances tag in the semantic mark-up Requirement Applicabilities
+Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:subClassOf aec3po:Statement ;
+owl:disjointWith aec3po:Selection, aec3po:Requirement,  aec3po:Exceptions .			
+
+aec3po:Exceptions a owl:Class ;
+    rdfs:label "Requirement"@en ;
+    rdfs:comment """Represents the Exception tag in the semantic mark-up Requirement Applicabilities
+Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:subClassOf aec3po:Statement ;
+    owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Requirement .			
+
+aec3po:Requirement a owl:Class ;
+    rdfs:label "Requirement"@en ;
+    rdfs:comment """Represents the Requirement tag in the semantic mark-up Requirement Applicabilities
+Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:subClassOf aec3po:Statement ;
+    owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Exceptions .	
+
+aec3po:Selection a owl:Class ;
+    rdfs:label "Requirement"@en ;
+    rdfs:comment """Represents the Selection tag in the semantic mark-up Requirement Applicabilities Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:subClassOf aec3po:Statement ;
+    owl:disjointWith   aec3po:Requirement, aec3po:Applicabilities, aec3po:Exceptions .		
+
 aec3po:ComparisonOperatorTable a skos:ConceptScheme ;
     rdfs:label "Opeator table"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
