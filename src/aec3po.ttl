@@ -286,6 +286,140 @@ aec3po:hasDesign a owl:ObjectProperty ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Design .
 
+<<<<<<< HEAD
+=======
+aec3po:Document a owl:Class ;
+    rdfs:label "Document"@en ;
+    rdfs:comment "A document representing AEC regulations, guidelines, building codes etc."@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    skos:example "Approved Document A, Eurocode, Finish Regulations..."@en .
+
+aec3po:FeatureOfInterest a owl:Class ;
+    rdfs:label "Feature Of Interest"@en ;
+    rdfs:comment "The object whose conformance against checks is verified."@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf dul:Object ;
+    skos:example "A building, a building space, a building element, the set of columns in a building, ..."@en ;
+    skos:note """It is expected that classes in other ontologies are used to multi-type instances of FeatureOfInterest.
+  For example a feature of interest may also be:
+  - a bot:Zone or a bot:Element
+  - a ifc:IfcRamp, a ifc:IfcSurfaceFeature"""@en .
+
+aec3po:Checking a owl:Class ;
+    rdfs:label "Checking"@en ;
+    rdfs:comment """Act of verifying a check to determine the conformance of some design. 
+    Links to Verifier that made the checking act ;
+    Links to the checks that were verified, either satified, or unsatisfied;
+    Links to the designs that were satisfied, or unsatisfied."""@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty aec3po:madeBy ;
+            owl:someValuesFrom aec3po:Verifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty aec3po:checked ],
+        dul:Event .
+
+aec3po:ComparisonOperator a owl:Class ;
+    rdfs:label "comparisonComparisonOperator"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:ComparisonOperatorTable"@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue eli:ComparisonOperatorTable ;
+                        owl:onProperty skos:inScheme ] ) ] .
+
+aec3po:Design a owl:Class ;
+    rdfs:label "Design"@en ;
+    rdfs:comment """A Description of some design of a feature of interest, in terms of structure, geometry, and function. 
+    May be linked to a feature of interest to describe the design it has, for example using the ClassificationDesign subclass.
+    May be linked to a check, verifier, or check result, to describe the kind of design it is for."""@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf dul:Design ;
+    skos:example """Example: 
+- the type of use of a building (Residential / Commercial)
+- the type of structural material (steel/ RC / timber)
+- the designed height of a building (High-rise, Mid-rise, Low-rise)
+- the area of space abc in IFC model xyz is 14 m2"""@en .
+
+aec3po:Property a owl:Class ;
+    rdfs:label "Property"@en ;
+    rdfs:comment "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf dul:Quality ;
+    skos:example "The height of a building, the area of a space, the U-value of a wall"@en .
+
+aec3po:Statement a owl:Class ;
+    rdfs:label "Statement"@en ;
+    rdfs:comment "Something said in a building compliance-related document"@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf aec3po:DocumentSubdivision ;
+    skos:example "Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."@en .
+
+
+aec3po:Appliances a owl:Class ;
+    rdfs:label "Requirement"@en ;
+    rdfs:comment """Represents the Appliances tag in the semantic mark-up Requirement Applicabilities
+Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:subClassOf aec3po:Statement ;
+owl:disjointWith aec3po:Selection, aec3po:Requirement,  aec3po:Exceptions .			
+
+aec3po:Exceptions a owl:Class ;
+    rdfs:label "Requirement"@en ;
+    rdfs:comment """Represents the Exception tag in the semantic mark-up Requirement Applicabilities
+Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:subClassOf aec3po:Statement ;
+    owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Requirement .			
+
+aec3po:Requirement a owl:Class ;
+    rdfs:label "Requirement"@en ;
+    rdfs:comment """Represents the Requirement tag in the semantic mark-up Requirement Applicabilities
+Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:subClassOf aec3po:Statement ;
+    owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Exceptions .	
+
+aec3po:Selection a owl:Class ;
+    rdfs:label "Requirement"@en ;
+    rdfs:comment """Represents the Selection tag in the semantic mark-up Requirement Applicabilities Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:subClassOf aec3po:Statement ;
+    owl:disjointWith   aec3po:Requirement, aec3po:Applicabilities, aec3po:Exceptions .		
+
+aec3po:ComparisonOperatorTable a skos:ConceptScheme ;
+    rdfs:label "Opeator table"@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    skos:definition """A set of values for the comparisonComparisonOperator.
+  C3PO includes a set of values for this table.
+  These values are :
+  - lt : lower than;
+  - le : lower or equal;
+  - eq : equals;
+  - ge : greater or equal;
+  - gt : greater than."""@en ;
+    skos:hasTopConcept aec3po:ComparisonOperator-eq,
+        aec3po:ComparisonOperator-ge,
+        aec3po:ComparisonOperator-gt,
+        aec3po:ComparisonOperator-le,
+        aec3po:ComparisonOperator-lt .
+
+aec3po:PropertyKind a owl:Class ;
+    rdfs:label "Property Kind"@en ;
+    rdfs:comment """Any region in a dimensional space, which can be used as a value for a quality of an entity.
+  It is expected that the property kinds are organized in a hierarchy of concepts using skos:broader/skos:narrower.
+  Property kinds may be taken from the QUDT Quantity Kind vocabulary http://qudt.org/2.1/vocab/quantitykind  """@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf dul:Region ;
+    skos:example "Length, Area, U-Value."@en ;
+    skos:note "Both PropertyKind and QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en .
+
+aec3po:Check a owl:Class ;
+    rdfs:label "Check"@en ;
+    rdfs:comment "A piece of information that operationalizes a clause, usually executed in order to control the conformance of some entity against a design. A Check is re-usable, and may be executed several times."@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf dul:Method ;
+    skos:note """A Check may be linked to some Design through the `forDesign` property.
+    A Check may be linked to some Property Kind through the `forPropertyKind` property."""@en .
+
+>>>>>>> cbcfa2296f086adf05cf3113eea789060f681e2d
 skos:Concept a owl:Class .
 
 aec3po:ontology a owl:Ontology ;
