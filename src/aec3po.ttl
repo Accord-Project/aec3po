@@ -89,109 +89,12 @@ aec3po:PrivateVerifier a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
-aec3po:QuantityKindDesign a owl:Class ;
-    rdfs:label "property kind design"@en ;
-    rdfs:comment "Designs that constrain the value for some property kind."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:seeAlso aec3po:comparisonOperators ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom aec3po:QuantityKind ;
-            owl:onProperty [ owl:inverseOf aec3po:hasDesign ] ],
-        [ a owl:Restriction ;
-            owl:cardinality 1 ;
-            owl:onProperty aec3po:hasValue ],
-        [ a owl:Restriction ;
-            owl:cardinality 1 ;
-            owl:onProperty aec3po:hasComparisonOperator ],
-        aec3po:Design ;
-    skos:note "The comparisonOperator must be taken from the aec3po:ComparisonOperatorTable concept scheme defined in module aec3po:comparisonOperators"@en .
-
 aec3po:StateVerifier a owl:Class ;
     rdfs:label "State Verifier"@en ;
     rdfs:comment " "@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
-aec3po:asText a owl:DatatypeProperty ;
-    rdfs:label "as text"@en ;
-    rdfs:comment "The text as written in a compliance related document or the content of a declarative or procedural check, that verifiers can use."@en ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( aec3po:DeclarativeCheck aec3po:ProceduralCheck aec3po:Statement ) ] ;
-    rdfs:isDefinedBy aec3po:ontology .
-
-aec3po:forQuantityKind a owl:ObjectProperty ;
-    rdfs:label "for property kind"@en ;
-    rdfs:comment "Links any entity (check, verification, procedure execution) to some property kind it is "@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range aec3po:QuantityKind .
-
-aec3po:hasEvidence a owl:ObjectProperty ;
-    rdfs:label "has evidence"@en ;
-    rdfs:comment "Links a checking act to some evidence that demonstrates that this checking act is satisfied or unsatisfied."@en ;
-    rdfs:domain aec3po:Checking ;
-    rdfs:isDefinedBy aec3po:ontology .
-
-aec3po:satisfied a owl:ObjectProperty ;
-    rdfs:label "satisfied"@en ;
-    rdfs:comment "Links a checking act to a satisfied feature of interest, property, design, check, or legal resource."@en ;
-    rdfs:domain aec3po:Checking ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range [ a owl:Class ;
-            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:Design aec3po:Check eli:LegalResource ) ] ;
-    rdfs:subPropertyOf aec3po:checked .
-
-aec3po:unsatisfied a owl:ObjectProperty ;
-    rdfs:label "unsatisfied check"@en ;
-    rdfs:comment "Links a checking act to an unsatisfied  feature of interest, property, design, check, or legal resource."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subPropertyOf aec3po:checked .
-
-aec3po:ComparisonOperator-eq a skos:Concept,
-        aec3po:ComparisonOperator ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:definition "Equals comparisonComparisonOperator."@en ;
-    skos:inScheme aec3po:ComparisonOperatorTable ;
-    skos:prefLabel "equals"@en ;
-    skos:topConceptOf aec3po:ComparisonOperatorTable .
-
-aec3po:ComparisonOperator-ge a skos:Concept,
-        aec3po:ComparisonOperator ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:definition "Greater or equal comparisonComparisonOperator."@en ;
-    skos:inScheme aec3po:ComparisonOperatorTable ;
-    skos:prefLabel "greater or equal"@en ;
-    skos:topConceptOf aec3po:ComparisonOperatorTable .
-
-aec3po:ComparisonOperator-gt a skos:Concept,
-        aec3po:ComparisonOperator ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:definition "Greater than comparisonComparisonOperator."@en ;
-    skos:inScheme aec3po:ComparisonOperatorTable ;
-    skos:prefLabel "greater than"@en ;
-    skos:topConceptOf aec3po:ComparisonOperatorTable .
-
-aec3po:ComparisonOperator-le a skos:Concept,
-        aec3po:ComparisonOperator ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:definition "Less or equal comparisonComparisonOperator."@en ;
-    skos:inScheme aec3po:ComparisonOperatorTable ;
-    skos:prefLabel "less or equal"@en ;
-    skos:topConceptOf aec3po:ComparisonOperatorTable .
-
-aec3po:ComparisonOperator-lt a skos:Concept,
-        aec3po:ComparisonOperator ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:definition "Less than comparisonComparisonOperator."@en ;
-    skos:inScheme aec3po:ComparisonOperatorTable ;
-    skos:prefLabel "less than"@en ;
-    skos:topConceptOf aec3po:ComparisonOperatorTable .
-
-aec3po:ProceduralCheck a owl:Class ;
-    rdfs:label "Procedural Check"@en ;
-    rdfs:comment """Procedural checks are semantically described but opaque modules, implemented in any language or as REST API, invoked by micro-services.
-Alternatively, the check procedure may be given using a property such as aec3po:asText."""@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf aec3po:Check .
 
 aec3po:PropertyDesign a owl:Class ;
     rdfs:label "property design"@en ;
@@ -215,25 +118,6 @@ aec3po:hasComparisonOperator a owl:FunctionalProperty,
     rdfs:range aec3po:ComparisonOperator ;
     rdfs:subPropertyOf aec3po:hasDesign .
 
-aec3po:isOperationalizedBy a owl:ObjectProperty ;
-    rdfs:domain eli:DocumentSubdivision ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range aec3po:Check ;
-    owl:inverseOf aec3po:operationalizes .
-
-aec3po:madeBy a owl:ObjectProperty ;
-    rdfs:label "made by"@en ;
-    rdfs:comment "Links a checking act to the verifier that made it."@en ;
-    rdfs:domain aec3po:Checking ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range aec3po:Verifier .
-
-aec3po:operationalizes a owl:ObjectProperty ;
-    rdfs:domain aec3po:Check ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range eli:DocumentSubdivision ;
-    owl:inverseOf aec3po:isOperationalizedBy .
-
 skos:ConceptScheme a owl:Class .
 
 skos:inScheme a owl:ObjectProperty .
@@ -241,14 +125,6 @@ skos:inScheme a owl:ObjectProperty .
 aec3po:ChecklistStatement a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
-
-aec3po:DeclarativeCheck a owl:Class ;
-    rdfs:label "Declarative Check"@en ;
-    rdfs:comment """Declarative check, expressed in IDS, SPARQL, BimSPARQL (SPARQL with eg HDF5 for geometry access, with extra SPARQL functions), or any other declarative language. 
-
-The identifier of a Declarative Check is expected to be dereferenceable, potentially with mediatype-based content negotiation. The content type of the retrieved representation indicates which type of declaration language it uses. Alternatively, the check expression may be given using a property such as aec3po:asText."""@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf aec3po:Check .
 
 aec3po:LegalVerifier a owl:Class ;
     rdfs:label "Legal Verifier"@en ;
@@ -271,13 +147,6 @@ Links a OrCheck to the set of checks that at least one must verify."""@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Check .
 
-aec3po:checked a owl:ObjectProperty ;
-    rdfs:label "checked"@en ;
-    rdfs:comment "Links a checking act to the feature of interest, property, design, check, or legal resource, it verified."@en ;
-    rdfs:domain aec3po:Checking ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:range aec3po:Check .
-
 aec3po:hasDesign a owl:ObjectProperty ;
     rdfs:label "has design"@en ;
     rdfs:comment "Links a feature of interest or a property to a description of its design."@en ;
@@ -285,62 +154,6 @@ aec3po:hasDesign a owl:ObjectProperty ;
             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Design .
-
-<<<<<<< HEAD
-=======
-aec3po:Document a owl:Class ;
-    rdfs:label "Document"@en ;
-    rdfs:comment "A document representing AEC regulations, guidelines, building codes etc."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:example "Approved Document A, Eurocode, Finish Regulations..."@en .
-
-aec3po:FeatureOfInterest a owl:Class ;
-    rdfs:label "Feature Of Interest"@en ;
-    rdfs:comment "The object whose conformance against checks is verified."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Object ;
-    skos:example "A building, a building space, a building element, the set of columns in a building, ..."@en ;
-    skos:note """It is expected that classes in other ontologies are used to multi-type instances of FeatureOfInterest.
-  For example a feature of interest may also be:
-  - a bot:Zone or a bot:Element
-  - a ifc:IfcRamp, a ifc:IfcSurfaceFeature"""@en .
-
-aec3po:Checking a owl:Class ;
-    rdfs:label "Checking"@en ;
-    rdfs:comment """Act of verifying a check to determine the conformance of some design. 
-    Links to Verifier that made the checking act ;
-    Links to the checks that were verified, either satified, or unsatisfied;
-    Links to the designs that were satisfied, or unsatisfied."""@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty aec3po:madeBy ;
-            owl:someValuesFrom aec3po:Verifier ],
-        [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty aec3po:checked ],
-        dul:Event .
-
-aec3po:ComparisonOperator a owl:Class ;
-    rdfs:label "comparisonComparisonOperator"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:ComparisonOperatorTable"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf skos:Concept ;
-    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue eli:ComparisonOperatorTable ;
-                        owl:onProperty skos:inScheme ] ) ] .
-
-aec3po:Design a owl:Class ;
-    rdfs:label "Design"@en ;
-    rdfs:comment """A Description of some design of a feature of interest, in terms of structure, geometry, and function. 
-    May be linked to a feature of interest to describe the design it has, for example using the ClassificationDesign subclass.
-    May be linked to a check, verifier, or check result, to describe the kind of design it is for."""@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Design ;
-    skos:example """Example: 
-- the type of use of a building (Residential / Commercial)
-- the type of structural material (steel/ RC / timber)
-- the designed height of a building (High-rise, Mid-rise, Low-rise)
-- the area of space abc in IFC model xyz is 14 m2"""@en .
 
 aec3po:Property a owl:Class ;
     rdfs:label "Property"@en ;
@@ -384,42 +197,6 @@ aec3po:Selection a owl:Class ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith   aec3po:Requirement, aec3po:Applicabilities, aec3po:Exceptions .		
 
-aec3po:ComparisonOperatorTable a skos:ConceptScheme ;
-    rdfs:label "Opeator table"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    skos:definition """A set of values for the comparisonComparisonOperator.
-  C3PO includes a set of values for this table.
-  These values are :
-  - lt : lower than;
-  - le : lower or equal;
-  - eq : equals;
-  - ge : greater or equal;
-  - gt : greater than."""@en ;
-    skos:hasTopConcept aec3po:ComparisonOperator-eq,
-        aec3po:ComparisonOperator-ge,
-        aec3po:ComparisonOperator-gt,
-        aec3po:ComparisonOperator-le,
-        aec3po:ComparisonOperator-lt .
-
-aec3po:PropertyKind a owl:Class ;
-    rdfs:label "Property Kind"@en ;
-    rdfs:comment """Any region in a dimensional space, which can be used as a value for a quality of an entity.
-  It is expected that the property kinds are organized in a hierarchy of concepts using skos:broader/skos:narrower.
-  Property kinds may be taken from the QUDT Quantity Kind vocabulary http://qudt.org/2.1/vocab/quantitykind  """@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Region ;
-    skos:example "Length, Area, U-Value."@en ;
-    skos:note "Both PropertyKind and QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en .
-
-aec3po:Check a owl:Class ;
-    rdfs:label "Check"@en ;
-    rdfs:comment "A piece of information that operationalizes a clause, usually executed in order to control the conformance of some entity against a design. A Check is re-usable, and may be executed several times."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf dul:Method ;
-    skos:note """A Check may be linked to some Design through the `forDesign` property.
-    A Check may be linked to some Property Kind through the `forPropertyKind` property."""@en .
-
->>>>>>> cbcfa2296f086adf05cf3113eea789060f681e2d
 skos:Concept a owl:Class .
 
 aec3po:ontology a owl:Ontology ;

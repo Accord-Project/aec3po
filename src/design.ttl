@@ -1,0 +1,32 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aec3po:design a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description "The AEC3PO Design module describes descriptions of some design of features of interest, in terms of structure, geometry, and function."@en ;
+    dct:modified "2023-05-25"^^xsd:date ;
+    dct:title "AEC3PO: Feature of Interest"@en ;
+    owl:imports aec3po:quantity_kinds ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri aec3po: .
+
+aec3po:Design a owl:Class ;
+    rdfs:label "Design"@en ;
+    rdfs:comment """A Description of some design of a feature of interest, in terms of structure, geometry, and function. 
+    May be linked to a feature of interest to describe the design it has, for example using the ClassificationDesign subclass.
+    May be linked to a check, verifier, or check result, to describe the kind of design it is for."""@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf dul:Design ;
+    skos:example """Example: 
+- the type of use of a building (Residential / Commercial)
+- the type of structural material (steel/ RC / timber)
+- the designed height of a building (High-rise, Mid-rise, Low-rise)
+- the area of space abc in IFC model xyz is 14 m2"""@en .
