@@ -1,0 +1,24 @@
+aec3po:Table a owl:Class ;
+rdfs:subClassOf aec3po:Document;
+rdfs:label "Table"@en ;
+rdfs:comment """A table is a form of representing informaiton or data in rows and columns. Tables are desribed by captiones.""" .
+
+aec3po:Container a owl:Class ;
+rdfs:subClassOf aec3po:ContainerBox ;
+rdfs:label "Container"@en ;
+rdfs:comment """A rectangular shape within a document containing and object such as table, image, equation and their respective caption.Insipired by DoCo ontology""" .
+
+aec3po:contains a owl:ObjectProperty ;
+  rdfs:label "Contains"@en ;
+  rdfs:comment """A table contains row, colument and other elements."""@en ;
+  rdfs:domain aec3po:Table ;
+  rdfs:range rdfs:Literal ;
+  owl:inverseOf aec3po:isContainedBy .
+
+
+aec3po:caption a owl:DatatypeProperty ;
+  rdfs:label "caption"@en ;
+  rdfs:comment """The caption of a table, image, etc. """@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image) ] .
+
+
