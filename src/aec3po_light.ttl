@@ -324,4 +324,3 @@ aec3po:ComparisonOperatorTable a skos:ConceptScheme ;
         aec3po:ComparisonOperator-lt .
 
 skos:Concept a owl:Class .
-
