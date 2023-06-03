@@ -31,14 +31,18 @@ T2.2  Development  of  the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA, 
 
 
 ## Competency Questions
-- How to define the metadata of a Document that informs/dictates compliance checking?
-- What are the parts of a document, their unic identifiter and order?
-- What type for information (Statement) does a Document contain?
-- What is the coverage of a Document per Administrative Area?
-- What are the stages of the Permitting process per Administrative Area?
-- - What evidence is required in each stage?
-- What type of check needs to be performed for a Statement to comply?
 
+### Compliance
+1. How to define the metadata of a Document that informs/dictates compliance checking?
+2. What is the coverage of a Document per Administrative Area?
+3. What are the parts of a document, their unic identifiter and order?
+4. What type for information (Statement) does a Document contain?
+5. What type of check needs to be performed for a Statement to comply?
+6. Required data to perform a check. 
+
+### Permitting
+ 1. What are the stages of the Permitting process per Administrative Area?
+ 2. What evidence is required in each stage?
 
 ## Pre-commits
 
