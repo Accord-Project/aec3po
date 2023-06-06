@@ -35,7 +35,7 @@ dct:source a owl:ObjectProperty ;
  rdfs:range rdfs:Literal ;
  skos:example "Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en .
 
-dct:coverage a owl:ObjectProperty
+dct:coverage a owl:ObjectProperty ;
 rdfs:label "Coverage"@en ;
 rdfs:comment "The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant." ;
 rdfs:domain aec3po:Document ;
