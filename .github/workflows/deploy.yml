@@ -16,7 +16,7 @@ jobs:
         python-version: '3.x'
         cache: 'pip'
     - run: pip install -r .acimov/requirements.txt
-  #  - run: python .acimov/publish.py
+    - run: python .acimov/publish.py
     - name: rsync deployments
       uses: burnett01/rsync-deployments@5.1
       with:
