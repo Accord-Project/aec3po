@@ -17,7 +17,7 @@
     dct:identifier <https://ym.fi/documents/1410903/35099218/Accessibility+of+Buildings.pdf/56f06cd3-4a27-6ee3-e553-e35731ffa70b/Accessibility+of+Buildings.pdf?t=1680607572789> ;
     dct:issued "2017-04-05"^^xsd:date ;
     dct:references <https://ym.fi/en/the-national-building-code-of-finland> ;
-    dct:coverage "National Building Code of Finland" .
+    dct:coverage aec3po:Finland .
 
 # Instantiate the DocumentSubdivision that contains the Ramp example as a DocumentSubdivision
 <Finnish_Accessibility_DocSubdivision_S2_SubS_2> a aec3po:DocumentSubdivision ;
