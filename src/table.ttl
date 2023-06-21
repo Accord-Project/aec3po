@@ -32,15 +32,15 @@ aec3po:Table a owl:Class ;
 
 aec3po:contains a owl:ObjectProperty ;
   rdfs:label "Contains"@en ;
-  rdfs:comment """A table contains row, columns and other elements."""@en ;
-  rdfs:domain aec3po:Container ;
+  rdfs:comment """A container contains a table and its caption. A table contains row, columns and other elements."""@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image aec3po:Row aec3po:Column) ] ;
   owl:inverseOf aec3po:isContainedBy ;
   rdfs:isDefinedBy aec3po:table .
 
 aec3po:isContainedBy a owl:ObjectProperty ;
   rdfs:label "is contained by"@en ;
   rdfs:comment """A table contains row, columns and other elements."""@en ;
-  rdfs:range aec3po:Container ;
+  rdfs:range [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image aec3po:Row aec3po:Column aec3po:Cell) ] ;
   owl:inverseOf aec3po:contains ;
   rdfs:isDefinedBy aec3po:table .
 
@@ -48,4 +48,22 @@ aec3po:caption a owl:DatatypeProperty ;
   rdfs:label "caption"@en ;
   rdfs:comment """The caption of a table, image, etc. """@en ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image) ] ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:Column a owl:Class ;
+  rdfs:label "Column"@en ;
+  rdfs:subClassOf aec3po:Table ;
+  rdfs:comment """A column in a table.""" ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:Row a owl:Class ;
+  rdfs:label "Row"@en ;
+  rdfs:subClassOf aec3po:Table ;
+  rdfs:comment """A row in a table.""" ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:Cell a owl:Class ;
+  rdfs:label "Cell"@en ;
+  rdfs:subClassOf aec3po:Table ;
+  rdfs:comment """A cell in a table. Cells are contained by rows and columns""" ;
   rdfs:isDefinedBy aec3po:table .
