@@ -72,8 +72,8 @@
 <width_design> a aec3po:PropertyKindDesign ;
     aec3po:hasProperty <hasRampWidth> ;
     aec3po:hasValue 900 ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge ;
-    qudt:hasQuantityKind MilliM .
+    qudt:hasQuantityKind MilliM ;
+    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
 # Define the landing design of the ramp
 <landing_design> a aec3po:PropertyKindDesin ;
