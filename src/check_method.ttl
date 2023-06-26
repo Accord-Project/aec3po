@@ -49,7 +49,7 @@ Alternatively, the check procedure may be given using a property such as aec3po:
     rdfs:subClassOf aec3po:CheckMethod .
 
     
-aec3po:DeclarativeCheck a owl:Class ;
+aec3po:DeclarativeCheckMethod a owl:Class ;
     rdfs:label "Declarative Check"@en ;
     rdfs:comment """Declarative check, expressed in IDS, SPARQL, BimSPARQL (SPARQL with eg HDF5 for geometry access, with extra SPARQL functions), or any other declarative language. 
 
