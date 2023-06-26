@@ -64,16 +64,27 @@
     aec3po:hasDesign <gradient_design> .
 
 # Define the structure design of the ramp
-<structure_design> aec3po:hasValue "easily noticeable and straight with a smooth, hard and non-slippery surface" .
+<structure_design> a aec3po:PropertyKindDesign ;
+    aec3po:hasProperty <hasRampFixed> ;
+    aec3po:hasProperty <hasRampProtectiveEdge> .
 
 # Define the width design of the ramp
-<width_design> aec3po:hasValue "900 millimetres" .
+<width_design> a aec3po:PropertyKindDesign ;
+    aec3po:hasProperty <hasRampWidth> .
 
 # Define the landing design of the ramp
-<landing_design> aec3po:hasValue "a horizontal landing with a length of at least 1,500 millimetres at the lower and upper end of the ramp" .
+<landing_design> a aec3po:PropertyKindDesin ;
+    aec3po:hasProperty <hasRampLowerLandingLenght> ;
+    aec3po:hasProperty <hasRampUpperLandingLenght> .
 
 # Define the gradient design of the ramp
-<gradient_design> aec3po:hasValue "The gradient of the ramp may not exceed five per cent. However, if the elevation difference is no more than 1,000 millimetres, the ramp may not have a gradient of more than eight per cent. In that case, the elevation difference of a continuous ramp may not be more than 500 millimetres, after which there shall be a horizontal intermediate landing with a length of at least 2,000 millimetres. However, in an outdoor area the ramp may have a gradient of more than five per cent only if it can be kept in a condition comparable with that of an indoor ramp." .
+<gradient_design> a aec3po:PropertyKindDesin ;
+    aec3po:hasProperty <hasRampMaxGradient> ;
+    aec3po:hasProperty <hasRampLowerLandingElev> ;
+    aec3po:hasProperty <hasRampUpperLandingElev> ;
+    aec3po:hasProperty <hasRampIntLandingLenght> ;
+    aec3po:hasProperty <hasRampIntLandingElev> ;
+    aec3po:hasProperty <hasRampRampIndoorCondition> .
 
 # Instantiate the ChecklistStatement as a subClassOf Statement
 <ramp_checklist> a aec3po:ChecklistStatement ;
