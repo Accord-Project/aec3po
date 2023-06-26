@@ -95,6 +95,8 @@ aec3po:StateVerifier a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
+aec3po:hasDataRequirement a owl:ObjectProperty;
+   rdfs:domain aec3po:Property.
 
 aec3po:PropertyDesign a owl:Class ;
     rdfs:label "property design"@en ;
