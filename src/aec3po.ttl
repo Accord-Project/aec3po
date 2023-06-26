@@ -172,7 +172,7 @@ aec3po:Statement a owl:Class ;
     skos:example "Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."@en .
 
 
-aec3po:Appliances a owl:Class ;
+aec3po:Application a owl:Class ;
     rdfs:label "Appliances"@en ;
     rdfs:comment """Represents the Appliances tag in the semantic mark-up Requirement Applicabilities
 Selection and Exceptions (RASE)methodology."""@en ;
