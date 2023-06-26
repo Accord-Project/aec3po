@@ -63,6 +63,9 @@
     aec3po:hasDesign <landing_design> ;
     aec3po:hasDesign <gradient_design> .
 
+# Define a quantity kind millimetres 
+<milliM> a aec3po:QuantityKind .
+
 # Define the structure design of the ramp
 <structure_design> a aec3po:PropertyKindDesign ;
     aec3po:hasProperty <hasRampFixed> ;
@@ -72,7 +75,7 @@
 <width_design> a aec3po:PropertyKindDesign ;
     aec3po:hasProperty <hasRampWidth> ;
     aec3po:hasValue 900 ;
-    qudt:hasQuantityKind MilliM ;
+    aec3po:hasQuantityKind <MilliM> ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
 # Define the landing design of the ramp
