@@ -172,30 +172,27 @@ aec3po:Statement a owl:Class ;
     skos:example "Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."@en .
 
 
-aec3po:Application a owl:Class ;
+aec3po:Applications a owl:Class ;
     rdfs:label "Appliances"@en ;
-    rdfs:comment """Represents the Appliances tag in the semantic mark-up Requirement Applicabilities
-Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:comment """Represents the Application tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."""@en ;
     rdfs:subClassOf aec3po:Statement ;
 owl:disjointWith aec3po:Selection, aec3po:Requirement,  aec3po:Exceptions .			
 
 aec3po:Exceptions a owl:Class ;
     rdfs:label "Exception"@en ;
-    rdfs:comment """Represents the Exception tag in the semantic mark-up Requirement Applicabilities
-Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:comment """Represents the Exception tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."""@en ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Requirement .			
 
-aec3po:Requirement a owl:Class ;
+aec3po:Requirements a owl:Class ;
     rdfs:label "Requirement"@en ;
-    rdfs:comment """Represents the Requirement tag in the semantic mark-up Requirement Applicabilities
-Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:comment """Represents the Requirement tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."""@en ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Exceptions .	
 
-aec3po:Selection a owl:Class ;
+aec3po:Selections a owl:Class ;
     rdfs:label "Selection"@en ;
-    rdfs:comment """Represents the Selection tag in the semantic mark-up Requirement Applicabilities Selection and Exceptions (RASE)methodology."""@en ;
+    rdfs:comment """Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."""@en ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith   aec3po:Requirement, aec3po:Applicabilities, aec3po:Exceptions .		
 
