@@ -10,7 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC2x3/FINAL/OWL#> .
+@prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
 
 # Instantiate the Finnish Accessibility Document as a Document
 <Finnish_Accessibility_Doc> a aec3po:Document ;
