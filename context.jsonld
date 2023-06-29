@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@base": "https://data.accordproject.eu/",
+    "$type": "@type",
+    "$id": "@id",
+    "aec3po": "https://w3id.org/lbd/aec3po/",
+    "dct": "http://purl.org/dc/terms/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Application": "aec3po:Application",
+    "Cell": "aec3po:Cell",
+    "CheckStatement": "aec3po:CheckStatement",
+    "ChecklistStatement": "aec3po:ChecklistStatement",
+    "DeclarativeCheckMethod": "aec3po:DeclarativeCheckMethod",
+    "Document": "aec3po:Document",
+    "DocumentSubdivision": "aec3po:DocumentSubdivision",
+    "Exception": "aec3po:Exception",
+    "Requirement": "aec3po:Requirement",
+    "Row": "aec3po:Row",
+    "Selection": "aec3po:Selection",
+    "Table": "aec3po:Table",
+    "caption": "aec3po:caption",
+    "hasPart": {
+      "@id": "dct:hasPart",
+      "@type": "@id"
+    },
+    "identifier": "dct:identifier",
+    "imageData": "aec3po:imageData",
+    "isOperationalizedBy": "aec3po:isOperationalizedBy",
+    "issued": {
+      "@id": "dct:issued",
+      "@type": "xsd:date"
+    },
+    "modified": {
+      "@id": "dct:modified",
+      "@type": "xsd:date"
+    },
+    "spatial": "dct:spatial",
+    "subject": {
+      "@id": "dct:subject",
+      "@type": "@id"
+    },
+    "subjectText": "dc:subject",
+    "temporal": {
+      "@id": "dct:temporal",
+      "@type": "xsd:gYear"
+    },
+    "text": "aec3po:text",
+    "title": "dct:title"
+  }
+}
