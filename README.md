@@ -27,7 +27,8 @@ T2.2  Development  of  the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA, 
 - From tbeach 2023-05-24: one needs to be able to roundtrip from the document to the ontology, and back, preserving the structure and most of the text.
 - From tbeach 2023-05-24: under DocumentSubdivision, one need diagrams, image files, ...
 - From tbeach 2023-05-24: under DocumentSubdivision, one need to describe tables, ...
-- Gonzal: Taxonomy of different functions i.e.  volume calculation, distance calculation. 
+- Gonzal: Taxonomy of different functions i.e.  volume calculation, distance calculation. (Reference, Section 5: https://www.sciencedirect.com/science/article/pii/S266616592300056X).
+  
 
 
 
