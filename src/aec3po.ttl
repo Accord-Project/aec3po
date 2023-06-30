@@ -21,14 +21,17 @@ aec3po:AndCheck a owl:Class ;
         aec3po:ChecklistStatement .
 
 aec3po:CategoryCheckStatement a owl:Class ;
+ rdfs:comment "todo"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:CheckStatement .
 
 aec3po:CertificateCheckStatement a owl:Class ;
+ rdfs:comment "todo"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:CheckStatement .
 
 aec3po:CheckStatement a owl:Class ;
+ rdfs:comment "todo"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
 
@@ -56,6 +59,7 @@ aec3po:ComponentCheck a owl:Class ;
                         owl:onProperty aec3po:forDesign ] ) ] .
 
 aec3po:DefinitionStatement a owl:Class ;
+ rdfs:comment "todo"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
 
@@ -91,11 +95,12 @@ aec3po:PrivateVerifier a owl:Class ;
 
 aec3po:StateVerifier a owl:Class ;
     rdfs:label "State Verifier"@en ;
-    rdfs:comment " "@en ;
+    rdfs:comment "todo"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
 aec3po:hasDataRequirement a owl:ObjectProperty;
+ rdfs:comment "todo"@en ;
    rdfs:domain aec3po:Property.
 
 aec3po:PropertyDesign a owl:Class ;
@@ -125,12 +130,13 @@ skos:ConceptScheme a owl:Class .
 skos:inScheme a owl:ObjectProperty .
 
 aec3po:ChecklistStatement a owl:Class ;
+ rdfs:comment "todo"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:LegalVerifier a owl:Class ;
     rdfs:label "Legal Verifier"@en ;
-    rdfs:comment " "@en ;
+    rdfs:comment "todo"@en ;
     rdfs:isDefinedBy aec3po:ontology .
 
 aec3po:forDesign a owl:ObjectProperty ;
