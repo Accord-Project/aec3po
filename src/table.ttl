@@ -25,7 +25,6 @@ aec3po:Container a owl:Class ;
   rdfs:isDefinedBy aec3po:table .
 
 aec3po:Table a owl:Class ;
-  rdfs:subClassOf aec3po:Container ;
   rdfs:label "Table"@en ;
   rdfs:comment """A table is a form of representing information or data in rows and columns. Tables are described by captions.""" ;
   rdfs:isDefinedBy aec3po:table .
