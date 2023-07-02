@@ -136,7 +136,7 @@ aec3po:ChecklistStatement a owl:Class ;
 
 aec3po:LegalVerifier a owl:Class ;
     rdfs:label "Legal Verifier"@en ;
-    rdfs:comment "todo"@en ;
+    rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en ;
     rdfs:isDefinedBy aec3po:ontology .
 
 aec3po:forDesign a owl:ObjectProperty ;
