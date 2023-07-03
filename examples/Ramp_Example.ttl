@@ -66,10 +66,17 @@
 # Define a quantity kind millimetres 
 <milliM> a aec3po:QuantityKind .
 
+# Define the properties of the structure design of the ramp
+<hasRampFixed> a aec3po:Property .
+<hasRampProtectiveEdge> a aec3po:Property .
+
 # Define the structure design of the ramp
 <structure_design> a aec3po:PropertyKindDesign ;
     aec3po:hasProperty <hasRampFixed> ;
     aec3po:hasProperty <hasRampProtectiveEdge> .
+
+# Define the property width of the ramp as a Property
+<hasRampWidth> a aec3po:Property .
 
 # Define the width design of the ramp
 <width_design> a aec3po:PropertyKindDesign ;
@@ -78,10 +85,22 @@
     aec3po:hasQuantityKind <MilliM> ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
+# Define the properties of the landing design of the ramp
+<hasRampLowerLandingLenght> a aec3po:Property .
+<hasRampUpperLandingLenght> a aec3po:Property .
+
 # Define the landing design of the ramp
 <landing_design> a aec3po:PropertyKindDesin ;
     aec3po:hasProperty <hasRampLowerLandingLenght> ;
     aec3po:hasProperty <hasRampUpperLandingLenght> .
+
+# Define the properties of the gradient design of the ramp
+<hasRampMaxGradient> a aec3po:Property .
+<hasRampLowerLandingElev> a aec3po:Property .
+<hasRampUpperLandingElev> a aec3po:Property .
+<hasRampIntLandingLenght> a aec3po:Property .
+<hasRampIntLandingElev> a aec3po:Property .
+<hasRampIndoorCondition> a aec3po:Property .
 
 # Define the gradient design of the ramp
 <gradient_design> a aec3po:PropertyKindDesin ;
@@ -90,7 +109,7 @@
     aec3po:hasProperty <hasRampUpperLandingElev> ;
     aec3po:hasProperty <hasRampIntLandingLenght> ;
     aec3po:hasProperty <hasRampIntLandingElev> ;
-    aec3po:hasProperty <hasRampRampIndoorCondition> .
+    aec3po:hasProperty <hasRampIndoorCondition> .
 
 # Instantiate the ChecklistStatement as a subClassOf Statement
 <ramp_checklist> a aec3po:ChecklistStatement ;
