@@ -1,0 +1,109 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
+
+# Instantiate the POUM Document as a Document
+<POUM_Doc> a aec3po:Document ;
+    dct:identifier <https://www.ajmalgrat.cat/informacio-oficial/urbanisme-i-obra-publica/poum> ;
+    dct:issued "2005-07-13"^^xsd:date ;
+    dct:references <reference_here> ;
+    dct:coverage aec3po:Spain .
+
+# Instantiate the DocumentSubdivision that contains the rule to be checked
+<POUM_DocSubdivision_Part2_CH1_S2> a aec3po:DocumentSubdivision ;
+    #aec3po: section_number "2" ^^xsd:integer ;
+    #aec3po: subsection_number "2" ^^xsd:integer ;
+    dct:title "Part2_CH1_S2" .
+
+# Link the DocumentSubdivision to the Document using hasPart property
+<POUM_Doc> dct:hasPart <POUM_DocSubdivision_Part2_CH1_S2> . 
+
+# Instantiate the first statement
+<statement_54> a aec3po:Statement ;
+    dct:title "54.8" ;
+    aec3po:asText "The minimum free height of cantilevers over public spaces will be 3.20 metres for street with a width of 8.00 metres or less and 3.50 metres in all other cases." .
+
+# Instantiate the second statement
+<statement_63> a aec3po:Statement ;
+    dct:title "63.3" ;
+    aec3po:asText "All cantilever must be separated by at least 1 meter from the line of the partywall." .   
+
+# Link the statements to the DocumentSubdivision using hasPart property
+<POUM_DocSubdivision_Part2_CH1_S2> dct:hasPart ( <statement_54> <statement_63> ) .    
+
+# Link the DocumentSubdivision to the Document using hasPart property
+<Finnish_Accessibility_Doc> dct:hasPart <Finnish_Accessibility_DocSubdivision_S2_Sub_2> . 
+
+# Instantiate the ChecklistStatement as a subClassOf Statement
+<cantilever_checklist> a aec3po:ChecklistStatement ;
+    rdf:type aec3po:Statement .
+
+# Instantiate the streetBaseOffset NumericalCheck as a subClassOf CheckStatement
+<cantiliver_numericalCheck_streetBaseOffset> a aec3po:NumericalCheck ;
+    rdf:type aec3po:CheckStatement . 
+
+# Instantiate the otherBaseOffset NumericalCheck as a subClassOf CheckStatement
+<cantiliver_numericalCheck_otherBaseOffset> a aec3po:NumericalCheck ;
+    rdf:type aec3po:CheckStatement .   
+
+# Instantiate the partywall distance NumericalCheck as a subClassOf CheckStatement
+<cantiliver_numericalCheck_partywall_distance> a aec3po:NumericalCheck ;
+    rdf:type aec3po:CheckStatement . 
+
+# Instantiate the Check that will operationalise the DocumentSubdivision
+<cantilever_check> a aec3po:Check .
+
+# Link the DocumentSubdivision to the Check by the property "isOperationalizedBy"
+<POUM_DocSubdivision_Part2_CH1_S2> aec3po:isOperationalizedBy <cantilever_check> .
+
+# Specify the class of the check, which is a DeclarativeCheck and Instantiate it as a subClassOf Check
+<cantilever_DeclarativeCheck> a aec3po:DeclarativeCheck ;
+    rdf:type aec3po:Check .
+
+# Instantiate the cantilever_IDSCheck as a subClassOf DeclarativeCheck 
+<cantilever_IDSCheck_1> a aec3po:IDSCheck ;
+    rdf:type aec3po:DeclarativeCheckCheck .
+    #asText "The minimum free height of cantilevers over public spaces will be 3.20 metres for street with a width of 8.00 metres or less" .
+
+<cantilever_IDSCheck_2> a aec3po:IDSCheck ;
+    rdf:type aec3po:DeclarativeCheckCheck .
+    #asText "3.50 metres in all other cases." .
+
+<cantilever_IDSCheck_3> a aec3po:IDSCheck ;
+    rdf:type aec3po:DeclarativeCheckCheck .
+    #asText "All cantilever must be separated by at least 1 meter from the line of the partywall." .
+
+# Instantiate the cantilever as a FeatureOfInterest
+<cantilever> a aec3po:FeatureOfInterest .
+
+# Define the properties of the cantilever
+<streetBaseOffset> a aec3po:Property .
+<othersBaseOffset> a aec3po:Property .
+<partywall_distance> a aec3po:Property .
+
+# Define the design of the properties of the cantilever
+<design_streeBaseOffset> a aec3po:PropertyDesign ;
+    aec3po:hasValue 3.2 ;
+    aec3po:hasQuantityKind <M> ;
+    aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
+
+
+<design_othersBaseOffset> a aec3po:PropertyDesign ;
+    aec3po:hasValue 3.5 ;
+    aec3po:hasQuantityKind <M> ;
+    aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
+
+<design_partywall_distance> a aec3po:PropertyDesign ;
+    aec3po:hasValue 1 ;
+    aec3po:hasQuantityKind <M> ;
+    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
