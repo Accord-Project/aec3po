@@ -1,5 +1,5 @@
 # Spain Demo Case
-## add description of the selected "rules" and the solution using aec3po
+
 ![Spain](image.png )
 This example is provided in the file "Spanish_Example.ttl". This file provides an example of instantiating the aec3po ontology using Turtle syntax with the Spanish demo case. Two rules have been used in this example. Both of them are related to the numerical check of a cantilever of a cultural centre. The rules are defined in clauses 54.8 and 63.3 from the POUM - the Municipal Urban Planning Plan Definitively approved by the Barcelona Territorial Planning Commission on 13-07-2005, respoectively in Part2/Chapter1/Section2 and Part2/Chapter2/Section 2. The statements of the two rules are definedd below in both original spanish text and its English translation. 
 
