@@ -19,30 +19,32 @@
     dct:references <reference_here> ;
     dct:coverage aec3po:Spain .
 
-# Instantiate the DocumentSubdivision that contains the rule to be checked
+# Instantiate the first DocumentSubdivision that contains the rule to be checked
 <POUM_DocSubdivision_Part2_CH1_S2> a aec3po:DocumentSubdivision ;
-    #aec3po: section_number "2" ^^xsd:integer ;
-    #aec3po: subsection_number "2" ^^xsd:integer ;
     dct:title "Part2_CH1_S2" .
 
+# Instantiate the second DocumentSubdivision that contains the rule to be checked
+<POUM_DocSubdivision_Part2_CH2_S2> a aec3po:DocumentSubdivision ;
+    dct:title "Part2_CH2_S2" .
+
 # Link the DocumentSubdivision to the Document using hasPart property
-<POUM_Doc> dct:hasPart <POUM_DocSubdivision_Part2_CH1_S2> . 
+<POUM_Doc> dct:hasPart ( <POUM_DocSubdivision_Part2_CH1_S2> <POUM_DocSubdivision_Part2_CH2_S2> ). 
 
 # Instantiate the first statement
 <statement_54> a aec3po:Statement ;
     dct:title "54.8" ;
     aec3po:asText "The minimum free height of cantilevers over public spaces will be 3.20 metres for street with a width of 8.00 metres or less and 3.50 metres in all other cases." .
 
+# Link the first statements to the DocumentSubdivision using hasPart property
+<POUM_DocSubdivision_Part2_CH1_S2> dct:hasPart  <statement_54> .
+
 # Instantiate the second statement
 <statement_63> a aec3po:Statement ;
     dct:title "63.3" ;
     aec3po:asText "All cantilever must be separated by at least 1 meter from the line of the partywall." .   
 
-# Link the statements to the DocumentSubdivision using hasPart property
-<POUM_DocSubdivision_Part2_CH1_S2> dct:hasPart ( <statement_54> <statement_63> ) .    
-
-# Link the DocumentSubdivision to the Document using hasPart property
-<Finnish_Accessibility_Doc> dct:hasPart <Finnish_Accessibility_DocSubdivision_S2_Sub_2> . 
+# Link the second statement to the DocumentSubdivision using hasPart property
+<POUM_DocSubdivision_Part2_CH2_S2> dct:hasPart  <statement_63>  .     
 
 # Instantiate the ChecklistStatement as a subClassOf Statement
 <cantilever_checklist> a aec3po:ChecklistStatement ;
