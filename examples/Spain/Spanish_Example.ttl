@@ -96,18 +96,7 @@
 <statement_63> aec3po:hasRequiredData <design_partywall_distance> .
 
 
-# Define the CheckMethod (s) that will operationalize the Statement types
-
-<cantilever_check> a aec3po:Check .
-
-# Link the Statement to the type of CheckMethod by the property "isOperationalizedBy"
-<POUM_DocSubdivision_Part2_CH1_S2> aec3po:isOperationalizedBy <cantilever_check> .
-
-# Specify the class of the check method, which is a ProceduralCheck .
-<cantilever_DeclarativeCheck> rdf:type aec3po:DeclarativeCheck .
-    
-
-# Instantiate all the CheckMethod(s) that will operationalize the Statement defined earlier. 
+# Define and Instantiate all the CheckMethod(s) that will operationalize the Statement defined earlier. 
 
 <cantiliver_numericalCheckMethod_streetBaseOffset> rdf:type aec3po:DeclarativeCheckCheck ;
   aec3po:operationalizes <cantiliver_numericalCheckStatement_streetBaseOffset> .
@@ -121,7 +110,7 @@ aec3po:operationalizes <cantiliver_numericalCheckStatement_otherBaseOffset> .
  aec3po:operationalizes  <cantiliver_numericalCheckStatement_partywall_distance> .
 #asText "All cantilever must be separated by at least 1 meter from the line of the partywall." 
 
-
+# Comment for Amna: Perhaps we need an AND or OR at the beginning of this list of checks?
 
 # Start describing the "real" Canteliever from the Spanic Demo Case 
 
