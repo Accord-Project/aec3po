@@ -51,40 +51,18 @@
     rdf:type aec3po:Statement .
 
 # Instantiate the streetBaseOffset NumericalCheckStatement as a subClassOf CheckStatement
-<cantiliver_numericalCheck_streetBaseOffset> rdf:type aec3po:NumericalCheckStatement .  
+<cantiliver_numericalCheckStatement_streetBaseOffset> rdf:type aec3po:NumericalCheckStatement .  
 
 # Instantiate the otherBaseOffset NumericalCheckStatement as a subClassOf CheckStatement
-<cantiliver_numericalCheck_otherBaseOffset> rdf:type aec3po:NumericalCheckStatement .
+<cantiliver_numericalCheckStatement_otherBaseOffset> rdf:type aec3po:NumericalCheckStatement .
 
 # Instantiate the partywall distance NumericalCheckStatement as a subClassOf CheckStatement
-<cantiliver_numericalCheck_partywall_distance> rdf:type aec3po:NumericalCheckStatement .
+<cantiliver_numericalCheckStatement_partywall_distance> rdf:type aec3po:NumericalCheckStatement .
    
 
 #--------End of document and statement description and their classification
 
-# Instantiate the Check that will operationalise the DocumentSubdivision
-
-<cantilever_check> a aec3po:Check .
-
-# Link the Statement to the type of CheckMethod by the property "isOperationalizedBy"
-<POUM_DocSubdivision_Part2_CH1_S2> aec3po:isOperationalizedBy <cantilever_check> .
-
-# Specify the class of the check, which is a ProceduralCheck and Instantiate it as a subClassOf Check. The assumption is that a mirc
-<cantilever_DeclarativeCheck> rdf:type aec3po:DeclarativeCheck .
-    
-
-# Instantiate the cantilever_IDSCheck as a subClassOf DeclarativeCheck 
-<cantilever_IDSCheck_1> a aec3po:IDSCheck ;
-    rdf:type aec3po:DeclarativeCheckCheck .
-    #asText "The minimum free height of cantilevers over public spaces will be 3.20 metres for street with a width of 8.00 metres or less" .
-
-<cantilever_IDSCheck_2> a aec3po:IDSCheck ;
-    rdf:type aec3po:DeclarativeCheckCheck .
-    #asText "3.50 metres in all other cases." .
-
-<cantilever_IDSCheck_3> a aec3po:IDSCheck ;
-    rdf:type aec3po:DeclarativeCheckCheck .
-    #asText "All cantilever must be separated by at least 1 meter from the line of the partywall." .
+#-------Required Data informed by the Statement
 
 # Instantiate the cantilever as a FeatureOfInterest
 <cantilever> a aec3po:FeatureOfInterest .
@@ -112,3 +90,41 @@
     aec3po:hasValue 1 ;
     aec3po:hasQuantityKind <M> ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
+
+<statement_54> aec3po:hasRequiredData <design_streeBaseOffset> .
+<statement_54> aec3po:hasRequiredData <design_othersBaseOffset> .
+<statement_54> aec3po:hasRequiredData <design_partywall_distance> .
+
+
+# Define the CheckMethod (s) that will operationalize the Statement types
+
+<cantilever_check> a aec3po:Check .
+
+# Link the Statement to the type of CheckMethod by the property "isOperationalizedBy"
+<POUM_DocSubdivision_Part2_CH1_S2> aec3po:isOperationalizedBy <cantilever_check> .
+
+# Specify the class of the check method, which is a ProceduralCheck .
+<cantilever_DeclarativeCheck> rdf:type aec3po:DeclarativeCheck .
+    
+
+# Instantiate all the CheckMethod(s) that will operationalize the Statement defined earlier. 
+
+<cantiliver_numericalCheckMethod_streetBaseOffset> rdf:type aec3po:DeclarativeCheckCheck ;
+  aec3po:operationalizes <cantiliver_numericalCheckStatement_streetBaseOffset> .
+  #asText "The minimum free height of cantilevers over public spaces will be 3.20 metres for street with a width of 8.00 metres or less" ;
+
+<cantiliver_numericalCheckMethod_otherBaseOffset>  rdf:type aec3po:DeclarativeCheckCheck ;
+aec3po:operationalizes <cantiliver_numericalCheckStatement_otherBaseOffset> .
+    #asText "3.50 metres in all other cases." 
+
+<cantiliver_numericalCheckMethod_partywall_distance>  rdf:type aec3po:DeclarativeCheckCheck ;
+ aec3po:operationalizes  <cantiliver_numericalCheckStatement_partywall_distance> .
+#asText "All cantilever must be separated by at least 1 meter from the line of the partywall." 
+
+
+
+# Start describing the "real" Canteliever from the Spanic Demo Case 
+
+
+# Conduct the checking act and generate a conformance report. 
+
