@@ -1,0 +1,144 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
+
+# Instantiate the Finnish Accessibility Document as a Document
+<Finnish_Accessibility_Doc> a aec3po:Document ;
+    dct:identifier <https://ym.fi/documents/1410903/35099218/Accessibility+of+Buildings.pdf/56f06cd3-4a27-6ee3-e553-e35731ffa70b/Accessibility+of+Buildings.pdf?t=1680607572789> ;
+    dct:issued "2017-04-05"^^xsd:date ;
+    dct:references <https://ym.fi/en/the-national-building-code-of-finland> ;
+    dct:coverage aec3po:Finland .
+
+# Instantiate the DocumentSubdivision that contains the Ramp example as a DocumentSubdivision
+<Finnish_Accessibility_DocSubdivision_S2_SubS_2> a aec3po:DocumentSubdivision ;
+    #aec3po: section_number "2" ^^xsd:integer ;
+    #aec3po: subsection_number "2" ^^xsd:integer ;
+    dct:title "Passageway leading to a building" .
+
+# Link the DocumentSubdivision to the Document using hasPart property
+<Finnish_Accessibility_Doc> dct:hasPart <Finnish_Accessibility_DocSubdivision_S2_Sub_2> . 
+
+# Instantiate the Check that will operationalise the DocumentSubdivision
+<ramp_check> a aec3po:Check .
+
+# Link the DocumentSubdivision to the Check by the property "isOperationalizedBy"
+<Finnish_Accessibility_DocSubdivision_S2_Sub_2> aec3po:isOperationalizedBy <ramp_check> .
+
+# Instantiate the SWRLCheck as a subClassOf Check 
+#SWRLCheck needs to be added the the core ontology
+<ramp_SWRLCheck> a aec3po:SWRLCheck ;
+    rdf:type aec3po:Check .
+
+# Instantiate the ramp as a FeatureOfInterest
+<ramp> a aec3po:FeatureOfInterest .
+
+# Link the individual ramp to ifcRamp class using owl:sameAs property
+<ramp> owl:sameAs <ifcowl:IfcRamp> .
+
+# Instantiate the statement
+<ramp_statement> a aec3po:Statement ;
+    aec3po:asText "The ramp referred to in subsection 1 above shall be easily noticeable and straight with a smooth, hard and non-slippery surface, width of at least 900 millimetres and, if the ramp is not connected to a fixed structure, a protective edge of at least 50 millimetres in height. There shall be a horizontal landing with a length of at least 1,500 millimetres at the lower and upper end of the ramp. The gradient of the ramp may not exceed five per cent. However, if the elevation difference is no more than 1,000 millimetres, the ramp may not have a gradient of more than eight per cent. In that case, the elevation difference of a continuous ramp may not be more than 500 millimetres, after which there shall be a horizontal intermediate landing with a length of at least 2,000 millimetres. However, in an outdoor area the ramp may have a gradient of more than five per cent only if it can be kept in a condition comparable with that of an indoor ramp. Provisions on railings, handrails and other arrangements intended to prevent falling down and misstepping are laid down by decree issued under section 117d, subsection 2 of the Land Use and Building Act." .
+
+# Link the statement to the ramp as a design
+<ramp> aec3po:hasDesign <design> .
+
+# Define the property design of the ramp
+<design> a aec3po:PropertyDesign ;
+    aec3po:hasDesign <ramp_design> .
+
+# Define the values for the ramp design
+<ramp_design> aec3po:hasValue "easily noticeable and straight with a smooth, hard and non-slippery surface, width of at least 900 millimetres and, if the ramp is not connected to a fixed structure, a protective edge of at least 50 millimetres in height" ;
+    aec3po:hasDesign <structure_design>;
+    aec3po:hasDesign <width_design> ;
+    aec3po:hasDesign <landing_design> ;
+    aec3po:hasDesign <gradient_design> .
+
+# Define a quantity kind millimetres 
+<milliM> a aec3po:QuantityKind .
+
+# Define the properties of the structure design of the ramp
+<hasRampFixed> a aec3po:Property .
+<hasRampProtectiveEdge> a aec3po:Property .
+
+# Define the structure design of the ramp
+<structure_design> a aec3po:PropertyKindDesign ;
+    aec3po:hasProperty <hasRampFixed> ;
+    aec3po:hasProperty <hasRampProtectiveEdge> .
+
+# Define the property width of the ramp as a Property
+<hasRampWidth> a aec3po:Property .
+
+# Define the width design of the ramp
+<width_design> a aec3po:PropertyKindDesign ;
+    aec3po:hasProperty <hasRampWidth> ;
+    aec3po:hasValue 900 ;
+    aec3po:hasQuantityKind <MilliM> ;
+    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
+
+# Define the properties of the landing design of the ramp
+<hasRampLowerLandingLenght> a aec3po:Property .
+<hasRampUpperLandingLenght> a aec3po:Property .
+
+# Define the landing design of the ramp
+<landing_design> a aec3po:PropertyKindDesin ;
+    aec3po:hasProperty <hasRampLowerLandingLenght> ;
+    aec3po:hasProperty <hasRampUpperLandingLenght> .
+
+# Define the properties of the gradient design of the ramp
+<hasRampMaxGradient> a aec3po:Property .
+<hasRampLowerLandingElev> a aec3po:Property .
+<hasRampUpperLandingElev> a aec3po:Property .
+<hasRampIntLandingLenght> a aec3po:Property .
+<hasRampIntLandingElev> a aec3po:Property .
+<hasRampIndoorCondition> a aec3po:Property .
+
+# Define the gradient design of the ramp
+<gradient_design> a aec3po:PropertyKindDesin ;
+    aec3po:hasProperty <hasRampMaxGradient> ;
+    aec3po:hasProperty <hasRampLowerLandingElev> ;
+    aec3po:hasProperty <hasRampUpperLandingElev> ;
+    aec3po:hasProperty <hasRampIntLandingLenght> ;
+    aec3po:hasProperty <hasRampIntLandingElev> ;
+    aec3po:hasProperty <hasRampIndoorCondition> .
+
+# Instantiate the ChecklistStatement as a subClassOf Statement
+<ramp_checklist> a aec3po:ChecklistStatement ;
+    rdf:type aec3po:Statement .
+
+# Instantiate the AndCheck as a subClassOf ChecklistStatement
+<ramp_andCheck> a aec3po:AndCheck ;
+    rdf:type aec3po:ChecklistStatement .
+
+# Define the Property hasSubCheck of the AndCheck
+<ramp_subCheck> aec3po:hasSubCheck <ramp_andCheck> . 
+
+# Instantiate the HumanEvaluatedCheck as a subClassOf CheckStatement
+<ramp_HumanEvaluatedCheck> a aec3po:HumanEvaluatedCheck ;
+    rdf:type aec3po:CheckStatement .
+
+# Instantiate the Width NumericalCheck as a subClassOf CheckStatement
+<ramp_numericalCheck_width> a aec3po:NumericalCheck ;
+    rdf:type aec3po:CheckStatement .
+
+# Instantiate the Landing NumericalCheck as a subClassOf CheckStatement
+<ramp_numericalCheck_landing> a aec3po:NumericalCheck ;
+    rdf:type aec3po:CheckStatement .
+
+# Instantiate the Gradient NumericalCheck as a subClassOf CheckStatement
+<ramp_numericalCheck_Gradient> a aec3po:NumericalCheck ;
+    rdf:type aec3po:CheckStatement .    
+          
+# Define the subchecks of the AndCheck
+# represented as a container sequence
+<ramp_andCheck> aec3po:hasSubCheck (<ramp_HumanEvaluatedCheck> <ramp_numericalCheck_width> <ramp_numericalCheck_landing> <ramp_numericalCheck_Gradient>) .
+
