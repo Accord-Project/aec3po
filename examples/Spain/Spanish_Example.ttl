@@ -93,7 +93,7 @@
 
 <statement_54> aec3po:hasRequiredData <design_streeBaseOffset> .
 <statement_54> aec3po:hasRequiredData <design_othersBaseOffset> .
-<statement_54> aec3po:hasRequiredData <design_partywall_distance> .
+<statement_63> aec3po:hasRequiredData <design_partywall_distance> .
 
 
 # Define the CheckMethod (s) that will operationalize the Statement types
