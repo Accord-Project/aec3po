@@ -50,27 +50,28 @@
 <cantilever_checklist> a aec3po:ChecklistStatement ;
     rdf:type aec3po:Statement .
 
-# Instantiate the streetBaseOffset NumericalCheck as a subClassOf CheckStatement
-<cantiliver_numericalCheck_streetBaseOffset> a aec3po:NumericalCheck ;
-    rdf:type aec3po:CheckStatement . 
+# Instantiate the streetBaseOffset NumericalCheckStatement as a subClassOf CheckStatement
+<cantiliver_numericalCheck_streetBaseOffset> rdf:type aec3po:NumericalCheckStatement .  
 
-# Instantiate the otherBaseOffset NumericalCheck as a subClassOf CheckStatement
-<cantiliver_numericalCheck_otherBaseOffset> a aec3po:NumericalCheck ;
-    rdf:type aec3po:CheckStatement .   
+# Instantiate the otherBaseOffset NumericalCheckStatement as a subClassOf CheckStatement
+<cantiliver_numericalCheck_otherBaseOffset> rdf:type aec3po:NumericalCheckStatement .
 
-# Instantiate the partywall distance NumericalCheck as a subClassOf CheckStatement
-<cantiliver_numericalCheck_partywall_distance> a aec3po:NumericalCheck ;
-    rdf:type aec3po:CheckStatement . 
+# Instantiate the partywall distance NumericalCheckStatement as a subClassOf CheckStatement
+<cantiliver_numericalCheck_partywall_distance> rdf:type aec3po:NumericalCheckStatement .
+   
+
+#--------End of document and statement description and their classification
 
 # Instantiate the Check that will operationalise the DocumentSubdivision
+
 <cantilever_check> a aec3po:Check .
 
-# Link the DocumentSubdivision to the Check by the property "isOperationalizedBy"
+# Link the Statement to the type of CheckMethod by the property "isOperationalizedBy"
 <POUM_DocSubdivision_Part2_CH1_S2> aec3po:isOperationalizedBy <cantilever_check> .
 
-# Specify the class of the check, which is a DeclarativeCheck and Instantiate it as a subClassOf Check
-<cantilever_DeclarativeCheck> a aec3po:DeclarativeCheck ;
-    rdf:type aec3po:Check .
+# Specify the class of the check, which is a ProceduralCheck and Instantiate it as a subClassOf Check. The assumption is that a mirc
+<cantilever_DeclarativeCheck> rdf:type aec3po:DeclarativeCheck .
+    
 
 # Instantiate the cantilever_IDSCheck as a subClassOf DeclarativeCheck 
 <cantilever_IDSCheck_1> a aec3po:IDSCheck ;
