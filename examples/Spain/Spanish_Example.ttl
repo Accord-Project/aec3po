@@ -99,6 +99,8 @@
     aec3po:hasQuantityKind <M> ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
+# Define a quantity kind meter 
+<M> a aec3po:QuantityKind .
 
 <design_othersBaseOffset> a aec3po:PropertyDesign ;
     aec3po:hasValue 3.5 ;
