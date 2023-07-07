@@ -67,13 +67,8 @@
 # Instantiate the cantilever as a FeatureOfInterest
 <cantilever> a aec3po:FeatureOfInterest .
 
-# Define the properties of the cantilever
-<streetBaseOffset> a aec3po:Property .
-<othersBaseOffset> a aec3po:Property .
-<partywall_distance> a aec3po:Property .
-
-# Define the design of the properties of the cantilever
-<design_streeBaseOffset> a aec3po:PropertyDesign ;
+# Define the properties of the cantilever and constraints based on the Statement
+<streeBaseOffset> a aec3po:Property ;
     aec3po:hasValue 3.2 ;
     aec3po:hasQuantityKind <M> ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
@@ -81,19 +76,19 @@
 # Define a quantity kind meter 
 <M> a aec3po:QuantityKind .
 
-<design_othersBaseOffset> a aec3po:PropertyDesign ;
+<othersBaseOffset> a aec3po:Property ;
     aec3po:hasValue 3.5 ;
     aec3po:hasQuantityKind <M> ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
-<design_partywall_distance> a aec3po:PropertyDesign ;
+<partywall_distance> a aec3po:Property ;
     aec3po:hasValue 1 ;
     aec3po:hasQuantityKind <M> ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
-<statement_54> aec3po:hasRequiredData <design_streeBaseOffset> .
-<statement_54> aec3po:hasRequiredData <design_othersBaseOffset> .
-<statement_63> aec3po:hasRequiredData <design_partywall_distance> .
+<statement_54> aec3po:hasRequiredData <streeBaseOffset> .
+<statement_54> aec3po:hasRequiredData <othersBaseOffset> .
+<statement_63> aec3po:hasRequiredData <partywall_distance> .
 
 
 # Define and Instantiate all the CheckMethod(s) that will operationalize the Statement defined earlier. 
@@ -113,6 +108,21 @@ aec3po:operationalizes <cantiliver_numericalCheckStatement_otherBaseOffset> .
 # Comment for Amna: Perhaps we need an AND or OR at the beginning of this list of checks?
 
 # Start describing the "real" Canteliever from the Spanic Demo Case 
+
+# Define the design of the properties of the cantilever
+<design_streeBaseOffset> a aec3po:PropertyDesign ;
+    aec3po:hasValue 4.5 ;
+    aec3po:hasQuantityKind <M> .
+# I am assuming this represents 2 in the image.
+   
+<design_othersBaseOffset> a aec3po:PropertyDesign ;
+    aec3po:hasValue 2.6 ;
+    aec3po:hasQuantityKind <M> .
+#I am assuming this represents 1 in the image.
+   
+<design_partywall_distance> a aec3po:PropertyDesign ;
+    aec3po:hasValue 1 ;
+    aec3po:hasQuantityKind <M> .
 
 
 # Conduct the checking act and generate a conformance report. 
