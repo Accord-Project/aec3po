@@ -98,15 +98,15 @@
 
 # Define and Instantiate all the CheckMethod(s) that will operationalize the Statement defined earlier. 
 
-<cantiliver_numericalCheckMethod_streetBaseOffset> rdf:type aec3po:DeclarativeCheckCheck ;
+<cantiliver_numericalCheckMethod_streetBaseOffset> rdf:type aec3po:ProcedurialCheck ;
   aec3po:operationalizes <cantiliver_numericalCheckStatement_streetBaseOffset> .
   #asText "The minimum free height of cantilevers over public spaces will be 3.20 metres for street with a width of 8.00 metres or less" ;
 
-<cantiliver_numericalCheckMethod_otherBaseOffset>  rdf:type aec3po:DeclarativeCheckCheck ;
+<cantiliver_numericalCheckMethod_otherBaseOffset>  rdf:type aec3po:ProcedurialCheck ;
 aec3po:operationalizes <cantiliver_numericalCheckStatement_otherBaseOffset> .
     #asText "3.50 metres in all other cases." 
 
-<cantiliver_numericalCheckMethod_partywall_distance>  rdf:type aec3po:DeclarativeCheckCheck ;
+<cantiliver_numericalCheckMethod_partywall_distance>  rdf:type aec3po:ProcedurialCheck ;
  aec3po:operationalizes  <cantiliver_numericalCheckStatement_partywall_distance> .
 #asText "All cantilever must be separated by at least 1 meter from the line of the partywall." 
 
