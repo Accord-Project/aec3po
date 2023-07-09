@@ -91,7 +91,7 @@
 <statement_63> aec3po:hasRequiredData <partywall_distance> .
 
 
-# Define and Instantiate all the CheckMethod(s) that will operationalize the Statement defined earlier. 
+# Define and Instantiate all the CheckMethod(s) that will operationalize the Statement defined earlier. The assumption here is that microservices are handeling the "CheckAct".
 
 <cantiliver_numericalCheckMethod_streetBaseOffset> rdf:type aec3po:ProcedurialCheck ;
   aec3po:operationalizes <cantiliver_numericalCheckStatement_streetBaseOffset> .
@@ -104,6 +104,18 @@ aec3po:operationalizes <cantiliver_numericalCheckStatement_otherBaseOffset> .
 <cantiliver_numericalCheckMethod_partywall_distance>  rdf:type aec3po:ProcedurialCheck ;
  aec3po:operationalizes  <cantiliver_numericalCheckStatement_partywall_distance> .
 #asText "All cantilever must be separated by at least 1 meter from the line of the partywall." 
+
+# Option 2 for party wall distance check: assuming SHACL is used as a method. (Not final, need a link with operationalize and class Canteliver).
+aec3po:cantiliver_SHACLCheckMethod_partywall_distance
+	a sh:NodeShape ;
+	sh:targetClass ex:Canteliver ;    # Applies to all persons
+	sh:property [                 # _:b1
+		sh:path ex:design_othersBaseOffset;           # constrains the values of ex:ssn
+		sh:maxCount 1 ;
+		sh:datatype xsd:float ;
+		sh:maxInclusive 1 ;
+	] .
+
 
 # Comment for Amna: Perhaps we need an AND or OR at the beginning of this list of checks?
 
