@@ -108,9 +108,9 @@ aec3po:operationalizes <cantiliver_numericalCheckStatement_otherBaseOffset> .
 # Option 2 for party wall distance check: assuming SHACL is used as a method. (Not final, need a link with operationalize and class Canteliver).
 aec3po:cantiliver_SHACLCheckMethod_partywall_distance
 	a sh:NodeShape ;
-	sh:targetClass ex:Canteliver ;    # Applies to all persons
-	sh:property [                 # _:b1
-		sh:path ex:design_othersBaseOffset;           # constrains the values of ex:ssn
+	sh:targetClass aec3po:Canteliver ;    # Applies to all persons
+	sh:property [                 
+		sh:path aec3po:design_othersBaseOffset;           # constrains the values of design_othersBaseOffset
 		sh:maxCount 1 ;
 		sh:datatype xsd:float ;
 		sh:maxInclusive 1 ;
