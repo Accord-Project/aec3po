@@ -68,10 +68,15 @@ aec3po:HumanEvaluatedStatement a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
 
-aec3po:IDSCheck a owl:Class ;
+aec3po:DataRequirement a owl:Class;
+    rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking." ;
+    rdfs:isDefinedBy aec3po:ontology .
+      
+
+aec3po:IDS a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf aec3po:DeclarativeCheck ;
-    skos:note "must be refined" .
+    rdfs:subClassOf aec3po:DataRequirement ;
+    skos:note "Required data defined in an Information Delivery Format (IDS)." .
 
 aec3po:NumericalCheck a owl:Class ;
     rdfs:comment "A check that involves checking one numerical property against another, i.e. x < y or similar." ;
@@ -101,7 +106,7 @@ aec3po:StateVerifier a owl:Class ;
 
 aec3po:hasDataRequirement a owl:ObjectProperty;
  rdfs:comment "todo"@en ;
-   rdfs:domain aec3po:Property.
+   rdfs:domain aec3po:DataRequirement.
 
 aec3po:PropertyDesign a owl:Class ;
     rdfs:label "property design"@en ;
