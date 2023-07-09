@@ -52,16 +52,16 @@
 # Link the statement to the ramp as a design
 <ramp> aec3po:hasDesign <design> .
 
-# Define the property design of the ramp
+# Define the property design of the ramp (TO BE DISCUSSED)
 <design> a aec3po:PropertyDesign ;
     aec3po:hasDesign <ramp_design> .
 
-# Define the values for the ramp design
-<ramp_design> aec3po:hasValue "easily noticeable and straight with a smooth, hard and non-slippery surface, width of at least 900 millimetres and, if the ramp is not connected to a fixed structure, a protective edge of at least 50 millimetres in height" ;
-    aec3po:hasDesign <structure_design>;
-    aec3po:hasDesign <width_design> ;
-    aec3po:hasDesign <landing_design> ;
-    aec3po:hasDesign <gradient_design> .
+# Define the values for the ramp design (TO BE DISCUSSED)
+<ramp_design> aec3po:asText "easily noticeable and straight with a smooth, hard and non-slippery surface, width of at least 900 millimetres and, if the ramp is not connected to a fixed structure, a protective edge of at least 50 millimetres in height" .
+    aec3po:hasPart <structure_design>;
+    aec3po:hasPart <width_design> ;
+    aec3po:hasPart <landing_design> ;
+    aec3po:hasPart <gradient_design> .
 
 # Define a quantity kind millimetres 
 <milliM> a aec3po:QuantityKind .
