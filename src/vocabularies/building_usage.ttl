@@ -42,6 +42,14 @@ aec3po:BuildingUsage-residential a skos:Concept,
     skos:prefLabel "residential"@en ;
     skos:topConceptOf aec3po:BuildingUsageTable .
 
+aec3po:BuildingUsage-curltural a skos:Concept,
+        aec3po:BuildingUsage ;
+    rdfs:isDefinedBy aec3po:building_usage ;
+    skos:definition "Building has cultural usage."@en ;
+    skos:inScheme aec3po:BuildingUsageTable ;
+    skos:prefLabel "cultural"@en ;
+    skos:topConceptOf aec3po:BuildingUsageTable .
+
 aec3po:BuildingUsage a owl:Class ;
     rdfs:label "building usage"@en ;
     rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingUsageTable"@en ;
