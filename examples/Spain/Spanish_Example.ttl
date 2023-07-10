@@ -11,6 +11,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
+@prefix schema: <https://schema.org/> .
 
 # Instantiate the POUM Document as a Document
 <POUM_Doc> a aec3po:Document ;
@@ -123,19 +124,39 @@ aec3po:cantiliver_SHACLCheckMethod_partywall_distance
 
 # Define the design of the properties of the cantilever
 <design_streeBaseOffset> a aec3po:PropertyDesign ;
+    rdf:type schema:3DModel ;
     aec3po:hasValue 4.5 ;
     aec3po:hasQuantityKind <M> .
 # I am assuming this represents 2 in the image.
    
 <design_othersBaseOffset> a aec3po:PropertyDesign ;
+    rdf:type schema:3DModel ;
     aec3po:hasValue 2.6 ;
     aec3po:hasQuantityKind <M> .
 #I am assuming this represents 1 in the image.
    
 <design_partywall_distance> a aec3po:PropertyDesign ;
+    rdf:type schema:3DModel ;
     aec3po:hasValue 1 ;
     aec3po:hasQuantityKind <M> .
 
+# Link all the Designs to the respective CheckMethods using forDesign property
+<cantiliver_numericalCheckMethod_streetBaseOffset> aec3po:forDesign <design_streeBaseOffset> .
+<cantiliver_numericalCheckMethod_otherBaseOffset> aec3po:forDesign <design_othersBaseOffset> .
+<cantiliver_numericalCheckMethod_partywall_distance> aec3po:forDesign <design_partywall_distance> .
 
 # Conduct the checking act and generate a conformance report. 
+<cantiliver_checkingAct> a aec3po:CheckingAct .
+
+# Link the checkingAct to all the CheckMethods using usedMethod property
+<cantiliver_checkingAct> aec3po:usedMethod (<cantiliver_numericalCheckMethod_streetBaseOffset> <cantiliver_numericalCheckMethod_otherBaseOffset> <cantiliver_numericalCheckMethod_partywall_distance>) .
+
+# Instantiate the conformance report 
+<cantiliver_ConformanceReport> a aec3po:ConformanceReport ;
+    aec3po:conforms true .
+
+# Link the checkingAct to the conformance report using hasReport property
+<cantiliver_checkingAct> aec3po:hasReport <cantiliver_ConformanceReport> .
+
+
 
