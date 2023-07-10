@@ -73,7 +73,7 @@ ex:cantilever a aec3po:FeatureOfInterest ;
 # Define the properties of the cantilever and constraints based on the Statement
 ex:streeBaseOffset a aec3po:Property ;
     aec3po:hasValue 3.2 ;
-    aec3po:hasQuantityKind <M> ;
+    aec3po:hasQuantityKind ex:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
 # Define a quantity kind meter 
@@ -81,12 +81,12 @@ ex:M a aec3po:QuantityKind .
 
 ex:othersBaseOffset a aec3po:Property ;
     aec3po:hasValue 3.5 ;
-    aec3po:hasQuantityKind <M> ;
+    aec3po:hasQuantityKind ex:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
 ex:partywall_distance a aec3po:Property ;
     aec3po:hasValue 1 ;
-    aec3po:hasQuantityKind <M> ;
+    aec3po:hasQuantityKind ex:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
 ex:statement_54 aec3po:hasRequiredData ex:streeBaseOffset .
@@ -127,27 +127,32 @@ ex:cantiliver_ORCheck_baseOffSet a aec3po:ORCheck ;
 ex:cantiliver_AndCheck a aec3po:AndCheck ;
     aec3po:hasSubCheck (ex:cantiliver_ORCheck_baseOffSet ex:cantiliver_numericalCheckMethod_partywall_distance) .
 
-# Start describing the "real" Canteliever from the Spanich Demo Case 
+# Start describing the "real" Cantilever from the Spanich Demo Case 
+# Define the design of the cantilever as a 3DModel
+ex:cantilever_design a aec3po:Design ;
+    rdf:type schema:3DModel .
 
 # Define the design of the properties of the cantilever
 ex:design_streeBaseOffset a aec3po:PropertyDesign ;
-    rdf:type schema:3DModel ;
     aec3po:hasValue 4.5 ;
     aec3po:hasQuantityKind ex:M .
 # I am assuming this represents 2 in the image.
    
 ex:design_othersBaseOffset a aec3po:PropertyDesign ;
-    rdf:type schema:3DModel ;
     aec3po:hasValue 2.6 ;
     aec3po:hasQuantityKind <M> .
 #I am assuming this represents 1 in the image.
    
 ex:design_partywall_distance a aec3po:PropertyDesign ;
-    rdf:type schema:3DModel ;
     aec3po:hasValue 1 ;
     aec3po:hasQuantityKind ex:M .
 
-# Link all the Designs to the respective CheckMethods using forDesign property
+#Link all the properties design to the cantilever design using hasProperty property
+ex:cantilever_design aec3po:hasProperty ex:design_streeBaseOffset .
+ex:cantilever_design aec3po:hasProperty ex:design_othersBaseOffset .
+ex:cantilever_design aec3po:hasProperty ex:design_partywall_distance .
+
+# Link all the properties designs to the respective CheckMethods using forDesign property
 ex:cantiliver_numericalCheckMethod_streetBaseOffset aec3po:forDesign ex:design_streeBaseOffset .
 ex:cantiliver_numericalCheckMethod_otherBaseOffset aec3po:forDesign ex:design_othersBaseOffset .
 ex:cantiliver_numericalCheckMethod_partywall_distance aec3po:forDesign ex:design_partywall_distance .
