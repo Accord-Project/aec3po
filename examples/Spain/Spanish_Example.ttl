@@ -11,6 +11,8 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix schema: <https://schema.org/> .
 PREFIX ex: <http://example.com/exampleOntology#>
 
@@ -76,17 +78,14 @@ ex:streeBaseOffset a aec3po:Property ;
     aec3po:hasQuantityKind ex:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
-# Define a quantity kind meter 
-ex:M a aec3po:QuantityKind .
-
 ex:othersBaseOffset a aec3po:Property ;
     aec3po:hasValue 3.5 ;
-    aec3po:hasQuantityKind ex:M ;
+    aec3po:hasQuantityKind unit:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
 ex:partywall_distance a aec3po:Property ;
     aec3po:hasValue 1 ;
-    aec3po:hasQuantityKind ex:M ;
+    aec3po:hasQuantityKind unit:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
 ex:statement_54 aec3po:hasRequiredData ex:streeBaseOffset .
@@ -135,17 +134,17 @@ ex:cantilever_design a aec3po:Design ;
 # Define the design of the properties of the cantilever
 ex:design_streeBaseOffset a aec3po:PropertyDesign ;
     aec3po:hasValue 4.5 ;
-    aec3po:hasQuantityKind ex:M .
+    aec3po:hasQuantityKind unit:M .
 # I am assuming this represents 2 in the image.
    
 ex:design_othersBaseOffset a aec3po:PropertyDesign ;
     aec3po:hasValue 2.6 ;
-    aec3po:hasQuantityKind <M> .
+    aec3po:hasQuantityKind unit:M .
 #I am assuming this represents 1 in the image.
    
 ex:design_partywall_distance a aec3po:PropertyDesign ;
     aec3po:hasValue 1 ;
-    aec3po:hasQuantityKind ex:M .
+    aec3po:hasQuantityKind unit:M .
 
 #Link all the properties design to the cantilever design using hasProperty property
 ex:cantilever_design aec3po:hasProperty ex:design_streeBaseOffset .
