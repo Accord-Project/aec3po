@@ -13,7 +13,7 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
-PREFIX ex: <http://example.com/exampleOntology#> .
+@prefix ex: <http://example.com/exampleOntology#> .
 
 # Instantiate the Finnish Accessibility Document as a Document
 ex:Finnish_Accessibility_Doc a aec3po:Document ;
@@ -24,8 +24,7 @@ ex:Finnish_Accessibility_Doc a aec3po:Document ;
 
 # Instantiate the DocumentSubdivision that contains the Ramp example as a DocumentSubdivision
 ex:Finnish_Accessibility_DocSubdivision_S2_SubS_2 a aec3po:DocumentSubdivision ;
-    #aec3po: section_number "2" ^^xsd:integer ;
-    #aec3po: subsection_number "2" ^^xsd:integer ;
+    dct:identifier "Section 2" ;
     dct:title "Passageway leading to a building" .
 
 # Link the DocumentSubdivision to the Document using hasPart property
@@ -38,16 +37,58 @@ ex:ramp_statement a aec3po:Statement ;
 # Link the statement to the DocumentSubdivision using hasPart property
 ex:Finnish_Accessibility_DocSubdivision_S2_Sub_2 dct:hasPart  ex:ramp_statement .
 
-# Instantiate the CheckMethod that will operationalise the DocumentSubdivision
-#ex:ramp_checkMethod a aec3po:CheckMethod .
+# Instantiate the ramp_humanEvaluatedCheckStatement_Noticeable as a subClassOf CheckStatement
+ex:ramp_humanEvaluatedCheckStatement_Noticeable a aec3po:HumanEvaluatedCheckStatement ;
+    rdf:type aec3po:CheckStatement .    
 
-# Link the DocumentSubdivision to the Check by the property "isOperationalizedBy"
-#ex:Finnish_Accessibility_DocSubdivision_S2_Sub_2 aec3po:isOperationalizedBy ex:ramp_checkMethod .
+# Instantiate the ramp_humanEvaluatedCheckStatement_Surface as a subClassOf CheckStatement
+ex:ramp_humanEvaluatedCheckStatement_Surface a aec3po:HumanEvaluatedCheckStatement ;
+    rdf:type aec3po:CheckStatement .
 
-# Instantiate the SWRLCheck as a subClassOf CheckMethod 
-#SWRLCheck needs to be added the the core ontology
-#<ramp_SWRLCheck> a aec3po:SWRLCheck ;
-    #rdf:type aec3po:Check .
+# Instantiate the ramp_numericalCheckStatement_Width as a subClassOf CheckStatement
+ex:ramp_numericalCheckStatement_Width a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .
+
+# Instantiate the ramp_humanEvaluatedCheckStatement_FixedStructure as a subClassOf CheckStatement
+ex:ramp_humanEvaluatedCheckStatement_FixedStructure a aec3po:HumanEvaluatedCheckStatement ;
+    rdf:type aec3po:CheckStatement .
+
+# Instantiate the ramp_humanEvaluatedCheckStatement_ProtectiveEdge as a subClassOf CheckStatement
+ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge a aec3po:HumanEvaluatedCheckStatement ;
+    rdf:type aec3po:CheckStatement .  
+
+# Instantiate the ramp_numericalCheckStatement_LowerLandingLenght as a subClassOf CheckStatement
+ex:ramp_numericalCheckStatement_LowerLandingLenght a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .     
+
+# Instantiate the ramp_numericalCheckStatement_UpperLandingLenght as a subClassOf CheckStatement
+ex:ramp_numericalCheckStatement_UpperLandingLenght a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .
+
+# Instantiate the ramp_numericalCheckStatement_MaxGradient as a subClassOf CheckStatement
+ex:ramp_numericalCheckStatement_MaxGradient a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .    
+
+# Instantiate the ramp_numericalCheckStatement_LowerLandingElev as a subClassOf CheckStatement
+ex:ramp_numericalCheckStatement_LowerLandingElev a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .   
+
+# Instantiate the ramp_numericalCheckStatement_UpperLandingElev as a subClassOf CheckStatement
+ex:ramp_numericalCheckStatement_UpperLandingElev a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .    
+
+# Instantiate the ramp_numericalCheckStatement_IntLandingLenght as a subClassOf CheckStatement
+ex:ramp_numericalCheckStatement_IntLandingLenght a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .   
+
+# Instantiate the ramp_numericalCheckStatement_IntLandingElev as a subClassOf CheckStatement
+ex:ramp_numericalCheckStatement_IntLandingElev a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .  
+
+# Instantiate the ramp_humanEvaluatedCheckStatement_IndoorCondition as a subClassOf CheckStatement
+ex:ramp_humanEvaluatedCheckStatement_IndoorCondition a aec3po:HumanEvaluatedCheckStatement ;
+    rdf:type aec3po:CheckStatement . 
+
 
 #-------Required Data informed by the Statement
 
@@ -109,75 +150,21 @@ ex:rampIntLandingElev a aec3po:Property ;
 ex:rampIndoorCondition a aec3po:Property ;
     aec3po:hasValue "true"^^xsd:boolean .
 
-ex:ramp_statement aec3po:hasRequiredData ex:rampNoticeable .
-ex:ramp_statement aec3po:hasRequiredData ex:rampSurface .
-ex:ramp_statement aec3po:hasRequiredData ex:rampWidth .
-ex:ramp_statement aec3po:hasRequiredData ex:rampFixedStructure .
-ex:ramp_statement aec3po:hasRequiredData ex:rampProtectiveEdge .
-ex:ramp_statement aec3po:hasRequiredData ex:rampLowerLandingLenght .
-ex:ramp_statement aec3po:hasRequiredData ex:rampUpperLandingLenght .
-ex:ramp_statement aec3po:hasRequiredData ex:rampMaxGradient .
-ex:ramp_statement aec3po:hasRequiredData ex:rampLowerLandingElev .
-ex:ramp_statement aec3po:hasRequiredData ex:rampUpperLandingElev .
-ex:ramp_statement aec3po:hasRequiredData ex:rampIntLandingLenght .
-ex:ramp_statement aec3po:hasRequiredData ex:rampIntLandingElev .
-ex:ramp_statement aec3po:hasRequiredData ex:rampIndoorCondition .
-
-# Instantiate the ChecklistStatement as a subClassOf Statement
-ex:ramp_checklist a aec3po:ChecklistStatement ;
-    rdf:type aec3po:Statement .
-
-# Instantiate the ramp_humanEvaluatedCheckStatement_Noticeable as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_Noticeable a aec3po:HumanEvaluatedCheckStatement ;
-    rdf:type aec3po:CheckStatement .    
-
-# Instantiate the ramp_humanEvaluatedCheckStatement_Surface as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_Surface a aec3po:HumanEvaluatedCheckStatement ;
-    rdf:type aec3po:CheckStatement .
-
-# Instantiate the ramp_numericalCheckStatement_Width as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_Width a aec3po:NumericalCheckStatement ;
-    rdf:type aec3po:CheckStatement .
-
-# Instantiate the ramp_humanEvaluatedCheckStatement_FixedStructure as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_FixedStructure a aec3po:HumanEvaluatedCheckStatement ;
-    rdf:type aec3po:CheckStatement .
-
-# Instantiate the ramp_humanEvaluatedCheckStatement_ProtectiveEdge as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge a aec3po:HumanEvaluatedCheckStatement ;
-    rdf:type aec3po:CheckStatement .  
-
-# Instantiate the ramp_numericalCheckStatement_LowerLandingLenght as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_LowerLandingLenght a aec3po:NumericalCheckStatement ;
-    rdf:type aec3po:CheckStatement .     
-
-# Instantiate the ramp_numericalCheckStatement_UpperLandingLenght as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_UpperLandingLenght a aec3po:NumericalCheckStatement ;
-    rdf:type aec3po:CheckStatement . 
-
-# Instantiate the ramp_numericalCheckStatement_MaxGradient as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_MaxGradient a aec3po:NumericalCheckStatement ;
-    rdf:type aec3po:CheckStatement .    
-
-# Instantiate the ramp_numericalCheckStatement_LowerLandingElev as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_LowerLandingElev a aec3po:NumericalCheckStatement ;
-    rdf:type aec3po:CheckStatement .   
-
-# Instantiate the ramp_numericalCheckStatement_UpperLandingElev as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_UpperLandingElev a aec3po:NumericalCheckStatement ;
-    rdf:type aec3po:CheckStatement .    
-
-# Instantiate the ramp_numericalCheckStatement_IntLandingLenght as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_IntLandingLenght a aec3po:NumericalCheckStatement ;
-    rdf:type aec3po:CheckStatement .   
-
-# Instantiate the ramp_numericalCheckStatement_IntLandingElev as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_IntLandingElev a aec3po:NumericalCheckStatement ;
-    rdf:type aec3po:CheckStatement .  
-
-# Instantiate the ramp_humanEvaluatedCheckStatement_IndoorCondition as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_IndoorCondition a aec3po:HumanEvaluatedCheckStatement ;
-    rdf:type aec3po:CheckStatement .  
+ex:ramp_statement aec3po:hasRequiredData ( 
+    ex:rampNoticeable 
+    ex:rampSurface 
+    ex:rampWidth 
+    ex:rampFixedStructure 
+    ex:rampProtectiveEdge 
+    ex:rampLowerLandingLenght 
+    ex:rampUpperLandingLenght 
+    ex:rampMaxGradient 
+    ex:rampLowerLandingElev 
+    ex:rampUpperLandingElev 
+    ex:rampIntLandingLenght 
+    ex:rampIntLandingElev 
+    ex:rampIndoorCondition 
+) .  
 
 # Define and Instantiate all the CheckMethod(s) that will operationalize the Statement defined above. The assumption here is that SWRL rules are handeling the "CheckAct".
 
@@ -232,7 +219,8 @@ ex:ramp_AndCheck_LandingLength a aec3po:AndCheck ;
 ex:ramp_ORCheck_Gradient a aec3po:ORCheck ;
     aec3po:hasSubCheck (ex:ramp_numericalCheckMethod_LowerLandingElev ex:ramp_numericalCheckMethod_UpperLandingElev ex:ramp_numericalCheckMethod_IntLandingLenght ex:ramp_numericalCheckMethod_IntLandingElev ex:ramp_humanEvaluatedCheckMethod_IndoorCondition)
 
-# Instantiate the AndCheck for the ramp
-ex:ramp_AndCheck a aec3po:AndCheck ;
+# Instantiate the ChecklistStatement as a subClassOf Statement and link it to all the checks with the property hasSubCheck
+ex:ramp_checklistStatement a aec3po:ChecklistStatement ;
+    rdf:type aec3po:Statement .
     aec3po:hasSubCheck (ex:ramp_ORCheck_ProtectiveEdge ex:ramp_numericalCheckMethod_Width ex:ramp_AndCheck_LandingLength ex:ramp_numericalCheckMethod_MaxGradient ex:ramp_ORCheck_Gradient) .
 
