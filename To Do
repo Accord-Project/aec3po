@@ -1,4 +1,0 @@
-| Comment                                                                                    | Author | Action   | Partner Assigned to Action | Status        |
--------------------------------------------------------------------------------------------: |------- |----------|----------------------------|---------------|
- We need a new data property to allow the representation of the raw text of each statement.  | CU     | _asText_ | BCU                        | Completed     |
- I feel we have a use case for being able to position the Statements in order so we can reproduce the document for the ontology. This may signal the need for a new data property saying the order of a given statement.| CU | | BCU |   |
