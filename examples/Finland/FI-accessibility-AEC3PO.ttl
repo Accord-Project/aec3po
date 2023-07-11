@@ -219,10 +219,22 @@ ex:ramp_AndCheck_LandingLength a aec3po:AndCheck ;
 
 # Instantiate the ORCheck for the Gradient
 ex:ramp_ORCheck_Gradient a aec3po:ORCheck ;
-    aec3po:hasSubCheck (ex:ramp_numericalCheckMethod_LowerLandingElev ex:ramp_numericalCheckMethod_UpperLandingElev ex:ramp_numericalCheckMethod_IntLandingLenght ex:ramp_numericalCheckMethod_IntLandingElev ex:ramp_humanEvaluatedCheckMethod_IndoorCondition) .
+    aec3po:hasSubCheck ( 
+        ex:ramp_numericalCheckMethod_LowerLandingElev 
+        ex:ramp_numericalCheckMethod_UpperLandingElev 
+        ex:ramp_numericalCheckMethod_IntLandingLenght 
+        ex:ramp_numericalCheckMethod_IntLandingElev 
+        ex:ramp_humanEvaluatedCheckMethod_IndoorCondition
+    ) .
 
 # Instantiate the ChecklistStatement as a subClassOf Statement and link it to all the checks with the property hasSubCheck
 ex:ramp_checklistStatement a aec3po:ChecklistStatement ;
     rdf:type aec3po:Statement ;
-    aec3po:hasSubCheck (ex:ramp_ORCheck_ProtectiveEdge ex:ramp_numericalCheckMethod_Width ex:ramp_AndCheck_LandingLength ex:ramp_numericalCheckMethod_MaxGradient ex:ramp_ORCheck_Gradient) .
+    aec3po:hasSubCheck ( 
+        ex:ramp_ORCheck_ProtectiveEdge 
+        ex:ramp_numericalCheckMethod_Width 
+        ex:ramp_AndCheck_LandingLength 
+        ex:ramp_numericalCheckMethod_MaxGradient 
+        ex:ramp_ORCheck_Gradient
+    ) .
 
