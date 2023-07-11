@@ -37,6 +37,8 @@ ex:ramp_statement a aec3po:Statement ;
 # Link the statement to the DocumentSubdivision using hasPart property
 ex:Finnish_Accessibility_DocSubdivision_S2_Sub_2 dct:hasPart  ex:ramp_statement .
 
+#-------Instantiate the checkStatements expressed in the statement
+
 # Instantiate the ramp_humanEvaluatedCheckStatement_Noticeable as a subClassOf CheckStatement
 ex:ramp_humanEvaluatedCheckStatement_Noticeable a aec3po:HumanEvaluatedCheckStatement ;
     rdf:type aec3po:CheckStatement .    
