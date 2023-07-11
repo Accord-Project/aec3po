@@ -75,7 +75,8 @@ ex:FI_statement_1_section_23 a aec3po:Statement ;
 
 # Define the list defined in the statement of section 23
 
-ex:list_section_23 rdf:type rdf:List ;
+ex:list_section_23 a aec3po:Evidence ;
+    dct:format rdf:List ;
     rdf:_1 " permanent building identification number " ;
     rdf:_2 " use category or use categories of the building " ;
     rdf:_3 " net heated area of the new building or the area of the measure of major renovation " ;
