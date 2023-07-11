@@ -1,1 +1,94 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix schema: <https://schema.org/> .
+PREFIX ex: <http://example.com/exampleOntology#>
 
+# Instantiate the Decree of the Ministry of the Environment Document as a Document
+ex:FI_Dec_Env_Doc a aec3po:Document ;
+    dct:identifier <https://vttgroup.sharepoint.com/:w:/r/sites/EU-projectpreparationDigitalpermitsandcompliancecheck/_layouts/15/Doc.aspx?sourcedoc=%7BB135D7E5-FBF8-4AA2-A12D-7F5856EE7A38%7D&file=Use%20Case%20FI3%20extract%20from%20the%20regulations.docx&action=default&mobileredirect=true> ;
+    dct:issued "2022-09-30"^^xsd:date ;
+    dct:references <reference_here> ;
+    dct:coverage aec3po:Finland .
+
+# Instantiate the first DocumentSubdivision that contains the rule to be checked
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 a aec3po:DocumentSubdivision ;
+    dct:identifier "4" ;
+    dct:title "Length of the assessment period" .
+
+# Instantiate the second DocumentSubdivision that contains the rule to be checked
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 a aec3po:DocumentSubdivision ;
+    dct:identifier "23" ;
+    dct:title "Content of the climate report" .
+
+# Instantiate the third DocumentSubdivision that contains the rule to be checked
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 a aec3po:DocumentSubdivision ;
+    dct:identifier "24" ;
+    dct:title "Presentation of the results of the low-carbon assessment in the climate report" . 
+
+# Instantiate the fourth DocumentSubdivision that contains the rule to be checked
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_1 a aec3po:DocumentSubdivision ;
+    dct:identifier "1" ;
+    dct:title "Expected new regulation" ;
+    rdfs:comment "this is a new regulation that probably will be part of the new Building Act related to the Decree about the climate assessment." .      
+
+# Link the DocumentSubdivisions to the Document using hasPart property
+ex:FI_Dec_Env_Doc dct:hasPart ( 
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_23
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_24
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_1
+    ). 
+
+# ---- Define the statements of the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
+
+# Instantiate the first statement from the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
+ex:FI_statement_1_section_4 a aec3po:Statement ;
+    dct:identifier "4.1" ;
+    aec3po:asText "The period for assessing the low-carbon performance of a new building or a building undergoing major renovation during its operational phase shall be the first 50 years after construction or major renovation." .
+
+# Instantiate the second statement from the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
+ex:FI_statement_2_section_4 a aec3po:Statement ;
+    dct:identifier "4.2" ;
+    aec3po:asText "The assessment period for the use phase of a building intended to be mobile and temporary shall be the length of the temporary use, up to a maximum of 50 years." .
+
+# Link the first and the second statements to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 using hasPart property
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 dct:hasPart  ( ex:FI_statement_1_section_4  ex:FI_statement_2_section_4 ) . 
+
+# ---- Define the statements of the second DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23
+ex:FI_statement_1_section_23 a aec3po:Statement ;
+    dct:identifier "23.1" ;
+    aec3po:asText "The climate report shall contain at least the following information:" ;
+    aec3po:hasEvidence ex:list_section_23 .
+
+# Define the list defined in the statement of section 23
+
+ex:list_section_23 rdf:type rdf:List ;
+    rdf:_1 " permanent building identification number " ;
+    rdf:_2 " use category or use categories of the building " ;
+    rdf:_3 " net heated area of the new building or the area of the measure of major renovation " ;
+    rdf:_4 " area of the building site " ;
+    rdf:_5 " results of the carbon assessment for each use category separately and as a sum of the results " ; 
+    rdf:_6 " planned number of users of the building " ;
+    rdf:_7 " calculated energy consumption of the building " ; 
+    rdf:_8 " length of the assessment periods used " ;
+    rdf:_9 " main construction material of the load-bearing structures included in the assessment " ;
+    rdf:_10 " target lifetime of the building " ;
+    rdf:_11 " calculation software used in the assessment " ;
+    rdf:_12 " date of the climate report " ; 
+    rdf:_13 " name and training of the author of the report " .
+
+# Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 using hasPart property
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 dct:hasPart  ex:FI_statement_1_section_23 .    
