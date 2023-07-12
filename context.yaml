@@ -21,7 +21,8 @@
   Selection:              aec3po:Selection
   Table:                  aec3po:Table
   Statement:              aec3po:Statement
-  Figure:                 aec3po:Figure
+  Image:                  aec3po:Image
+  Container:              aec3po:Container
   # Properties
   caption:                aec3po:caption                            # hasCaption is too wordy
   hasPart:                {'@id': dct:hasPart, '@type': '@id'}
@@ -37,5 +38,6 @@
   text:                   aec3po:text                               # asText is too wordy
   title:                  dct:title
   relation:               dct:relation
+  contains:               aec3po:contains
   # Unused
   # sector: dct:sector # no such prop
