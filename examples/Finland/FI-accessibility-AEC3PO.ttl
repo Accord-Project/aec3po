@@ -14,6 +14,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
 @prefix ex: <http://example.com/exampleOntology#> .
+@prefix schema: <https://schema.org/> .
 
 # Instantiate the Finnish Accessibility Document as a Document
 ex:Finnish_Accessibility_Doc a aec3po:Document ;
@@ -250,3 +251,98 @@ ex:ramp_checklistStatement a aec3po:ChecklistStatement ;
         ex:ramp_ORCheck_Gradient
     ) .
 
+# ---- Start describing the "real" Ramp using dummy values
+
+# Define the design of the ramp as a 3DModel
+ex:ramp_design a aec3po:Design ;
+    rdf:type schema:3DModel .
+
+# Define the design of the properties of the ramp
+ex:design_rampNoticeable a aec3po:PropertyDesign ;
+    aec3po:hasValue true .
+
+ex:design_rampStraight a aec3po:PropertyDesign ;
+    aec3po:hasValue true .    
+   
+ex:design_rampSurface a aec3po:PropertyDesign ;
+    aec3po:hasValue true .
+
+ex:design_rampWidth a aec3po:PropertyDesign ;
+    aec3po:hasValue 1800 ;
+    aec3po:hasQuantityKind unit:MilliM .
+
+ex:design_rampFixedStructure a aec3po:PropertyDesign ;
+    aec3po:hasValue true .    
+
+ex:design_rampProtectiveEdge a aec3po:PropertyDesign ;
+    aec3po:hasValue 100 ;
+    aec3po:hasQuantityKind unit:MilliM .
+
+ex:design_rampLowerLandingLength a aec3po:PropertyDesign ;
+    aec3po:hasValue 1800 ;
+    aec3po:hasQuantityKind unit:MilliM .    
+
+ex:design_rampUpperLandingLength a aec3po:PropertyDesign ;
+    aec3po:hasValue 2500 ;
+    aec3po:hasQuantityKind unit:MilliM .      
+
+ex:design_rampMaxGradient a aec3po:PropertyDesign ;
+    aec3po:hasValue 7 .  
+
+ex:design_rampLowerLandingElev a aec3po:PropertyDesign ;
+    aec3po:hasValue 1000 ;
+    aec3po:hasQuantityKind unit:MilliM . 
+
+ex:design_rampUpperLandingElev a aec3po:PropertyDesign ;
+    aec3po:hasValue 1500 ;
+    aec3po:hasQuantityKind unit:MilliM .   
+
+ex:design_rampIntLandingLenght a aec3po:PropertyDesign ;
+    aec3po:hasValue 2500 ;
+    aec3po:hasQuantityKind unit:MilliM .   
+
+ex:design_rampIntLandingElev a aec3po:PropertyDesign ;
+    aec3po:hasValue 1300 ;
+    aec3po:hasQuantityKind unit:MilliM .     
+
+ex:design_rampIndoorCondition a aec3po:PropertyDesign ;
+    aec3po:hasValue true .  
+
+# Define the design of each property of the ramp as PropertyKindDesign
+ex:design_rampPropertyMaterialandArrangement a aec3po:PropertyKindDesign ;
+    aec3po:hasProperty (
+         ex:design_rampNoticeable
+         ex:design_rampStraight
+         ex:design_rampSurface 
+    ) .
+
+ex:design_rampPropertyProtectiveEdge a aec3po:PropertyKindDesign ;
+    aec3po:hasProperty (
+         ex:design_rampProtectiveEdge
+         ex:design_rampFixedStructure 
+    ) .
+
+ex:design_rampPropertyLandingLength a aec3po:PropertyKindDesign ;
+    aec3po:hasProperty (
+         ex:design_rampLowerLandingLength
+         ex:design_rampUpperLandingLength
+    ) .
+
+ex:design_rampPropertyGradient a aec3po:PropertyKindDesign ;
+    aec3po:hasProperty (
+         ex:design_rampMaxGradient
+         ex:design_rampLowerLandingElev
+         ex:design_rampUpperLandingElev
+         ex:design_rampIntLandingLenght
+         ex:design_rampIntLandingElev
+         ex:design_rampIndoorCondition
+    ) . 
+
+#Link all the properties design to the ramp design using hasProperty property     
+  ex:ramp_design aec3po:hasProperty (
+    ex:design_rampPropertyMaterialandArrangement
+    ex:design_rampPropertyProtectiveEdge
+    ex:design_rampWidth
+    ex:design_rampPropertyLandingLength
+    ex:design_rampPropertyGradient
+  ) .
