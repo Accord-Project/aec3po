@@ -20,6 +20,8 @@
   Row:                    aec3po:Row
   Selection:              aec3po:Selection
   Table:                  aec3po:Table
+  Statement:              aec3po:Statement
+  Figure:                 aec3po:Figure
   # Properties
   caption:                aec3po:caption                            # hasCaption is too wordy
   hasPart:                {'@id': dct:hasPart, '@type': '@id'}
@@ -34,6 +36,6 @@
   temporal:               {'@id': dct:temporal, '@type': xsd:gYear} # not xsd:date
   text:                   aec3po:text                               # asText is too wordy
   title:                  dct:title
+  relation:               dct:relation
   # Unused
-  # relation: dct:relation # not needed
   # sector: dct:sector # no such prop

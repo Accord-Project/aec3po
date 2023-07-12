@@ -19,6 +19,8 @@
     "Row": "aec3po:Row",
     "Selection": "aec3po:Selection",
     "Table": "aec3po:Table",
+    "Statement": "aec3po:Statement",
+    "Figure": "aec3po:Figure",
     "caption": "aec3po:caption",
     "hasPart": {
       "@id": "dct:hasPart",
@@ -46,6 +48,7 @@
       "@type": "xsd:gYear"
     },
     "text": "aec3po:text",
-    "title": "dct:title"
+    "title": "dct:title",
+    "relation": "dct:relation"
   }
 }
