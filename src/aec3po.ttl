@@ -57,6 +57,11 @@ aec3po:ComponentCheck a owl:Class ;
                                 owl:allValuesFrom aec3po:FeatureOfInterest ;
                                 owl:onProperty [ owl:inverseOf aec3po:forDesign ] ] ;
                         owl:onProperty aec3po:forDesign ] ) ] .
+aec3po:Function a owl:Class ;
+rdfs:label "Function"@en ;
+rdfs:comment "todo" ;
+rdfs:isDefinedBy aec3po:ontology ;
+rdfs:subClassOf aec3po:Check .
 
 aec3po:DefinitionStatement a owl:Class ;
  rdfs:comment "todo"@en ;
