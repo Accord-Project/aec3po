@@ -244,6 +244,17 @@ ex:ramp_numericalCheckMethod_IntLandingElev rdf:type aec3po:SWRLCheck ;
 ex:ramp_humanEvaluatedCheckMethod_IndoorCondition rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_IndoorCondition .  
 
+# Define a checkMethod Gradient that combines the six previous check CheckMethods related to the gradient
+ex:ramp_CheckMethod_Gradient rdf:type aec3po:SWRLCheck ;
+  aec3po:operationalizes (
+    ex:ramp_numericalCheckStatement_MaxGradient
+    ex:ramp_numericalCheckStatement_LowerLandingElev 
+    ex:ramp_numericalCheckStatement_UpperLandingElev
+    ex:ramp_numericalCheckStatement_IntLandingLenght
+    ex:ramp_numericalCheckStatement_IntLandingElev
+    ex:ramp_humanEvaluatedCheckStatement_IndoorCondition
+  ) .
+
 # Instantiate the ORCheck for the Protective Edge
 ex:ramp_ORCheck_ProtectiveEdge a aec3po:ORCheck ;
     aec3po:hasSubCheck (ex:ramp_humanEvaluatedCheckMethod_FixedStructure ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge) . 
