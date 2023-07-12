@@ -25,10 +25,12 @@ ex:POUM_Doc a aec3po:Document ;
 
 # Instantiate the first DocumentSubdivision that contains the rule to be checked
 ex:POUM_DocSubdivision_Part2_CH1_S2 a aec3po:DocumentSubdivision ;
+    dct:identifier "POUM\Part_2\Chapter_1\Section_2" ;
     dct:title "Part2_CH1_S2" .
 
 # Instantiate the second DocumentSubdivision that contains the rule to be checked
 ex:POUM_DocSubdivision_Part2_CH2_S2 a aec3po:DocumentSubdivision ;
+    dct:identifier "POUM\Part_2\Chapter_2\Section_2" ;
     dct:title "Part2_CH2_S2" .
 
 # Link the DocumentSubdivision to the Document using hasPart property
@@ -36,6 +38,7 @@ ex:POUM_Doc dct:hasPart ( ex:POUM_DocSubdivision_Part2_CH1_S2 ex:POUM_DocSubdivi
 
 # Instantiate the first statement
 ex:statement_54 a aec3po:Statement ;
+    dct:identifier "POUM\Part_2\Chapter_1\Section_2\Clause_54.8" ;
     dct:title "54.8" ;
     aec3po:asText "The minimum free height of cantilevers over public spaces will be 3.20 metres for street with a width of 8.00 metres or less and 3.50 metres in all other cases." .
 
@@ -44,6 +47,7 @@ ex:POUM_DocSubdivision_Part2_CH1_S2 dct:hasPart  ex:statement_54 .
 
 # Instantiate the second statement
 ex:statement_63 a aec3po:Statement ;
+    dct:identifier "POUM\Part_2\Chapter_1\Section_2\Clause_63.3" ;
     dct:title "63.3" ;
     aec3po:asText "All cantilever must be separated by at least 1 meter from the line of the partywall." .   
 
