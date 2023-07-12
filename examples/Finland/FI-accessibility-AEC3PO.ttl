@@ -387,3 +387,22 @@ ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge aec3po:forDesign ex:design_r
 ex:ramp_numericalCheckMethod_Width aec3po:forDesign ex:design_rampWidth .    
 ex:ramp_numericalCheckMethod_LandingLength aec3po:forDesign ex:design_rampPropertyLandingLength .
 ex:ramp_CheckMethod_Gradient aec3po:forDesign ex:design_rampPropertyGradient .
+
+# Conduct the checking act and generate a conformance report. 
+ex:ramp_checkingAct a aec3po:CheckingAct .
+
+# Link the checkingAct to all the CheckMethods using usedMethod property
+ex:ramp_checkingAct aec3po:usedMethod (
+    ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement 
+    ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge 
+    ex:ramp_numericalCheckMethod_Width
+    ex:ramp_numericalCheckMethod_LandingLength
+    ex:ramp_CheckMethod_Gradient
+    ) .
+
+# Instantiate the conformance report 
+ex:ramp_ConformanceReport a aec3po:ConformanceReport ;
+    aec3po:conforms true .
+
+# Link the checkingAct to the conformance report using hasReport property
+ex:ramp_checkingAct aec3po:hasReport ex:ramp_ConformanceReport .
