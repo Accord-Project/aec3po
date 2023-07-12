@@ -380,3 +380,10 @@ ex:design_rampPropertyGradient a aec3po:PropertyKindDesign ;
     ex:design_rampPropertyLandingLength
     ex:design_rampPropertyGradient
   ) .
+
+ # Link all the properties designs to the respective CheckMethods using forDesign property
+ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement aec3po:forDesign ex:design_rampPropertyMaterialandArrangement .
+ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge aec3po:forDesign ex:design_rampPropertyProtectiveEdge .   
+ex:ramp_numericalCheckMethod_Width aec3po:forDesign ex:design_rampWidth .    
+ex:ramp_numericalCheckMethod_LandingLength aec3po:forDesign ex:design_rampPropertyLandingLength .
+ex:ramp_CheckMethod_Gradient aec3po:forDesign ex:design_rampPropertyGradient .
