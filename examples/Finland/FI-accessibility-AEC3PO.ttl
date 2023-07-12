@@ -114,7 +114,7 @@ ex:rampSurface a aec3po:Property ;
     aec3po:hasValue "true"^^xsd:boolean .
 
 ex:rampWidth a aec3po:Property ;
-    aec3po:hasValue 900^^xsd:double ;
+    aec3po:hasValue 900 ;
     aec3po:hasQuantityKind unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
@@ -122,17 +122,17 @@ ex:rampFixedStructure a aec3po:Property ;
     aec3po:hasValue "false"^^xsd:boolean .
     
 ex:rampProtectiveEdge a aec3po:Property ;
-    aec3po:hasValue 50^^xsd:double ;
+    aec3po:hasValue 50 ;
     aec3po:hasQuantityKind unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
 ex:rampLowerLandingLenght a aec3po:Property ;
-    aec3po:hasValue 1500^^xsd:double ;
+    aec3po:hasValue 1500 ;
     aec3po:hasQuantityKind unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .  
 
 ex:rampUpperLandingLenght a aec3po:Property ;
-    aec3po:hasValue 1500^^xsd:double ;
+    aec3po:hasValue 1500 ;
     aec3po:hasQuantityKind unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .  
 
@@ -141,19 +141,19 @@ ex:rampMaxGradient a aec3po:Property ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .   
 
 ex:rampLowerLandingElev a aec3po:Property ;
-    aec3po:hasValue 500^^xsd:double ;
+    aec3po:hasValue 500 ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .          
 
 ex:rampUpperLandingElev a aec3po:Property ;
-    aec3po:hasValue 1000^^xsd:double ;
+    aec3po:hasValue 1000 ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
 
 ex:rampIntLandingLenght a aec3po:Property ;
-    aec3po:hasValue 2000^^xsd:double ;
+    aec3po:hasValue 2000 ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
 ex:rampIntLandingElev a aec3po:Property ;
-    aec3po:hasValue 500^^xsd:double ;
+    aec3po:hasValue 500 ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le . 
 
 ex:rampIndoorCondition a aec3po:Property ;
