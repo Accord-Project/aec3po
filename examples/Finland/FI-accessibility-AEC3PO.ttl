@@ -188,7 +188,7 @@ ex:ramp_humanEvaluatedCheckMethod_Straight rdf:type aec3po:SWRLCheck ;
 ex:ramp_humanEvaluatedCheckMethod_Surface rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Surface . 
 
-# Define  a checkMethod MaterialandArrangement that combines the three previous human evaluated check Methods
+# Define  a checkMethod MaterialandArrangement that combines the three previous human evaluated check methods related to the material and arrangement of the ramp
   ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes (
     ex:ramp_humanEvaluatedCheckMethod_Noticeable
@@ -205,11 +205,26 @@ ex:ramp_humanEvaluatedCheckMethod_FixedStructure rdf:type aec3po:SWRLCheck ;
 ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge .  
 
+# Define a checkMethod AllProtectiveEdge that combines the two previous check methods related to the protective edge
+ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge rdf:type aec3po:SWRLCheck ;
+  aec3po:operationalizes (
+    ex:ramp_humanEvaluatedCheckStatement_FixedStructure
+    ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge
+  ) .
+
 ex:ramp_numericalCheckMethod_LowerLandingLenght rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_LowerLandingLenght .  
 
 ex:ramp_numericalCheckMethod_UpperLandingLenght rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_UpperLandingLenght .   
+
+# Define a checkMethod LandingLength that combines the two previous check CheckMethods related to the landing length
+ex:ramp_numericalCheckMethod_LandingLength rdf:type aec3po:SWRLCheck ;
+  aec3po:operationalizes (
+    ex:ramp_numericalCheckStatement_LowerLandingLenght
+    ex:ramp_numericalCheckStatement_UpperLandingLenght
+
+  ) .
 
 ex:ramp_numericalCheckMethod_MaxGradient rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_MaxGradient .  
