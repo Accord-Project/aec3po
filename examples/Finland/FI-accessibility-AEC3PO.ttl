@@ -111,7 +111,7 @@ ex:rampStraight a aec3po:Property ;
     aec3po:hasValue "true"^^xsd:boolean .
 
 ex:rampSurface a aec3po:Property ;
-    aec3po:asText "straight with a smooth, hard and non-slippery surface" ;
+    aec3po:asText "smooth, hard and non-slippery surface" ;
     aec3po:hasValue "true"^^xsd:boolean .
 
 ex:rampWidth a aec3po:Property ;
@@ -186,7 +186,15 @@ ex:ramp_humanEvaluatedCheckMethod_Straight rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Straight . 
 
 ex:ramp_humanEvaluatedCheckMethod_Surface rdf:type aec3po:SWRLCheck ;
-  aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Surface .   
+  aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Surface . 
+
+# Define  a checkMethod MaterialandArrangement that combines the three previous human evaluated check Methods
+  ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement rdf:type aec3po:SWRLCheck ;
+  aec3po:operationalizes (
+    ex:ramp_humanEvaluatedCheckMethod_Noticeable
+    ex:ramp_humanEvaluatedCheckMethod_Straight
+    ex:ramp_humanEvaluatedCheckMethod_Surface
+  ) .
 
 ex:ramp_numericalCheckMethod_Width rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_Width . 
