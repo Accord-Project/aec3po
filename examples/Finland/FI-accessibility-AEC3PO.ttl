@@ -25,7 +25,7 @@ ex:Finnish_Accessibility_Doc a aec3po:Document ;
 
 # Instantiate the DocumentSubdivision that contains the Ramp example as a DocumentSubdivision
 ex:Finnish_Accessibility_DocSubdivision_S2_SubS_2 a aec3po:DocumentSubdivision ;
-    dct:identifier "Section 2" ;
+    dct:identifier "Finnish Accessibility\Section 2" ;
     dct:title "Passageway leading to a building" .
 
 # Link the DocumentSubdivision to the Document using hasPart property
