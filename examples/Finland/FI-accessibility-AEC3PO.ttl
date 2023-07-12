@@ -41,7 +41,11 @@ ex:Finnish_Accessibility_DocSubdivision_S2_Sub_2 dct:hasPart  ex:ramp_statement 
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_Noticeable as a subClassOf CheckStatement
 ex:ramp_humanEvaluatedCheckStatement_Noticeable a aec3po:HumanEvaluatedCheckStatement ;
-    rdf:type aec3po:CheckStatement .    
+    rdf:type aec3po:CheckStatement . 
+
+# Instantiate the ramp_humanEvaluatedCheckStatement_Straight as a subClassOf CheckStatement
+ex:ramp_humanEvaluatedCheckStatement_Straight a aec3po:HumanEvaluatedCheckStatement ;
+    rdf:type aec3po:CheckStatement .
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_Surface as a subClassOf CheckStatement
 ex:ramp_humanEvaluatedCheckStatement_Surface a aec3po:HumanEvaluatedCheckStatement ;
@@ -102,6 +106,9 @@ ex:ramp a aec3po:FeatureOfInterest ;
 ex:rampNoticeable a aec3po:Property ;
     aec3po:hasValue "true"^^xsd:boolean .
 
+ex:rampStraight a aec3po:Property ;
+    aec3po:hasValue "true"^^xsd:boolean .
+
 ex:rampSurface a aec3po:Property ;
     aec3po:asText "straight with a smooth, hard and non-slippery surface" ;
     aec3po:hasValue "true"^^xsd:boolean .
@@ -154,6 +161,7 @@ ex:rampIndoorCondition a aec3po:Property ;
 
 ex:ramp_statement aec3po:hasRequiredData ( 
     ex:rampNoticeable 
+    ex:rampStraight
     ex:rampSurface 
     ex:rampWidth 
     ex:rampFixedStructure 
@@ -172,6 +180,9 @@ ex:ramp_statement aec3po:hasRequiredData (
 
 ex:ramp_humanEvaluatedCheckMethod_Noticeable rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Noticeable . 
+
+ex:ramp_humanEvaluatedCheckMethod_Straight rdf:type aec3po:SWRLCheck ;
+  aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Straight . 
 
 ex:ramp_humanEvaluatedCheckMethod_Surface rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Surface .   
@@ -229,8 +240,9 @@ ex:ramp_ORCheck_Gradient a aec3po:ORCheck ;
 
 # Instantiate the ChecklistStatement as a subClassOf Statement and link it to all the checks with the property hasSubCheck
 ex:ramp_checklistStatement a aec3po:ChecklistStatement ;
-    rdf:type aec3po:Statement ;
-    aec3po:hasSubCheck ( 
+    aec3po:hasSubCheck (
+        ex:ramp_humanEvaluatedCheckMethod_Noticeable
+        ex:ramp_humanEvaluatedCheckMethod_Straight
         ex:ramp_ORCheck_ProtectiveEdge 
         ex:ramp_numericalCheckMethod_Width 
         ex:ramp_AndCheck_LandingLength 
