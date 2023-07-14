@@ -91,13 +91,14 @@ ex:list_section_23 a rdf:List ;
     rdf:_13 " name and training of the author of the report " .
 
 # Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 using hasPart property
-ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 dct:hasPart  ex:FI_statement_1_section_23 .  
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 dct:hasPart ex:FI_statement_1_section_23 .  
 
 # ---- Define the statement of the third DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_24
 ex:FI_statement_1_section_24 a aec3po:Statement ;
     dct:identifier "Finnish_Environment/24/1" ;
     aec3po:asText "The climate report shall contain the results of the low-carbon assessment for each stage of the life cycle of the building to be assessed, broken down separately for the building and for the building site, in accordance with the following tables: " ;
     aec3po:hasPart ( 
-        ex:table_section_23_carbon_footprint 
-        ex:table_section_23_carbon_handprint 
+        ex:table_section_24_carbon_footprint 
+        ex:table_section_24_carbon_handprint 
         ) .
+# Define a container that contains the two tables defined in the statement of section 24, and define the two tables with their contents. 
