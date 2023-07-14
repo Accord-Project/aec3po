@@ -25,7 +25,7 @@ ex:FI_Dec_Env_Doc a aec3po:Document ;
 
 # Instantiate the first DocumentSubdivision that contains the rule to be checked
 ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 a aec3po:DocumentSubdivision ;
-    dct:identifier "4" ;
+    dct:identifier "Finnish_Environment/4" ;
     dct:title "Length of the assessment period" .
 
 # Instantiate the second DocumentSubdivision that contains the rule to be checked
@@ -35,12 +35,12 @@ ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 a aec3po:DocumentSubdivision ;
 
 # Instantiate the third DocumentSubdivision that contains the rule to be checked
 ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 a aec3po:DocumentSubdivision ;
-    dct:identifier "24" ;
+    dct:identifier "Finnish_Environment/24" ;
     dct:title "Presentation of the results of the low-carbon assessment in the climate report" . 
 
 # Instantiate the fourth DocumentSubdivision that contains the rule to be checked
 ex:FI_Dec_Env_Doc_DocSubdivision_Section_1 a aec3po:DocumentSubdivision ;
-    dct:identifier "1" ;
+    dct:identifier "Finnish_Environment/New/1" ;
     dct:title "Expected new regulation" ;
     rdfs:comment "this is a new regulation that probably will be part of the new Building Act related to the Decree about the climate assessment." .      
 
@@ -56,20 +56,20 @@ ex:FI_Dec_Env_Doc dct:hasPart (
 
 # Instantiate the first statement from the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
 ex:FI_statement_1_section_4 a aec3po:Statement ;
-    dct:identifier "4.1" ;
+    dct:identifier "Finnish_Environment/4/1" ;
     aec3po:asText "The period for assessing the low-carbon performance of a new building or a building undergoing major renovation during its operational phase shall be the first 50 years after construction or major renovation." .
 
 # Instantiate the second statement from the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
 ex:FI_statement_2_section_4 a aec3po:Statement ;
-    dct:identifier "4.2" ;
+    dct:identifier "Finnish_Environment/4/2" ;
     aec3po:asText "The assessment period for the use phase of a building intended to be mobile and temporary shall be the length of the temporary use, up to a maximum of 50 years." .
 
 # Link the first and the second statements to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 using hasPart property
 ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 dct:hasPart  ( ex:FI_statement_1_section_4  ex:FI_statement_2_section_4 ) . 
 
-# ---- Define the statements of the second DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23
+# ---- Define the statement of the second DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23
 ex:FI_statement_1_section_23 a aec3po:Statement ;
-    dct:identifier "23.1" ;
+    dct:identifier "Finnish_Environment/23/1" ;
     aec3po:asText "The climate report shall contain at least the following information:" ;
     aec3po:hasPart ex:list_section_23 .
 
@@ -91,4 +91,13 @@ ex:list_section_23 a rdf:List ;
     rdf:_13 " name and training of the author of the report " .
 
 # Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 using hasPart property
-ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 dct:hasPart  ex:FI_statement_1_section_23 .    
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 dct:hasPart  ex:FI_statement_1_section_23 .  
+
+# ---- Define the statement of the third DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_24
+ex:FI_statement_1_section_24 a aec3po:Statement ;
+    dct:identifier "Finnish_Environment/24/1" ;
+    aec3po:asText "The climate report shall contain the results of the low-carbon assessment for each stage of the life cycle of the building to be assessed, broken down separately for the building and for the building site, in accordance with the following tables: " ;
+    aec3po:hasPart ( 
+        ex:table_section_23_carbon_footprint 
+        ex:table_section_23_carbon_handprint 
+        ) .
