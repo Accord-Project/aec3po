@@ -97,8 +97,224 @@ ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 dct:hasPart ex:FI_statement_1_sectio
 ex:FI_statement_1_section_24 a aec3po:Statement ;
     dct:identifier "Finnish_Environment/24/1" ;
     aec3po:asText "The climate report shall contain the results of the low-carbon assessment for each stage of the life cycle of the building to be assessed, broken down separately for the building and for the building site, in accordance with the following tables: " ;
-    aec3po:hasPart ( 
-        ex:table_section_24_carbon_footprint 
-        ex:table_section_24_carbon_handprint 
-        ) .
+        aec3po:hasPart ex:container_tables_section_24 . 
+        
 # Define a container that contains the two tables defined in the statement of section 24, and define the two tables with their contents. 
+ex:container_tables_section_24 a aec3po:Container ;
+    aec3po:contains (
+        ex:table_section_24_carbon_footprint 
+        ex:table_section_24_carbon_handprint
+
+    ) .
+
+# Define the table ex:table_section_24_carbon_footprint 
+ex:table_section_24_carbon_footprint a aec3po:Table ;
+    aec3po:contains (
+        ex:table_section_24_carbon_footprint_column_1
+        ex:table_section_24_carbon_footprint_column_2
+        ex:table_section_24_carbon_footprint_row_1
+        ex:table_section_24_carbon_footprint_row_2
+        ex:table_section_24_carbon_footprint_row_3
+        ex:table_section_24_carbon_footprint_row_4
+        ex:table_section_24_carbon_footprint_row_5
+        ex:table_section_24_carbon_footprint_row_6
+        ex:table_section_24_carbon_footprint_row_7
+        ex:table_section_24_carbon_footprint_row_8
+        ex:table_section_24_carbon_footprint_row_9
+        ex:table_section_24_carbon_footprint_row_10
+    )  .
+
+# Define column 1 of the table table_section_24_carbon_footprint
+ex:table_section_24_carbon_footprint_column_1 a aec3po:Column ;
+   aec3po:hasValue "" .
+# Define column 2 of the table table_section_24_carbon_footprint
+ex:table_section_24_carbon_footprint_column_2 a aec3po:Column ;
+   aec3po:hasValue "Carbon footprint" ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_column_2_subcolumn_1
+    ex:table_section_24_carbon_footprint_column_2_subcolumn_2
+   ) .
+#Define the subculumns of column 2 
+#subColumn 1
+ex:table_section_24_carbon_footprint_column_2_subcolumn_1 a aec3po:Column ;
+   aec3po:hasValue "Building" .
+#subColumn 2
+ex:table_section_24_carbon_footprint_column_2_subcolumn_2 a aec3po:Column ;
+   aec3po:hasValue "Building site" .
+
+#Define the rows of the table table_section_24_carbon_footprint
+#row_1
+ex:table_section_24_carbon_footprint_row_1 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_1.1
+    ex:table_section_24_carbon_footprint_cell_1.2
+   ) .
+#Define the cells of row_1
+#Cell 1.1
+ex:table_section_24_carbon_footprint_cell_1.1 a aec3po:Cell ;
+   aec3po:hasValue "" .
+#Cell 1.2
+ex:table_section_24_carbon_footprint_cell_1.2 a aec3po:Cell ;
+   aec3po:hasValue ex:table_section_24_carbon_footprint_column_2.   
+
+#row_2
+ex:table_section_24_carbon_footprint_row_2 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_2.1
+    ex:table_section_24_carbon_footprint_cell_2.2
+    ex:table_section_24_carbon_footprint_cell_2.3
+   ) .
+#Define the cells of row_2
+#Cell 2.1
+ex:table_section_24_carbon_footprint_cell_2.1 a aec3po:Cell ;
+   aec3po:hasValue "A1-3 Building products manufacturing" .
+#Cell 2.2
+ex:table_section_24_carbon_footprint_cell_2.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 2.3
+ex:table_section_24_carbon_footprint_cell_2.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_3
+ex:table_section_24_carbon_footprint_row_3 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_3.1
+    ex:table_section_24_carbon_footprint_cell_3.2
+    ex:table_section_24_carbon_footprint_cell_3.3
+   ) .
+#Define the cells of row_3
+#Cell 3.1
+ex:table_section_24_carbon_footprint_cell_3.1 a aec3po:Cell ;
+   aec3po:hasValue "A4 Transport" .
+#Cell 3.2
+ex:table_section_24_carbon_footprint_cell_3.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 3.3
+ex:table_section_24_carbon_footprint_cell_3.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_4
+ex:table_section_24_carbon_footprint_row_4 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_4.1
+    ex:table_section_24_carbon_footprint_cell_4.2
+    ex:table_section_24_carbon_footprint_cell_4.3
+   ) .
+#Define the cells of row_4
+#Cell 4.1
+ex:table_section_24_carbon_footprint_cell_4.1 a aec3po:Cell ;
+   aec3po:hasValue "A5 Site activities" .
+#Cell 4.2
+ex:table_section_24_carbon_footprint_cell_4.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 4.3
+ex:table_section_24_carbon_footprint_cell_4.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .
+
+#row_5
+ex:table_section_24_carbon_footprint_row_5 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_5.1
+    ex:table_section_24_carbon_footprint_cell_5.2
+    ex:table_section_24_carbon_footprint_cell_5.3
+   ) .
+#Define the cells of row_5
+#Cell 5.1
+ex:table_section_24_carbon_footprint_cell_5.1 a aec3po:Cell ;
+   aec3po:hasValue "B4 Replacement of construction products" .
+#Cell 5.2
+ex:table_section_24_carbon_footprint_cell_5.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 5.3
+ex:table_section_24_carbon_footprint_cell_5.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .
+
+#row_6
+ex:table_section_24_carbon_footprint_row_6 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_6.1
+    ex:table_section_24_carbon_footprint_cell_6.2
+    ex:table_section_24_carbon_footprint_cell_6.3
+   ) .
+#Define the cells of row_6
+#Cell 6.1
+ex:table_section_24_carbon_footprint_cell_6.1 a aec3po:Cell ;
+   aec3po:hasValue "B6 Energy use" .
+#Cell 6.2
+ex:table_section_24_carbon_footprint_cell_6.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 6.3
+ex:table_section_24_carbon_footprint_cell_6.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .  
+
+#row_7
+ex:table_section_24_carbon_footprint_row_7 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_7.1
+    ex:table_section_24_carbon_footprint_cell_7.2
+    ex:table_section_24_carbon_footprint_cell_7.3
+   ) .
+#Define the cells of row_7
+#Cell 7.1
+ex:table_section_24_carbon_footprint_cell_7.1 a aec3po:Cell ;
+   aec3po:hasValue "C1 Demolition" .
+#Cell 7.2
+ex:table_section_24_carbon_footprint_cell_7.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 7.3
+ex:table_section_24_carbon_footprint_cell_7.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_8
+ex:table_section_24_carbon_footprint_row_8 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_8.1
+    ex:table_section_24_carbon_footprint_cell_8.2
+    ex:table_section_24_carbon_footprint_cell_8.3
+   ) .
+#Define the cells of row_8
+#Cell 8.1
+ex:table_section_24_carbon_footprint_cell_8.1 a aec3po:Cell ;
+   aec3po:hasValue "C2 Transport of demolition waste" .
+#Cell 8.2
+ex:table_section_24_carbon_footprint_cell_8.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 8.3
+ex:table_section_24_carbon_footprint_cell_8.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_9
+ex:table_section_24_carbon_footprint_row_9 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_9.1
+    ex:table_section_24_carbon_footprint_cell_9.2
+    ex:table_section_24_carbon_footprint_cell_9.3
+   ) .
+#Define the cells of row_9
+#Cell 9.1
+ex:table_section_24_carbon_footprint_cell_9.1 a aec3po:Cell ;
+   aec3po:hasValue "C4 Disposal of demolition waste" .
+#Cell 9.2
+ex:table_section_24_carbon_footprint_cell_9.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 9.3
+ex:table_section_24_carbon_footprint_cell_9.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_10
+ex:table_section_24_carbon_footprint_row_10 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_footprint_cell_10.1
+    ex:table_section_24_carbon_footprint_cell_10.2
+    ex:table_section_24_carbon_footprint_cell_10.3
+   ) .
+#Define the cells of row_10
+#Cell 10.1
+ex:table_section_24_carbon_footprint_cell_10.1 a aec3po:Cell ;
+   aec3po:hasValue "Total carbon footprint" .
+#Cell 10.2
+ex:table_section_24_carbon_footprint_cell_10.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 10.3
+ex:table_section_24_carbon_footprint_cell_10.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .              
