@@ -483,3 +483,127 @@ ex:caption_tables_section_24 a aec3po:caption ;
 
 #Add the caption to the container using the property contains
 ex:container_tables_section_24 aec3po:contains ex:caption_tables_section_24 .
+
+# Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 using hasPart property
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 dct:hasPart ex:FI_statement_1_section_24 .
+
+# ---- Define the statement of the fourth DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_1
+ex:FI_statement_1_section_1 a aec3po:Statement ;
+    dct:identifier "Finnish_Environment/new/1" ;
+    aec3po:asText "The carbon footprint of the building or each of its parts with the use category named in Table 1 shall not exceed the limit value from the following table:  " ;
+    aec3po:hasPart ex:container_table_section_new_1 . 
+        
+# Define a container that contains the table defined in the statement of section 1 of the expected new regulation, and define the table with its content. 
+ex:container_table_section_new_1 a aec3po:Container ;
+    aec3po:contains ex:table_section_new_1_total_carbon_footprint .
+
+# Define the table ex:table_section_new_1_total_carbon_footprint 
+ex:table_section_new_1_total_carbon_footprint a aec3po:Table ;
+    aec3po:contains (
+        ex:table_section_new_1_total_carbon_footprint_column_1
+        ex:table_section_new_1_total_carbon_footprint_column_2
+        ex:table_section_new_1_total_carbon_footprint_row_1
+        ex:table_section_new_1_total_carbon_footprint_row_2
+        ex:table_section_new_1_total_carbon_footprint_row_3
+        ex:table_section_new_1_total_carbon_footprint_row_4
+        ex:table_section_new_1_total_carbon_footprint_row_5
+        ex:table_section_new_1_total_carbon_footprint_row_6
+        ex:table_section_new_1_total_carbon_footprint_row_7
+        ex:table_section_new_1_total_carbon_footprint_row_8
+    )  . 
+
+# Define column 1 of the table ex:table_section_new_1_total_carbon_footprint
+ex:table_section_new_1_total_carbon_footprint_column_1 a aec3po:Column ;
+   aec3po:hasValue "Use category" .
+# Define column 2 of the table ex:table_section_new_1_total_carbon_footprint
+ex:table_section_new_1_total_carbon_footprint_column_2 a aec3po:Column ;
+   aec3po:hasValue "Total carbon footprint" .
+
+#Define the rows of the table ex:table_section_new_1_total_carbon_footprint
+#row_1
+ex:table_section_new_1_total_carbon_footprint_row_1 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_new_1_total_carbon_footprint_cell_1.1
+    ex:table_section_new_1_total_carbon_footprint_cell_1.2
+   ) .
+#Define the cells of row_1
+#Cell 1.1
+ex:table_section_new_1_total_carbon_footprint_cell_1.1 a aec3po:Cell ;
+   aec3po:hasValue "Accommodation / hotel " .
+#Cell 1.2
+ex:table_section_new_1_total_carbon_footprint_cell_1.2 a aec3po:Cell ;
+   aec3po:hasValue "80 kgCO2e/m2/a " . 
+
+#row_2
+ex:table_section_new_1_total_carbon_footprint_row_2 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_new_1_total_carbon_footprint_cell_2.1
+    ex:table_section_new_1_total_carbon_footprint_cell_2.2
+   ) .
+#Define the cells of row_2
+#Cell 2.1
+ex:table_section_new_1_total_carbon_footprint_cell_2.1 a aec3po:Cell ;
+   aec3po:hasValue "Apartment building " .
+#Cell 2.2
+ex:table_section_new_1_total_carbon_footprint_cell_2.2 a aec3po:Cell ;
+   aec3po:hasValue "60 kgCO2e/m2/a " .   
+
+#row_3
+ex:table_section_new_1_total_carbon_footprint_row_3 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_new_1_total_carbon_footprint_cell_3.1
+    ex:table_section_new_1_total_carbon_footprint_cell_3.2
+   ) .
+#Define the cells of row_3
+#Cell 3.1
+ex:table_section_new_1_total_carbon_footprint_cell_3.1 a aec3po:Cell ;
+   aec3po:hasValue "Educational building " .
+#Cell 3.2
+ex:table_section_new_1_total_carbon_footprint_cell_3.2 a aec3po:Cell ;
+   aec3po:hasValue "100 kgCO2e/m2/a " . 
+
+#row_4
+ex:table_section_new_1_total_carbon_footprint_row_4 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_new_1_total_carbon_footprint_cell_4.1
+    ex:table_section_new_1_total_carbon_footprint_cell_4.2
+   ) .
+#Define the cells of row_4
+#Cell 4.1
+ex:table_section_new_1_total_carbon_footprint_cell_4.1 a aec3po:Cell ;
+   aec3po:hasValue "Office " .
+#Cell 4.2
+ex:table_section_new_1_total_carbon_footprint_cell_4.2 a aec3po:Cell ;
+   aec3po:hasValue "120 kgCO2e/m2/a " .                  
+
+#row_6
+ex:table_section_new_1_total_carbon_footprint_row_6 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_new_1_total_carbon_footprint_cell_6.1
+    ex:table_section_new_1_total_carbon_footprint_cell_6.2
+   ) .
+#Define the cells of row_6
+#Cell 6.1
+ex:table_section_new_1_total_carbon_footprint_cell_6.1 a aec3po:Cell ;
+   aec3po:hasValue "Shopping centre " .
+#Cell 6.2
+ex:table_section_new_1_total_carbon_footprint_cell_6.2 a aec3po:Cell ;
+   aec3po:hasValue "120 kgCO2e/m2/a " . 
+
+#row_7
+ex:table_section_new_1_total_carbon_footprint_row_7 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_new_1_total_carbon_footprint_cell_7.1
+    ex:table_section_new_1_total_carbon_footprint_cell_7.2
+   ) .
+#Define the cells of row_7
+#Cell 7.1
+ex:table_section_new_1_total_carbon_footprint_cell_7.1 a aec3po:Cell ;
+   aec3po:hasValue "Other " .
+#Cell 7.2
+ex:table_section_new_1_total_carbon_footprint_cell_7.2 a aec3po:Cell ;
+   aec3po:hasValue "n/a " .   
+
+# Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_1 using hasPart property
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_1 dct:hasPart  ex:FI_statement_1_section_1 .
+
