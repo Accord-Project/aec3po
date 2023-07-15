@@ -317,4 +317,169 @@ ex:table_section_24_carbon_footprint_cell_10.2 a aec3po:Cell ;
    aec3po:hasValue "kgCO2e/m2/a" .  
 #Cell 10.3
 ex:table_section_24_carbon_footprint_cell_10.3 a aec3po:Cell ;
-   aec3po:hasValue "kgCO2e/m2/a " .              
+   aec3po:hasValue "kgCO2e/m2/a " .        
+
+# Define the table ex:table_section_24_carbon_handprint
+ex:table_section_24_carbon_handprint a aec3po:Table ;
+    aec3po:contains (
+        ex:table_section_24_carbon_handprint_column_1
+        ex:table_section_24_carbon_handprint_column_2
+        ex:table_section_24_carbon_handprint_row_1
+        ex:table_section_24_carbon_handprint_row_2
+        ex:table_section_24_carbon_handprint_row_3
+        ex:table_section_24_carbon_handprint_row_4
+        ex:table_section_24_carbon_handprint_row_5
+        ex:table_section_24_carbon_handprint_row_6
+        ex:table_section_24_carbon_handprint_row_7
+    )  .
+
+# Define column 1 of the table table_section_24_carbon_handprint
+ex:table_section_24_carbon_handprint_column_1 a aec3po:Column ;
+   aec3po:hasValue "" .
+# Define column 2 of the table table_section_24_carbon_handprint
+ex:table_section_24_carbon_handprint_column_2 a aec3po:Column ;
+   aec3po:hasValue "Carbon handprint" ;
+   aec3po:contains (
+    ex:table_section_24_carbon_handprint_column_2_subcolumn_1
+    ex:table_section_24_carbon_handprint_column_2_subcolumn_2
+   ) .
+#Define the subculumns of column 2 
+#subColumn 1
+ex:table_section_24_carbon_handprint_column_2_subcolumn_1 a aec3po:Column ;
+   aec3po:hasValue "Building" .
+#subColumn 2
+ex:table_section_24_carbon_handprint_column_2_subcolumn_2 a aec3po:Column ;
+   aec3po:hasValue "Building site" .
+
+#Define the rows of the table table_section_24_carbon_handprint
+#row_1
+ex:table_section_24_carbon_handprint_row_1 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_handprint_cell_1.1
+    ex:table_section_24_carbon_handprint_cell_1.2
+   ) .
+#Define the cells of row_1
+#Cell 1.1
+ex:table_section_24_carbon_handprint_cell_1.1 a aec3po:Cell ;
+   aec3po:hasValue "" .
+#Cell 1.2
+ex:table_section_24_carbon_handprint_cell_1.2 a aec3po:Cell ;
+   aec3po:hasValue ex:table_section_24_carbon_handprint_column_2.   
+
+#row_2
+ex:table_section_24_carbon_handprint_row_2 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_handprint_cell_2.1
+    ex:table_section_24_carbon_handprint_cell_2.2
+    ex:table_section_24_carbon_handprint_cell_2.3
+   ) .
+#Define the cells of row_2
+#Cell 2.1
+ex:table_section_24_carbon_handprint_cell_2.1 a aec3po:Cell ;
+   aec3po:hasValue "D1. Reuse and recycling" .
+#Cell 2.2
+ex:table_section_24_carbon_handprint_cell_2.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 2.3
+ex:table_section_24_carbon_handprint_cell_2.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_3
+ex:table_section_24_carbon_handprint_row_3 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_handprint_cell_3.1
+    ex:table_section_24_carbon_handprint_cell_3.2
+    ex:table_section_24_carbon_handprint_cell_3.3
+   ) .
+#Define the cells of row_3
+#Cell 3.1
+ex:table_section_24_carbon_handprint_cell_3.1 a aec3po:Cell ;
+   aec3po:hasValue "D2. Energy recovery" .
+#Cell 3.2
+ex:table_section_24_carbon_handprint_cell_3.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 3.3
+ex:table_section_24_carbon_handprint_cell_3.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_4
+ex:table_section_24_carbon_handprint_row_4 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_handprint_cell_4.1
+    ex:table_section_24_carbon_handprint_cell_4.2
+    ex:table_section_24_carbon_handprint_cell_4.3
+   ) .
+#Define the cells of row_4
+#Cell 4.1
+ex:table_section_24_carbon_handprint_cell_4.1 a aec3po:Cell ;
+   aec3po:hasValue "D3 Excess renewable energy" .
+#Cell 4.2
+ex:table_section_24_carbon_handprint_cell_4.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 4.3
+ex:table_section_24_carbon_handprint_cell_4.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .
+
+#row_5
+ex:table_section_24_carbon_handprint_row_5 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_handprint_cell_5.1
+    ex:table_section_24_carbon_handprint_cell_5.2
+    ex:table_section_24_carbon_handprint_cell_5.3
+   ) .
+#Define the cells of row_5
+#Cell 5.1
+ex:table_section_24_carbon_handprint_cell_5.1 a aec3po:Cell ;
+   aec3po:hasValue "D4. carbon stock effect of products" .
+#Cell 5.2
+ex:table_section_24_carbon_handprint_cell_5.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 5.3
+ex:table_section_24_carbon_handprint_cell_5.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .
+
+#row_6
+ex:table_section_24_carbon_handprint_row_6 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_handprint_cell_6.1
+    ex:table_section_24_carbon_handprint_cell_6.2
+    ex:table_section_24_carbon_handprint_cell_6.3
+   ) .
+#Define the cells of row_6
+#Cell 6.1
+ex:table_section_24_carbon_handprint_cell_6.1 a aec3po:Cell ;
+   aec3po:hasValue "D5. Carbonation" .
+#Cell 6.2
+ex:table_section_24_carbon_handprint_cell_6.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 6.3
+ex:table_section_24_carbon_handprint_cell_6.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .  
+
+#row_7
+ex:table_section_24_carbon_handprint_row_7 a aec3po:Row ;
+   aec3po:contains (
+    ex:table_section_24_carbon_handprint_cell_7.1
+    ex:table_section_24_carbon_handprint_cell_7.2
+    ex:table_section_24_carbon_handprint_cell_7.3
+   ) .
+#Define the cells of row_7
+#Cell 7.1
+ex:table_section_24_carbon_handprint_cell_7.1 a aec3po:Cell ;
+   aec3po:hasValue "D6. Planted wood" .
+#Cell 7.2
+ex:table_section_24_carbon_handprint_cell_7.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 7.3
+ex:table_section_24_carbon_handprint_cell_7.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .  
+
+#Define the caption of the tables as a DefinitionStatement
+ex:caption_tables_section_24 a aec3po:caption ; 
+   rdf:type aec3po:DefinitionStatement ;
+   aec3po:asText "“kgCO2e” means greenhouse gases emitted, avoided or removed, expressed in kilograms of carbon dioxide equivalent and rounded symmetrically to two decimal places; " ;
+   aec3po:asText "“m2” means the sum of the heated floor areas of the storeys, calculated according to the internal planes of the external walls surrounding the storeys; " ;
+   aec3po:asText "“a” means the length of the assessment period in years according to Article 4. " .     
+
+#Add the caption to the container using the property contains
+ex:container_tables_section_24 aec3po:contains ex:caption_tables_section_24 .
