@@ -640,6 +640,10 @@ ex:FI3_building_assessmentPeriod a aec3po:Property ;
     # PR ctd -- aec3po:hasQuantityKind ifcOWL:ifcDuration  ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
 
+ex:FI3_building_ClimateReport a aec3po:Property ;
+    rdf:type aec3po:Document ; 
+    dct:title "Climate Report" .   
+
 ex:FI3_building_ID a aec3po:Property ;
    rdf:type ifcOWL:buildingID .
 
@@ -673,3 +677,21 @@ ex:FI3_building_ClimateReportAuthorName a aec3po:Property ;
    rdf:type dct:contributor .
 
 ex:FI3_building_ClimateReportAuthorTraining a aec3po:Property .   
+
+#Link the climate report to its properties using dct:hasPart
+ex:FI3_building_ClimateReport dct:hasPart (
+    ex:FI3_building_ID
+    ex:FI3_building_UseCategoryName
+    ex:FI3_building_HeatedFloorArea
+    ex:FI3_building_SiteArea
+    ex:FI3_building_CarbonAssessmentResult
+    ex:FI3_building_Users
+    ex:FI3_building_EnergyConsumption
+    ex:FI3_building_MainConstructionMaterial
+    ex:FI3_building_DesignLife
+    ex:FI3_building_CalculationSoftware
+    ex:FI3_building_ClimateReportDate
+    ex:FI3_building_ClimateReportAuthorName
+    ex:FI3_building_ClimateReportAuthorTraining
+
+) .
