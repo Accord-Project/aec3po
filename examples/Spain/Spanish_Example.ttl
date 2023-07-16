@@ -80,7 +80,7 @@ ex:cantilever a aec3po:FeatureOfInterest ;
 # Define the properties of the cantilever and constraints based on the Statement
 ex:streeBaseOffset a aec3po:Property ;
     aec3po:hasValue 3.2 ;
-    aec3po:hasQuantityKind ex:M ;
+    aec3po:hasQuantityKind unit:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
 ex:othersBaseOffset a aec3po:Property ;
@@ -115,7 +115,7 @@ ex:cantiliver_numericalCheckMethod_partywall_distance  rdf:type aec3po:Proceduri
 # Option 2 for party wall distance check: assuming SHACL is used as a method. (Not final, need a link with operationalize and class Canteliver).
 aec3po:cantiliver_SHACLCheckMethod_partywall_distance
 	a sh:NodeShape ;
-	sh:targetClass aec3po:canteliver ;    # Applies to all persons
+	sh:targetClass aec3po:canteliver ;    
 	sh:property [                 
 		sh:path aec3po:design_othersBaseOffset;           # constrains the values of design_othersBaseOffset
 		sh:maxCount 1 ;
