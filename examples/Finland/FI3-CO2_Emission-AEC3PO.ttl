@@ -645,5 +645,17 @@ ex:FI3_building_UseCategoryName a aec3po:Property ;
    rdf:type ifcOWL:MarketCategory .
 
 ex:FI3_building_heatedFloorArea a aec3po:Property ;
-   rdf:type ifcOWL:TotalHeatingLoad .  
+   rdf:type ifcOWL:TotalHeatingLoad . 
 
+ex:FI3_building_siteArea a aec3po:Property ;
+   rdf:type ifcOWL:TotaArea .
+
+ex:FI3_building_carbonAssessmentResult a aec3po:Property . # to be revised 
+
+ex:FI3_building_Users a aec3po:Property .
+
+ex:FI3_building_EnergyConsumption a aec3po:Property ;
+   rdf:type ifcOWL:TotalPrimaryEnergyConsumption . # property of IfcBuildingElementProxy
+
+ex:FI3_building_MainConstructionMaterial a aec3po:Property ;
+   rdf:type ifcOWL:ifcMaterial .
