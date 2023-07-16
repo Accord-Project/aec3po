@@ -636,6 +636,8 @@ ex:FI3_buildingSite a aec3po:FeatureOfInterest ;
 ex:FI3_building_assessmentPeriod a aec3po:Property ;
     aec3po:hasValue "50 years" ;
     aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  ;
+    # OR aec3po:hasValue 50 ; 
+    # PR ctd -- aec3po:hasQuantityKind ifcOWL:ifcDuration  ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
 
 ex:FI3_building_ID a aec3po:Property ;
