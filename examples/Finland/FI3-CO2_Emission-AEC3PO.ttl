@@ -607,3 +607,16 @@ ex:table_section_new_1_total_carbon_footprint_cell_7.2 a aec3po:Cell ;
 # Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_1 using hasPart property
 ex:FI_Dec_Env_Doc_DocSubdivision_Section_1 dct:hasPart  ex:FI_statement_1_section_1 .
 
+#-------Instantiate the checkStatements expressed in the statement
+
+# Instantiate the FI3_numericalCheckStatement_AssessmentPeriod as a subClassOf CheckStatement
+ex:FI3_numericalCheckStatement_AssessmentPeriod a aec3po:NumericalCheckStatement .
+
+# Instantiate the FI3_certificateCheckStatement_AssessmentReport as a subClassOf CheckStatement
+ex:FI3_certificatelCheckStatement_AssessmentReport a aec3po:CertificateCheckStatement .
+
+# Instantiate the FI3_categoryCheckStatement_CarbonAssessmentResult as a subClassOf CheckStatement
+ex:FI3_certificatelCheckStatement_AssessmentReport a aec3po:CategoryCheckStatement .
+
+# Instantiate the FI3_categoryCheckStatement_CarbonFootprintResult as a subClassOf CheckStatement
+ex:FI3_categoryCheckStatement_CarbonFootprintResult a aec3po:CategoryCheckStatement .
