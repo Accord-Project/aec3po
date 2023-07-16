@@ -714,7 +714,7 @@ ex:FI3_building_DesignLife a aec3po:Property .
 ex:FI3_building_CalculationSoftware a aec3po:Property .
 
 ex:FI3_building_ClimateReportDate a aec3po:Property ;
-   rdf:type ifcOWL:ifcDate .  
+   rdf:type ifcOWL:ifcDate ## OR dct:Date.  
 
 ex:FI3_building_ClimateReportAuthorName a aec3po:Property ;
    rdf:type dct:contributor .
