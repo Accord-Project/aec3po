@@ -652,7 +652,7 @@ ex:FI3_building_heatedFloorArea a aec3po:Property ;
 ex:FI3_building_siteArea a aec3po:Property ;
    rdf:type ifcOWL:TotaArea .
 
-ex:FI3_building_carbonAssessmentResult a aec3po:Property . # to be revised 
+ex:FI3_building_carbonAssessmentResult a aec3po:Property .  
 
 ex:FI3_building_Users a aec3po:Property .
 
@@ -661,3 +661,15 @@ ex:FI3_building_EnergyConsumption a aec3po:Property ;
 
 ex:FI3_building_MainConstructionMaterial a aec3po:Property ;
    rdf:type ifcOWL:ifcMaterial .
+
+ex:FI3_building_DesignLife a aec3po:Property . 
+
+ex:FI3_building_CalculationSoftware a aec3po:Property .
+
+ex:FI3_building_ClimateReportDate a aec3po:Property ;
+   rdf:type ifcOWL:ifcDate .  
+
+ex:FI3_building_ClimateReportAuthorName a aec3po:Property ;
+   rdf:type dct:contributor .
+
+ex:FI3_building_ClimateReportAuthorTraining a aec3po:Property .   
