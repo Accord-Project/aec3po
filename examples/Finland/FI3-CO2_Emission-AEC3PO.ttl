@@ -620,3 +620,30 @@ ex:FI3_certificatelCheckStatement_AssessmentReport a aec3po:CategoryCheckStateme
 
 # Instantiate the FI3_categoryCheckStatement_CarbonFootprintResult as a subClassOf CheckStatement
 ex:FI3_categoryCheckStatement_CarbonFootprintResult a aec3po:CategoryCheckStatement .
+
+#--------End of document and statements description and their classifications
+
+#-------Required Data informed by the Statement
+
+# Instantiate the building and the building site as  FeatureOfInterest 
+ex:FI3_building a aec3po:FeatureOfInterest ;
+    rdf:type ifcOWL:ifcBuilding .
+
+ex:FI3_buildingSite a aec3po:FeatureOfInterest ;
+    rdf:type ifcOWL:ifcSite . 
+
+# Define the properties of the building and constraints based on the Statement
+ex:FI3_building_assessmentPeriod a aec3po:Property ;
+    aec3po:hasValue "50 years" ;
+    aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  ;
+    aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
+
+ex:FI3_building_ID a aec3po:Property ;
+   rdf:type ifcOWL:buildingID .
+
+ex:FI3_building_UseCategoryName a aec3po:Property ;
+   rdf:type ifcOWL:MarketCategory .
+
+ex:FI3_building_heatedFloorArea a aec3po:Property ;
+   rdf:type ifcOWL:TotalHeatingLoad .  
+
