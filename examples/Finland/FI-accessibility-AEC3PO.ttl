@@ -143,18 +143,22 @@ ex:rampMaxGradient a aec3po:Property ;
 
 ex:rampLowerLandingElev a aec3po:Property ;
     aec3po:hasValue 500 ;
+    aec3po:hasQuantityKind unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .          
 
 ex:rampUpperLandingElev a aec3po:Property ;
     aec3po:hasValue 1000 ;
+    aec3po:hasQuantityKind unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
 
 ex:rampIntLandingLenght a aec3po:Property ;
     aec3po:hasValue 2000 ;
+    aec3po:hasQuantityKind unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
 ex:rampIntLandingElev a aec3po:Property ;
     aec3po:hasValue 500 ;
+    aec3po:hasQuantityKind unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le . 
 
 ex:rampIndoorCondition a aec3po:Property ;
