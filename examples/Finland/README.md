@@ -1,7 +1,7 @@
 # Finland Demo Case
 This folder contains two examples of AEC3PO ontology instantiation from the Finnish demo cases. The first example is _FI1 - Finnish Accessibility_ and the second example is _FI3 - CO2 Emission_. The two examples are described as follows:
 
-## FI1 - Finnish Accessibility (Ramp)
+## Use Case N# 1:  FI1 - Finnish Accessibility (Ramp)
 
 This example is provided in the file _"FI-accessibility-AEC3PO.ttl"_. This file provides an example of instantiating the aec3po ontology using Turtle syntax with the Finnish demo case. This example represents the ramp check. The rules are defined in _Section 2/Subsection 2_ from the English tranlation of the Finnish Accessibility document, taken from the Land Use and Building Act (132/1999), as amended by Act 958/2012. The statements of the rules are defined below in their English translation.
 
@@ -11,7 +11,7 @@ The two figures below represent a part from AEC3PO instantiation that correspond
 ![Finalnd-Document](Images/FI1-Doc.png) 
 ![Finalnd-StatementsClassification](Images/FI1-StatementsClassification.png) 
 
-## FI3 - CO2 Emission
+## Use Case N #2: FI3 - CO2 Emission
 
 This example is provided in the file _"FI3-CO2_Emission-AEC3PO.ttl"_. This file provides an example of instantiating the aec3po ontology using Turtle syntax with the Finnish demo case. This example represents the Carbon footprint emission check. The rules are defined in the English translation of the _**Decree of the Ministry of the Environment**_ on the climate assessment of buildings (_Draft 30.9.2022, consultation round_). The statements of the rules are defined in the document presented in [this link](https://vttgroup.sharepoint.com/:w:/r/sites/EU-projectpreparationDigitalpermitsandcompliancecheck/_layouts/15/Doc.aspx?sourcedoc=%7BB135D7E5-FBF8-4AA2-A12D-7F5856EE7A38%7D&file=Use%20Case%20FI3%20extract%20from%20the%20regulations.docx&action=default&mobileredirect=true&cid=495d26c0-9bbb-4fa1-a732-648047ecf92b).
 
