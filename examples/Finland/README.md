@@ -10,3 +10,8 @@ _"The ramp referred to in subsection 1 above shall be easily noticeable and stra
 The two figures below represent a part from AEC3PO instantiation that corresponds to the Document (**_aec3po:Document_**) instantiation and the Statement classficiation (**_aec3po:Statement_**), respectively.
 ![Finland](FI1-Doc.png) 
 ![Finland](FI1-StatementsClassification.png) 
+
+## FI3 - CO2 Emission
+
+This example is provided in the file _"FI3-CO2_Emission-AEC3PO.ttl"_. This file provides an example of instantiating the aec3po ontology using Turtle syntax with the Finnish demo case. This example represents the Carbon footprint emission check. The rules are defined in the English translation of the _**Decree of the Ministry of the Environment**_ on the climate assessment of buildings (_Draft 30.9.2022, consultation round_). The statements of the rules are defined in the document presented in [this link](https://vttgroup.sharepoint.com/:w:/r/sites/EU-projectpreparationDigitalpermitsandcompliancecheck/_layouts/15/Doc.aspx?sourcedoc=%7BB135D7E5-FBF8-4AA2-A12D-7F5856EE7A38%7D&file=Use%20Case%20FI3%20extract%20from%20the%20regulations.docx&action=default&mobileredirect=true&cid=495d26c0-9bbb-4fa1-a732-648047ecf92b).
+
