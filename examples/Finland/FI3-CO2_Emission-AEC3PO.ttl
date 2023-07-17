@@ -907,7 +907,7 @@ ex:FI3_design_climateReport_generalInfo a aec3po:PropertyDesign ;
    dct:contributor "Petr Hradil" .
 
  ###Content of the climate report
- ex:FI3_design_climateReport_content a aec3po:PropertyDesign .
+ ex:FI3_design_climateReport_contentPropertyDesign a aec3po:PropertyDesign .
 
  ####Define the properties of the content
 
@@ -954,7 +954,7 @@ ex:FI3_building_ClimateReportAuthorTrainingProperty a aec3po:Property ;
     aec3po:hasValue "Ing. PhD in civil engineering" .    
 
 #Link the design ex:FI3_design_climateReport_content to its properties with hasProperty
-ex:FI3_design_climateReport_content aec3po:hasProperty (
+ex:FI3_design_climateReport_contentPropertyDesign aec3po:hasProperty (
      ex:FI3_building_IDProperty
      ex:FI3_building_UseCategoryNameProperty
      ex:FI3_building_HeatedFloorAreaProperty
@@ -1031,3 +1031,30 @@ ex:FI3_design_climateReport aec3po:hasProperty (
     ex:FI3_building_AssessmentResultPropertyDesign
 
 ) .
+
+##Define the design of the carbon footprint result
+ex:FI3_building_CarbonFootprintResultPropertyDesign a aec3po:PropertyDesign .
+###Define the properties of this PropertyDesign
+ex:FI3_building_carbonFootprint_UseCategory_New_Property a aec3po:Property ;
+   aec3po:hasValue ex:FI3_building_UseCategoryNameProperty .
+
+ex:FI3_building_carbonFootprint_TotalCarbonFootprint_New_Property a aec3po:Property ;
+   aec3po:hasValue 17.606406942307498 ;
+   aec3po:hasQuantityKind "kWh/m2a" . 
+
+#Link ex:FI3_building_CarbonFootprintResultPropertyDesign to its properties with hasProperty
+ex:FI3_building_CarbonFootprintResultPropertyDesign aec3po:hasProperty (
+    ex:FI3_building_carbonFootprint_UseCategory_New_Property
+    ex:FI3_building_carbonFootprint_TotalCarbonFootprint_New_Property
+
+)  . 
+
+#Link ex:FI3_building_design to all its propertyDesign(s) with hasProperty
+ex:FI3_building_design aec3po:hasProperty (
+    ex:FI3_design_length_AssessmentPeriodPropertyDesign
+    ex:FI3_design_climateReportPropertyDesign
+    ex:FI3_building_AssessmentResultPropertyDesign
+    ex:FI3_building_CarbonFootprintResultPropertyDesign
+) .
+
+
