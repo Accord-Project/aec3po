@@ -18,3 +18,6 @@ This example is provided in the file _"FI3-CO2_Emission-AEC3PO.ttl"_. This file 
 The two figures below represent a part from AEC3PO instantiation that corresponds respectively to:
 * two examples of the Property class **_aec3po:Property_** of the _Feature of Interest_ **_building_** (**_ifcOWL:IFCBuilding_**) ;
 * the check methods **_aec3po:CheckMethod_** classficiation linked to the properties designs **_aec3po:PropertyDesign_** with the property **_aec3po:forDesign_** .
+
+![Finland](FI3-Property.png) 
+![Finland](FI3-forDesign.png)   
