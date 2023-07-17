@@ -970,3 +970,64 @@ ex:FI3_design_climateReport_content aec3po:hasProperty (
      ex:FI3_building_ClimateReportAuthorNameProperty
      ex:FI3_building_ClimateReportAuthorTrainingProperty
 ) .
+
+##Define the design of the Assessment Result
+ex:FI3_building_AssessmentResultPropertyDesign a aec3po:PropertyDesign .
+###Define the properties of this PropertyDesign
+ex:FI3_building_AssessmentResultProperty_A1-A3 a aec3po:Property ;
+   aec3po:hasValue 6.133454213652279 ;
+   aec3po:hasQuantityKind "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_A4 a aec3po:Property ;
+   aec3po:hasValue 0.54 ;
+   aec3po:hasQuantityKind "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_A5 a aec3po:Property ;
+   aec3po:hasValue 1.7 ;
+   aec3po:hasQuantityKind "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_B4 a aec3po:Property ;
+   aec3po:hasValue 0.82 ;
+   aec3po:hasQuantityKind "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_B6 a aec3po:Property ;
+   aec3po:hasValue 9.21303422053232 ;
+   aec3po:hasQuantityKind "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_C1 a aec3po:Property ;
+   aec3po:hasValue 0.27999999999999997 ;
+   aec3po:hasQuantityKind "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_C2 a aec3po:Property ;
+   aec3po:hasValue 0.54 ;
+   aec3po:hasQuantityKind "kWh/m2a" .  
+
+ex:FI3_building_AssessmentResultProperty_C4 a aec3po:Property ;
+   aec3po:hasValue 0.10223336938946116 ;
+   aec3po:hasQuantityKind "kWh/m2a" .  
+
+ex:FI3_building_AssessmentResultProperty_D1 a aec3po:Property ;
+   aec3po:hasValue -1.5989308024240876 ;
+   aec3po:hasQuantityKind "kWh/m2a" .          
+
+##Link the above properties to the propertyDesign ex:FI3_building_AssessmentResultPropertyDesign
+ex:FI3_building_AssessmentResultPropertyDesign aec3po:hasProperty (
+    ex:FI3_building_AssessmentResultProperty_A1-A3
+    ex:FI3_building_AssessmentResultProperty_A4
+    ex:FI3_building_AssessmentResultProperty_A5
+    ex:FI3_building_AssessmentResultProperty_B4
+    ex:FI3_building_AssessmentResultProperty_B6
+    ex:FI3_building_AssessmentResultProperty_C1
+    ex:FI3_building_AssessmentResultProperty_C2
+    ex:FI3_building_AssessmentResultProperty_C4
+    ex:FI3_building_AssessmentResultProperty_D1
+
+) .
+
+#Link the ex:FI3_design_climateReport to its propertyDesign with hasProperty
+ex:FI3_design_climateReport aec3po:hasProperty (
+    ex:FI3_design_climateReport_generalInfoPropertyDesign
+    ex:FI3_design_climateReport_contentPropertyDesign
+    ex:FI3_building_AssessmentResultPropertyDesign
+
+) .
