@@ -876,3 +876,97 @@ ex:FI3_AndCheck a aec3po:AndCheck ;
         ex:FI3_categoryCheckMethod_CarbonAssessmentResult
         ex:FI3_categoryCheckMethod_CarbonFootprintResult
     ) .
+# Start describing the "real" Buildin from the Finnish Demo Case - FI3
+# Define the design of the building as a 3DModel
+ex:FI3_building_design a aec3po:Design ;
+    rdf:type schema:3DModel .
+
+# Define the design of the properties of the building
+## Define the design of the length assessment period
+ex:FI3_design_length_AssessmentPeriod a aec3po:PropertyDesign .
+# Define the properties of this property design and link them with hasProperty
+ex:FI3_building_DesignLifeProperty a aec3po:Property ;
+    aec3po:hasValue "50 years" ;
+    aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  .
+
+ex:FI3_building_assessmentPeriodProperty a aec3po:Property ;
+    aec3po:hasValue "50 years" ;
+    aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  .
+
+ex:FI3_design_length_AssessmentPeriod aec3po:hasProperty (
+    ex:FI3_building_DesignLifeProperty
+    ex:FI3_building_assessmentPeriodProperty
+) .
+
+## Define the design of the climate report
+ex:FI3_design_climateReport a aec3po:PropertyDesign .
+###General Info
+ex:FI3_design_climateReport_generalInfo a aec3po:PropertyDesign ;
+   dct:title "AC(CO2)RD ENVIRONMENTAL DECLARATION" ;
+   dct:issued "2023-06-27"^^xsd:date ;
+   dct:contributor "Petr Hradil" .
+
+ ###Content of the climate report
+ ex:FI3_design_climateReport_content a aec3po:PropertyDesign .
+
+ ####Define the properties of the content
+
+ ex:FI3_building_IDProperty a aec3po:Property ;
+    aec3po:hasValue "AcPr001" .
+
+ ex:FI3_building_UseCategoryNameProperty a aec3po:Property ;
+    aec3po:hasValue "Other retail building" .
+
+ ex:FI3_building_HeatedFloorAreaProperty a aec3po:Property ;
+    aec3po:hasValue 1315.0 ;
+    aec3po:hasQuantityKind unit:M2 .      
+
+  ex:FI3_building_SiteAreaProperty a aec3po:Property ;
+    aec3po:hasValue 4500 ;
+    aec3po:hasQuantityKind unit:M2 .  
+
+  ex:FI3_building_AssessmentResultProperty a aec3po:PropertyDesign . ## should be defined later
+        
+ ex:FI3_building_UsersProperty a aec3po:Property ;
+    aec3po:hasValue 10 .
+
+ ex:FI3_building_EnergyConsumptionProperty a aec3po:Property ;
+    aec3po:hasValue 68.44106463878326 ;  
+    aec3po:hasQuantityKind "kWh/m2a" .  
+
+#ex:FI3_building_assessmentPeriodProperty    is also property of the climate report content. It has been defined above
+
+ ex:FI3_building_MainConstructionMaterialProperty a aec3po:Property ;
+    aec3po:hasValue "Steel" . 
+
+#ex:FI3_building_DesignLifeProperty    is also property of the climate report content. It has been defined above     
+
+ex:FI3_building_CalculationSoftwareProperty a aec3po:Property ;
+    aec3po:hasValue "AC(CO2)RD" .
+
+ex:FI3_building_ClimateReportDateProperty a aec3po:Property ;
+    dct:issued "2023-06-27"^^xsd:date . 
+
+ex:FI3_building_ClimateReportAuthorNameProperty a aec3po:Property ;
+    dct:contributor "Petr Hradil" .
+
+ex:FI3_building_ClimateReportAuthorTrainingProperty a aec3po:Property ;
+    aec3po:hasValue "Ing. PhD in civil engineering" .    
+
+#Link the design ex:FI3_design_climateReport_content to its properties with hasProperty
+ex:FI3_design_climateReport_content aec3po:hasProperty (
+     ex:FI3_building_IDProperty
+     ex:FI3_building_UseCategoryNameProperty
+     ex:FI3_building_HeatedFloorAreaProperty
+     ex:FI3_building_SiteAreaProperty
+     ex:FI3_building_AssessmentResultProperty
+     ex:FI3_building_UsersProperty
+     ex:FI3_building_EnergyConsumptionProperty
+     ex:FI3_building_assessmentPeriodProperty
+     ex:FI3_building_MainConstructionMaterialProperty
+     ex:FI3_building_DesignLifeProperty
+     ex:FI3_building_CalculationSoftwareProperty
+     ex:FI3_building_ClimateReportDateProperty
+     ex:FI3_building_ClimateReportAuthorNameProperty
+     ex:FI3_building_ClimateReportAuthorTrainingProperty
+) .
