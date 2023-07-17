@@ -1,1 +1,32 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix schema: <https://schema.org/> .
+PREFIX ex: <http://example.com/exampleOntology#>
 
+# Instantiate the Eurocode 5 (EN 1995-1-1:2004+A2:2014) - the source document for national codes in Europe for the design of timber structures as a Document
+ex:UK_Eurocode5_TimberStructures_Part1 a aec3po:Document ;
+    dct:identifier <https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-5-design-timber-structures> ;
+    dct:issued "2004"^^xsd:date ;
+    dct:references <https://eurocodes.jrc.ec.europa.eu/> ;
+    dct:coverage aec3po:UK .
+
+# Instantiate the DocumentSubdivision that contains the rule to be checked
+ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 a aec3po:DocumentSubdivision ;
+    dct:identifier "UK_Eurocode5_TimberStructures_Part1/Section_6/Subsection_6.1/Subsubsection_6.1.4" ;
+    dct:title "Compression parallel to the grain" .  
+
+# Link the DocumentSubdivision to the Document using hasPart property
+ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 .      
