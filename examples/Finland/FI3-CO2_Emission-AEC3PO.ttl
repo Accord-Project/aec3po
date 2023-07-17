@@ -819,3 +819,60 @@ ex:FI_statement_1_section_1_New aec3po:hasRequiredData (
     ex:FI3_ClimateReport_carbonFootprint_TotalCarbonFootprint_New
 ) .
 
+# Define and Instantiate all the CheckMethod(s) that will operationalize the Statements defined above. The assumption here is that microservices are handeling the "CheckAct".
+
+ex:FI3_numericalCheckMethod_AssessmentPeriod rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_numericalCheckStatement_AssessmentPeriod .
+
+ex:FI3_componentCheckMethod_AssessmentReport rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_checkListStatement_AssessmentReport .  
+
+ex:FI3_categoryCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_categoryCheckStatement_CarbonAssessmentResult . 
+
+ex:FI3_categoryCheckMethod_CarbonFootprintResult rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_categoryCheckStatement_CarbonFootprintResult .
+
+#### Define all the subchecks of the ex:FI3_componentCheckMethod_AssessmentReport
+ex:FI3_componentCheckMethod_BuildingID rdf:type aec3po:ProcedurialCheck .
+ex:FI3_componentCheckMethod_UseCategoryName rdf:type aec3po:ProcedurialCheck .
+ex:FI3_componentCheckMethod_HeatedFloorArea rdf:type aec3po:ProcedurialCheck .  
+ex:FI3_componentCheckMethod_SiteArea rdf:type aec3po:ProcedurialCheck . 
+ex:FI3_componentCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialCheck .   
+ex:FI3_componentCheckMethod_Users rdf:type aec3po:ProcedurialCheck .
+ex:FI3_componentCheckMethod_EnergyConsumption rdf:type aec3po:ProcedurialCheck .
+ex:FI3_componentCheckMethod_assessmentPeriod rdf:type aec3po:ProcedurialCheck .
+ex:FI3_componentCheckMethod_MainConstructionMaterial rdf:type aec3po:ProcedurialCheck .   
+ex:FI3_componentCheckMethod_DesignLife rdf:type aec3po:ProcedurialCheck .
+ex:FI3_componentCheckMethod_CalculationSoftware rdf:type aec3po:ProcedurialCheck .
+ex:FI3_componentCheckMethod_ClimateReportDate rdf:type aec3po:ProcedurialCheck .  
+ex:FI3_componentCheckMethod_ClimateReportAuthorName rdf:type aec3po:ProcedurialCheck .
+ex:FI3_componentCheckMethod_ClimateReportAuthorTraining rdf:type aec3po:ProcedurialCheck .  
+
+# Instantiate the ORCheck for the ex:FI3_componentCheckMethod_AssessmentReport
+ex:FI3_ORCheck_AssessmentReport a aec3po:ORCheck ;
+    aec3po:hasSubCheck (
+        ex:FI3_componentCheckMethod_BuildingID 
+ex:FI3_componentCheckMethod_UseCategoryName 
+ex:FI3_componentCheckMethod_HeatedFloorArea   
+ex:FI3_componentCheckMethod_SiteArea  
+ex:FI3_componentCheckMethod_CarbonAssessmentResult    
+ex:FI3_componentCheckMethod_Users 
+ex:FI3_componentCheckMethod_EnergyConsumption 
+ex:FI3_componentCheckMethod_assessmentPeriod 
+ex:FI3_componentCheckMethod_MainConstructionMaterial    
+ex:FI3_componentCheckMethod_DesignLife 
+ex:FI3_componentCheckMethod_CalculationSoftware 
+ex:FI3_componentCheckMethod_ClimateReportDate   
+ex:FI3_componentCheckMethod_ClimateReportAuthorName 
+ex:FI3_componentCheckMethod_ClimateReportAuthorTraining 
+    ) .
+
+# Instantiate the AndCheck related to the four statements
+ex:FI3_AndCheck a aec3po:AndCheck ;
+    aec3po:hasSubCheck (
+        ex:FI3_numericalCheckMethod_AssessmentPeriod
+        ex:FI3_ORCheck_AssessmentReport
+        ex:FI3_categoryCheckMethod_CarbonAssessmentResult
+        ex:FI3_categoryCheckMethod_CarbonFootprintResult
+    ) .
