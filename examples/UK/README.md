@@ -5,6 +5,6 @@ The example implements _**Clause 6.1.4**_ of this document. The specific excerpt
 ![UK-Document](Images/UK_Ex1.png) 
 
 In order to solve this case, an expert has defined the required inputs for this check. The figure below represents the interpretation of the check and its inputs.  
-![UK-Document](Images/UK_Ex1)Inputs.png) 
+![UK-Document](Images/UK_Ex1_Inputs.png) 
 
 
