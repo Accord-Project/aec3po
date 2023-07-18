@@ -8,5 +8,6 @@ In order to solve this case, an expert has defined the required inputs for this 
 ![UK-Document](Images/UK_Ex1_Inputs.png) 
 
 The figure below represents a part from AEC3PO instantiation that corresponds to the Checking Act operation (**_aec3po:CheckingAct_**) instantiation and the the Feature of Interest instantiation (**_aec3po:FeatureOfInterest_**), respectively.
+![UK-Document](Images/UK_AEC3PO_Part.png) 
 
 
