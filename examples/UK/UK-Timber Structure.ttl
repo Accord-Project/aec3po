@@ -29,4 +29,42 @@ ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 a aec3po:DocumentSubdivisio
     dct:title "Compression parallel to the grain" .  
 
 # Link the DocumentSubdivision to the Document using hasPart property
-ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 .      
+ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 .   
+
+# Instantiate the statement as an EquationStatement
+ex:UK_Eurocode5_EqStatement_6.2 a aec3po:EquationStatement ;
+    dct:title "6.2" ;
+    aec3po:asText ( "(1)P The following expression shall be satisfied: "
+                    "σc,0,d <= Fc,0,d " 
+                    "Where "
+                    "σc,0,d is the design compressive stress along the grain; "
+                    "Fc,0,d is the design compressive strength along the grain. "
+                    " NOTE: Rules for the instability of members are given in 6.3."
+    ) ;
+    dct:references ex:UK_Eurocode5_EqStatement_6.3 . # This will be defined below as an EquationStatement
+
+# Instantiate the reference ex:UK_Eurocode5_EqStatement_6.3 as an EquationStatement
+ex:UK_Eurocode5_EqStatement_6.3 a aec3po:EquationStatement ;
+    dct:title "6.3" ;
+    aec3po:asText "text here from section 6.1.5".
+
+# Link the statements to the DocumentSubdivision using hasPart property
+ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart ( 
+    ex:UK_Eurocode5_EqStatement_6.2
+    ex:UK_Eurocode5_EqStatement_6.3
+) .
+
+#---Instantiate the checkStatement expressed in the statement
+
+# Instantiate the ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel as a subClassOf CheckStatement
+ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel a aec3po:NumericalCheckStatement ;
+    rdf:type aec3po:CheckStatement .
+
+#--------End of document and statement description and its classification
+
+#-------Required Data informed by the Statement
+
+# Instantiate the ex:UK_Eurocode5_TimberStructure as a FeatureOfInterest and link it to ifcBuilding. 
+ex:UK_Eurocode5_TimberStructure a aec3po:FeatureOfInterest ;
+    rdf:type ifcOWL:ifcBuilding ;
+    aec3po:hasBuildingStructure aec3po:BuildingStructure-timber .   
