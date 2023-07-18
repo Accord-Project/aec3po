@@ -1,4 +1,4 @@
-# UK Demo Case : A a numerical check from structural engineering
+# UK Demo Case : A Numerical Check from Structural Engineering
 
 This folder contains an example of AEC3PO ontology instantiation from the UK demo cases. This example is presented in the file_UK_Structure.ttl_ and treats the check in compression parallel to the grain in timber structures, as described in the latest version of Eurocode 5 (EN 1995-1-1:2004+A2:2014). Eurocode 5 is the default source document for national codes in Europe for the design of timber structures.
 The example implements _**Clause 6.1.4**_ of this document. The specific excerpt from the code (**_Statement_**) is presented below:
