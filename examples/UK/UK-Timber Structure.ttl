@@ -29,7 +29,7 @@ ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 a aec3po:DocumentSubdivisio
     dct:title "Compression parallel to the grain" .  
 
 # Link the DocumentSubdivision to the Document using hasPart property
-ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 .   
+ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 .      
 
 # Instantiate the statement as an EquationStatement
 ex:UK_Eurocode5_EqStatement_6.2 a aec3po:EquationStatement ;
@@ -56,8 +56,8 @@ ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart (
 
 #---Instantiate the checkStatement expressed in the statement
 
-# Instantiate the ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel as a subClassOf CheckStatement
-ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel a aec3po:NumericalCheckStatement ;
+# Instantiate the ex:UK_Eurocode5_NumericalCheckStatement_Timber_CompressionParallel as a subClassOf CheckStatement
+ex:UK_Eurocode5_NumericalCheckStatement_Timber_CompressionParallel a aec3po:NumericalCheckStatement ;
     rdf:type aec3po:CheckStatement .
 
 #--------End of document and statement description and its classification
@@ -67,7 +67,8 @@ ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel a aec3po:NumericalCh
 # Instantiate the ex:UK_Eurocode5_TimberStructure as a FeatureOfInterest and link it to ifcBuilding. 
 ex:UK_Eurocode5_TimberStructure a aec3po:FeatureOfInterest ;
     rdf:type ifcOWL:ifcBuilding ;
-    aec3po:hasBuildingStructure aec3po:BuildingStructure-timber .   
+    aec3po:hasBuildingStructure aec3po:BuildingStructure-timber .  
+
 # Define the properties of the timber and constraints based on the Statement
 ex:UK_Eurocode5_Timber_DesignCompressiveStress a aec3po:Property ;
     rdf:type ^^xsd:double .
@@ -85,7 +86,7 @@ ex:UK_Eurocode5_Timber_CrossSection_A a aec3po:Property ;
 ex:UK_Eurocode5_Timber_kmod a aec3po:Property ;
     rdf:type ^^xsd:double .         
 
-ex:UK_Eurocode5_Timber_ksys a aec3po:Property ;
+ex:UK_Eurocode5_Timber_ksys a aec3po:Property ; #system strength
     rdf:type ^^xsd:boolean . 
 
 ex:UK_Eurocode5_Timber_fcok a aec3po:Property ;
@@ -95,7 +96,7 @@ ex:UK_Eurocode5_Timber_GammaM a aec3po:Property ;
     rdf:type ^^xsd:double .  
 
 #Link all the required data to the statement using the property hasRequiredData
-ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel aec3po:hasRequiredData (
+ex:UK_Eurocode5_NumericalCheckStatement_Timber_CompressionParallel aec3po:hasRequiredData (
     ex:UK_Eurocode5_Timber_DesignCompressiveStress
     ex:UK_Eurocode5_Timber_DesignCompressiveStrength
     ex:UK_Eurocode5_Timber_CompressionResult
@@ -105,3 +106,46 @@ ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel aec3po:hasRequiredDa
     ex:UK_Eurocode5_Timber_fcok
     ex:UK_Eurocode5_Timber_GammaM
 ) .
+
+# Define and Instantiate the CheckMethod that will operationalize the Statement defined above. The assumption here is that SWRL rules are handeling the "CheckAct".
+
+ex:UK_Eurocode5_NumericalCheckMethod_Timber_CompressionParallel rdf:type aec3po:SWRLCheck ;
+  aec3po:operationalizes ex:UK_Eurocode5_NumericalCheckStatement_Timber_CompressionParallel .
+
+# ---- Start describing the "real" Timber using dummy values
+
+# Define the design of the timber as a 3DModel
+ex:UK_Eurocode5_Timber_design a aec3po:Design ;
+    rdf:type schema:3DModel .
+
+# Define the properties of the timber
+ex:UK_Eurocode5_Timber_CrossSection_A_real a aec3po:Property ;
+    aec3po:hasValue 1000 .  
+
+ex:UK_Eurocode5_Timber_ksys_real a aec3po:Property ;
+    aec3po:hasValue true .   
+
+ex:UK_Eurocode5_Timber_kmod_real a aec3po:Property ;
+    aec3po:hasValue 1.0 .    
+
+ex:UK_Eurocode5_Timber_GammaM_real a aec3po:Property ;
+    aec3po:hasValue 1.25 .   
+
+ex:UK_Eurocode5_Timber_DesignCompressiveStrength_real a aec3po:Property ;
+    aec3po:hasValue 1000 . 
+
+ex:UK_Eurocode5_Timber_fcok_real a aec3po:Property ;
+    aec3po:hasValue 10.0 .  
+
+#Link all the timber design to its properties using hasProperty property 
+ex:UK_Eurocode5_Timber_design aec3po:hasProperty (
+   ex:UK_Eurocode5_Timber_CrossSection_A_real
+   ex:UK_Eurocode5_Timber_ksys_real 
+   ex:UK_Eurocode5_Timber_kmod_real
+   ex:UK_Eurocode5_Timber_GammaM_real
+   ex:UK_Eurocode5_Timber_DesignCompressiveStrength_real
+   ex:UK_Eurocode5_Timber_fcok_real
+) .       
+
+# Link the timber design to the respective CheckMethod using forDesign property
+ex:UK_Eurocode5_NumericalCheckMethod_Timber_CompressionParallel aec3po:forDesign ex:UK_Eurocode5_Timber_design .
