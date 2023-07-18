@@ -68,3 +68,40 @@ ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel a aec3po:NumericalCh
 ex:UK_Eurocode5_TimberStructure a aec3po:FeatureOfInterest ;
     rdf:type ifcOWL:ifcBuilding ;
     aec3po:hasBuildingStructure aec3po:BuildingStructure-timber .   
+# Define the properties of the timber and constraints based on the Statement
+ex:UK_Eurocode5_Timber_DesignCompressiveStress a aec3po:Property ;
+    rdf:type ^^xsd:double .
+
+ex:UK_Eurocode5_Timber_DesignCompressiveStrength a aec3po:Property ;
+    rdf:type ^^xsd:double .
+
+ex:UK_Eurocode5_Timber_CompressionResult a aec3po:Property ;
+    rdf:type ^^xsd:boolean .   
+
+#Assuming that σc,0,d = 𝐹𝑐,0,𝑑/A and Fc,0,d = 𝑘𝑚𝑜𝑑𝑘𝑠𝑦𝑠𝑓𝑐,0,𝑘/𝛾𝑀, we define more data properties as follows:
+ex:UK_Eurocode5_Timber_CrossSection_A a aec3po:Property ;
+    rdf:type ^^xsd:double . 
+
+ex:UK_Eurocode5_Timber_kmod a aec3po:Property ;
+    rdf:type ^^xsd:double .         
+
+ex:UK_Eurocode5_Timber_ksys a aec3po:Property ;
+    rdf:type ^^xsd:boolean . 
+
+ex:UK_Eurocode5_Timber_fcok a aec3po:Property ;
+    rdf:type ^^xsd:double .
+
+ex:UK_Eurocode5_Timber_GammaM a aec3po:Property ;
+    rdf:type ^^xsd:double .  
+
+#Link all the required data to the statement using the property hasRequiredData
+ex:UK_Eurocode5_NumericalCheckStatement_CompressionParallel aec3po:hasRequiredData (
+    ex:UK_Eurocode5_Timber_DesignCompressiveStress
+    ex:UK_Eurocode5_Timber_DesignCompressiveStrength
+    ex:UK_Eurocode5_Timber_CompressionResult
+    ex:UK_Eurocode5_Timber_CrossSection_A
+    ex:UK_Eurocode5_Timber_kmod
+    ex:UK_Eurocode5_Timber_ksys
+    ex:UK_Eurocode5_Timber_fcok
+    ex:UK_Eurocode5_Timber_GammaM
+) .
