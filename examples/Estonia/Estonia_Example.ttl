@@ -144,45 +144,26 @@ ex:EE_FireSafety_OperationalMap_BuildingAddress a aec3po:Property ;
    rdf:type ifcOWL:IfcPostalAddress .
 
 ex:EE_FireSafety_OperationalMap_Version a aec3po:Property . 
-
 ex:EE_FireSafety_OperationalMap_UsePurpose a aec3po:Property .
-
 ex:EE_FireSafety_OperationalMap_MethodsAndRoomLocation a aec3po:Property .
-
 ex:EE_FireSafety_OperationalMap_FloorsNumber a aec3po:Property ; 
    rdf:type ifcOWL:IfcTag .  
-
 ex:EE_FireSafety_OperationalMap_Height a aec3po:Property ;
    rdf:type ifcOWL:IfcBuilding.ElevationOfTerrain .  
-
 ex:EE_FireSafety_OperationalMap_FireSafetyClass a aec3po:Property .
-
 ex:EE_FireSafety_OperationalMap_CentralUnitLocationOfFireAlramSystem a aec3po:Property .  
-
 ex:EE_FireSafety_OperationalMap_SmokeLevel a aec3po:Property .
-
 ex:EE_FireSafety_OperationalMap_FirefightingWaterSupply a aec3po:Property . 
-
 ex:EE_FireSafety_OperationalMap_ExternalPowerSupply a aec3po:Property .                  
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DryRiser a aec3po:Property .
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_SprinklerSystem a aec3po:Property .
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FireElevator a aec3po:Property .
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DistanceWaterIntakePointToFireBrigade a aec3po:Property .
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_NumberOfPeople a aec3po:Property .   
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_EvacueesLocation a aec3po:Property .
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ElectricalPowerSupply a aec3po:Property .
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_AdditionalHazards a aec3po:Property .
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_OtherSpecifics a aec3po:Property .
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ConatcPerson a aec3po:Property .
-
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ValuableItemsAndEquipementsAndLocations a aec3po:Property .  
 
