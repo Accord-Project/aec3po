@@ -1,1 +1,188 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix schema: <https://schema.org/> .
+PREFIX ex: <http://example.com/exampleOntology#>
+
+# Instantiate the Fire safety requirements for the building Document - the source document for the fire safety regulations, used for the the Estonian demo case 1
+ex:EE_FireSafety_Doc a aec3po:Document ;
+    dct:title "Fire safety requirements for the building" ;
+    dct:identifier <https://www.riigiteataja.ee/akt/123022021013> ;
+    dct:issued "2021-03-01"^^xsd:date ;
+    dct:references <reference_here> ;
+    dct:coverage aec3po:Estonia .
+
+# Instantiate the DocumentSubdivision that contains the rule to be checked
+ex:EE_FireSafety_Doc_Section_52 a aec3po:DocumentSubdivision ;
+    dct:identifier "Fire safety requirements for the building/Section_52" ;
+    dct:title "Rescue team information point and operational map" .   
+
+# Link the DocumentSubdivision to the Document using hasPart property
+ex:EE_FireSafety_Doc dct:hasPart ex:EE_FireSafety_Doc_Section_52 .
+
+# Instantiate the first statement as a CategoryCheckStatement
+ex:EE_FireSafety_Doc_Section_52_Clause5 a aec3po:Statement ;
+    dct:title "52.5" ;
+    aec3po:asText "The operative card is drawn up:" ;
+    aec3po:asText "1- for the building with the obligation to submit a self-inspection fire safety report" ;
+    aec3po:asText "2- buildings with ten or more floors" ;
+    aec3po:asText "3- about a building of cultural value " ;
+    aec3po:asText "4- about the building in which monuments are kept." .
+
+# Instantiate the second statement as a CheckListStatement
+ex:EE_FireSafety_Doc_Section_52_Clause7 a aec3po:Statement ;
+    dct:title "52.7" ;
+    aec3po:asText "The minimum information to be written on the operational card at the information point of the rescue team is stipulated in Appendix 9 of this regulation." ;
+    dct:reference aec3po:ex:EE_FireSafety_Doc_Appendix9 . # to be defined as a DocumentSubdivision below.
+
+#Define ex:EE_FireSafety_Doc_Appendix9 as a DocumentSubdivision  
+ex:EE_FireSafety_Doc_Appendix9 a aec3po:DocumentSubdivision ;
+    dct:identifier "Fire safety requirements for the building/Appendix_9" ;
+    dct:title "OPERATIONAL MAP OF THE BUILDING" ; 
+    dct:hasPart ex:EE_FireSafety_Doc_Appendix9_Container_MapInfo . # to be defined later as a table  
+
+# Link the DocumentSubdivision Appendix_9 to the Document using hasPart property
+ex:EE_FireSafety_Doc dct:hasPart ex:EE_FireSafety_Doc_Appendix9 .
+
+##Instantiate the checks statements of the second statement, which is a CheckListStatement as ComponentCheckStatements
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_BuildingAddress a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_Version a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .  
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_UsePurpose a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_MethodsAndRoomLocation a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FloorsNumber a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .  
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_Height a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .  
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FireSafetyClass a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_CentralUnitLocationOfFireAlramSystem a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .  
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_SmokeLevel a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FirefightingWaterSupply a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ExternalPowerSupply a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .                   
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DryRiser a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_SprinklerSystem a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FireElevator a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .   
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DistanceWaterIntakePointToFireBrigade a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_NumberOfPeople a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .   
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_EvacueesLocation a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ElectricalPowerSupply a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_AdditionalHazards a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_OtherSpecifics a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ConatcPerson a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .   
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ValuableItemsAndEquipementsAndLocations a aec3po:ComponentCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+#Link the statements to the DocumentSubdivision using hasPart property
+ex:EE_FireSafety_Doc_Section_52 dct:hasPart ( 
+    ex:EE_FireSafety_Doc_Section_52_Clause5
+    ex:EE_FireSafety_Doc_Section_52_Clause7
+) .                     
+
+#--------End of document and statements description and their classifications
+
+#-------Required Data informed by the Statement
+
+# Instantiate the operational map as a FeatureOfInterest 
+ex:EE_FireSafety_OperationalMap a aec3po:FeatureOfInterest .
+
+# Define the properties of the operational map and constraints based on the Statement
+ex:EE_FireSafety_OperationalMap_BuildingType a aec3po:Property ;
+   aec3po:hasBuildingUsage aec3po:BuildingUsage .
+
+ex:EE_FireSafety_OperationalMap_BuildingAddress a aec3po:Property ;
+   rdf:type ifcOWL:IfcPostalAddress .
+
+ex:EE_FireSafety_OperationalMap_Version a aec3po:Property . 
+
+ex:EE_FireSafety_OperationalMap_UsePurpose a aec3po:Property .
+
+ex:EE_FireSafety_OperationalMap_MethodsAndRoomLocation a aec3po:Property .
+
+ex:EE_FireSafety_OperationalMap_FloorsNumber a aec3po:Property ; 
+   rdf:type ifcOWL:IfcTag .  
+
+ex:EE_FireSafety_OperationalMap_Height a aec3po:Property ;
+   rdf:type ifcOWL:IfcBuilding.ElevationOfTerrain .  
+
+ex:EE_FireSafety_OperationalMap_FireSafetyClass a aec3po:Property .
+
+ex:EE_FireSafety_OperationalMap_CentralUnitLocationOfFireAlramSystem a aec3po:Property .  
+
+ex:EE_FireSafety_OperationalMap_SmokeLevel a aec3po:Property .
+
+ex:EE_FireSafety_OperationalMap_FirefightingWaterSupply a aec3po:Property . 
+
+ex:EE_FireSafety_OperationalMap_ExternalPowerSupply a aec3po:Property .                  
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DryRiser a aec3po:Property .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_SprinklerSystem a aec3po:Property .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FireElevator a aec3po:Property .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DistanceWaterIntakePointToFireBrigade a aec3po:Property .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_NumberOfPeople a aec3po:Property .   
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_EvacueesLocation a aec3po:Property .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ElectricalPowerSupply a aec3po:Property .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_AdditionalHazards a aec3po:Property .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_OtherSpecifics a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ConatcPerson a aec3po:Property .
+
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ValuableItemsAndEquipementsAndLocations a aec3po:Property .  
 
