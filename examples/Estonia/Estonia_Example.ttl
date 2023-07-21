@@ -155,15 +155,41 @@ ex:EE_FireSafety_OperationalMap_CentralUnitLocationOfFireAlramSystem a aec3po:Pr
 ex:EE_FireSafety_OperationalMap_SmokeLevel a aec3po:Property .
 ex:EE_FireSafety_OperationalMap_FirefightingWaterSupply a aec3po:Property . 
 ex:EE_FireSafety_OperationalMap_ExternalPowerSupply a aec3po:Property .                  
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DryRiser a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_SprinklerSystem a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FireElevator a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DistanceWaterIntakePointToFireBrigade a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_NumberOfPeople a aec3po:Property .   
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_EvacueesLocation a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ElectricalPowerSupply a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_AdditionalHazards a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_OtherSpecifics a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ConatcPerson a aec3po:Property .
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ValuableItemsAndEquipementsAndLocations a aec3po:Property .  
+ex:EE_FireSafety_Section_52_MapInfo_DryRiser a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_SprinklerSystem a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_FireElevator a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_DistanceWaterIntakePointToFireBrigade a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_NumberOfPeople a aec3po:Property .   
+ex:EE_FireSafety_Section_52_MapInfo_EvacueesLocation a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_ElectricalPowerSupply a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_AdditionalHazards a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_OtherSpecifics a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_ConatcPerson a aec3po:Property .
+ex:EE_FireSafety_Section_52_MapInfo_ValuableItemsAndEquipementsAndLocations a aec3po:Property .  
 
+## Define the required data for each statement
+ex:EE_FireSafety_Doc_Section_52_Clause5 aec3po:hasRequiredData  ex:EE_FireSafety_OperationalMap_BuildingType.
+ex:EE_FireSafety_Doc_Section_52_Clause7 aec3po:hasRequiredData (
+   ex:EE_FireSafety_OperationalMap_BuildingAddress 
+   ex:EE_FireSafety_OperationalMap_Version 
+   ex:EE_FireSafety_OperationalMap_UsePurpose 
+   ex:EE_FireSafety_OperationalMap_MethodsAndRoomLocation 
+   ex:EE_FireSafety_OperationalMap_FloorsNumber   
+   ex:EE_FireSafety_OperationalMap_Height   
+   ex:EE_FireSafety_OperationalMap_FireSafetyClass 
+   ex:EE_FireSafety_OperationalMap_CentralUnitLocationOfFireAlramSystem .  
+   ex:EE_FireSafety_OperationalMap_SmokeLevel 
+   ex:EE_FireSafety_OperationalMap_FirefightingWaterSupply   
+   ex:EE_FireSafety_OperationalMap_ExternalPowerSupply                   
+   ex:EE_FireSafety_Section_52_MapInfo_DryRiser 
+   ex:EE_FireSafety_Section_52_MapInfo_SprinklerSystem  
+   ex:EE_FireSafety_Section_52_MapInfo_FireElevator 
+   ex:EE_FireSafety_Section_52_MapInfo_DistanceWaterIntakePointToFireBrigade 
+   ex:EE_FireSafety_Section_52_MapInfo_NumberOfPeople   
+   ex:EE_FireSafety_Section_52_MapInfo_EvacueesLocation 
+   ex:EE_FireSafety_Section_52_MapInfo_ElectricalPowerSupply 
+   ex:EE_FireSafety_Section_52_MapInfo_AdditionalHazards 
+   ex:EE_FireSafety_Section_52_MapInfo_OtherSpecifics 
+   ex:EE_FireSafety_Section_52_MapInfo_ConatcPerson 
+
+) .
