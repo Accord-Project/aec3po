@@ -21,7 +21,7 @@ ex:UK_Eurocode5_TimberStructures_Part1 a aec3po:Document ;
     dct:identifier <https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-5-design-timber-structures> ;
     dct:issued "2004"^^xsd:date ;
     dct:references <https://eurocodes.jrc.ec.europa.eu/> ;
-    dct:coverage aec3po:UK .
+    dct:coverage aec3po:England .
 
 # Instantiate the DocumentSubdivision that contains the rule to be checked
 ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 a aec3po:DocumentSubdivision ;
