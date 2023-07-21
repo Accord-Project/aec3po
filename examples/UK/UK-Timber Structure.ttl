@@ -23,7 +23,8 @@ ex:UK_Eurocode5_TimberStructures_Part1 a aec3po:Document ;
     dct:identifier <https://eurocodes.jrc.ec.europa.eu/EN-Eurocodes/eurocode-5-design-timber-structures> ;
     dct:issued "2004"^^xsd:date ;
     dct:references <https://eurocodes.jrc.ec.europa.eu/> ;
-    dct:coverage aec3po:England .
+    dct:coverage aec3po:England ;
+    aec3po:hasPermittingStage Stages:RIBA .
 
 # Instantiate the DocumentSubdivision that contains the rule to be checked
 ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 a aec3po:DocumentSubdivision ;
@@ -70,7 +71,7 @@ ex:UK_Eurocode5_NumericalCheckStatement_Timber_CompressionParallel a aec3po:Nume
 ex:UK_Eurocode5_TimberStructure a aec3po:FeatureOfInterest ;
     rdf:type ifcOWL:ifcBuilding ;
     aec3po:hasBuildingStructure aec3po:BuildingStructure-timber ;
-    dicl:hasStage Stages:RIBA_ConceptDesign.
+    aec3po:hasPermittingStage Stages:RIBA .
 
 # Define the properties of the timber and constraints based on the Statement
 ex:UK_Eurocode5_Timber_DesignCompressiveStress a aec3po:Property ;
