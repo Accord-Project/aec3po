@@ -15,7 +15,7 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix schema: <https://schema.org/> .
 PREFIX ex: <http://example.com/exampleOntology#>
-@base <https://w3id.org/digitalconstruction/0.5/Stages> .
+@prefix dicstg: <https://w3id.org/digitalconstruction/0.5/Stages> .
 @prefix dicl: <https://w3id.org/digitalconstruction/0.5/Lifecycle#> .
 
 # Instantiate the Eurocode 5 (EN 1995-1-1:2004+A2:2014) - the source document for national codes in Europe for the design of timber structures as a Document
@@ -24,7 +24,7 @@ ex:UK_Eurocode5_TimberStructures_Part1 a aec3po:Document ;
     dct:issued "2004"^^xsd:date ;
     dct:references <https://eurocodes.jrc.ec.europa.eu/> ;
     dct:coverage aec3po:England ;
-    aec3po:hasPermittingStage Stages:RIBA .
+    aec3po:hasPermittingStage dicstg:RIBA .
 
 # Instantiate the DocumentSubdivision that contains the rule to be checked
 ex:UK_Eurocode5_TimberStructures_Part1_Section_6.1.4 a aec3po:DocumentSubdivision ;
@@ -71,7 +71,7 @@ ex:UK_Eurocode5_NumericalCheckStatement_Timber_CompressionParallel a aec3po:Nume
 ex:UK_Eurocode5_TimberStructure a aec3po:FeatureOfInterest ;
     rdf:type ifcOWL:ifcBuilding ;
     aec3po:hasBuildingStructure aec3po:BuildingStructure-timber ;
-    aec3po:hasPermittingStage Stages:RIBA .
+    aec3po:hasPermittingStage dicstg:RIBA .
 
 # Define the properties of the timber and constraints based on the Statement
 ex:UK_Eurocode5_Timber_DesignCompressiveStress a aec3po:Property ;
