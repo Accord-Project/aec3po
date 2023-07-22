@@ -678,9 +678,9 @@ ex:FI3_buildingSite a aec3po:FeatureOfInterest ;
 # Define the properties of the building and constraints based on the Statement
 ex:FI3_building_assessmentPeriod a aec3po:Property ;
     aec3po:hasValue "50 years" ;
-    aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  ;
+    qudt:hasUnit qudt:DateTimeStringEncodingType  ;
     # OR aec3po:hasValue 50 ; 
-    # PR ctd -- aec3po:hasQuantityKind ifcOWL:ifcDuration  ;
+    # OR ctd -- aec3po:hasQuantityKind ifcOWL:ifcDuration  ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
 
 ex:FI3_building_ClimateReport a aec3po:Property ;
@@ -751,12 +751,14 @@ ex:FI3_ClimateReport_carbonFootprint_UseCategory a aec3po:Property ;
     rdf:_9 "Total carbon footprint " .
 
 ex:FI3_ClimateReport_carbonFootprint_Unit_Building a aec3po:Property ;  
-   aec3po:hasQuantityKind ifcOWL:IfcMeasureWithUnit ; 
-   aec3po:hasValue "kgCO2e/m2/a" .
+    rdf:type ifcOWL:IfcMeasureWithUnit ; 
+    aec3po:hasValue "kgCO2e/m2/a" .
+    #qudt:hasUnit "kgCO2e/m2/a" .
 
 ex:FI3_ClimateReport_carbonFootprint_Unit_SiteBuilding a aec3po:Property ;  
-   aec3po:hasQuantityKind ifcOWL:IfcMeasureWithUnit ; 
-   aec3po:hasValue "kgCO2e/m2/a" .   
+    rdf:type ifcOWL:IfcMeasureWithUnit ; 
+    aec3po:hasValue "kgCO2e/m2/a" .
+    #qudt:hasUnit "kgCO2e/m2/a" .
 
 ex:FI3_ClimateReport_carbonHandprint_UseCategory a aec3po:Property ;
     rdf:type rdf:List ;
@@ -768,13 +770,14 @@ ex:FI3_ClimateReport_carbonHandprint_UseCategory a aec3po:Property ;
     rdf:_6 "D6. Planted wood  " .
 
 ex:FI3_ClimateReport_carbonHandprint_Unit_Building a aec3po:Property ;  
-   aec3po:hasQuantityKind ifcOWL:IfcMeasureWithUnit ; 
-   aec3po:hasValue "kgCO2e/m2/a" .
+    rdf:type ifcOWL:IfcMeasureWithUnit ; 
+    aec3po:hasValue "kgCO2e/m2/a" .
+    #qudt:hasUnit "kgCO2e/m2/a" .
 
 ex:FI3_ClimateReport_carbonHandprint_Unit_SiteBuilding a aec3po:Property ;  
-   aec3po:hasQuantityKind ifcOWL:IfcMeasureWithUnit ; 
-   aec3po:hasValue "kgCO2e/m2/a" .
-
+    rdf:type ifcOWL:IfcMeasureWithUnit ; 
+    aec3po:hasValue "kgCO2e/m2/a" .
+    #qudt:hasUnit "kgCO2e/m2/a" .
 ex:FI3_ClimateReport_carbonFootprint_UseCategory_New a aec3po:Property ;
     rdf:type rdf:List ;
     rdf:_1 "Accommodation / hotel " ;
@@ -795,7 +798,7 @@ ex:FI3_ClimateReport_carbonFootprint_TotalCarbonFootprint_New a aec3po:Property 
         120
         
     ) ;
-    aec3po:hasQuantityKind "kgCO2e/m2/a" . 
+    qudt:hasUnit "kgCO2e/m2/a" . 
 
 ## Define the required data for each statement
 ex:FI_statement_1_section_4 aec3po:hasRequiredData ex:FI3_building_assessmentPeriod .
@@ -886,12 +889,14 @@ ex:FI3_building_design a aec3po:Design ;
 ex:FI3_design_length_AssessmentPeriod a aec3po:PropertyDesign .
 # Define the properties of this property design and link them with hasProperty
 ex:FI3_building_DesignLifeProperty a aec3po:Property ;
-    aec3po:hasValue "50 years" ;
-    aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  .
+    aec3po:hasValue 50 ;
+    #aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  .
+     qudt:hasUnit "years" .
 
 ex:FI3_building_assessmentPeriodProperty a aec3po:Property ;
-    aec3po:hasValue "50 years" ;
-    aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  .
+    aec3po:hasValue 50 ;
+    #aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  .
+     qudt:hasUnit "years" .
 
 ex:FI3_design_length_AssessmentPeriod aec3po:hasProperty (
     ex:FI3_building_DesignLifeProperty
@@ -919,11 +924,11 @@ ex:FI3_design_climateReport_generalInfo a aec3po:PropertyDesign ;
 
  ex:FI3_building_HeatedFloorAreaProperty a aec3po:Property ;
     aec3po:hasValue 1315.0 ;
-    aec3po:hasQuantityKind unit:M2 .      
+    qudt:hasUnit unit:M2 .      
 
   ex:FI3_building_SiteAreaProperty a aec3po:Property ;
     aec3po:hasValue 4500 ;
-    aec3po:hasQuantityKind unit:M2 .  
+    qudt:hasUnit unit:M2 .  
 
   ex:FI3_building_AssessmentResultProperty a aec3po:PropertyDesign . ## should be defined later
         
@@ -932,7 +937,7 @@ ex:FI3_design_climateReport_generalInfo a aec3po:PropertyDesign ;
 
  ex:FI3_building_EnergyConsumptionProperty a aec3po:Property ;
     aec3po:hasValue 68.44106463878326 ;  
-    aec3po:hasQuantityKind "kWh/m2a" .  
+    qudt:hasUnit "kWh/m2a" .  
 
 #ex:FI3_building_assessmentPeriodProperty    is also property of the climate report content. It has been defined above
 
@@ -976,39 +981,39 @@ ex:FI3_building_AssessmentResultPropertyDesign a aec3po:PropertyDesign .
 ###Define the properties of this PropertyDesign
 ex:FI3_building_AssessmentResultProperty_A1-A3 a aec3po:Property ;
    aec3po:hasValue 6.133454213652279 ;
-   aec3po:hasQuantityKind "kWh/m2a" . 
+   qudt:hasUnit "kWh/m2a" . 
 
 ex:FI3_building_AssessmentResultProperty_A4 a aec3po:Property ;
    aec3po:hasValue 0.54 ;
-   aec3po:hasQuantityKind "kWh/m2a" . 
+   qudt:hasUnit "kWh/m2a" . 
 
 ex:FI3_building_AssessmentResultProperty_A5 a aec3po:Property ;
    aec3po:hasValue 1.7 ;
-   aec3po:hasQuantityKind "kWh/m2a" . 
+   qudt:hasUnit "kWh/m2a" . 
 
 ex:FI3_building_AssessmentResultProperty_B4 a aec3po:Property ;
    aec3po:hasValue 0.82 ;
-   aec3po:hasQuantityKind "kWh/m2a" . 
+   qudt:hasUnit "kWh/m2a" . 
 
 ex:FI3_building_AssessmentResultProperty_B6 a aec3po:Property ;
    aec3po:hasValue 9.21303422053232 ;
-   aec3po:hasQuantityKind "kWh/m2a" . 
+   qudt:hasUnit "kWh/m2a" . 
 
 ex:FI3_building_AssessmentResultProperty_C1 a aec3po:Property ;
    aec3po:hasValue 0.27999999999999997 ;
-   aec3po:hasQuantityKind "kWh/m2a" . 
+   qudt:hasUnit "kWh/m2a" . 
 
 ex:FI3_building_AssessmentResultProperty_C2 a aec3po:Property ;
    aec3po:hasValue 0.54 ;
-   aec3po:hasQuantityKind "kWh/m2a" .  
+   qudt:hasUnit "kWh/m2a" .  
 
 ex:FI3_building_AssessmentResultProperty_C4 a aec3po:Property ;
    aec3po:hasValue 0.10223336938946116 ;
-   aec3po:hasQuantityKind "kWh/m2a" .  
+   qudt:hasUnit "kWh/m2a" .  
 
 ex:FI3_building_AssessmentResultProperty_D1 a aec3po:Property ;
    aec3po:hasValue -1.5989308024240876 ;
-   aec3po:hasQuantityKind "kWh/m2a" .          
+   qudt:hasUnit "kWh/m2a" .          
 
 ##Link the above properties to the propertyDesign ex:FI3_building_AssessmentResultPropertyDesign
 ex:FI3_building_AssessmentResultPropertyDesign aec3po:hasProperty (
@@ -1040,7 +1045,7 @@ ex:FI3_building_carbonFootprint_UseCategory_New_Property a aec3po:Property ;
 
 ex:FI3_building_carbonFootprint_TotalCarbonFootprint_New_Property a aec3po:Property ;
    aec3po:hasValue 17.606406942307498 ;
-   aec3po:hasQuantityKind "kWh/m2a" . 
+   qudt:hasUnit "kWh/m2a" . 
 
 #Link ex:FI3_building_CarbonFootprintResultPropertyDesign to its properties with hasProperty
 ex:FI3_building_CarbonFootprintResultPropertyDesign aec3po:hasProperty (
