@@ -80,17 +80,17 @@ ex:cantilever a aec3po:FeatureOfInterest ;
 # Define the properties of the cantilever and constraints based on the Statement
 ex:streeBaseOffset a aec3po:Property ;
     aec3po:hasValue 3.2 ;
-    aec3po:hasQuantityKind unit:M ;
+    qudt:hasUnit unit:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
 ex:othersBaseOffset a aec3po:Property ;
     aec3po:hasValue 3.5 ;
-    aec3po:hasQuantityKind unit:M ;
+    qudt:hasUnit unit:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
 
 ex:partywall_distance a aec3po:Property ;
     aec3po:hasValue 1 ;
-    aec3po:hasQuantityKind unit:M ;
+    qudt:hasUnit unit:M ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
 ex:statement_54 aec3po:hasRequiredData ex:streeBaseOffset .
@@ -139,17 +139,17 @@ ex:cantilever_design a aec3po:Design ;
 # Define the design of the properties of the cantilever
 ex:design_streeBaseOffset a aec3po:PropertyDesign ;
     aec3po:hasValue 4.5 ;
-    aec3po:hasQuantityKind unit:M .
+    qudt:hasUnit unit:M .
 # I am assuming this represents 2 in the image.
    
 ex:design_othersBaseOffset a aec3po:PropertyDesign ;
     aec3po:hasValue 2.6 ;
-    aec3po:hasQuantityKind unit:M .
+    qudt:hasUnit unit:M .
 #I am assuming this represents 1 in the image.
    
 ex:design_partywall_distance a aec3po:PropertyDesign ;
     aec3po:hasValue 1 ;
-    aec3po:hasQuantityKind unit:M .
+    qudt:hasUnit unit:M .
 
 #Link all the properties design to the cantilever design using hasProperty property
 ex:cantilever_design aec3po:hasProperty ex:design_streeBaseOffset .
