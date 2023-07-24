@@ -615,51 +615,51 @@ ex:FI3_numericalCheckStatement_AssessmentPeriod a aec3po:NumericalCheckStatement
 # Instantiate the FI3_checkListStatement_AssessmentReport as a subClassOf Statement
 ex:FI3_checkListStatement_AssessmentReport a aec3po:CheckListStatement .
 
-#### Define the list of checks of this checklistStatement ### AddComponentCheckStatement to the core ontology
-ex:FI3_componentCheckStatement_BuildingID a aec3po:ComponentCheckStatement ;
+#### Define the list of checks of this checklistStatement ### Add BooleanCheckStatement to the core ontology
+ex:FI3_BooleanCheckStatement_BuildingID a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
-ex:FI3_componentCheckStatement_UseCategoryName a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_UseCategoryName a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .  
 
-ex:FI3_componentCheckStatement_HeatedFloorArea a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_HeatedFloorArea a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:FI3_componentCheckStatement_BuildingSiteArea a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_BuildingSiteArea a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
-ex:FI3_componentCheckStatement_CarbonAssessmentResult a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_CarbonAssessmentResult a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:FI3_componentCheckStatement_Users a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_Users a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .  
 
-ex:FI3_componentCheckStatement_EnergyConsumption a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_EnergyConsumption a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:FI3_componentCheckStatement_AssessmentPeriod a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_AssessmentPeriod a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .  
 
-ex:FI3_componentCheckStatement_MainConstructionMaterial a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_MainConstructionMaterial a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:FI3_componentCheckStatement_DesignLife a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_DesignLife a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:FI3_componentCheckStatement_CalculationSoftware a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_CalculationSoftware a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .  
 
-ex:FI3_componentCheckStatement_ClimateReportDate a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_ClimateReportDate a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .         
 
-ex:FI3_componentCheckStatement_ClimateReportAuthorName a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_ClimateReportAuthorName a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
-ex:FI3_componentCheckStatement_ClimateReportAuthorTraining a aec3po:ComponentCheckStatement ;
+ex:FI3_BooleanCheckStatement_ClimateReportAuthorTraining a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
 # Instantiate the FI3_categoryCheckStatement_CarbonAssessmentResult as a subClassOf CheckStatement
-ex:FI3_certificatelCheckStatement_AssessmentReport a aec3po:CategoryCheckStatement .
+ex:FI3_categoryCheckStatement_AssessmentReport a aec3po:CategoryCheckStatement .
 
 # Instantiate the FI3_categoryCheckStatement_CarbonFootprintResult as a subClassOf CheckStatement
 ex:FI3_categoryCheckStatement_CarbonFootprintResult a aec3po:CategoryCheckStatement .
@@ -827,7 +827,7 @@ ex:FI_statement_1_section_1_New aec3po:hasRequiredData (
 ex:FI3_numericalCheckMethod_AssessmentPeriod rdf:type aec3po:ProcedurialCheck ;
   aec3po:operationalizes ex:FI3_numericalCheckStatement_AssessmentPeriod .
 
-ex:FI3_componentCheckMethod_AssessmentReport rdf:type aec3po:ProcedurialCheck ;
+ex:FI3_booleanCheckMethod_AssessmentReport rdf:type aec3po:ProcedurialCheck ;
   aec3po:operationalizes ex:FI3_checkListStatement_AssessmentReport .  
 
 ex:FI3_categoryCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialCheck ;
@@ -836,39 +836,39 @@ ex:FI3_categoryCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialChe
 ex:FI3_categoryCheckMethod_CarbonFootprintResult rdf:type aec3po:ProcedurialCheck ;
   aec3po:operationalizes ex:FI3_categoryCheckStatement_CarbonFootprintResult .
 
-#### Define all the subchecks of the ex:FI3_componentCheckMethod_AssessmentReport
-ex:FI3_componentCheckMethod_BuildingID rdf:type aec3po:ProcedurialCheck .
-ex:FI3_componentCheckMethod_UseCategoryName rdf:type aec3po:ProcedurialCheck .
-ex:FI3_componentCheckMethod_HeatedFloorArea rdf:type aec3po:ProcedurialCheck .  
-ex:FI3_componentCheckMethod_SiteArea rdf:type aec3po:ProcedurialCheck . 
-ex:FI3_componentCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialCheck .   
-ex:FI3_componentCheckMethod_Users rdf:type aec3po:ProcedurialCheck .
-ex:FI3_componentCheckMethod_EnergyConsumption rdf:type aec3po:ProcedurialCheck .
-ex:FI3_componentCheckMethod_assessmentPeriod rdf:type aec3po:ProcedurialCheck .
-ex:FI3_componentCheckMethod_MainConstructionMaterial rdf:type aec3po:ProcedurialCheck .   
-ex:FI3_componentCheckMethod_DesignLife rdf:type aec3po:ProcedurialCheck .
-ex:FI3_componentCheckMethod_CalculationSoftware rdf:type aec3po:ProcedurialCheck .
-ex:FI3_componentCheckMethod_ClimateReportDate rdf:type aec3po:ProcedurialCheck .  
-ex:FI3_componentCheckMethod_ClimateReportAuthorName rdf:type aec3po:ProcedurialCheck .
-ex:FI3_componentCheckMethod_ClimateReportAuthorTraining rdf:type aec3po:ProcedurialCheck .  
+#### Define all the subchecks of the ex:FI3_booleanCheckMethod_AssessmentReport
+ex:FI3_BooleanCheckMethod_BuildingID rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_UseCategoryName rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_HeatedFloorArea rdf:type aec3po:ProcedurialCheck .  
+ex:FI3_BooleanCheckMethod_SiteArea rdf:type aec3po:ProcedurialCheck . 
+ex:FI3_BooleanCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialCheck .   
+ex:FI3_BooleanCheckMethod_Users rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_EnergyConsumption rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_assessmentPeriod rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_MainConstructionMaterial rdf:type aec3po:ProcedurialCheck .   
+ex:FI3_BooleanCheckMethod_DesignLife rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_CalculationSoftware rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_ClimateReportDate rdf:type aec3po:ProcedurialCheck .  
+ex:FI3_BooleanCheckMethod_ClimateReportAuthorName rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_ClimateReportAuthorTraining rdf:type aec3po:ProcedurialCheck .  
 
-# Instantiate the ORCheck for the ex:FI3_componentCheckMethod_AssessmentReport
+# Instantiate the ORCheck for the ex:FI3_booleanCheckMethod_AssessmentReport
 ex:FI3_ORCheck_AssessmentReport a aec3po:ORCheck ;
     aec3po:hasSubCheck (
-        ex:FI3_componentCheckMethod_BuildingID 
-ex:FI3_componentCheckMethod_UseCategoryName 
-ex:FI3_componentCheckMethod_HeatedFloorArea   
-ex:FI3_componentCheckMethod_SiteArea  
-ex:FI3_componentCheckMethod_CarbonAssessmentResult    
-ex:FI3_componentCheckMethod_Users 
-ex:FI3_componentCheckMethod_EnergyConsumption 
-ex:FI3_componentCheckMethod_assessmentPeriod 
-ex:FI3_componentCheckMethod_MainConstructionMaterial    
-ex:FI3_componentCheckMethod_DesignLife 
-ex:FI3_componentCheckMethod_CalculationSoftware 
-ex:FI3_componentCheckMethod_ClimateReportDate   
-ex:FI3_componentCheckMethod_ClimateReportAuthorName 
-ex:FI3_componentCheckMethod_ClimateReportAuthorTraining 
+        ex:FI3_BooleanCheckMethod_BuildingID 
+        ex:FI3_BooleanCheckMethod_UseCategoryName 
+        ex:FI3_BooleanCheckMethod_HeatedFloorArea   
+        ex:FI3_BooleanCheckMethod_SiteArea  
+        ex:FI3_BooleanCheckMethod_CarbonAssessmentResult    
+        ex:FI3_BooleanCheckMethod_Users 
+        ex:FI3_BooleanCheckMethod_EnergyConsumption 
+        ex:FI3_BooleanCheckMethod_assessmentPeriod 
+        ex:FI3_BooleanCheckMethod_MainConstructionMaterial    
+        ex:FI3_BooleanCheckMethod_DesignLife 
+        ex:FI3_BooleanCheckMethod_CalculationSoftware 
+        ex:FI3_BooleanCheckMethod_ClimateReportDate   
+        ex:FI3_BooleanCheckMethod_ClimateReportAuthorName 
+        ex:FI3_BooleanCheckMethod_ClimateReportAuthorTraining 
     ) .
 
 # Instantiate the AndCheck related to the four statements
