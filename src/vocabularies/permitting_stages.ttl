@@ -5,6 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dicl: <https://w3id.org/digitalconstruction/0.5/Lifecycle#> .
 
 aec3po:UK_Building_Control_Submission a aec3po:PermittingStage ;
     rdfs:isDefinedBy aec3po:permitting_stage ;
@@ -18,6 +19,7 @@ aec3po:hasPermittingStage a owl:ObjectProperty ;
     rdfs:label "has permitting stage"@en ;
     rdfs:comment "Links an entity to the permitting stage this entity pertains"@en ;
     rdfs:isDefinedBy aec3po:permitting_stage ;
+    owl:equivalentProperty dicl:hasStage ;
     rdfs:range aec3po:PermittingStage .
 
 aec3po:PermittingStage a owl:Class ;
