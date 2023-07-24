@@ -21,7 +21,7 @@ In this example, we have instantiated the AEC3PO ontology with Estonia demo case
 * Translation - English: _"The minimum information to be written on the operational card at the information point of the rescue team is stipulated in Appendix 9 of this regulation."_ 
 
 The example is presented in the file _“Estonia_Example.ttl”_. The figure below represent a part from AEC3PO instantiation that corresponds to the Document (**_aec3po:Document_**) instantiation and the two statements
-![Estonia-Document](EE UC1-Doc.png) 
+![Estonia-Document](EEUC1-Doc.png) 
 Here's a breakdown of some of the RDF triples:
 *	The first statement (_clause52.5_) represents a **CategoryCheckStatement** and it is defined as follows: **_"ex:EE_FireSafety_Doc_Section_52_Clause5 a aec3po:CategoryCheckStatement ;"_** .
 *	The second statement (_clause52.7_) represents a **CheckListStatement** and it is defined as follows: **_"ex:EE_FireSafety_Doc_Section_52_Clause7 a aec3po:CheckListStatement ;"_** . This **CheckListStatement** contains a list of **BooleanCheckStatement**, defined with the class **_aec3po:BooleanCheckStatement_** and linked to the **CheckListStatement** with the property **aec3po:hasSubCheck**.
