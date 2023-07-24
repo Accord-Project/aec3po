@@ -56,8 +56,8 @@ ex:EE_FireSafety_Doc_Appendix9 a aec3po:DocumentSubdivision ;
 # Link the DocumentSubdivision Appendix_9 to the Document using hasPart property
 ex:EE_FireSafety_Doc dct:hasPart ex:EE_FireSafety_Doc_Appendix9 .
 
-##Instantiate the checks statements of the second statement, which is a CheckListStatement as ComponentCheckStatements
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_BuildingAddress a aec3po:ComponentCheckStatement ;
+##Instantiate the check statements of the second statement, which is a CheckListStatement as BooleanCheckStatements
+ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_BuildingAddress a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
 ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_Version a aec3po:BooleanCheckStatement ;
@@ -121,7 +121,33 @@ ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ConatcPerson a aec3po:
    aec3po:hasValue "true"^^xsd:boolean .   
 
 ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ValuableItemsAndEquipementsAndLocations a aec3po:BooleanCheckStatement ;
-   aec3po:hasValue "true"^^xsd:boolean . 
+   aec3po:hasValue "true"^^xsd:boolean .
+
+#Link all the previous BooleanCheckStatement to the CheckListStatement with the property hasSubCheck
+ex:EE_FireSafety_Doc_Section_52_Clause7 aec3po:hasSubCheck (
+    ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_BuildingAddress 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_Version  
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_UsePurpose 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_MethodsAndRoomLocation 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_FloorsNumber   
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_Height   
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_FireSafetyClass 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_CentralUnitLocationOfFireAlramSystem  
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_SmokeLevel  
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_FirefightingWaterSupply  
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ExternalPowerSupply                    
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_DryRiser 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_SprinklerSystem 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_FireElevator    
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_DistanceWaterIntakePointToFireBrigade  
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_NumberOfPeople    
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_EvacueesLocation 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ElectricalPowerSupply 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_AdditionalHazards  
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_OtherSpecifics 
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ConatcPerson    
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ValuableItemsAndEquipementsAndLocations     
+) .
 
 #Link the statements to the DocumentSubdivision using hasPart property
 ex:EE_FireSafety_Doc_Section_52 dct:hasPart ( 
@@ -177,7 +203,7 @@ ex:EE_FireSafety_Doc_Section_52_Clause7 aec3po:hasRequiredData (
    ex:EE_FireSafety_OperationalMap_FloorsNumber   
    ex:EE_FireSafety_OperationalMap_Height   
    ex:EE_FireSafety_OperationalMap_FireSafetyClass 
-   ex:EE_FireSafety_OperationalMap_CentralUnitLocationOfFireAlramSystem .  
+   ex:EE_FireSafety_OperationalMap_CentralUnitLocationOfFireAlramSystem  
    ex:EE_FireSafety_OperationalMap_SmokeLevel 
    ex:EE_FireSafety_OperationalMap_FirefightingWaterSupply   
    ex:EE_FireSafety_OperationalMap_ExternalPowerSupply                   
