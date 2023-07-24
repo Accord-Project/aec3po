@@ -68,7 +68,7 @@ ex:FI_statement_2_section_4 a aec3po:NumericalCheckStatement ;
 ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 dct:hasPart  ( ex:FI_statement_1_section_4  ex:FI_statement_2_section_4 ) . 
 
 # ---- Define the statement of the second DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23
-ex:FI_statement_1_section_23 a aec3po:Statement ;
+ex:FI_statement_1_section_23 a aec3po:CheckListStatement ;
     dct:identifier "Finnish_Environment/23/1" ;
     aec3po:asText "The climate report shall contain at least the following information:" ;
     aec3po:hasPart ex:list_section_23 .
