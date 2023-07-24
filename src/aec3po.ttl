@@ -183,7 +183,7 @@ aec3po:Statement a owl:Class ;
     rdfs:comment "Something said in a building compliance-related document"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:DocumentSubdivision ;
-    skos:example "Any  solar protection  solutions  in  the  building  shall  be  taken  into  account  in  the  calculation  of  solar energy gains for the building."@en .
+    skos:example "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en .
 
 
 aec3po:Applications a owl:Class ;
