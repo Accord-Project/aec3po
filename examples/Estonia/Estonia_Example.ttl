@@ -60,67 +60,67 @@ ex:EE_FireSafety_Doc dct:hasPart ex:EE_FireSafety_Doc_Appendix9 .
 ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_BuildingAddress a aec3po:ComponentCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_Version a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_Version a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .  
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_UsePurpose a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_UsePurpose a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_MethodsAndRoomLocation a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_MethodsAndRoomLocation a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FloorsNumber a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_FloorsNumber a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .  
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_Height a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_Height a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .  
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FireSafetyClass a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_FireSafetyClass a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_CentralUnitLocationOfFireAlramSystem a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_CentralUnitLocationOfFireAlramSystem a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .  
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_SmokeLevel a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_SmokeLevel a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FirefightingWaterSupply a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_FirefightingWaterSupply a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ExternalPowerSupply a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ExternalPowerSupply a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .                   
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DryRiser a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_DryRiser a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_SprinklerSystem a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_SprinklerSystem a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_FireElevator a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_FireElevator a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .   
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_DistanceWaterIntakePointToFireBrigade a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_DistanceWaterIntakePointToFireBrigade a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_NumberOfPeople a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_NumberOfPeople a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .   
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_EvacueesLocation a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_EvacueesLocation a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ElectricalPowerSupply a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ElectricalPowerSupply a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_AdditionalHazards a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_AdditionalHazards a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_OtherSpecifics a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_OtherSpecifics a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ConatcPerson a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ConatcPerson a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .   
 
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_ValuableItemsAndEquipementsAndLocations a aec3po:ComponentCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ValuableItemsAndEquipementsAndLocations a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean . 
 
 #Link the statements to the DocumentSubdivision using hasPart property
