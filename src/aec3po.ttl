@@ -129,8 +129,7 @@ aec3po:PropertyDesign a owl:Class ;
 aec3po:hasComparisonOperator a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "has comparisonOperator"@en ;
-    rdfs:comment """The comparisonOperator of a property kind design;
-  A set of values is defined by C3PO in the corresponding concept scheme."""@en ;
+    rdfs:comment "The comparisonOperator of a property kind design. A set of values is defined by C3PO in the corresponding concept scheme."@en ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:ComparisonOperator ;
     rdfs:subPropertyOf aec3po:hasDesign .
@@ -159,8 +158,7 @@ aec3po:forDesign a owl:ObjectProperty ;
 
 aec3po:hasSubCheck a owl:ObjectProperty ;
     rdfs:label "has sub check"@en ;
-    rdfs:comment """Links a AndCheck to the set of checks that all need to be verified.
-Links a OrCheck to the set of checks that at least one must verify."""@en ;
+    rdfs:comment "Links a AndCheck to the set of checks that all need to be verified. Links a OrCheck to the set of checks that at least one must verify."@en ;
     rdfs:domain aec3po:Check ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Check .
@@ -190,25 +188,25 @@ aec3po:Statement a owl:Class ;
 
 aec3po:Applications a owl:Class ;
     rdfs:label "Applications"@en ;
-    rdfs:comment """Represents the Applications tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."""@en ;
+    rdfs:comment "Represents the Applications tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
     rdfs:subClassOf aec3po:Statement ;
 owl:disjointWith aec3po:Selection, aec3po:Requirement,  aec3po:Exceptions .			
 
 aec3po:Exceptions a owl:Class ;
     rdfs:label "Exceptions"@en ;
-    rdfs:comment """Represents the Exceptions tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."""@en ;
+    rdfs:comment "Represents the Exceptions tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Requirement .			
 
 aec3po:Requirements a owl:Class ;
     rdfs:label "Requirements"@en ;
-    rdfs:comment """Represents the Requirement tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."""@en ;
+    rdfs:comment "Represents the Requirement tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Exceptions .	
 
 aec3po:Selections a owl:Class ;
     rdfs:label "Selection"@en ;
-    rdfs:comment """Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."""@en ;
+    rdfs:comment "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith   aec3po:Requirement, aec3po:Applicabilities, aec3po:Exceptions .		
 
