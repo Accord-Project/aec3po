@@ -33,7 +33,7 @@ ex:EE_FireSafety_Doc_Section_52 a aec3po:DocumentSubdivision ;
 ex:EE_FireSafety_Doc dct:hasPart ex:EE_FireSafety_Doc_Section_52 .
 
 # Instantiate the first statement as a CategoryCheckStatement
-ex:EE_FireSafety_Doc_Section_52_Clause5 a aec3po:Statement ;
+ex:EE_FireSafety_Doc_Section_52_Clause5 a aec3po:CategoryCheckStatement ;
     dct:title "52.5" ;
     aec3po:asText "The operative card is drawn up:" ;
     aec3po:asText "1- for the building with the obligation to submit a self-inspection fire safety report" ;
@@ -42,7 +42,7 @@ ex:EE_FireSafety_Doc_Section_52_Clause5 a aec3po:Statement ;
     aec3po:asText "4- about the building in which monuments are kept." .
 
 # Instantiate the second statement as a CheckListStatement
-ex:EE_FireSafety_Doc_Section_52_Clause7 a aec3po:Statement ;
+ex:EE_FireSafety_Doc_Section_52_Clause7 a aec3po:CheckListStatement ;
     dct:title "52.7" ;
     aec3po:asText "The minimum information to be written on the operational card at the information point of the rescue team is stipulated in Appendix 9 of this regulation." ;
     dct:reference aec3po:ex:EE_FireSafety_Doc_Appendix9 . # to be defined as a DocumentSubdivision below.
