@@ -64,6 +64,10 @@ aec3po:HumanEvaluatedStatement a owl:Class ;
     rdfs:comment "A type of check that is evaluated by a human. Those are primarily for issues of perception, e.g. \"is aesthetically appropriate\"." ;
     rdfs:subClassOf aec3po:Statement .
 
+aec3po:BooleanCheckStatement a owl:Class ;
+    rdfs:comment "A type of check that checks the existence of an element (property) related to the feature of interest."@en ;
+    rdfs:subClassOf aec3po:Statement .
+
 aec3po:DataRequirement a owl:Class;
     rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking." .
       
