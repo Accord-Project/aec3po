@@ -14,7 +14,9 @@
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix schema: <https://schema.org/> .
-PREFIX ex: <http://example.com/exampleOntology#>
+@prefix ex: <http://example.com/exampleOntology#> .
+@prefix dicstg: <https://w3id.org/digitalconstruction/0.5/Stages> .
+@prefix dicl: <https://w3id.org/digitalconstruction/0.5/Lifecycle#> .
 
 # Instantiate the Fire safety requirements for the building Document - the source document for the fire safety regulations, used for the the Estonian demo case 1
 ex:EE_FireSafety_Doc a aec3po:Document ;
@@ -22,7 +24,8 @@ ex:EE_FireSafety_Doc a aec3po:Document ;
     dct:identifier <https://www.riigiteataja.ee/akt/123022021013> ;
     dct:issued "2021-03-01"^^xsd:date ;
     dct:references <reference_here> ;
-    dct:coverage aec3po:Estonia .
+    dct:coverage aec3po:Estonia ;
+    aec3po:hasPermittingStage dicstg:RIBA .
 
 # Instantiate the DocumentSubdivision that contains the rule to be checked
 ex:EE_FireSafety_Doc_Section_52 a aec3po:DocumentSubdivision ;
