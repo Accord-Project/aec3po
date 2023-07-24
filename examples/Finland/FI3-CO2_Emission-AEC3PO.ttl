@@ -850,8 +850,8 @@ ex:FI3_BooleanCheckMethod_ClimateReportDate rdf:type aec3po:ProcedurialCheck .
 ex:FI3_BooleanCheckMethod_ClimateReportAuthorName rdf:type aec3po:ProcedurialCheck .
 ex:FI3_BooleanCheckMethod_ClimateReportAuthorTraining rdf:type aec3po:ProcedurialCheck .  
 
-# Instantiate the ORCheck for the ex:FI3_booleanCheckMethod_AssessmentReport
-ex:FI3_ORCheck_AssessmentReport a aec3po:ORCheck ;
+# Instantiate the AndCheck for the ex:FI3_booleanCheckMethod_AssessmentReport
+ex:FI3_AndCheck_AssessmentReport a aec3po:AndCheck ;
     aec3po:hasSubCheck (
         ex:FI3_BooleanCheckMethod_BuildingID 
         ex:FI3_BooleanCheckMethod_UseCategoryName 
@@ -873,7 +873,7 @@ ex:FI3_ORCheck_AssessmentReport a aec3po:ORCheck ;
 ex:FI3_AndCheck a aec3po:AndCheck ;
     aec3po:hasSubCheck (
         ex:FI3_numericalCheckMethod_AssessmentPeriod
-        ex:FI3_ORCheck_AssessmentReport
+        ex:FI3_AndCheck_AssessmentReport
         ex:FI3_categoryCheckMethod_CarbonAssessmentResult
         ex:FI3_categoryCheckMethod_CarbonFootprintResult
     ) .
@@ -888,12 +888,10 @@ ex:FI3_design_length_AssessmentPeriod a aec3po:PropertyDesign .
 # Define the properties of this property design and link them with hasProperty
 ex:FI3_building_DesignLifeProperty a aec3po:Property ;
     aec3po:hasValue 50 ;
-    #aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  .
      qudt:hasUnit "years" .
 
 ex:FI3_building_assessmentPeriodProperty a aec3po:Property ;
     aec3po:hasValue 50 ;
-    #aec3po:hasQuantityKind qudt:DateTimeStringEncodingType  .
      qudt:hasUnit "years" .
 
 ex:FI3_design_length_AssessmentPeriod aec3po:hasProperty (
