@@ -668,7 +668,7 @@ ex:FI3_categoryCheckStatement_CarbonFootprintResult a aec3po:CategoryCheckStatem
 
 #-------Required Data informed by the Statement
 
-# Instantiate the building and the building site as  FeatureOfInterest 
+# Instantiate the building and the building site as FeatureOfInterest 
 ex:FI3_building a aec3po:FeatureOfInterest ;
     rdf:type ifcOWL:ifcBuilding .
 
@@ -677,10 +677,8 @@ ex:FI3_buildingSite a aec3po:FeatureOfInterest ;
 
 # Define the properties of the building and constraints based on the Statement
 ex:FI3_building_assessmentPeriod a aec3po:Property ;
-    aec3po:hasValue "50 years" ;
-    qudt:hasUnit qudt:DateTimeStringEncodingType  ;
-    # OR aec3po:hasValue 50 ; 
-    # OR ctd -- aec3po:hasQuantityKind ifcOWL:ifcDuration  ;
+    aec3po:hasValue 50 ;
+    qudt:hasUnit "years"  ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
 
 ex:FI3_building_ClimateReport a aec3po:Property ;
