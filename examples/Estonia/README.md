@@ -16,9 +16,9 @@ In this example, we have instantiated the AEC3PO ontology with Estonia demo case
   4. _about the building in which monuments are kept."_
 
 ### Statement 2 (Clause 52.7)
-* Original - estonian: _" Päästemeeskonna infopunktis olevale operatiivkaardile kantav minimaalne teave on sätestatud käesoleva määruse lisas 9. "_
+* Original - Estonian: _"Päästemeeskonna infopunktis olevale operatiivkaardile kantav minimaalne teave on sätestatud käesoleva määruse lisas 9."_
   
-* Translation - English: _" The minimum information to be written on the operational card at the information point of the rescue team is stipulated in Appendix 9 of this regulation. "_ 
+* Translation - English: _"The minimum information to be written on the operational card at the information point of the rescue team is stipulated in Appendix 9 of this regulation."_ 
 
 The example is presented in the file _“Estonia_Example.ttl”_. Here's a breakdown of some of the RDF triples:
 *	The first statement (_clause52.5_) represents a **CategoryCheckStatement** and it is defined as follows: **_"ex:EE_FireSafety_Doc_Section_52_Clause5 a aec3po:CategoryCheckStatement ;"_** .
