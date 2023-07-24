@@ -14,7 +14,6 @@
 aec3po:AndCheck a owl:Class ;
     rdfs:label "And Check"@en ;
     rdfs:comment "Check verified if and only if all of its sub-checks are verified."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty aec3po:hasSubCheck ],
@@ -22,23 +21,19 @@ aec3po:AndCheck a owl:Class ;
 
 aec3po:CategoryCheckStatement a owl:Class ;
  rdfs:comment "todo"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:CheckStatement .
 
 aec3po:CertificateCheckStatement a owl:Class ;
  rdfs:comment "todo"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:CheckStatement .
 
 aec3po:CheckStatement a owl:Class ;
  rdfs:comment "todo"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:ClassificationDesign a owl:Class ;
     rdfs:label "classification design"@en ;
     rdfs:comment "Designs that take values in classification schemes, described using SKOS"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
                         owl:onProperty skos:inScheme ;
                         owl:someValuesFrom skos:ConceptScheme ] ) ] ;
@@ -49,7 +44,6 @@ aec3po:ClassificationDesign a owl:Class ;
 aec3po:ComponentCheck a owl:Class ;
     rdfs:label "Component Check"@en ;
     rdfs:comment "Formally defined as checks for some feature of interest"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Check ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( aec3po:Check [ a owl:Restriction ;
@@ -60,38 +54,30 @@ aec3po:ComponentCheck a owl:Class ;
 aec3po:Function a owl:Class ;
 rdfs:label "Function"@en ;
 rdfs:comment "todo" ;
-rdfs:isDefinedBy aec3po:ontology ;
 rdfs:subClassOf aec3po:Check .
 
 aec3po:DefinitionStatement a owl:Class ;
  rdfs:comment "todo"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:HumanEvaluatedStatement a owl:Class ;
     rdfs:comment "A type of check that is evaluated by a human. Those are primarily for issues of perception, e.g. \"is aesthetically appropriate\"." ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:DataRequirement a owl:Class;
-    rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking." ;
-    rdfs:isDefinedBy aec3po:ontology .
+    rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking." .
       
-
 aec3po:IDS a owl:Class ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:DataRequirement ;
     skos:note "Required data defined in an Information Delivery Format (IDS)." .
 
 aec3po:NumericalCheck a owl:Class ;
     rdfs:comment "A check that involves checking one numerical property against another, i.e. x < y or similar." ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Check .
 
 aec3po:OrCheck a owl:Class ;
     rdfs:label "Or Check"@en ;
     rdfs:comment "Check verified if and only if at least one of its sub-checks is verified."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality 1 ;
             owl:onProperty aec3po:hasSubCheck ],
@@ -100,13 +86,11 @@ aec3po:OrCheck a owl:Class ;
 aec3po:PrivateVerifier a owl:Class ;
     rdfs:label "Private Verifier"@en ;
     rdfs:comment " "@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
 aec3po:StateVerifier a owl:Class ;
     rdfs:label "State Verifier"@en ;
     rdfs:comment "todo"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
 aec3po:hasDataRequirement a owl:ObjectProperty;
@@ -116,7 +100,6 @@ aec3po:hasDataRequirement a owl:ObjectProperty;
 aec3po:PropertyDesign a owl:Class ;
     rdfs:label "property design"@en ;
     rdfs:comment "Designs that assign a value expressed as a literal to some property of a feature of interest."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom aec3po:Property ;
             owl:onProperty [ owl:inverseOf aec3po:hasDesign ] ],
@@ -130,7 +113,6 @@ aec3po:hasComparisonOperator a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "has comparisonOperator"@en ;
     rdfs:comment "The comparisonOperator of a property kind design. A set of values is defined by C3PO in the corresponding concept scheme."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:ComparisonOperator ;
     rdfs:subPropertyOf aec3po:hasDesign .
 
@@ -140,27 +122,23 @@ skos:inScheme a owl:ObjectProperty .
 
 aec3po:ChecklistStatement a owl:Class ;
  rdfs:comment "todo"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:LegalVerifier a owl:Class ;
     rdfs:label "Legal Verifier"@en ;
-    rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en ;
-    rdfs:isDefinedBy aec3po:ontology .
+    rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en .
 
 aec3po:forDesign a owl:ObjectProperty ;
     rdfs:label "for design"@en ;
     rdfs:comment "Links a check, verifier, or checking act, to the type of design it applies."@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( aec3po:Check aec3po:Verifier aec3po:Checking ) ] ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Design .
 
 aec3po:hasSubCheck a owl:ObjectProperty ;
     rdfs:label "has sub check"@en ;
     rdfs:comment "Links a AndCheck to the set of checks that all need to be verified. Links a OrCheck to the set of checks that at least one must verify."@en ;
     rdfs:domain aec3po:Check ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Check .
 
 aec3po:hasDesign a owl:ObjectProperty ;
@@ -168,20 +146,17 @@ aec3po:hasDesign a owl:ObjectProperty ;
     rdfs:comment "Links a feature of interest or a property to a description of its design."@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:range aec3po:Design .
 
 aec3po:Property a owl:Class ;
     rdfs:label "Property"@en ;
     rdfs:comment "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf dul:Quality ;
     skos:example "The height of a building, the area of a space, the U-value of a wall"@en .
 
 aec3po:Statement a owl:Class ;
     rdfs:label "Statement"@en ;
     rdfs:comment "Something said in a building compliance-related document"@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:DocumentSubdivision ;
     skos:example "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en .
 
@@ -224,7 +199,6 @@ aec3po:ontology a owl:Ontology ;
     dct:title "AEC3PO"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri aec3po: ;
-    rdfs:isDefinedBy aec3po:ontology ;
     skos:note "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en .
 
 [] a owl:AllDisjointClasses ;
