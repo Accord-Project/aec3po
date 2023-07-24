@@ -17,3 +17,6 @@ The example is presented in the file _“Spanish_Example.ttl”_. Here's a break
 *	The **_ex:cantilever_checklist_** individual is defined as a subclass of **_aec3po:Statement_** and has as subclasses **_ex:cantiliver_numericalCheckStatement_streetBaseOffset_**, **_ex:cantiliver_numericalCheckStatement_otherBaseOffset_**, and **_ex:cantiliver_numericalCheckStatement_partywall_distance_** - the numerical check statements related to every property to be checked as described in the clauses, which are the base off set and the party-wall distance. 
 * The **_ex:cantilever_** individual is defined as an instance of the class **_aec3po:FeatureOfInterest_**, which represents the IFC element to be checked. It has been defined by its properties defined as **_aec3po:Property_**, and linked to it with the property _aec3po:hasRequiredData_.
 
+The figure below represent a part from AEC3PO instantiation that corresponds to the Document (**_aec3po:Document_**) instantiation and the two statements
+![Spain-Document](ES-Doc.png) 
+
