@@ -55,12 +55,12 @@ ex:FI_Dec_Env_Doc dct:hasPart (
 # ---- Define the statements of the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
 
 # Instantiate the first statement from the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
-ex:FI_statement_1_section_4 a aec3po:Statement ;
+ex:FI_statement_1_section_4 a aec3po:NumericalCheckStatement ;
     dct:identifier "Finnish_Environment/4/1" ;
     aec3po:asText "The period for assessing the low-carbon performance of a new building or a building undergoing major renovation during its operational phase shall be the first 50 years after construction or major renovation." .
 
 # Instantiate the second statement from the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
-ex:FI_statement_2_section_4 a aec3po:Statement ;
+ex:FI_statement_2_section_4 a aec3po:NumericalCheckStatement ;
     dct:identifier "Finnish_Environment/4/2" ;
     aec3po:asText "The assessment period for the use phase of a building intended to be mobile and temporary shall be the length of the temporary use, up to a maximum of 50 years." .
 
