@@ -156,7 +156,7 @@ aec3po:Property a owl:Class ;
     rdfs:label "Property"@en ;
     rdfs:comment "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en ;
     rdfs:subClassOf dul:Quality ;
-    skos:example "The height of a building, the area of a space, the U-value of a wall"@en .
+    skos:example "The height of a building"@en, "the area of a space"@en, "the U-value of a wall"@en .
 
 aec3po:Statement a owl:Class ;
     rdfs:label "Statement"@en ;
