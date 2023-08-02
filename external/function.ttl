@@ -24,6 +24,27 @@ rdfs:comment """An algorithm is a specified set of instructions, independent of 
 or use a combination of multiple algorithms to solve a certain problem. A function does not have to be implemented by any algorithm or have to be mapped one-on-one to an algorithm.
 It is not required to have a one-to-one mapping between an algorithm and a problem."""@en .
 
+fno:Parameter a owl:Class ;
+rds:comment """A parameter is the description of the input value of a function. To specify the datatype of the parameter, the fno:type predicate SHOULD be used. 
+To specify whether a parameter is required, the fno:required predicate SHOULD be used. """ @en.
+
+fno:Output a owl:Class ;
+     rdfs:label "Output"@en ;
+rds:comment """An output is the description of the output value of a function. """ @en.
+
+fno:returns rdf:type owl:ObjectProperty ;
+     rdfs:label "returns"@en ;
+         rdfs:domain :Function ;
+         rdfs:range rdf:List ;
+         <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-output> ;
+         rdfs:comment "Connects a description of a function to the description of the output"@en ;
+        
+    
+ 
+
+
+
+
 
 
 
