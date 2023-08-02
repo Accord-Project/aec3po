@@ -1,0 +1,29 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+
+aec3po:function a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+dct:description "The function module of AEC3PO lists and extends some of the classes and properties from the function ontology that may be useful in the context of the ACCORD project."@en ;
+    dct:modified "2023-08-2"^^xsd:date ;
+    dct:title "AEC3PO"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri aec3po: .
+
+
+fno:Function a rdfs:Class ;
+    rdfs:label "Function" ;
+    rdfs:comment """A function is a process that performs a specific task. In essence, its identification is a function declaration. A function can associate zero or more parameters to an output. A function can have input parameters, output, solve certain problems, and can be implemented using certain algorithms. It's execution can also be described in an implementation-independent manner. [https://fno.io/spec/20230512/#dfn-function-declaration]""" ;  
+    
+
+fno:Algorithm a owl:Class ;
+rdfs:comment """An algorithm is a specified set of instructions, independent of its implementation. A function can be implemented using a known algorithm (e.g., Dijkstra's shortest path algorithm),
+or use a combination of multiple algorithms to solve a certain problem. A function does not have to be implemented by any algorithm or have to be mapped one-on-one to an algorithm.
+It is not required to have a one-to-one mapping between an algorithm and a problem."""@en .
+
+
+
+
