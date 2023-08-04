@@ -152,6 +152,13 @@ aec3po:hasDesign a owl:ObjectProperty ;
             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
     rdfs:range aec3po:Design .
 
+aec3po:hasContext a owl:Property ;
+    rdfs:label "has Context"@en ;
+    rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( aec3po:Class aec3po:Property ) ] ;
+    rdfs:range ^^xsd:string .
+
 aec3po:Property a owl:Class ;
     rdfs:label "Property"@en ;
     rdfs:comment "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en ;
