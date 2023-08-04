@@ -10,6 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix og: <https://ogp.me/> .
 
 aec3po:AndCheck a owl:Class ;
     rdfs:label "And Check"@en ;
@@ -157,7 +158,7 @@ aec3po:hasContext a owl:Property ;
     rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( aec3po:Class aec3po:Property ) ] ;
-    rdfs:range^^xsd:string .
+    rdfs:range og:url .
 
 aec3po:Property a owl:Class ;
     rdfs:label "Property"@en ;
