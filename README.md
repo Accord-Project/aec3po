@@ -4,7 +4,7 @@
 
 The Architecture Engineering and Construction Compliance Checking and Permitting Ontology (AEC3PO) is a central ontology developed in the context of the EU project ACCORD.
 
-It uses namespace `https://w3id.org/lbd/aec3po/`, prefixed `aec3po:`.
+It uses namespace `https://w3id.org/lbd/aec3po/`, prefixed `aec3po:`. AEC3PO is a comprehensive ontology designed to represent the compliance and permitting stage in the construction domain. It aims to capture and model various aspects related to building compliance, engineering standards, and permitting processes in the architecture, engineering, and construction industry. The ontology is built using Semantic Web technologies, adhering to standards like RDF, OWL, and SKOS. It provides a formal and standardised representation of the knowledge and information related to compliance and permitting requirements in the construction domain. 
 
 
 
@@ -12,7 +12,7 @@ It uses namespace `https://w3id.org/lbd/aec3po/`, prefixed `aec3po:`.
 
 ### As defined in the proposal
 
-T2.2  Development  of  the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA,  ONTO,  SOL,  FUI,  IMT, FUNITEC, JU)[M8-M16]: Drawing on literature, expert interviews, T2.1 and WP1, develop a conceptual ontological model of building compliance requirements,  including laws,  regulations, processes,  and  documentation. This Building Compliance Ontology (BCO) is open-ended, and not tied to specific regional or legal systems.It is aligned  and  compatible  with  established  standardontologies  for  representing  both  generic  concepts  (time,  processes, files/document metadata) and the building domain specifically (building topology, construction projects). Specific laws, regulations, processes, and documentation will be implementations of this generic model. (D2.2)
+T2.2  Development of the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA,  ONTO,  SOL,  FUI,  IMT, FUNITEC, JU)[M8-M16]: Drawing on literature, expert interviews, T2.1 and WP1, develop a conceptual ontological model of building compliance requirements,  including laws,  regulations, processes,  and  documentation. This Building Compliance Ontology (BCO) is open-ended, and not tied to specific regional or legal systems.It is aligned  and  compatible  with  established  standard ontologies for  representing both generic concepts  (time, processes, files/document metadata) and the building domain specifically (building topology, construction projects). Specific laws, regulations, processes, and documentation will be implementations of this generic model. (D2.2)
 
 ### Requirements from T2.3 Machine-executable Regulations 
 
@@ -40,14 +40,18 @@ T2.2  Development  of  the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA, 
 ### Compliance
 1. How to define the metadata of a Document that informs/dictates compliance checking?
 2. What is the coverage of a Document per Administrative Area?
-3. What are the parts of a document, their unic identifiter and order?
+3. What are the parts of a document, their unique identifiter and order?
 4. What type for information (Statement) does a Document contain?
-5. What type of check needs to be performed for a Statement to comply?
-6. Required data to perform a check. 
+5. What type of check methods needs to be performed for a Statement to comply?
+6. What are the required data to perform a check?
+7. Which feature of interest needs to be checked and how it is designed?
+8. Which checking act needs to be made and which check method it uses?
+9. How to access the outcomes of a checking act?
 
 ### Permitting
  1. What are the stages of the Permitting process per Administrative Area?
  2. What evidence is required in each stage?
+ 3. Which standards the permitting stages are related to?
 
 ## Pre-commits
 
