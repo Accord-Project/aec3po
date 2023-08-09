@@ -78,7 +78,7 @@ aec3po:ChaclCheckMethod a owl:Class ;
     rdfs:isDefinedBy aec3po:ontology ;
     rdfs:subClassOf aec3po:CheckMethod .
 
-aec3po:BooleanCheck a owl:Class ;
+aec3po:BooleanCheckMethod a owl:Class ;
     rdfs:label "Boolean Check Method"@en ;
     rdfs:comment "Boolean check method refers to a type of validation method that checks whether a certain condition or property is either true or false. It is a simple binary check that evaluates the compliance or non-compliance of a specific aspect in the construction process. "@en ;
     rdfs:isDefinedBy aec3po:ontology ;
