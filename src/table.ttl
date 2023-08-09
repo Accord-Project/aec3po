@@ -36,7 +36,7 @@ aec3po:contains a owl:ObjectProperty ;
   owl:inverseOf aec3po:isContainedBy ;
   rdfs:isDefinedBy aec3po:table .
 
-aec3po:isContainedBy a owl:ObjectProperty ;
+aec3po:isContainedIn a owl:ObjectProperty ;
   rdfs:label "is contained by"@en ;
   rdfs:comment """A table contains row, columns and other elements."""@en ;
   rdfs:range [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image aec3po:Row aec3po:Column aec3po:Cell) ] ;
@@ -64,5 +64,5 @@ aec3po:Row a owl:Class ;
 aec3po:Cell a owl:Class ;
   rdfs:label "Cell"@en ;
   rdfs:subClassOf aec3po:Table ;
-  rdfs:comment """A cell in a table. Cells are contained by rows and columns""" ;
+  rdfs:comment """A cell in a table. Cells are contained in rows and columns""" ;
   rdfs:isDefinedBy aec3po:table .
