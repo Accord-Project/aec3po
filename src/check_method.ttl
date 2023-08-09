@@ -68,9 +68,15 @@ aec3po:CertificateCheckMethod a owl:Class ;
 
 aec3po:ComponentCheckMethod a owl:Class ;
     rdfs:label "Component Check Method"@en ;
-    rdfs:comment "Component check method refers to a process of inspecting and verifying specific components or elements of a building or infrastructure to ensure they meet the required standards, specifications, and regulations. This method is used to assess the quality, functionality, and safety of individual components used in construction projects."@en ;
+    rdfs:comment "Component check method refers to a process of inspecting and verifying specific components or elements of a building or infrastructure to ensure they meet the required standards, specifications, and regulations. This method is used to assess the quality, functionality, and safety of individual components used in construction projects. Formally defined as checks for some feature of interest"@en ;
     rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf aec3po:CheckMethod .
+    rdfs:subClassOf aec3po:CheckMethod ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( aec3po:CheckMethod [ a owl:Restriction ;
+                        owl:allValuesFrom [ a owl:Restriction ;
+                                owl:allValuesFrom aec3po:FeatureOfInterest ;
+                                owl:onProperty [ owl:inverseOf aec3po:forDesign ] ] ;
+                        owl:onProperty aec3po:forDesign ] ) ] .
 
 aec3po:ChaclCheckMethod a owl:Class ;
     rdfs:label "Chacl Check Method"@en ;
