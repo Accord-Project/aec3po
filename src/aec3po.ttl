@@ -29,7 +29,7 @@ aec3po:CertificateCheckStatement a owl:Class ;
     rdfs:subClassOf aec3po:CheckStatement .
 
 aec3po:CheckStatement a owl:Class ;
- rdfs:comment "todo"@en ;
+ rdfs:comment "Check statement represents a formal statement or requirement that is used to assess whether a specific condition or criterion has been met in a construction project, design, or process. It generally refers to a textual extract from the building regulations."@en ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:ClassificationDesign a owl:Class ;
@@ -38,9 +38,7 @@ aec3po:ClassificationDesign a owl:Class ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
                         owl:onProperty skos:inScheme ;
                         owl:someValuesFrom skos:ConceptScheme ] ) ] ;
-    skos:note """classification design are expected to be taken in existing concept schemes.
-  C3PO defines some concept schemes such as aec3po:building_structure
-  Existing concept schemes may also be used such as Ifc classes, or bSDD."""@en .
+    skos:note """classification design are expected to be taken in existing concept schemes. AEC3PO defines some concept schemes such as aec3po:building_structure. Existing concept schemes may also be used such as Ifc classes, or bSDD."""@en .
 
 aec3po:ComponentCheck a owl:Class ;
     rdfs:label "Component Check"@en ;
@@ -66,7 +64,7 @@ aec3po:HumanEvaluatedStatement a owl:Class ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:BooleanCheckStatement a owl:Class ;
-    rdfs:comment "A type of check that checks the existence of an element (property) related to the feature of interest."@en ;
+    rdfs:comment "A type of check that checks the existence of an element (property) related to a feature of interest."@en ;
     rdfs:subClassOf aec3po:Statement .
 
 aec3po:DataRequirement a owl:Class;
@@ -90,12 +88,12 @@ aec3po:OrCheck a owl:Class ;
 
 aec3po:PrivateVerifier a owl:Class ;
     rdfs:label "Private Verifier"@en ;
-    rdfs:comment " "@en ;
+    rdfs:comment "Private verifier refers to an individual or entity responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
 aec3po:StateVerifier a owl:Class ;
     rdfs:label "State Verifier"@en ;
-    rdfs:comment "todo"@en ;
+    rdfs:comment "State verifier refers to an individual or entity responsible for assessing and verifying compliance with state-specific regulations, legal requirements, and building codes in a construction project. "@en ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
 aec3po:hasDataRequirement a owl:ObjectProperty;
@@ -173,29 +171,29 @@ aec3po:Statement a owl:Class ;
     skos:example "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en .
 
 
-aec3po:Applications a owl:Class ;
-    rdfs:label "Applications"@en ;
+aec3po:Application a owl:Class ;
+    rdfs:label "Application"@en ;
     rdfs:comment "Represents the Applications tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
     rdfs:subClassOf aec3po:Statement ;
 owl:disjointWith aec3po:Selection, aec3po:Requirement,  aec3po:Exceptions .			
 
-aec3po:Exceptions a owl:Class ;
-    rdfs:label "Exceptions"@en ;
+aec3po:Exception a owl:Class ;
+    rdfs:label "Exception"@en ;
     rdfs:comment "Represents the Exceptions tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
     rdfs:subClassOf aec3po:Statement ;
-    owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Requirement .			
+    owl:disjointWith  aec3po:Selection, aec3po:Application, aec3po:Requirement .			
 
-aec3po:Requirements a owl:Class ;
-    rdfs:label "Requirements"@en ;
+aec3po:Requirement a owl:Class ;
+    rdfs:label "Requirement"@en ;
     rdfs:comment "Represents the Requirement tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith  aec3po:Selection, aec3po:Applicabilities, aec3po:Exceptions .	
 
-aec3po:Selections a owl:Class ;
+aec3po:Selection a owl:Class ;
     rdfs:label "Selection"@en ;
     rdfs:comment "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
     rdfs:subClassOf aec3po:Statement ;
-    owl:disjointWith   aec3po:Requirement, aec3po:Applicabilities, aec3po:Exceptions .		
+    owl:disjointWith   aec3po:Requirement, aec3po:Application, aec3po:Exception .		
 
 skos:Concept a owl:Class .
 
