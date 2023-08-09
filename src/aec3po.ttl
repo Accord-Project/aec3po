@@ -21,7 +21,7 @@ aec3po:AndCheck a owl:Class ;
         aec3po:ChecklistStatement .
 
 aec3po:CategoryCheckStatement a owl:Class ;
- rdfs:comment "todo"@en ;
+ rdfs:comment "Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more."@en ;
     rdfs:subClassOf aec3po:CheckStatement .
 
 aec3po:CertificateCheckStatement a owl:Class ;
@@ -40,8 +40,9 @@ aec3po:ClassificationDesign a owl:Class ;
                         owl:someValuesFrom skos:ConceptScheme ] ) ] ;
     skos:note """classification design are expected to be taken in existing concept schemes. AEC3PO defines some concept schemes such as aec3po:building_structure. Existing concept schemes may also be used such as Ifc classes, or bSDD."""@en .
 
+#NOTE: This should be placed in the Check_Method module
 aec3po:ComponentCheck a owl:Class ;
-    rdfs:label "Component Check"@en ;
+   rdfs:label "Component Check"@en ;
     rdfs:comment "Formally defined as checks for some feature of interest"@en ;
     rdfs:subClassOf aec3po:Check ;
     owl:equivalentClass [ a owl:Class ;
