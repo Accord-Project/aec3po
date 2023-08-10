@@ -139,6 +139,7 @@ skos:ConceptScheme a owl:Class .
 
 skos:inScheme a owl:ObjectProperty .
 
+#NOTE: reuse Org ontology and define the LegalVerifier as subclass of it?
 aec3po:LegalVerifier a owl:Class ;
     rdfs:label "Legal Verifier"@en ;
     rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en .
