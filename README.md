@@ -41,18 +41,23 @@ T2.2  Development of the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA,  O
 ### Compliance
 1. How to define the metadata of a Document that informs/dictates compliance checking?
 2. What is the coverage of a Document per Administrative Area?
-3. What are the parts of a document, their unique identifiter and order?
-4. What type for information (Statement) does a Document contain?
-5. What type of check methods needs to be performed for a Statement to comply?
-6. What are the required data to perform a check?
-7. Which feature of interest needs to be checked and how it is designed?
-8. Which checking act needs to be made and which check method it uses?
-9. How to access the outcomes of a checking act?
+3. What are the parts of a document, their unique identifiers and order?
+4. How to represent cross-referencing in a document?
+5. What type of information (Statement) does a Document contain?
+7. What categories or types of check statements can a check statement belong to?
+8. What type of check methods needs to be performed for a Statement to comply?
+9. Which check statement does a check method operationalize?
+10. What are the required data to perform a check?
+11. Which feature of interest needs to be checked and how it is designed?
+12. Which checking act needs to be made and which check method it uses?
+13. How to access the outcomes of a checking act?
+14. How to transform normative documents into a single well-defined rule which can be implemented into BIM / IFC based model checking software using RASE methodology?
 
 ### Permitting
  1. What are the stages of the Permitting process per Administrative Area?
  2. What evidence is required in each stage?
  3. Which standards the permitting stages are related to?
+ 4. What types of checks and verifications are necessary to ensure compliance with building regulations during the permitting phase?
 
 ## Pre-commits
 
