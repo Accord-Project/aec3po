@@ -10,7 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix og: <https://ogp.me/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 aec3po:Statement a owl:Class ;
     rdfs:label "Statement"@en ;
@@ -151,7 +151,7 @@ aec3po:forDesign a owl:ObjectProperty ;
             owl:unionOf ( aec3po:Check aec3po:Verifier aec3po:Checking ) ] ;
     rdfs:range aec3po:Design .
 
-#NOTE: domain and range here should be unionof (CheckStatement, CheckMethod)?
+#NOTE: domain and range here should be unionof (CheckStatement, CheckMethod)? -- YES
 aec3po:hasSubCheck a owl:ObjectProperty ;
     rdfs:label "has sub check"@en ;
     rdfs:comment "Links a AndCheck to the set of checks that all need to be verified. Links a OrCheck to the set of checks that at least one must verify."@en ;
