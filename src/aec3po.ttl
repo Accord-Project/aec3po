@@ -11,6 +11,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix og: <https://ogp.me/ns#>.
 
 aec3po:Statement a owl:Class ;
     rdfs:label "Statement"@en ;
@@ -54,18 +55,6 @@ aec3po:CertificateCheckStatement a owl:Class ;
  rdfs:comment "Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects"@en ;
     rdfs:subClassOf aec3po:CheckStatement .
 
-#NOTE: This should be placed in the Check_Method module
-aec3po:ComponentCheck a owl:Class ;
-   rdfs:label "Component Check"@en ;
-    rdfs:comment "Formally defined as checks for some feature of interest."@en ;
-    rdfs:subClassOf aec3po:Check ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( aec3po:Check [ a owl:Restriction ;
-                        owl:allValuesFrom [ a owl:Restriction ;
-                                owl:allValuesFrom aec3po:FeatureOfInterest ;
-                                owl:onProperty [ owl:inverseOf aec3po:forDesign ] ] ;
-                        owl:onProperty aec3po:forDesign ] ) ] .
-
 aec3po:DefinitionStatement a owl:Class ;
  rdfs:comment "A type of statement that provides a formal and precise definition for a specific concept or term."@en ;
     rdfs:subClassOf aec3po:Statement .
@@ -89,11 +78,6 @@ aec3po:IDS a owl:Class ;
     rdfs:subClassOf aec3po:DataRequirement ;
     skos:note "Required data defined in an Information Delivery Format (IDS)." .
 
-#NOTE: This should be removed.
-aec3po:NumericalCheck a owl:Class ;
-    rdfs:comment "A check that involves checking one numerical property against another, i.e. x < y or similar." ;
-    rdfs:subClassOf aec3po:Check .
-
 aec3po:PrivateVerifier a owl:Class ;
     rdfs:label "Private Verifier"@en ;
     rdfs:comment "Private verifier refers to an individual or entity responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en ;
@@ -104,10 +88,11 @@ aec3po:StateVerifier a owl:Class ;
     rdfs:comment "State verifier refers to an individual or entity responsible for assessing and verifying compliance with state-specific regulations, legal requirements, and building codes in a construction project. "@en ;
     rdfs:subClassOf aec3po:LegalVerifier .
 
-#NOTE: We used the property "hasRequiredData".
-aec3po:hasDataRequirement a owl:ObjectProperty;
- rdfs:comment "todo"@en ;
-   rdfs:domain aec3po:DataRequirement.
+aec3po:hasRequiredData a owl:ObjectProperty;
+ rdfs:comment "associates a specific feature of interest with the required data that needs to be provided or associated with it."@en ;
+ rdfs:domain aec3po:Statement ;
+ rdfs:range [ a owl:Class ;
+            owl:unionOf ( aec3po:DataRequirement aec3po:Property ) ] .
 
 aec3po:PropertyDesign a owl:Class ;
     rdfs:label "property design"@en ;
@@ -139,24 +124,25 @@ skos:ConceptScheme a owl:Class .
 
 skos:inScheme a owl:ObjectProperty .
 
-#NOTE: reuse Org ontology and define the LegalVerifier as subclass of it?
 aec3po:LegalVerifier a owl:Class ;
     rdfs:label "Legal Verifier"@en ;
+    rdf:subClassOf foaf:Agent ;
     rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en .
 
 aec3po:forDesign a owl:ObjectProperty ;
     rdfs:label "for design"@en ;
     rdfs:comment "Links a check, verifier, or checking act, to the type of design it applies."@en ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( aec3po:Check aec3po:Verifier aec3po:Checking ) ] ;
+            owl:unionOf ( aec3po:CheckMethod aec3po:ProcessVerifier aec3po:CheckingAct ) ] ;
     rdfs:range aec3po:Design .
 
-#NOTE: domain and range here should be unionof (CheckStatement, CheckMethod)? -- YES
 aec3po:hasSubCheck a owl:ObjectProperty ;
     rdfs:label "has sub check"@en ;
     rdfs:comment "Links a AndCheck to the set of checks that all need to be verified. Links a OrCheck to the set of checks that at least one must verify."@en ;
-    rdfs:domain aec3po:Check ;
-    rdfs:range aec3po:Check .
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( aec3po:CheckListStatement aec3po:CheckMethod ) ] ;
+     rdfs:range [ a owl:Class ;
+            owl:unionOf ( aec3po:CheckStatement aec3po:CheckMethod ) ] .
 
 aec3po:hasDesign a owl:ObjectProperty ;
     rdfs:label "has design"@en ;
@@ -169,7 +155,7 @@ aec3po:hasContext a owl:Property ;
     rdfs:label "has Context"@en ;
     rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( aec3po:Class aec3po:Property ) ] ;
+            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
     rdfs:range og:url .
 
 aec3po:Property a owl:Class ;
