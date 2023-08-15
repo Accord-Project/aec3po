@@ -214,7 +214,8 @@ aec3po:ontology a owl:Ontology ;
         aec3po:pan,
         aec3po:thomas ;
     dct:description "The Architecture, Engineering and Construction Compliance Checking and Permitting ontology (AEC3PO), based on the statements on building compliance-related document and design codes."@en ;
-    dct:modified "2023-05-25"^^xsd:date ;
+    #dct:modified "2023-05-25"^^xsd:date ;
+    dct:modified "2023-08-15"^^xsd:date ;
     dct:title "AEC3PO"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri aec3po: ;
