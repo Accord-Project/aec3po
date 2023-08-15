@@ -73,9 +73,13 @@ aec3po:BooleanCheckStatement a owl:Class ;
 
 aec3po:DataRequirement a owl:Class;
     rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking." .
+
+aec3po:Evidence a owl:Class ;
+    rdfs:subClassOf aec3po:Statement ;
+    skos:note "Evidence refers to information, data, or documentation that provides support, validation, or verification for claims, statements, or assessments within the construction domain." .
       
 aec3po:IDS a owl:Class ;
-    rdfs:subClassOf aec3po:DataRequirement ;
+    rdfs:subClassOf aec3po:Statement ;
     skos:note "Required data defined in an Information Delivery Format (IDS)." .
 
 aec3po:PrivateVerifier a owl:Class ;
@@ -93,6 +97,11 @@ aec3po:hasRequiredData a owl:ObjectProperty;
  rdfs:domain aec3po:Statement ;
  rdfs:range [ a owl:Class ;
             owl:unionOf ( aec3po:DataRequirement aec3po:Property ) ] .
+
+aec3po:hasEvidence a owl:ObjectProperty;
+ rdfs:comment " is used to associate a piece of evidence with a specific assertion, statement, or claim."@en ;
+ rdfs:domain aec3po:Statement ;
+ rdfs:range aec3po:Evidence .
 
 aec3po:PropertyDesign a owl:Class ;
     rdfs:label "property design"@en ;
