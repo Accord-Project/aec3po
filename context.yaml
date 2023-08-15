@@ -39,5 +39,6 @@
   title:                  dct:title
   relation:               dct:relation
   contains:               aec3po:contains
+  hasContext:             aec3po:hasContext
   # Unused
   # sector: dct:sector # no such prop
