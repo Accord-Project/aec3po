@@ -52,6 +52,7 @@
     "title": "dct:title",
     "relation": "dct:relation",
     "contains": "aec3po:contains",
-    "hasContext": "aec3po:hasContext"
+    "hasContext": "aec3po:hasContext",
+    "references": "dct:references"
   }
 }
