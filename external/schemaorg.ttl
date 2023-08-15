@@ -6,6 +6,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 schema:3DModel a rdfs:Class ;
     rdfs:label "3DModel" ;
@@ -14,6 +15,40 @@ case of a single file published after Zip compression, the convention of appendi
     rdfs:subClassOf schema:MediaObject ;
     schema:isPartOf <http://pending.schema.org> ;
     schema:source <https://github.com/schemaorg/schemaorg/issues/2140> .
+
+schema:about a owl:ObjectProperty ;
+ rdfs:label "about"@en ;
+ rdfs:comment "The subject matter of the content."@en ;
+ rdfs:domain schema:3DModel ;
+ rdfs:range xsd:String ;
+ owl:inverseOf schema:subjectOf ;
+ skos:example "A BIM Model is about a specific project or just put the title of the BIM model "@en .
+
+schema:abstract a owl:ObjectProperty ;
+ rdfs:label "abstract"@en ;
+ rdfs:comment "A short description that summarises the CreativeWork."@en ;
+ rdfs:domain schema:3DModel ;
+ rdfs:range xsd:String ;
+ skos:example "A textual description providing additional details about the BIM model."@en .
+
+schema:spatial a owl:ObjectProperty ;
+ rdfs:label "spatial"@en ;
+ rdfs:comment "The physical or geographic location of the building or structure represented in the BIM model."@en ;
+ rdfs:domain schema:3DModel ;
+ rdfs:range schema:Place .
+
+schema:spatialCoverage a owl:ObjectProperty ;
+ rdfs:label "spatial coverage"@en ;
+ rdfs:comment "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en ;
+ rdfs:domain schema:3DModel ;
+ rdfs:range [ a owl:Class ;
+ owl:unionOf ( schema:Place aec3po:AdministrativeArea ) ] .
+
+schema:material a owl:ObjectProperty ;
+ rdfs:label "material"@en ;
+ rdfs:comment "The materials used for different parts of the building, such as walls, floors, and roofs."@en ;
+ rdfs:domain schema:3DModel ;
+ rdfs:range xsd:String .
 
 schema:MediaObject a rdfs:Class ;
     rdfs:label "MediaObject" ;
