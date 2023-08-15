@@ -3,6 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
 
 dct:hasPart a owl:ObjectProperty ;
  rdfs:label "has Part"@en ;
@@ -42,4 +43,28 @@ rdfs:domain aec3po:Document ;
 rdfs:range aec3po:administrative ;
 skos:example "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges. Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage." .
 
+dct:format a owl:ObjectProperty ;
+rdfs:label "Format"@en ;
+rdfs:comment "The file format, physical medium, or dimensions of the resource." ;
+rdfs:domain aec3po:Evidence ;
+rdfs:range [ a owl:Class ;
+ owl:unionOf ( aec3po:Document dct:Image dct:StillImage schema:3DModel ) ] ;
+skos:example "Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [MIME]. Examples of dimensions include size and duration." .
 
+dct:Image a owl:ObjectProperty ;
+rdfs:label "Image"@en ;
+rdfs:comment "A visual representation other than text." ;
+rdfs:domain [ a owl:Class ;
+ owl:unionOf ( aec3po:Document aec3po:Evidence aec3po:Container ) ] ;
+rdfs:range [ a owl:Class ;
+ owl:unionOf ( dct:Image dct:Image dct:StillImage schema:3DModel ) ] ;
+skos:example "Examples include images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, musical notation. Note that Image may include both electronic and physical representations." .
+
+dct:StillImage a owl:ObjectProperty ;
+rdfs:label "Still Image"@en ;
+rdfs:comment "A static visual representation." ;
+rdfs:domain [ a owl:Class ;
+ owl:unionOf ( aec3po:Document aec3po:Evidence aec3po:Container aec3po:FeatureOfInterest) ] ;
+rdfs:range [ a owl:Class ;
+ owl:unionOf ( dct:Image dct:Image dct:StillImage schema:3DModel ) ] ;
+skos:example "Examples include paintings, drawings, graphic designs, plans and maps. Recommended best practice is to assign the type Text to images of textual materials. Instances of the type Still Image must also be describable as instances of the broader type Image." .
