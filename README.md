@@ -49,23 +49,23 @@ Below is an overview of each module and its sub-components:
   - Classes: _DocumentSubdivision_, _Statement_, _CheckStatement_, _DefinitionStatement_, _ChecklistStatement_, _Evidence_, _DataRequirement_, _etc_.
   - Properties: hasPart, hasRequiredData, hasEvidence, forDocument, hasPermittingStage, etc.
 
-* **Module 2: CheckMethod**
-  •	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _etc_.
-  •	Properties: _hasSubCheck_, _operationalize_, _forDesign_, _etc_.
+2. **Module 2: CheckMethod**
+  -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _etc_.
+  -	Properties: _hasSubCheck_, _operationalize_, _forDesign_, _etc_.
 
-* **Module 3: Design**
-  •	Classes: _Design_, _PropertyDesign_, _ComparisonOperation_, _etc_.
-  •	Properties: _hasDesign_, _hasPropertyDesign_, _hasComparisonOperator_, _etc_.
+3. **Module 3: Design**
+  -	Classes: _Design_, _PropertyDesign_, _ComparisonOperation_, _etc_.
+  -	Properties: _hasDesign_, _hasPropertyDesign_, _hasComparisonOperator_, _etc_.
   
-* **Module 4: FeatureOfInterest**
-  •	Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
-  •	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasUnit_, _hasDesign_, _hasContext_, _etc_.
+4. **Module 4: FeatureOfInterest**
+  - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
+  -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasUnit_, _hasDesign_, _hasContext_, _etc_.
   
-* **Module 5: CheckingAct**
-  •	Classes: _CheckingAct_, _ProcessVerifier_, _ConformanceReport_
-  •	Properties: _usedMethod_, _madeBy_, _hasReport_
+5. **Module 5: CheckingAct**
+  - Classes: _CheckingAct_, _ProcessVerifier_, _ConformanceReport_
+  - Properties: _usedMethod_, _madeBy_, _hasReport_
   
-Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, and SHACL checks.
+Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, and SHACL checks. 
 Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the conformance report that stores the outcomes of the check. 
 
 ## Examples
