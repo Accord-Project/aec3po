@@ -80,7 +80,8 @@ The figure above effectively conveys the interconnectedness of different ontolog
 
 | Ontology          |  Namespace                                    | prefix    | Description                                                                              |
 |-------------------|-----------------------------------------------|-----------|------------------------------------------------------------------------------|
-| dct        |  [http://purl.org/dc/terms/](http://purl.org/dc/terms/)  | dct:  |The Dublin Core Terms (DCT) ontology is used within the "AEC3PO" ontology to provide a standardised framework for describing and managing metadata related to documents and other resources in the construction compliance and permitting context. |
+| dct        |  [http://purl.org/dc/terms/](http://purl.org/dc/terms/)  | _dct:_  |The Dublin Core Terms (DCT) ontology is used within the "AEC3PO" ontology to provide a standardised framework for describing and managing metadata related to documents and other resources in the construction compliance and permitting context. |
+|eli         |[http://data.europa.eu/eli/ontology#](http://data.europa.eu/eli/ontology#) |_eli:_ | The European Legislation Identifier (ELI) ontology is used within the "AEC3PO" ontology to provide a standardized framework for referencing and managing legal and legislative information related to documents, regulations, and other legal entities within the construction compliance and permitting context. |
 
 
 ## Examples
