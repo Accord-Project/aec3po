@@ -44,11 +44,10 @@ T2.2  Development of the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA,  O
 The AEC3PO ontology is designed to represent various aspects of the construction domain, focusing on compliance and permitting. It is organised into five main modules, each comprising sub-modules, classes, and properties. These modules facilitate the modeling of different components and relationships within the construction domain. The figure below shows an overview of these modules and the relations among them.
 
 ![AEC3PO Overview](images/aec3po_v1.0.0_Modules.png) 
-
 Below is an overview of each module and its sub-components:
-* **Module 1: Document**
-  •	Classes: _DocumentSubdivision_, _Statement_, _CheckStatement_, _DefinitionStatement_, _ChecklistStatement_, _Evidence_, _DataRequirement_, _etc_.
-  •	Properties: hasPart, hasRequiredData, hasEvidence, forDocument, hasPermittingStage, etc.
+1. **Module 1: Document**
+  - Classes: _DocumentSubdivision_, _Statement_, _CheckStatement_, _DefinitionStatement_, _ChecklistStatement_, _Evidence_, _DataRequirement_, _etc_.
+  - Properties: hasPart, hasRequiredData, hasEvidence, forDocument, hasPermittingStage, etc.
 
 * **Module 2: CheckMethod**
   •	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _etc_.
