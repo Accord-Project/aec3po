@@ -75,6 +75,8 @@ In the figure, the AEC3PO ontology is positioned at the center, with arrows exte
 
 ![AEC3PO Overview](images/aec3po-Alignment.png)
 
+The figure above effectively conveys the interconnectedness of different ontologies with AEC3PO for a holistic understanding of compliance and permitting processes in the construction industry. This alignment facilitates cross-domain information sharing, enabling more accurate and comprehensive modeling of the complex construction ecosystem. The table below lists all the external ontologies, the namespaces and the suggested prefix for each ontology modules is also provided.
+
 ## Examples
 
 Folder `examples` contains examples for AEC3PO
