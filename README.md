@@ -77,12 +77,10 @@ In the figure, the AEC3PO ontology is positioned at the center, with arrows exte
 
 The figure above effectively conveys the interconnectedness of different ontologies with AEC3PO for a holistic understanding of compliance and permitting processes in the construction industry. This alignment facilitates cross-domain information sharing, enabling more accurate and comprehensive modeling of the complex construction ecosystem. The table below lists all the external ontologies, the namespaces and the suggested prefix for each ontology modules is also provided.
 
-:PROPERTIES:
-:CUSTOM_ID: total-entities
-:END:
-| Ontology          |      Namespace | prefix    | Description                                                                                         |
-|-------------------+--------------------------------------------------------+--------------------+------------------------------------------------------------------------------|
-| dct        |  [http://purl.org/dc/terms/](http://purl.org/dc/terms/)  |     dct:      |The Dublin Core Terms (DCT) ontology is used within the "AEC3PO" ontology to provide a standardised framework for describing and managing metadata related to documents and other resources in the construction compliance and permitting context. |
+
+| Ontology          |  Namespace                                    | prefix    | Description                                                                              |
+|-------------------|-----------------------------------------------|-----------|------------------------------------------------------------------------------|
+| dct        |  [http://purl.org/dc/terms/](http://purl.org/dc/terms/)  | dct:  |The Dublin Core Terms (DCT) ontology is used within the "AEC3PO" ontology to provide a standardised framework for describing and managing metadata related to documents and other resources in the construction compliance and permitting context. |
 
 
 ## Examples
