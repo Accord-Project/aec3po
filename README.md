@@ -1,8 +1,8 @@
 # AEC3PO: Architecture Engineering and Construction Compliance Checking and Permitting Ontology
 
-## Introduction
+## Description
 
-The Architecture Engineering and Construction Compliance Checking and Permitting Ontology (AEC3PO) is a central ontology developed in the context of the EU project ACCORD. AEC3PO is a comprehensive ontology designed to represent the compliance and permitting stage in the construction domain. It aims to capture and model various aspects related to building compliance, engineering standards, and permitting processes in the architecture, engineering, and construction industry. The ontology is built using Semantic Web technologies, adhering to standards like RDF, OWL, and SKOS. It provides a formal and standardised representation of the knowledge and information related to compliance and permitting requirements in the construction domain. 
+The Architecture Engineering and Construction Compliance Checking and Permitting Ontology (AEC3PO) is a central ontology developed in the context of the Horizon EU project ACCORD. AEC3PO is a comprehensive ontology designed to represent the compliance and permitting stage in the construction domain. It aims to capture and model various aspects related to building compliance, engineering standards, and permitting processes in the architecture, engineering, and construction industry. The ontology is built using Semantic Web technologies, adhering to standards like RDF, OWL, and SKOS. It provides a formal and standardised representation of the knowledge and information related to compliance and permitting requirements in the construction domain. 
 
 ## Namespace
 The AEC3PO ontology's namespace is `https://w3id.org/lbd/aec3po/`.
@@ -11,34 +11,13 @@ The prefixed is `aec3po:`.
 
 ## Ontology Requirements
 
-### As defined in the proposal
+### As Defined in ACCORD Proposal
 
-T2.2  Development of the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA,  ONTO,  SOL,  FUI,  IMT, FUNITEC, JU)[M8-M16]: Drawing on literature, expert interviews, T2.1 and WP1, develop a conceptual ontological model of building compliance requirements,  including laws,  regulations, processes,  and  documentation. This Building Compliance Ontology (BCO) is open-ended, and not tied to specific regional or legal systems.It is aligned  and  compatible  with  established  standard ontologies for  representing both generic concepts  (time, processes, files/document metadata) and the building domain specifically (building topology, construction projects). Specific laws, regulations, processes, and documentation will be implementations of this generic model. (D2.2)
-
-### Requirements from T2.3 Machine-executable Regulations 
-
-- Represent: a Document and Document Metadata.
-- Represent: Sections, Subsections, Paragraphs, Subparagraphs, Lists, list items etc….
-- Represent Cross referencing (inside and outside a document).
-- Represent Tables, Figures, Equations and Captions of these.
-- Identify a part of the document as containing rules, definitions or informative text.
-- Identify individual rules –uniquely identify them in some way.
-- Identify groups of rules.
-- Allow the specification of the logic to relate rules and groups of rules together.
-- From tbeach 2023-05-24: one needs to be able to roundtrip from the document to the ontology, and back, preserving the structure and most of the text.
-- From tbeach 2023-05-24: under DocumentSubdivision, one need diagrams, image files, ...
-- From tbeach 2023-05-24: under DocumentSubdivision, one need to describe tables, ...
-- Gonzal: Taxonomy of different functions i.e.  volume calculation, distance calculation. (Reference, Section 5: https://www.sciencedirect.com/science/article/pii/S266616592300056X).
-- Vladimir: Certificate classifications and metadata.
-- Edlira: BSDD to represent FearcureOfInterest.
-- Edlira: IDS link to Required Data. 
+T2.2  Development of the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA,  ONTO,  SOL,  FUI,  IMT, FUNITEC, JU)[M8-M16]: Drawing on literature, expert interviews, T2.1 and WP1, develop a conceptual ontological model of building compliance requirements,  including laws,  regulations, processes,  and  documentation. This Building Compliance Ontology (BCO) is open-ended, and not tied to specific regional or legal systems.It is aligned  and  compatible  with  established  standard ontologies for  representing both generic concepts  (time, processes, files/document metadata) and the building domain specifically (building topology, construction projects). Specific laws, regulations, processes, and documentation will be implementations of this generic model. (D2.2) 
   
+### Competency Questions
 
-
-
-## Competency Questions
-
-### Compliance
+#### Compliance
 1. How to define the metadata of a Document that informs/dictates compliance checking?
 2. What is the coverage of a Document per Administrative Area?
 3. What are the parts of a document, their unique identifiers and order?
@@ -53,11 +32,30 @@ T2.2  Development of the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA,  O
 13. How to access the outcomes of a checking act?
 14. How to transform normative documents into a single well-defined rule which can be implemented into BIM / IFC based model checking software using RASE methodology?
 
-### Permitting
+#### Permitting
  1. What are the stages of the Permitting process per Administrative Area?
  2. What evidence is required in each stage?
  3. Which standards the permitting stages are related to?
  4. What types of checks and verifications are necessary to ensure compliance with building regulations during the permitting phase?
+
+## Overview of AEC3PO modules and alignements
+
+### AEC3PO Ontology
+The AEC3PO ontology is designed to represent various aspects of the construction domain, focusing on compliance and permitting. It is organised into five main modules, each comprising sub-modules, classes, and properties. These modules facilitate the modeling of different components and relationships within the construction domain. The figure below shows an overview of these modules and the relations among them.
+
+![AEC3PO Overview](images/aec3po_v1.0.0_Modules.png) 
+
+
+## Examples
+
+Folder `examples` contains examples for AEC3PO
+
+## Alignments
+
+Folder `external` contains useful excerpts of external ontologies and vocabularies that may be considered useful for the development or alignemnt of AEC3PO.
+Terms in the AEC3PO may be aligned to 
+
+## AEC3PO Dissemination
 
 ## Pre-commits
 
@@ -83,18 +81,6 @@ A CI/CD pipeline must be developed to validate the ontology, generate the ontolo
 * The `public` folder is ignored by git. It is where temporary files are generated.  
 * The HTML Documentation may be automatically generated using ex. pyLODE.
 * The `public` folder may be published to a server.
-
-## Examples
-
-Folder `examples` contains examples for AEC3PO
-
-## Alignments
-
-Folder `external` contains useful excerpts of external ontologies and vocabularies that may be considered useful for the development or alignemnt of AEC3PO.
-Terms in the AEC3PO may be aligned to 
-
-## AEC3PO Dissemination
-
 
 ## TBC
 
