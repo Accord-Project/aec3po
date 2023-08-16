@@ -109,7 +109,13 @@ The figure above effectively conveys the interconnectedness of different ontolog
 
 ## Examples <a name="examples"></a>
 
-Folder `examples` contains examples for AEC3PO
+The folder [`examples`](https://github.com/Accord-Project/aec3po/tree/main/examples) contains a collection of Turtle files that demonstrate the instantiation of the AEC3PO ontology in the context of the demo countries **Finland**, **Estonia**, **Spain** and **UK**. Each Turtle file within the folder represents a specific scenario where the ontology is instantiated to model compliance checking and permitting processes for a different use case from the demo countries use cases. The purpose of these examples is to showcase how AEC3PO can be applied to real-world scenarios and adapted to specific regulatory contexts. The folder contains sub-folders with the name of the demo countries. Each sub-folder contains the turtle file and related documentation. Every example is documented in the corresponding `readme file`. 
+
+The following table represents a summary of the use cases: 
+
+| Demo Country      |  Use Case                  | Notes                                          | 
+|-------------------|----------------------------|------------------------------------------------| 
+|Finalnd            |FI2 - Accessibility         | This example represents the `ramp` check. The rules are defined in Section 2/Subsection 2 from the English tranlation of the Finnish Accessibility document. |
 
 ## AEC3PO Dissemination
 
