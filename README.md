@@ -114,7 +114,7 @@ The folder [`examples`](https://github.com/Accord-Project/aec3po/tree/main/examp
 The following table represents a summary of the use cases: 
 
 | Demo Country      |  Use Case                  | Description                                    | Source   |
-|-------------------|----------------------------|------------------------------------------------| 
+|-------------------|----------------------------|------------------------------------------------|----------|
 |Finalnd            |FI2 - Accessibility         | This example represents the `ramp` check. The rules are defined in Section 2/Subsection 2 from the English tranlation of the Finnish Accessibility document. | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Finland/FI-accessibility-AEC3PO.ttl) |
 |                   |FI3 - CO2 Emission | The rules are defined in the English translation of the Decree of the Ministry of the Environment on the climate assessment of buildings (Draft 30.9.2022, consultation round). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Finland/FI3-CO2_Emission-AEC3PO.ttl) |     
 
