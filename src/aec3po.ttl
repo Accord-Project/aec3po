@@ -198,11 +198,10 @@ aec3po:Selection a owl:Class ;
     rdfs:subClassOf aec3po:Statement ;
     owl:disjointWith   aec3po:Requirement, aec3po:Application, aec3po:Exception .	
 
-#NOTE: We don't have the class Check anymore. Do you mean CheckMethod or CheckStatement?
 aec3po:Function a owl:Class ;
 rdfs:label "Function"@en ;
 rdfs:comment "todo" ;
-rdfs:subClassOf aec3po:Check .
+rdfs:subClassOf aec3po:CheckMethod .
 
 skos:Concept a owl:Class .
 
@@ -210,7 +209,7 @@ aec3po:ontology a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#>,
         aec3po:edlira,
-        aec3po:etc,
+        aec3po:amna,
         aec3po:pan,
         aec3po:thomas ;
     dct:description "The Architecture, Engineering and Construction Compliance Checking and Permitting ontology (AEC3PO), based on the statements on building compliance-related document and design codes."@en ;
