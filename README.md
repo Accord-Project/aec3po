@@ -7,7 +7,7 @@ The Architecture Engineering and Construction Compliance Checking and Permitting
 ## Table of Contents
 1. [Namespace](#namespace)
 2. [Ontology Requirements](#requirements)
-   1. [As Defined in ACCORD Project](#proposal)
+   1. [ACCORD Requirements](#proposal)
    2. [Competency Questions](#competencyQuestions)
       1. [Compliance](#compliance)
       2. [Permitting](#permitting)
@@ -22,9 +22,9 @@ The prefixed is `aec3po:`.
 
 ## Ontology Requirements <a name="requirements"></a>
 
-### As Defined in ACCORD Proposal <a name="porposal"></a>
+### ACCORD Requirements <a name="porposal"></a>
 
-T2.2  Development of the  Building  Compliance  Ontology (BCU,VTT,  CU,  FRA,  ONTO,  SOL,  FUI,  IMT, FUNITEC, JU)[M8-M16]: Drawing on literature, expert interviews, T2.1 and WP1, develop a conceptual ontological model of building compliance requirements,  including laws,  regulations, processes,  and  documentation. This Building Compliance Ontology (BCO) is open-ended, and not tied to specific regional or legal systems.It is aligned  and  compatible  with  established  standard ontologies for  representing both generic concepts  (time, processes, files/document metadata) and the building domain specifically (building topology, construction projects). Specific laws, regulations, processes, and documentation will be implementations of this generic model. (D2.2) 
+The AEC3PO (Architecture, Engineering, Construction Compliance Checking and Permitting Ontology) is a significant initiative that aligns with the framework of the Horizon European project ACCORD. As part of Work Package 2 (WP2), AEC3PO plays a pivotal role in Task T2.2, building upon the foundation laid by the literature prepared in Task T2.1. This ontology aims to bridge the gap between compliance checking and permitting processes within the AEC domain. Drawing inspiration from the ontologies presented in T2.1, AEC3PO establishes a structured knowledge representation that captures essential concepts, relationships, and rules related to compliance checks and permitting stages within construction projects. By aligning with the objectives of the ACCORD project, AEC3PO serves as a valuable tool for the rule formalisation language outlined in Task T2.3, facilitating seamless communication and collaboration among experts, stakeholders, and regulatory bodies in the AEC industry.
   
 ### Competency Questions <a name="competencyQuestions"></a>
 
@@ -56,19 +56,19 @@ The AEC3PO ontology is designed to represent various aspects of the construction
 
 ![AEC3PO Overview](images/aec3po_v1.0.0_Modules.png) 
 Below is an overview of each module and its sub-components:
-1. **Module 1: Document**
+1. **Module 1: Document**: This module describes building-compliance related documents, their subdivisions, down to individual statements.
   - Classes: _DocumentSubdivision_, _Statement_, _CheckStatement_, _DefinitionStatement_, _ChecklistStatement_, _Evidence_, _DataRequirement_, _etc_.
   - Properties: hasPart, hasRequiredData, hasEvidence, forDocument, hasPermittingStage, etc.
 
-2. **Module 2: CheckMethod**
+2. **Module 2: CheckMethod**: This module describes pieces of information that operationalize check statements in documents.
   -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _etc_.
   -	Properties: _hasSubCheck_, _operationalize_, _forDesign_, _etc_.
 
-3. **Module 3: Design**
+3. **Module 3: Design**: This module describes descriptions of some design of features of interest in terms of structure, geometry, and function.
   -	Classes: _Design_, _PropertyDesign_, _ComparisonOperation_, _etc_.
   -	Properties: _hasDesign_, _hasPropertyDesign_, _hasComparisonOperator_, _etc_.
   
-4. **Module 4: FeatureOfInterest**
+4. **Module 4: FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
   - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
   -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasUnit_, _hasDesign_, _hasContext_, _etc_.
   
@@ -115,11 +115,11 @@ The following table represents a summary of the use cases:
 
 | Demo Country      |  Use Case                  | Description                                    | Source   |
 |-------------------|----------------------------|------------------------------------------------|----------|
-|Finland           |FI2 - Accessibility         | This example represents the `ramp` check. The rules are defined in Section 2/Subsection 2 from the English tranlation of the Finnish Accessibility document. | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Finland/FI-accessibility-AEC3PO.ttl) | 
-|Finland         |FI3 - CO2 Emission | The rules are defined in the English translation of the Decree of the Ministry of the Environment on the climate assessment of buildings (Draft 30.9.2022, consultation round). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Finland/FI3-CO2_Emission-AEC3PO.ttl) |   
-|Estonia   |EE1 - Fire Safety | Two rules related to the `operational map` of the building have been selected from the Estonian legistlation issued on 01-03-2021. | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Estonia/Estonia_Example.ttl) | 
-|Spain   |ES2 - Cultural Centre | Two rules have been selected to check the conformance of the `cantiliver` of the cultural centre with the regulations. These rules are defined in the POUM document, which is the Municipal Urban Planning Plan Regulations document, definitively approved by the Barcelona Territorial Planning Commission on 13-07-2005. | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Spain/Spanish_Example.ttl) |
-|UK     |UK1 - Timber Structure  | This example represents check in `compression parallel to the grain in timber structures`, as described in the latest version of Eurocode 5 (EN 1995-1-1:2004+A2:2014) | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/UK/UK-Timber%20Structure.ttl) | 
+|Finland           |FI2 - Accessibility         | This example represents the `ramp` check. The rules are defined in Section 2/Subsection 2 from the English tranlation of the Finnish Accessibility document ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Finland)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Finland/FI-accessibility-AEC3PO.ttl) | 
+|Finland         |FI3 - CO2 Emission | The rules are defined in the English translation of the Decree of the Ministry of the Environment on the climate assessment of buildings (Draft 30.9.2022, consultation round) ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Finland)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Finland/FI3-CO2_Emission-AEC3PO.ttl) |   
+|Estonia   |EE1 - Fire Safety | Two rules related to the `operational map` of the building have been selected from the Estonian legistlation issued on 01-03-2021 [More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Estonia). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Estonia/Estonia_Example.ttl) | 
+|Spain   |ES2 - Cultural Centre | Two rules have been selected to check the conformance of the `cantiliver` of the cultural centre with the regulations. These rules are defined in the POUM document, which is the Municipal Urban Planning Plan Regulations document, definitively approved by the Barcelona Territorial Planning Commission on 13-07-2005 [More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Spain). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Spain/Spanish_Example.ttl) |
+|UK     |UK1 - Timber Structure  | This example represents check in `compression parallel to the grain in timber structures`, as described in the latest version of Eurocode 5 (EN 1995-1-1:2004+A2:2014) [More details](https://github.com/Accord-Project/aec3po/tree/main/examples/UK) | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/UK/UK-Timber%20Structure.ttl) | 
 
 ## AEC3PO Dissemination
 
