@@ -2,9 +2,11 @@
 
 ## Description 
 
-The Architecture Engineering and Construction Compliance Checking and Permitting Ontology (AEC3PO) is an ontology designed to represent the compliance and permitting stage in the Architecture, Engineering and Construction (AEC) domain. It serves as a structured representation of information related to building regulations, designs, checks, and permitting processes. Its main aim is to semantise regulations and provide a valuable tool for rule formalisation. The ontology is built using Semantic Web technologies, adhering to standards like RDF, OWL, and SKOS. It provides a formal and standardised representation of the knowledge and information related to compliance and permitting requirements in the construction domain. 
+The Architecture, Engineering, Construction, Compliance Checking and Permitting Ontology (AEC3PO) is an ontology developed in the context of the Automated Compliance Checks for Construction, Renovation or Demolition Works (ACCORD) project, which is a Horizon European project that aims to digitalise permitting and compliance processes . 
+AEC3PO is designed to represent the compliance and permitting stage in the Architecture, Engineering and Construction (AEC) domain. It models building compliance requirements, including laws, regulations, processes, and documentation. The ontology requirements are essentially derived from the rule formalisation methodology that aims to semantise regulations and provide an open format for machine-readable rules. 
 
-AEC3PO's strength lies in its ability to represent complex relationships between different concepts within the construction domain. It makes use of well-known ontologies like Dublin Core Terms (DCT), Europe's Legislation Identifier (ELI), and more to create a structured and interconnected knowledge graph. This allows professionals to explore, query, and understand various aspects of the construction process more comprehensively.
+The ontology is built using Semantic Web technologies, adhering to standards like RDF, OWL, and SKOS. It makes use of well-known ontologies like Dublin Core Terms (DCT), Europe's Legislation Identifier (ELI), and more to create a structured and interconnected knowledge graph. This allows professionals to explore, query, and understand various aspects of the compliance and permitting processes more comprehensively.
+
 
 ## Table of Contents
 1. [Namespace](#namespace)
