@@ -2,7 +2,9 @@
 
 ## Description 
 
-The Architecture Engineering and Construction Compliance Checking and Permitting Ontology (AEC3PO) is a central ontology developed in the context of the Horizon EU project ACCORD. AEC3PO is a comprehensive ontology designed to represent the compliance and permitting stage in the construction domain. It aims to capture and model various aspects related to building compliance, engineering standards, and permitting processes in the architecture, engineering, and construction industry. The ontology is built using Semantic Web technologies, adhering to standards like RDF, OWL, and SKOS. It provides a formal and standardised representation of the knowledge and information related to compliance and permitting requirements in the construction domain. 
+The Architecture Engineering and Construction Compliance Checking and Permitting Ontology (AEC3PO) is an ontology designed to represent the compliance and permitting stage in the Architecture, Engineering and Construction (AEC) domain. It serves as a structured representation of information related to building regulations, designs, checks, and permitting processes. Its main aim is to semantise regulations and provide a valuable tool for rule formalisation. The ontology is built using Semantic Web technologies, adhering to standards like RDF, OWL, and SKOS. It provides a formal and standardised representation of the knowledge and information related to compliance and permitting requirements in the construction domain. 
+
+AEC3PO's strength lies in its ability to represent complex relationships between different concepts within the construction domain. It makes use of well-known ontologies like Dublin Core Terms (DCT), Europe's Legislation Identifier (ELI), and more to create a structured and interconnected knowledge graph. This allows professionals to explore, query, and understand various aspects of the construction process more comprehensively.
 
 ## Table of Contents
 1. [Namespace](#namespace)
