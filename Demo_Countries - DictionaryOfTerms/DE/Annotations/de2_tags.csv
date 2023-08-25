@@ -1,0 +1,124 @@
+annotator,timestamp,annotator_id,value,tag
+amna.dridi@bcu.ac.uk,2023-08-24T09:06:49.002+00:00,1.0,planning process,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:06:55.952+00:00,1.0,Life cycle assessment optimisation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:27.1+00:00,1.0,life cycle assessments,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:18.78+00:00,1.0,planning process,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:08:47.753+00:00,1.0,building use,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:39.289+00:00,1.0,escalators,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:08:50.605+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:36.612+00:00,1.0,lifts,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:08:37.227+00:00,1.0,energy calculation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:08:29.837+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:02.226+00:00,1.0,site,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:08:44.683+00:00,1.0,energy demand,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:33.554+00:00,1.0,building equipment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:16.705+00:00,1.0,lighting,Property
+,,,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:10.67+00:00,1.0,power supply,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:13.309+00:00,1.0,production,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:08:20.054+00:00,1.0,Life cycle assessment results,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:21.413+00:00,1.0,ventilation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:13.626+00:00,1.0,support structure planning,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:15:52.032+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:40.341+00:00,1.0,energy planning,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:57.213+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:55.488+00:00,1.0,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:06.968+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:15:49.412+00:00,1.0,planning phase,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:17.664+00:00,1.0,heating,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:28.621+00:00,1.0,air conditioning planning (HVAC),Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:15:58.378+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:46.825+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:52.035+00:00,1.0,planning team,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:15:42.507+00:00,1.0,life cycle assessment model,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:16:33.466+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:58.802+00:00,1.0,planning process,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:54.703+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:19.28+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:09:51.36+00:00,1.0,Life cycle assessment results,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:09.182+00:00,1.0,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:35.249+00:00,1.0,DGNB system,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:14.127+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:11.219+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:25.735+00:00,1.0,Life cycle assessment optimisation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:10.149+00:00,1.0,CLIMATE,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:21.028+00:00,1.0,climate neutrality,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:15:08.95+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:15:08.947+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:15:05.101+00:00,1.0,life cycle assessment results,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:15:24.235+00:00,1.0,planning team,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:06:24.666+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:06:21.996+00:00,1.0,life cycle assessment results,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:18:46.45+00:00,1.0,Life cycle assessment comparison calculation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:11:56.692+00:00,1.0,partial calculation method (PCM),Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:11:43.477+00:00,1.0,environmental impact,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:08.385+00:00,1.0,life cycle assessment results,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:06.377+00:00,1.0,Building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:17:11.164+00:00,1.0,life cycle assessment results,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:17:34.413+00:00,1.0,weighted reference value (PCM),Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:17:27.319+00:00,1.0,weighted limit value,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:17:23.324+00:00,1.0,Weighted environmental impacts,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:17:09.191+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:17:05.217+00:00,1.0,life cycle assessment results,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:17:03.396+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:37.909+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:36.105+00:00,1.0,energy demand,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:39.863+00:00,1.0,energy demand,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:00.132+00:00,1.0,site,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:30.644+00:00,1.0,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:47.406+00:00,1.0,sites,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:28.594+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:08.61+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:10.631+00:00,1.0,energy demand,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:45.047+00:00,1.0,carbon neutral buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:19.204+00:00,1.0,CO2 equiv. emissions,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:12:32.501+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:48.708+00:00,1.0,EPC calculation boundaries,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:32.01+00:00,1.0,building,Object
+,,,site,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:37.408+00:00,1.0,energy demand,Property
+,,,sites,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:42.655+00:00,1.0,carbon neutral buildings,Object
+,,,CO2 equiv. emissions,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:34.286+00:00,1.0,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:13:37.412+00:00,1.0,energy demand,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:18:23.442+00:00,1.0,manufacture,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:18:16.464+00:00,1.0,greenhouse gas emissions,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:18:28.388+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:18:02.955+00:00,1.0,Climate,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:18:04.949+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:18:35.415+00:00,1.0,construction,Property
+,,,Climate,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:39.374+00:00,1.0,energy demand,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:33.111+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:33.102+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:46.982+00:00,1.0,carbon neutral buildings,Object
+,,,site,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:36.82+00:00,1.0,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:39.372+00:00,1.0,energy demand,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:33.106+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:48.994+00:00,1.0,sites,Object
+,,,CO2 equiv. emissions,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:36.83+00:00,1.0,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:33.097+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:14:36.826+00:00,1.0,operation,Property
+,,,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:11:29.333+00:00,1.0,CO2 neutral operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:11:00.17+00:00,1.0,climate action roadmap,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:54.866+00:00,1.0,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:11:08.359+00:00,1.0,carbon neutral buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:11:11.996+00:00,1.0,sites,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:48.876+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:57.086+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:42.664+00:00,1.0,Climate action roadmap,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:10:52.439+00:00,1.0,operation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:07:52.712+00:00,1.0,carbon neutral buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:07:10.772+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:07:21.444+00:00,1.0,operation,Property
+,,,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:07:16.812+00:00,1.0,calculation boundary,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:07:24.228+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:07:38.256+00:00,1.0,building lifecycle,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:08:06.537+00:00,1.0,CO2 neutrality,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:07:55.334+00:00,1.0,sites,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:07:06.393+00:00,1.0,Climate action roadmap,Object

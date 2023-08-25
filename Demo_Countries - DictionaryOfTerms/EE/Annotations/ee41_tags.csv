@@ -1,0 +1,435 @@
+annotator,timestamp,annotator_id,value,tag
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:26.102+00:00,1.0,health protection requirements,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:06.004+00:00,1.0,maintenance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:47:48.763+00:00,1.0,indoor climate,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:47:41.191+00:00,1.0,buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:47:56.427+00:00,1.0,preschool institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:47:44.133+00:00,1.0,premises,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:47:33.707+00:00,1.0,land area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:47:46.781+00:00,1.0,furnishings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:08.701+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:02:07.574+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T17:02:02.5+00:00,1.0,regulation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:02:23.543+00:00,1.0,private children's institutions,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:02:17.897+00:00,1.0,primary school children's institutions,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:54:55.434+00:00,1.0,regulation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:05:56.182+00:00,1.0,Construction Act,Object
+,,,Children's Institution,Object
+,,,Construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:05:36.872+00:00,1.0,Regulation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:05:46.256+00:00,1.0,Pre-School Children's Institution Act,Object
+,,,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:45:32.525+00:00,1.0,heating,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:45:46.635+00:00,1.0,heating hearth,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:45:58.081+00:00,1.0,group room,Object
+,,,heating,Property
+amna.dridi@bcu.ac.uk,2023-08-24T17:03:16.222+00:00,1.0,illumination,Property
+amna.dridi@bcu.ac.uk,2023-08-24T17:02:58.216+00:00,1.0,Indoor workplaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:03:23.876+00:00,1.0,color,Property
+,,,lighting,Property
+amna.dridi@bcu.ac.uk,2023-08-24T17:03:20.749+00:00,1.0,psychological glare factor,Property
+amna.dridi@bcu.ac.uk,2023-08-24T17:02:40.608+00:00,1.0,lighting,Property
+,,,lighting,Property
+amna.dridi@bcu.ac.uk,2023-08-24T17:02:29.82+00:00,1.0,installation,Property
+,,,Part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:54.019+00:00,1.0,Land,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:55.818+00:00,1.0,maintenance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:29.639+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:27.349+00:00,1.0,land area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:00:44.082+00:00,1.0,sandbox,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:00:38.636+00:00,1.0,sand,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:00:56.341+00:00,1.0,Sandboxes,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:00:48.596+00:00,1.0,signs,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:00.313+00:00,1.0,cover,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:46.212+00:00,1.0,land,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:35.477+00:00,1.0,machines,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:41.067+00:00,1.0,equipment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:32.967+00:00,1.0,Tools,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:44.11+00:00,1.0,maintenance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:54:49.718+00:00,1.0,furnishings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:48.925+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:54:35.73+00:00,1.0,surfaces,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:54:20.268+00:00,1.0,Chemicals Act,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:54:10.455+00:00,1.0,furnishings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:54:06.987+00:00,1.0,rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:54:44.307+00:00,1.0,Biocides Act,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:21.853+00:00,1.0,cabinet,Object
+,,,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:13.51+00:00,1.0,cleaning room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:07:10.769+00:00,1.0,soiling,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:06:48.004+00:00,1.0,Children's toys,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:53.825+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:46.28+00:00,1.0,air temperature,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:50.361+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:39.108+00:00,1.0,Children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:44.499+00:00,1.0,ventilation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:41.201+00:00,1.0,ventilation,Property
+,,,rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:35.718+00:00,1.0,pest insects,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:38.894+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:47.433+00:00,1.0,group rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:30.603+00:00,1.0,rodents,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:41.563+00:00,1.0,buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:43.624+00:00,1.0,premises,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:35.813+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:45.776+00:00,1.0,furnishings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:50.137+00:00,1.0,land,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:52.653+00:00,1.0,Buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:56.313+00:00,1.0,premises,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:02.471+00:00,1.0,health protection requirements,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:04.585+00:00,1.0,regulation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:59.242+00:00,1.0,Construction Act,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:54.355+00:00,1.0,facilities,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:12.124+00:00,1.0,facilities,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:59.505+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:37.4+00:00,1.0,Roads,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:02.631+00:00,1.0,distance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:31.059+00:00,1.0,Public Health Act,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:40.301+00:00,1.0,streets,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:19.057+00:00,1.0,levels,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:42.865+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:08.501+00:00,1.0,companies,Object
+,,,area,Property
+,,,air temperature,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:03:50.651+00:00,1.0,children's area,Object
+,,,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:03:32.836+00:00,1.0,thermometer,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:03:40.607+00:00,1.0,sleeping room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:57:52.089+00:00,1.0,washing,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:57:04.5+00:00,1.0,waste water,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:57:43.71+00:00,1.0,hygienic toilet use,Property
+,,,water,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:56:41.373+00:00,1.0,drinking water,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:57:39.105+00:00,1.0,catering,Property
+,,,Water,Object
+,,,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:56:47.173+00:00,1.0,drinking water,Object
+,,,water,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:56:52.461+00:00,1.0,Water Act,Object
+,,,water,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:56:20.166+00:00,1.0,water supply,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:56:09.486+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:57:07.086+00:00,1.0,sewerage,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:58:50.11+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:58:13.579+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:58:02.068+00:00,1.0,Group rooms,Object
+,,,group rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:58:17.796+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:58:04.005+00:00,1.0,children's institution,Object
+,,,hall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:58:47.871+00:00,1.0,nursery group rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:48.032+00:00,1.0,Public Health Act,Object
+,,,pool,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:42.985+00:00,1.0,pool,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:41.053+00:00,1.0,swimming pool,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:45.08+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:53.991+00:00,1.0,plants,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:57.954+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:49.12+00:00,1.0,landscaping,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:56.129+00:00,1.0,premises,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:15.835+00:00,1.0,children's institution,Object
+,,,land,Object
+,,,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:07.391+00:00,1.0,land area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:32.752+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:35.35+00:00,1.0,land,Object
+,,,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:03:15.24+00:00,1.0,fence,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:03:20.112+00:00,1.0,hedge,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:03:08.464+00:00,1.0,land area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:05:09.069+00:00,1.0,exit,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:05:53.771+00:00,1.0,street,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:05:50.647+00:00,1.0,yard,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:06:00.55+00:00,1.0,exit,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:10:24.556+00:00,1.0,land,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:10:20.026+00:00,1.0,canopy,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:48.805+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:44.418+00:00,1.0,bicycles,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:46.77+00:00,1.0,equipment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:39.028+00:00,1.0,strollers,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:41.677+00:00,1.0,sleds,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:28.37+00:00,1.0,playground,Object
+,,,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:25.055+00:00,1.0,play area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:11.346+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:13.951+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:08.919+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:05.057+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:02.688+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:54:00.632+00:00,1.0,Driveways,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:54:02.711+00:00,1.0,footpaths,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:54:06.724+00:00,1.0,squares,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:54:11.725+00:00,1.0,riding bicycles,Object
+,,,playground,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:24.884+00:00,1.0,regulation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:27.804+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:54.093+00:00,1.0,utility yard,Object
+,,,yard,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:39.108+00:00,1.0,playground,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:43.795+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:41.584+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:34.871+00:00,1.0,playground,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:53:30.524+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:49:43.321+00:00,1.0,Playground equipment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:49:06.159+00:00,1.0,use,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:52.497+00:00,1.0,Playground equipment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:48:56.596+00:00,1.0,maintenance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:49:02.932+00:00,1.0,installation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:49:49.367+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:49:11.26+00:00,1.0,playground,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:48:12.879+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:10.76+00:00,1.0,park,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:48:21.122+00:00,1.0,playground,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:15.366+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:17.891+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:06.826+00:00,1.0,forest,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:50.344+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:52.191+00:00,1.0,playground,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:15.042+00:00,1.0,playground equipment,Object
+,,,playground,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:27.399+00:00,1.0,manager,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:22.188+00:00,1.0,apartment building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:29.682+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:24.583+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:33.32+00:00,1.0,play area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:11.02+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:59:36.215+00:00,1.0,playground,Object
+,,,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:33.685+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:30.573+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:49.687+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:51.362+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:45:09.052+00:00,1.0,evacuation routes,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:47.865+00:00,1.0,exit,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:45:11.346+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:45:18.437+00:00,1.0,exit,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:08.561+00:00,1.0,canopy,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:14.319+00:00,1.0,building,Object
+,,,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:18.498+00:00,1.0,entrance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:44.244+00:00,1.0,staircase,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:44.497+00:00,1.0,balcony,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:49.603+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:36.868+00:00,1.0,safety fence,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:58.34+00:00,1.0,toes,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:05.206+00:00,1.0,staircase,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:39.656+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:24.353+00:00,1.0,staircase,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:47.77+00:00,1.0,distance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:12.945+00:00,1.0,sticks,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:42.522+00:00,1.0,sides,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:52.327+00:00,1.0,safety fence,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:54.219+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:26.844+00:00,1.0,steps,Object
+,,,handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:07.325+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:29.844+00:00,1.0,handrails,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:39.516+00:00,1.0,stair handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:34.39+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:03:17.94+00:00,1.0,safety railings,Object
+,,,stair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:04:20.919+00:00,1.0,ladder,Object
+,,,stair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:55:18.845+00:00,1.0,doors,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:55:55.248+00:00,1.0,floor-to-ceiling glass windows,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:55:50.832+00:00,1.0,door panes,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:55:01.254+00:00,1.0,walls,Object
+,,,windows,Object
+,,,door,Object
+,,,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:55:58.578+00:00,1.0,material,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:29.581+00:00,1.0,closet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:32.827+00:00,1.0,space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:25.343+00:00,1.0,clothes drying room,Object
+,,,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:01.329+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:03.286+00:00,1.0,group rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:12.709+00:00,1.0,toilet room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:32.031+00:00,1.0,sleeping room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:46.564+00:00,1.0,adult,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:26.053+00:00,1.0,building,Object
+,,,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:23.609+00:00,1.0,part,Property
+,,,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:39.907+00:00,1.0,floor area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:57.203+00:00,1.0,play and sleeping room,Object
+,,,area,Property
+,,,sleeping room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:06.353+00:00,1.0,floor area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:12.88+00:00,1.0,playroom,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:08.866+00:00,1.0,child,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:43.422+00:00,1.0,child,Object
+,,,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:06:23.065+00:00,1.0,music and gymnastics hal,Object
+,,,hall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:33.45+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:09.7+00:00,1.0,economic and staff rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:20.703+00:00,1.0,sleds,Object
+,,,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:24.371+00:00,1.0,strollers,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:15.064+00:00,1.0,storage room,Object
+,,,rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:30.112+00:00,1.0,rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:59.056+00:00,1.0,kitchen,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:27.789+00:00,1.0,bicycles,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:18.754+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:08.914+00:00,1.0,sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:24.199+00:00,1.0,washing machine,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:01.994+00:00,1.0,equipment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:58.709+00:00,1.0,cleaning room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:56:12.721+00:00,1.0,tools,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:01:31.305+00:00,1.0,premises,Object
+,,,interior decoration,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:04:12.807+00:00,1.0,manufacturer,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:03:57.383+00:00,1.0,walls,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:03:59.18+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:04:04.18+00:00,1.0,materials,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:47:03.976+00:00,1.0,construction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:46:56.051+00:00,1.0,interior decoration,Object
+,,,interior,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:46:58.885+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:50.985+00:00,1.0,slopes,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:34.395+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:08:55.643+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:02:24.515+00:00,1.0,moisture-proof,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:48.167+00:00,1.0,toilet room,Object
+,,,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:02:16.686+00:00,1.0,kitchen and dishwashing area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:02:27.969+00:00,1.0,material,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:45.983+00:00,1.0,walls,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:02:31.481+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:54:01.041+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:56.815+00:00,1.0,sockets,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:53:54.796+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:54:54.4+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:54:50.871+00:00,1.0,step,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:15.362+00:00,1.0,group room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:22.856+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:13.273+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:26.841+00:00,1.0,regulation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:05.377+00:00,1.0,furnishings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T17:00:07.647+00:00,1.0,room,Object
+,,,rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:46:24.03+00:00,1.0,furniture,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:46:36.8+00:00,1.0,sanitary equipment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:46:32.313+00:00,1.0,play and gymnastics equipment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:46:19.553+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:06.997+00:00,1.0,seats,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:14.915+00:00,1.0,racks,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:10.252+00:00,1.0,wardrobes,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:54:59.735+00:00,1.0,dressing room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:55:19.147+00:00,1.0,child,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:50:24.214+00:00,1.0,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:49:55.129+00:00,1.0,toilet room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:50:09.003+00:00,1.0,personal hygiene,Property
+,,,Toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:04:37.447+00:00,1.0,child,Object
+,,,sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:05:19.588+00:00,1.0,foot washing stand,Object
+,,,washing,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:05:21.811+00:00,1.0,hand shower,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:04:18.07+00:00,1.0,toilet room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:05:27.11+00:00,1.0,Toilet bowls,Object
+,,,washing,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:04:57.101+00:00,1.0,hand washing sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:05:30.63+00:00,1.0,doors,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:04:25.967+00:00,1.0,kindergarten group,Object
+,,,foot,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:04:30.551+00:00,1.0,toilet bowl,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:03.674+00:00,1.0,sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:38.674+00:00,1.0,toilet room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:09.146+00:00,1.0,hand shower,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:38.329+00:00,1.0,sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:35.419+00:00,1.0,toilet bowl,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:49.051+00:00,1.0,daycare group,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:17.274+00:00,1.0,base bath,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:55.827+00:00,1.0,hand washing sinks,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:43:58.837+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:44:23.656+00:00,1.0,shelf,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:09:27.325+00:00,1.0,handwashing sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:09:18.6+00:00,1.0,liquid soap dispenser,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:10:07.706+00:00,1.0,nursery group,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:09:56.449+00:00,1.0,trash can,Property
+,,,sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:09:36.664+00:00,1.0,paper towels,Object
+,,,child,Object
+,,,dispenser,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:09:31.027+00:00,1.0,cloth towel,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:10:13.013+00:00,1.0,dispenser,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:25.853+00:00,1.0,table,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:13.684+00:00,1.0,child,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:18.521+00:00,1.0,chair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:09.047+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:01:21.74+00:00,1.0,seat,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:50:57.023+00:00,1.0,base,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:50:40.085+00:00,1.0,bed,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:50:47.786+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:31.495+00:00,1.0,cover,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:12.837+00:00,1.0,side,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:06.842+00:00,1.0,windows,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:26.692+00:00,1.0,playroom,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:22.087+00:00,1.0,sleeping,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:50:57.702+00:00,1.0,heat radiation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:50:54.459+00:00,1.0,sunlight,Property
+amna.dridi@bcu.ac.uk,2023-08-24T15:09:01.628+00:00,1.0,indoor climate,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:34.458+00:00,1.0,children's rooms,Object
+,,,climate,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:52:30.498+00:00,1.0,Indoor climate,Object
+,,,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:22.049+00:00,1.0,buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:32.172+00:00,1.0,indoor air quality,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:57.91+00:00,1.0,ventilation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:48.419+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:44.077+00:00,1.0,lighting,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:52.962+00:00,1.0,Ventilation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:55.116+00:00,1.0,residential buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:47.134+00:00,1.0,acoustics,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:12.561+00:00,1.0,room air conditioning systems,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:58:35.738+00:00,1.0,thermal comfort,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:57:46.312+00:00,1.0,fresh air flow,Property
+,,,indoor air,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:02:57.768+00:00,1.0,carbon dioxide,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:02:43.578+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:02:41.773+00:00,1.0,indoor air,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:47:30.057+00:00,1.0,indoor air,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:47:20.049+00:00,1.0,annual average radon content,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:48:02.703+00:00,1.0,gamma radiation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:47:55.848+00:00,1.0,dose radiation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:56.351+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:51.823+00:00,1.0,humidity,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:59:53.957+00:00,1.0,indoor air,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:00:12.746+00:00,1.0,Average weekly relative humidity,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:42:40.329+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:42:54.119+00:00,1.0,temperature,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:42:47.299+00:00,1.0,measures,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:42:28.082+00:00,1.0,air temperature,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:47.115+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:39.772+00:00,1.0,children's rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:30.156+00:00,1.0,group room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:33.587+00:00,1.0,ventilation,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:27.931+00:00,1.0,windows,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:51:43.25+00:00,1.0,window,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:49:52.819+00:00,1.0,temperature,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:50:12.793+00:00,1.0,water,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:52:46.632+00:00,1.0,food dishes,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:52:20.973+00:00,1.0,washing room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:52.455+00:00,1.0,premises,Object
+,,,room,Object
+,,,rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:52:12.05+00:00,1.0,dressing room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:52:18.727+00:00,1.0,basement floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:51:54.331+00:00,1.0,children's institution,Object
+,,,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T16:52:01.798+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:52:58.451+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:52:55.755+00:00,1.0,glazed surface,Property
+,,,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:52:36.744+00:00,1.0,auxiliary rooms,Object
+,,,building,Object
+,,,construction,Property
+,,,regulation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T16:54:18.239+00:00,1.0,children's institution,Object
+,,,construction,Property
+,,,children's institution,Object
+,,,children's institution,Object
+amna.dridi@bcu.ac.uk,2023-08-24T15:06:35.497+00:00,1.0,regulation,Object

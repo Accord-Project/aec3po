@@ -1,0 +1,866 @@
+annotator,timestamp,annotator_id,value,tag
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:54.614+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:18.551+00:00,1.0,disabled people,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:15.586+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:21.611+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:23.731+00:00,1.0,disabled people,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:24.244+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:40.604+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:32.851+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:20.584+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:38.171+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:35.625+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:46.933+00:00,1.0,disabled people,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:35.664+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:44.535+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:40.617+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:28.809+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:31.744+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:56.57+00:00,1.0,pedestrians,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:28.638+00:00,1.0,tactile relief pavement material,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:54.617+00:00,1.0,sound signal,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:46+00:00,1.0,vibration,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:21.089+00:00,1.0,direction signs,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:42.655+00:00,1.0,lighting,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:15.52+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:59.849+00:00,1.0,barriers,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:24.76+00:00,1.0,surface difference,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:53.938+00:00,1.0,direction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:03.274+00:00,1.0,background,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:10.566+00:00,1.0,size,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:07.072+00:00,1.0,shape,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:23.725+00:00,1.0,pictograms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:15.852+00:00,1.0,distance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:40:33.004+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:56.623+00:00,1.0,wheelchair user,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:44.518+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:00.648+00:00,1.0,high,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:03.594+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:06:41.138+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:06:35.454+00:00,1.0,racks,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:06:38.367+00:00,1.0,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:00.434+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:03.78+00:00,1.0,sides,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:05.795+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:00.794+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:57.968+00:00,1.0,Handrails,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:27.786+00:00,1.0,handrails,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:28.758+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:51.943+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:48.278+00:00,1.0,handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:43.976+00:00,1.0,front edge,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:26.664+00:00,1.0,handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:45.924+00:00,1.0,staircase,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:54.672+00:00,1.0,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:10:36.269+00:00,1.0,facilities,Object
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:11:54.114+00:00,1.0,door opening,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:15:44.01+00:00,1.0,movement space,Object
+,,,space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:15:50.333+00:00,1.0,wheelchair users,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:05:13.481+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:36:21.29+00:00,1.0,knees,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:36:31.93+00:00,1.0,size,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:46.182+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:36:46.98+00:00,1.0,maneuvering space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:36:37.558+00:00,1.0,sink bowl,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:41.191+00:00,1.0,sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:36:12.089+00:00,1.0,high space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:43.627+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:51.99+00:00,1.0,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:36:51.001+00:00,1.0,diameter,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:36:09.623+00:00,1.0,deep,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:35.846+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:23:03.291+00:00,1.0,sound system,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:23:23.532+00:00,1.0,information screen,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:38:04.282+00:00,1.0,sales counter,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:39:47.603+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:39:56.83+00:00,1.0,sound barrier,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:47.077+00:00,1.0,checkouts,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:41.801+00:00,1.0,sales counters,Object
+,,,high,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:40:02.481+00:00,1.0,sound amplification system,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:38:06.891+00:00,1.0,cash register,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:23:07.041+00:00,1.0,sound amplification system,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:58.376+00:00,1.0,barrier,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:40:10.795+00:00,1.0,pictogram,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:10:26.353+00:00,1.0,parking lot,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:26:27.702+00:00,1.0,parking spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:26:02.511+00:00,1.0,disabled person's vehicle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:25:27.844+00:00,1.0,vehicle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:26:19.23+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:25:45.081+00:00,1.0,person with mobility or vision impairment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:25:54.933+00:00,1.0,driver with a mobility impairment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:26:08.823+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:26:16.135+00:00,1.0,parking spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:17.813+00:00,1.0,traffic sign,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:56.981+00:00,1.0,disabled person's vehicle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:36.65+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:27.096+00:00,1.0,high,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:21.319+00:00,1.0,front,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:54.658+00:00,1.0,parking place,Object
+,,,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:09.378+00:00,1.0,road surface,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:29.643+00:00,1.0,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:24.049+00:00,1.0,parking space,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:06.715+00:00,1.0,road sign,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:31.32+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:10.344+00:00,1.0,parking space,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:12.541+00:00,1.0,vehicle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:20.675+00:00,1.0,traffic control device,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:26.267+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:37:21.018+00:00,1.0,parking space,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:04.949+00:00,1.0,parking space,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:37:06.494+00:00,1.0,free space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:37:08.856+00:00,1.0,disabled person's vehicle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:36:57.334+00:00,1.0,dimensions,Property
+,,,parking,Object
+,,,parking,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:54:48.592+00:00,1.0,light traffic path,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:54:36.55+00:00,1.0,bicycle path,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:54:53.985+00:00,1.0,vehicle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:54:23.124+00:00,1.0,pedestrian,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:54:51.956+00:00,1.0,parking space,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:54:31.939+00:00,1.0,bicycle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:54:27.155+00:00,1.0,foot,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:53:58.042+00:00,1.0,Curbs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:54:02.231+00:00,1.0,side,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:26:57.819+00:00,1.0,parking,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:26:53.074+00:00,1.0,lot entrance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:58.763+00:00,1.0,parking lot,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:54.604+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:10:17.953+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:56.652+00:00,1.0,exit,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:10:11.766+00:00,1.0,passage,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:10:20.745+00:00,1.0,opening,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:43:31.69+00:00,1.0,phono system,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:43:53.511+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:43:46.705+00:00,1.0,pictographic sign,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:43:37.749+00:00,1.0,parking lot,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:43:56.904+00:00,1.0,exit,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:17.017+00:00,1.0,phono system,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:30.048+00:00,1.0,arrier,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:12.776+00:00,1.0,sound amplification system,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:40.552+00:00,1.0,visual output,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:34.661+00:00,1.0,opening,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:09.732+00:00,1.0,phono system,Object
+,,,pedestrian,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:06:29.749+00:00,1.0,pedestrian traffic lights,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:06:20.707+00:00,1.0,railway crossings,Object
+,,,railway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:06:08.39+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:25.943+00:00,1.0,traffic light,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:36.63+00:00,1.0,barriers,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:20.105+00:00,1.0,pedestrian crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:47.943+00:00,1.0,direction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:50.255+00:00,1.0,crosswalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:53.163+00:00,1.0,pedestrians,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:18:34.297+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:28:27.629+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:28:44.751+00:00,1.0,railway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:28:33.565+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:28:39.631+00:00,1.0,pedestrians,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:29:06.015+00:00,1.0,rails,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:28:58.015+00:00,1.0,cover,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:28:49.682+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:07:24.002+00:00,1.0,carriageway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:07:03.494+00:00,1.0,button,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:07:10.114+00:00,1.0,edge,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:07:13.006+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:06:53.669+00:00,1.0,pedestrian traffic light,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:07.613+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:07:15.371+00:00,1.0,pavement,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:07:20.981+00:00,1.0,edge,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:07:56.671+00:00,1.0,pedestrian traffic light button,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:40:51.242+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:40:48.397+00:00,1.0,pavement material,Object
+,,,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:53:16.389+00:00,1.0,material,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:53:02.462+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:53:04.824+00:00,1.0,deep,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:55.748+00:00,1.0,crosswalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:53:30.535+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:53:08.557+00:00,1.0,joints,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:53:51.061+00:00,1.0,UNESCO World Heritage List,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:53:43.748+00:00,1.0,heritage conservation area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:13:07.73+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:13:50.41+00:00,1.0,width,Property
+,,,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:59.286+00:00,1.0,end,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:13:15.642+00:00,1.0,material,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:13:47.563+00:00,1.0,light traffic,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:56.425+00:00,1.0,beginning,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:13:01.058+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:13:52.117+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:13:39.102+00:00,1.0,road surface,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:13:23.344+00:00,1.0,shade,Property
+,,,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:57:17.305+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:01.332+00:00,1.0,material,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:17.597+00:00,1.0,crosswalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:57:20.991+00:00,1.0,material,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:13.714+00:00,1.0,tactile relief pavement material,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:57:47.183+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:09.134+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:57:55.494+00:00,1.0,direction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:57:59.225+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:06.706+00:00,1.0,crossing,Object
+,,,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:03.843+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:53.859+00:00,1.0,carriageway,Object
+,,,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:56.603+00:00,1.0,traffic road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:05.024+00:00,1.0,sharp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:07.084+00:00,1.0,sharp edges,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:50.627+00:00,1.0,pedestrian crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:33.14+00:00,1.0,safety island,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:35.005+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:16.2+00:00,1.0,carriageway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:09.416+00:00,1.0,width,Property
+,,,safety island,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:12.672+00:00,1.0,carriageway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:25.402+00:00,1.0,safety island,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:00.283+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:06:13.126+00:00,1.0,sharp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:35.887+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:54.902+00:00,1.0,sidewalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:41.713+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:51.21+00:00,1.0,roadway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:45.104+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:15.039+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:59.018+00:00,1.0,safety island,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:06:16.741+00:00,1.0,sharp edges,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:38.53+00:00,1.0,safety island,Property
+,,,crossing,Object
+,,,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:06:01.033+00:00,1.0,crossing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:27.842+00:00,1.0,safety island,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:40:06.405+00:00,1.0,safety island,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:40:18.982+00:00,1.0,tactile relief pavement material,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:40:21.957+00:00,1.0,crosswalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:32:11.591+00:00,1.0,crosswalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:32:31.745+00:00,1.0,visually impaired person,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:32:23.663+00:00,1.0,carriageway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:32:15.9+00:00,1.0,safety island,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:31:57.011+00:00,1.0,crosswalk passing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:32:28.896+00:00,1.0,tactile relief pavement material,Property
+,,,vehicle,Object
+,,,stop,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:05:36.155+00:00,1.0,public vehicle stop,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:09.868+00:00,1.0,stop,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:12.481+00:00,1.0,waiting room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:06.487+00:00,1.0,stop,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:49.52+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:56.607+00:00,1.0,kerb,Object
+,,,access,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:43.535+00:00,1.0,waiting area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:46.944+00:00,1.0,stop,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:59.305+00:00,1.0,carriageway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:09.965+00:00,1.0,traffic sign post,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:17.806+00:00,1.0,information board,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:13.614+00:00,1.0,trash can,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:13:23.882+00:00,1.0,front door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:13:41.021+00:00,1.0,waiting area,Property
+,,,surface,Property
+,,,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:14:16.329+00:00,1.0,front door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:14:20.237+00:00,1.0,opening point,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:14:02.284+00:00,1.0,road surface material,Property
+,,,road,Object
+,,,vehicle,Object
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:13:46.514+00:00,1.0,stop,Object
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:15.51+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:23.317+00:00,1.0,free movement space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:13.07+00:00,1.0,seating area,Property
+,,,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:02.312+00:00,1.0,waiting room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:35:31.419+00:00,1.0,glass surfaces,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:12.275+00:00,1.0,map,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:07.765+00:00,1.0,public transport timetable,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:01.225+00:00,1.0,stop,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:51.956+00:00,1.0,light traffic roads,Object
+,,,light traffic,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:31:41.968+00:00,1.0,material covering,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:31:33.836+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:31:25.841+00:00,1.0,traffic road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:46:08.575+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:59.068+00:00,1.0,traffic road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:46:11.742+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:46:06.29+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:46:03.019+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:30:46.579+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:30:29.842+00:00,1.0,transverse slope,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:30:19.875+00:00,1.0,traffic road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:30:38.628+00:00,1.0,area,Property
+,,,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:30:09.016+00:00,1.0,longitudinal slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:30:52.815+00:00,1.0,longitudinal slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:49.075+00:00,1.0,construction,Property
+,,,traffic road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:45.859+00:00,1.0,light traffic road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:59.611+00:00,1.0,side,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:56.167+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:53.804+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:01.717+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:06:44.504+00:00,1.0,road surface material,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:06:42.257+00:00,1.0,traffic road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:06:36.633+00:00,1.0,material,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:06:39.402+00:00,1.0,boardwalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:57.09+00:00,1.0,boardwalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:17:12.43+00:00,1.0,steps,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:17:10.639+00:00,1.0,edges,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:31.439+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:59.665+00:00,1.0,slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:27.661+00:00,1.0,boardwalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:44.069+00:00,1.0,boards,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:39.811+00:00,1.0,gap,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:48.766+00:00,1.0,border,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:17:05.335+00:00,1.0,driveway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:53.662+00:00,1.0,sides,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:44:11.035+00:00,1.0,footpaths,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:44:22.317+00:00,1.0,sidewalks,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:13.805+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:15.84+00:00,1.0,roadway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:25.792+00:00,1.0,curb,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:19.068+00:00,1.0,roadway,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:09.307+00:00,1.0,sidewalk,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:19:07.45+00:00,1.0,glass panels,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:18:58.83+00:00,1.0,stair railing staves,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:19:11.53+00:00,1.0,stair railings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:45.26+00:00,1.0,depth,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:04.974+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:39.964+00:00,1.0,concave gutters,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:00.011+00:00,1.0,grates,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:53.858+00:00,1.0,gutters,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:30.012+00:00,1.0,sidewalks,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:27.652+00:00,1.0,footpaths,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:35.164+00:00,1.0,flat,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:42.519+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:38.57+00:00,1.0,passage tunnel,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:46.307+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:43.208+00:00,1.0,bridge,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:30.693+00:00,1.0,Access,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:47.969+00:00,1.0,elevator,Object
+,,,passage,Object
+,,,platform,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:32.073+00:00,1.0,terrace,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:43.046+00:00,1.0,high,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:47.118+00:00,1.0,fence,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:37.76+00:00,1.0,viewing platform,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:33.998+00:00,1.0,elevator,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:15.654+00:00,1.0,elevator,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:53.277+00:00,1.0,visual output,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:42.268+00:00,1.0,sound amplification system,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:39.878+00:00,1.0,voice notification,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:59.082+00:00,1.0,alarm,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:30.793+00:00,1.0,elevator,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:49.058+00:00,1.0,pictogram,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:51.276+00:00,1.0,elevator,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:31:32.458+00:00,1.0,elevator,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:31:14.614+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:31:18.649+00:00,1.0,planes,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:31:07.724+00:00,1.0,Ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:31:11.99+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:08:38.158+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:03.742+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:19.9+00:00,1.0,gaps,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:22.749+00:00,1.0,edges,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:08:35.864+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:08:44.119+00:00,1.0,joint,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:09:00.508+00:00,1.0,pavement,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:12.055+00:00,1.0,slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:14.029+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:46.173+00:00,1.0,long,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:57.58+00:00,1.0,thread,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:38.083+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:34.104+00:00,1.0,twisted paving,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:40.806+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:25.546+00:00,1.0,straight paving,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:14.597+00:00,1.0,longitudinal slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:48.508+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:38.56+00:00,1.0,flat road section,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:57.835+00:00,1.0,beginning,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:48.715+00:00,1.0,pavement,Object
+,,,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:14.535+00:00,1.0,pavement,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:55.491+00:00,1.0,end,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:24.288+00:00,1.0,color,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:05:02.717+00:00,1.0,strip,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:41.775+00:00,1.0,longitudinal slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:28.745+00:00,1.0,longitudinal slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:01.186+00:00,1.0,slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:03.227+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:06.265+00:00,1.0,handrails,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:31.568+00:00,1.0,border,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:18.832+00:00,1.0,pandus,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:08.578+00:00,1.0,sides,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:26.898+00:00,1.0,bank,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:10.762+00:00,1.0,slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:12.66+00:00,1.0,handrails,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:05:53.448+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:05:45.004+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:05:50.646+00:00,1.0,slope,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:08:00.408+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:08:11.275+00:00,1.0,toe,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:08:20.88+00:00,1.0,fence,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:08:27.751+00:00,1.0,handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:07:56.078+00:00,1.0,fence,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:17.054+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:24.228+00:00,1.0,roof,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:19.736+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:51.073+00:00,1.0,metal grating,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:12.321+00:00,1.0,cane,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:53.34+00:00,1.0,size,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:09.753+00:00,1.0,wheelchair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:29:14.749+00:00,1.0,crutches,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:57.823+00:00,1.0,opening,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:32.47+00:00,1.0,widths,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:26.504+00:00,1.0,two-way traffic,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:42.189+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:06.433+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:03.636+00:00,1.0,free space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:10.194+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:20.484+00:00,1.0,one-way traffic,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:21:38.639+00:00,1.0,twisting,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:30.663+00:00,1.0,load capacity,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:44.723+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:28.766+00:00,1.0,slab scaffolds,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:53.823+00:00,1.0,ramp,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:09.028+00:00,1.0,scaffolding,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:05.469+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:50.457+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:23.648+00:00,1.0,telescopic rail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:41.827+00:00,1.0,electric mobility aid,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:46.526+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:02.833+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:23:55.963+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:01.884+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:49.031+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:33.905+00:00,1.0,stair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:08:38.854+00:00,1.0,steps,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:22.217+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:23.927+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:14:51.976+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:28.595+00:00,1.0,high,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:58.417+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:04.686+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:07.728+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:39.806+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:13.041+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:54.345+00:00,1.0,way,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:36.467+00:00,1.0,high,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:17.311+00:00,1.0,step,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:07.832+00:00,1.0,stripes,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:10.897+00:00,1.0,high,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:14:47.411+00:00,1.0,staircase,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:01.683+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:44.808+00:00,1.0,open side,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:37.973+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:49.171+00:00,1.0,step,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:00.181+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:54.454+00:00,1.0,right-angled profile,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:15:10.865+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:16:26.612+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:59.284+00:00,1.0,free space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:46.348+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:49.672+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:55.434+00:00,1.0,landing,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:02.345+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:41.483+00:00,1.0,staircase,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:33.85+00:00,1.0,handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:23.056+00:00,1.0,ends,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:15.575+00:00,1.0,step,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:17.627+00:00,1.0,stairs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:29.921+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:25.208+00:00,1.0,handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:04.859+00:00,1.0,handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:32:11.143+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:46.734+00:00,1.0,thickness,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:20.168+00:00,1.0,handrail,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:35.453+00:00,1.0,dimensions,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:32.403+00:00,1.0,rectangular profile,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:39.708+00:00,1.0,diameter,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:42.817+00:00,1.0,address,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:30:44.623+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:38.745+00:00,1.0,open doors,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:45.004+00:00,1.0,size,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:09.304+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:03.598+00:00,1.0,space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:06.929+00:00,1.0,visually impaired person,Object
+,,,door,Object
+,,,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:47.21+00:00,1.0,entry area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:37.361+00:00,1.0,step,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:41.706+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:58.412+00:00,1.0,entrance door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:55.738+00:00,1.0,phono system,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:23.428+00:00,1.0,sound signal,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:30.532+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:34.67+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:28.778+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:30.171+00:00,1.0,depth,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:25.824+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:20.443+00:00,1.0,guideway,Property
+,,,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:10:47.218+00:00,1.0,opening,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:41:18.283+00:00,1.0,direction arrows,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:40:56.859+00:00,1.0,parking space,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:41:07.861+00:00,1.0,entrance and evacuation route,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:41:12.201+00:00,1.0,pictogram,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:05.177+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:14.75+00:00,1.0,exit,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:22.597+00:00,1.0,space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:12.405+00:00,1.0,entrance,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:26.759+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:22:18.465+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:42:14.027+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:43:06.335+00:00,1.0,load capacity,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:41:54.081+00:00,1.0,rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:43:18.109+00:00,1.0,dimensions,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:42:05.565+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:42:44.637+00:00,1.0,platform,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:41:58.169+00:00,1.0,floors,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:42:03.364+00:00,1.0,levels,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:42:31.582+00:00,1.0,elevator,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:42:12.211+00:00,1.0,road,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:43:15.168+00:00,1.0,platform lift,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:48.419+00:00,1.0,signs,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:34.719+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:57.558+00:00,1.0,braille,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:51.48+00:00,1.0,pictogram,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:32.005+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:20:39.906+00:00,1.0,guideways,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:08.22+00:00,1.0,rooms,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:06.532+00:00,1.0,location,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:11:33.453+00:00,1.0,floor covering materials,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:11:51.89+00:00,1.0,sound signal,Object
+,,,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:01.355+00:00,1.0,Contrasting colors,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:11:56.753+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:04.423+00:00,1.0,levels,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:11:45.894+00:00,1.0,lighting,Object
+,,,sound signal,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:04:08.816+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:47.322+00:00,1.0,movement path,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:37:05.382+00:00,1.0,revolving doors,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:49.768+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:37:10.482+00:00,1.0,side,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:37:14.667+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:44.912+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:37:07.39+00:00,1.0,movement path,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:41.509+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:48.813+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:18:09.94+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:51.91+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:18:22.74+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:56.728+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:46.676+00:00,1.0,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:18:00.486+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:18:05.909+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:14:27.179+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:14:38.393+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:14:32.573+00:00,1.0,threshold,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:58.992+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:56.584+00:00,1.0,door opening,Object
+,,,threshold,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:33.838+00:00,1.0,threshold package,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:48.048+00:00,1.0,sheet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:39.643+00:00,1.0,high,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:54.692+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:58:50.918+00:00,1.0,strip,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:20:22.554+00:00,1.0,glass door,Object
+,,,door leaf,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:20:42.131+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:20:38.166+00:00,1.0,glass surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:19:54.43+00:00,1.0,door leaf,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:20:13.347+00:00,1.0,wall,Object
+,,,Door,Object
+,,,surface,Property
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:20:10.028+00:00,1.0,edges,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:20:04.234+00:00,1.0,Door border boards,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:57:11.769+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:57:08.708+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:57:02.472+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:10:53.203+00:00,1.0,corridor,Object
+,,,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:10:49.356+00:00,1.0,end door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:11:12.327+00:00,1.0,door,Object
+,,,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:11:38.821+00:00,1.0,end wall,Object
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:11:21.997+00:00,1.0,side wall,Object
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:11:08.21+00:00,1.0,pivot axis,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:11:00.574+00:00,1.0,central axis,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:03.693+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:14.723+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:06.178+00:00,1.0,direction,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:28:12.293+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:07.054+00:00,1.0,opening,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:02:53.114+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:00.157+00:00,1.0,maximum force,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:09.967+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:26.4+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:03:23.789+00:00,1.0,warning sign,Object
+,,,opening,Property
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:34:02.701+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:33:49.272+00:00,1.0,magnetic card reader,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:34:19.596+00:00,1.0,opening side,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:33:18.924+00:00,1.0,automatic door,Object
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:34:11.242+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:33:45.475+00:00,1.0,opening button,Object
+,,,opening,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:33:59.603+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:34:46.041+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:33:53.091+00:00,1.0,keyboard,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:34:38.801+00:00,1.0,door leaf,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:27:59.75+00:00,1.0,opening,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:28:18.731+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:27:06.91+00:00,1.0,phone lock,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:27:12.785+00:00,1.0,pictogram,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:27:20.558+00:00,1.0,visually impaired person,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:27:33.596+00:00,1.0,sound amplification system,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:27:24.871+00:00,1.0,phono lock,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:32.665+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:17:37.63+00:00,1.0,space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:30.243+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:38.332+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:59.773+00:00,1.0,electricity,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:47.765+00:00,1.0,subfloor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:19:34.52+00:00,1.0,room,Object
+,,,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:02:40.476+00:00,1.0,echo,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:02:19.019+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:15:07.889+00:00,1.0,spectator seats,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:15:23.706+00:00,1.0,wheelchair seats,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:15:28.205+00:00,1.0,guideway,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:15:09.928+00:00,1.0,disabled people,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:43:38.642+00:00,1.0,diameter,Property
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:42:02.37+00:00,1.0,areas,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:42:06.749+00:00,1.0,levels,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:41:42.998+00:00,1.0,spectator seats,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:42:13.785+00:00,1.0,hall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:43:42.836+00:00,1.0,area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:43:23.619+00:00,1.0,access,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:43:35.309+00:00,1.0,maneuvering space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:17.237+00:00,1.0,pictogram,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:19.997+00:00,1.0,direction arrows,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:14.114+00:00,1.0,Accessible viewing areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:05.086+00:00,1.0,spectator seats,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:01.853+00:00,1.0,Assistant seats,Object
+,,,areas,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:32:49.204+00:00,1.0,sound amplification system,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:32:51.904+00:00,1.0,pictogram,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:32:43.905+00:00,1.0,sound amplification system,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:19:21.972+00:00,1.0,service counter,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:19:43.508+00:00,1.0,inspection point,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:19:28.994+00:00,1.0,cash register,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:19:25.342+00:00,1.0,hatch,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:19:40.347+00:00,1.0,ticket sales,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:52:36.6+00:00,1.0,pool,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:32.889+00:00,1.0,Clothes storage,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:56.375+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:51.326+00:00,1.0,rack,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:13:06.524+00:00,1.0,shelf,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:38.826+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:59.717+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:13:09.146+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:12:42.816+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:13:11.346+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:09.268+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:33:06.618+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:59.506+00:00,1.0,accommodation building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:57.001+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:51.059+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:53.444+00:00,1.0,alarm,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:59.423+00:00,1.0,movement path,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:29.616+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:12.477+00:00,1.0,alarm button,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:25:08.408+00:00,1.0,diameter,Property
+,,,alarm,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:50.849+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:18.027+00:00,1.0,accommodation building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:25:06.472+00:00,1.0,maneuvering room,Object
+,,,door,Object
+,,,button,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:40.15+00:00,1.0,stroboscopic light,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:03.103+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:22.077+00:00,1.0,intercom,Object
+,,,lighting,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:48.238+00:00,1.0,door eye,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:59.917+00:00,1.0,installation height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:27:05.261+00:00,1.0,washing room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:33.474+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:15.964+00:00,1.0,button extension cord,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:34.506+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:25:20.767+00:00,1.0,bed,Object
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:23.647+00:00,1.0,side,Property
+,,,button,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:46.993+00:00,1.0,alarm device,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:25:30.216+00:00,1.0,lighting switch,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:55.738+00:00,1.0,wide,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:25:01.942+00:00,1.0,room,Object
+,,,alarm,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:26:29.715+00:00,1.0,bed,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:21.568+00:00,1.0,handle,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:43.151+00:00,1.0,door eye,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:25:16.127+00:00,1.0,front,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:15.462+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:12.22+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:24:25.703+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:09:22.35+00:00,1.0,space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:29.604+00:00,1.0,space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:36:27.035+00:00,1.0,lighting,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:42.805+00:00,1.0,interior,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:25.748+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:50.892+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:28.33+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:14:46.017+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:12:15.079+00:00,1.0,toilet door,Object
+,,,door,Object
+,,,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:06.178+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:55:59.276+00:00,1.0,toilet door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:56:19.888+00:00,1.0,rotating lock handle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:18:02.053+00:00,1.0,door hinges,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:18:35.186+00:00,1.0,installation height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:18:16.137+00:00,1.0,handle,Property
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:17:46.003+00:00,1.0,handle,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:17:27.334+00:00,1.0,inner side,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:17:30.141+00:00,1.0,door,Object
+,,,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:18:52.956+00:00,1.0,door handle,Property
+,,,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:18:06.49+00:00,1.0,distance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:18:46.238+00:00,1.0,lock,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:17:49.596+00:00,1.0,side,Property
+,,,side,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:16.555+00:00,1.0,diameter,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:07.73+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:10.719+00:00,1.0,free space,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:04.768+00:00,1.0,dimensions,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:18.611+00:00,1.0,wheelchair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:00.684+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:35:13.26+00:00,1.0,wheelchair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:34:57.594+00:00,1.0,dimensions,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:44:31.805+00:00,1.0,height,Property
+,,,surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:44:40.99+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:06.823+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:19.121+00:00,1.0,water drainage,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:22.91+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:45:15.016+00:00,1.0,vanity table,Object
+,,,drainage,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:44:38.264+00:00,1.0,toilet bowl,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:04:03.255+00:00,1.0,bidet shower,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:45:07.138+00:00,1.0,upper surface,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:55:23.877+00:00,1.0,toilet bowl,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:55:21.008+00:00,1.0,armrests,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:55:43.236+00:00,1.0,sides,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:55:39.558+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:55:26.584+00:00,1.0,toilet bowl,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:55:33.135+00:00,1.0,distance,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:55:36.992+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:22.944+00:00,1.0,water volume,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:36.207+00:00,1.0,hand lever,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:29.125+00:00,1.0,tap mixer,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:42.521+00:00,1.0,water temperature,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:22:49.684+00:00,1.0,thermostat,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:11.232+00:00,1.0,toilet room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:19.372+00:00,1.0,sink,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:38.498+00:00,1.0,mirror,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:21.837+00:00,1.0,dispenser,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:32.472+00:00,1.0,lower edge,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:45.8+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:18.455+00:00,1.0,soap dish,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:25.537+00:00,1.0,hair dryer,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:29.312+00:00,1.0,sockets,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:35.358+00:00,1.0,light switches,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:38.454+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:09.179+00:00,1.0,mirror,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:16.197+00:00,1.0,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:23.028+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:45:10.107+00:00,1.0,paper holder,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:42.643+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:44:59.726+00:00,1.0,hand dryer,Object
+,,,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:20:55.293+00:00,1.0,toilet room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:21.367+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:15.056+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:08.232+00:00,1.0,alarm notification,Property
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:01.445+00:00,1.0,alarm system,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:21:19.697+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:05:04.541+00:00,1.0,washing room,Object
+,,,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:35.349+00:00,1.0,length,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:02:11.2+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:59:20.632+00:00,1.0,washroom,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:02:07.374+00:00,1.0,furnishing items,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:46.241+00:00,1.0,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:59:39.77+00:00,1.0,shower cubicle,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:53.149+00:00,1.0,faucet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:55.447+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:58.425+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:23.709+00:00,1.0,shower chair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:55.301+00:00,1.0,handles,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:04.207+00:00,1.0,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:59:48.028+00:00,1.0,depth,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:49.633+00:00,1.0,shower chair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:09.654+00:00,1.0,shower faucet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:39.197+00:00,1.0,washroom,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:22.116+00:00,1.0,wall,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:19.228+00:00,1.0,shower mixer,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:01.028+00:00,1.0,shower chair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:07.62+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:43.566+00:00,1.0,racks,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:38.882+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:29.86+00:00,1.0,shower chair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:26.689+00:00,1.0,access,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:16.126+00:00,1.0,shower faucet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:04.12+00:00,1.0,armrests,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:59:28.039+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:35.841+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:26.764+00:00,1.0,handles,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:01:19.405+00:00,1.0,shower head,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:59:15.921+00:00,1.0,toilet,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:59:35.298+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:00:00.049+00:00,1.0,folding shower chair,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:57.881+00:00,1.0,maneuvering room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:40.139+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:39:46.275+00:00,1.0,safety fence,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:46.488+00:00,1.0,door,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:25.111+00:00,1.0,public sauna,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:39:19.592+00:00,1.0,lower sitting step,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:39:26.328+00:00,1.0,sauna platform,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:36.908+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:59.884+00:00,1.0,diameter,Property
+,,,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:18.628+00:00,1.0,steam room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:39:34.061+00:00,1.0,handles,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:39:37.617+00:00,1.0,walls,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:39:59.194+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:50.521+00:00,1.0,opening,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:39:53.897+00:00,1.0,furnishing items,Object
+amna.dridi@bcu.ac.uk,2023-08-24T09:39:05.872+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T09:38:33.689+00:00,1.0,accommodation building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:01.362+00:00,1.0,alarm notification,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:15:56.139+00:00,1.0,washing room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:05.138+00:00,1.0,room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:10.988+00:00,1.0,alarm,Property
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:17.157+00:00,1.0,shower cabin,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:19.129+00:00,1.0,steam room,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:16:21.438+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T14:15:59.012+00:00,1.0,alarm system,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:11.604+00:00,1.0,part,Property
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:25.305+00:00,1.0,disabled people,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:46:36.976+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T13:51:07.717+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T11:46:24.769+00:00,1.0,building,Object

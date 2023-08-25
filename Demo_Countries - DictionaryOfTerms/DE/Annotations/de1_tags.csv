@@ -1,0 +1,191 @@
+annotator,timestamp,annotator_id,value,tag
+amna.dridi@bcu.ac.uk,2023-08-24T07:29:31.013+00:00,1.0,land-use plan,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:29:24.574+00:00,1.0,Federal states,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:58.17+00:00,1.0,Land-Use Plan,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:15:01.155+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:28:19.188+00:00,1.0,cemeteries,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:52.236+00:00,1.0,allotment gardens,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:57.416+00:00,1.0,sports grounds,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:28:06.532+00:00,1.0,camping sites,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:46.225+00:00,1.0,parks,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:40.946+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:28:01.173+00:00,1.0,playgrounds,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:28:15.224+00:00,1.0,bathing areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:29.824+00:00,1.0,building areas,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:27.536+00:00,1.0,development plan,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:40.929+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:35.033+00:00,1.0,development plan,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:51.371+00:00,1.0,type,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:21.654+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:33.657+00:00,1.0,plot area,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:50.544+00:00,1.0,infrastructure,Object
+,,,area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:19.189+00:00,1.0,scale of use,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:02.47+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:09.511+00:00,1.0,type,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:43.374+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:32:24.263+00:00,1.0,coverage type,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:17.301+00:00,1.0,physical structures,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:20.321+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:09.214+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:12.876+00:00,1.0,land-use plan,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:27:01.631+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:19:28.047+00:00,1.0,coverage depths,Property
+,,,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:18:59.576+00:00,1.0,plot areas,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:19:24.591+00:00,1.0,set-back lines,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:19:21.398+00:00,1.0,building lines,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:12:41.115+00:00,1.0,floor space index,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:12:48.197+00:00,1.0,size,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:13:31.464+00:00,1.0,floor,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:13:42.39+00:00,1.0,cubing ratio,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:13:46.375+00:00,1.0,building volume,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:12:03.074+00:00,1.0,trees,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:12:10.277+00:00,1.0,greenery,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:11:39.987+00:00,1.0,water bodies,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:12:06.133+00:00,1.0,shrubs,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:35:38.878+00:00,1.0,core areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:15:27.827+00:00,1.0,Areas,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:20:55.996+00:00,1.0,village housing areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:09:45.96+00:00,1.0,infrastructure installations,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:09:57.544+00:00,1.0,location,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:09:54.778+00:00,1.0,course,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:09:49.472+00:00,1.0,transmission routes,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:35:13.965+00:00,1.0,walls,Object
+,,,construction,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:35:06.517+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:35:23.433+00:00,1.0,road construction,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:17:38.861+00:00,1.0,holding areas,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:33:06.017+00:00,1.0,water bodies,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:33:18.108+00:00,1.0,drainage,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:33:09.601+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:33:22.849+00:00,1.0,flood control,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:33:29.981+00:00,1.0,water supply,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:16:04.797+00:00,1.0,waste disposal,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:16:18.141+00:00,1.0,seepage,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:16:07.55+00:00,1.0,drainage,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:16:14.286+00:00,1.0,rainwater retention,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:15:34.03+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:21:04.001+00:00,1.0,agricultural land,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:35:44.16+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:19:41.479+00:00,1.0,dwellings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:19:45.671+00:00,1.0,residential buildings,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:16:38.07+00:00,1.0,building use,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:12:25.332+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:07:34.698+00:00,1.0,stone,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:07:20.894+00:00,1.0,earth deposits,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:07:44.233+00:00,1.0,earth,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:07:13.443+00:00,1.0,spaces,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:07:47.863+00:00,1.0,minerals,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:07:31.469+00:00,1.0,excavation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:11:17.259+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:11:21.038+00:00,1.0,recreation,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:20:45.383+00:00,1.0,infrastructure,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:20:33.83+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:21:54.581+00:00,1.0,type,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:22:13.335+00:00,1.0,land,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:21:13.169+00:00,1.0,area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:22:24.535+00:00,1.0,thoroughfares,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:21:33.335+00:00,1.0,building regulations,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:21:18.389+00:00,1.0,land-use plan,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:21:58.836+00:00,1.0,extent of use,Property
+,,,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:22:01.008+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:22:32.254+00:00,1.0,infrastructure,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:22:20.976+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:15:09.557+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:14:18.162+00:00,1.0,building use,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:14:06.792+00:00,1.0,development plan,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:25:31.702+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:25:42.463+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:26:13.916+00:00,1.0,technical measures,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:26:04.457+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:25:59.719+00:00,1.0,Federal Control of Pollution Act,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:17:17.828+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:17:07.274+00:00,1.0,plot coverage rate,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:16:51.44+00:00,1.0,site occupancy index,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:16:56.364+00:00,1.0,size,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:17:12.627+00:00,1.0,structures,Property
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:12:17.131+00:00,1.0,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:22:56.54+00:00,1.0,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:22:44.232+00:00,1.0,category,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:22:46.958+00:00,1.0,degree,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:23:01.351+00:00,1.0,land,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:10.161+00:00,1.0,housing developments,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:03+00:00,1.0,spaces,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:24:28.089+00:00,1.0,location,Property
+,,,type,Property
+,,,structures,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:24:35.488+00:00,1.0,physical structures,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:24:13.334+00:00,1.0,plot areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:24:24.024+00:00,1.0,coverage type,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:24.431+00:00,1.0,community amenities,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:18.077+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:49.493+00:00,1.0,leisure facilities,Object
+,,,playgrounds,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:42.931+00:00,1.0,children’s playgrounds,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:55.035+00:00,1.0,garages,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:52.518+00:00,1.0,parking spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:31:31.25+00:00,1.0,areas,Object
+,,,facilities,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:16:29.318+00:00,1.0,height,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:10:39.021+00:00,1.0,parking spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:10:03.684+00:00,1.0,spaces,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:10:22.287+00:00,1.0,structures,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:10:56.841+00:00,1.0,garages,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:10:59.114+00:00,1.0,drive-ways,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:28:44.456+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:28:51.063+00:00,1.0,facilities,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:28:54.094+00:00,1.0,construction,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:17:44.169+00:00,1.0,Building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:18:06.316+00:00,1.0,Outlying Area,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:30:29.739+00:00,1.0,building plots,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:29:53.108+00:00,1.0,dimensions,Property
+,,,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:30:03.507+00:00,1.0,depth,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:30:40.779+00:00,1.0,land,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:30:00.238+00:00,1.0,width,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:30:35.662+00:00,1.0,residential plots,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:29:57.242+00:00,1.0,size,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:20:08.253+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:20:20.166+00:00,1.0,housing developments,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:23:18.733+00:00,1.0,shrubs,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:23:21.485+00:00,1.0,greenery,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:23:09.929+00:00,1.0,trees,Object
+,,,Land,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:29:44.179+00:00,1.0,industrial areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:14:34.357+00:00,1.0,spaces,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:19:59.226+00:00,1.0,village areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:35:56.805+00:00,1.0,Federal Building Code,Object
+,,,Building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:10.661+00:00,1.0,natural environment,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:18.594+00:00,1.0,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:04.566+00:00,1.0,topsoil,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:13.793+00:00,1.0,landscape,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:33:40.561+00:00,1.0,measures,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:26:39.891+00:00,1.0,common facilities,Object
+,,,spaces,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:26:33.384+00:00,1.0,spaces,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:26:55.142+00:00,1.0,play areas,Object
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:34:59.768+00:00,1.0,Land-Use Plan,Object
+,,,spaces,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:09:14.586+00:00,1.0,parking spaces,Object
+,,,spaces,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:08:00.431+00:00,1.0,thoroughfares,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:09:20.903+00:00,1.0,motor vehicles,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:25:23.859+00:00,1.0,building areas,Property
+,,,areas,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:24:51.476+00:00,1.0,type,Property
+amna.dridi@bcu.ac.uk,2023-08-24T07:24:59.129+00:00,1.0,building use,Property
+,,,building,Object
+amna.dridi@bcu.ac.uk,2023-08-24T07:24:41.207+00:00,1.0,areas,Object
