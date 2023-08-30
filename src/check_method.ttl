@@ -78,11 +78,29 @@ aec3po:ComponentCheckMethod a owl:Class ;
                                 owl:onProperty [ owl:inverseOf aec3po:forDesign ] ] ;
                         owl:onProperty aec3po:forDesign ] ) ] .
 
-aec3po:ChaclCheckMethod a owl:Class ;
-    rdfs:label "Chacl Check Method"@en ;
-    rdfs:comment "Chacl check method refers to a validation process that ensures compliance of data with predefined SHACL shapes, constraints, and rules. "@en ;
+aec3po:SHACLCheckMethod a owl:Class ;
+    rdfs:label "SHACL Check Method"@en ;
+    rdfs:comment "Shacl check method refers to a validation process that ensures compliance of data with predefined SHACL shapes, constraints, and rules. "@en ;
     rdfs:isDefinedBy aec3po:ontology ;
-    rdfs:subClassOf aec3po:CheckMethod .
+    rdfs:subClassOf aec3po:DeclarativeCheckMethod .
+
+aec3po:SWRLCheckMethod a owl:Class ;
+    rdfs:label "SWRL Check Method"@en ;
+    rdfs:comment "A checking method implemented using SWRL rules. "@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf aec3po:DeclarativeCheckMethod .
+
+aec3po:ACCORDCheckMethod a owl:Class ;
+    rdfs:label "ACCORD Check Method"@en ;
+    rdfs:comment "A check implemented using the ACCORD rule language. "@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf aec3po:DeclarativeCheckMethod .
+
+aec3po:JenaCheckMethod a owl:Class ;
+    rdfs:label "Jena Check Method"@en ;
+    rdfs:comment "A check implemented using the Jena rule language. "@en ;
+    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:subClassOf aec3po:DeclarativeCheckMethod .
 
 aec3po:BooleanCheckMethod a owl:Class ;
     rdfs:label "Boolean Check Method"@en ;
