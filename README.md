@@ -146,13 +146,9 @@ pre-commit run --all-files
 
 ## CI/CD pipeline
 
-A CI/CD pipeline must be developed to validate the ontology, generate the ontology artifacts, release the ontology.
+A CI/CD pipeline validates the ontology, generates the ontology artifacts, and release the ontology.
 
-* The `public` folder is ignored by git. It is where temporary files are generated.  
-* The HTML Documentation may be automatically generated using ex. pyLODE.
-* The `public` folder may be published to a server.
-
-## TBC
+The `public` folder is automatically generated as described in `.asimov/README.md` and pushed to the server. It is therefore ignored by git.
 
 
 
