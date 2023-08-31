@@ -6,6 +6,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dicl: <https://w3id.org/digitalconstruction/0.5/Lifecycle#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 aec3po:permitting_stage a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;

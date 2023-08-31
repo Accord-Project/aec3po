@@ -21,8 +21,7 @@ aec3po: a owl:Ontology ;
     dct:title "AEC3PO"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri aec3po: ;
-    skos:note "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en ;
-    owl:imports aec3po:c
+    skos:note "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en .
 
 # declaration of reused external entities
 
