@@ -20,19 +20,19 @@ aec3po:building_usage a owl:Ontology ;
     
 aec3po:BuildingUsage a owl:Class ;
     rdfs:label "building usage"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingUsageTable"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingUsageNomenclature"@en ;
     rdfs:isDefinedBy aec3po:building_usage ;
     rdfs:subClassOf skos:Concept,
         aec3po:Design ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue eli:BuildingUsageTable ;
+                        owl:hasValue eli:BuildingUsageNomenclature ;
                         owl:onProperty skos:inScheme ] ) ] .
 
-aec3po:BuildingUsageTable a skos:ConceptScheme ;
-    rdfs:label "Building usage table"@en ;
+aec3po:BuildingUsageNomenclature a skos:ConceptScheme ;
+    rdfs:label "Building usage nomenclature"@en ;
     rdfs:isDefinedBy aec3po:building_usage ;
     skos:definition """A set of values for the building usage design.
-  AEC3PO includes a set of values for this table.
+  AEC3PO includes a set of values for this nomenclature.
   These values are :
   - residential : residential building;
   - commercial : commercial building."""@en ;
@@ -60,25 +60,25 @@ aec3po:BuildingUsage-commercial a owl:NamedIndividual, skos:Concept,
         aec3po:BuildingUsage ;
     rdfs:isDefinedBy aec3po:building_usage ;
     skos:definition "Building has commercial usage."@en ;
-    skos:inScheme aec3po:BuildingUsageTable ;
+    skos:inScheme aec3po:BuildingUsageNomenclature ;
     skos:prefLabel "commercial"@en ;
-    skos:topConceptOf aec3po:BuildingUsageTable .
+    skos:topConceptOf aec3po:BuildingUsageNomenclature .
 
 aec3po:BuildingUsage-residential a owl:NamedIndividual, skos:Concept,
         aec3po:BuildingUsage ;
     rdfs:isDefinedBy aec3po:building_usage ;
     skos:definition "Building has residential usage."@en ;
-    skos:inScheme aec3po:BuildingUsageTable ;
+    skos:inScheme aec3po:BuildingUsageNomenclature ;
     skos:prefLabel "residential"@en ;
-    skos:topConceptOf aec3po:BuildingUsageTable .
+    skos:topConceptOf aec3po:BuildingUsageNomenclature .
 
 aec3po:BuildingUsage-cultural a owl:NamedIndividual, skos:Concept,
         aec3po:BuildingUsage ;
     rdfs:isDefinedBy aec3po:building_usage ;
     skos:definition "Building has cultural usage."@en ;
-    skos:inScheme aec3po:BuildingUsageTable ;
+    skos:inScheme aec3po:BuildingUsageNomenclature ;
     skos:prefLabel "cultural"@en ;
-    skos:topConceptOf aec3po:BuildingUsageTable .
+    skos:topConceptOf aec3po:BuildingUsageNomenclature .
 
 
 

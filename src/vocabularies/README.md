@@ -9,7 +9,7 @@ Each file in this folder is organised as follows:
 - prefix declaration
 - ontology declaration
 - declaration of a subclass `X` of `skos:Concept`
-- declaration of a subclass `XTable` of `skos:ConceptScheme`
+- declaration of a subclass `XNomenclature` of `skos:ConceptScheme`
 - optional declaration of object properties `forX` and `hasX` that link to/from instances of individual concepts
 - instances of `X`
 

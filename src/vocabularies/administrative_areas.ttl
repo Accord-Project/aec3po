@@ -19,20 +19,20 @@ aec3po:administrative_areas a owl:Ontology ;
 
 aec3po:AdministrativeArea a owl:Class ;
     rdfs:label "Administrative Area"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept either in concept scheme eli:AdministrativeAreaTable or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit table published of the EU Publications Office)."@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept either in concept scheme eli:AdministrativeAreaNomenclature or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit nomenclature published of the EU Publications Office)."@en ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     rdfs:seeAlso <https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu> ;
     rdfs:subClassOf skos:Concept ;
     owl:equivalentClass eli:AdministrativeArea ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue eli:BuildingStructureTable ;
+                        owl:hasValue eli:BuildingStructureNomenclature ;
                         owl:onProperty skos:inScheme ] ) ] .
 
-aec3po:AdministrativeAreaTable a skos:ConceptScheme ;
-    rdfs:label "Administrative Area table"@en ;
+aec3po:AdministrativeAreaNomenclature a skos:ConceptScheme ;
+    rdfs:label "Administrative Area nomenclature"@en ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     skos:definition """A set of values for the administrative areas.
-  aec3po includes a set of values for this table.
+  aec3po includes a set of values for this nomenclature.
   These values are :
   - England
   - Estonia
@@ -59,48 +59,48 @@ aec3po:forAdministrativeArea a owl:ObjectProperty ;
 aec3po:England a owl:NamedIndividual, skos:Concept , aec3po:AdministrativeArea ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     skos:definition "England"@en ;
-    skos:inScheme aec3po:AdministrativeAreaTable ;
+    skos:inScheme aec3po:AdministrativeAreaNomenclature ;
     skos:prefLabel "England"@en ;
-    skos:topConceptOf aec3po:AdministrativeAreaTable .
+    skos:topConceptOf aec3po:AdministrativeAreaNomenclature .
 
 aec3po:Estonia a owl:NamedIndividual, skos:Concept , aec3po:AdministrativeArea ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     skos:definition "Estonia"@en ;
-    skos:inScheme aec3po:AdministrativeAreaTable ;
+    skos:inScheme aec3po:AdministrativeAreaNomenclature ;
     skos:prefLabel "Estonia"@en ;
-    skos:topConceptOf aec3po:AdministrativeAreaTable .
+    skos:topConceptOf aec3po:AdministrativeAreaNomenclature .
 
 aec3po:Finland a owl:NamedIndividual, skos:Concept , aec3po:AdministrativeArea ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     skos:definition "Finland"@en ;
-    skos:inScheme aec3po:AdministrativeAreaTable ;
+    skos:inScheme aec3po:AdministrativeAreaNomenclature ;
     skos:prefLabel "Finland"@en ;
-    skos:topConceptOf aec3po:AdministrativeAreaTable .
+    skos:topConceptOf aec3po:AdministrativeAreaNomenclature .
 
 aec3po:France a owl:NamedIndividual, skos:Concept , aec3po:AdministrativeArea ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     skos:definition "France"@en ;
-    skos:inScheme aec3po:AdministrativeAreaTable ;
+    skos:inScheme aec3po:AdministrativeAreaNomenclature ;
     skos:prefLabel "France"@en ;
-    skos:topConceptOf aec3po:AdministrativeAreaTable .
+    skos:topConceptOf aec3po:AdministrativeAreaNomenclature .
 
 aec3po:Germany a owl:NamedIndividual, skos:Concept , aec3po:AdministrativeArea ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     skos:definition "Germany"@en ;
-    skos:inScheme aec3po:AdministrativeAreaTable ;
+    skos:inScheme aec3po:AdministrativeAreaNomenclature ;
     skos:prefLabel "Germany"@en ;
-    skos:topConceptOf aec3po:AdministrativeAreaTable .
+    skos:topConceptOf aec3po:AdministrativeAreaNomenclature .
 
 aec3po:Italy a owl:NamedIndividual, skos:Concept , aec3po:AdministrativeArea ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     skos:definition "Italy"@en ;
-    skos:inScheme aec3po:AdministrativeAreaTable ;
+    skos:inScheme aec3po:AdministrativeAreaNomenclature ;
     skos:prefLabel "Italy"@en ;
-    skos:topConceptOf aec3po:AdministrativeAreaTable .
+    skos:topConceptOf aec3po:AdministrativeAreaNomenclature .
 
 aec3po:Spain a owl:NamedIndividual, skos:Concept , aec3po:AdministrativeArea ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     skos:definition "Spain"@en ;
-    skos:inScheme aec3po:AdministrativeAreaTable ;
+    skos:inScheme aec3po:AdministrativeAreaNomenclature ;
     skos:prefLabel "Spain"@en ;
-    skos:topConceptOf aec3po:AdministrativeAreaTable .
+    skos:topConceptOf aec3po:AdministrativeAreaNomenclature .

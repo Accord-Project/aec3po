@@ -43,14 +43,14 @@
       skos:note "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en ;
       rdfs:subClassOf qudt:QuantityKind ;    
       owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                          owl:hasValue aec3po:QuantityKindTable ;
+                          owl:hasValue aec3po:QuantityKindNomenclature ;
                           owl:onProperty skos:inScheme ] ) ] .
 
-  aec3po:QuantityKindTable a owl:NamedIndividual, skos:ConceptScheme ;
-      rdfs:label "Quantity Kind table"@en ;
+  aec3po:QuantityKindNomenclature a owl:NamedIndividual, skos:ConceptScheme ;
+      rdfs:label "Quantity Kind nomenclature"@en ;
       rdfs:isDefinedBy aec3po:quantity_kinds ;
       skos:definition """A set of values for quantity kinds.
-    AEC3PO includes a set of values for this table."""@en .
+    AEC3PO includes a set of values for this nomenclature."""@en .
 
   qudt:QuantityKind a owl:Class ;
       rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> .

@@ -20,7 +20,7 @@
 
 # <<ConceptScheme>> shape
 ## There exists exactly one instance of skos:ConceptScheme
-## identified <aec3po>/(([A-Z][a-z]+)+)Table
+## identified <aec3po>/(([A-Z][a-z]+)+)Nomenclature
 ## with some skos:hasTopConcept <<Concept>>
 ## with some skos:definition @en
 

@@ -21,19 +21,19 @@ aec3po:building_structure a owl:Ontology ;
 
 aec3po:BuildingStructure a owl:Class ;
     rdfs:label "building structure"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingStructureTable"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingStructureNomenclature"@en ;
     rdfs:isDefinedBy aec3po:building_structure ;
     rdfs:subClassOf skos:Concept,
         aec3po:Design ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue eli:BuildingStructureTable ;
+                        owl:hasValue eli:BuildingStructureNomenclature ;
                         owl:onProperty skos:inScheme ] ) ] .
 
-aec3po:BuildingStructureTable a skos:ConceptScheme ;
-    rdfs:label "Building structure table"@en ;
+aec3po:BuildingStructureNomenclature a skos:ConceptScheme ;
+    rdfs:label "Building structure nomenclature"@en ;
     rdfs:isDefinedBy aec3po:building_structure ;
     skos:definition """A set of values for the building structure design.
-  aec3po includes a set of values for this table.
+  aec3po includes a set of values for this nomenclature.
   These values are :
   - steel : steel building;
   - timber : timber building."""@en ;
@@ -61,14 +61,14 @@ aec3po:BuildingStructure-steel a owl:NamedIndividual, skos:Concept,
         aec3po:BuildingStructure ;
     rdfs:isDefinedBy aec3po:building_structure ;
     skos:definition "Building has steel structure."@en ;
-    skos:inScheme aec3po:BuildingStructureTable ;
+    skos:inScheme aec3po:BuildingStructureNomenclature ;
     skos:prefLabel "steel"@en ;
-    skos:topConceptOf aec3po:BuildingStructureTable .
+    skos:topConceptOf aec3po:BuildingStructureNomenclature .
 
 aec3po:BuildingStructure-timber a owl:NamedIndividual, skos:Concept,
         aec3po:BuildingStructure ;
     rdfs:isDefinedBy aec3po:building_structure ;
     skos:definition "Building has timber structure."@en ;
-    skos:inScheme aec3po:BuildingStructureTable ;
+    skos:inScheme aec3po:BuildingStructureNomenclature ;
     skos:prefLabel "timber"@en ;
-    skos:topConceptOf aec3po:BuildingStructureTable .
+    skos:topConceptOf aec3po:BuildingStructureNomenclature .

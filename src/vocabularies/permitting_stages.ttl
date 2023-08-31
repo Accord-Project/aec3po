@@ -24,14 +24,14 @@ aec3po:PermittingStage a owl:Class ;
     rdfs:isDefinedBy aec3po:permitting_stage ;
     rdfs:subClassOf skos:Concept ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue aec3po:PermittingStageTable ;
+                        owl:hasValue aec3po:PermittingStageNomenclature ;
                         owl:onProperty skos:inScheme ] ) ] .
 
-aec3po:PermittingStageTable a skos:ConceptScheme ;
-    rdfs:label "Permitting stage table"@en ;
+aec3po:PermittingStageNomenclature a skos:ConceptScheme ;
+    rdfs:label "Permitting stage nomenclature"@en ;
     rdfs:isDefinedBy aec3po:permitting_stage ;
     skos:definition """A set of values for permitting stages.
-  AEC3PO includes a set of values for this table.
+  AEC3PO includes a set of values for this nomenclature.
   These values are :
   - UK_Building_Control_Submission;
   - UK_Planning_Permission."""@en ;
@@ -48,15 +48,15 @@ aec3po:hasPermittingStage a owl:ObjectProperty ;
 aec3po:UK_Building_Control_Submission a owl:NamedIndividual, skos:Concept, aec3po:PermittingStage ;
     rdfs:isDefinedBy aec3po:permitting_stage ;
     skos:definition "The UK Building Control Submission permitting stage."@en ;
-    skos:inScheme aec3po:PermittingStageTable ;
+    skos:inScheme aec3po:PermittingStageNomenclature ;
     skos:prefLabel "building control submission"@en ;
-    skos:topConceptOf aec3po:PermittingStageTable ;
+    skos:topConceptOf aec3po:PermittingStageNomenclature ;
     aec3po:forAdministrativeArea aec3po:England .
 
 aec3po:UK_Planning_Permission a owl:NamedIndividual, skos:Concept, aec3po:PermittingStage ;
     rdfs:isDefinedBy aec3po:permitting_stage ;
     skos:definition "The UK Planning Permission permitting stage."@en ;
-    skos:inScheme aec3po:PermittingStageTable ;
+    skos:inScheme aec3po:PermittingStageNomenclature ;
     skos:prefLabel "planning permission"@en ;
-    skos:topConceptOf aec3po:PermittingStageTable ;
+    skos:topConceptOf aec3po:PermittingStageNomenclature ;
     aec3po:forAdministrativeArea aec3po:England .
