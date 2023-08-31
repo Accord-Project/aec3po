@@ -29,8 +29,6 @@
   aec3po:QuantityKind a owl:Class ;
       rdfs:label "Quantity Kind"@en ;
       rdfs:comment """A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
-      
-  A Quantity Kind is any region in a dimensional space, which can be used as a value for a quality of an entity (adapted from DUL).
 
   It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
 
