@@ -1,7 +1,6 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix eli: <http://data.europa.eu/eli/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -25,7 +24,7 @@ aec3po:BuildingUsage a owl:Class ;
     rdfs:subClassOf skos:Concept,
         aec3po:Design ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue eli:BuildingUsageNomenclature ;
+                        owl:hasValue aec3po:BuildingUsageNomenclature ;
                         owl:onProperty skos:inScheme ] ) ] .
 
 aec3po:BuildingUsageNomenclature a skos:ConceptScheme ;

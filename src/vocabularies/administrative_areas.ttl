@@ -19,13 +19,13 @@ aec3po:administrative_areas a owl:Ontology ;
 
 aec3po:AdministrativeArea a owl:Class ;
     rdfs:label "Administrative Area"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept either in concept scheme eli:AdministrativeAreaNomenclature or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit nomenclature published of the EU Publications Office)."@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept either in concept scheme aec3po:AdministrativeAreaNomenclature or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit nomenclature published of the EU Publications Office)."@en ;
     rdfs:isDefinedBy aec3po:administrative_areas ;
     rdfs:seeAlso <https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu> ;
     rdfs:subClassOf skos:Concept ;
     owl:equivalentClass eli:AdministrativeArea ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue eli:BuildingStructureNomenclature ;
+                        owl:hasValue aec3po:AdministrativeAreaNomenclature ;
                         owl:onProperty skos:inScheme ] ) ] .
 
 aec3po:AdministrativeAreaNomenclature a skos:ConceptScheme ;
