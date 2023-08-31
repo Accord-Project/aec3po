@@ -9,6 +9,7 @@ from rdflib import Graph, URIRef, Literal, BNode
 from rdflib.namespace import RDF, OWL, DCTERMS, XSD, RDFS
 import pylode
 import mistune
+import yaml, json
 
 # This script checks the quality of the ontology, generates the html documentation, and ultimately builds the `public` folder that contains the documentation website of the ontology
 
@@ -79,8 +80,6 @@ def process_turtle_file(input_file_path:str, dest_path:str):
         output.write(g.serialize(format='ttl', encoding='utf-8'))
     with open(dest_path+ ".rdf", "wb") as output:
         output.write(g.serialize(format='pretty-xml', encoding='utf-8'))
-    with open(dest_path+ ".json-ld", "wb") as output:
-        output.write(g.serialize(format='json-ld', indent=4, encoding='utf-8'))
     with open(dest_path+ ".n3", "wb") as output:
         output.write(g.serialize(format='n3', encoding='utf-8'))
     with open(dest_path+ ".nt", "wb") as output:
@@ -98,6 +97,13 @@ def process_turtle_file(input_file_path:str, dest_path:str):
 RewriteCond %{{REQUEST_URI}} ^/aec3po/({"|".join(definedTerms)})$
 RewriteRule ^(.*)$ /aec3po/{dest_path[7:]}#$1 [R=303,NE]
             """)
+            
+    with open(f"{dest}/aec3po.yaml", "a") as f:
+        definedTerms = []
+        for definedTerm in g.subjects(RDFS.isDefinedBy, ontology):
+            localName = str(definedTerm)[len(base):]
+            f.write(f"""  {localName}: aec3po:{localName}\n""")         
+            
 
 def process(input_file_path):
     if not input_file_path.endswith(".ttl") or "/_" in input_file_path:
@@ -105,11 +111,19 @@ def process(input_file_path):
     dest_path = os.path.join(dest, input_file_path[4:])[0:-4]
     process_turtle_file(input_file_path, dest_path)
     
+def convert_context_to_jsonld():
+    with open('public/aec3po.yaml', 'r') as file:
+        configuration = yaml.safe_load(file)
+    with open('public/aec3po.jsonld', 'w') as json_file:
+        json.dump(configuration, json_file, indent=2)
+    
 if __name__ == "__main__":
+    shutil.copyfile('src/aec3po.yaml', 'public/aec3po.yaml')
     if len(sys.argv) == 1:
         for root, dirs, files in os.walk("src"):
             for name in files:
                 process(os.path.join(root, name))
+    convert_context_to_jsonld()
     for input_file_path in sys.argv[1:]:
         process(input_file_path)
         

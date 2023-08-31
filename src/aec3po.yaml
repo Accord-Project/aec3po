@@ -1,0 +1,22 @@
+'@context':
+  '@base': https://data.accordproject.eu/ # may not work due to security concerns. Specify @base in the instance file
+  $type:   '@type'
+  $id:     '@id'
+  # prefixes
+  aec3po: https://w3id.org/lbd/aec3po/
+  dct:    http://purl.org/dc/terms/
+  dc:     http://purl.org/dc/elements/1.1/
+  xsd:    http://www.w3.org/2001/XMLSchema#
+  # dct metadata
+  hasPart:                {'@id': dct:hasPart, '@type': '@id'}
+  identifier:             dct:identifier
+  issued:                 {'@id': dct:issued, '@type': xsd:date}
+  modified:               {'@id': dct:modified, '@type': xsd:date}
+  spatial:                dct:spatial                               # not dct:coverage
+  subject:                {'@id': dct:subject, '@type': '@id'}      # URL
+  subjectText:            dc:subject                                # text
+  temporal:               {'@id': dct:temporal, '@type': xsd:gYear} # not xsd:date
+  title:                  dct:title
+  relation:               dct:relation
+  references:             dct:references
+  # defined terms
