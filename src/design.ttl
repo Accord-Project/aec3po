@@ -23,7 +23,7 @@ aec3po:Design a owl:Class ;
     rdfs:comment """A Description of some design of a feature of interest, in terms of structure, geometry, and function. 
     May be linked to a feature of interest to describe the design it has, for example using the ClassificationDesign subclass.
     May be linked to a check, verifier, or check result, to describe the kind of design it is for."""@en ;
-    rdfs:isDefinedBy aec3po:ontology ;
+    rdfs:isDefinedBy aec3po:design ;
     rdfs:subClassOf dul:Design ;
     skos:example """Example: 
 - the type of use of a building (Residential / Commercial)

@@ -205,7 +205,7 @@ rdfs:subClassOf aec3po:CheckMethod .
 
 skos:Concept a owl:Class .
 
-aec3po:ontology a owl:Ontology ;
+aec3po: a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#>,
         aec3po:edlira,
