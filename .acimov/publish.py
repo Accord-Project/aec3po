@@ -16,8 +16,10 @@ logging.basicConfig(level=logging.DEBUG)
 
 base = "https://w3id.org/lbd/aec3po/"
 dest = "public"
+vocab = dest + "/vocabularies"
 
 os.makedirs(dest, exist_ok=True)
+os.makedirs(vocab, exist_ok=True)
 shutil.copytree("resources", dest, dirs_exist_ok=True)
 
 def process_turtle_file(input_file_path:str, dest_path:str):
