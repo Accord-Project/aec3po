@@ -40,8 +40,8 @@
       rdfs:seeAlso <https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu> ;
       rdfs:subClassOf skos:Concept , dul:Region ;
       skos:example "Length, Area, U-Value."@en ;
-      skos:note "Both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en ;
-      owl:equivalentClass qudt:QuantityKind ;    
+      skos:note "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en ;
+      rdfs:subClassOf qudt:QuantityKind ;    
       owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
                           owl:hasValue aec3po:QuantityKindTable ;
                           owl:onProperty skos:inScheme ] ) ] .
