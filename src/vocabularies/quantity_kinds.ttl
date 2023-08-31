@@ -24,7 +24,7 @@
   This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain."""@en ;
       dct:title "AEC3PO: Quantity Kinds"@en ;
       vann:preferredNamespacePrefix "aec3po" ;
-      vann:preferredNamespaceUri aec3po: .
+      vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
   aec3po:QuantityKind a owl:Class ;
       rdfs:label "Quantity Kind"@en ;

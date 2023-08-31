@@ -16,7 +16,7 @@ aec3po:permitting_stage a owl:Ontology ;
     dct:title "AEC3PO: Permitting Stage"@en ;
     owl:imports aec3po:administrative_areas ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:PermittingStage a owl:Class ;
     rdfs:label "Permitting Stage"@en ;

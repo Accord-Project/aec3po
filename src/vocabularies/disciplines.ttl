@@ -15,7 +15,7 @@ aec3po:discipline a owl:Ontology ;
     dct:modified "2023-05-25"^^xsd:date ;
     dct:title "AEC3PO: Disciplines"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:Discipline a owl:Class ;
     rdfs:label "Discipline"@en ;

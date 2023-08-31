@@ -16,7 +16,7 @@ aec3po:design a owl:Ontology ;
     dct:title "AEC3PO: Feature of Interest"@en ;
     owl:imports aec3po:quantity_kinds ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:Design a owl:Class ;
     rdfs:label "Design"@en ;

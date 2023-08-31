@@ -17,7 +17,7 @@ aec3po:model a owl:Ontology ;
     dct:title "AEC3PO:Model"@en ;
     owl:imports aec3po:evidence ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:Model a owl:Class ;
   rdfs:label "Model"@en ;
@@ -28,7 +28,7 @@ aec3po:name a owl:ObjectProperty ;
  rdfs:label "name"@en ;
  rdfs:comment "The name or the identifier of the BIM model."@en ;
  rdfs:domain schema:3DModel ;
- rdfs:range xsd:String ;
+ rdfs:range xsd:string ;
  owl:inverseOf schema:subjectOf ;
  owl:equivalentProperty schema:about .
 
@@ -36,7 +36,7 @@ aec3po:description a owl:ObjectProperty ;
  rdfs:label "description"@en ;
  rdfs:comment "A textual description providing additional details about the BIM model."@en ;
  rdfs:domain schema:3DModel ;
- rdfs:range xsd:String ;
+ rdfs:range xsd:string ;
  owl:equivalentProperty schema:abstract .
 
 aec3po:location a owl:ObjectProperty ;
@@ -58,7 +58,7 @@ aec3po:material a owl:ObjectProperty ;
  rdfs:label "material"@en ;
  rdfs:comment "The materials used for different parts of the building, such as walls, floors, and roofs."@en ;
  rdfs:domain schema:3DModel ;
- rdfs:range xsd:String ;
+ rdfs:range xsd:string ;
  owl:equivalentProperty schema:material .
 
 aec3po:Phase a owl:Class ;

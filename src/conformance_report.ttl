@@ -16,7 +16,7 @@ aec3po:conformance_report a owl:Ontology ;
     dct:title "AEC3PO: Checking Act"@en ;
     owl:imports aec3po:check_method , aec3po:conformance_report ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:conforms a owl:DatatypeProperty ;
     rdfs:label "conforms"@en ;
@@ -76,17 +76,17 @@ aec3po:Severity a owl:Class ;
 	rdfs:comment "The class of validation result severity levels, including violation and warning levels."@en ;
     rdfs:isDefinedBy aec3po:conformance_report .
 
-aec3po:Info a aec3po:Severity ;
+aec3po:Info a owl:NamedIndividual, aec3po:Severity ;
 	rdfs:label "Info"@en ;
 	rdfs:comment "The severity for an informational validation result."@en ;
     rdfs:isDefinedBy aec3po:conformance_report .
 
-aec3po:Violation a aec3po:Severity ;
+aec3po:Violation a owl:NamedIndividual, aec3po:Severity ;
 	rdfs:label "Violation"@en ;
 	rdfs:comment "The severity for a violation validation result."@en ;
     rdfs:isDefinedBy aec3po:conformance_report .
 
-aec3po:Warning a aec3po:Severity ;
+aec3po:Warning a owl:NamedIndividual, aec3po:Severity ;
 	rdfs:label "Warning"@en ;
 	rdfs:comment "The severity for a warning validation result."@en ;
     rdfs:isDefinedBy aec3po:conformance_report .

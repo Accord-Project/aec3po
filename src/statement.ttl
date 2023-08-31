@@ -15,7 +15,7 @@ aec3po:statement a owl:Ontology ;
     dct:description <statement.png> ;
     dct:title "AEC3PO: statement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 
 aec3po:Statement a owl:Class ;

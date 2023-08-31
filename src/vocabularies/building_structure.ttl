@@ -17,7 +17,7 @@ aec3po:building_structure a owl:Ontology ;
     dct:modified "2023-04-26"^^xsd:date ;
     dct:title "AEC3PO: Building Structure"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:BuildingStructure a owl:Class ;
     rdfs:label "building structure"@en ;

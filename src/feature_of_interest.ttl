@@ -17,7 +17,7 @@ aec3po:feature_of_interest a owl:Ontology ;
     dct:title "AEC3PO: Feature of Interest"@en ;
     owl:imports aec3po:quantity_kinds ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:FeatureOfInterest a owl:Class ;
     rdfs:label "Feature Of Interest"@en ;

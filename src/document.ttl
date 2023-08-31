@@ -18,7 +18,7 @@ Document subdivisions can be described as literals, link to their first part, an
  dct:modified "2023-05-25"^^xsd:date ;
  dct:title "AEC3PO: document"@en ;
  vann:preferredNamespacePrefix "aec3po" ;
- vann:preferredNamespaceUri aec3po: .
+ vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:Document a owl:Class ;
  rdfs:label "Document"@en ;

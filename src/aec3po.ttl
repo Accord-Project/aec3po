@@ -20,7 +20,7 @@ aec3po: a owl:Ontology ;
     dct:description "The Architecture, Engineering and Construction Compliance Checking and Permitting ontology (AEC3PO), based on the statements on building compliance-related document and design codes."@en ;
     dct:title "AEC3PO"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     skos:note "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en .
 
 # declaration of reused external entities

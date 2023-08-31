@@ -15,7 +15,7 @@ aec3po:administrative_areas a owl:Ontology ;
     dct:modified "2023-05-25"^^xsd:date ;
     dct:title "AEC3PO: Administrative Areas"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:AdministrativeArea a owl:Class ;
     rdfs:label "Administrative Area"@en ;

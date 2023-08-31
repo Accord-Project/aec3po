@@ -16,7 +16,7 @@ aec3po:check_method a owl:Ontology ;
     dct:title "AEC3PO: Check Method"@en ;
     owl:imports aec3po:check_method , aec3po:conformance_report ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:CheckMethod a owl:Class ;
     rdfs:label "Check Method"@en ;
@@ -40,14 +40,12 @@ aec3po:isOperationalizedBy a owl:ObjectProperty ;
     rdfs:range aec3po:CheckMethod ;
     owl:inverseOf aec3po:operationalizes .
 
-
 aec3po:ProceduralCheckMethod a owl:Class ;
     rdfs:label "Procedural Check Method"@en ;
     rdfs:comment """Procedural check methods are semantically described but opaque modules, implemented in any language or as REST API, invoked by micro-services. Alternatively, the check procedure may be given using a property such as aec3po:asText."""@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:CheckMethod .
 
-    
 aec3po:DeclarativeCheckMethod a owl:Class ;
     rdfs:label "Declarative Check Method"@en ;
     rdfs:comment """Declarative check, expressed in IDS, SPARQL, BimSPARQL (SPARQL with eg HDF5 for geometry access, with extra SPARQL functions), or any other declarative language. The identifier of a Declarative Check is expected to be dereferenceable, potentially with mediatype-based content negotiation. The content type of the retrieved representation indicates which type of declaration language it uses. Alternatively, the check expression may be given using a property such as aec3po:asText."""@en ;

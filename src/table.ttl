@@ -16,7 +16,7 @@ aec3po:table a owl:Ontology ;
   dct:title "AEC3PO: Table"@en ;
   owl:imports aec3po:document ;
   vann:preferredNamespacePrefix "aec3po" ;
-  vann:preferredNamespaceUri aec3po: .
+  vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:Container a owl:Class ;
   rdfs:subClassOf aec3po:DocumentSubdivision ;

@@ -17,7 +17,7 @@ aec3po:legal_verifier a owl:Ontology ;
     dct:modified "2023-08-31"^^xsd:date ;
     dct:title "AEC3PO: legal verifier"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:LegalVerifier a owl:Class ;
     rdfs:label "Legal Verifier"@en ;
