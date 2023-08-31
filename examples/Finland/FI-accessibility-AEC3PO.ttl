@@ -260,7 +260,7 @@ ex:ramp_CheckMethod_Gradient rdf:type aec3po:SWRLCheck ;
   ) .
 
 # Instantiate the ORCheck for the Protective Edge
-ex:ramp_ORCheck_ProtectiveEdge a aec3po:ORCheck ;
+ex:ramp_ORCheck_ProtectiveEdge a aec3po:OrCheck ;
     aec3po:hasSubCheck (ex:ramp_humanEvaluatedCheckMethod_FixedStructure ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge) . 
 
 # Instantiate the AndCheck for the Landing Length
@@ -268,7 +268,7 @@ ex:ramp_AndCheck_LandingLength a aec3po:AndCheck ;
     aec3po:hasSubCheck (ex:ramp_numericalCheckMethod_LowerLandingLenght ex:ramp_numericalCheckMethod_UpperLandingLenght) .  
 
 # Instantiate the ORCheck for the Gradient
-ex:ramp_ORCheck_Gradient a aec3po:ORCheck ;
+ex:ramp_ORCheck_Gradient a aec3po:OrCheck ;
     aec3po:hasSubCheck ( 
         ex:ramp_numericalCheckMethod_LowerLandingElev 
         ex:ramp_numericalCheckMethod_UpperLandingElev 

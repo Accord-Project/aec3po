@@ -27,19 +27,18 @@ aec3po:Document a owl:Class ;
  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty dct:hasPart ; owl:allValuesFrom aec3po:DocumentSubdivision ] ;
  skos:example "Approved Document A, Eurocode, Finish Regulations..."@en .
 
+aec3po:forDocument a owl:ObjectProperty ;
+ rdfs:label "for document"@en ;
+ rdfs:comment "links an entity such as a legal verifier to the document it is for."@en ;
+ rdfs:range aec3po:Document ;
+ rdfs:isDefinedBy aec3po:document . 
+
 aec3po:DocumentSubdivision a owl:Class ;
  rdfs:label "Document Subdivision"@en ;
  rdfs:comment "Any subdivision of a document, including sections, paragraphs, definitions, words, etc."@en ;
  rdfs:isDefinedBy aec3po:document ;
  rdfs:subClassOf [ a owl:Restriction ; owl:onProperty dct:hasPart ; owl:allValuesFrom aec3po:DocumentSubdivision ] ;
  skos:example "Paragraph, section, definition..."@en .
-
-aec3po:Statement a owl:Class ;
- rdfs:label "Statement"@en ;
- rdfs:comment "Something stated in a building compliance-related document"@en ;
- rdfs:isDefinedBy aec3po:document ;
- rdfs:subClassOf aec3po:DocumentSubdivision ;
- skos:example "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en .
 
 aec3po:DocumentSubdivision_asLiteral a owl:DatatypeProperty ;
  rdfs:label "as literal"@en ;
@@ -62,3 +61,11 @@ aec3po:hasFirstPart a owl:ObjectProperty , owl:FunctionalProperty ;
  rdfs:range aec3po:DocumentSubdivision ;
  rdfs:subPropertyOf dct:hasPart ;
  rdfs:isDefinedBy aec3po:document .
+
+
+aec3po:IDS a owl:Class ;
+    rdfs:label "Information Delivery Format (IDS)"@en ;
+    rdfs:subClassOf aec3po:Document ;
+    rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
+    skos:note "Unstable. Need to provide examples to understand how this is intended to be used." ;
+    rdfs:isDefinedBy aec3po:document .

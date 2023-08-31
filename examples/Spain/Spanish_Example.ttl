@@ -124,7 +124,7 @@ aec3po:cantiliver_SHACLCheckMethod_partywall_distance
 	] .
 
 # Instantiate the ORCheck for the baseOffset
-ex:cantiliver_ORCheck_baseOffSet a aec3po:ORCheck ;
+ex:cantiliver_ORCheck_baseOffSet a aec3po:OrCheck ;
     aec3po:hasSubCheck (ex:cantiliver_numericalCheckMethod_streetBaseOffset ex:cantiliver_numericalCheckMethod_otherBaseOffset) .
 
 # Instantiate the AndCheck related to the two statements, one that checks the baseOffset and the other checks the distance to party wall
