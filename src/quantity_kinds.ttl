@@ -12,6 +12,19 @@
 @prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix qkdv: <http://qudt.org/vocab/dimensionvector/> .
 
+aec3po:quantity_kinds a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description """Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)
+
+Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+
+This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain."""@en ;
+    dct:title "AEC3PO: Quantity Kinds"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri aec3po: .
+
+
 aec3po:QuantityKind a owl:Class ;
     rdfs:label "Quantity Kind"@en ;
     rdfs:comment """A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
@@ -33,20 +46,7 @@ Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt
 qudt:QuantityKind a owl:Class ;
     rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> .
 
-aec3po:quantity_kinds a owl:Ontology ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description """Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)
-
-Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
-
-This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain."""@en ;
-    dct:modified "2023-05-25"^^xsd:date ;
-    dct:title "AEC3PO: Quantity Kinds"@en ;
-    vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
-
-aec3po:modular_room_height a aec3po:QuantityKind ;
+aec3po:ModularRoomHeight a skos:Concept, aec3po:QuantityKind ;
   rdfs:label "modular room height"@en ;
   rdfs:comment "vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling."@en ;
   qudt:applicableUnit unit:CentiM ;
@@ -59,7 +59,7 @@ aec3po:modular_room_height a aec3po:QuantityKind ;
   rdfs:isDefinedBy aec3po:quantity_kinds ;
   skos:broader quantitykind:Length .
 
-aec3po:width_of_angled_corridor a aec3po:QuantityKind ;
+aec3po:WidthOfAngledCorridor a skos:Concept, aec3po:QuantityKind ;
   rdfs:label "width of angled corridor"@en ;
   rdfs:comment "width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions."@en ;
   qudt:applicableUnit unit:CentiM ;
@@ -73,8 +73,7 @@ aec3po:width_of_angled_corridor a aec3po:QuantityKind ;
   skos:broader quantitykind:Length .
 
 
-aec3po:CompressiveForce a skos:Concept,
-        aec3po:QuantityKind ;
+aec3po:CompressiveForce a skos:Concept, aec3po:QuantityKind ;
   rdfs:label "compressive force"@en ;
   rdfs:comment "Force tending to reduce the size of a body." ;
   qudt:applicableUnit unit:CentiN ;
@@ -102,8 +101,7 @@ aec3po:CompressiveForce a skos:Concept,
   rdfs:isDefinedBy aec3po:quantity_kinds ;
   skos:broader quantitykind:Force .
 
-quantitykind:CrossSectionalArea
-  a aec3po:QuantityKind ;
+quantitykind:CrossSectionalArea a aec3po:QuantityKind ;
   qudt:applicableUnit unit:AC ;
   qudt:applicableUnit unit:ARE ;
   qudt:applicableUnit unit:BARN ;
@@ -127,16 +125,14 @@ quantitykind:CrossSectionalArea
   rdfs:isDefinedBy aec3po:quantity_kinds ;
   skos:broader quantitykind:Area .
 
-aec3po:PartialSafetyFactor a skos:Concept,
-        aec3po:QuantityKind ;
+aec3po:PartialSafetyFactor a skos:Concept, aec3po:QuantityKind ;
   rdfs:label "Partial Safety Factor"@en ;
   rdfs:comment "Also written γM, the partial safety factor for resistance."@en ;
   qudt:applicableUnit unit:UNITLESS ;
   qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
   rdfs:isDefinedBy aec3po:quantity_kinds .
 
-aec3po:PartialSafetyFactor0 a skos:Concept,
-        aec3po:QuantityKind ;
+aec3po:PartialSafetyFactor0 a skos:Concept, aec3po:QuantityKind ;
   rdfs:label "Partial Safety Factor"@en ;
   rdfs:comment "Also written γM0, the partial safety factor for resistance related to member resistance without instability."@en ;
   qudt:applicableUnit unit:UNITLESS ;
@@ -144,8 +140,7 @@ aec3po:PartialSafetyFactor0 a skos:Concept,
   rdfs:isDefinedBy aec3po:quantity_kinds ;
   skos:broader aec3po:PartialSafetyFactor .
 
-aec3po:PartialSafetyFactor1 a skos:Concept,
-        aec3po:QuantityKind ;
+aec3po:PartialSafetyFactor1 a skos:Concept, aec3po:QuantityKind ;
   rdfs:label "Partial Safety Factor"@en ;
   rdfs:comment "Also written γM1, the partial safety factor for resistance related to any limit state where instability governs."@en ;
   qudt:applicableUnit unit:UNITLESS ;
@@ -210,8 +205,7 @@ aec3po:AxialCompressionStress a skos:Concept, aec3po:QuantityKind ;
   qudt:hasDimensionVector qkdv:A0E0L1I0M-1H0T-2D0 ;
   rdfs:isDefinedBy aec3po:quantity_kinds .
 
-aec3po:ModificationFactorKmod a skos:Concept,
-        aec3po:QuantityKind ;
+aec3po:ModificationFactorKmod a skos:Concept, aec3po:QuantityKind ;
   rdfs:label "Modification Factor Kmod"@en ;
   rdfs:comment "Modification Factor to take into account the duration of load"@en ;
   qudt:applicableUnit unit:UNITLESS ;
