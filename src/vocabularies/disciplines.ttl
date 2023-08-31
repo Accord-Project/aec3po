@@ -8,51 +8,14 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-aec3po:hasDiscipline a owl:ObjectProperty ;
-    rdfs:label "has discipline"@en ;
-    rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."@en ;
-    rdfs:isDefinedBy aec3po:discipline ;
-    rdfs:range aec3po:Discipline .
-
-aec3po:Discipline-architecture a skos:Concept,
-        aec3po:Discipline ;
-    rdfs:isDefinedBy aec3po:discipline ;
-    skos:definition "The Architecture discipline."@en ;
-    skos:inScheme aec3po:DisciplineTable ;
-    skos:prefLabel "architecture"@en ;
-    skos:topConceptOf aec3po:DisciplineTable .
-
-aec3po:Discipline-buildingServices a skos:Concept,
-        aec3po:Discipline ;
-    rdfs:isDefinedBy aec3po:discipline ;
-    skos:definition "The Building Services discipline."@en ;
-    skos:inScheme aec3po:DisciplineTable ;
-    skos:prefLabel "building services"@en ;
-    skos:topConceptOf aec3po:DisciplineTable .
-
-aec3po:Discipline-construction a skos:Concept,
-        aec3po:Discipline ;
-    rdfs:isDefinedBy aec3po:discipline ;
-    skos:definition "The Construction discipline."@en ;
-    skos:inScheme aec3po:DisciplineTable ;
-    skos:prefLabel "construction"@en ;
-    skos:topConceptOf aec3po:DisciplineTable .
-
-aec3po:Discipline-planning a skos:Concept,
-        aec3po:Discipline ;
-    rdfs:isDefinedBy aec3po:discipline ;
-    skos:definition "The Planning discipline."@en ;
-    skos:inScheme aec3po:DisciplineTable ;
-    skos:prefLabel "planning"@en ;
-    skos:topConceptOf aec3po:DisciplineTable .
-
-aec3po:Discipline-structuralEngineering a skos:Concept,
-        aec3po:Discipline ;
-    rdfs:isDefinedBy aec3po:discipline ;
-    skos:definition "The Structural Engineering discipline."@en ;
-    skos:inScheme aec3po:DisciplineTable ;
-    skos:prefLabel "structural engineering"@en ;
-    skos:topConceptOf aec3po:DisciplineTable .
+aec3po:discipline a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description "Definition of a disciplines concept scheme for AEC3PO."@en ;
+    dct:modified "2023-05-25"^^xsd:date ;
+    dct:title "AEC3PO: Disciplines"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri aec3po: .
 
 aec3po:Discipline a owl:Class ;
     rdfs:label "Discipline"@en ;
@@ -62,15 +25,6 @@ aec3po:Discipline a owl:Class ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
                         owl:hasValue aec3po:DisciplineTable ;
                         owl:onProperty skos:inScheme ] ) ] .
-
-aec3po:discipline a owl:Ontology ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description "Definition of a disciplines concept scheme for AEC3PO."@en ;
-    dct:modified "2023-05-25"^^xsd:date ;
-    dct:title "AEC3PO: Disciplines"@en ;
-    vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
 
 aec3po:DisciplineTable a skos:ConceptScheme ;
     rdfs:label "Discipline table"@en ;
@@ -89,3 +43,43 @@ aec3po:DisciplineTable a skos:ConceptScheme ;
         aec3po:Discipline-planning,
         aec3po:Discipline-structuralEngineering .
 
+aec3po:hasDiscipline a owl:ObjectProperty ;
+    rdfs:label "has discipline"@en ;
+    rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."@en ;
+    rdfs:isDefinedBy aec3po:discipline ;
+    rdfs:range aec3po:Discipline .
+
+aec3po:Discipline-architecture a owl:NamedIndividual, skos:Concept, aec3po:Discipline ;
+    rdfs:isDefinedBy aec3po:discipline ;
+    skos:definition "The Architecture discipline."@en ;
+    skos:inScheme aec3po:DisciplineTable ;
+    skos:prefLabel "architecture"@en ;
+    skos:topConceptOf aec3po:DisciplineTable .
+
+aec3po:Discipline-buildingServices a owl:NamedIndividual, skos:Concept, aec3po:Discipline ;
+    rdfs:isDefinedBy aec3po:discipline ;
+    skos:definition "The Building Services discipline."@en ;
+    skos:inScheme aec3po:DisciplineTable ;
+    skos:prefLabel "building services"@en ;
+    skos:topConceptOf aec3po:DisciplineTable .
+
+aec3po:Discipline-construction a owl:NamedIndividual, skos:Concept, aec3po:Discipline ;
+    rdfs:isDefinedBy aec3po:discipline ;
+    skos:definition "The Construction discipline."@en ;
+    skos:inScheme aec3po:DisciplineTable ;
+    skos:prefLabel "construction"@en ;
+    skos:topConceptOf aec3po:DisciplineTable .
+
+aec3po:Discipline-planning a owl:NamedIndividual, skos:Concept, aec3po:Discipline ;
+    rdfs:isDefinedBy aec3po:discipline ;
+    skos:definition "The Planning discipline."@en ;
+    skos:inScheme aec3po:DisciplineTable ;
+    skos:prefLabel "planning"@en ;
+    skos:topConceptOf aec3po:DisciplineTable .
+
+aec3po:Discipline-structuralEngineering a owl:NamedIndividual, skos:Concept, aec3po:Discipline ;
+    rdfs:isDefinedBy aec3po:discipline ;
+    skos:definition "The Structural Engineering discipline."@en ;
+    skos:inScheme aec3po:DisciplineTable ;
+    skos:prefLabel "structural engineering"@en ;
+    skos:topConceptOf aec3po:DisciplineTable .

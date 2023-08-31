@@ -9,16 +9,16 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 aec3po:document a owl:Ontology ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description """The AEC3PO Document module describes building-compliance related documents, their subdivisions, down to individual statements.
+ cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+ dct:contributor <http://maxime-lefrancois.info/me#> ;
+ dct:description """The AEC3PO Document module describes building-compliance related documents, their subdivisions, down to individual statements.
 
 Document subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back."""@en ;
-    dct:description <document.png> ;
-    dct:modified "2023-05-25"^^xsd:date ;
-    dct:title "AEC3PO: document"@en ;
-    vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+ dct:description <document.png> ;
+ dct:modified "2023-05-25"^^xsd:date ;
+ dct:title "AEC3PO: document"@en ;
+ vann:preferredNamespacePrefix "aec3po" ;
+ vann:preferredNamespaceUri aec3po: .
 
 aec3po:Document a owl:Class ;
  rdfs:label "Document"@en ;
@@ -32,6 +32,18 @@ aec3po:forDocument a owl:ObjectProperty ;
  rdfs:comment "links an entity such as a legal verifier to the document it is for."@en ;
  rdfs:range aec3po:Document ;
  rdfs:isDefinedBy aec3po:document . 
+
+aec3po:usesDocument a owl:ObjectProperty ;
+ rdfs:label "uses document"@en ;
+ rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it uses."@en ;
+ rdfs:isDefinedBy aec3po:document ;
+ rdfs:range aec3po:Document .
+
+aec3po:requiresDocument a owl:ObjectProperty ;
+ rdfs:label "requires document"@en ;
+ rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it requires."@en ;
+ rdfs:isDefinedBy aec3po:document ;
+ rdfs:subPropertyOf aec3po:usesDocument .
 
 aec3po:DocumentSubdivision a owl:Class ;
  rdfs:label "Document Subdivision"@en ;
@@ -62,10 +74,27 @@ aec3po:hasFirstPart a owl:ObjectProperty , owl:FunctionalProperty ;
  rdfs:subPropertyOf dct:hasPart ;
  rdfs:isDefinedBy aec3po:document .
 
-
 aec3po:IDS a owl:Class ;
-    rdfs:label "Information Delivery Format (IDS)"@en ;
-    rdfs:subClassOf aec3po:Document ;
-    rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
-    skos:note "Unstable. Need to provide examples to understand how this is intended to be used." ;
-    rdfs:isDefinedBy aec3po:document .
+ rdfs:label "Information Delivery Format (IDS)"@en ;
+ rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
+ rdfs:subClassOf aec3po:Document ;
+ skos:note "Unstable. Need to provide examples to understand how this is intended to be used." ;
+ rdfs:isDefinedBy aec3po:document .
+
+aec3po:Drawing a owl:Class ;
+ rdfs:label "Drawing"@en ;
+ rdfs:comment "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)"@en ;
+ rdfs:subClassOf aec3po:Document ;
+ rdfs:isDefinedBy aec3po:document .
+
+aec3po:Image a owl:Class ;
+ rdfs:label "Image"@en ;
+ rdfs:comment "An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)"@en ;
+ rdfs:subClassOf aec3po:Document ;
+ rdfs:isDefinedBy aec3po:document .
+
+aec3po:Model a owl:Class ;
+ rdfs:label "Model"@en ;
+ rdfs:comment "A design model of a building."@en ;
+ rdfs:subClassOf aec3po:Document ;
+ rdfs:isDefinedBy aec3po:document .

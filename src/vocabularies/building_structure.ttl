@@ -9,38 +9,15 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-aec3po:forBuildingStructure a owl:ObjectProperty ;
-    rdfs:label "for building structure"@en ;
-    rdfs:comment """The building structure for which a specific check, verifier, or check result applies.
-  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
-    rdfs:isDefinedBy aec3po:building_structure ;
-    rdfs:range aec3po:BuildingStructure ;
-    rdfs:subPropertyOf aec3po:forDesign .
-
-aec3po:hasBuildingStructure a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "has building structure"@en ;
-    rdfs:comment """The building structure design of a feature of interest or a property of that feature of interest.
-  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
-    rdfs:isDefinedBy aec3po:building_structure ;
-    rdfs:range aec3po:BuildingStructure ;
-    rdfs:subPropertyOf aec3po:hasDesign .
-
-aec3po:BuildingStructure-steel a skos:Concept,
-        aec3po:BuildingStructure ;
-    rdfs:isDefinedBy aec3po:building_structure ;
-    skos:definition "Building has steel structure."@en ;
-    skos:inScheme aec3po:BuildingStructureTable ;
-    skos:prefLabel "steel"@en ;
-    skos:topConceptOf aec3po:BuildingStructureTable .
-
-aec3po:BuildingStructure-timber a skos:Concept,
-        aec3po:BuildingStructure ;
-    rdfs:isDefinedBy aec3po:building_structure ;
-    skos:definition "Building has timber structure."@en ;
-    skos:inScheme aec3po:BuildingStructureTable ;
-    skos:prefLabel "timber"@en ;
-    skos:topConceptOf aec3po:BuildingStructureTable .
+aec3po:building_structure a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#>,
+        aec3po:etc ;
+    dct:description "Definition of a building structure concept scheme for AEC3PO."@en ;
+    dct:modified "2023-04-26"^^xsd:date ;
+    dct:title "AEC3PO: Building Structure"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri aec3po: .
 
 aec3po:BuildingStructure a owl:Class ;
     rdfs:label "building structure"@en ;
@@ -63,13 +40,35 @@ aec3po:BuildingStructureTable a skos:ConceptScheme ;
     skos:hasTopConcept aec3po:BuildingStructure-steel,
         aec3po:BuildingStructure-timber .
 
-aec3po:building_structure a owl:Ontology ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:contributor <http://maxime-lefrancois.info/me#>,
-        aec3po:etc ;
-    dct:description "Definition of a building structure concept scheme for AEC3PO."@en ;
-    dct:modified "2023-04-26"^^xsd:date ;
-    dct:title "AEC3PO: Building Structure"@en ;
-    vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri aec3po: .
+aec3po:forBuildingStructure a owl:ObjectProperty ;
+    rdfs:label "for building structure"@en ;
+    rdfs:comment """The building structure for which a specific check, verifier, or check result applies.
+  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
+    rdfs:isDefinedBy aec3po:building_structure ;
+    rdfs:range aec3po:BuildingStructure ;
+    rdfs:subPropertyOf aec3po:forDesign .
 
+aec3po:hasBuildingStructure a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has building structure"@en ;
+    rdfs:comment """The building structure design of a feature of interest or a property of that feature of interest.
+  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
+    rdfs:isDefinedBy aec3po:building_structure ;
+    rdfs:range aec3po:BuildingStructure ;
+    rdfs:subPropertyOf aec3po:hasDesign .
+
+aec3po:BuildingStructure-steel a owl:NamedIndividual, skos:Concept,
+        aec3po:BuildingStructure ;
+    rdfs:isDefinedBy aec3po:building_structure ;
+    skos:definition "Building has steel structure."@en ;
+    skos:inScheme aec3po:BuildingStructureTable ;
+    skos:prefLabel "steel"@en ;
+    skos:topConceptOf aec3po:BuildingStructureTable .
+
+aec3po:BuildingStructure-timber a owl:NamedIndividual, skos:Concept,
+        aec3po:BuildingStructure ;
+    rdfs:isDefinedBy aec3po:building_structure ;
+    skos:definition "Building has timber structure."@en ;
+    skos:inScheme aec3po:BuildingStructureTable ;
+    skos:prefLabel "timber"@en ;
+    skos:topConceptOf aec3po:BuildingStructureTable .
