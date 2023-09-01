@@ -5,26 +5,28 @@
 The AEC3PO ontology is designed to represent various aspects of the construction domain, focusing on compliance and permitting. It is organised into five main modules, each comprising sub-modules, classes, and properties. These modules facilitate the modeling of different components and relationships within the construction domain. The figure below shows an overview of these modules and the relations among them.
 
 ![AEC3PO Overview](diagrams/aec3po_v1.0.0_Modules.png) 
+
 Below is an overview of each module and its sub-components:
+
 1. **Module 1: Document**: This module describes building-compliance related documents, their subdivisions, down to individual statements.
-  - Classes: _DocumentSubdivision_, _Statement_, _CheckStatement_, _DefinitionStatement_, _ChecklistStatement_, _Evidence_, _DataRequirement_, _etc_.
-  - Properties: hasPart, hasRequiredData, hasEvidence, forDocument, hasPermittingStage, etc.
+    - Classes: _DocumentSubdivision_, _Statement_, _CheckStatement_, _DefinitionStatement_, _ChecklistStatement_, _Evidence_, _DataRequirement_, _etc_.
+    - Properties: hasPart, hasRequiredData, hasEvidence, forDocument, hasPermittingStage, etc.
 
 2. **Module 2: CheckMethod**: This module describes pieces of information that operationalize check statements in documents.
-  -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _etc_.
-  -	Properties: _hasSubCheck_, _operationalize_, _forDesign_, _etc_.
+    -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _etc_.
+    -	Properties: _hasSubCheck_, _operationalize_, _forDesign_, _etc_.
 
 3. **Module 3: Design**: This module describes descriptions of some design of features of interest in terms of structure, geometry, and function.
-  -	Classes: _Design_, _PropertyDesign_, _ComparisonOperation_, _etc_.
-  -	Properties: _hasDesign_, _hasPropertyDesign_, _hasComparisonOperator_, _etc_.
+    -	Classes: _Design_, _PropertyDesign_, _ComparisonOperation_, _etc_.
+    -	Properties: _hasDesign_, _hasPropertyDesign_, _hasComparisonOperator_, _etc_.
   
 4. **Module 4: FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
-  - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
-  -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasUnit_, _hasDesign_, _hasContext_, _etc_.
+    - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
+    -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasUnit_, _hasDesign_, _hasContext_, _etc_.
   
 5. **Module 5: CheckingAct**
-  - Classes: _CheckingAct_, _ProcessVerifier_, _ConformanceReport_
-  - Properties: _usedMethod_, _madeBy_, _hasReport_
+    - Classes: _CheckingAct_, _ProcessVerifier_, _ConformanceReport_
+    - Properties: _usedMethod_, _madeBy_, _hasReport_
   
 Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, and SHACL checks. 
 Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the conformance report that stores the outcomes of the check. 

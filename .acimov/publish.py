@@ -72,12 +72,14 @@ def process_turtle_file(input_file_path:str, dest_path:str):
     # delete made with pyLODE
     soup.find(id="pylode").extract()
     
-    # add accord icon
+    # set accord icons
+    for link in soup.find_all("link", rel="icon"):
+        link.extract()
+    context = '/'.join( ['..'] * (len(dest_path.split("/"))-2) )
+    context = context + "/" if context else context
+    soup.head.append(bs(f'<link rel="icon" href="{context}accord-ico-32x32.png" sizes="32x32" />', 'html.parser'))
+    soup.head.append(bs(f'<link rel="icon" href="{context}accord-ico-192x192.png" sizes="192x192" />', 'html.parser'))
     
-    #<link rel="icon" href="https://accordproject.eu/wp-content/uploads/2023/02/cropped-ccord-ico-32x32.png" sizes="32x32" />
-    #<link rel="icon" href="https://accordproject.eu/wp-content/uploads/2023/02/cropped-ccord-ico-192x192.png" sizes="192x192" />
-
-
     # inject description if it exists
     input_file, _ = os.path.splitext(input_file_path)
     try:
