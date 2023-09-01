@@ -17,7 +17,6 @@ aec3po:statement a owl:Ontology ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
-
 aec3po:Statement a owl:Class ;
  rdfs:label "Statement"@en ;
  rdfs:comment "Something stated in a building compliance-related document"@en ;

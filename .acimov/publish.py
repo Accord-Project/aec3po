@@ -10,6 +10,8 @@ from rdflib.namespace import RDF, OWL, DCTERMS, XSD, RDFS
 import pylode
 import mistune
 import yaml, json
+from bs4 import BeautifulSoup as bs
+import markdown
 
 # This script checks the quality of the ontology, generates the html documentation, and ultimately builds the `public` folder that contains the documentation website of the ontology
 
@@ -24,6 +26,7 @@ os.makedirs(vocab, exist_ok=True)
 shutil.copytree("resources", dest, dirs_exist_ok=True)
 
 def process_turtle_file(input_file_path:str, dest_path:str):
+    module_name = dest_path.split("/")[-1]
 
     # parse and check ttl syntax
     g = Graph()
@@ -42,13 +45,10 @@ def process_turtle_file(input_file_path:str, dest_path:str):
         logging.debug(f"The ontology is {ontology.n3()}")
         break;
 
-    # find when the file was first added to the git repository, and set dct:created ? 
-
+    # find when the file was first added to the git repository, and set dct:created
     git_dct_created = subprocess.check_output(["git", "log", "--diff-filter=A", "--format='%ad'", "--date=short", "--", input_file_path]).decode('ascii')[1:-2]
-
     for dct_created in g.objects(ontology, DCTERMS.created):
         break
-
     try:
         dct_created
     except NameError:
@@ -58,10 +58,7 @@ def process_turtle_file(input_file_path:str, dest_path:str):
         if dct_created.lstrip() != git_dct_created:
             logging.debug(f"dct:created value {dct_created.n3()} is different from the date when {input_file_path} was first commited: {git_dct_created}")
 
-
     # find when the file was last changed in the git repository, and set dct:modified.
-
-    # find when the set dct:modified automatically ?
     git_dct_modified = subprocess.check_output(["git", "log", "-1", "--format='%ad'", "--date=short", "--", input_file_path]).decode('ascii')[1:-2]
     dct_modified = Literal(git_dct_modified,datatype=XSD.date)
     if (ontology, DCTERMS.modified, dct_modified) not in g:
@@ -70,14 +67,70 @@ def process_turtle_file(input_file_path:str, dest_path:str):
 
     # generate html documentation and rdf variants
     html = pylode.MakeDocco(input_data_file=input_file_path).document()
-    html_img = html.replace(
-        '<div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>',
-        f'<img src="{dest_path.split("/")[-1]}.png" />'
-    )
+    soup = bs(html, 'html.parser')
+
+    # delete made with pyLODE
+    soup.find(id="pylode").extract()
+        
+    # inject description if it exists
+    input_file, _ = os.path.splitext(input_file_path)
+    try:
+        with open(input_file + ".description.md", "r") as md_file:
+            snippet = markdown.markdown(md_file.read(), extensions=['tables'])
+    except:
+        try:
+            with open(input_file + ".description.html", 'r') as html_file:
+                snippet = html_file.read()
+        except:
+            snippet = None
+    if snippet:
+        tag = soup.find(id="description")
+        tag.previous_sibling.extract()
+        tag.previous_sibling.extract()
+        tag.clear()
+        tag.append(bs(snippet, 'html.parser'))
+
+    # inject overview if it exists
+    input_file, _ = os.path.splitext(input_file_path)
+    try:
+        with open(input_file + ".overview.md", "r") as md_file:
+            snippet = markdown.markdown(md_file.read(), extensions=['tables'])
+    except:
+        try:
+            with open(input_file + ".overview.html", 'r') as html_file:
+                snippet = html_file.read()
+        except:
+            snippet = None
+    if snippet:
+        tag = soup.find(id="overview")
+        tag.clear()
+        tag.append(bs(snippet, 'html.parser'))
+    
+    # inject contributors if they exist
+    # inject overview if it exists
+    input_file, _ = os.path.splitext(input_file_path)
+    try:
+        with open(input_file + ".contributors.md", "r") as md_file:
+            snippet = markdown.markdown(md_file.read(), extensions=['tables'])
+    except:
+        try:
+            with open(input_file + ".contributors.html", 'r') as html_file:
+                snippet = html_file.read()
+        except:
+            snippet = None
+    if snippet:
+        tag = [ tag for tag in soup.find(id="metadata").find_all('dd') if "Contributor" in tag.find_previous("dt").text ][0]
+        tag.clear()
+        tag.append(bs(snippet, 'html.parser'))
+
+    # print html
     with open(dest_path+ ".html", "w") as output:
-        output.write(html_img)
-    with open(dest_path+ ".ttl", "wb") as output:
-        output.write(g.serialize(format='ttl', encoding='utf-8'))
+        output.write(soup.prettify())
+
+    # print ttl
+    shutil.copy(input_file_path, dest_path+ ".ttl")
+
+    # print other RDF variants
     with open(dest_path+ ".rdf", "wb") as output:
         output.write(g.serialize(format='pretty-xml', encoding='utf-8'))
     with open(dest_path+ ".n3", "wb") as output:
@@ -116,7 +169,7 @@ def convert_context_to_jsonld():
         configuration = yaml.safe_load(file)
     with open('public/aec3po.jsonld', 'w') as json_file:
         json.dump(configuration, json_file, indent=2)
-    
+
 if __name__ == "__main__":
     shutil.copyfile('src/aec3po.yaml', 'public/aec3po.yaml')
     if len(sys.argv) == 1:

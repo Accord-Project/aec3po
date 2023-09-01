@@ -1,3 +1,6 @@
 public
 .venv
+.vscode
 /resources/*.bkp
+**/.$*
+**/$*

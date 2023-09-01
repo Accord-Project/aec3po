@@ -3,5 +3,5 @@ repos:
     rev: 669e6a7
     hooks:
     -   id: check-turtle # this hook will check that `.ttl` files are valid Turtle 1.1 files.
-    -   id: format-turtle # this hool will re-serialize each `.ttl` to ensure diff is always meaningful.
-        exclude: vocabularies/_shape.ttl
+    # -   id: format-turtle # this hool will re-serialize each `.ttl` to ensure diff is always meaningful.
+    #     exclude: vocabularies/_shape.ttl
