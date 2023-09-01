@@ -71,7 +71,13 @@ def process_turtle_file(input_file_path:str, dest_path:str):
 
     # delete made with pyLODE
     soup.find(id="pylode").extract()
-        
+    
+    # add accord icon
+    
+    #<link rel="icon" href="https://accordproject.eu/wp-content/uploads/2023/02/cropped-ccord-ico-32x32.png" sizes="32x32" />
+    #<link rel="icon" href="https://accordproject.eu/wp-content/uploads/2023/02/cropped-ccord-ico-192x192.png" sizes="192x192" />
+
+
     # inject description if it exists
     input_file, _ = os.path.splitext(input_file_path)
     try:

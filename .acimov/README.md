@@ -1,8 +1,12 @@
-# Scripts folder
+# ACIMOV script folder
+
+ACIMOV (Agile and Continuous Integration for Modular Ontologies and Vocabularies) is an ontology engineering methodology for developing ontologies and vocabularies.
+
+Website: https://acimov.gitlab.io/
 
 This folder contains scripts that are used to check the quality of the ontology, generate the html documentation, and ultimately build the `public` folder that contains the documentation website of the ontologies.
 
-Source: https://gitlab.emse.fr/victor.charpenay1/samod-template/-/blob/master/.samod/README.md
+Source: https://gitlab.com/acimov/acimov-methodology-template
 
 ## extract_diagrams.sh
 

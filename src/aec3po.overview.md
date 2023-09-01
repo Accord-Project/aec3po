@@ -4,7 +4,7 @@
 ### AEC3PO Modules <a name="modules"></a>
 The AEC3PO ontology is designed to represent various aspects of the construction domain, focusing on compliance and permitting. It is organised into five main modules, each comprising sub-modules, classes, and properties. These modules facilitate the modeling of different components and relationships within the construction domain. The figure below shows an overview of these modules and the relations among them.
 
-![AEC3PO Overview](aec3po_v1.0.0_Modules.png) 
+![AEC3PO Overview](diagrams/aec3po_v1.0.0_Modules.png) 
 Below is an overview of each module and its sub-components:
 1. **Module 1: Document**: This module describes building-compliance related documents, their subdivisions, down to individual statements.
   - Classes: _DocumentSubdivision_, _Statement_, _CheckStatement_, _DefinitionStatement_, _ChecklistStatement_, _Evidence_, _DataRequirement_, _etc_.
@@ -34,7 +34,7 @@ AEC3PO contains five modules, each of them imports an external ontology, and spe
 
 In the figure, the AEC3PO ontology is positioned at the center, with arrows extending outward to connect with other related ontologies. Each ontology is represented as a distinct node, emphasising the integration of diverse knowledge domains. The alignment signifies the synergy achieved by harmonising multiple ontologies to enhance the overall understanding and modeling of compliance and permitting processes in the AEC sector.
 
-![AEC3PO Overview](alignment.png)
+![AEC3PO Overview](diagrams/alignment.png)
 
 The figure above effectively conveys the interconnectedness of different ontologies with AEC3PO for a holistic understanding of compliance and permitting processes in the construction industry. This alignment facilitates cross-domain information sharing, enabling more accurate and comprehensive modeling of the complex construction ecosystem. The table below lists all the external ontologies, the namespaces and the suggested prefix for each ontology modules is also provided.
 
