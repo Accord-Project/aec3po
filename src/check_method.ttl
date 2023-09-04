@@ -105,3 +105,9 @@ aec3po:BooleanCheckMethod a owl:Class ;
     rdfs:comment "Boolean check method refers to a type of validation method that checks whether a certain condition or property is either true or false. It is a simple binary check that evaluates the compliance or non-compliance of a specific aspect in the construction process. "@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:CheckMethod .
+
+aec3po:FunctionCheckMethod a owl:Class ;
+    rdfs:label "Function Check Method"@en ;
+    rdfs:comment "Methods of check defined by functions. The function can be general purpose, not tied to specific project and reused i.e. getArea(), getVolume(). This concept is equivalent to the Function class in the Function ontology: https://fno.io/spec/ "@en ;
+    rdfs:isDefinedBy aec3po:check_method ;
+    rdfs:subClassOf aec3po:CheckMethod .
