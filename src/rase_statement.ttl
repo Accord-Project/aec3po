@@ -77,14 +77,14 @@ aec3po:except a owl:ObjectProperty ;
 aec3po:SelectionStatement a owl:Class ;
  rdfs:label "Selection Statement"@en ;
  rdfs:comment "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
- skos:note "Usually, the Select/Selection statements are highlighted in green."@en ;
+ skos:note "Usually, the Select/Selection statements are highlighted in purple."@en ;
  rdfs:subClassOf aec3po:Statement ;
  rdfs:isDefinedBy aec3po:statement .
 
 aec3po:selects a owl:ObjectProperty ;
   rdfs:label "selects"@en ;
   rdfs:comment "Links a check to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
-  skos:note "Usually, the Select/Selection statements are highlighted in green."@en ;
+  skos:note "Usually, the Select/Selection statements are highlighted in purple."@en ;
   rdfs:subPropertyOf aec3po:hasSubStatement ;
   rdfs:domain aec3po:RASEDecomposedStatement ;
   rdfs:range aec3po:RequirementStatement ;
