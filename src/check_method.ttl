@@ -14,31 +14,31 @@ aec3po:check_method a owl:Ontology ;
     dct:description "The AEC3PO Check Method module describes pieces of information that operationalize check statements in documents."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
     dct:title "AEC3PO: Check Method"@en ;
-    owl:imports aec3po:check_method , aec3po:conformance_report ;
+    owl:imports aec3po:statement , aec3po:conformance_report ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:CheckMethod a owl:Class ;
     rdfs:label "Check Method"@en ;
     rdfs:comment "A piece of information that operationalizes check statements in documents, usually executed in order to control the conformance of some entity. A Check Method is re-usable, and may be executed several times."@en ;
-    rdfs:isDefinedBy aec3po:check_method ;
-    rdfs:subClassOf dul:Method .
+    rdfs:subClassOf dul:Method ;
+    rdfs:isDefinedBy aec3po:check_method .
 
-aec3po:operationalizes a owl:ObjectProperty ;
-    rdfs:label "operationalizes"@en ;
-    rdfs:comment "Links a check method to a check statement in a document that it operationalizes."@en ;
-    rdfs:domain aec3po:CheckMethod ;
-    rdfs:isDefinedBy aec3po:check_method ;
-    rdfs:range aec3po:CheckStatement ;
-    owl:inverseOf aec3po:isOperationalizedBy .
+    aec3po:operationalizes a owl:ObjectProperty ;
+        rdfs:label "operationalizes"@en ;
+        rdfs:comment "Links a check method to a check statement in a document that it operationalizes."@en ;
+        rdfs:domain aec3po:CheckMethod ;
+        rdfs:range aec3po:CheckStatement ;
+        owl:inverseOf aec3po:isOperationalizedBy ;
+        rdfs:isDefinedBy aec3po:check_method .
 
-aec3po:isOperationalizedBy a owl:ObjectProperty ;
-    rdfs:label "is operationalized by"@en ;
-    rdfs:comment "Links a check statement in a document to a check method that operationalize it."@en ;
-    rdfs:domain aec3po:CheckStatement ;
-    rdfs:isDefinedBy aec3po:check_method ;
-    rdfs:range aec3po:CheckMethod ;
-    owl:inverseOf aec3po:operationalizes .
+    aec3po:isOperationalizedBy a owl:ObjectProperty ;
+        rdfs:label "is operationalized by"@en ;
+        rdfs:comment "Links a check statement in a document to a check method that operationalize it."@en ;
+        rdfs:domain aec3po:CheckStatement ;
+        rdfs:isDefinedBy aec3po:check_method ;
+        rdfs:range aec3po:CheckMethod ;
+        owl:inverseOf aec3po:operationalizes .
 
 aec3po:ProceduralCheckMethod a owl:Class ;
     rdfs:label "Procedural Check Method"@en ;

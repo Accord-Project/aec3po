@@ -1,0 +1,93 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aec3po:rase_statement a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description """The AEC3PO RASE Statement module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology."""@en ;
+    dct:description <rase_statement.png> ;
+    dct:title "AEC3PO: RASE statement"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
+    owl:imports aec3po:statement .
+
+aec3po:RASEDecomposedStatement a owl:Class ;
+ rdfs:label "RASE Decomposed Statement"@en ;
+ rdfs:comment "Check decomposed following the Requirement Application Selection and Exception (RASE) methodology."@en ;
+ rdfs:subClassOf [ a owl:Restriction ;
+  owl:minCardinality 1 ;
+  owl:onProperty aec3po:hasSubStatement ] ;
+ rdfs:isDefinedBy aec3po:statement .
+
+aec3po:RequirementStatement a owl:Class ;
+ rdfs:label "Requirement Statement"@en ;
+ rdfs:comment "Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+ skos:note "Usually, the Required/Requirement statements are highlighted in blue."@en ;
+ rdfs:subClassOf aec3po:Statement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+aec3po:requires a owl:ObjectProperty ;
+  rdfs:label "requires"@en ;
+  rdfs:comment "Links a check to the expression of a thing that is required by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
+  skos:note "Usually, the Required/Requirement statements are highlighted in blue."@en ;
+  rdfs:subPropertyOf aec3po:hasSubStatement ;
+  rdfs:domain aec3po:RASEDecomposedStatement ;
+  rdfs:range aec3po:RequirementStatement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+aec3po:ApplicationStatement a owl:Class ;
+ rdfs:label "ApplicationStatement"@en ;
+ rdfs:comment "Represents the Applications tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+ skos:note "Usually, the Applies/Application statements are highlighted in green."@en ;
+ rdfs:subClassOf aec3po:Statement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+aec3po:appliesTo a owl:ObjectProperty ;
+  rdfs:label "applies to"@en ;
+  rdfs:comment "Links a check to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
+  skos:note "Usually, the Applies/Application statements are highlighted in green."@en ;
+  rdfs:subPropertyOf aec3po:hasSubStatement ;
+  rdfs:domain aec3po:RASEDecomposedStatement ;
+  rdfs:range aec3po:ApplicationStatement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+aec3po:ExceptionStatement a owl:Class ;
+ rdfs:label "Exception Statement"@en ;
+ rdfs:comment "Represents the Exception tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+ skos:note "Usually, the Excepted/Exception statements are highlighted in yellow."@en ;
+ rdfs:subClassOf aec3po:Statement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+aec3po:except a owl:ObjectProperty ;
+  rdfs:label "except"@en ;
+  rdfs:comment "Links a check to the expression of a thing that is excepted by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
+  skos:note "Usually, the Excepted/Exception statements are highlighted in yellow."@en ;
+  rdfs:subPropertyOf aec3po:hasSubStatement ;
+  rdfs:domain aec3po:RASEDecomposedStatement ;
+  rdfs:range aec3po:ExceptionStatement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+aec3po:SelectionStatement a owl:Class ;
+ rdfs:label "Selection Statement"@en ;
+ rdfs:comment "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
+ skos:note "Usually, the Select/Selection statements are highlighted in green."@en ;
+ rdfs:subClassOf aec3po:Statement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+aec3po:selects a owl:ObjectProperty ;
+  rdfs:label "selects"@en ;
+  rdfs:comment "Links a check to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
+  skos:note "Usually, the Select/Selection statements are highlighted in green."@en ;
+  rdfs:subPropertyOf aec3po:hasSubStatement ;
+  rdfs:domain aec3po:RASEDecomposedStatement ;
+  rdfs:range aec3po:RequirementStatement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+[] a owl:AllDifferent ; owl:members ( aec3po:ApplicationStatement aec3po:SelectionStatement aec3po:RequirementStatement  aec3po:ExceptionStatement ) .

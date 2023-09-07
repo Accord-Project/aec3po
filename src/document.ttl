@@ -23,41 +23,50 @@ Document subdivisions can be described as literals, link to their first part, an
 aec3po:Document a owl:Class ;
  rdfs:label "Document"@en ;
  rdfs:comment "A document representing AEC regulations, guidelines, building codes etc."@en ;
- rdfs:isDefinedBy aec3po:document ;
- rdfs:subClassOf [ a owl:Restriction ; owl:onProperty dct:hasPart ; owl:allValuesFrom aec3po:DocumentSubdivision ] ;
- skos:example "Approved Document A, Eurocode, Finish Regulations..."@en .
+ skos:note "a Document is expected to be annotated using properties from the Dublin Core Terms vocabulary."@en ;
+ skos:example "Approved Document A, Eurocode, Finish Regulations..."@en ;
+ rdfs:isDefinedBy aec3po:document .
 
-aec3po:forDocument a owl:ObjectProperty ;
- rdfs:label "for document"@en ;
- rdfs:comment "links an entity such as a legal verifier to the document it is for."@en ;
- rdfs:range aec3po:Document ;
- rdfs:isDefinedBy aec3po:document . 
+    aec3po:forDocument a owl:ObjectProperty ;
+    rdfs:label "for document"@en ;
+    rdfs:comment "links an entity such as a legal verifier to the document it is for."@en ;
+    rdfs:range aec3po:Document ;
+    rdfs:isDefinedBy aec3po:document . 
 
-aec3po:usesDocument a owl:ObjectProperty ;
- rdfs:label "uses document"@en ;
- rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it uses."@en ;
- rdfs:isDefinedBy aec3po:document ;
- rdfs:range aec3po:Document .
+    aec3po:usesDocument a owl:ObjectProperty ;
+    rdfs:label "uses document"@en ;
+    rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it uses."@en ;
+    rdfs:isDefinedBy aec3po:document ;
+    rdfs:range aec3po:Document .
 
-aec3po:requiresDocument a owl:ObjectProperty ;
- rdfs:label "requires document"@en ;
- rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it requires."@en ;
- rdfs:isDefinedBy aec3po:document ;
- rdfs:subPropertyOf aec3po:usesDocument .
+    aec3po:requiresDocument a owl:ObjectProperty ;
+    rdfs:label "requires document"@en ;
+    rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it requires."@en ;
+    rdfs:isDefinedBy aec3po:document ;
+    rdfs:subPropertyOf aec3po:usesDocument .
 
 aec3po:DocumentSubdivision a owl:Class ;
  rdfs:label "Document Subdivision"@en ;
  rdfs:comment "Any subdivision of a document, including sections, paragraphs, definitions, words, etc."@en ;
  rdfs:isDefinedBy aec3po:document ;
- rdfs:subClassOf [ a owl:Restriction ; owl:onProperty dct:hasPart ; owl:allValuesFrom aec3po:DocumentSubdivision ] ;
+ rdfs:subClassOf [ a owl:Restriction ; owl:onProperty aec3po:hasSubdivision ; owl:allValuesFrom aec3po:DocumentSubdivision ] ;
  skos:example "Paragraph, section, definition..."@en .
 
 aec3po:DocumentSubdivision_asLiteral a owl:DatatypeProperty ;
  rdfs:label "as literal"@en ;
  rdfs:comment "Links a document subdivision to its literal representation. The literal datatype may be xsd:string, rdf:HTMLLiteral, xsd:base64Binary, or any other relevant datatype."@en ;
+ skos:hiddenLabel "text" ; # alias name for JSON-LD and YAML-LD
  rdfs:isDefinedBy aec3po:document ;
  rdfs:domain aec3po:DocumentSubdivision ;
  rdfs:range rdfs:Literal .
+
+aec3po:hasSubdivision a owl:ObjectProperty ;
+ rdfs:label "has subdivision"@en ;
+ rdfs:comment "links a document part to some of its subdivision"@en ;
+ rdfs:domain [ owl:unionOf ( aec3po:Document aec3po:DocumentSubdivision ) ] ;
+ rdfs:range aec3po:DocumentSubdivision ;
+ rdfs:subPropertyOf dct:hasPart ;
+ rdfs:isDefinedBy aec3po:document . 
 
 aec3po:hasNextSubdivision a owl:ObjectProperty , owl:FunctionalProperty ;
  rdfs:label "has next subdivision"@en ;
@@ -66,12 +75,12 @@ aec3po:hasNextSubdivision a owl:ObjectProperty , owl:FunctionalProperty ;
  rdfs:range aec3po:DocumentSubdivision ;
  rdfs:isDefinedBy aec3po:document .
 
-aec3po:hasFirstPart a owl:ObjectProperty , owl:FunctionalProperty ;
- rdfs:label "has first part"@en ;
- rdfs:comment "Links a document subdivision to the first of its parts"@en ;
- rdfs:domain aec3po:DocumentSubdivision ;
+aec3po:hasFirstSubdivision a owl:ObjectProperty , owl:FunctionalProperty ;
+ rdfs:label "has first subdivision"@en ;
+ rdfs:comment "Links a document part to the first of its subdivision"@en ;
+ rdfs:domain [ owl:unionOf ( aec3po:Document aec3po:DocumentSubdivision ) ] ;
  rdfs:range aec3po:DocumentSubdivision ;
- rdfs:subPropertyOf dct:hasPart ;
+ rdfs:subPropertyOf aec3po:hasSubdivision ;
  rdfs:isDefinedBy aec3po:document .
 
 aec3po:IDS a owl:Class ;

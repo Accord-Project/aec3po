@@ -15,26 +15,53 @@ aec3po:statement a owl:Ontology ;
     dct:description <statement.png> ;
     dct:title "AEC3PO: statement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
+    owl:imports aec3po:document .
 
 aec3po:Statement a owl:Class ;
  rdfs:label "Statement"@en ;
  rdfs:comment "Something stated in a building compliance-related document"@en ;
- rdfs:isDefinedBy aec3po:statement ;
+ skos:example "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en ;
  rdfs:subClassOf aec3po:DocumentSubdivision ;
- skos:example "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en .
-
-aec3po:hasEvidence a owl:ObjectProperty;
- rdfs:comment "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
- rdfs:domain aec3po:Statement ;
- rdfs:range aec3po:Statement ;
  rdfs:isDefinedBy aec3po:statement .
 
-aec3po:hasRequiredData a owl:ObjectProperty;
- rdfs:comment "Links a statement to something that needs to be provided or associated with it."@en ;
- skos:example "A property to perform a calculation, an Information Delivery Specification (IDS) file, a certificate, ..."@en ;
- rdfs:domain aec3po:Statement ;
+  aec3po:hasEvidence a owl:ObjectProperty;
+    rdfs:comment "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
+    skos:note "Unstable. Need evidence of how this property is intended to be used"@en ;
+    rdfs:domain aec3po:Statement ;
+    rdfs:isDefinedBy aec3po:statement .
+
+  aec3po:requires a owl:ObjectProperty;
+    rdfs:label "requires"@en ;
+    rdfs:comment "Links a statement to something that needs to be provided or associated with it."@en ;
+    skos:example "A property to perform a calculation, an Information Delivery Specification (IDS) file, a certificate, ..."@en ;
+    skos:note "Unstable. Need evidence of how this property is intended to be used"@en ;
+    rdfs:domain aec3po:Statement ;
+    rdfs:isDefinedBy aec3po:statement .
+
+# definitions
+
+aec3po:DefinitionStatement a owl:Class ;
+ rdfs:label "Definition Statement"@en ;
+ rdfs:comment "A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document."@en ;
+ rdfs:subClassOf aec3po:Statement ;
  rdfs:isDefinedBy aec3po:statement .
+
+    aec3po:definitionOf a owl:ObjectProperty ;
+        rdfs:label "definition of"@en ;
+        rdfs:comment "Links a definition statement to the term that is defined"@en ;
+        rdfs:domain aec3po:DefinitionStatement ;
+        rdfs:range aec3po:DocumentSubdivision ;
+        rdfs:isDefinedBy aec3po:statement .
+
+    aec3po:hasDefinition a owl:ObjectProperty ;
+        rdfs:label "has definition"@en ;
+        rdfs:comment "Links a definition statement to the definition of the term"@en ;
+        rdfs:domain aec3po:DefinitionStatement ;
+        rdfs:range aec3po:DocumentSubdivision ;
+        rdfs:isDefinedBy aec3po:statement .
+
+# check statement 
 
 aec3po:CheckStatement a owl:Class ;
  rdfs:label "Check Statement"@en ;
@@ -45,6 +72,7 @@ aec3po:CheckStatement a owl:Class ;
 aec3po:CategoryCheckStatement a owl:Class ;
  rdfs:label "Category Check Statement"@en ;
  rdfs:comment "Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more."@en ;
+ rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/56> ;
  rdfs:subClassOf aec3po:CheckStatement ;
  rdfs:isDefinedBy aec3po:statement .
 
@@ -52,6 +80,7 @@ aec3po:CertificateCheckStatement a owl:Class ;
  rdfs:label "Certificate Check Statement"@en ;
  rdfs:comment "Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects"@en ;
  rdfs:subClassOf aec3po:CheckStatement ;
+ rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/59> ;
  rdfs:isDefinedBy aec3po:statement .
 
 aec3po:ChecklistStatement a owl:Class ;
@@ -60,79 +89,61 @@ aec3po:ChecklistStatement a owl:Class ;
  rdfs:subClassOf aec3po:CheckStatement ;
  rdfs:isDefinedBy aec3po:statement .
 
-aec3po:DefinitionStatement a owl:Class ;
- rdfs:label "Definition Statement"@en ;
- rdfs:comment "A type of statement that provides a formal and precise definition for a specific concept or term."@en ;
- rdfs:subClassOf aec3po:Statement ;
- rdfs:isDefinedBy aec3po:statement .
+# human evaluated statement
 
-aec3po:HumanEvaluatedStatement a owl:Class ;
- rdfs:label "Human Evaluated Statement"@en ;
+aec3po:HumanEvaluatedCheckStatement a owl:Class ;
+ rdfs:label "Human Evaluated Check Statement"@en ;
  rdfs:comment "A type of check statement that is evaluated by a human."@en ;
  skos:note "Those are primarily for issues of perception"@en ;
  skos:example "\"is aesthetically appropriate\""@en ;
+ rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/60> ;
  rdfs:subClassOf aec3po:CheckStatement ;
  rdfs:isDefinedBy aec3po:statement .
+
+    aec3po:hasEvaluator a owl:ObjectProperty ;
+        rdfs:label "has evaluator"@en ;
+        rdfs:comment "Links a human evaluated statement to the subdivision that expresses who shall verify this check"@en ;
+        rdfs:domain aec3po:HumanEvaluatedCheckStatement ;
+        rdfs:range aec3po:Statement ;
+        rdfs:isDefinedBy aec3po:statement .
 
 aec3po:NumericalCheckStatement a owl:Class ;
  rdfs:label "Numerical Check Statement"@en ;
  rdfs:comment "A type of check that involves checking one numerical property against another, i.e. x < y or similar." ;
  rdfs:subClassOf aec3po:CheckStatement ;
+ rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/57> ;
  rdfs:isDefinedBy aec3po:statement .
 
 aec3po:BooleanCheckStatement a owl:Class ;
  rdfs:label "Boolean Check Statement"@en ;
  rdfs:comment "A type of check that checks the existence of an element (property) related to a feature of interest."@en ;
+ rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/58> ;
  rdfs:subClassOf aec3po:CheckStatement ;
  rdfs:isDefinedBy aec3po:statement .
 
-aec3po:AndCheck a owl:Class ;
- rdfs:label "And Check"@en ;
+aec3po:AndCheckStatement a owl:Class ;
+ rdfs:label "And Check Statement"@en ;
  rdfs:comment "Check verified if and only if all of its sub-checks are verified."@en ;
  rdfs:subClassOf [ a owl:Restriction ;
   owl:minCardinality 1 ;
-  owl:onProperty aec3po:hasSubCheck ],
+  owl:onProperty aec3po:hasSubdivision ],
  aec3po:ChecklistStatement ;
  rdfs:isDefinedBy aec3po:statement .
 
-aec3po:OrCheck a owl:Class ;
- rdfs:label "Or Check"@en ;
+aec3po:OrCheckStatement a owl:Class ;
+ rdfs:label "Or Check Statement"@en ;
  rdfs:comment "Check verified if and only if at least one of its sub-checks is verified."@en ;
  rdfs:subClassOf [ a owl:Restriction ;
   owl:minCardinality 1 ;
-  owl:onProperty aec3po:hasSubCheck ],
+  owl:onProperty aec3po:hasSubdivision ],
  aec3po:ChecklistStatement ;
  rdfs:isDefinedBy aec3po:statement .
 
-aec3po:hasSubCheck a owl:ObjectProperty ;
- rdfs:label "has sub check"@en ;
- rdfs:comment "Links a AndCheck to the set of checks that all need to be verified. Links a OrCheck to the set of checks that at least one must verify."@en ;
- rdfs:domain [ a owl:Class ; owl:unionOf ( aec3po:CheckListStatement aec3po:CheckMethod ) ] ;
- rdfs:range [ a owl:Class ; owl:unionOf ( aec3po:CheckStatement aec3po:CheckMethod ) ] ;
+aec3po:NotCheckStatement a owl:Class ;
+ rdfs:label "Not Check Statement"@en ;
+ rdfs:comment "Check verified if and only the sub-check is not verified."@en ;
+ rdfs:subClassOf [ a owl:Restriction ;
+  owl:cardinality 1 ;
+  owl:onProperty aec3po:hasSubdivision ] ;
  rdfs:isDefinedBy aec3po:statement .
 
-aec3po:Application a owl:Class ;
- rdfs:label "Application"@en ;
- rdfs:comment "Represents the Applications tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
- rdfs:subClassOf aec3po:Statement ;
- rdfs:isDefinedBy aec3po:statement .
-
-aec3po:Exception a owl:Class ;
- rdfs:label "Exception"@en ;
- rdfs:comment "Represents the Exception tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
- rdfs:subClassOf aec3po:Statement ;
- rdfs:isDefinedBy aec3po:statement .
-
-aec3po:Requirement a owl:Class ;
- rdfs:label "Requirement"@en ;
- rdfs:comment "Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
- rdfs:subClassOf aec3po:Statement ;
- rdfs:isDefinedBy aec3po:statement .
-
-aec3po:Selection a owl:Class ;
- rdfs:label "Selection"@en ;
- rdfs:comment "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
- rdfs:subClassOf aec3po:Statement ;
- rdfs:isDefinedBy aec3po:statement .
-
-[] a owl:AllDifferent ; owl:members ( aec3po:Application aec3po:Selection aec3po:Requirement  aec3po:Exceptions ) .
