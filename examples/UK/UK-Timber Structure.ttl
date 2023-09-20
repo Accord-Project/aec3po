@@ -52,10 +52,9 @@ ex:UK_Eurocode5_EqStatement_6.3 a aec3po:EquationStatement ;
     aec3po:asText "text here from section 6.1.5".
 
 # Link the statements to the DocumentSubdivision using hasPart property
-ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart ( 
-    ex:UK_Eurocode5_EqStatement_6.2
-    ex:UK_Eurocode5_EqStatement_6.3
-) .
+ex:UK_Eurocode5_TimberStructures_Part1 dct:hasPart 
+    ex:UK_Eurocode5_EqStatement_6.2 ,
+    ex:UK_Eurocode5_EqStatement_6.3 .
 
 #---Instantiate the checkStatement expressed in the statement
 
@@ -100,16 +99,15 @@ ex:UK_Eurocode5_Timber_GammaM a aec3po:Property ;
     rdf:type ^^xsd:double .  
 
 #Link all the required data to the statement using the property hasRequiredData
-ex:UK_Eurocode5_NumericalCheckStatement_Timber_CompressionParallel aec3po:hasRequiredData (
-    ex:UK_Eurocode5_Timber_DesignCompressiveStress
-    ex:UK_Eurocode5_Timber_DesignCompressiveStrength
-    ex:UK_Eurocode5_Timber_CompressionResult
-    ex:UK_Eurocode5_Timber_CrossSection_A
-    ex:UK_Eurocode5_Timber_kmod
-    ex:UK_Eurocode5_Timber_ksys
-    ex:UK_Eurocode5_Timber_fcok
-    ex:UK_Eurocode5_Timber_GammaM
-) .
+ex:UK_Eurocode5_NumericalCheckStatement_Timber_CompressionParallel aec3po:hasRequiredData 
+    ex:UK_Eurocode5_Timber_DesignCompressiveStress ,
+    ex:UK_Eurocode5_Timber_DesignCompressiveStrength ,
+    ex:UK_Eurocode5_Timber_CompressionResult ,
+    ex:UK_Eurocode5_Timber_CrossSection_A ,
+    ex:UK_Eurocode5_Timber_kmod ,
+    ex:UK_Eurocode5_Timber_ksys ,
+    ex:UK_Eurocode5_Timber_fcok ,
+    ex:UK_Eurocode5_Timber_GammaM .
 
 # Define and Instantiate the CheckMethod that will operationalize the Statement defined above. The assumption here is that SWRL rules are handeling the "CheckAct".
 
@@ -142,14 +140,13 @@ ex:UK_Eurocode5_Timber_fcok_real a aec3po:Property ;
     aec3po:hasValue 10.0 .  
 
 #Link all the timber design to its properties using hasProperty property 
-ex:UK_Eurocode5_Timber_design aec3po:hasProperty (
-   ex:UK_Eurocode5_Timber_CrossSection_A_real
-   ex:UK_Eurocode5_Timber_ksys_real 
-   ex:UK_Eurocode5_Timber_kmod_real
-   ex:UK_Eurocode5_Timber_GammaM_real
-   ex:UK_Eurocode5_Timber_DesignCompressiveStrength_real
-   ex:UK_Eurocode5_Timber_fcok_real
-) .       
+ex:UK_Eurocode5_Timber_design aec3po:hasProperty 
+   ex:UK_Eurocode5_Timber_CrossSection_A_real ,
+   ex:UK_Eurocode5_Timber_ksys_real  ,
+   ex:UK_Eurocode5_Timber_kmod_real ,
+   ex:UK_Eurocode5_Timber_GammaM_real ,
+   ex:UK_Eurocode5_Timber_DesignCompressiveStrength_real ,
+   ex:UK_Eurocode5_Timber_fcok_real .       
 
 # Link the timber design to the respective CheckMethod using forDesign property
 ex:UK_Eurocode5_NumericalCheckMethod_Timber_CompressionParallel aec3po:forDesign ex:UK_Eurocode5_Timber_design .
