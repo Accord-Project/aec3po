@@ -61,6 +61,7 @@ ex:ramp_numericalCheckStatement_Width a aec3po:NumericalCheckStatement ;
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_FixedStructure as a subClassOf CheckStatement
 ex:ramp_humanEvaluatedCheckStatement_FixedStructure a aec3po:HumanEvaluatedCheckStatement ;
+    aec3po:asText "if the ramp is not connected to a fixed structure ..." ;
     rdf:type aec3po:CheckStatement .
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_ProtectiveEdge as a subClassOf CheckStatement
