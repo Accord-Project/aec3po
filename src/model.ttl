@@ -24,7 +24,7 @@ aec3po:Model a owl:Class ;
   rdfs:comment """A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information.""" ;
   rdfs:isDefinedBy aec3po:model .
 
-aec3po:name a owl:ObjectProperty ;
+aec3po:name a owl:DatatypeProperty ;
  rdfs:label "name"@en ;
  rdfs:comment "The name or the identifier of the BIM model."@en ;
  rdfs:domain schema:3DModel ;
@@ -32,7 +32,7 @@ aec3po:name a owl:ObjectProperty ;
  owl:inverseOf schema:subjectOf ;
  owl:equivalentProperty schema:about .
 
-aec3po:description a owl:ObjectProperty ;
+aec3po:description a owl:DatatypeProperty ;
  rdfs:label "description"@en ;
  rdfs:comment "A textual description providing additional details about the BIM model."@en ;
  rdfs:domain schema:3DModel ;
@@ -54,7 +54,7 @@ aec3po:locationCoverage a owl:ObjectProperty ;
  owl:unionOf ( schema:Place aec3po:AdministrativeArea ) ] ;
  owl:equivalentProperty schema:spatialCoverage .
 
-aec3po:material a owl:ObjectProperty ;
+aec3po:material a owl:DatatypeProperty ;
  rdfs:label "material"@en ;
  rdfs:comment "The materials used for different parts of the building, such as walls, floors, and roofs."@en ;
  rdfs:domain schema:3DModel ;
