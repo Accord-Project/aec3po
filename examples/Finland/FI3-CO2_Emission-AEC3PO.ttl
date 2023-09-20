@@ -45,12 +45,11 @@ ex:FI_Dec_Env_Doc_DocSubdivision_Section_1_New a aec3po:DocumentSubdivision ;
     rdfs:comment "this is a new regulation that probably will be part of the new Building Act related to the Decree about the climate assessment." .      
 
 # Link the DocumentSubdivisions to the Document using hasPart property
-ex:FI_Dec_Env_Doc dct:hasPart ( 
-    ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
-    ex:FI_Dec_Env_Doc_DocSubdivision_Section_23
-    ex:FI_Dec_Env_Doc_DocSubdivision_Section_24
-    ex:FI_Dec_Env_Doc_DocSubdivision_Section_1_New
-    ). 
+ex:FI_Dec_Env_Doc dct:hasPart 
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 ,
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 ,
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 ,
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_1_New . 
 
 # ---- Define the statements of the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
 
@@ -65,7 +64,7 @@ ex:FI_statement_2_section_4 a aec3po:NumericalCheckStatement ;
     aec3po:asText "The assessment period for the use phase of a building intended to be mobile and temporary shall be the length of the temporary use, up to a maximum of 50 years." .
 
 # Link the first and the second statements to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 using hasPart property
-ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 dct:hasPart  ( ex:FI_statement_1_section_4  ex:FI_statement_2_section_4 ) . 
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 dct:hasPart   ex:FI_statement_1_section_4 , ex:FI_statement_2_section_4 . 
 
 # ---- Define the statement of the second DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23
 ex:FI_statement_1_section_23 a aec3po:CheckListStatement ;
@@ -101,28 +100,25 @@ ex:FI_statement_1_section_24 a aec3po:Statement ;
         
 # Define a container that contains the two tables defined in the statement of section 24, and define the two tables with their contents. 
 ex:container_tables_section_24 a aec3po:Container ;
-    aec3po:contains (
-        ex:table_section_24_carbon_footprint 
-        ex:table_section_24_carbon_handprint
-
-    ) .
+    aec3po:contains 
+        ex:table_section_24_carbon_footprint ,
+        ex:table_section_24_carbon_handprint .
 
 # Define the table ex:table_section_24_carbon_footprint 
 ex:table_section_24_carbon_footprint a aec3po:Table ;
-    aec3po:contains (
-        ex:table_section_24_carbon_footprint_column_1
-        ex:table_section_24_carbon_footprint_column_2
-        ex:table_section_24_carbon_footprint_row_1
-        ex:table_section_24_carbon_footprint_row_2
-        ex:table_section_24_carbon_footprint_row_3
-        ex:table_section_24_carbon_footprint_row_4
-        ex:table_section_24_carbon_footprint_row_5
-        ex:table_section_24_carbon_footprint_row_6
-        ex:table_section_24_carbon_footprint_row_7
-        ex:table_section_24_carbon_footprint_row_8
-        ex:table_section_24_carbon_footprint_row_9
-        ex:table_section_24_carbon_footprint_row_10
-    )  .
+    aec3po:contains 
+        ex:table_section_24_carbon_footprint_column_1 ,
+        ex:table_section_24_carbon_footprint_column_2 ,
+        ex:table_section_24_carbon_footprint_row_1 ,
+        ex:table_section_24_carbon_footprint_row_2 ,
+        ex:table_section_24_carbon_footprint_row_3 ,
+        ex:table_section_24_carbon_footprint_row_4 ,
+        ex:table_section_24_carbon_footprint_row_5 ,
+        ex:table_section_24_carbon_footprint_row_6 ,
+        ex:table_section_24_carbon_footprint_row_7 , 
+        ex:table_section_24_carbon_footprint_row_8 ,
+        ex:table_section_24_carbon_footprint_row_9 , 
+        ex:table_section_24_carbon_footprint_row_10 .
 
 # Define column 1 of the table table_section_24_carbon_footprint
 ex:table_section_24_carbon_footprint_column_1 a aec3po:Column ;
@@ -130,10 +126,9 @@ ex:table_section_24_carbon_footprint_column_1 a aec3po:Column ;
 # Define column 2 of the table table_section_24_carbon_footprint
 ex:table_section_24_carbon_footprint_column_2 a aec3po:Column ;
    aec3po:hasValue "Carbon footprint" ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_column_2_subcolumn_1
-    ex:table_section_24_carbon_footprint_column_2_subcolumn_2
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_column_2_subcolumn_1 ,
+    ex:table_section_24_carbon_footprint_column_2_subcolumn_2 .
 #Define the subculumns of column 2 
 #subColumn 1
 ex:table_section_24_carbon_footprint_column_2_subcolumn_1 a aec3po:Column ;
@@ -145,10 +140,9 @@ ex:table_section_24_carbon_footprint_column_2_subcolumn_2 a aec3po:Column ;
 #Define the rows of the table table_section_24_carbon_footprint
 #row_1
 ex:table_section_24_carbon_footprint_row_1 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_1.1
-    ex:table_section_24_carbon_footprint_cell_1.2
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_1.1 ,
+    ex:table_section_24_carbon_footprint_cell_1.2 .
 #Define the cells of row_1
 #Cell 1.1
 ex:table_section_24_carbon_footprint_cell_1.1 a aec3po:Cell ;
@@ -159,11 +153,10 @@ ex:table_section_24_carbon_footprint_cell_1.2 a aec3po:Cell ;
 
 #row_2
 ex:table_section_24_carbon_footprint_row_2 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_2.1
-    ex:table_section_24_carbon_footprint_cell_2.2
-    ex:table_section_24_carbon_footprint_cell_2.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_2.1 ,
+    ex:table_section_24_carbon_footprint_cell_2.2 ,
+    ex:table_section_24_carbon_footprint_cell_2.3 .
 #Define the cells of row_2
 #Cell 2.1
 ex:table_section_24_carbon_footprint_cell_2.1 a aec3po:Cell ;
@@ -177,11 +170,10 @@ ex:table_section_24_carbon_footprint_cell_2.3 a aec3po:Cell ;
 
 #row_3
 ex:table_section_24_carbon_footprint_row_3 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_3.1
-    ex:table_section_24_carbon_footprint_cell_3.2
-    ex:table_section_24_carbon_footprint_cell_3.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_3.1 ,
+    ex:table_section_24_carbon_footprint_cell_3.2 ,
+    ex:table_section_24_carbon_footprint_cell_3.3 .
 #Define the cells of row_3
 #Cell 3.1
 ex:table_section_24_carbon_footprint_cell_3.1 a aec3po:Cell ;
@@ -195,11 +187,10 @@ ex:table_section_24_carbon_footprint_cell_3.3 a aec3po:Cell ;
 
 #row_4
 ex:table_section_24_carbon_footprint_row_4 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_4.1
-    ex:table_section_24_carbon_footprint_cell_4.2
-    ex:table_section_24_carbon_footprint_cell_4.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_4.1 ,
+    ex:table_section_24_carbon_footprint_cell_4.2 ,
+    ex:table_section_24_carbon_footprint_cell_4.3 .
 #Define the cells of row_4
 #Cell 4.1
 ex:table_section_24_carbon_footprint_cell_4.1 a aec3po:Cell ;
@@ -213,11 +204,10 @@ ex:table_section_24_carbon_footprint_cell_4.3 a aec3po:Cell ;
 
 #row_5
 ex:table_section_24_carbon_footprint_row_5 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_5.1
-    ex:table_section_24_carbon_footprint_cell_5.2
-    ex:table_section_24_carbon_footprint_cell_5.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_5.1 ,
+    ex:table_section_24_carbon_footprint_cell_5.2 ,
+    ex:table_section_24_carbon_footprint_cell_5.3 .
 #Define the cells of row_5
 #Cell 5.1
 ex:table_section_24_carbon_footprint_cell_5.1 a aec3po:Cell ;
@@ -231,11 +221,10 @@ ex:table_section_24_carbon_footprint_cell_5.3 a aec3po:Cell ;
 
 #row_6
 ex:table_section_24_carbon_footprint_row_6 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_6.1
-    ex:table_section_24_carbon_footprint_cell_6.2
-    ex:table_section_24_carbon_footprint_cell_6.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_6.1 ,
+    ex:table_section_24_carbon_footprint_cell_6.2 ,
+    ex:table_section_24_carbon_footprint_cell_6.3 .
 #Define the cells of row_6
 #Cell 6.1
 ex:table_section_24_carbon_footprint_cell_6.1 a aec3po:Cell ;
@@ -249,11 +238,10 @@ ex:table_section_24_carbon_footprint_cell_6.3 a aec3po:Cell ;
 
 #row_7
 ex:table_section_24_carbon_footprint_row_7 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_7.1
-    ex:table_section_24_carbon_footprint_cell_7.2
-    ex:table_section_24_carbon_footprint_cell_7.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_7.1 ,
+    ex:table_section_24_carbon_footprint_cell_7.2 ,
+    ex:table_section_24_carbon_footprint_cell_7.3 .
 #Define the cells of row_7
 #Cell 7.1
 ex:table_section_24_carbon_footprint_cell_7.1 a aec3po:Cell ;
@@ -267,11 +255,10 @@ ex:table_section_24_carbon_footprint_cell_7.3 a aec3po:Cell ;
 
 #row_8
 ex:table_section_24_carbon_footprint_row_8 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_8.1
-    ex:table_section_24_carbon_footprint_cell_8.2
-    ex:table_section_24_carbon_footprint_cell_8.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_8.1 ,
+    ex:table_section_24_carbon_footprint_cell_8.2 ,
+    ex:table_section_24_carbon_footprint_cell_8.3 .
 #Define the cells of row_8
 #Cell 8.1
 ex:table_section_24_carbon_footprint_cell_8.1 a aec3po:Cell ;
@@ -285,11 +272,10 @@ ex:table_section_24_carbon_footprint_cell_8.3 a aec3po:Cell ;
 
 #row_9
 ex:table_section_24_carbon_footprint_row_9 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_9.1
-    ex:table_section_24_carbon_footprint_cell_9.2
-    ex:table_section_24_carbon_footprint_cell_9.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_9.1 ,
+    ex:table_section_24_carbon_footprint_cell_9.2 ,
+    ex:table_section_24_carbon_footprint_cell_9.3 .
 #Define the cells of row_9
 #Cell 9.1
 ex:table_section_24_carbon_footprint_cell_9.1 a aec3po:Cell ;
@@ -303,11 +289,10 @@ ex:table_section_24_carbon_footprint_cell_9.3 a aec3po:Cell ;
 
 #row_10
 ex:table_section_24_carbon_footprint_row_10 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_footprint_cell_10.1
-    ex:table_section_24_carbon_footprint_cell_10.2
-    ex:table_section_24_carbon_footprint_cell_10.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_10.1 ,
+    ex:table_section_24_carbon_footprint_cell_10.2 ,
+    ex:table_section_24_carbon_footprint_cell_10.3 .
 #Define the cells of row_10
 #Cell 10.1
 ex:table_section_24_carbon_footprint_cell_10.1 a aec3po:Cell ;
@@ -321,17 +306,16 @@ ex:table_section_24_carbon_footprint_cell_10.3 a aec3po:Cell ;
 
 # Define the table ex:table_section_24_carbon_handprint
 ex:table_section_24_carbon_handprint a aec3po:Table ;
-    aec3po:contains (
-        ex:table_section_24_carbon_handprint_column_1
-        ex:table_section_24_carbon_handprint_column_2
-        ex:table_section_24_carbon_handprint_row_1
-        ex:table_section_24_carbon_handprint_row_2
-        ex:table_section_24_carbon_handprint_row_3
-        ex:table_section_24_carbon_handprint_row_4
-        ex:table_section_24_carbon_handprint_row_5
-        ex:table_section_24_carbon_handprint_row_6
-        ex:table_section_24_carbon_handprint_row_7
-    )  .
+    aec3po:contains 
+        ex:table_section_24_carbon_handprint_column_1 ,
+        ex:table_section_24_carbon_handprint_column_2 ,
+        ex:table_section_24_carbon_handprint_row_1 ,
+        ex:table_section_24_carbon_handprint_row_2 ,
+        ex:table_section_24_carbon_handprint_row_3 ,
+        ex:table_section_24_carbon_handprint_row_4 ,
+        ex:table_section_24_carbon_handprint_row_5 ,
+        ex:table_section_24_carbon_handprint_row_6 ,
+        ex:table_section_24_carbon_handprint_row_7 .
 
 # Define column 1 of the table table_section_24_carbon_handprint
 ex:table_section_24_carbon_handprint_column_1 a aec3po:Column ;
@@ -339,10 +323,9 @@ ex:table_section_24_carbon_handprint_column_1 a aec3po:Column ;
 # Define column 2 of the table table_section_24_carbon_handprint
 ex:table_section_24_carbon_handprint_column_2 a aec3po:Column ;
    aec3po:hasValue "Carbon handprint" ;
-   aec3po:contains (
-    ex:table_section_24_carbon_handprint_column_2_subcolumn_1
-    ex:table_section_24_carbon_handprint_column_2_subcolumn_2
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_column_2_subcolumn_1 ,
+    ex:table_section_24_carbon_handprint_column_2_subcolumn_2 .
 #Define the subculumns of column 2 
 #subColumn 1
 ex:table_section_24_carbon_handprint_column_2_subcolumn_1 a aec3po:Column ;
@@ -354,10 +337,9 @@ ex:table_section_24_carbon_handprint_column_2_subcolumn_2 a aec3po:Column ;
 #Define the rows of the table table_section_24_carbon_handprint
 #row_1
 ex:table_section_24_carbon_handprint_row_1 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_handprint_cell_1.1
-    ex:table_section_24_carbon_handprint_cell_1.2
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_1.1 ,
+    ex:table_section_24_carbon_handprint_cell_1.2 .
 #Define the cells of row_1
 #Cell 1.1
 ex:table_section_24_carbon_handprint_cell_1.1 a aec3po:Cell ;
@@ -368,11 +350,11 @@ ex:table_section_24_carbon_handprint_cell_1.2 a aec3po:Cell ;
 
 #row_2
 ex:table_section_24_carbon_handprint_row_2 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_handprint_cell_2.1
-    ex:table_section_24_carbon_handprint_cell_2.2
-    ex:table_section_24_carbon_handprint_cell_2.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_2.1 ,
+    ex:table_section_24_carbon_handprint_cell_2.2 ,
+    ex:table_section_24_carbon_handprint_cell_2.3 .
+   
 #Define the cells of row_2
 #Cell 2.1
 ex:table_section_24_carbon_handprint_cell_2.1 a aec3po:Cell ;
@@ -386,11 +368,10 @@ ex:table_section_24_carbon_handprint_cell_2.3 a aec3po:Cell ;
 
 #row_3
 ex:table_section_24_carbon_handprint_row_3 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_handprint_cell_3.1
-    ex:table_section_24_carbon_handprint_cell_3.2
-    ex:table_section_24_carbon_handprint_cell_3.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_3.1 ,
+    ex:table_section_24_carbon_handprint_cell_3.2 ,
+    ex:table_section_24_carbon_handprint_cell_3.3 .
 #Define the cells of row_3
 #Cell 3.1
 ex:table_section_24_carbon_handprint_cell_3.1 a aec3po:Cell ;
@@ -404,11 +385,10 @@ ex:table_section_24_carbon_handprint_cell_3.3 a aec3po:Cell ;
 
 #row_4
 ex:table_section_24_carbon_handprint_row_4 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_handprint_cell_4.1
-    ex:table_section_24_carbon_handprint_cell_4.2
-    ex:table_section_24_carbon_handprint_cell_4.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_4.1 ,
+    ex:table_section_24_carbon_handprint_cell_4.2 ,
+    ex:table_section_24_carbon_handprint_cell_4.3 .
 #Define the cells of row_4
 #Cell 4.1
 ex:table_section_24_carbon_handprint_cell_4.1 a aec3po:Cell ;
@@ -422,11 +402,10 @@ ex:table_section_24_carbon_handprint_cell_4.3 a aec3po:Cell ;
 
 #row_5
 ex:table_section_24_carbon_handprint_row_5 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_handprint_cell_5.1
-    ex:table_section_24_carbon_handprint_cell_5.2
-    ex:table_section_24_carbon_handprint_cell_5.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_5.1 ,
+    ex:table_section_24_carbon_handprint_cell_5.2 ,
+    ex:table_section_24_carbon_handprint_cell_5.3 .
 #Define the cells of row_5
 #Cell 5.1
 ex:table_section_24_carbon_handprint_cell_5.1 a aec3po:Cell ;
@@ -440,11 +419,10 @@ ex:table_section_24_carbon_handprint_cell_5.3 a aec3po:Cell ;
 
 #row_6
 ex:table_section_24_carbon_handprint_row_6 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_handprint_cell_6.1
-    ex:table_section_24_carbon_handprint_cell_6.2
-    ex:table_section_24_carbon_handprint_cell_6.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_6.1 ,
+    ex:table_section_24_carbon_handprint_cell_6.2 ,
+    ex:table_section_24_carbon_handprint_cell_6.3 .
 #Define the cells of row_6
 #Cell 6.1
 ex:table_section_24_carbon_handprint_cell_6.1 a aec3po:Cell ;
@@ -458,11 +436,10 @@ ex:table_section_24_carbon_handprint_cell_6.3 a aec3po:Cell ;
 
 #row_7
 ex:table_section_24_carbon_handprint_row_7 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_24_carbon_handprint_cell_7.1
-    ex:table_section_24_carbon_handprint_cell_7.2
-    ex:table_section_24_carbon_handprint_cell_7.3
-   ) .
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_7.1 ,
+    ex:table_section_24_carbon_handprint_cell_7.2 ,
+    ex:table_section_24_carbon_handprint_cell_7.3 .
 #Define the cells of row_7
 #Cell 7.1
 ex:table_section_24_carbon_handprint_cell_7.1 a aec3po:Cell ;
@@ -499,18 +476,17 @@ ex:container_table_section_new_1 a aec3po:Container ;
 
 # Define the table ex:table_section_new_1_total_carbon_footprint 
 ex:table_section_new_1_total_carbon_footprint a aec3po:Table ;
-    aec3po:contains (
-        ex:table_section_new_1_total_carbon_footprint_column_1
-        ex:table_section_new_1_total_carbon_footprint_column_2
-        ex:table_section_new_1_total_carbon_footprint_row_1
-        ex:table_section_new_1_total_carbon_footprint_row_2
-        ex:table_section_new_1_total_carbon_footprint_row_3
-        ex:table_section_new_1_total_carbon_footprint_row_4
-        ex:table_section_new_1_total_carbon_footprint_row_5
-        ex:table_section_new_1_total_carbon_footprint_row_6
-        ex:table_section_new_1_total_carbon_footprint_row_7
-        ex:table_section_new_1_total_carbon_footprint_row_8
-    )  . 
+    aec3po:contains 
+        ex:table_section_new_1_total_carbon_footprint_column_1 ,
+        ex:table_section_new_1_total_carbon_footprint_column_2 ,
+        ex:table_section_new_1_total_carbon_footprint_row_1 ,
+        ex:table_section_new_1_total_carbon_footprint_row_2 ,
+        ex:table_section_new_1_total_carbon_footprint_row_3 ,
+        ex:table_section_new_1_total_carbon_footprint_row_4 ,
+        ex:table_section_new_1_total_carbon_footprint_row_5 ,
+        ex:table_section_new_1_total_carbon_footprint_row_6 ,
+        ex:table_section_new_1_total_carbon_footprint_row_7 ,
+        ex:table_section_new_1_total_carbon_footprint_row_8 . 
 
 # Define column 1 of the table ex:table_section_new_1_total_carbon_footprint
 ex:table_section_new_1_total_carbon_footprint_column_1 a aec3po:Column ;
@@ -522,10 +498,9 @@ ex:table_section_new_1_total_carbon_footprint_column_2 a aec3po:Column ;
 #Define the rows of the table ex:table_section_new_1_total_carbon_footprint
 #row_1
 ex:table_section_new_1_total_carbon_footprint_row_1 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_new_1_total_carbon_footprint_cell_1.1
-    ex:table_section_new_1_total_carbon_footprint_cell_1.2
-   ) .
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_1.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_1.2 .
 #Define the cells of row_1
 #Cell 1.1
 ex:table_section_new_1_total_carbon_footprint_cell_1.1 a aec3po:Cell ;
@@ -536,10 +511,9 @@ ex:table_section_new_1_total_carbon_footprint_cell_1.2 a aec3po:Cell ;
 
 #row_2
 ex:table_section_new_1_total_carbon_footprint_row_2 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_new_1_total_carbon_footprint_cell_2.1
-    ex:table_section_new_1_total_carbon_footprint_cell_2.2
-   ) .
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_2.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_2.2 .
 #Define the cells of row_2
 #Cell 2.1
 ex:table_section_new_1_total_carbon_footprint_cell_2.1 a aec3po:Cell ;
@@ -550,10 +524,9 @@ ex:table_section_new_1_total_carbon_footprint_cell_2.2 a aec3po:Cell ;
 
 #row_3
 ex:table_section_new_1_total_carbon_footprint_row_3 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_new_1_total_carbon_footprint_cell_3.1
-    ex:table_section_new_1_total_carbon_footprint_cell_3.2
-   ) .
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_3.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_3.2 .
 #Define the cells of row_3
 #Cell 3.1
 ex:table_section_new_1_total_carbon_footprint_cell_3.1 a aec3po:Cell ;
@@ -564,10 +537,9 @@ ex:table_section_new_1_total_carbon_footprint_cell_3.2 a aec3po:Cell ;
 
 #row_4
 ex:table_section_new_1_total_carbon_footprint_row_4 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_new_1_total_carbon_footprint_cell_4.1
-    ex:table_section_new_1_total_carbon_footprint_cell_4.2
-   ) .
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_4.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_4.2 .
 #Define the cells of row_4
 #Cell 4.1
 ex:table_section_new_1_total_carbon_footprint_cell_4.1 a aec3po:Cell ;
@@ -578,10 +550,9 @@ ex:table_section_new_1_total_carbon_footprint_cell_4.2 a aec3po:Cell ;
 
 #row_6
 ex:table_section_new_1_total_carbon_footprint_row_6 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_new_1_total_carbon_footprint_cell_6.1
-    ex:table_section_new_1_total_carbon_footprint_cell_6.2
-   ) .
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_6.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_6.2 .
 #Define the cells of row_6
 #Cell 6.1
 ex:table_section_new_1_total_carbon_footprint_cell_6.1 a aec3po:Cell ;
@@ -592,10 +563,9 @@ ex:table_section_new_1_total_carbon_footprint_cell_6.2 a aec3po:Cell ;
 
 #row_7
 ex:table_section_new_1_total_carbon_footprint_row_7 a aec3po:Row ;
-   aec3po:contains (
-    ex:table_section_new_1_total_carbon_footprint_cell_7.1
-    ex:table_section_new_1_total_carbon_footprint_cell_7.2
-   ) .
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_7.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_7.2 .
 #Define the cells of row_7
 #Cell 7.1
 ex:table_section_new_1_total_carbon_footprint_cell_7.1 a aec3po:Cell ;
@@ -720,21 +690,20 @@ ex:FI3_building_ClimateReportAuthorName a aec3po:Property ;
 ex:FI3_building_ClimateReportAuthorTraining a aec3po:Property .   
 
 #Link the climate report to its properties using dct:hasPart
-ex:FI3_building_ClimateReport dct:hasPart (
-    ex:FI3_building_ID
-    ex:FI3_building_UseCategoryName
-    ex:FI3_building_HeatedFloorArea
-    ex:FI3_building_SiteArea
-    ex:FI3_building_CarbonAssessmentResult
-    ex:FI3_building_Users
-    ex:FI3_building_EnergyConsumption
-    ex:FI3_building_MainConstructionMaterial
-    ex:FI3_building_DesignLife
-    ex:FI3_building_CalculationSoftware
-    ex:FI3_building_ClimateReportDate
-    ex:FI3_building_ClimateReportAuthorName
-    ex:FI3_building_ClimateReportAuthorTraining
-) .
+ex:FI3_building_ClimateReport dct:hasPart 
+    ex:FI3_building_ID ,
+    ex:FI3_building_UseCategoryName ,
+    ex:FI3_building_HeatedFloorArea ,
+    ex:FI3_building_SiteArea ,
+    ex:FI3_building_CarbonAssessmentResult ,
+    ex:FI3_building_Users ,
+    ex:FI3_building_EnergyConsumption ,
+    ex:FI3_building_MainConstructionMaterial ,
+    ex:FI3_building_DesignLife ,
+    ex:FI3_building_CalculationSoftware ,
+    ex:FI3_building_ClimateReportDate ,
+    ex:FI3_building_ClimateReportAuthorName ,
+    ex:FI3_building_ClimateReportAuthorTraining .
 
 ex:FI3_ClimateReport_carbonFootprint_UseCategory a aec3po:Property ;
     rdf:type rdf:List ;
@@ -787,15 +756,13 @@ ex:FI3_ClimateReport_carbonFootprint_UseCategory_New a aec3po:Property ;
     rdf:_7 "Other " .
 
 ex:FI3_ClimateReport_carbonFootprint_TotalCarbonFootprint_New a aec3po:Property ;
-    aec3po:hasValue (
-        80
-        60
-        100
-        120
-        100
-        120
-        
-    ) ;
+    aec3po:hasValue 
+        80 ,
+        60 ,
+        100 ,
+        120 ,
+        100 ,
+        120 ;
     qudt:hasUnit "kgCO2e/m2/a" . 
 
 ## Define the required data for each statement
@@ -804,21 +771,19 @@ ex:FI_statement_2_section_4 aec3po:hasRequiredData ex:FI3_building_assessmentPer
 
 ex:FI_statement_1_section_23 aec3po:hasRequiredData ex:FI3_building_ClimateReport .
 
-ex:FI_statement_1_section_24 aec3po:hasRequiredData (
-    ex:FI3_building_ClimateReport 
-    ex:FI3_ClimateReport_carbonFootprint_UseCategory
-    ex:FI3_ClimateReport_carbonFootprint_Unit_Building
-    ex:FI3_ClimateReport_carbonFootprint_Unit_SiteBuilding
-    ex:FI3_ClimateReport_carbonHandprint_UseCategory
-    ex:FI3_ClimateReport_carbonHandprint_Unit_Building
-    ex:FI3_ClimateReport_carbonHandprint_Unit_SiteBuilding
-) .
+ex:FI_statement_1_section_24 aec3po:hasRequiredData 
+    ex:FI3_building_ClimateReport  ,
+    ex:FI3_ClimateReport_carbonFootprint_UseCategory ,
+    ex:FI3_ClimateReport_carbonFootprint_Unit_Building ,
+    ex:FI3_ClimateReport_carbonFootprint_Unit_SiteBuilding ,
+    ex:FI3_ClimateReport_carbonHandprint_UseCategory ,
+    ex:FI3_ClimateReport_carbonHandprint_Unit_Building ,
+    ex:FI3_ClimateReport_carbonHandprint_Unit_SiteBuilding .
 
-ex:FI_statement_1_section_1_New aec3po:hasRequiredData (
-    ex:FI3_building_ClimateReport 
-    ex:FI3_ClimateReport_carbonFootprint_UseCategory_New
-    ex:FI3_ClimateReport_carbonFootprint_TotalCarbonFootprint_New
-) .
+ex:FI_statement_1_section_1_New aec3po:hasRequiredData 
+    ex:FI3_building_ClimateReport ,
+    ex:FI3_ClimateReport_carbonFootprint_UseCategory_New ,
+    ex:FI3_ClimateReport_carbonFootprint_TotalCarbonFootprint_New .
 
 # Define and Instantiate all the CheckMethod(s) that will operationalize the Statements defined above. The assumption here is that microservices are handeling the "CheckAct".
 
@@ -852,31 +817,29 @@ ex:FI3_BooleanCheckMethod_ClimateReportAuthorTraining rdf:type aec3po:Proceduria
 
 # Instantiate the AndCheck for the ex:FI3_booleanCheckMethod_AssessmentReport
 ex:FI3_AndCheck_AssessmentReport a aec3po:AndCheck ;
-    aec3po:hasSubCheck (
-        ex:FI3_BooleanCheckMethod_BuildingID 
-        ex:FI3_BooleanCheckMethod_UseCategoryName 
-        ex:FI3_BooleanCheckMethod_HeatedFloorArea   
-        ex:FI3_BooleanCheckMethod_SiteArea  
-        ex:FI3_BooleanCheckMethod_CarbonAssessmentResult    
-        ex:FI3_BooleanCheckMethod_Users 
-        ex:FI3_BooleanCheckMethod_EnergyConsumption 
-        ex:FI3_BooleanCheckMethod_assessmentPeriod 
-        ex:FI3_BooleanCheckMethod_MainConstructionMaterial    
-        ex:FI3_BooleanCheckMethod_DesignLife 
-        ex:FI3_BooleanCheckMethod_CalculationSoftware 
-        ex:FI3_BooleanCheckMethod_ClimateReportDate   
-        ex:FI3_BooleanCheckMethod_ClimateReportAuthorName 
-        ex:FI3_BooleanCheckMethod_ClimateReportAuthorTraining 
-    ) .
+    aec3po:hasSubCheck 
+        ex:FI3_BooleanCheckMethod_BuildingID ,
+        ex:FI3_BooleanCheckMethod_UseCategoryName  ,
+        ex:FI3_BooleanCheckMethod_HeatedFloorArea   ,
+        ex:FI3_BooleanCheckMethod_SiteArea  ,
+        ex:FI3_BooleanCheckMethod_CarbonAssessmentResult    ,
+        ex:FI3_BooleanCheckMethod_Users ,
+        ex:FI3_BooleanCheckMethod_EnergyConsumption ,
+        ex:FI3_BooleanCheckMethod_assessmentPeriod ,
+        ex:FI3_BooleanCheckMethod_MainConstructionMaterial   , 
+        ex:FI3_BooleanCheckMethod_DesignLife ,
+        ex:FI3_BooleanCheckMethod_CalculationSoftware ,
+        ex:FI3_BooleanCheckMethod_ClimateReportDate   ,
+        ex:FI3_BooleanCheckMethod_ClimateReportAuthorName ,
+        ex:FI3_BooleanCheckMethod_ClimateReportAuthorTraining .
 
 # Instantiate the AndCheck related to the four statements
 ex:FI3_AndCheck a aec3po:AndCheck ;
-    aec3po:hasSubCheck (
-        ex:FI3_numericalCheckMethod_AssessmentPeriod
-        ex:FI3_AndCheck_AssessmentReport
-        ex:FI3_categoryCheckMethod_CarbonAssessmentResult
-        ex:FI3_categoryCheckMethod_CarbonFootprintResult
-    ) .
+    aec3po:hasSubCheck 
+        ex:FI3_numericalCheckMethod_AssessmentPeriod ,
+        ex:FI3_AndCheck_AssessmentReport ,
+        ex:FI3_categoryCheckMethod_CarbonAssessmentResult ,
+        ex:FI3_categoryCheckMethod_CarbonFootprintResult .
 # Start describing the "real" Buildin from the Finnish Demo Case - FI3
 # Define the design of the building as a 3DModel
 ex:FI3_building_design a aec3po:Design ;
@@ -894,10 +857,9 @@ ex:FI3_building_assessmentPeriodProperty a aec3po:Property ;
     aec3po:hasValue 50 ;
      qudt:hasUnit "years" .
 
-ex:FI3_design_length_AssessmentPeriod aec3po:hasProperty (
-    ex:FI3_building_DesignLifeProperty
-    ex:FI3_building_assessmentPeriodProperty
-) .
+ex:FI3_design_length_AssessmentPeriod aec3po:hasProperty 
+    ex:FI3_building_DesignLifeProperty ,
+    ex:FI3_building_assessmentPeriodProperty .
 
 ## Define the design of the climate report
 ex:FI3_design_climateReport a aec3po:PropertyDesign .
@@ -955,22 +917,21 @@ ex:FI3_building_ClimateReportAuthorTrainingProperty a aec3po:Property ;
     aec3po:hasValue "Ing. PhD in civil engineering" .    
 
 #Link the design ex:FI3_design_climateReport_content to its properties with hasProperty
-ex:FI3_design_climateReport_contentPropertyDesign aec3po:hasProperty (
-     ex:FI3_building_IDProperty
-     ex:FI3_building_UseCategoryNameProperty
-     ex:FI3_building_HeatedFloorAreaProperty
-     ex:FI3_building_SiteAreaProperty
-     ex:FI3_building_AssessmentResultProperty
-     ex:FI3_building_UsersProperty
-     ex:FI3_building_EnergyConsumptionProperty
-     ex:FI3_building_assessmentPeriodProperty
-     ex:FI3_building_MainConstructionMaterialProperty
-     ex:FI3_building_DesignLifeProperty
-     ex:FI3_building_CalculationSoftwareProperty
-     ex:FI3_building_ClimateReportDateProperty
-     ex:FI3_building_ClimateReportAuthorNameProperty
-     ex:FI3_building_ClimateReportAuthorTrainingProperty
-) .
+ex:FI3_design_climateReport_contentPropertyDesign aec3po:hasProperty 
+     ex:FI3_building_IDProperty ,
+     ex:FI3_building_UseCategoryNameProperty ,
+     ex:FI3_building_HeatedFloorAreaProperty ,
+     ex:FI3_building_SiteAreaProperty ,
+     ex:FI3_building_AssessmentResultProperty ,
+     ex:FI3_building_UsersProperty ,
+     ex:FI3_building_EnergyConsumptionProperty ,
+     ex:FI3_building_assessmentPeriodProperty ,
+     ex:FI3_building_MainConstructionMaterialProperty ,
+     ex:FI3_building_DesignLifeProperty ,
+     ex:FI3_building_CalculationSoftwareProperty ,
+     ex:FI3_building_ClimateReportDateProperty ,
+     ex:FI3_building_ClimateReportAuthorNameProperty ,
+     ex:FI3_building_ClimateReportAuthorTrainingProperty .
 
 ##Define the design of the Assessment Result
 ex:FI3_building_AssessmentResultPropertyDesign a aec3po:PropertyDesign .
@@ -1012,26 +973,22 @@ ex:FI3_building_AssessmentResultProperty_D1 a aec3po:Property ;
    qudt:hasUnit "kWh/m2a" .          
 
 ##Link the above properties to the propertyDesign ex:FI3_building_AssessmentResultPropertyDesign
-ex:FI3_building_AssessmentResultPropertyDesign aec3po:hasProperty (
-    ex:FI3_building_AssessmentResultProperty_A1-A3
-    ex:FI3_building_AssessmentResultProperty_A4
-    ex:FI3_building_AssessmentResultProperty_A5
-    ex:FI3_building_AssessmentResultProperty_B4
-    ex:FI3_building_AssessmentResultProperty_B6
-    ex:FI3_building_AssessmentResultProperty_C1
-    ex:FI3_building_AssessmentResultProperty_C2
-    ex:FI3_building_AssessmentResultProperty_C4
-    ex:FI3_building_AssessmentResultProperty_D1
-
-) .
+ex:FI3_building_AssessmentResultPropertyDesign aec3po:hasProperty 
+    ex:FI3_building_AssessmentResultProperty_A1-A3 ,
+    ex:FI3_building_AssessmentResultProperty_A4 ,
+    ex:FI3_building_AssessmentResultProperty_A5 ,
+    ex:FI3_building_AssessmentResultProperty_B4 ,
+    ex:FI3_building_AssessmentResultProperty_B6 ,
+    ex:FI3_building_AssessmentResultProperty_C1 ,
+    ex:FI3_building_AssessmentResultProperty_C2 ,
+    ex:FI3_building_AssessmentResultProperty_C4 ,
+    ex:FI3_building_AssessmentResultProperty_D1 .
 
 #Link the ex:FI3_design_climateReport to its propertyDesign with hasProperty
-ex:FI3_design_climateReport aec3po:hasProperty (
-    ex:FI3_design_climateReport_generalInfoPropertyDesign
-    ex:FI3_design_climateReport_contentPropertyDesign
-    ex:FI3_building_AssessmentResultPropertyDesign
-
-) .
+ex:FI3_design_climateReport aec3po:hasProperty 
+    ex:FI3_design_climateReport_generalInfoPropertyDesign ,
+    ex:FI3_design_climateReport_contentPropertyDesign ,
+    ex:FI3_building_AssessmentResultPropertyDesign .
 
 ##Define the design of the carbon footprint result
 ex:FI3_building_CarbonFootprintResultPropertyDesign a aec3po:PropertyDesign .
@@ -1044,19 +1001,16 @@ ex:FI3_building_carbonFootprint_TotalCarbonFootprint_New_Property a aec3po:Prope
    qudt:hasUnit "kWh/m2a" . 
 
 #Link ex:FI3_building_CarbonFootprintResultPropertyDesign to its properties with hasProperty
-ex:FI3_building_CarbonFootprintResultPropertyDesign aec3po:hasProperty (
-    ex:FI3_building_carbonFootprint_UseCategory_New_Property
-    ex:FI3_building_carbonFootprint_TotalCarbonFootprint_New_Property
-
-)  . 
+ex:FI3_building_CarbonFootprintResultPropertyDesign aec3po:hasProperty 
+    ex:FI3_building_carbonFootprint_UseCategory_New_Property ,
+    ex:FI3_building_carbonFootprint_TotalCarbonFootprint_New_Property . 
 
 #Link ex:FI3_building_design to all its propertyDesign(s) with hasProperty
-ex:FI3_building_design aec3po:hasProperty (
-    ex:FI3_design_length_AssessmentPeriodPropertyDesign
-    ex:FI3_design_climateReportPropertyDesign
-    ex:FI3_building_AssessmentResultPropertyDesign
-    ex:FI3_building_CarbonFootprintResultPropertyDesign
-) .
+ex:FI3_building_design aec3po:hasProperty 
+    ex:FI3_design_length_AssessmentPeriodPropertyDesign ,
+    ex:FI3_design_climateReportPropertyDesign ,
+    ex:FI3_building_AssessmentResultPropertyDesign ,
+    ex:FI3_building_CarbonFootprintResultPropertyDesign .
 
 # Link all the properties designs to the respective CheckMethods using forDesign property
 ex:FI3_numericalCheckMethod_AssessmentPeriod aec3po:forDesign ex:FI3_design_length_AssessmentPeriodPropertyDesign .
@@ -1069,13 +1023,11 @@ ex:FI3_categoryCheckMethod_CarbonFootprintResult aec3po:forDesign ex:FI3_buildin
 ex:FI3_CO2Emission_checkingAct a aec3po:CheckingAct .
 
 # Link the checkingAct to all the CheckMethods using usedMethod property
-ex:FI3_CO2Emission_checkingAct aec3po:usedMethod (
-    ex:FI3_numericalCheckMethod_AssessmentPeriod
-    ex:FI3_booleanCheckMethod_AssessmentReport
-    ex:FI3_categoryCheckMethod_CarbonAssessmentResult
-    ex:FI3_categoryCheckMethod_CarbonFootprintResult
-
-) .
+ex:FI3_CO2Emission_checkingAct aec3po:usedMethod 
+    ex:FI3_numericalCheckMethod_AssessmentPeriod ,
+    ex:FI3_booleanCheckMethod_AssessmentReport ,
+    ex:FI3_categoryCheckMethod_CarbonAssessmentResult ,
+    ex:FI3_categoryCheckMethod_CarbonFootprintResult .
 
 # Instantiate the conformance report 
 ex:FI3_CO2Emission_ConformanceReport a aec3po:ConformanceReport ;
