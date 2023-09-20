@@ -168,22 +168,22 @@ ex:rampIntLandingElev a aec3po:Property ;
 ex:rampIndoorCondition a aec3po:Property ;
     aec3po:hasValue "true"^^xsd:boolean .
 
-ex:ramp_statement aec3po:hasRequiredData ( 
-    ex:rampNoticeable 
-    ex:rampStraight
-    ex:rampSurface 
-    ex:rampWidth 
-    ex:rampFixedStructure 
-    ex:rampProtectiveEdge 
-    ex:rampLowerLandingLenght 
-    ex:rampUpperLandingLenght 
-    ex:rampMaxGradient 
-    ex:rampLowerLandingElev 
-    ex:rampUpperLandingElev 
-    ex:rampIntLandingLenght 
-    ex:rampIntLandingElev 
-    ex:rampIndoorCondition 
-) .  
+ex:ramp_statement aec3po:hasRequiredData 
+    ex:rampNoticeable ,
+    ex:rampStraight ,
+    ex:rampSurface ,
+    ex:rampWidth ,
+    ex:rampFixedStructure ,
+    ex:rampProtectiveEdge ,
+    ex:rampLowerLandingLenght ,
+    ex:rampUpperLandingLenght ,
+    ex:rampMaxGradient ,
+    ex:rampLowerLandingElev ,
+    ex:rampUpperLandingElev ,
+    ex:rampIntLandingLenght ,
+    ex:rampIntLandingElev ,
+    ex:rampIndoorCondition .
+  
 
 # Define and Instantiate all the CheckMethod(s) that will operationalize the Statement defined above. The assumption here is that SWRL rules are handeling the "CheckAct".
 
@@ -198,11 +198,10 @@ ex:ramp_humanEvaluatedCheckMethod_Surface rdf:type aec3po:SWRLCheck ;
 
 # Define  a checkMethod MaterialandArrangement that combines the three previous human evaluated check methods related to the material and arrangement of the ramp
   ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement rdf:type aec3po:SWRLCheck ;
-  aec3po:operationalizes (
-    ex:ramp_humanEvaluatedCheckMethod_Noticeable
-    ex:ramp_humanEvaluatedCheckMethod_Straight
-    ex:ramp_humanEvaluatedCheckMethod_Surface
-  ) .
+  aec3po:operationalizes 
+    ex:ramp_humanEvaluatedCheckMethod_Noticeable ,
+    ex:ramp_humanEvaluatedCheckMethod_Straight ,
+    ex:ramp_humanEvaluatedCheckMethod_Surface .
 
 ex:ramp_numericalCheckMethod_Width rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_Width . 
@@ -215,10 +214,9 @@ ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge rdf:type aec3po:SWRLCheck ;
 
 # Define a checkMethod AllProtectiveEdge that combines the two previous check methods related to the protective edge
 ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge rdf:type aec3po:SWRLCheck ;
-  aec3po:operationalizes (
-    ex:ramp_humanEvaluatedCheckStatement_FixedStructure
-    ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge
-  ) .
+  aec3po:operationalizes 
+    ex:ramp_humanEvaluatedCheckStatement_FixedStructure ,
+    ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge .
 
 ex:ramp_numericalCheckMethod_LowerLandingLenght rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_LowerLandingLenght .  
@@ -228,11 +226,9 @@ ex:ramp_numericalCheckMethod_UpperLandingLenght rdf:type aec3po:SWRLCheck ;
 
 # Define a checkMethod LandingLength that combines the two previous check CheckMethods related to the landing length
 ex:ramp_numericalCheckMethod_LandingLength rdf:type aec3po:SWRLCheck ;
-  aec3po:operationalizes (
-    ex:ramp_numericalCheckStatement_LowerLandingLenght
-    ex:ramp_numericalCheckStatement_UpperLandingLenght
-
-  ) .
+  aec3po:operationalizes 
+    ex:ramp_numericalCheckStatement_LowerLandingLenght ,
+    ex:ramp_numericalCheckStatement_UpperLandingLenght .
 
 ex:ramp_numericalCheckMethod_MaxGradient rdf:type aec3po:SWRLCheck ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_MaxGradient .  
@@ -254,44 +250,41 @@ ex:ramp_humanEvaluatedCheckMethod_IndoorCondition rdf:type aec3po:SWRLCheck ;
 
 # Define a checkMethod Gradient that combines the six previous check CheckMethods related to the gradient
 ex:ramp_CheckMethod_Gradient rdf:type aec3po:SWRLCheck ;
-  aec3po:operationalizes (
-    ex:ramp_numericalCheckStatement_MaxGradient
-    ex:ramp_numericalCheckStatement_LowerLandingElev 
-    ex:ramp_numericalCheckStatement_UpperLandingElev
-    ex:ramp_numericalCheckStatement_IntLandingLenght
-    ex:ramp_numericalCheckStatement_IntLandingElev
-    ex:ramp_humanEvaluatedCheckStatement_IndoorCondition
-  ) .
+  aec3po:operationalizes 
+    ex:ramp_numericalCheckStatement_MaxGradient ,
+    ex:ramp_numericalCheckStatement_LowerLandingElev ,
+    ex:ramp_numericalCheckStatement_UpperLandingElev ,
+    ex:ramp_numericalCheckStatement_IntLandingLenght ,
+    ex:ramp_numericalCheckStatement_IntLandingElev ,
+    ex:ramp_humanEvaluatedCheckStatement_IndoorCondition .
 
 # Instantiate the ORCheck for the Protective Edge
 ex:ramp_ORCheck_ProtectiveEdge a aec3po:OrCheck ;
-    aec3po:hasSubCheck (ex:ramp_humanEvaluatedCheckMethod_FixedStructure ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge) . 
+    aec3po:hasSubCheck ex:ramp_humanEvaluatedCheckMethod_FixedStructure , ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge . 
 
 # Instantiate the AndCheck for the Landing Length
 ex:ramp_AndCheck_LandingLength a aec3po:AndCheck ;
-    aec3po:hasSubCheck (ex:ramp_numericalCheckMethod_LowerLandingLenght ex:ramp_numericalCheckMethod_UpperLandingLenght) .  
+    aec3po:hasSubCheck ex:ramp_numericalCheckMethod_LowerLandingLenght , ex:ramp_numericalCheckMethod_UpperLandingLenght .  
 
 # Instantiate the ORCheck for the Gradient
 ex:ramp_ORCheck_Gradient a aec3po:OrCheck ;
-    aec3po:hasSubCheck ( 
-        ex:ramp_numericalCheckMethod_LowerLandingElev 
-        ex:ramp_numericalCheckMethod_UpperLandingElev 
-        ex:ramp_numericalCheckMethod_IntLandingLenght 
-        ex:ramp_numericalCheckMethod_IntLandingElev 
-        ex:ramp_humanEvaluatedCheckMethod_IndoorCondition
-    ) .
+    aec3po:hasSubCheck 
+        ex:ramp_numericalCheckMethod_LowerLandingElev ,
+        ex:ramp_numericalCheckMethod_UpperLandingElev ,
+        ex:ramp_numericalCheckMethod_IntLandingLenght ,
+        ex:ramp_numericalCheckMethod_IntLandingElev ,
+        ex:ramp_humanEvaluatedCheckMethod_IndoorCondition .
 
 # Instantiate the ChecklistStatement as a subClassOf Statement and link it to all the checks with the property hasSubCheck
 ex:ramp_checklistStatement a aec3po:ChecklistStatement ;
-    aec3po:hasSubCheck (
-        ex:ramp_humanEvaluatedCheckMethod_Noticeable
-        ex:ramp_humanEvaluatedCheckMethod_Straight
-        ex:ramp_ORCheck_ProtectiveEdge 
-        ex:ramp_numericalCheckMethod_Width 
-        ex:ramp_AndCheck_LandingLength 
-        ex:ramp_numericalCheckMethod_MaxGradient 
-        ex:ramp_ORCheck_Gradient
-    ) .
+    aec3po:hasSubCheck 
+        ex:ramp_humanEvaluatedCheckMethod_Noticeable ,
+        ex:ramp_humanEvaluatedCheckMethod_Straight ,
+        ex:ramp_ORCheck_ProtectiveEdge ,
+        ex:ramp_numericalCheckMethod_Width ,
+        ex:ramp_AndCheck_LandingLength ,
+        ex:ramp_numericalCheckMethod_MaxGradient ,
+        ex:ramp_ORCheck_Gradient .
 
 # ---- Start describing the "real" Ramp using dummy values
 
@@ -352,42 +345,37 @@ ex:design_rampIndoorCondition a aec3po:PropertyDesign ;
 
 # Define the design of each property of the ramp as PropertyKindDesign
 ex:design_rampPropertyMaterialandArrangement a aec3po:PropertyKindDesign ;
-    aec3po:hasProperty (
-         ex:design_rampNoticeable
-         ex:design_rampStraight
-         ex:design_rampSurface 
-    ) .
+    aec3po:hasProperty 
+         ex:design_rampNoticeable ,
+         ex:design_rampStraight ,
+         ex:design_rampSurface .
 
 ex:design_rampPropertyProtectiveEdge a aec3po:PropertyKindDesign ;
-    aec3po:hasProperty (
-         ex:design_rampProtectiveEdge
-         ex:design_rampFixedStructure 
-    ) .
+    aec3po:hasProperty 
+         ex:design_rampProtectiveEdge ,
+         ex:design_rampFixedStructure .
 
 ex:design_rampPropertyLandingLength a aec3po:PropertyKindDesign ;
-    aec3po:hasProperty (
-         ex:design_rampLowerLandingLength
-         ex:design_rampUpperLandingLength
-    ) .
+    aec3po:hasProperty 
+         ex:design_rampLowerLandingLength ,
+         ex:design_rampUpperLandingLength .
 
 ex:design_rampPropertyGradient a aec3po:PropertyKindDesign ;
-    aec3po:hasProperty (
-         ex:design_rampMaxGradient
-         ex:design_rampLowerLandingElev
-         ex:design_rampUpperLandingElev
-         ex:design_rampIntLandingLenght
-         ex:design_rampIntLandingElev
-         ex:design_rampIndoorCondition
-    ) . 
+    aec3po:hasProperty 
+         ex:design_rampMaxGradient ,
+         ex:design_rampLowerLandingElev ,
+         ex:design_rampUpperLandingElev ,
+         ex:design_rampIntLandingLenght ,
+         ex:design_rampIntLandingElev ,
+         ex:design_rampIndoorCondition . 
 
 #Link all the properties design to the ramp design using hasProperty property     
-  ex:ramp_design aec3po:hasProperty (
-    ex:design_rampPropertyMaterialandArrangement
-    ex:design_rampPropertyProtectiveEdge
-    ex:design_rampWidth
-    ex:design_rampPropertyLandingLength
-    ex:design_rampPropertyGradient
-  ) .
+  ex:ramp_design aec3po:hasProperty 
+    ex:design_rampPropertyMaterialandArrangement ,
+    ex:design_rampPropertyProtectiveEdge ,
+    ex:design_rampWidth ,
+    ex:design_rampPropertyLandingLength ,
+    ex:design_rampPropertyGradient .
 
  # Link all the properties designs to the respective CheckMethods using forDesign property
 ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement aec3po:forDesign ex:design_rampPropertyMaterialandArrangement .
@@ -400,13 +388,12 @@ ex:ramp_CheckMethod_Gradient aec3po:forDesign ex:design_rampPropertyGradient .
 ex:ramp_checkingAct a aec3po:CheckingAct .
 
 # Link the checkingAct to all the CheckMethods using usedMethod property
-ex:ramp_checkingAct aec3po:usedMethod (
-    ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement 
-    ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge 
-    ex:ramp_numericalCheckMethod_Width
-    ex:ramp_numericalCheckMethod_LandingLength
-    ex:ramp_CheckMethod_Gradient
-    ) .
+ex:ramp_checkingAct aec3po:usedMethod 
+    ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement  ,
+    ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge ,
+    ex:ramp_numericalCheckMethod_Width ,
+    ex:ramp_numericalCheckMethod_LandingLength ,
+    ex:ramp_CheckMethod_Gradient .
 
 # Instantiate the conformance report 
 ex:ramp_ConformanceReport a aec3po:ConformanceReport ;
