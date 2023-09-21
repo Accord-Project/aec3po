@@ -55,9 +55,9 @@ aec3po:hasQuantityKind a owl:ObjectProperty ;
 
 # the following object property is not used in the examples
 
-# aec3po:hasContext a owl:Property ;
-#     rdfs:label "has Context"@en ;
-#     rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
-#     rdfs:domain [ a owl:Class ;
-#             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
-#     rdfs:range og:url .
+ aec3po:hasContext a owl:Property ;
+     rdfs:label "has Context"@en ;
+     rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
+     rdfs:domain [ a owl:Class ;
+             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
+     rdfs:range og:url .
