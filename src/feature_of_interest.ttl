@@ -53,8 +53,6 @@ aec3po:hasQuantityKind a owl:ObjectProperty ;
     rdfs:range aec3po:QuantityKind ;
     skos:example "A space area property to the property kind \"area\"."@en .
 
-# the following object property is not used in the examples
-
  aec3po:hasContext a owl:Property ;
      rdfs:label "has Context"@en ;
      rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
