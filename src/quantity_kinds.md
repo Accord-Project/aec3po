@@ -4,4 +4,4 @@ Quantity Kind is any observable property that can be quantified numerically. Fam
 
 Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused http://qudt.org/2.1/vocab/quantitykind
 
-This AEC3PO module defines c3po:QuantityKind as an equivalent to qudt:QuantityKind, and some instances that a relevant for the AEC3PO domain.
+This AEC3PO module defines aec3po:QuantityKind as an equivalent to qudt:QuantityKind, and some instances that are relevant for the AEC3PO domain.
