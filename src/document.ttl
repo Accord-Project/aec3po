@@ -100,8 +100,3 @@ aec3po:Image a owl:Class ;
  rdfs:comment "An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)"@en ;
  rdfs:subClassOf aec3po:Document ;
  rdfs:isDefinedBy aec3po:document .
-
-aec3po:Model a owl:Class ;
- rdfs:label "Model"@en ;
- rdfs:comment "A design model of a building."@en ;
- rdfs:isDefinedBy aec3po:document .
