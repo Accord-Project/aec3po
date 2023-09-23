@@ -135,7 +135,7 @@ aec3po:nests a owl:ObjectProperty ;
         rdfs:label "nests"@en ;
         rdfs:comment "Links an ACCORDCheckMethod to another ACCORDCheckMethod that is nested within it."@en ;
         rdfs:domain aec3po:ACCORDCheckMethod ;
-        rdfs:range aec3po:ACCORDCheckStatement ;
+        rdfs:range aec3po:ACCORDCheckMethod ;
         rdfs:isDefinedBy aec3po:check_method .
 
 aec3po:JenaCheckMethod a owl:Class ;
