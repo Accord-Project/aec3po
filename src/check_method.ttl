@@ -124,7 +124,7 @@ aec3po:hasValue a owl:FunctionalProperty,
 aec3po:hasUnit a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "hasUnit"@en ;
-    rdfs:comment "The value refers to a property or a attribute of a feature of interest. It can be a String, a number or a boolean. "@en ;
+    rdfs:comment "the hasUnit property is used to link a specific property or feature of interest to its corresponding unit of measurement. For example, it could be a property related to physical quantities, such as "temperature," "length," or "weight."" "@en ;
     owl:eqivalentProperty qudt:hasValue ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
