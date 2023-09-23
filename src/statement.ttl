@@ -148,7 +148,7 @@ aec3po:OrCheckStatement a owl:Class ;
 
 aec3po:NotCheckStatement a owl:Class ;
  rdfs:label "Not Check Statement"@en ;
- rdfs:comment "Check verified if and only the sub-check is not verified."@en ;
+ rdfs:comment "Check verified if and only if the sub-check is not verified."@en ;
  rdfs:subClassOf [ a owl:Restriction ;
   owl:cardinality 1 ;
   owl:onProperty aec3po:hasSubdivision ] ;
