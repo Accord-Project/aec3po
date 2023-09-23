@@ -7,6 +7,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 
 aec3po:check_method a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -93,6 +94,42 @@ aec3po:ACCORDCheckMethod a owl:Class ;
     rdfs:comment "A check implemented using the ACCORD rule language. "@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:DeclarativeCheckMethod .
+
+  aec3po:hasOperator a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasOperator"@en ;
+    rdfs:comment "The Operator of a property kind design. A set of values is defined by AEC3PO in the corresponding concept scheme."@en ;
+    rdfs:range aec3po:ComparisonOperator ;
+    rdfs:isDefinedBy aec3po:check_method ;
+    rdfs:subPropertyOf aec3po:hasDesign .
+
+  aec3po:hasTarget a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasTarget"@en ;
+    rdfs:comment "The target refers to either the name of an object, the name of property or a function."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
+    rdfs:isDefinedBy aec3po:check_method ;
+    rdfs:subPropertyOf aec3po:hasDesign .
+
+aec3po:hasValue a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasValue"@en ;
+    rdfs:comment "The value refers to a property or a attribute of a feature of interest. It can be a String, a number or a boolean. "@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
+    rdfs:isDefinedBy aec3po:check_method ;
+    rdfs:subPropertyOf aec3po:hasDesign .
+
+aec3po:hasUnit a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasUnit"@en ;
+    rdfs:comment "The value refers to a property or a attribute of a feature of interest. It can be a String, a number or a boolean. "@en ;
+    owl:eqivalentProperty qudt:hasValue ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
+    rdfs:isDefinedBy aec3po:check_method ;
+    rdfs:subPropertyOf aec3po:hasDesign .
 
 aec3po:JenaCheckMethod a owl:Class ;
     rdfs:label "Jena Check Method"@en ;
