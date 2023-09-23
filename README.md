@@ -40,19 +40,19 @@ rule formalization tool (Task 2.3), facilitating seamless communication and coll
 ### Competency Questions <a name="competencyQuestions"></a>
 
 #### Compliance <a name="compliance"></a>
-1. How to define the metadata of a Document that informs/dictates compliance checking?
-2. What is the coverage of a Document per Administrative Area?
-3. What are the parts of a document, their unique identifiers and order?
+1. How to define the metadata of a compliance checking related Document?
+3. What are the parts of a document, their unique identifiers, and their order?
 4. How to represent cross-referencing in a document?
 5. What type of information (Statement) does a Document contain?
-7. What categories or types of check statements can a check statement belong to?
-8. What type of check methods needs to be performed for a Statement to comply?
+7. What categories or types of check statements can a check statement inform?
+8. What type of check methods need to be performed for a Statement to comply?
 9. Which check statement does a check method operationalize?
 10. What are the required data to perform a check?
 11. Which feature of interest needs to be checked and how it is designed?
 12. Which checking act needs to be made and which check method it uses?
 13. How to access the outcomes of a checking act?
-14. How to transform normative documents into a single well-defined rule which can be implemented into BIM / IFC based model checking software using RASE methodology?
+14. How to transform normative documents into a single well-defined rule that can be implemented into BIM / IFC based model checking software using RASE methodology?
+15. What is the coverage of a Document per Administrative Area?
 
 #### Permitting <a name="permitting"></a>
  1. What are the stages of the Permitting process per Administrative Area?
