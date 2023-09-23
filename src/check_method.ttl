@@ -131,6 +131,13 @@ aec3po:hasUnit a owl:FunctionalProperty,
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subPropertyOf aec3po:hasDesign .
 
+aec3po:nests a owl:ObjectProperty ;
+        rdfs:label "nests"@en ;
+        rdfs:comment "Links an ACCORDCheckMethod to another ACCORDCheckMethod that is nested within it."@en ;
+        rdfs:domain aec3po:ACCORDCheckMethod ;
+        rdfs:range aec3po:ACCORDCheckStatement ;
+        rdfs:isDefinedBy aec3po:check_method .
+
 aec3po:JenaCheckMethod a owl:Class ;
     rdfs:label "Jena Check Method"@en ;
     rdfs:comment "A check implemented using the Jena rule language. "@en ;
