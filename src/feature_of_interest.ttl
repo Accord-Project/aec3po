@@ -50,7 +50,6 @@ aec3po:hasQuantityKind a owl:ObjectProperty ;
     rdfs:comment "Links a property of a feature of interest to its quantity kind"@en ;
     rdfs:domain aec3po:Property ;
     rdfs:isDefinedBy aec3po:feature_of_interest ;
-    rdfs:range aec3po:QuantityKind ;
     skos:example "A space area property to the property kind \"area\"."@en .
 
  aec3po:hasContext a owl:Property ;
@@ -58,4 +57,6 @@ aec3po:hasQuantityKind a owl:ObjectProperty ;
      rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
      rdfs:domain [ a owl:Class ;
              owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
-     rdfs:range og:url .
+     rdfs:range og:url ;
+     rdfs:isDefinedBy aec3po:feature_of_interest .
+
