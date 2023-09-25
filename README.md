@@ -66,9 +66,15 @@ rule formalization tool (Task 2.3), facilitating seamless communication and coll
 The AEC3PO ontology is designed to represent various aspects of the construction domain, focusing on compliance and permitting. It is organised into five main modules, each comprising sub-modules, classes, and properties. These modules facilitate the modeling of different components and relationships within the construction domain. The figure below shows an overview of these modules and the relations among them.
 
 ![AEC3PO Overview](images/aec3po_v1.0.0_Modules.png) 
+
+The above five modules can be modularised into different sub-modules. Each of them is decomposed to different classes and properties. The figure below represents an overview of all modules and sub-modules together. 
+
+![AEC3PO Overview](images/aec3po_v1.0.0_Modules_v2.png) 
+
 Below is an overview of each module and its sub-components:
 1. **Module 1: Document**: This module describes building-compliance related documents, their subdivisions, down to individual statements.
-  - Classes: _DocumentSubdivision_, _Statement_, _CheckStatement_, _DefinitionStatement_, _ChecklistStatement_, _Evidence_, _DataRequirement_, _etc_.
+  - Sub-modules: _Statement_, _RASEDecomposedStatement_, _Evidence_, _LegalVerifier_etc.
+  - Classes: _DocumentSubdivision_, _DataRequirement_, _etc_.
   - Properties: hasPart, hasRequiredData, hasEvidence, forDocument, hasPermittingStage, etc.
 
 2. **Module 2: CheckMethod**: This module describes pieces of information that operationalize check statements in documents.
