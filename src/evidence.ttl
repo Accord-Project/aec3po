@@ -24,9 +24,15 @@ aec3po:Evidence a owl:Class ;
  skos:example "A drawing can be an evidence."@en ;
  rdfs:isDefinedBy aec3po:evidence .
 
-  aec3po:hasEvidence a owl:ObjectProperty;
-    rdfs:comment "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
-    skos:note "Unstable. Need evidence of how this property is intended to be used"@en ;
+aec3po:hasEvidence a owl:ObjectProperty;
+ rdfs:comment "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
+ skos:note "Unstable. Need evidence of how this property is intended to be used"@en ;
+ rdfs:domain aec3po:Statement ;
+ rdfs:isDefinedBy aec3po:statement .
+
+ aec3po:hasFormat a owl:ObjectProperty;
+    rdfs:comment "Defines the format of an evidence, which is of type dct:format."@en ;
+    skos:example "an image, a drawing or a model can be an evidence."@en ;
     rdfs:domain aec3po:Statement ;
-    rdfs:isDefinedBy aec3po:statement .
+    rdfs:isDefinedBy aec3po:evidence .
 
