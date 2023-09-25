@@ -90,7 +90,8 @@ Below is an overview of each module and its sub-components:
   -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasUnit_, _hasDesign_, _hasContext_, _etc_.
   
 5. **Module 5: CheckingAct**
-  - Classes: _CheckingAct_, _ProcessVerifier_, _ConformanceReport_
+  - Sub-modules: _ConformanceReport_
+  - Classes: _CheckingAct_, _ProcessVerifier_, etc.
   - Properties: _usedMethod_, _madeBy_, _hasReport_
   
 Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, and SHACL checks. 
