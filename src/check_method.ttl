@@ -95,13 +95,14 @@ aec3po:ACCORDCheckMethod a owl:Class ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:DeclarativeCheckMethod .
 
-  aec3po:hasOperator a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "hasOperator"@en ;
-    rdfs:comment "The Operator of a property kind design. A set of values is defined by AEC3PO in the corresponding concept scheme."@en ;
-    rdfs:range aec3po:ComparisonOperator ;
-    rdfs:isDefinedBy aec3po:check_method ;
-    rdfs:subPropertyOf aec3po:hasDesign .
+## renamed hasComparator and moved to the the vocabulary file check_method_comparators  
+#aec3po:hasOperator a owl:FunctionalProperty,
+       # owl:ObjectProperty ;
+  #  rdfs:label "hasOperator"@en ;
+  #  rdfs:comment "The Operator of a property kind design. A set of values is defined by AEC3PO in the corresponding concept scheme."@en ;
+  #  rdfs:range aec3po:ComparisonOperator ;
+  #  rdfs:isDefinedBy aec3po:check_method ;
+  #  rdfs:subPropertyOf aec3po:hasDesign .
 
   aec3po:hasTarget a owl:FunctionalProperty,
         owl:ObjectProperty ;
