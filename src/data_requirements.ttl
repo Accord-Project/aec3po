@@ -1,1 +1,36 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+aec3po:data_requirements a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description """The AEC3PO DataRequirement module describes all data requirements that are dectated from the statement."""@en ;
+    #dct:description <old_evidence.png> ;
+    dct:title "AEC3PO: data_requirements"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
+    owl:imports aec3po:statement .
+
+aec3po:DataRequirement a owl:Class ;
+ rdfs:label "Data Requirement"@en ;
+ rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en ;
+ skos:example "The minimum width of a door can be a data requirement."@en ;
+ rdfs:isDefinedBy aec3po:data_requirements .
+
+aec3po:IDS a owl:Class ;
+ rdfs:label "Data Requirement"@en ;
+ rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
+ rdfs:subClassOf aec3po:DataRequirement ;
+ rdfs:isDefinedBy aec3po:data_requirements .
+
+ aec3po:hasFormat a owl:ObjectProperty;
+    rdfs:comment "Defines the format that the data requirement can have, which is of type dct:format."@en ;
+    rdfs:domain aec3po:Statement ;
+    rdfs:isDefinedBy aec3po:data_requirements .
