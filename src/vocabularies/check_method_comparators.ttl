@@ -57,7 +57,7 @@ CheckMethodComparator-eq a owl:NamedIndividual, skos:Concept,
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "equal-to comparator."@en ;
     skos:inScheme aec3po:CheckMethodComparatorNomenclature ;
-    skos:prefLabel "eqal-to"@en ;
+    skos:prefLabel "equal-to"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
 CheckMethodComparator-neq a owl:NamedIndividual, skos:Concept,
@@ -65,7 +65,7 @@ CheckMethodComparator-neq a owl:NamedIndividual, skos:Concept,
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "not equal-to comparator."@en ;
     skos:inScheme aec3po:CheckMethodComparatorNomenclature ;
-    skos:prefLabel "not eqal-to"@en ;
+    skos:prefLabel "not equal-to"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
 CheckMethodComparator-lt a owl:NamedIndividual, skos:Concept,
