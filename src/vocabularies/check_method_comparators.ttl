@@ -27,7 +27,7 @@ aec3po:CheckMethodComparator a owl:Class ;
                         owl:hasValue aec3po:CheckMethodComparatorNomenclature ;
                         owl:onProperty skos:inScheme ] ) ] .
 
-aec3po:BuildingUsageNomenclature a skos:ConceptScheme ;
+aec3po:CheckMethodComparatorNomenclature a skos:ConceptScheme ;
     rdfs:label "check method nomenclature"@en ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition """A set of comparators for the check method.
