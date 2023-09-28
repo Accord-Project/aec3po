@@ -52,7 +52,7 @@ aec3po:CheckMethodComparatorNomenclature a skos:ConceptScheme ;
         aec3po:CheckMethodComparator-notExists,
         aec3po:CheckMethodComparator-forall.
 
-CheckMethodComparator-eq a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-eq a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "equal-to comparator."@en ;
@@ -60,7 +60,7 @@ CheckMethodComparator-eq a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "equal-to"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
-CheckMethodComparator-neq a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-neq a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "not equal-to comparator."@en ;
@@ -68,7 +68,7 @@ CheckMethodComparator-neq a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "not equal-to"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
-CheckMethodComparator-lt a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-lt a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "less-than comparator."@en ;
@@ -76,7 +76,7 @@ CheckMethodComparator-lt a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "less than"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
-CheckMethodComparator-le a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-le a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "less-equal comparator."@en ;
@@ -84,7 +84,7 @@ CheckMethodComparator-le a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "less equal"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
-CheckMethodComparator-gt a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-gt a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "greater-than comparator."@en ;
@@ -92,7 +92,7 @@ CheckMethodComparator-gt a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "greater than"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
-CheckMethodComparator-ge a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-ge a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "greater-equal comparator."@en ;
@@ -100,7 +100,7 @@ CheckMethodComparator-ge a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "greater equal"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
-CheckMethodComparator-exists a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-exists a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "exists comparator."@en ;
@@ -108,7 +108,7 @@ CheckMethodComparator-exists a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "exists"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
-CheckMethodComparator-notExists a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-notExists a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "not exists comparator."@en ;
@@ -116,7 +116,7 @@ CheckMethodComparator-notExists a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "not exists"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
-CheckMethodComparator-forall a owl:NamedIndividual, skos:Concept,
+aec3po:CheckMethodComparator-forall a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodComparator ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition "forall comparator."@en ;
