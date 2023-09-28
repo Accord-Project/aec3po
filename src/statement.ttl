@@ -31,13 +31,14 @@ aec3po:Statement a owl:Class ;
     rdfs:domain aec3po:Statement ;
     rdfs:isDefinedBy aec3po:statement .
 
-  aec3po:requires a owl:ObjectProperty;
-    rdfs:label "requires"@en ;
-    rdfs:comment "Links a statement to something that needs to be provided or associated with it."@en ;
-    skos:example "A property to perform a calculation, an Information Delivery Specification (IDS) file, a certificate, ..."@en ;
-    skos:note "Unstable. Need evidence of how this property is intended to be used"@en ;
-    rdfs:domain aec3po:Statement ;
-    rdfs:isDefinedBy aec3po:statement .
+## Defined in the RASEDecomposedStatement module 
+#aec3po:requires a owl:ObjectProperty;
+    #rdfs:label "requires"@en ;
+    #rdfs:comment "Links a statement to something that needs to be provided or associated with it."@en ;
+    #skos:example "A property to perform a calculation, an Information Delivery Specification (IDS) file, a certificate, ..."@en ;
+    #skos:note "Unstable. Need evidence of how this property is intended to be used"@en ;
+    #rdfs:domain aec3po:Statement ;
+    #rdfs:isDefinedBy aec3po:statement .
 
 aec3po:hasInlinePart a owl:ObjectProperty ;
   rdfs:label "hasInlinePart"@en ;
