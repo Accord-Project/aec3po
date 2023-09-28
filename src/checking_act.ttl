@@ -57,16 +57,11 @@ aec3po:madeBy a owl:ObjectProperty ;
     rdfs:isDefinedBy aec3po:checking_act ;
     rdfs:range aec3po:ProcessVerifier .
 
-
-
-
 aec3po:checks a owl:ObjectProperty ;
     rdfs:label "checks"@en ;
     rdfs:comment "Links a checking act to some entity it checked."@en ;
     rdfs:domain aec3po:CheckingAct ;
     rdfs:isDefinedBy aec3po:checking_act .
-
-
 
 aec3po:hasReport a owl:ObjectProperty ;
     rdfs:label "has report"@en ;
@@ -75,18 +70,19 @@ aec3po:hasReport a owl:ObjectProperty ;
     rdfs:isDefinedBy aec3po:checking_act ;
     rdfs:range aec3po:ConformanceReport .
 
-aec3po:ConformanceReport a owl:Class ;
-    rdfs:label "Conformance Report"@en ;
-    rdfs:comment """The class of conformance reports resulting from checking acts."""@en ;
-    rdfs:isDefinedBy aec3po:checking_act ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty aec3po:conforms ;
-            owl:cardinality 1 ] .
+## moved to Conformance_Report Module
+#aec3po:ConformanceReport a owl:Class ;
+    #rdfs:label "Conformance Report"@en ;
+   # rdfs:comment """The class of conformance reports resulting from checking acts."""@en ;
+   # rdfs:isDefinedBy aec3po:checking_act ;
+   # rdfs:subClassOf [ a owl:Restriction ;
+          #  owl:onProperty aec3po:conforms ;
+           # owl:cardinality 1 ] .
 
-aec3po:conforms a owl:DatatypeProperty ;
-    rdfs:label "conforms"@en ;
-    rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
-    rdfs:domain aec3po:ConformanceReport ;
-    rdfs:isDefinedBy aec3po:checking_act ;
-    rdfs:range xsd:boolean .
+#aec3po:conforms a owl:DatatypeProperty ;
+  #  rdfs:label "conforms"@en ;
+ #   rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
+ #   rdfs:domain aec3po:ConformanceReport ;
+  #  rdfs:isDefinedBy aec3po:checking_act ;
+   # rdfs:range xsd:boolean .
 
