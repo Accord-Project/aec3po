@@ -83,12 +83,6 @@ aec3po:hasFirstSubdivision a owl:ObjectProperty , owl:FunctionalProperty ;
  rdfs:subPropertyOf aec3po:hasSubdivision ;
  rdfs:isDefinedBy aec3po:document .
 
-aec3po:IDS a owl:Class ;
- rdfs:label "Information Delivery Format (IDS)"@en ;
- rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
- skos:note "Unstable. Need to provide examples to understand how this is intended to be used." ;
- rdfs:isDefinedBy aec3po:document .
-
 aec3po:Drawing a owl:Class ;
  rdfs:label "Drawing"@en ;
  rdfs:comment "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)"@en ;
