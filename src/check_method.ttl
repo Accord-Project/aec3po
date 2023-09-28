@@ -113,14 +113,15 @@ aec3po:ACCORDCheckMethod a owl:Class ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subPropertyOf aec3po:hasDesign .
 
-aec3po:hasValue a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "hasValue"@en ;
-    rdfs:comment "The value refers to a property or a attribute of a feature of interest. It can be a String, a number or a boolean. "@en ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
-    rdfs:isDefinedBy aec3po:check_method ;
-    rdfs:subPropertyOf aec3po:hasDesign .
+## hasValue has been defined in the core ontology 
+#aec3po:hasValue a owl:FunctionalProperty,
+      #  owl:ObjectProperty ;
+   # rdfs:label "hasValue"@en ;
+  #  rdfs:comment "The value refers to a property or a attribute of a feature of interest. It can be a String, a number or a boolean. "@en ;
+   # rdfs:domain [ a owl:Class ;
+    #        owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
+  #  rdfs:isDefinedBy aec3po:check_method ;
+ #   rdfs:subPropertyOf aec3po:hasDesign .
 
 aec3po:hasUnit a owl:FunctionalProperty,
         owl:ObjectProperty ;
