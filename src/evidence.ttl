@@ -34,5 +34,6 @@ aec3po:hasEvidence a owl:ObjectProperty;
     rdfs:comment "Defines the format of an evidence, which is of type dct:format."@en ;
     skos:example "an image, a drawing or a model can be an evidence."@en ;
     rdfs:domain aec3po:Statement ;
+    rdfs:range dct:format;
     rdfs:isDefinedBy aec3po:evidence .
 
