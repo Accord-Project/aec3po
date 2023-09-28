@@ -29,8 +29,3 @@ aec3po:IDS a owl:Class ;
  rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
  rdfs:subClassOf aec3po:DataRequirement ;
  rdfs:isDefinedBy aec3po:data_requirements .
-
- aec3po:hasFormat a owl:ObjectProperty;
-    rdfs:comment "Defines the format that the data requirement can have, which is of type dct:format."@en ;
-    rdfs:domain aec3po:Statement ;
-    rdfs:isDefinedBy aec3po:data_requirements .
