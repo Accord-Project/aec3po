@@ -87,12 +87,12 @@
     rdfs:isDefinedBy aec3po:quantity_kinds ;
     skos:broader quantitykind:Force .
 
-  quantitykind:CrossSectionalArea a aec3po:QuantityKind ;
-    qudt:hasDimensionVector qkdv:A0E0L2I0M0H0T0D0 ;
-    qudt:symbol "A" ;
-    skos:prefLabel "Cross-sectional Area"@en ;
-    rdfs:isDefinedBy aec3po:quantity_kinds ;
-    skos:broader quantitykind:Area .
+  #quantitykind:CrossSectionalArea a aec3po:QuantityKind ;
+   # qudt:hasDimensionVector qkdv:A0E0L2I0M0H0T0D0 ;
+   # qudt:symbol "A" ;
+   # skos:prefLabel "Cross-sectional Area"@en ;
+   # rdfs:isDefinedBy aec3po:quantity_kinds ;
+  #  skos:broader quantitykind:Area .
 
   aec3po:PartialSafetyFactor a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
     skos:prefLabel "Partial Safety Factor"@en ;
