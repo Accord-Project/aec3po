@@ -6,6 +6,7 @@ The AEC3PO ontology is designed to represent various aspects of the construction
 ![AEC3PO Overview](/images/aec3po_v1.0.2_Modules.png) 
 
 Below is an overview of each module and its sub-components:
+
 1. **Module 1: Document**: This module describes building-compliance related documents and their subdivisions.
   - Classes: _Document_, _DocumentSubdivision_.
   - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
