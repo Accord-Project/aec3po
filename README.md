@@ -68,7 +68,7 @@ The AEC3PO ontology is designed to represent various aspects of the construction
 ![AEC3PO Overview](images/aec3po_v1.0.2_Modules.png) 
 
 Below is an overview of each module and its sub-components:
-1. **Module 1: Document**: This module describes building-compliance related documents and their subdivisions.
+1. **Module 1: Document**: This module describes the metadata of a building-compliance related document and its composition in terms of subdivisions (sections, tables, images) which come in a hierarchical form.
   - Classes: _Document_, _DocumentSubdivision_.
   - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
 
@@ -76,11 +76,11 @@ Below is an overview of each module and its sub-components:
   - Classes: _Statement_, _DefinitionStatement_, _CheckStatement_, _CheckListStatement_, _CategoryCheckStatement_, _CertificateCheckStatement_, _BooleanCheckStatement_, _NumericalCheckStatement_, _HumanEvaluatedCheckStatement_, _etc_.
   - Properties: _hasSubdivision_, _hasRequiredData_, _hasEvidence_, _hasDefinition_, _definitionOf_, _etc_.
 
-3. **Module 3: DataRequirement**: This module describes all data requirements that are dectated from the statement..
+3. **Module 3: DataRequirement**: This module describes all data requirements that are dictated from the statement. The format of data requirements adopted by ACCORD is IDS. 
   -	Classes: _DataRequirement_, _IDS_.
   -	Properties: _hasFormat_, _etc_.
 
-4. **Module 4: Evidence**: This module describes all resources that can be used to assess the validity and relevance of the statement.
+4. **Module 4: Evidence**: This module describes all evidence that can be provided to assess the validity and relevance of the statement. The evidence comes in different format such as an expert report, a certificate etc. 
   -	Classes: _Evidence_.
   -	Properties: _hasFormat_, _forDocument_, _etc_.
 
