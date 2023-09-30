@@ -12,10 +12,11 @@
 
 aec3po: a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:contributor <http://maxime-lefrancois.info/me#>,
-        aec3po:edlira,
+dct:creator aec3po:edlira, 
+aec3po:pan.
+
+    dct:contributor <http://maxime-lefrancois.info/me#>,        
         aec3po:amna,
-        aec3po:pan,
         aec3po:thomas ;
     dct:description "The Architecture, Engineering and Construction Compliance Checking and Permitting ontology (AEC3PO), based on the statements on building compliance-related document and design codes."@en ;
     dct:title "AEC3PO"@en ;
