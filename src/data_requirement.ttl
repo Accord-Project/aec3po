@@ -8,12 +8,12 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-aec3po:data_requirements a owl:Ontology ;
+aec3po:data_requirement a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description """The AEC3PO DataRequirement module describes all data requirements that are dectated from the statement."""@en ;
     #dct:description <old_evidence.png> ;
-    dct:title "AEC3PO: data_requirements"@en ;
+    dct:title "AEC3PO: data_requirement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports aec3po:statement .
@@ -22,10 +22,10 @@ aec3po:DataRequirement a owl:Class ;
  rdfs:label "Data Requirement"@en ;
  rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en ;
  skos:example "The minimum width of a door can be a data requirement."@en ;
- rdfs:isDefinedBy aec3po:data_requirements .
+ rdfs:isDefinedBy aec3po:data_requirement .
 
 aec3po:IDS a owl:Class ;
  rdfs:label "IDS"@en ;
  rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
  rdfs:subClassOf aec3po:DataRequirement ;
- rdfs:isDefinedBy aec3po:data_requirements .
+ rdfs:isDefinedBy aec3po:data_requirement .
