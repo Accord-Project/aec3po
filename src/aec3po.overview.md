@@ -7,49 +7,52 @@ The AEC3PO ontology is designed to represent various aspects of the construction
 
 Below is an overview of each module and its sub-components:
 
-1. **Document**: This module describes building-compliance related documents and their subdivisions.
+1. **Document**: This AEC3PO module describes building-compliance related documents and their subdivisions.
     - Classes: _Document_, _DocumentSubdivision_.
     - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
 
-2.  **Statement**: This module describes things stated in a building compliance-related document.
+2.  **Statement**: This AEC3PO module describes things stated in a building compliance-related document.
     - Classes: _Statement_, _DefinitionStatement_, _CheckStatement_, _CheckListStatement_, _CategoryCheckStatement_, _CertificateCheckStatement_, _BooleanCheckStatement_, _NumericalCheckStatement_, _HumanEvaluatedCheckStatement_, _etc_.
     - Properties: _hasSubdivision_, _hasRequiredData_, _hasEvidence_, _hasDefinition_, _definitionOf_, _etc_.
 
-3. **DataRequirement**: This module describes all data requirements that are dectated from the statement..
+3. **DataRequirement**: This AEC3PO module describes all data requirements that are dectated from the statement..
     -	Classes: _DataRequirement_, _IDS_.
     -	Properties: _hasFormat_, _etc_.
 
-4. **Evidence**: This module describes all resources that can be used to assess the validity and relevance of the statement.
+4. **Evidence**: This AEC3PO module describes all resources that can be used to assess the validity and relevance of the statement.
     -	Classes: _Evidence_.
     -	Properties: _hasFormat_, _forDocument_, _etc_.
 
-5. **CheckMethod**: This module describes pieces of information that operationalize check statements in documents.
+5. **CheckMethod**: This AEC3PO module describes pieces of information that operationalize check statements in documents.
     -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _ACCORDCheckMethod_, _FuncionCheckMethod_, _etc_.
     -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _nests_, _etc_.
   
-6. **FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
+6. **FeatureOfInterest**: This AEC3PO module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
     - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_, _etc_.
     -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasDesign_, _hasContext_, _etc_.
   
-7. **CheckingAct**
+7. **CheckingAct**: This AEC3PO module describes the act of checking some entities for something and generating a conformance report.
     - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
     - Properties: _usedMethod_, _madeBy_, _hasReport_, _checks_, _etc_.
 
-8. **ConformanceReport**
+8. **ConformanceReport**: This AEC3PO module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated.
     - Classes: _ConformanceReport_, _result_, _ValidationResult_,_Severity_, _etc_.
     - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
 
-9. **Model**
+9. **Model**: This AEC3PO module describes BIM models.
     - Classes: _Model_, _Phase_, _Element_, _Classification_, _etc_.
     - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
-  
+
+10. **Table**: This AEC3PO module describes tables as representations of data in rows and columns. Tables are described by captions.
+    - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
+    - Properties: _contains_, _isContainedIn_, _caption_.
 Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, SHACL and ACCORD checks. 
 Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the **_ConformanceReport_** stores the outcomes of the check, their validation results and the corresponding messages. 
 
 ### AEC3PO Alignments and Reuse <a name="alignments"></a>
 AEC3PO contains different modules, each of them imports an external ontology, and specifies a set of alignment axioms to connect the terms of the imported ontologies with each other. The figure below illustrates the alignment and the reuse of the AEC3PO ontology with various other ontologies, showcasing how different domains and concepts interconnect for a comprehensive representation of compliance and permitting in the AEC industry.
 
-In the figure, the AEC3PO ontology is positioned at the center, with arrows extending outward to connect with other related ontologies. Each ontology is represented as a distinct node, emphasising the integration of diverse knowledge domains. The alignment signifies the synergy achieved by harmonising multiple ontologies to enhance the overall understanding and modeling of compliance and permitting processes in the AEC sector.
+In the figure, the AEC3PO ontology is positioned at the center, with arrows extending outward to connect with other related ontologies. Each ontology is represented as a distinct node, emphasising the integration of diverse knowledge domains. The alignment signifies the synergy achieved by harmonising multiple ontologies to enhance the overall understanding and modeling of compliance and permitting processes in the AEC sector, and it is represented by grey boxes. However, the reuse is represented by direct arrows extending outward the reused ontologies.
 
 ![AEC3PO Overview](diagrams/aec3po-Alignment2.png)
 
