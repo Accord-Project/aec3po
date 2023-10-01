@@ -3,20 +3,14 @@
 ### AEC3PO Modules <a name="modules"></a> 
 The AEC3PO ontology is designed to represent various aspects of the construction domain, focusing on compliance and permitting. It is organised into different modules, each comprising classes, and properties. These modules facilitate the modeling of different components and relationships within the construction domain. The figure below shows an overview of these modules and the relations among them.
 
-<figure>
-  <img src="diagrams/aec3po_v1.0.2_Modules" alt="Illustration of the core concepts of AEC3PO ontology" />
-  <figcaption> Illustration of the core concepts of AEC3PO ontology </figcaption>
-</figure>
-
+![AEC3PO Overview](diagrams/aec3po_v1.0.2_Modules.png)
 
 Below is an overview of each module and its sub-components:
-<ol>
-   <li>**Module 1: Document**</li>: This module describes building-compliance related documents and their subdivisions.
-      <ul>
-       <li>Classes: </li>_Document_, _DocumentSubdivision_.
-       <li>Properties:</li> _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
-      </ul>
-</ol>         
+
+1. **Module 1: Document**: This module describes building-compliance related documents and their subdivisions.
+    - Classes: _Document_, _DocumentSubdivision_.
+    - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
+
 2.  **Module 2: Statement**: This module describes things stated in a building compliance-related document.
   - Classes: _Statement_, _DefinitionStatement_, _CheckStatement_, _CheckListStatement_, _CategoryCheckStatement_, _CertificateCheckStatement_, _BooleanCheckStatement_, _NumericalCheckStatement_, _HumanEvaluatedCheckStatement_, _etc_.
   - Properties: _hasSubdivision_, _hasRequiredData_, _hasEvidence_, _hasDefinition_, _definitionOf_, _etc_.
@@ -93,3 +87,4 @@ The following table represents a summary of the use cases:
 |Estonia   |EE1 - Fire Safety | Two rules related to the `operational map` of the building have been selected from the Estonian legistlation issued on 01-03-2021 ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Estonia)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Estonia/Estonia_Example.ttl) | 
 |Spain   |ES2 - Cultural Centre | Two rules have been selected to check the conformance of the `cantiliver` of the cultural centre with the regulations. These rules are defined in the POUM document, which is the Municipal Urban Planning Plan Regulations document, definitively approved by the Barcelona Territorial Planning Commission on 13-07-2005 ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Spain)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Spain/Spanish_Example.ttl) |
 |UK     |UK1 - Timber Structure  | This example represents check in `compression parallel to the grain in timber structures`, as described in the latest version of Eurocode 5 (EN 1995-1-1:2004+A2:2014) ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/UK)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/UK/UK-Timber%20Structure.ttl) |
+
