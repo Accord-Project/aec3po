@@ -25,7 +25,7 @@ aec3po:DataRequirement a owl:Class ;
  rdfs:isDefinedBy aec3po:data_requirements .
 
 aec3po:IDS a owl:Class ;
- rdfs:label "Data Requirement"@en ;
+ rdfs:label "IDS"@en ;
  rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
  rdfs:subClassOf aec3po:DataRequirement ;
  rdfs:isDefinedBy aec3po:data_requirements .
