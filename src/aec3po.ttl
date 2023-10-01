@@ -105,6 +105,16 @@ aec3po:thomas a schema:Person ;
 <https://www.cardiff.ac.uk/> schema:name "Cardiff University" ;
     schema:url <https://www.cardiff.ac.uk/> .
 
+aec3po:vladimir a schema:Person ;
+    schema:affiliation <https://www.ontotext.com/> ;
+    schema:email "vladimir.alexiev@ontotext.com" ;
+    schema:identifier <https://orcid.org/0000-0001-7508-7428> ;
+    schema:name "Vladimir Alexiev" ;
+    schema:url <https://www.ontotext.com/blog/author/vladimir/> .
+
+<https://www.ontotext.com/> schema:name "Ontotext" ;
+    schema:url <https://www.ontotext.com/> .
+
 
 # hasValue is used widely (and wildly)
 
