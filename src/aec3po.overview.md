@@ -3,14 +3,20 @@
 ### AEC3PO Modules <a name="modules"></a> 
 The AEC3PO ontology is designed to represent various aspects of the construction domain, focusing on compliance and permitting. It is organised into different modules, each comprising classes, and properties. These modules facilitate the modeling of different components and relationships within the construction domain. The figure below shows an overview of these modules and the relations among them.
 
-![AEC3PO Overview](diagrams/aec3po_v1.0.2_Modules.png)
+<figure>
+  <img src="diagrams/aec3po_v1.0.2_Modules" alt="Illustration of the core concepts of AEC3PO ontology" />
+  <figcaption> Illustration of the core concepts of AEC3PO ontology </figcaption>
+</figure>
+
 
 Below is an overview of each module and its sub-components:
-
-1. **Module 1: Document**: This module describes building-compliance related documents and their subdivisions.
-    - Classes: _Document_, _DocumentSubdivision_.
-    - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
-
+<ol>
+   <li>**Module 1: Document**</li>: This module describes building-compliance related documents and their subdivisions.
+      <ul>
+       <li>Classes: </li>_Document_, _DocumentSubdivision_.
+       <li>Properties:</li> _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
+      </ul>
+</ol>         
 2.  **Module 2: Statement**: This module describes things stated in a building compliance-related document.
   - Classes: _Statement_, _DefinitionStatement_, _CheckStatement_, _CheckListStatement_, _CategoryCheckStatement_, _CertificateCheckStatement_, _BooleanCheckStatement_, _NumericalCheckStatement_, _HumanEvaluatedCheckStatement_, _etc_.
   - Properties: _hasSubdivision_, _hasRequiredData_, _hasEvidence_, _hasDefinition_, _definitionOf_, _etc_.
