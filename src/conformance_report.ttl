@@ -13,7 +13,7 @@ aec3po:conformance_report a owl:Ontology ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description "The AEC3PO Conformance Report module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
-    dct:title "AEC3PO: Checking Act"@en ;
+    dct:title "AEC3PO: Conformance Report"@en ;
     owl:imports aec3po:check_method , aec3po:conformance_report ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
