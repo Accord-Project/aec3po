@@ -8,28 +8,28 @@ The AEC3PO ontology is designed to represent various aspects of the construction
 Below is an overview of each module and its sub-components:
 
 1. **Module 1: Document**: This module describes building-compliance related documents and their subdivisions.
-    - Classes: _Document_, _DocumentSubdivision_.
-    - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
+    - **Classes:** _Document_,_DocumentSubdivision_.
+    - **Properties:** _hasPart_,_hasRequiredData_,_forDocument_,_hasPermittingStage_, _etc_.
 
 2.  **Module 2: Statement**: This module describes things stated in a building compliance-related document.
-    - Classes: _Statement_, _DefinitionStatement_, _CheckStatement_, _CheckListStatement_, _CategoryCheckStatement_, _CertificateCheckStatement_, _BooleanCheckStatement_, _NumericalCheckStatement_, _HumanEvaluatedCheckStatement_, _etc_.
-    - Properties: _hasSubdivision_, _hasRequiredData_, _hasEvidence_, _hasDefinition_, _definitionOf_, _etc_.
+    - **Classes:** _Statement_,_DefinitionStatement_,_CheckStatement_,_CheckListStatement_,_CategoryCheckStatement_,_CertificateCheckStatement_,_BooleanCheckStatement_,_NumericalCheckStatement_,_HumanEvaluatedCheckStatement_,_etc_.
+    - **Properties:** _hasSubdivision_,_hasRequiredData_,_hasEvidence_,_hasDefinition_,_definitionOf_,_etc_.
 
 3. **Module 3: DataRequirement**: This module describes all data requirements that are dectated from the statement..
-  -	Classes: _DataRequirement_, _IDS_.
-  -	Properties: _hasFormat_, _etc_.
+    -	**Classes:** _DataRequirement_,_IDS_.
+    -	**Properties:** _hasFormat_,_etc_.
 
 4. **Module 4: Evidence**: This module describes all resources that can be used to assess the validity and relevance of the statement.
-  -	Classes: _Evidence_.
-  -	Properties: _hasFormat_, _forDocument_, _etc_.
+    -	**Classes:** _Evidence_.
+    -	**Properties:** _hasFormat_,_forDocument_,_etc_.
 
 5. **Module 5: CheckMethod**: This module describes pieces of information that operationalize check statements in documents.
-  -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _ACCORDCheckMethod_, _FuncionCheckMethod_, etc.
-  -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _nests_,_etc_.
+    -	**Classes:** _CheckMethod_,_BooleanCheckMethod_,_ComponentCheckMethod_,_SHACLCheckMethod_,_ACCORDCheckMethod_,_FuncionCheckMethod_, etc.
+    -	**Properties:** _hasUnit_,_hasTarget_,_operationalizes_,_operationalizedBy_,_nests_,_etc_.
   
 6. **Module 6: FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
-  - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
-  -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasDesign_, _hasContext_, _etc_.
+    - **Classes:** _FeatureOfInterest_,_Property_,_PropertyKind_,_QuantityKind_,_etc_.
+    -	**Properties:** _hasProperty_,_hasQuantityKind_,_hasPropertyKind_,_hasDesign_,_hasContext_,_etc_.
   
 7. **Module 7: CheckingAct**
   - Classes: _CheckingAct_, _ProcessVerifier_, etc.
