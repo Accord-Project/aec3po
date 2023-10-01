@@ -8,8 +8,8 @@ The AEC3PO ontology is designed to represent various aspects of the construction
 Below is an overview of each module and its sub-components:
 
 1. **Module 1: Document**: This module describes building-compliance related documents and their subdivisions.
-   - Classes: _Document_, _DocumentSubdivision_.
-   - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
+    - Classes: _Document_, _DocumentSubdivision_.
+    - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
 
 2.  **Module 2: Statement**: This module describes things stated in a building compliance-related document.
   - Classes: _Statement_, _DefinitionStatement_, _CheckStatement_, _CheckListStatement_, _CategoryCheckStatement_, _CertificateCheckStatement_, _BooleanCheckStatement_, _NumericalCheckStatement_, _HumanEvaluatedCheckStatement_, _etc_.
