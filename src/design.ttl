@@ -13,7 +13,7 @@ aec3po:design a owl:Ontology ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description "The AEC3PO Design module describes descriptions of some design of features of interest, in terms of structure, geometry, and function."@en ;
     dct:modified "2023-05-25"^^xsd:date ;
-    dct:title "AEC3PO: Feature of Interest"@en ;
+    dct:title "AEC3PO: Design"@en ;
     owl:imports aec3po:quantity_kinds ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
