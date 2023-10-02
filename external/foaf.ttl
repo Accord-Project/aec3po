@@ -1,1 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dice: <https://w3id.org/digitalconstruction/0.5/Entities#> .
+@prefix dica: <https://w3id.org/digitalconstruction/0.5/Agents#> .
+@prefix dici: <https://w3id.org/digitalconstruction/0.5/Information#> .
+@prefix dicp: <https://w3id.org/digitalconstruction/0.5/Processes#> .
+@prefix foaf: <http://xmlns.com/foaf/spec/> . 
+@prefix aec3po: <https://ci.mines-stetienne.fr/aec3po/> .
+
+<https://w3id.org/digitalconstruction/0.5/Alignment/FOAF/foaf.ttl> 
+  rdf:type owl:Ontology ;
+  dcterms:created "2021-04-18"^^xsd:date ;
+  dcterms:creator "Seppo Törmä" ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment "Alignment of the AEC3PO ontology with FOAF ontology" ;
+  rdfs:label "Alignment of DICA and FOAF"@en ;
+  owl:imports <https://ci.mines-stetienne.fr/aec3po/aec3po.ttl> ;
+  owl:imports <http://xmlns.com/foaf/spec/> .
+
+aec3po:Agent owl:equivalentClass foaf:Agent .
+aec3po:Person owl:equivalentClass foaf:Person .
+aec3po:Organization owl:equivalentClass foaf:Organization .
+aec3po:Team owl:equivalentClass foaf:Group .
+foaf:Image owl:equivalentClass dici:Image .
+
+aec3po:Project rdfs:subClassOf foaf:Project .
+foaf:Document rdfs:subClassOf dici:InformationContentEntity .
+
+foaf:member rdfs:subPropertyOf dice:hasMember .
 
