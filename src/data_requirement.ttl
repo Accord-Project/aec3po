@@ -12,8 +12,8 @@ aec3po:data_requirement a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description """The AEC3PO DataRequirement module describes all data requirements that are dectated from the statement."""@en ;
-    #dct:description <old_evidence.png> ;
-    dct:title "AEC3PO: data_requirement"@en ;
+    dct:description <DataRequirement.png> ;
+    dct:title "AEC3PO: Data Requirement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports aec3po:statement .
