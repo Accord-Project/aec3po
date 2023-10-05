@@ -92,18 +92,22 @@ Below is an overview of each module and its sub-components:
   - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
   -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasDesign_, _hasContext_, _etc_.
   
-7. **Module 7: CheckingAct**
-  - Classes: _CheckingAct_, _ProcessVerifier_, etc.
-  - Properties: _usedMethod_, _madeBy_, _hasReport_, _checks_, _etc._
+7. **CheckingAct**: This AEC3PO module describes the act of checking some entities for something and generating a conformance report.
+    - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
+    - Properties: _usedMethod_, _madeBy_, _hasReport_, _checks_, _etc_.
 
-8. **Module 8: ConformanceReport**
-  - Classes: _ConformanceReport_, _result_, _ValidationResult_,_Severity_, _etc_.
-  - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
+8. **ConformanceReport**: This AEC3PO module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated.
+    - Classes: _ConformanceReport_, _result_, _ValidationResult_,_Severity_, _etc_.
+    - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
 
-9. **Module 9: Model**
-  - Classes: _Model_, _Phase_, _Element_, _Classification_ etc.
-  - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
-  
+9. **Model**: This AEC3PO module describes BIM models.
+    - Classes: _Model_, _Phase_, _Element_, _Classification_, _etc_.
+    - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
+
+10. **Table**: This AEC3PO module describes tables as representations of data in rows and columns. Tables are described by captions.
+    - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
+    - Properties: _contains_, _isContainedIn_, _caption_.
+      
 Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, SHACL and ACCORD checks. 
 Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the **_ConformanceReport_** stores the outcomes of the check, their validation results and the corresponding messages. 
 
