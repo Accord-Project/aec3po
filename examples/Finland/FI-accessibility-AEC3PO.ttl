@@ -17,7 +17,7 @@
 @prefix schema: <https://schema.org/> .
 
 # Instantiate the Finnish Accessibility Document as a Document
-ex:Finnish_Accessibility_Doc a aec3po:Document ;
+ex:Finnish_Accessibility_Doc a aec3po:Document, owl:NamedIndividual ;
     dct:identifier <https://ym.fi/documents/1410903/35099218/Accessibility+of+Buildings.pdf/56f06cd3-4a27-6ee3-e553-e35731ffa70b/Accessibility+of+Buildings.pdf?t=1680607572789> ;
     dct:issued "2017-04-05"^^xsd:date ;
     dct:references <https://ym.fi/en/the-national-building-code-of-finland> ;
