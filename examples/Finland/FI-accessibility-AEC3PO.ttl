@@ -41,132 +41,132 @@ ex:Finnish_Accessibility_DocSubdivision_S2_Sub_2 dct:hasPart  ex:ramp_statement 
 #-------Instantiate the checkStatements expressed in the statement
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_Noticeable as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_Noticeable a aec3po:HumanEvaluatedCheckStatement ;
+ex:ramp_humanEvaluatedCheckStatement_Noticeable a aec3po:HumanEvaluatedCheckStatement , owl:NamedIndividual ;
     aec3po:asText "The ramp referred to in subsection 1 above shall be easily noticeable" ;
     rdf:type aec3po:CheckStatement . 
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_Straight as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_Straight a aec3po:HumanEvaluatedCheckStatement ;
+ex:ramp_humanEvaluatedCheckStatement_Straight a aec3po:HumanEvaluatedCheckStatement , owl:NamedIndividual ;
     aec3po:asText "The ramp referred to in subsection 1 above shall be straight" ;
     rdf:type aec3po:CheckStatement .
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_Surface as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_Surface a aec3po:HumanEvaluatedCheckStatement ;
+ex:ramp_humanEvaluatedCheckStatement_Surface a aec3po:HumanEvaluatedCheckStatement , owl:NamedIndividual;
     aec3po:asText "The ramp referred to in subsection 1 above shall be ... with a smooth, hard and non-slippery surface" ;
     rdf:type aec3po:CheckStatement .
 
 # Instantiate the ramp_numericalCheckStatement_Width as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_Width a aec3po:NumericalCheckStatement ;
+ex:ramp_numericalCheckStatement_Width a aec3po:NumericalCheckStatement , owl:NamedIndividual;
     rdf:type aec3po:CheckStatement .
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_FixedStructure as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_FixedStructure a aec3po:HumanEvaluatedCheckStatement ;
+ex:ramp_humanEvaluatedCheckStatement_FixedStructure a aec3po:HumanEvaluatedCheckStatement , owl:NamedIndividual;
     aec3po:asText "if the ramp is not connected to a fixed structure ..." ;
     rdf:type aec3po:CheckStatement .
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_ProtectiveEdge as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge a aec3po:HumanEvaluatedCheckStatement ;
+ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge a aec3po:HumanEvaluatedCheckStatement , owl:NamedIndividual ;
     rdf:type aec3po:CheckStatement .  
 
 # Instantiate the ramp_numericalCheckStatement_LowerLandingLenght as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_LowerLandingLenght a aec3po:NumericalCheckStatement ;
+ex:ramp_numericalCheckStatement_LowerLandingLenght a aec3po:NumericalCheckStatement , owl:NamedIndividual ;
     rdf:type aec3po:CheckStatement .     
 
 # Instantiate the ramp_numericalCheckStatement_UpperLandingLenght as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_UpperLandingLenght a aec3po:NumericalCheckStatement ;
+ex:ramp_numericalCheckStatement_UpperLandingLenght a aec3po:NumericalCheckStatement , owl:NamedIndividual ;
     rdf:type aec3po:CheckStatement .
 
 # Instantiate the ramp_numericalCheckStatement_MaxGradient as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_MaxGradient a aec3po:NumericalCheckStatement ;
+ex:ramp_numericalCheckStatement_MaxGradient a aec3po:NumericalCheckStatement , owl:NamedIndividual ;
     rdf:type aec3po:CheckStatement .    
 
 # Instantiate the ramp_numericalCheckStatement_LowerLandingElev as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_LowerLandingElev a aec3po:NumericalCheckStatement ;
+ex:ramp_numericalCheckStatement_LowerLandingElev a aec3po:NumericalCheckStatement , owl:NamedIndividual ;
     rdf:type aec3po:CheckStatement .   
 
 # Instantiate the ramp_numericalCheckStatement_UpperLandingElev as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_UpperLandingElev a aec3po:NumericalCheckStatement ;
+ex:ramp_numericalCheckStatement_UpperLandingElev a aec3po:NumericalCheckStatement , owl:NamedIndividual;
     rdf:type aec3po:CheckStatement .    
 
 # Instantiate the ramp_numericalCheckStatement_IntLandingLenght as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_IntLandingLenght a aec3po:NumericalCheckStatement ;
+ex:ramp_numericalCheckStatement_IntLandingLenght a aec3po:NumericalCheckStatement , owl:NamedIndividual;
     rdf:type aec3po:CheckStatement .   
 
 # Instantiate the ramp_numericalCheckStatement_IntLandingElev as a subClassOf CheckStatement
-ex:ramp_numericalCheckStatement_IntLandingElev a aec3po:NumericalCheckStatement ;
+ex:ramp_numericalCheckStatement_IntLandingElev a aec3po:NumericalCheckStatement , owl:NamedIndividual ;
     rdf:type aec3po:CheckStatement .  
 
 # Instantiate the ramp_humanEvaluatedCheckStatement_IndoorCondition as a subClassOf CheckStatement
-ex:ramp_humanEvaluatedCheckStatement_IndoorCondition a aec3po:HumanEvaluatedCheckStatement ;
+ex:ramp_humanEvaluatedCheckStatement_IndoorCondition a aec3po:HumanEvaluatedCheckStatement , owl:NamedIndividual ;
     rdf:type aec3po:CheckStatement . 
 
 
 #-------Required Data informed by the Statement
 
 # Instantiate the ramp as a FeatureOfInterest
-ex:ramp a aec3po:FeatureOfInterest ;
+ex:ramp a aec3po:FeatureOfInterest , owl:NamedIndividual ;
     rdf:type ifcOWL:ifcRamp ;
     aec3po:hasContext "https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcRamp" .
 
 # Define the properties of the ramp and constraints based on the Statement
-ex:rampNoticeable a aec3po:Property ;
+ex:rampNoticeable a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue "true"^^xsd:boolean .
 
-ex:rampStraight a aec3po:Property ;
+ex:rampStraight a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue "true"^^xsd:boolean .
 
-ex:rampSurface a aec3po:Property ;
+ex:rampSurface a aec3po:Property , owl:NamedIndividual;
     aec3po:asText "smooth, hard and non-slippery surface" ;
     aec3po:hasValue "true"^^xsd:boolean .
 
-ex:rampWidth a aec3po:Property ;
+ex:rampWidth a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 900 ;
     qudt:hasUnit unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
-ex:rampFixedStructure a aec3po:Property ;
+ex:rampFixedStructure a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue "false"^^xsd:boolean .
     
-ex:rampProtectiveEdge a aec3po:Property ;
+ex:rampProtectiveEdge a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 50 ;
     qudt:hasUnit unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
-ex:rampLowerLandingLenght a aec3po:Property ;
+ex:rampLowerLandingLenght a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 1500 ;
     qudt:hasUnit unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .  
 
-ex:rampUpperLandingLenght a aec3po:Property ;
+ex:rampUpperLandingLenght a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 1500 ;
     qudt:hasUnit unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .  
 
-ex:rampMaxGradient a aec3po:Property ;
+ex:rampMaxGradient a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue "5"^^xsd:decimal ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .   
 
-ex:rampLowerLandingElev a aec3po:Property ;
+ex:rampLowerLandingElev a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 500 ;
     qudt:hasUnit unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .          
 
-ex:rampUpperLandingElev a aec3po:Property ;
+ex:rampUpperLandingElev a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 1000 ;
     qudt:hasUnit unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
 
-ex:rampIntLandingLenght a aec3po:Property ;
+ex:rampIntLandingLenght a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 2000 ;
     qudt:hasUnit unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
 
-ex:rampIntLandingElev a aec3po:Property ;
+ex:rampIntLandingElev a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 500 ;
     qudt:hasUnit unit:MilliM ;
     aec3po:hasComparisonOperator aec3po:ComparisonOperator-le . 
 
-ex:rampIndoorCondition a aec3po:Property ;
+ex:rampIndoorCondition a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue "true"^^xsd:boolean .
 
 ex:ramp_statement aec3po:hasRequiredData 
@@ -188,69 +188,69 @@ ex:ramp_statement aec3po:hasRequiredData
 
 # Define and Instantiate all the CheckMethod(s) that will operationalize the Statement defined above. The assumption here is that SWRL rules are handeling the "CheckAct".
 
-ex:ramp_humanEvaluatedCheckMethod_Noticeable rdf:type aec3po:SWRLCheck ;
+ex:ramp_humanEvaluatedCheckMethod_Noticeable rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Noticeable . 
 
-ex:ramp_humanEvaluatedCheckMethod_Straight rdf:type aec3po:SWRLCheck ;
+ex:ramp_humanEvaluatedCheckMethod_Straight rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Straight . 
 
-ex:ramp_humanEvaluatedCheckMethod_Surface rdf:type aec3po:SWRLCheck ;
+ex:ramp_humanEvaluatedCheckMethod_Surface rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_Surface . 
 
 # Define  a checkMethod MaterialandArrangement that combines the three previous human evaluated check methods related to the material and arrangement of the ramp
-  ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement rdf:type aec3po:SWRLCheck ;
+  ex:ramp_humanEvaluatedCheckMethod_MaterialandArrangement rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes 
     ex:ramp_humanEvaluatedCheckMethod_Noticeable ,
     ex:ramp_humanEvaluatedCheckMethod_Straight ,
     ex:ramp_humanEvaluatedCheckMethod_Surface .
 
-ex:ramp_numericalCheckMethod_Width rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_Width rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_Width . 
 
-ex:ramp_humanEvaluatedCheckMethod_FixedStructure rdf:type aec3po:SWRLCheck ;
+ex:ramp_humanEvaluatedCheckMethod_FixedStructure rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_FixedStructure . 
 
-ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge rdf:type aec3po:SWRLCheck ;
+ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge .  
 
 # Define a checkMethod AllProtectiveEdge that combines the two previous check methods related to the protective edge
-ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge rdf:type aec3po:SWRLCheck ;
+ex:ramp_humanEvaluatedCheckMethod_AllProtectiveEdge rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes 
     ex:ramp_humanEvaluatedCheckStatement_FixedStructure ,
     ex:ramp_humanEvaluatedCheckStatement_ProtectiveEdge .
 
-ex:ramp_numericalCheckMethod_LowerLandingLenght rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_LowerLandingLenght rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_LowerLandingLenght .  
 
-ex:ramp_numericalCheckMethod_UpperLandingLenght rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_UpperLandingLenght rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_UpperLandingLenght .   
 
 # Define a checkMethod LandingLength that combines the two previous check CheckMethods related to the landing length
-ex:ramp_numericalCheckMethod_LandingLength rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_LandingLength rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes 
     ex:ramp_numericalCheckStatement_LowerLandingLenght ,
     ex:ramp_numericalCheckStatement_UpperLandingLenght .
 
-ex:ramp_numericalCheckMethod_MaxGradient rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_MaxGradient rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_MaxGradient .  
 
-ex:ramp_numericalCheckMethod_LowerLandingElev rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_LowerLandingElev rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_LowerLandingElev . 
 
-ex:ramp_numericalCheckMethod_UpperLandingElev rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_UpperLandingElev rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_UpperLandingElev .   
 
-ex:ramp_numericalCheckMethod_IntLandingLenght rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_IntLandingLenght rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_IntLandingLenght .  
 
-ex:ramp_numericalCheckMethod_IntLandingElev rdf:type aec3po:SWRLCheck ;
+ex:ramp_numericalCheckMethod_IntLandingElev rdf:type aec3po:SWRLCheck , owl:NamedIndividual;
   aec3po:operationalizes ex:ramp_numericalCheckStatement_IntLandingElev . 
 
-ex:ramp_humanEvaluatedCheckMethod_IndoorCondition rdf:type aec3po:SWRLCheck ;
+ex:ramp_humanEvaluatedCheckMethod_IndoorCondition rdf:type aec3po:SWRLCheck , owl:NamedIndividual;
   aec3po:operationalizes ex:ramp_humanEvaluatedCheckStatement_IndoorCondition .  
 
 # Define a checkMethod Gradient that combines the six previous check CheckMethods related to the gradient
-ex:ramp_CheckMethod_Gradient rdf:type aec3po:SWRLCheck ;
+ex:ramp_CheckMethod_Gradient rdf:type aec3po:SWRLCheck , owl:NamedIndividual ;
   aec3po:operationalizes 
     ex:ramp_numericalCheckStatement_MaxGradient ,
     ex:ramp_numericalCheckStatement_LowerLandingElev ,
@@ -260,15 +260,15 @@ ex:ramp_CheckMethod_Gradient rdf:type aec3po:SWRLCheck ;
     ex:ramp_humanEvaluatedCheckStatement_IndoorCondition .
 
 # Instantiate the ORCheck for the Protective Edge
-ex:ramp_ORCheck_ProtectiveEdge a aec3po:OrCheck ;
+ex:ramp_ORCheck_ProtectiveEdge a aec3po:OrCheck , owl:NamedIndividual ;
     aec3po:hasSubCheck ex:ramp_humanEvaluatedCheckMethod_FixedStructure , ex:ramp_humanEvaluatedCheckMethod_ProtectiveEdge . 
 
 # Instantiate the AndCheck for the Landing Length
-ex:ramp_AndCheck_LandingLength a aec3po:AndCheck ;
+ex:ramp_AndCheck_LandingLength a aec3po:AndCheck , owl:NamedIndividual ;
     aec3po:hasSubCheck ex:ramp_numericalCheckMethod_LowerLandingLenght , ex:ramp_numericalCheckMethod_UpperLandingLenght .  
 
 # Instantiate the ORCheck for the Gradient
-ex:ramp_ORCheck_Gradient a aec3po:OrCheck ;
+ex:ramp_ORCheck_Gradient a aec3po:OrCheck , owl:NamedIndividual ;
     aec3po:hasSubCheck 
         ex:ramp_numericalCheckMethod_LowerLandingElev ,
         ex:ramp_numericalCheckMethod_UpperLandingElev ,
@@ -277,7 +277,7 @@ ex:ramp_ORCheck_Gradient a aec3po:OrCheck ;
         ex:ramp_humanEvaluatedCheckMethod_IndoorCondition .
 
 # Instantiate the ChecklistStatement as a subClassOf Statement and link it to all the checks with the property hasSubCheck
-ex:ramp_checklistStatement a aec3po:ChecklistStatement ;
+ex:ramp_checklistStatement a aec3po:ChecklistStatement , owl:NamedIndividual ;
     aec3po:hasSubCheck 
         ex:ramp_humanEvaluatedCheckMethod_Noticeable ,
         ex:ramp_humanEvaluatedCheckMethod_Straight ,
@@ -290,78 +290,78 @@ ex:ramp_checklistStatement a aec3po:ChecklistStatement ;
 # ---- Start describing the "real" Ramp using dummy values
 
 # Define the design of the ramp as a 3DModel
-ex:ramp_design a aec3po:Design ;
+ex:ramp_design a aec3po:Design , owl:NamedIndividual ;
     rdf:type schema:3DModel .
 
 # Define the design of the properties of the ramp
-ex:design_rampNoticeable a aec3po:PropertyDesign ;
+ex:design_rampNoticeable a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue true .
 
-ex:design_rampStraight a aec3po:PropertyDesign ;
+ex:design_rampStraight a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue true .    
    
-ex:design_rampSurface a aec3po:PropertyDesign ;
+ex:design_rampSurface a aec3po:PropertyDesign , owl:NamedIndividual;
     aec3po:hasValue true .
 
-ex:design_rampWidth a aec3po:PropertyDesign ;
+ex:design_rampWidth a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue 1800 ;
     qudt:hasUnit unit:MilliM .
 
-ex:design_rampFixedStructure a aec3po:PropertyDesign ;
+ex:design_rampFixedStructure a aec3po:PropertyDesign , owl:NamedIndividual;
     aec3po:hasValue true .    
 
-ex:design_rampProtectiveEdge a aec3po:PropertyDesign ;
+ex:design_rampProtectiveEdge a aec3po:PropertyDesign , owl:NamedIndividual;
     aec3po:hasValue 100 ;
     qudt:hasUnit unit:MilliM .
 
-ex:design_rampLowerLandingLength a aec3po:PropertyDesign ;
+ex:design_rampLowerLandingLength a aec3po:PropertyDesign , owl:NamedIndividual;
     aec3po:hasValue 1800 ;
     qudt:hasUnit unit:MilliM .    
 
-ex:design_rampUpperLandingLength a aec3po:PropertyDesign ;
+ex:design_rampUpperLandingLength a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue 2500 ;
     qudt:hasUnit unit:MilliM .      
 
-ex:design_rampMaxGradient a aec3po:PropertyDesign ;
+ex:design_rampMaxGradient a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue 7 .  
 
-ex:design_rampLowerLandingElev a aec3po:PropertyDesign ;
+ex:design_rampLowerLandingElev a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue 1000 ;
     qudt:hasUnit unit:MilliM . 
 
-ex:design_rampUpperLandingElev a aec3po:PropertyDesign ;
+ex:design_rampUpperLandingElev a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue 1500 ;
     qudt:hasUnit unit:MilliM .   
 
-ex:design_rampIntLandingLenght a aec3po:PropertyDesign ;
+ex:design_rampIntLandingLenght a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue 2500 ;
     qudt:hasUnit unit:MilliM .   
 
-ex:design_rampIntLandingElev a aec3po:PropertyDesign ;
+ex:design_rampIntLandingElev a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue 1300 ;
     qudt:hasUnit unit:MilliM .     
 
-ex:design_rampIndoorCondition a aec3po:PropertyDesign ;
+ex:design_rampIndoorCondition a aec3po:PropertyDesign , owl:NamedIndividual ;
     aec3po:hasValue true .  
 
 # Define the design of each property of the ramp as PropertyKindDesign
-ex:design_rampPropertyMaterialandArrangement a aec3po:PropertyKindDesign ;
+ex:design_rampPropertyMaterialandArrangement a aec3po:PropertyKindDesign , owl:NamedIndividual ;
     aec3po:hasProperty 
          ex:design_rampNoticeable ,
          ex:design_rampStraight ,
          ex:design_rampSurface .
 
-ex:design_rampPropertyProtectiveEdge a aec3po:PropertyKindDesign ;
+ex:design_rampPropertyProtectiveEdge a aec3po:PropertyKindDesign , owl:NamedIndividual ;
     aec3po:hasProperty 
          ex:design_rampProtectiveEdge ,
          ex:design_rampFixedStructure .
 
-ex:design_rampPropertyLandingLength a aec3po:PropertyKindDesign ;
+ex:design_rampPropertyLandingLength a aec3po:PropertyKindDesign , owl:NamedIndividual ;
     aec3po:hasProperty 
          ex:design_rampLowerLandingLength ,
          ex:design_rampUpperLandingLength .
 
-ex:design_rampPropertyGradient a aec3po:PropertyKindDesign ;
+ex:design_rampPropertyGradient a aec3po:PropertyKindDesign , owl:NamedIndividual;
     aec3po:hasProperty 
          ex:design_rampMaxGradient ,
          ex:design_rampLowerLandingElev ,
@@ -386,7 +386,7 @@ ex:ramp_numericalCheckMethod_LandingLength aec3po:forDesign ex:design_rampProper
 ex:ramp_CheckMethod_Gradient aec3po:forDesign ex:design_rampPropertyGradient .
 
 # Conduct the checking act and generate a conformance report. 
-ex:ramp_checkingAct a aec3po:CheckingAct .
+ex:ramp_checkingAct a aec3po:CheckingAct , owl:NamedIndividual .
 
 # Link the checkingAct to all the CheckMethods using usedMethod property
 ex:ramp_checkingAct aec3po:usedMethod 
@@ -397,7 +397,7 @@ ex:ramp_checkingAct aec3po:usedMethod
     ex:ramp_CheckMethod_Gradient .
 
 # Instantiate the conformance report 
-ex:ramp_ConformanceReport a aec3po:ConformanceReport ;
+ex:ramp_ConformanceReport a aec3po:ConformanceReport , owl:NamedIndividual ;
     aec3po:conforms true .
 
 # Link the checkingAct to the conformance report using hasReport property
