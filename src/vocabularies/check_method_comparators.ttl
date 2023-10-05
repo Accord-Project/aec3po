@@ -124,6 +124,46 @@ aec3po:CheckMethodComparator-forall a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "forall"@en ;
     skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
 
+aec3po:CheckMethodComparator-logicalAND a owl:NamedIndividual, skos:Concept,
+        aec3po:CheckMethodComparator ;
+    rdfs:isDefinedBy aec3po:check_method_comparators ;
+    skos:definition "logical AND comparator."@en ;
+    skos:inScheme aec3po:CheckMethodComparatorNomenclature ;
+    skos:prefLabel "logicalAND"@en ;
+    skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
+
+aec3po:CheckMethodComparator-logicalOR a owl:NamedIndividual, skos:Concept,
+        aec3po:CheckMethodComparator ;
+    rdfs:isDefinedBy aec3po:check_method_comparators ;
+    skos:definition "logical OR comparator."@en ;
+    skos:inScheme aec3po:CheckMethodComparatorNomenclature ;
+    skos:prefLabel "logicalOR"@en ;
+    skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
+
+aec3po:CheckMethodComparator-multiplication a owl:NamedIndividual, skos:Concept,
+        aec3po:CheckMethodComparator ;
+    rdfs:isDefinedBy aec3po:check_method_comparators ;
+    skos:definition "multiplication comparator."@en ;
+    skos:inScheme aec3po:CheckMethodComparatorNomenclature ;
+    skos:prefLabel "multiplication"@en ;
+    skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
+
+aec3po:CheckMethodComparator-division a owl:NamedIndividual, skos:Concept,
+        aec3po:CheckMethodComparator ;
+    rdfs:isDefinedBy aec3po:check_method_comparators ;
+    skos:definition "division comparator."@en ;
+    skos:inScheme aec3po:CheckMethodComparatorNomenclature ;
+    skos:prefLabel "division"@en ;
+    skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
+
+aec3po:CheckMethodComparator-addition a owl:NamedIndividual, skos:Concept,
+        aec3po:CheckMethodComparator ;
+    rdfs:isDefinedBy aec3po:check_method_comparators ;
+    skos:definition "addition comparator."@en ;
+    skos:inScheme aec3po:CheckMethodComparatorNomenclature ;
+    skos:prefLabel "addition"@en ;
+    skos:topConceptOf aec3po:CheckMethodComparatorNomenclature .
+
 aec3po:hasComparator a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "has comparator"@en ;
