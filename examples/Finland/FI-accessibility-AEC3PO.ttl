@@ -106,7 +106,7 @@ ex:ramp_humanEvaluatedCheckStatement_IndoorCondition a aec3po:HumanEvaluatedChec
 # Instantiate the ramp as a FeatureOfInterest
 ex:ramp a aec3po:FeatureOfInterest , owl:NamedIndividual ;
     rdf:type ifcOWL:ifcRamp ;
-    aec3po:hasContext "https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcRamp" .
+    #aec3po:hasContext "https://search.bsdd.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcRamp" .
 
 # Define the properties of the ramp and constraints based on the Statement
 ex:rampNoticeable a aec3po:Property , owl:NamedIndividual ;
