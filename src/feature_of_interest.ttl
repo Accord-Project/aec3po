@@ -52,11 +52,11 @@ aec3po:hasQuantityKind a owl:ObjectProperty ;
     rdfs:isDefinedBy aec3po:feature_of_interest ;
     skos:example "A space area property to the property kind \"area\"."@en .
 
- aec3po:hasContext a owl:Property ;
-     rdfs:label "has Context"@en ;
-     rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
-     rdfs:domain [ a owl:Class ;
-             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
-     rdfs:range og:url ;
-     rdfs:isDefinedBy aec3po:feature_of_interest .
+# aec3po:hasContext a owl:Property ;
+     #rdfs:label "has Context"@en ;
+    # rdfs:comment "Represents which bSDD context a given ontology concept or property refers."@en ;
+    # rdfs:domain [ a owl:Class ;
+            # owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
+    # rdfs:range og:url ;
+    # rdfs:isDefinedBy aec3po:feature_of_interest .
 
