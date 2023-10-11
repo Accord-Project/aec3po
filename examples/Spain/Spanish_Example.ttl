@@ -81,17 +81,17 @@ ex:cantilever a aec3po:FeatureOfInterest ;
 ex:streeBaseOffset a aec3po:Property ;
     aec3po:hasValue 3.2 ;
     qudt:hasUnit unit:M ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-eg .
 
 ex:othersBaseOffset a aec3po:Property ;
     aec3po:hasValue 3.5 ;
     qudt:hasUnit unit:M ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-eg .
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-eg .
 
 ex:partywall_distance a aec3po:Property ;
     aec3po:hasValue 1 ;
     qudt:hasUnit unit:M ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-ge .
 
 ex:statement_54 aec3po:hasRequiredData ex:streeBaseOffset .
 ex:statement_54 aec3po:hasRequiredData ex:othersBaseOffset .
