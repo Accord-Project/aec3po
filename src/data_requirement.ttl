@@ -11,7 +11,7 @@
 aec3po:data_requirement a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description """The AEC3PO DataRequirement module describes all data requirements that are dectated from the statement."""@en ;
+    dct:description """The AEC3PO DataRequirement module describes the data requirements that derive from a statement. These can describe any aspect of the building model or any type of property, physical or conceptual, associated with it."""@en ;
     dct:description <DataRequirement.png> ;
     dct:title "AEC3PO: Data Requirement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
