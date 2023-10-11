@@ -115,7 +115,7 @@ aec3po:ACCORDCheckMethod a owl:Class ;
     rdfs:label "hasTarget"@en ;
     rdfs:comment "The target refers to either the name of an object, the name of property or a function."@en ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property ) ] ;
+            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:ACCORDCheckMethod) ] ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subPropertyOf aec3po:hasDesign .
 
