@@ -65,6 +65,12 @@ aec3po:CertificateCheckMethod a owl:Class ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:CheckMethod .
 
+aec3po:CategoryCheckMethod a owl:Class ;
+    rdfs:label "Category Check Method"@en ;
+    rdfs:comment "Category check method is a validation type that involves comparing content against a textual concept."@en ;
+    rdfs:isDefinedBy aec3po:check_method ;
+    rdfs:subClassOf aec3po:CheckMethod .
+
 aec3po:ComponentCheckMethod a owl:Class ;
     rdfs:label "Component Check Method"@en ;
     rdfs:comment "Component check method refers to a process of inspecting and verifying specific components or elements of a building or infrastructure to ensure they meet the required standards, specifications, and regulations. This method is used to assess the quality, functionality, and safety of individual components used in construction projects. Formally defined as checks for some feature of interest"@en ;
