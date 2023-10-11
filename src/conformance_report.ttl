@@ -11,23 +11,24 @@
 aec3po:conformance_report a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description "The AEC3PO Conformance Report module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
+    dct:description "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
-    dct:title "AEC3PO: Conformance Report"@en ;
+    dct:title "AEC3PO: Compliance Verification Report"@en ;
     owl:imports aec3po:check_method , aec3po:conformance_report ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
 aec3po:conforms a owl:DatatypeProperty ;
     rdfs:label "conforms"@en ;
-    rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
+#    rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
+    rdfs:comment "True if the Checking act confirms the check was validated, and false otherwise."@en ;
     rdfs:domain aec3po:ConformanceReport ;
     rdfs:isDefinedBy aec3po:conformance_report ;
     rdfs:range xsd:boolean .
 
 aec3po:ConformanceReport a owl:Class ;
-    rdfs:label "Conformance Report"@en ;
-    rdfs:comment """Result of a checking act. May be conformant or not."""@en ;
+    rdfs:label "Compliance Verification Report"@en ;
+    rdfs:comment """Result of a checking act. May be compliant or not."""@en ;
     rdfs:isDefinedBy aec3po:conformance_report ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty aec3po:conforms ;
@@ -35,7 +36,7 @@ aec3po:ConformanceReport a owl:Class ;
 
 aec3po:result a owl:Class ;
     rdfs:label "Result"@en ;
-    rdfs:comment """For every conformance result that is produced by a checking act, the instance of aec3po:ConformanceReport in the results graph has a value for the property ae3cpo:result. Each value of aec3po:result is an instance of the class aec3po:ValidationResult."""@en ;
+    rdfs:comment """For every compliance result that is produced by a checking act, the instance of aec3po:ConformanceReport in the results graph has a value for the property ae3cpo:result. Each value of aec3po:result is an instance of the class aec3po:ValidationResult."""@en ;
     rdfs:isDefinedBy aec3po:conformance_report ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty aec3po:conforms ;
@@ -43,7 +44,7 @@ aec3po:result a owl:Class ;
 
 aec3po:ValidationResult a owl:Class ;
     rdfs:label "Validation Result"@en ;
-    rdfs:comment """Individual validation result of a conformance report."""@en ;
+    rdfs:comment """Individual validation result of a Compliance Verification Report."""@en ;
     rdfs:isDefinedBy aec3po:conformance_report ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty aec3po:focus ;
