@@ -649,7 +649,7 @@ ex:FI3_buildingSite a aec3po:FeatureOfInterest ;
 ex:FI3_building_assessmentPeriod a aec3po:Property ;
     aec3po:hasValue 50 ;
     qudt:hasUnit "years"  ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-le .
 
 ex:FI3_building_ClimateReport a aec3po:Property ;
     rdf:type aec3po:Document ; 
