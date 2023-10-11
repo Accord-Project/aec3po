@@ -91,13 +91,13 @@ aec3po:SHACLCheckMethod a owl:Class ;
 
 aec3po:SWRLCheckMethod a owl:Class ;
     rdfs:label "SWRL Check Method"@en ;
-    rdfs:comment "A checking method implemented using SWRL rules. "@en ;
+    rdfs:comment "A check method implemented using SWRL rules. "@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:DeclarativeCheckMethod .
 
 aec3po:ACCORDCheckMethod a owl:Class ;
     rdfs:label "ACCORD Check Method"@en ;
-    rdfs:comment "A check implemented using the ACCORD rule language. "@en ;
+    rdfs:comment "A check implemented by grouping and nesting other checks using the ACCORD rule language. "@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:DeclarativeCheckMethod .
 
