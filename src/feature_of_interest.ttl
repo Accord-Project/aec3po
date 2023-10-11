@@ -12,7 +12,7 @@
 aec3po:feature_of_interest a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description "The AEC3PO Feature of Interest module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance."@en ;
+    dct:description "The AEC3PO Feature of Interest module describes an entity (feature) of a site, building, or piece of infrastructure that is of interest. Typically, this will be a building component that needs to be compliant to regulations, or be documented in the permitting process. ."@en ;
     dct:modified "2023-05-25"^^xsd:date ;
     dct:title "AEC3PO: Feature of Interest"@en ;
     owl:imports aec3po:quantity_kinds ;
