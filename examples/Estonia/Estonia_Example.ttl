@@ -60,7 +60,7 @@ ex:EE_FireSafety_Doc_Appendix9 a aec3po:DocumentSubdivision ;
 ex:EE_FireSafety_Doc dct:hasPart ex:EE_FireSafety_Doc_Appendix9 .
 
 ##Instantiate the check statements of the second statement, which is a CheckListStatement as BooleanCheckStatements
-ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_BuildingAddress a aec3po:BooleanCheckStatement ;
+ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_BuildingAddress a aec3po:BooleanCheckStatement ;
    aec3po:hasValue "true"^^xsd:boolean .
 
 ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_Version a aec3po:BooleanCheckStatement ;
@@ -128,7 +128,7 @@ ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_ValuableItemsAndEquipe
 
 #Link all the previous BooleanCheckStatement to the CheckListStatement with the property hasSubCheck
 ex:EE_FireSafety_Doc_Section_52_Clause7 aec3po:hasSubCheck 
-    ex:EE_FireSafety_Section_52_MapInfo_componentCheckStatement_BuildingAddress ,
+    ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_BuildingAddress ,
     ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_Version ,
     ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_UsePurpose ,
     ex:EE_FireSafety_Section_52_MapInfo_BooleanCheckStatement_MethodsAndRoomLocation ,
