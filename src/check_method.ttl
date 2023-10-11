@@ -59,6 +59,12 @@ aec3po:ConceptCheckMethod a owl:Class ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:CheckMethod .
 
+aec3po:NumericalCheckMethod a owl:Class ;
+    rdfs:label "Numerical Check Method"@en ;
+    rdfs:comment "Numerical check method refers to a type of check that involves assessing and verifying numerical data or values for accuracy and adherence to specific criteria or standards. This method typically includes comparing numerical inputs to predefined rules, constraints, or mathematical calculations to ensure data integrity and correctness. "@en ;
+    rdfs:isDefinedBy aec3po:check_method ;
+    rdfs:subClassOf aec3po:CheckMethod .
+
 aec3po:CertificateCheckMethod a owl:Class ;
     rdfs:label "Certificate Check Method"@en ;
     rdfs:comment "Certificate check method is a formal process used to verify and validate the authenticity and compliance of certificates related to construction projects. It involves a systematic review and examination of certificates issued by authorised entities to ensure that they meet all the necessary regulatory requirements, standards, and specifications."@en ;
