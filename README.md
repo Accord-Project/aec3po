@@ -86,7 +86,7 @@ Below is an overview of each module and its sub-components:
 
 5. **Module 5: CheckMethod**: This module describes pieces of information that operationalize check statements in documents.
   -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _ACCORDCheckMethod_, _FuncionCheckMethod_, etc.
-  -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _nests_,_etc_.
+  -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _etc_.
   
 6. **Module 6: FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
   - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
