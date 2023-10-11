@@ -12,7 +12,7 @@
 aec3po:model a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor aec3po:amna ;
-    dct:description "The AEC3PO model module describes BIM models."@en ;
+    dct:description "The AEC3PO model module describes a model representing part or the entirety of a site, building, or piece of infrastructure. Typically, this will be in the form of a Building Information Model."@en ;
     dct:modified "2023-08-15"^^xsd:date ;
     dct:title "AEC3PO:Model"@en ;
     owl:imports aec3po:evidence ;
