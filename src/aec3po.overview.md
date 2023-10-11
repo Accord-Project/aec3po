@@ -26,7 +26,7 @@ Below is an overview of the core modules and their components:
 
 5. **CheckMethod**: Information that operationalizes Checks in documents.
     -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _ACCORDCheckMethod_, _FuncionCheckMethod_, _etc_.
-    -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _nests_, _etc_.
+    -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _etc_.
   
 6. **FeatureOfInterest**: An element of a site, building, or piece of infrastructure that is of interest. Typically, this will be a building component that needs to be compliant to regulations, or be documented in the permitting process. 
     - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_, _etc_.
