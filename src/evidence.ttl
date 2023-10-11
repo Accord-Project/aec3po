@@ -11,7 +11,7 @@
 aec3po:evidence a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description """The AEC3PO Evidence module describes all resources that can be used to assess the validity and relevance of the statement."""@en ;
+    dct:description """The AEC3PO Evidence module describes the evidence that an actor in the compliance and permitting process needs to provide in order to prove that the requirements derived from a Statement have been met."""@en ;
     dct:description <Evidence.png> ;
     dct:title "AEC3PO: evidence"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
