@@ -11,7 +11,7 @@
 aec3po:checking_act a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description "The AEC3PO Checking Act module describes the act of checking some entities for something and generating a conformance report."@en ;
+    dct:description "The AEC3PO Checking Act module describes the act of checking some entities for something and generating a compliance verification report."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
     dct:title "AEC3PO: Checking Act"@en ;
     owl:imports aec3po:check_method , aec3po:conformance_report ;
@@ -20,12 +20,12 @@ aec3po:checking_act a owl:Ontology ;
 
 aec3po:CheckingAct a owl:Class ;
     rdfs:label "Checking Act"@en ;
-    rdfs:comment """Act of checking some entities for something and generating a conformance report. 
+    rdfs:comment """Act of checking some entities for something and generating a compliance verification report. 
     
 - Links to the check method that was used, which operationalizes a statement in a document;
 - Links to the process verifier that made the checking act;
 - Links to the entities that are checked;
-- Links to conformance report that resulted.
+- Links to compliance verification report that resulted.
 
 """@en ;
     rdfs:isDefinedBy aec3po:checking_act ;
