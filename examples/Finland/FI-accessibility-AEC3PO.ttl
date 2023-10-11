@@ -122,7 +122,7 @@ ex:rampSurface a aec3po:Property , owl:NamedIndividual;
 ex:rampWidth a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 900 ;
     qudt:hasUnit unit:MilliM ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-ge .
 
 ex:rampFixedStructure a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue "false"^^xsd:boolean .
@@ -130,41 +130,41 @@ ex:rampFixedStructure a aec3po:Property , owl:NamedIndividual ;
 ex:rampProtectiveEdge a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 50 ;
     qudt:hasUnit unit:MilliM ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-ge .
 
 ex:rampLowerLandingLenght a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 1500 ;
     qudt:hasUnit unit:MilliM ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .  
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-ge .  
 
 ex:rampUpperLandingLenght a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 1500 ;
     qudt:hasUnit unit:MilliM ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .  
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-ge .  
 
 ex:rampMaxGradient a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue "5"^^xsd:decimal ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .   
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-le .   
 
 ex:rampLowerLandingElev a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 500 ;
     qudt:hasUnit unit:MilliM ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .          
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-le .          
 
 ex:rampUpperLandingElev a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 1000 ;
     qudt:hasUnit unit:MilliM ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-le .
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-le .
 
 ex:rampIntLandingLenght a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 2000 ;
     qudt:hasUnit unit:MilliM ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-ge .
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-ge .
 
 ex:rampIntLandingElev a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue 500 ;
     qudt:hasUnit unit:MilliM ;
-    aec3po:hasComparisonOperator aec3po:ComparisonOperator-le . 
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-le . 
 
 ex:rampIndoorCondition a aec3po:Property , owl:NamedIndividual ;
     aec3po:hasValue "true"^^xsd:boolean .
