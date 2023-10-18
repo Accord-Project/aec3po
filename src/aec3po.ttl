@@ -123,7 +123,9 @@ aec3po:hasValue a owl:DatatypeProperty, owl:FunctionalProperty ;
     rdfs:label "has value"@en ;
     rdfs:comment "de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal."@en ;
     rdfs:isDefinedBy aec3po: ;
-    skos:note "The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum"@en .
+    skos:note "The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum"@en ;
+     rdfs:domain [ a owl:Class ;
+            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:CheckMethod) ] .
 
 aec3po:asText a owl:DatatypeProperty, owl:FunctionalProperty ;
     rdfs:label "as text"@en ;
