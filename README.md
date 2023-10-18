@@ -85,7 +85,7 @@ Below is an overview of each module and its sub-components:
   -	Properties: _hasFormat_, _forDocument_, _etc_.
 
 5. **Module 5: CheckMethod**: This module describes pieces of information that operationalize check statements in documents.
-  -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _ACCORDCheckMethod_, _FuncionCheckMethod_, etc.
+  -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _CompositeCheckMethod_, _FuncionCheckMethod_, etc.
   -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _etc_.
   
 6. **Module 6: FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
@@ -108,7 +108,7 @@ Below is an overview of each module and its sub-components:
     - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
     - Properties: _contains_, _isContainedIn_, _caption_.
       
-Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, SHACL and ACCORD checks. 
+Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, SHACL and composite checks. 
 Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the **_ConformanceReport_** stores the outcomes of the check, their validation results and the corresponding messages. 
 
 ### AEC3PO Alignments <a name="alignments"></a>
