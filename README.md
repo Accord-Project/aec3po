@@ -7,7 +7,7 @@ AEC3PO has been developed in order to capture all aspects of building compliance
 
 - building codes, regulations, and standards
 - compliance and permitting processes  and documentation
-- compliance and permitting actors
+- compliance and permitting actorsACC
 
 The ontology requirements are essentially derived from the rule formalisation methodology that aims to semantise regulations and provide an open format for machine-readable rules. 
 
@@ -85,7 +85,7 @@ Below is an overview of each module and its sub-components:
   -	Properties: _hasFormat_, _forDocument_, _etc_.
 
 5. **Module 5: CheckMethod**: This module describes pieces of information that operationalize check statements in documents.
-  -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _ACCORDCheckMethod_, _FuncionCheckMethod_, etc.
+  -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _CompositeCheckMethod_, _FuncionCheckMethod_, etc.
   -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _etc_.
   
 6. **Module 6: FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
