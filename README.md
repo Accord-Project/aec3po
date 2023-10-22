@@ -96,15 +96,23 @@ Below is an overview of each module and its sub-components:
     - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
     - Properties: _usedMethod_, _madeBy_, _hasReport_, _checks_, _etc_.
 
-8. **ConformanceReport**: This AEC3PO module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated.
+8. **Compliance Verification Report (ConformanceReport)**: This AEC3PO module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated.
     - Classes: _ConformanceReport_, _result_, _ValidationResult_,_Severity_, _etc_.
-    - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
+    - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_,_etc._
+      
+9. **Design**: This AEC3PO module describes descriptions of some design of features of interest, in terms of structure, geometry, and function. 
+    - Classes: _Design_, _PropertyDesign_.
+    - Properties: _hasDesign_.
 
-9. **Model**: This AEC3PO module describes BIM models.
+10. **Legal Verifier**: This AEC3PO module defines state and private verifiers. 
+    - Classes: _LegalVerifier_, _PrivateVerifier_, _StateVerifier_.
+    - Properties: _hasDesign_.
+
+11. **Model**: This AEC3PO module describes BIM models.
     - Classes: _Model_, _Phase_, _Element_, _Classification_, _etc_.
     - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
 
-10. **Table**: This AEC3PO module describes tables as representations of data in rows and columns. Tables are described by captions.
+12. **Table**: This AEC3PO module describes tables as representations of data in rows and columns. Tables are described by captions.
     - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
     - Properties: _contains_, _isContainedIn_, _caption_.
       
