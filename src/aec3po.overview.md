@@ -36,16 +36,23 @@ Below is an overview of the core modules and their components:
     - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
     - Properties: _usedMethod_, _madeBy_, _hasReport_, _checks_, _etc_.
 
-8. **ComplianceVerificationReport**: An automatically generated report that checks if all the assigned compliance requirements (typically Checks) have been met.
-9. This will typically show the results of some `aec3po:ProcesVerifier` checking entities via some `aec3po:CheckingAct`. Entities may be validated or repudiated.
+8. **ComplianceVerificationReport**: An automatically generated report that checks if all the assigned compliance requirements (typically Checks) have been met. This will typically show the results of some `aec3po:ProcesVerifier` checking entities via some `aec3po:CheckingAct`. Entities may be validated or repudiated.
     - Classes: _ConformanceReport_, _result_, _ValidationResult_,_Severity_, _etc_.
     - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
 
-10. **Model**: A model representing part or the entirety of a site, building, or piece of infrastructure. Typically these will be Building Information Models.
+9. **Design**: This AEC3PO module describes descriptions of some design of features of interest, in terms of structure, geometry, and function. 
+    - Classes: _Design_, _PropertyDesign_.
+    - Properties: _hasDesign_.
+
+10. **Legal Verifier**: This AEC3PO module defines state and private verifiers. 
+    - Classes: _LegalVerifier_, _PrivateVerifier_, _StateVerifier_.
+    - Properties: _hasDesign_. 
+
+11. **Model**: A model representing part or the entirety of a site, building, or piece of infrastructure. Typically these will be Building Information Models.
     - Classes: _Model_, _Phase_, _Element_, _Classification_, _etc_.
     - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
 
-11. **Table**:A table as representations of data in rows and columns. Tables are described by captions.
+12. **Table**:A table as representations of data in rows and columns. Tables are described by captions.
     - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
     - Properties: _contains_, _isContainedIn_, _caption_.
  
