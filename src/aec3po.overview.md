@@ -8,51 +8,51 @@ It is organised into modules, comprising of classes and properties. The figure b
 
 Below is an overview of the core modules and their components:
 
-1. **Document**:A document, of any kind, typically related to compliance and permitting.
+1. **[Document](https://ci.mines-stetienne.fr/aec3po/document)**:A document, of any kind, typically related to compliance and permitting.
     - Classes: _Document_, _DocumentSubdivision_.
     - Properties: _hasPart_, _hasRequiredData_, _forDocument_, _hasPermittingStage_, _etc_.
 
-2.  **Statement**: A statement, of any kind, found in a document.
+2.  **[Statement](https://ci.mines-stetienne.fr/aec3po/statement)**: A statement, of any kind, found in a document.
     - Classes: _Statement_, _DefinitionStatement_, _CheckStatement_, _CheckListStatement_, _CategoryCheckStatement_, _CertificateCheckStatement_, _BooleanCheckStatement_, _NumericalCheckStatement_, _HumanEvaluatedCheckStatement_, _etc_.
     - Properties: _hasSubdivision_, _hasRequiredData_, _hasEvidence_, _hasDefinition_, _definitionOf_, _etc_.
 
-3. **DataRequirement**: The data requirements that derive from a statement. These can describe any aspect of the building model or any type of property, physical or conceptual, associated with it.
+3. **[DataRequirement](https://ci.mines-stetienne.fr/aec3po/data_requirement)**: The data requirements that derive from a statement. These can describe any aspect of the building model or any type of property, physical or conceptual, associated with it.
     -	Classes: _DataRequirement_, _IDS_.
     -	Properties: _hasFormat_, _etc_.
 
-4. **Evidence**: The evidence that an actor in the compliance and permitting process needs to provide in order to prove that the requirements derived from a Statement have been met.
+4. **[Evidence](https://ci.mines-stetienne.fr/aec3po/evidence)**: The evidence that an actor in the compliance and permitting process needs to provide in order to prove that the requirements derived from a Statement have been met.
     -	Classes: _Evidence_.
     -	Properties: _hasFormat_, _forDocument_, _etc_.
 
-5. **CheckMethod**: Information that operationalizes Checks in documents.
+5. **[CheckMethod](https://ci.mines-stetienne.fr/aec3po/check_method)**: Information that operationalizes Checks in documents.
     -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _CompositeCheckMethod_, _FuncionCheckMethod_, _etc_.
     -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _etc_.
   
-6. **FeatureOfInterest**: An element of a site, building, or piece of infrastructure that is of interest. Typically, this will be a building component that needs to be compliant to regulations, or be documented in the permitting process. 
+6. **[FeatureOfInterest](https://ci.mines-stetienne.fr/aec3po/feature_of_interest)**: An element of a site, building, or piece of infrastructure that is of interest. Typically, this will be a building component that needs to be compliant to regulations, or be documented in the permitting process. 
     - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_, _etc_.
     -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasDesign_, _hasContext_, _etc_.
   
-7. **CheckingAct**: The act of checking an entity for compliance, and producing the respective report.
+7. **[CheckingAct](https://ci.mines-stetienne.fr/aec3po/checking_act)**: The act of checking an entity for compliance, and producing the respective report.
     - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
     - Properties: _usedMethod_, _madeBy_, _hasReport_, _checks_, _etc_.
 
-8. **ComplianceVerificationReport**: An automatically generated report that checks if all the assigned compliance requirements (typically Checks) have been met. This will typically show the results of some `aec3po:ProcesVerifier` checking entities via some `aec3po:CheckingAct`. Entities may be validated or repudiated.
-    - Classes: _ConformanceReport_, _result_, _ValidationResult_,_Severity_, _etc_.
+8. **[ComplianceVerificationReport](https://ci.mines-stetienne.fr/aec3po/conformance_report)**: An automatically generated report that checks if all the assigned compliance requirements (typically Checks) have been met. This will typically show the results of some `aec3po:ProcesVerifier` checking entities via some `aec3po:CheckingAct`. Entities may be validated or repudiated.
+    - Classes: _ComplianceverificationReport_, _result_, _ValidationResult_,_Severity_, _etc_.
     - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
 
-9. **Design**: This AEC3PO module describes descriptions of some design of features of interest, in terms of structure, geometry, and function. 
+9. **[Design](https://ci.mines-stetienne.fr/aec3po/design)**: This AEC3PO module describes descriptions of some design of features of interest, in terms of structure, geometry, and function. 
     - Classes: _Design_, _PropertyDesign_.
     - Properties: _hasDesign_.
 
-10. **Legal Verifier**: This AEC3PO module defines state and private verifiers. 
+10. **[Legal Verifier](https://ci.mines-stetienne.fr/aec3po/design)**: This AEC3PO module defines state and private verifiers. 
     - Classes: _LegalVerifier_, _PrivateVerifier_, _StateVerifier_.
     - Properties: _hasDesign_. 
 
-11. **Model**: A model representing part or the entirety of a site, building, or piece of infrastructure. Typically these will be Building Information Models.
+11. **[Model](https://ci.mines-stetienne.fr/aec3po/model)**: A model representing part or the entirety of a site, building, or piece of infrastructure. Typically these will be Building Information Models.
     - Classes: _Model_, _Phase_, _Element_, _Classification_, _etc_.
     - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
 
-12. **Table**:A table as representations of data in rows and columns. Tables are described by captions.
+12. **[Table](https://ci.mines-stetienne.fr/aec3po/table)**:A table as representations of data in rows and columns. Tables are described by captions.
     - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
     - Properties: _contains_, _isContainedIn_, _caption_.
  
