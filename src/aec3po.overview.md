@@ -44,7 +44,7 @@ Below is an overview of the core modules and their components:
     - Classes: _Design_, _PropertyDesign_.
     - Properties: _hasDesign_.
 
-10. **[Legal Verifier](https://ci.mines-stetienne.fr/aec3po/design)**: This AEC3PO module defines state and private verifiers. 
+10. **[Legal Verifier](https://ci.mines-stetienne.fr/aec3po/legal_verifier)**: This AEC3PO module defines state and private verifiers. 
     - Classes: _LegalVerifier_, _PrivateVerifier_, _StateVerifier_.
     - Properties: _hasDesign_. 
 
