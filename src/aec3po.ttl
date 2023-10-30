@@ -12,7 +12,7 @@
 
 aec3po: a owl:Ontology ;
 
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    #cc:license <https://creativecommons.org/licenses/by/4.0/> ;
 dct:creator aec3po:edlira, 
 aec3po:pan;
     dct:contributor <http://maxime-lefrancois.info/me#>,        
@@ -28,7 +28,7 @@ aec3po:pan;
 
 # declaration of reused external entities
 
-cc:license a owl:AnnotationProperty .
+#cc:license a owl:AnnotationProperty .
 
 dct:contributor a owl:AnnotationProperty .
 
