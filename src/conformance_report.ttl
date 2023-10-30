@@ -8,13 +8,13 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-aec3po:conformance_report a owl:Ontology ;
+aec3po:compliance_verification_report a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
     dct:title "AEC3PO: Compliance Verification Report"@en ;
-    owl:imports aec3po:check_method , aec3po:conformance_report ;
+    owl:imports aec3po:check_method , aec3po:compliance_verification_report ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
@@ -23,13 +23,13 @@ aec3po:conforms a owl:DatatypeProperty ;
 #    rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
     rdfs:comment "True if the Checking act confirms the check was validated, and false otherwise."@en ;
     rdfs:domain aec3po:ConformanceReport ;
-    rdfs:isDefinedBy aec3po:conformance_report ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:range xsd:boolean .
 
-aec3po:ConformanceReport a owl:Class ;
+aec3po:ComplianceChekingReport a owl:Class ;
     rdfs:label "Compliance Verification Report"@en ;
     rdfs:comment """Result of a checking act. May be compliant or not."""@en ;
-    rdfs:isDefinedBy aec3po:conformance_report ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty aec3po:conforms ;
             owl:cardinality 1 ] .
