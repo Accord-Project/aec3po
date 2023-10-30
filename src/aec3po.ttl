@@ -28,7 +28,7 @@ aec3po:pan;
 
 # declaration of reused external entities
 
-#cc:license a owl:AnnotationProperty .
+cc:license a owl:AnnotationProperty .
 
 dct:contributor a owl:AnnotationProperty .
 
