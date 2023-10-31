@@ -18,13 +18,13 @@ aec3po:rase_statement a owl:Ontology ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports aec3po:statement .
 
-aec3po:RASEDecomposedStatement a owl:Class ;
- rdfs:label "RASE Decomposed Statement"@en ;
- rdfs:comment "Check decomposed following the Requirement Application Selection and Exception (RASE) methodology."@en ;
- rdfs:subClassOf [ a owl:Restriction ;
-  owl:minCardinality 1 ;
-  owl:onProperty aec3po:hasSubStatement ] ;
- rdfs:isDefinedBy aec3po:rase_statement .
+#aec3po:RASEDecomposedStatement a owl:Class ;
+ #rdfs:label "RASE Decomposed Statement"@en ;
+ #rdfs:comment "Check decomposed following the Requirement Application Selection and Exception (RASE) methodology."@en ;
+ #rdfs:subClassOf [ a owl:Restriction ;
+ # owl:minCardinality 1 ;
+  #owl:onProperty aec3po:hasSubStatement ] ;
+ #rdfs:isDefinedBy aec3po:rase_statement .
 
 aec3po:RequirementStatement a owl:Class ;
  rdfs:label "Requirement Statement"@en ;
