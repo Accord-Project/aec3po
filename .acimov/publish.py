@@ -6,7 +6,7 @@ import shutil
 import subprocess
 import rdflib
 from rdflib import Graph, URIRef, Literal, BNode
-from rdflib.namespace import RDF, OWL, DCTERMS, XSD, RDFS
+from rdflib.namespace import RDF, OWL, DCTERMS, XSD, RDFS, SKOS
 import pylode
 import mistune
 import yaml, json
@@ -165,8 +165,13 @@ RewriteRule ^(.*)$ /aec3po/{dest_path[7:]}#$1 [R=303,NE]
             localName = str(definedTerm)[len(base):]
             if (definedTerm, RDF.type, OWL.ObjectProperty) in g:
                 f.write(f"""  {localName}: {{'@id': aec3po:{localName}, '@type': '@id'}}\n""")         
+                for alias in g.objects(definedTerm, SKOS.hiddenLabel):
+                    f.write(f"""  {alias}: {{'@id': aec3po:{localName}, '@type': '@id'}}\n""")         
             else:
-                f.write(f"""  {localName}: aec3po:{localName}\n""")         
+                f.write(f"""  {localName}: aec3po:{localName}\n""")
+                for alias in g.objects(definedTerm, SKOS.hiddenLabel):
+                    f.write(f"""  {alias}: aec3po:{localName}\n""")
+                   
             
 
 def process(input_file_path):
