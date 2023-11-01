@@ -397,8 +397,8 @@ ex:ramp_checkingAct aec3po:usedMethod
     ex:ramp_CheckMethod_Gradient .
 
 # Instantiate the compliance verification report 
-ex:ramp_ComplianceReport a aec3po:ComplianceReport , owl:NamedIndividual ;
+ex:ramp_ComplianceVerificationReport a aec3po:ComplianceVerificationReport , owl:NamedIndividual ;
     aec3po:conforms true .
 
 # Link the checkingAct to the compliance verification report using hasReport property
-ex:ramp_checkingAct aec3po:hasReport ex:ramp_ComplianceReport .
+ex:ramp_checkingAct aec3po:hasReport ex:ramp_ComplianceVerificationReport .

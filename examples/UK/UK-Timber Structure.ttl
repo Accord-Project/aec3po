@@ -158,8 +158,8 @@ ex:UK_Eurocode5_Timber_checkingAct a aec3po:CheckingAct .
 ex:UK_Eurocode5_Timber_checkingAct aec3po:usedMethod ex:UK_Eurocode5_NumericalCheckMethod_Timber_CompressionParallel .
 
 # Instantiate the compliance verification report 
-ex:UK_Eurocode5_Timber_ComplianceReport a aec3po:ComplianceReport ;
+ex:UK_Eurocode5_Timber_ComplianceVerificationReport a aec3po:ComplianceVerificationReport ;
     aec3po:conforms true .
 
 # Link the checkingAct to the compliance verification report using hasReport property
-ex:UK_Eurocode5_Timber_checkingAct aec3po:hasReport ex:UK_Eurocode5_Timber_ComplianceReport .
+ex:UK_Eurocode5_Timber_checkingAct aec3po:hasReport ex:UK_Eurocode5_Timber_ComplianceVerificationReport .

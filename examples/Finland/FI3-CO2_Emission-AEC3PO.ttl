@@ -1030,8 +1030,8 @@ ex:FI3_CO2Emission_checkingAct aec3po:usedMethod
     ex:FI3_categoryCheckMethod_CarbonFootprintResult .
 
 # Instantiate the compliance verification report 
-ex:FI3_CO2Emission_ComplianceReport a aec3po:ComplianceReport ;
+ex:FI3_CO2Emission_ComplianceVerificationReport a aec3po:ComplianceVerificationReport ;
     aec3po:conforms false . ## Building Site results are not provided.
 
 # Link the checkingAct to the compliance verification report using hasReport property
-ex:FI3_CO2Emission_checkingAct aec3po:hasReport ex:FI3_CO2Emission_ComplianceReport .
+ex:FI3_CO2Emission_checkingAct aec3po:hasReport ex:FI3_CO2Emission_ComplianceVerificationReport .

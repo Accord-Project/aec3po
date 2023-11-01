@@ -172,11 +172,11 @@ ex:cantiliver_checkingAct a aec3po:CheckingAct .
 ex:cantiliver_checkingAct aec3po:usedMethod ex:cantiliver_numericalCheckMethod_streetBaseOffset , ex:cantiliver_numericalCheckMethod_otherBaseOffset , ex:cantiliver_numericalCheckMethod_partywall_distance .
 
 # Instantiate the compliance verification report 
-ex:cantiliver_ComplianceReport a aec3po:ComplianceReport ;
+ex:cantiliver_ComplianceVerificationReport a aec3po:ComplianceVerificationReport ;
     aec3po:conforms true .
 
 # Link the checkingAct to the compliance verification report using hasReport property
-ex:cantiliver_checkingAct aec3po:hasReport ex:cantiliver_ComplianceReport .
+ex:cantiliver_checkingAct aec3po:hasReport ex:cantiliver_ComplianceVerificationReport .
 
 
 

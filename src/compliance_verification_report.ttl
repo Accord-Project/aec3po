@@ -22,7 +22,7 @@ aec3po:conforms a owl:DatatypeProperty ;
     rdfs:label "conforms"@en ;
 #    rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
     rdfs:comment "True if the Checking act confirms the check was validated, and false otherwise."@en ;
-    rdfs:domain aec3po:ComplianceReport ;
+    rdfs:domain aec3po:ComplianceVerificationReport ;
     rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:range xsd:boolean .
 
@@ -36,7 +36,7 @@ aec3po:ComplianceChekingReport a owl:Class ;
 
 aec3po:result a owl:Class ;
     rdfs:label "Result"@en ;
-    rdfs:comment """For every compliance result that is produced by a checking act, the instance of aec3po:ComplianceReport in the results graph has a value for the property ae3cpo:result. Each value of aec3po:result is an instance of the class aec3po:ValidationResult."""@en ;
+    rdfs:comment """For every compliance result that is produced by a checking act, the instance of aec3po:ComplianceVerificationReport in the results graph has a value for the property ae3cpo:result. Each value of aec3po:result is an instance of the class aec3po:ValidationResult."""@en ;
     rdfs:isDefinedBy aec3po:compliance_report ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty aec3po:conforms ;

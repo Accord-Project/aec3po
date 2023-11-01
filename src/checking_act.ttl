@@ -39,7 +39,7 @@ aec3po:CheckingAct a owl:Class ;
             owl:someValuesFrom owl:Thing ;
             owl:onProperty aec3po:checked ],
         [ a owl:Restriction ;
-            owl:someValuesFrom aec3po:ComplianceReport ;
+            owl:someValuesFrom aec3po:ComplianceVerificationReport ;
             owl:onProperty aec3po:hasReport ],
         dul:Event .
 
@@ -68,10 +68,10 @@ aec3po:hasReport a owl:ObjectProperty ;
     rdfs:comment "Links a checking act to the resulting compliance verification report."@en ;
     rdfs:domain aec3po:CheckingAct ;
     rdfs:isDefinedBy aec3po:checking_act ;
-    rdfs:range aec3po:ComplianceReport .
+    rdfs:range aec3po:ComplianceVerificationReport .
 
 ## moved to Compliance_Report Module
-#aec3po:ComplianceReport a owl:Class ;
+#aec3po:ComplianceVerificationReport a owl:Class ;
     #rdfs:label "Compliance Verification Report"@en ;
    # rdfs:comment """The class of compliance verification reports resulting from checking acts."""@en ;
    # rdfs:isDefinedBy aec3po:checking_act ;
@@ -82,7 +82,7 @@ aec3po:hasReport a owl:ObjectProperty ;
 #aec3po:conforms a owl:DatatypeProperty ;
   #  rdfs:label "conforms"@en ;
  #   rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
- #   rdfs:domain aec3po:ComplianceReport ;
+ #   rdfs:domain aec3po:ComplianceVerificationReport ;
   #  rdfs:isDefinedBy aec3po:checking_act ;
    # rdfs:range xsd:boolean .
 
