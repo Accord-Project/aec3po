@@ -33,14 +33,12 @@ aec3po:contains a owl:ObjectProperty ;
   rdfs:label "Contains"@en ;
   rdfs:comment """A container contains a table and its caption. A table contains row, columns and other elements."""@en ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image aec3po:Row aec3po:Column) ] ;
-  owl:inverseOf aec3po:isContainedBy ;
   rdfs:isDefinedBy aec3po:table .
 
 aec3po:isContainedIn a owl:ObjectProperty ;
   rdfs:label "is contained by"@en ;
   rdfs:comment """A table contains row, columns and other elements."""@en ;
   rdfs:range [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image aec3po:Row aec3po:Column aec3po:Cell) ] ;
-  owl:inverseOf aec3po:contains ;
   rdfs:isDefinedBy aec3po:table .
 
 aec3po:caption a owl:DatatypeProperty ;
