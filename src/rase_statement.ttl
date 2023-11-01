@@ -38,7 +38,7 @@ aec3po:requires a owl:ObjectProperty ;
   rdfs:comment "Links a check to the expression of a thing that is required by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
   skos:note "Usually, the Required/Requirement statements are highlighted in blue."@en ;
   rdfs:subPropertyOf aec3po:hasSubStatement ;
-  rdfs:domain aec3po:RASEDecomposedStatement ;
+#  rdfs:domain aec3po:RASEDecomposedStatement ;
   rdfs:range aec3po:RequirementStatement ;
  rdfs:isDefinedBy aec3po:rase_statement .
 
@@ -54,7 +54,7 @@ aec3po:appliesTo a owl:ObjectProperty ;
   rdfs:comment "Links a check to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
   skos:note "Usually, the Applies/Application statements are highlighted in green."@en ;
   rdfs:subPropertyOf aec3po:hasSubStatement ;
-  rdfs:domain aec3po:RASEDecomposedStatement ;
+#  rdfs:domain aec3po:RASEDecomposedStatement ;
   rdfs:range aec3po:ApplicationStatement ;
  rdfs:isDefinedBy aec3po:rase_statement .
 
@@ -70,7 +70,7 @@ aec3po:except a owl:ObjectProperty ;
   rdfs:comment "Links a check to the expression of a thing that is excepted by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
   skos:note "Usually, the Excepted/Exception statements are highlighted in yellow."@en ;
   rdfs:subPropertyOf aec3po:hasSubStatement ;
-  rdfs:domain aec3po:RASEDecomposedStatement ;
+#  rdfs:domain aec3po:RASEDecomposedStatement ;
   rdfs:range aec3po:ExceptionStatement ;
  rdfs:isDefinedBy aec3po:rase_statement .
 
@@ -86,7 +86,7 @@ aec3po:selects a owl:ObjectProperty ;
   rdfs:comment "Links a check to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
   skos:note "Usually, the Select/Selection statements are highlighted in purple."@en ;
   rdfs:subPropertyOf aec3po:hasSubStatement ;
-  rdfs:domain aec3po:RASEDecomposedStatement ;
+#  rdfs:domain aec3po:RASEDecomposedStatement ;
   rdfs:range aec3po:RequirementStatement ;
  rdfs:isDefinedBy aec3po:rase_statement .
 
