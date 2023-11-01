@@ -24,7 +24,7 @@ aec3po:pan;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     skos:note "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en ;
-    owl:imports aec3po:check_method, aec3po:checking_act, aec3po:conformance_report, aec3po:design, aec3po:document, aec3po:feature_of_interest, aec3po:legal_verifier, aec3po:model, aec3po:statement, aec3po:table, aec3po:evidence, aec3po:evidence, aec3po:data_requirement .
+    owl:imports aec3po:check_method, aec3po:checking_act, aec3po:compliance_report, aec3po:design, aec3po:document, aec3po:feature_of_interest, aec3po:legal_verifier, aec3po:model, aec3po:statement, aec3po:table, aec3po:evidence, aec3po:evidence, aec3po:data_requirement .
 
 # declaration of reused external entities
 

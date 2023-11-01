@@ -14,7 +14,7 @@ aec3po:checking_act a owl:Ontology ;
     dct:description "The AEC3PO Checking Act module describes the act of checking some entities for something and generating a compliance verification report."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
     dct:title "AEC3PO: Checking Act"@en ;
-    owl:imports aec3po:check_method , aec3po:conformance_report ;
+    owl:imports aec3po:check_method , aec3po:compliance_report ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
@@ -39,7 +39,7 @@ aec3po:CheckingAct a owl:Class ;
             owl:someValuesFrom owl:Thing ;
             owl:onProperty aec3po:checked ],
         [ a owl:Restriction ;
-            owl:someValuesFrom aec3po:ConformanceReport ;
+            owl:someValuesFrom aec3po:ComplianceReport ;
             owl:onProperty aec3po:hasReport ],
         dul:Event .
 
@@ -65,15 +65,15 @@ aec3po:checks a owl:ObjectProperty ;
 
 aec3po:hasReport a owl:ObjectProperty ;
     rdfs:label "has report"@en ;
-    rdfs:comment "Links a checking act to the resulting conformance report."@en ;
+    rdfs:comment "Links a checking act to the resulting compliance verification report."@en ;
     rdfs:domain aec3po:CheckingAct ;
     rdfs:isDefinedBy aec3po:checking_act ;
-    rdfs:range aec3po:ConformanceReport .
+    rdfs:range aec3po:ComplianceReport .
 
-## moved to Conformance_Report Module
-#aec3po:ConformanceReport a owl:Class ;
-    #rdfs:label "Conformance Report"@en ;
-   # rdfs:comment """The class of conformance reports resulting from checking acts."""@en ;
+## moved to Compliance_Report Module
+#aec3po:ComplianceReport a owl:Class ;
+    #rdfs:label "Compliance Verification Report"@en ;
+   # rdfs:comment """The class of compliance verification reports resulting from checking acts."""@en ;
    # rdfs:isDefinedBy aec3po:checking_act ;
    # rdfs:subClassOf [ a owl:Restriction ;
           #  owl:onProperty aec3po:conforms ;
@@ -82,7 +82,7 @@ aec3po:hasReport a owl:ObjectProperty ;
 #aec3po:conforms a owl:DatatypeProperty ;
   #  rdfs:label "conforms"@en ;
  #   rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
- #   rdfs:domain aec3po:ConformanceReport ;
+ #   rdfs:domain aec3po:ComplianceReport ;
   #  rdfs:isDefinedBy aec3po:checking_act ;
    # rdfs:range xsd:boolean .
 

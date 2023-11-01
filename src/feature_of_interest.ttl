@@ -21,7 +21,7 @@ aec3po:feature_of_interest a owl:Ontology ;
 
 aec3po:FeatureOfInterest a owl:Class ;
     rdfs:label "Feature Of Interest"@en ;
-    rdfs:comment "The object whose conformance against checks is verified."@en ;
+    rdfs:comment "The object whose compliance against checks is verified."@en ;
     rdfs:isDefinedBy aec3po:feature_of_interest ;
     rdfs:subClassOf dul:Object ;
     skos:example "A building, a building space, a building element, the set of columns in a building, ..."@en ;

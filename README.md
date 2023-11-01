@@ -88,16 +88,16 @@ Below is an overview of each module and its sub-components:
   -	Classes: _CheckMethod_, _BooleanCheckMethod_, _ComponentCheckMethod_, _SHACLCheckMethod_, _CompositeCheckMethod_, _FuncionCheckMethod_, etc.
   -	Properties: _hasUnit_, _hasTarget_, _operationalizes_, _operationalizedBy_, _etc_.
   
-6. **Module 6: FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
+6. **Module 6: FeatureOfInterest**: This module describes objects whose compliance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for compliance.
   - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
   -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasDesign_, _hasContext_, _etc_.
   
-7. **CheckingAct**: This AEC3PO module describes the act of checking some entities for something and generating a conformance report.
+7. **CheckingAct**: This AEC3PO module describes the act of checking some entities for something and generating a compliance verification report.
     - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
     - Properties: _usedMethod_, _madeBy_, _hasReport_, _checks_, _etc_.
 
-8. **Compliance Verification Report (ConformanceReport)**: This AEC3PO module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated.
-    - Classes: _ConformanceReport_, _result_, _ValidationResult_,_Severity_, _etc_.
+8. **Compliance Verification Report (ComplianceReport)**: This AEC3PO module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated.
+    - Classes: _ComplianceReport_, _result_, _ValidationResult_,_Severity_, _etc_.
     - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_,_etc._
       
 9. **Design**: This AEC3PO module describes descriptions of some design of features of interest, in terms of structure, geometry, and function. 
@@ -117,7 +117,7 @@ Below is an overview of each module and its sub-components:
     - Properties: _contains_, _isContainedIn_, _caption_.
       
 Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, SHACL and composite checks. 
-Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the **_ConformanceReport_** stores the outcomes of the check, their validation results and the corresponding messages. 
+Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the **_ComplianceReport_** stores the outcomes of the check, their validation results and the corresponding messages. 
 
 ### AEC3PO Alignments <a name="alignments"></a>
 AEC3PO contains five modules, each of them imports an external ontology, and specifies a set of alignment axioms to connect the terms of the imported ontologies with each other. The figure below illustrates the alignment of the AEC3PO ontology with various other ontologies, showcasing how different domains and concepts interconnect for a comprehensive representation of compliance and permitting in the AEC industry.
@@ -158,7 +158,7 @@ The following table represents a summary of the use cases:
 |Finland           |FI2 - Accessibility         | This example represents the `ramp` check. The rules are defined in Section 2/Subsection 2 from the English tranlation of the Finnish Accessibility document ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Finland)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Finland/FI-accessibility-AEC3PO.ttl) | 
 |Finland         |FI3 - CO2 Emission | The rules are defined in the English translation of the Decree of the Ministry of the Environment on the climate assessment of buildings (Draft 30.9.2022, consultation round) ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Finland)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Finland/FI3-CO2_Emission-AEC3PO.ttl) |   
 |Estonia   |EE1 - Fire Safety | Two rules related to the `operational map` of the building have been selected from the Estonian legistlation issued on 01-03-2021 ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Estonia)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Estonia/Estonia_Example.ttl) | 
-|Spain   |ES2 - Cultural Centre | Two rules have been selected to check the conformance of the `cantiliver` of the cultural centre with the regulations. These rules are defined in the POUM document, which is the Municipal Urban Planning Plan Regulations document, definitively approved by the Barcelona Territorial Planning Commission on 13-07-2005 ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Spain)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Spain/Spanish_Example.ttl) |
+|Spain   |ES2 - Cultural Centre | Two rules have been selected to check the compliance of the `cantiliver` of the cultural centre with the regulations. These rules are defined in the POUM document, which is the Municipal Urban Planning Plan Regulations document, definitively approved by the Barcelona Territorial Planning Commission on 13-07-2005 ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/Spain)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/Spain/Spanish_Example.ttl) |
 |UK     |UK1 - Timber Structure  | This example represents check in `compression parallel to the grain in timber structures`, as described in the latest version of Eurocode 5 (EN 1995-1-1:2004+A2:2014) ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/UK)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/UK/UK-Timber%20Structure.ttl) | 
 
 ## AEC3PO Dissemination

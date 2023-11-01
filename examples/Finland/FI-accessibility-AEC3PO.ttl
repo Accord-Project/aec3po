@@ -385,7 +385,7 @@ ex:ramp_numericalCheckMethod_Width aec3po:forDesign ex:design_rampWidth .
 ex:ramp_numericalCheckMethod_LandingLength aec3po:forDesign ex:design_rampPropertyLandingLength .
 ex:ramp_CheckMethod_Gradient aec3po:forDesign ex:design_rampPropertyGradient .
 
-# Conduct the checking act and generate a conformance report. 
+# Conduct the checking act and generate a compliance verification report. 
 ex:ramp_checkingAct a aec3po:CheckingAct , owl:NamedIndividual .
 
 # Link the checkingAct to all the CheckMethods using usedMethod property
@@ -396,9 +396,9 @@ ex:ramp_checkingAct aec3po:usedMethod
     ex:ramp_numericalCheckMethod_LandingLength ,
     ex:ramp_CheckMethod_Gradient .
 
-# Instantiate the conformance report 
-ex:ramp_ConformanceReport a aec3po:ConformanceReport , owl:NamedIndividual ;
+# Instantiate the compliance verification report 
+ex:ramp_ComplianceReport a aec3po:ComplianceReport , owl:NamedIndividual ;
     aec3po:conforms true .
 
-# Link the checkingAct to the conformance report using hasReport property
-ex:ramp_checkingAct aec3po:hasReport ex:ramp_ConformanceReport .
+# Link the checkingAct to the compliance verification report using hasReport property
+ex:ramp_checkingAct aec3po:hasReport ex:ramp_ComplianceReport .
