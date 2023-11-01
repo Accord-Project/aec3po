@@ -163,7 +163,10 @@ RewriteRule ^(.*)$ /aec3po/{dest_path[7:]}#$1 [R=303,NE]
         definedTerms = []
         for definedTerm in g.subjects(RDFS.isDefinedBy, ontology):
             localName = str(definedTerm)[len(base):]
-            f.write(f"""  {localName}: aec3po:{localName}\n""")         
+            if (definedTerm, RDF.type, OWL.ObjectProperty) in g:
+                f.write(f"""  {localName}: {{'@id': aec3po:{localName}, '@type': '@id'}}\n""")         
+            else:
+                f.write(f"""  {localName}: aec3po:{localName}\n""")         
             
 
 def process(input_file_path):
