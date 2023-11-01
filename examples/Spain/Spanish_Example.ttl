@@ -165,18 +165,18 @@ ex:cantiliver_numericalCheckMethod_partywall_distance aec3po:forDesign ex:design
 ex:cultural-center a aec3po:aec3po:BuildingUsage-curltural ;
     aec3po:forBuildingUsage ex:design_streeBaseOffset , ex:design_othersBaseOffset , ex:design_partywall_distance .
 
-# Conduct the checking act and generate a conformance report. 
+# Conduct the checking act and generate a compliance verification report. 
 ex:cantiliver_checkingAct a aec3po:CheckingAct .
 
 # Link the checkingAct to all the CheckMethods using usedMethod property
 ex:cantiliver_checkingAct aec3po:usedMethod ex:cantiliver_numericalCheckMethod_streetBaseOffset , ex:cantiliver_numericalCheckMethod_otherBaseOffset , ex:cantiliver_numericalCheckMethod_partywall_distance .
 
-# Instantiate the conformance report 
-ex:cantiliver_ConformanceReport a aec3po:ConformanceReport ;
+# Instantiate the ompliance verification report 
+ex:cantiliver_ComplianceVerificationReport a aec3po:ComplianceVerificationReport ;
     aec3po:conforms true .
 
-# Link the checkingAct to the conformance report using hasReport property
-ex:cantiliver_checkingAct aec3po:hasReport ex:cantiliver_ConformanceReport .
+# Link the checkingAct to the compliance verification report using hasReport property
+ex:cantiliver_checkingAct aec3po:hasReport ex:cantiliver_ComplianceVerificationReport .
 
 
 
