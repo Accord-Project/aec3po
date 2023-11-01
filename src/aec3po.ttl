@@ -131,6 +131,7 @@ aec3po:asText a owl:DatatypeProperty, owl:FunctionalProperty ;
     rdfs:label "as text"@en ;
     rdfs:comment "de facto used to link something (anything: property, statement, property design, check, cell, column, ...) to a literal string."@en ;
     rdfs:isDefinedBy aec3po: ;
+    skos:hiddenLabel "text" ;
     rdfs:range xsd:string.
 
 
