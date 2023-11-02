@@ -48,10 +48,22 @@ Below is an overview of the core modules and their components:
 8. **Module 8: ComplianceVerificationReport**: An automatically generated report that checks if all the assigned compliance requirements (typically Checks) have been met.
   - Classes: _ComplianceVerificationReport_, _result_, _ValidationResult_,_Severity_, _etc_.
   - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
+      
+9. **Module 9: Design**: This AEC3PO module describes descriptions of some design of features of interest, in terms of structure, geometry, and function. 
+    - Classes: _Design_, _PropertyDesign_.
+    - Properties: _hasDesign_.
 
-9. **Module 9: Model**: A model representing part or the entirety of a site, building, or piece of infrastructure.
+10. **Module 10: Legal Verifier**: This AEC3PO module defines state and private verifiers. 
+    - Classes: _LegalVerifier_, _PrivateVerifier_, _StateVerifier_.
+    - Properties: _hasDesign_.
+      
+11. **Module 11: Model**: A model representing part or the entirety of a site, building, or piece of infrastructure.
   - Classes: _Model_, _Phase_, _Element_, _Classification_ etc.
   - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
+
+ 12. **Module 12: Table**: This AEC3PO module describes tables as representations of data in rows and columns. Tables are described by captions.
+    - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
+    - Properties: _contains_, _isContainedIn_, _caption_.     
   
 
 ### AEC3PO Alignments <a name="alignments"></a>

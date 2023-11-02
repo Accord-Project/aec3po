@@ -16,7 +16,7 @@ aec3po:check_method a owl:Ontology ;
     dct:description "The AEC3PO Check Method module describes pieces of information that operationalize check statements in documents."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
     dct:title "AEC3PO: Check Method"@en ;
-    owl:imports aec3po:statement , aec3po:conformance_report ;
+    owl:imports aec3po:statement , aec3po:compliance_verification_report ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
@@ -102,8 +102,8 @@ aec3po:SWRLCheckMethod a owl:Class ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:DeclarativeCheckMethod .
 
-aec3po:ACCORDCheckMethod a owl:Class ;
-    rdfs:label "ACCORD Check Method"@en ;
+aec3po:CompositeCheckMethod a owl:Class ;
+    rdfs:label "Composite Check Method"@en ;
     rdfs:comment "A check implemented by grouping and nesting other checks using the ACCORD rule language. "@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:DeclarativeCheckMethod .

@@ -8,13 +8,13 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-aec3po:conformance_report a owl:Ontology ;
+aec3po:compliance_verification_report a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
     dct:title "AEC3PO: Compliance Verification Report"@en ;
-    owl:imports aec3po:check_method , aec3po:conformance_report ;
+    owl:imports aec3po:check_method , aec3po:compliance_verification_report ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
@@ -22,22 +22,22 @@ aec3po:conforms a owl:DatatypeProperty ;
     rdfs:label "conforms"@en ;
 #    rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
     rdfs:comment "True if the Checking act confirms the check was validated, and false otherwise."@en ;
-    rdfs:domain aec3po:ConformanceReport ;
-    rdfs:isDefinedBy aec3po:conformance_report ;
+    rdfs:domain aec3po:ComplianceVerificationReport ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:range xsd:boolean .
 
-aec3po:ConformanceReport a owl:Class ;
+aec3po:ComplianceChekingReport a owl:Class ;
     rdfs:label "Compliance Verification Report"@en ;
     rdfs:comment """Result of a checking act. May be compliant or not."""@en ;
-    rdfs:isDefinedBy aec3po:conformance_report ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty aec3po:conforms ;
             owl:cardinality 1 ] .
 
 aec3po:result a owl:Class ;
     rdfs:label "Result"@en ;
-    rdfs:comment """For every compliance result that is produced by a checking act, the instance of aec3po:ConformanceReport in the results graph has a value for the property ae3cpo:result. Each value of aec3po:result is an instance of the class aec3po:ValidationResult."""@en ;
-    rdfs:isDefinedBy aec3po:conformance_report ;
+    rdfs:comment """For every compliance result that is produced by a checking act, the instance of aec3po:ComplianceVerificationReport in the results graph has a value for the property ae3cpo:result. Each value of aec3po:result is an instance of the class aec3po:ValidationResult."""@en ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty aec3po:conforms ;
             owl:cardinality 1 ] .
@@ -45,7 +45,7 @@ aec3po:result a owl:Class ;
 aec3po:ValidationResult a owl:Class ;
     rdfs:label "Validation Result"@en ;
     rdfs:comment """Individual validation result of a Compliance Verification Report."""@en ;
-    rdfs:isDefinedBy aec3po:conformance_report ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty aec3po:focus ;
             owl:cardinality 1 ] ,
@@ -57,13 +57,13 @@ aec3po:focus a owl:ObjectProperty ;
     rdfs:label "focus"@en ;
     rdfs:comment "Each validation result has exactly one value for the property aec3po:focus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the validation result was produced." ;
     rdfs:domain aec3po:ValidationResult ;
-    rdfs:isDefinedBy aec3po:conformance_report .
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
 
 aec3po:resultMessage a owl:DatatypeProperty ;
     rdfs:label "message"@en ;
     rdfs:comment "Validation results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values are produced based on the values of aec3po:message of the statements in the AEC3PO graph." ;
     rdfs:domain aec3po:ValidationResult ;
-    rdfs:isDefinedBy aec3po:conformance_report .
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
 
 aec3po:resultSeverity a owl:ObjectProperty ;
     rdfs:label "result severity"@en ;

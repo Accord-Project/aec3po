@@ -3,7 +3,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1019,7 +1019,7 @@ ex:FI3_categoryCheckMethod_CarbonAssessmentResult aec3po:forDesign ex:FI3_buildi
 ex:FI3_categoryCheckMethod_CarbonFootprintResult aec3po:forDesign ex:FI3_building_CarbonFootprintResultPropertyDesign .
 
 
-# Conduct the checking act and generate a conformance report. 
+# Conduct the checking act and generate a compliance verification report. 
 ex:FI3_CO2Emission_checkingAct a aec3po:CheckingAct .
 
 # Link the checkingAct to all the CheckMethods using usedMethod property
@@ -1029,9 +1029,9 @@ ex:FI3_CO2Emission_checkingAct aec3po:usedMethod
     ex:FI3_categoryCheckMethod_CarbonAssessmentResult ,
     ex:FI3_categoryCheckMethod_CarbonFootprintResult .
 
-# Instantiate the conformance report 
-ex:FI3_CO2Emission_ConformanceReport a aec3po:ConformanceReport ;
+# Instantiate the compliance verification report
+ex:FI3_CO2Emission_ComplianceVerificationReport a aec3po:ComplianceVerificationReport ;
     aec3po:conforms false . ## Building Site results are not provided.
 
-# Link the checkingAct to the conformance report using hasReport property
-ex:FI3_CO2Emission_checkingAct aec3po:hasReport ex:FI3_CO2Emission_ConformanceReport .
+# Link the checkingAct to the compliance verification report using hasReport property
+ex:FI3_CO2Emission_checkingAct aec3po:hasReport ex:FI3_CO2Emission_ComplianceVerificationReport .

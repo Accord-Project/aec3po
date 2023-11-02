@@ -7,6 +7,9 @@
   dct:    http://purl.org/dc/terms/
   dc:     http://purl.org/dc/elements/1.1/
   xsd:    http://www.w3.org/2001/XMLSchema#
+  qudt:   http://qudt.org/schema/qudt/
+  unit:   http://qudt.org/vocab/unit/
+  fno:    https://w3id.org/function/ontology#
   # dct metadata
   hasPart:                {'@id': dct:hasPart, '@type': '@id'}
   identifier:             dct:identifier
@@ -19,4 +22,7 @@
   title:                  dct:title
   relation:               dct:relation
   references:             dct:references
+  # external ontologies
+  executes:               {'@id': fno:executes, '@type': '@id', '@base': https://data.accordproject.eu/functions }
+  hasUnit:                {'@id': qudt:hasUnit, '@type': '@id', '@base': http://qudt.org/vocab/unit/ }
   # defined terms
