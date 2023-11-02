@@ -26,6 +26,7 @@ aec3po:Statement a owl:Class ;
  rdfs:isDefinedBy aec3po:statement .
 
   aec3po:hasEvidence a owl:ObjectProperty;
+    rdfs:label "hasEvidence"@en ;
     rdfs:comment "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
     skos:note "Unstable. Need evidence of how this property is intended to be used"@en ;
     rdfs:domain aec3po:Statement ;
