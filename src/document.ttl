@@ -24,7 +24,7 @@ aec3po:Document a owl:Class ;
  rdfs:label "Document"@en ;
  rdfs:comment "A document representing AEC regulations, guidelines, building codes etc."@en ;
  skos:note "a Document is expected to be annotated using properties from the Dublin Core Terms vocabulary."@en ;
- skos:example "Approved Document A, Eurocode, Finish Regulations..."@en ;
+ skos:example "Approved Document A, Eurocode, Finish Regulations, etc."@en ;
  rdfs:isDefinedBy aec3po:document .
 
     aec3po:forDocument a owl:ObjectProperty ;
