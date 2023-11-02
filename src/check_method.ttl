@@ -139,7 +139,7 @@ aec3po:CompositeCheckMethod a owl:Class ;
 aec3po:hasUnit a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "hasUnit"@en ;
-   rdfs:comment "the hasUnit property is used to link a specific property or feature of interest to its corresponding unit of measurement. For example, it could be a property related to physical quantities, such as temperature, length, or weight." "@en ;
+   rdfs:comment "the hasUnit property is used to link a specific property or feature of interest to its corresponding unit of measurement. For example, it could be a property related to physical quantities, such as temperature, length, or weight."@en ;
     owl:eqivalentProperty qudt:hasValue ;
     rdfs:domain qudt:Unit ;
     rdfs:range [ a owl:Class ;
