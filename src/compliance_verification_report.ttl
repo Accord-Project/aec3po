@@ -70,24 +70,24 @@ aec3po:resultSeverity a owl:ObjectProperty ;
     rdfs:comment "Each validation result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the shape." ;
     rdfs:domain aec3po:ValidationResult ;
     rdfs:range aec3po:Severity ;
-    rdfs:isDefinedBy aec3po:conformance_report .
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
 
 aec3po:Severity a owl:Class ;
 	rdfs:label "Severity"@en ;
 	rdfs:comment "The class of validation result severity levels, including violation and warning levels."@en ;
-    rdfs:isDefinedBy aec3po:conformance_report .
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
 
 aec3po:Info a owl:NamedIndividual, aec3po:Severity ;
 	rdfs:label "Info"@en ;
 	rdfs:comment "The severity for an informational validation result."@en ;
-    rdfs:isDefinedBy aec3po:conformance_report .
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
 
 aec3po:Violation a owl:NamedIndividual, aec3po:Severity ;
 	rdfs:label "Violation"@en ;
 	rdfs:comment "The severity for a violation validation result."@en ;
-    rdfs:isDefinedBy aec3po:conformance_report .
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
 
 aec3po:Warning a owl:NamedIndividual, aec3po:Severity ;
 	rdfs:label "Warning"@en ;
 	rdfs:comment "The severity for a warning validation result."@en ;
-    rdfs:isDefinedBy aec3po:conformance_report .
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
