@@ -31,19 +31,24 @@ aec3po:Document a owl:Class ;
     rdfs:label "for document"@en ;
     rdfs:comment "links an entity such as a legal verifier to the document it is for."@en ;
     rdfs:range aec3po:Document ;
-    rdfs:isDefinedBy aec3po:document . 
+    rdfs:isDefinedBy aec3po:document ;
+    rdf:domain aec3po:LegalVerifier ;
+    rdfs:range aec3po:Document .
 
     aec3po:usesDocument a owl:ObjectProperty ;
     rdfs:label "uses document"@en ;
     rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it uses."@en ;
     rdfs:isDefinedBy aec3po:document ;
+    rdfs:range aec3po:Document ;
+    rdf:domain aec3po:LegalVerifier ;
     rdfs:range aec3po:Document .
 
     aec3po:requiresDocument a owl:ObjectProperty ;
     rdfs:label "requires document"@en ;
     rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it requires."@en ;
     rdfs:isDefinedBy aec3po:document ;
-    rdfs:subPropertyOf aec3po:usesDocument .
+    rdfs:subPropertyOf aec3po:usesDocument ;
+    rdfs:range aec3po:Document .
 
 aec3po:DocumentSubdivision a owl:Class ;
  rdfs:label "Document Subdivision"@en ;
