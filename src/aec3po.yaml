@@ -23,6 +23,6 @@
   relation:               dct:relation
   references:             dct:references
   # external ontologies
-  executes:               {'@id': fno:executes, '@type': '@id', '@base': https://data.accordproject.eu/functions }
-  hasUnit:                {'@id': qudt:hasUnit, '@type': '@id', '@base': http://qudt.org/vocab/unit/ }
+  executes:               {'@id': fno:executes, '@type': '@id' }
+  hasUnit:                {'@id': qudt:hasUnit, '@type': '@id' }
   # defined terms
