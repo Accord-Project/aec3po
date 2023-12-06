@@ -50,7 +50,7 @@ Below is an overview of the core modules and their components:
 
 11. **[Model](https://ci.mines-stetienne.fr/aec3po/model)**: A model representing part or the entirety of a site, building, or piece of infrastructure. Typically these will be Building Information Models.
     - Classes: _Model_, _Phase_, _Element_, _Classification_, _etc_.
-    - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
+    - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimension_, _hasElementPhase_, _hasClassification_, _etc._
 
 12. **[Table](https://ci.mines-stetienne.fr/aec3po/table)**:A table as representations of data in rows and columns. Tables are described by captions.
     - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
