@@ -73,8 +73,8 @@ aec3po:Element a owl:Class ;
   rdfs:comment """Specific attributes of individual elements, such as doors, windows, walls, etc.""" ;
   rdfs:isDefinedBy aec3po:model .
 
-aec3po:Dimensions a owl:Class ;
-  rdfs:label "Dimensions"@en ;
+aec3po:Dimension a owl:Class ;
+  rdfs:label "Dimension"@en ;
   rdfs:subClassOf aec3po:Model ;
   rdfs:comment """Measurements and sizes of various building components and elements.""" ;
   rdfs:isDefinedBy aec3po:model .
@@ -97,14 +97,14 @@ aec3po:hasElementPhase a owl:ObjectProperty ;
  rdfs:domain aec3po:Model ;
  rdfs:range aec3po:Phase .
 
-aec3po:hasDimensions a owl:ObjectProperty ;
- rdfs:label "has dimensions"@en ;
+aec3po:hasDimension a owl:ObjectProperty ;
+ rdfs:label "has dimension"@en ;
  rdfs:comment "is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. "@en ;
  rdfs:domain aec3po:Model ;
- rdfs:range aec3po:Dimensions .
+ rdfs:range aec3po:Dimension .
 
 aec3po:hasClassification a owl:ObjectProperty ;
- rdfs:label "has dimensions"@en ;
+ rdfs:label "has dimension"@en ;
  rdfs:comment "is used to link building components, elements, or other entities to a classification scheme that provides a standardised way of categorising and organising them.. "@en ;
  rdfs:domain aec3po:Model ;
  rdfs:range aec3po:Classification .
