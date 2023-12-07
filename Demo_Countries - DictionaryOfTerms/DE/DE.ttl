@@ -1,0 +1,539 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/lbd/aec3po/CO2_equiv._emission> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "CO2 equiv. emission" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/CO2_neutral_operation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "CO2 neutral operation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/CO2_neutrality> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "CO2 neutrality" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/DGNB_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "DGNB system" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/EPC_calculation_boundaries> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "EPC calculation boundaries" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/Federal_Building_Code> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Federal Building Code" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/Federal_Control_of_Pollution_Act> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Federal Control of Pollution Act" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/Federal_States> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Federal States" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/Life_cycle_assessment_comparison_calculation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Life cycle assessment comparison calculation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/Life_cycle_assessment_result> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Life cycle assessment result" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/air_conditioning_planning_(HVAC)> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "air conditioning planning (HVAC)" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/allotment_garden> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "allotment garden" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/bathing_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "bathing area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building_equipment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building equipment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building_lifecycle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building lifecycle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building_line> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building line" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building_plot> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building plot" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building_regulations> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building regulations" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building_use> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building use" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/building_volume> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building volume" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/calculation_boundary> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "calculation boundary" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/camping_site> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "camping site" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/carbon_neutral_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "carbon neutral building" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/category> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "category" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/cemetery> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "cemetery" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/children's_playground> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "children's playground" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/climate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "climate" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/climate_action_roadmap> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "climate action roadmap" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/climate_neutrality> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "climate neutrality" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/common_facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "common facility" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/community_amenities> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "community amenities" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/construction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "construction" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/core_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "core area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/course> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "course" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/coverage_depth> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "coverage depth" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/coverage_type> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "coverage type" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/cubing_ratio> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "cubing ratio" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/degree> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "degree" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/depth> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "depth" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/development_plan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "development plan" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/dimension> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "dimension" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/drainage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "drainage" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/drive-way> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "drive-way" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/dwelling> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "dwelling" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/earth> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "earth" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/earth_deposit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "earth deposit" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/energy_calculation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "energy calculation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/energy_demand> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "energy demand" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/energy_planning> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "energy planning" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/environmental_impact> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "environmental impact" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/escalator> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "escalator" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/excavation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "excavation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/extent_of_use> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "extent of use" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "facility" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/flood_control> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "flood control" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/floor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "floor" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/floor_space_index> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "floor space index" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/garage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "garage" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/greenery> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "greenery" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/greenhouse_gas_emission> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "greenhouse gas emission" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/heating> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "heating" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/height> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "height" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/holding_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "holding area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/housing_development> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "housing development" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/industrial_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "industrial area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/infrastructure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "infrastructure" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/infrastructure_installation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "infrastructure installation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/land> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "land" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/land-use_plan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "land-use plan" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/landscape> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "landscape" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/leisure_facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "leisure facility" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/life_cycle_assessment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "life cycle assessment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/life_cycle_assessment_model> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "life cycle assessment model" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/life_cycle_assessment_optimisation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "life cycle assessment optimisation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/lift> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "lift" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/lighting> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "lighting" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/location> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "location" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/manufacture> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "manufacture" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/measure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "measure" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/mineral> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "mineral" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/motor_vehicle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "motor vehicle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/natural_environment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "natural environment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/operation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "operation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/outlying_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "outlying area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/park> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "park" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/parking_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "parking space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/partial_calculation_method_(PCM)> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "partial calculation method (PCM)" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/physical_structure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "physical structure" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/planning_phase> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "planning phase" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/planning_process> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "planning process" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/planning_team> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "planning team" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/play_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "play area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/playground> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "playground" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/plot_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "plot area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/plot_coverage_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "plot coverage rate" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/power_supply> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "power supply" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/production> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "production" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/rainwater_retention> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "rainwater retention" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/recreation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "recreation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/residential_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "residential building" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/residential_plot> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "residential plot" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/road_construction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "road construction" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/scale_of_use> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "scale of use" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/seepage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "seepage" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/set-back_line> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "set-back line" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/shrub> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shrub" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/site> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "site" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/site_occupancy_index> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "site occupancy index" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/size> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "size" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/sports_ground> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sports ground" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/stone> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stone" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/structure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "structure" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/support_structure_planning> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "support structure planning" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/technical_measure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "technical measure" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/thoroughfare> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "thoroughfare" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/topsoil> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "topsoil" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/transmission_route> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "transmission route" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/tree> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "tree" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/type> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "type" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/ventilation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "ventilation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/village_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "village area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/village_housing_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "village housing area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/wall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "wall" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/waste_disposal> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "waste disposal" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/water_body> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "water body" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/water_supply> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "water supply" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/weighted_environmental_impact> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "weighted environmental impact" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/weighted_limit_value> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "weighted limit value" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/weighted_reference_value_(PCM)> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "weighted reference value (PCM)" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
+<https://w3id.org/lbd/aec3po/width> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "width" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Germany> .
+
