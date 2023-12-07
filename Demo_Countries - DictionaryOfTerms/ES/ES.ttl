@@ -1,0 +1,746 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/lbd/aec3po/Arabic_teula> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/Interior_alignment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/Land_Registry> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/POUM> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/access> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/access_ramp> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/alignment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/amplitude> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/analog_device> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/angle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/apart-hotel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/attic> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/avenue> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/base> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/basement> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/basement_floor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/beginning> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/bisector> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/block> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/boarding_house> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/boundary> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/bridge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/buildability_coefficient> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/buildability_index> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/buildable_ceiling> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/buildable_depth> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/buildable_portion> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/buildable_volume> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/building-free_zone> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/building_parameter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/building_parameter_plan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/building_volume> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/building_zone> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/built-up_ceiling> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/camping> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cantilever> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/car_park> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/caravan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/catalog> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/central_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/chamfer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/chamfer_facade> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/chimney> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/city_council> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/closed_or_semi-closed_cantilevered> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/collective_accommodation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/community_accommodation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/community_facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/construction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cooling> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/corner> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/courtyard> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cover> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/crane> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/curvature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/degree> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/degree_of_permissibility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/density> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/depth> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/dimension> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/direction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/distance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/dry_pole> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/duct> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/dwelling> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/eave> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/electromagnetic_radiation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/employment_decline_factor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/endowment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/entire_volume> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/equipment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/establishment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/estate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/external_emergency_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/external_facing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/facade> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/facade_line> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/facade_material> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/farm> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/fauna> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/fence> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/fire_load> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/fire_risk> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/floor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/floor_level> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/floor_plan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/flora> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/free_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/front> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/frontage_line> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/fully_equipped_fireplug> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/gauge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/general_planning_plan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/graphic_translation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/green_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ground_floor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ground_floor_roof> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ground_level> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/height> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/height_limit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/high> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/home> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hotel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hotelier> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/house> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/housing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/housing_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/index_net_buildability> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/industrial_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/industrial_zone> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/inner_patio> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/inside_alignment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/installation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/interior_courtyard> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/island> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/island_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/land> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/land_surface> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/large_commercial> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/layout_plan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/length> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/level> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/line> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/location> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/long> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/lot> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/machinery_base> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/material> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maximum_buildability> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maximum_buildability_coefficient> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maximum_dimension> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maximum_flight> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maximum_occupancy> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maximum_occupation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maximum_regulatory_height> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/measure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/middle_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/midpoint> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/minimum_built-up_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/minimum_frontage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/minimum_separation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/motel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/multi-family_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/multi-family_housing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/municipal_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/municipal_technical_services> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/municipal_urban_planning> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/net_buildability_coefficient> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/noise> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/occupation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/office_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/open_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/orthogonal_projection> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/outer_perimeter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/overhang> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parcel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/park> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parking> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parking_function> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parking_lot> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parking_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/part> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/partition> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/partywall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pavement> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pension> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/people> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/permesan_plant> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/permissibility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/planning> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/plant> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/plot> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/plot_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/premises> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/production> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/production_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/property> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/radius> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/regulation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/residence_of_the_elderly> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/residential_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/road> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/road_alignment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/roof> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/roof_percentage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/roof_protrude> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/section> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sector> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shape> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shop> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/side> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/single-family_home> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/single-family_housing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/size> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/slope> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/smell> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/solar_energy_capture_panel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/solid_waste> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/special_plan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/square> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stair> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/starting_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stream> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/street> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/street_level> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/student_residence> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sub-area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/subzone> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/surface> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/surface_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/table> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/technical_measure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/terrace> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/total_buildability> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/tower> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/traffic_lane> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/two-family_house> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/two-family_housing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/type> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/underground_floor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/unit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/urban_centre> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/urban_function> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/urban_land> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/urban_or_sectoral_legislation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/urban_planning> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/urban_planning_law> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/urban_planning_legislation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/urban_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ventilation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ventilation_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ventilation_patios> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/vertical_silos> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/vial> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/vibration> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/volume> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/wall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/warehouse> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/waste_water> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/wide> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/width> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/youth_hostel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/zone> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
