@@ -1,0 +1,1783 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/lbd/aec3po/Biocides_Act> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Biocides Act" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/Chemicals_Act> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Chemicals Act" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/Construction_Act> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Construction Act" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/Pre-School_Children's_Institution_Act> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Pre-School Children's Institution Act" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/Public_Health_Act> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Public Health Act" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/UNESCO_World_Heritage_List> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "UNESCO World Heritage List" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/Water_Act> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "Water Act" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/access> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "access" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/accessible_viewing_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "accessible viewing area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/accommodation_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "accommodation building" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/acoustic> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "acoustic" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/address> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "address" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/adult> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "adult" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/air_temperature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "air temperature" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/alarm> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "alarm" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/alarm_button> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "alarm button" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/alarm_device> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "alarm device" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/alarm_notification> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "alarm notification" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/alarm_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "alarm system" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/annual_average_radon_content> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "annual average radon content" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/apartment_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "apartment building" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/armrest> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "armrest" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/arrier> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "arrier" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/assistant_seat> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "assistant seat" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/automatic_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "automatic door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/auxiliary_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "auxiliary room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/average_weekly_relative_humidity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "average weekly relative humidity" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/background> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "background" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/balcony> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "balcony" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/bank> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "bank" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/barrier> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "barrier" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/base> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "base" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/base_bath> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "base bath" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/basement_floor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "basement floor" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/bed> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "bed" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/beginning> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "beginning" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/bicycle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "bicycle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/bicycle_path> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "bicycle path" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/bidet_shower> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "bidet shower" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/board> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "board" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/boardwalk> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "boardwalk" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/border> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "border" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/braille> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "braille" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/bridge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "bridge" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "building" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/button> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "button" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/button_extension_cord> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "button extension cord" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cabinet> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "cabinet" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cane> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "cane" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/canopy> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "canopy" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/carbon_dioxide> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "carbon dioxide" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/carriageway> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "carriageway" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cash_register> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "cash register" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/catering> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "catering" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/central_axis> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "central axis" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/chair> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "chair" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/checkout> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "checkout" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/child> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "child" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/children's_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "children's area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/children's_institution> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "children's institution" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/children's_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "children's room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/children's_toy> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "children's toy" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cleaning_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "cleaning room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/climate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "climate" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/closet> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "closet" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cloth_towel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "cloth towel" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/clothes_drying_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "clothes drying room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/clothes_storage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "clothes storage" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/color> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "color" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/company> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "company" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/concave_gutter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "concave gutter" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/construction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "construction" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/contrasting_color> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "contrasting color" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/corridor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "corridor" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/cover> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "cover" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/crossing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "crossing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/crosswalk> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "crosswalk" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/crosswalk_passing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "crosswalk passing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/crutch> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "crutch" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/curb> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "curb" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/daycare_group> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "daycare group" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/deep> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "deep" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/depth> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "depth" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/diameter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "diameter" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/dimension> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "dimension" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/direction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "direction" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/direction_arrow> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "direction arrow" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/direction_sign> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "direction sign" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/disabled_people> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "disabled people" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/disabled_person's_vehicle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "disabled person's vehicle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/dispenser> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "dispenser" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/distance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "distance" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/door_border_board> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "door border board" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/door_eye> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "door eye" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/door_handle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "door handle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/door_hinge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "door hinge" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/door_leaf> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "door leaf" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/door_opening> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "door opening" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/door_pane> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "door pane" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/dose_radiation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "dose radiation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/drainage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "drainage" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/dressing_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "dressing room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/drinking_water> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "drinking water" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/driver_with_a_mobility_impairment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "driver with a mobility impairment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/driveway> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "driveway" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/echo> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "echo" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/economic_and_staff_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "economic and staff room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/edge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "edge" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/electric_mobility_aid> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "electric mobility aid" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/electricity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "electricity" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/elevator> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "elevator" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/end> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "end" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/end_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "end door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/end_wall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "end wall" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/entrance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "entrance" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/entrance_and_evacuation_route> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "entrance and evacuation route" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/entrance_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "entrance door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/entry_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "entry area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/equipment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "equipment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/evacuation_route> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "evacuation route" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/exit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "exit" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "facility" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/faucet> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "faucet" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/fence> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "fence" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/flat> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "flat" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/flat_road_section> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "flat road section" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/floor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "floor" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/floor-to-ceiling_glass_window> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "floor-to-ceiling glass window" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/floor_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "floor area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/floor_covering_material> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "floor covering material" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/folding_shower_chair> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "folding shower chair" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/food_dish> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "food dish" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/foot> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "foot" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/foot_washing_stand> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "foot washing stand" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/footpath> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "footpath" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/forest> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "forest" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/free_movement_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "free movement space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/free_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "free space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/fresh_air_flow> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "fresh air flow" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/front> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "front" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/front_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "front door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/front_edge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "front edge" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/furnishing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "furnishing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/furnishing_item> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "furnishing item" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/furniture> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "furniture" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/gamma_radiation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "gamma radiation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/gap> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "gap" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/glass_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "glass door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/glass_panel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "glass panel" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/glass_surface> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "glass surface" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/glazed_surface> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "glazed surface" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/grate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "grate" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/group_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "group room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/guideway> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "guideway" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/gutter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "gutter" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hair_dryer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hair dryer" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hall" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hand_dryer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hand dryer" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hand_lever> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hand lever" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hand_shower> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hand shower" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hand_washing_sink> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hand washing sink" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/handle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "handle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/handrail> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "handrail" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/handwashing_sink> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "handwashing sink" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hatch> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hatch" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/health_protection_requirement> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "health protection requirement" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/heat_radiation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "heat radiation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/heating> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "heating" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/heating_hearth> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "heating hearth" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hedge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hedge" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/height> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "height" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/heritage_conservation_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "heritage conservation area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/high> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "high" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/high_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "high space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/humidity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "humidity" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/hygienic_toilet_use> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "hygienic toilet use" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/illumination> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "illumination" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/indoor_air> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "indoor air" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/indoor_air_quality> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "indoor air quality" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/indoor_climate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "indoor climate" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/indoor_workplace> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "indoor workplace" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/information_board> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "information board" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/information_screen> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "information screen" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/inner_side> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "inner side" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/inspection_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "inspection point" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/installation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "installation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/installation_height> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "installation height" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/intercom> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "intercom" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/interior> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "interior" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/interior_decoration> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "interior decoration" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/joint> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "joint" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/kerb> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "kerb" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/keyboard> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "keyboard" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/kindergarten_group> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "kindergarten group" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/kitchen> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "kitchen" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/kitchen_and_dishwashing_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "kitchen and dishwashing area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/knee> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "knee" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ladder> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "ladder" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/land> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "land" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/land_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "land area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/landing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "landing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/landscaping> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "landscaping" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/length> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "length" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/level> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "level" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/light_switch> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "light switch" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/light_traffic> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "light traffic" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/light_traffic_path> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "light traffic path" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/light_traffic_road> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "light traffic road" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/lighting> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "lighting" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/lighting_switch> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "lighting switch" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/liquid_soap_dispenser> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "liquid soap dispenser" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/load_capacity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "load capacity" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/location> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "location" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/lock> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "lock" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/long> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "long" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/longitudinal_slope> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "longitudinal slope" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/lot_entrance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "lot entrance" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/lower_edge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "lower edge" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/lower_sitting_step> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "lower sitting step" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/machine> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "machine" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/magnetic_card_reader> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "magnetic card reader" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maintenance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "maintenance" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/manager> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "manager" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maneuvering_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "maneuvering room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maneuvering_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "maneuvering space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/manufacturer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "manufacturer" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/map> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "map" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/material> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "material" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/material_covering> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "material covering" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/maximum_force> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "maximum force" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/measure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "measure" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/metal_grating> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "metal grating" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/mirror> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "mirror" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/moisture-proof> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "moisture-proof" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/movement_path> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "movement path" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/movement_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "movement space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/music_and_gymnastics_hal> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "music and gymnastics hal" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/nursery_group> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "nursery group" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/nursery_group_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "nursery group room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/one-way_traffic> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "one-way traffic" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/open_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "open door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/open_side> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "open side" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/opening> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "opening" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/opening_button> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "opening button" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/opening_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "opening point" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/opening_side> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "opening side" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pandus> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pandus" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/paper_holder> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "paper holder" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/paper_towel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "paper towel" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/park> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "park" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parking> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "parking" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parking_lot> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "parking lot" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parking_place> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "parking place" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/parking_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "parking space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/part> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "part" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/passage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "passage" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/passage_tunnel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "passage tunnel" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pavement> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pavement" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pavement_material> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pavement material" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pedestrian> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pedestrian" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pedestrian_crossing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pedestrian crossing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pedestrian_traffic_light> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pedestrian traffic light" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pedestrian_traffic_light_button> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pedestrian traffic light button" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/person_with_mobility_or_vision_impairment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "person with mobility or vision impairment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/personal_hygiene> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "personal hygiene" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pest_insect> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pest insect" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/phone_lock> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "phone lock" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/phono_lock> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "phono lock" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/phono_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "phono system" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pictogram> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pictogram" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pictographic_sign> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pictographic sign" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pivot_axis> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pivot axis" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/plane> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "plane" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/plant> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "plant" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/platform> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "platform" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/platform_lift> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "platform lift" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/play_and_gymnastics_equipment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "play and gymnastics equipment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/play_and_sleeping_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "play and sleeping room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/play_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "play area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/playground> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "playground" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/playground_equipment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "playground equipment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/playroom> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "playroom" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/pool> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "pool" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/premises> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "premises" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/preschool_institution> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "preschool institution" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/primary_school_children's_institution> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "primary school children's institution" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/private_children's_institution> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "private children's institution" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/psychological_glare_factor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "psychological glare factor" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/public_sauna> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "public sauna" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/public_transport_timetable> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "public transport timetable" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/public_vehicle_stop> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "public vehicle stop" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/rack> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "rack" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/rail> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "rail" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/railway> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "railway" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/railway_crossing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "railway crossing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ramp> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "ramp" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/rectangular_profile> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "rectangular profile" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/regulation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "regulation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/residential_building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "residential building" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/revolving_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "revolving door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/riding_bicycle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "riding bicycle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/right-angled_profile> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "right-angled profile" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/road> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "road" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/road_sign> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "road sign" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/road_surface> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "road surface" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/road_surface_material> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "road surface material" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/roadway> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "roadway" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/rodent> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "rodent" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/roof> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "roof" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/room_air_conditioning_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "room air conditioning system" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/rotating_lock_handle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "rotating lock handle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/safety_fence> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "safety fence" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/safety_island> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "safety island" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/safety_railing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "safety railing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sales_counter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sales counter" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sand> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sand" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sandbox> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sandbox" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sanitary_equipment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sanitary equipment" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sauna_platform> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sauna platform" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/scaffolding> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "scaffolding" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/seat> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "seat" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/seating_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "seating area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/service_counter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "service counter" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sewerage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sewerage" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shade> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shade" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shape> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shape" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sharp> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sharp" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sharp_edge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sharp edge" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sheet> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sheet" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shelf> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shelf" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shower_cabin> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shower cabin" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shower_chair> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shower chair" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shower_cubicle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shower cubicle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shower_faucet> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shower faucet" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shower_head> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shower head" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/shower_mixer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "shower mixer" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/side> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "side" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/side_wall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "side wall" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sidewalk> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sidewalk" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sign> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sign" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sink> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sink" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sink_bowl> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sink bowl" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/size> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "size" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/slab_scaffold> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "slab scaffold" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sled> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sled" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sleeping> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sleeping" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sleeping_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sleeping room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/slope> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "slope" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/soap_dish> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "soap dish" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/socket> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "socket" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/soiling> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "soiling" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sound_amplification_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sound amplification system" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sound_barrier> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sound barrier" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sound_signal> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sound signal" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sound_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sound system" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "space" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/spectator_seat> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "spectator seat" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/square> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "square" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stair> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stair" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stair_handrail> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stair handrail" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stair_railing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stair railing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stair_railing_stave> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stair railing stave" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/staircase> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "staircase" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/steam_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "steam room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/step> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "step" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stick> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stick" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stop> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stop" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/storage_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "storage room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/straight_paving> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "straight paving" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/street> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "street" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/strip> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "strip" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stroboscopic_light> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stroboscopic light" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/stroller> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "stroller" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/subfloor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "subfloor" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/sunlight> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "sunlight" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/surface> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "surface" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/surface_difference> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "surface difference" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/swimming_pool> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "swimming pool" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/table> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "table" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/tactile_relief_pavement_material> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "tactile relief pavement material" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/tap_mixer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "tap mixer" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/telescopic_rail> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "telescopic rail" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/temperature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "temperature" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/terrace> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "terrace" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/thermal_comfort> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "thermal comfort" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/thermometer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "thermometer" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/thermostat> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "thermostat" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/thickness> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "thickness" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/thread> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "thread" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/threshold> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "threshold" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/threshold_package> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "threshold package" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ticket_sales> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "ticket sales" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/toes> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "toes" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/toilet> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "toilet" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/toilet_bowl> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "toilet bowl" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/toilet_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "toilet door" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/toilet_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "toilet room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/tool> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "tool" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/traffic_control_device> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "traffic control device" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/traffic_light> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "traffic light" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/traffic_road> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "traffic road" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/traffic_sign> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "traffic sign" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/traffic_sign_post> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "traffic sign post" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/transverse_slope> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "transverse slope" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/trash_can> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "trash can" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/twisted_paving> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "twisted paving" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/twisting> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "twisting" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/two-way_traffic> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "two-way traffic" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/upper_surface> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "upper surface" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/use> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "use" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/utility_yard> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "utility yard" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/vanity_table> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "vanity table" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/vehicle> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "vehicle" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/ventilation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "ventilation" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/vibration> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "vibration" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/viewing_platform> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "viewing platform" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/visual_output> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "visual output" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/visually_impaired_person> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "visually impaired person" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/voice_notification> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "voice notification" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/waiting_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "waiting area" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/waiting_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "waiting room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/wall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "wall" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/wardrobe> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "wardrobe" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/warning_sign> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "warning sign" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/washing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "washing" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/washing_machine> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "washing machine" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/washing_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "washing room" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/washroom> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "washroom" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/waste_water> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "waste water" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/water> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "water" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/water_drainage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "water drainage" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/water_supply> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "water supply" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/water_temperature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "water temperature" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/water_volume> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "water volume" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/way> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "way" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/wheelchair> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "wheelchair" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/wheelchair_seat> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "wheelchair seat" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/wheelchair_user> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "wheelchair user" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/wide> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "wide" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/width> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "width" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/window> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "window" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
+<https://w3id.org/lbd/aec3po/yard> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    rdfs:label "yard" ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Estonia> .
+
