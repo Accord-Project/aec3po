@@ -1,0 +1,1250 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/lbd/aec3po/CO2_emission_factor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/CO2_emissions> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/U-value> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/absence> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/access> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/access_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/access_route> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/accommodation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/accommodation_premise> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/account> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/acoustic_design> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/acoustic_environment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/activation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air-leakage_gap> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air-sealing_tape> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_barrier> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_conditioner> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_duct> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_flow> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_gap> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_handling_unit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_leakage_rate_figure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_pressure_test> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/air_tightness> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/anchoring_structure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/annual_efficiency> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/annual_percentage_of_heat> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/anthracite_figure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/apartment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/appliance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/approach> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/assembly_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/assembly_facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/atmosphere> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/attic> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/audit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/auditorium> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/automatic_meter_reading> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/auxiliary_unit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/average_carbon_monoxide_concentration> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/axle_group_load> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/balcony> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/balcony_slab> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/bar> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/barrier> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/base_plate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/basement_storey> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/basin> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/bath> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/bathroom> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/battery_storage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/beading> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/bedroom> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/biomass_heating> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/block> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/block_leaf> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/board> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/boiler> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/boiler_interlock> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/boiler_type> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/boom_barrier> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/box> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/boxing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/breaking> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/buggy> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_control_body> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_element> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_emission_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_envelope> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_fabric> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_primary_energy_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_service> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_site> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/building_type> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/built_on_site> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/buried_part> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cabinet> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cable> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cable_duct> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cable_route> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/calculation_tool> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/car_park> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/car_wash_facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/case> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/casing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/category> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cavity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cavity_closer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cavity_wall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/central_heating> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/centre_pane_U-value> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/chair> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/chamber> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/changing_room> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/chimney> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/circulation_piping> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/class> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cleaning_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cleanout> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/clear_width> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/clear_zone> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/closing_device> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cold_premise> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cold_side> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cold_water_pipe> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cold_water_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/column> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/combination_boiler> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/combustion_appliance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/comfort_cooling_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/commercial_part> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/commissioning_plan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/common_access_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/common_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/community_heating_primary_circuit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/community_heating_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/compartment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/compensating_measure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/compliance_checklist> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/component> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/compressible_tape> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/condition> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/conference_facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/configuration> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/connection> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/connector_pipe> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/conservatory> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/constraint> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/construction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/construction_layer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/consumer_unit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/continuity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/control> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/control_appliance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/controlled_fitting> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cooling> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cooling_appliance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cooling_energy_production> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cooling_pipework> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cord> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/corner> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/corridor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cost> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/counter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/courtyard> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/covered_way> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/crane> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/crawl_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cross-sectional_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cube> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/cylinder> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/damage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/data_collection_facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/day-care_centre> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/day-care_institution> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/deep> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/density> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/depth> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/design> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/design_solution> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/design_temperature_difference> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/design_value> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/device> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/diameter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/difference_in_light_reflectance_value> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/dimension> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/direction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/disabled_people> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/display_window> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/distance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/distance_of_the_basement_storey_floor_from_the_entry_level> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/distance_of_the_uppermost_floor_level_from_the_entry_level> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/district_heat_network> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/domestic_hot__water_cylinder_heat_loss> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/domestic_hot_water_circulation_heat_loss> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/door_furniture> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/door_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/door_viewer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/doorset> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/drain> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/drainage_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/drainage_water> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/drawing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/driveway> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/dry_riser> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/duct> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/dwelling> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/dwelling_emission_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/dwelling_fabric_energy_efficiency_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/dwelling_primary_energy_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/dwelling_unit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/early_childhood_education_premise> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/eave> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/edge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/efficiency> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/electric_resistance_heating> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/electric_vehicle_charge_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/electrical_installation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/electrical_output> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/electrically_operated_appliance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/electricity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/electricity_generation_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/element> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/elevation_difference> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/elevator_shaft> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/emergency_centre> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/emergency_exit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/emergency_repair> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/emission_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/emitter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/enclosure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/ending> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/enduse_category> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/energy__consumption> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/energy_declaration> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/energy_efficiency> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/energy_efficiency_measure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/energy_performance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/energy_saving> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/entrance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/entrance_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/entrance_level> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/entry> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/envelope> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/environment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/equipment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/european_standard> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/evacuation_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/exceptional_circumstance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/existing_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/exit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/exit_enclosure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/exit_passageway> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/exit_route> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/expanded_metal> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/exposure_coefficient> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/exterior_wall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/extinguishing_route> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/extract_air> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/extract_air_category> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/extract_ventilation_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/facade_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/facility> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fan> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fan_unit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fastener> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fastening_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire-extinguishing_system> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_compartment> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_compartmenting_requirement> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_igniting> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_load> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_performance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_resistance_time> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_resistance_time_requirement> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fire_wall> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/firefighting> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fitting> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fixing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/fixture> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/flexible_collar> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/floor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/floor-to-wall_junction> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/floor_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/floor_drain> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/floor_plate_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/floor_structure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/floor_void> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/flooring> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/flushing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/foundation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/frame> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/frame_component> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/free_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/free_gap> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/free_space> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/front_door> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/front_doorset> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/geo-location> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/gradient> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/heat> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/heat_emission_capacity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/heat_exchanger_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/heat_gain> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/heat_loss> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/heating_plant_emission_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/height> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/high> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/horizontal_spacing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/illuminance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/impact> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/inaccuracy> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/installation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/installed_generation_capacity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/instantaneous_carbon_monoxide_concentration> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/insulating_performance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/integrity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/intended_purpose> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/intended_time_of_use> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/layer> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/leading_edge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/leakage> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/level_difference> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/level_of_provision> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/level_with_entry> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/limit> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/location> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/long> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/low-frequency_noise> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/luminous_efficacy> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/maintained> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/maximum_capacity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/maximum_number_of_occupants> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/measure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/mechanical_ventilation> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/minimum_value> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/moisture> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/net_heating_energy_demand> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/number> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/number_of_appliances> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/number_of_occupants> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/number_of_people_evacuating> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/number_of_persons> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/number_of_storeys> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/number_of_wall_ties_per_square_metre> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/open_outward> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/opening> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/output> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/part> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/performance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/pitch> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/planned_time_of_use> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/presence> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/pressure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/primary_energy> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/primary_energy_factor> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/product_certificate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/projection> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/proportion> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/proportion_of_the_cooling_load_relating_to_distribution_pipework> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/protection> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/protective_part> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/rate_of_heat_release> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/rated_speed> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/reception> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/reference_value> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/result> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/reverberation_time> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/rise> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/riser> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/room_temperature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/safety_feature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/sales_counter> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/seasonal_energy_efficiency_ratio> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/section> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/selection> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/service> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/service_life> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/shallow_projecting> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/shape> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/side> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/side_edge> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/sign> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/size> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/slope> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/specification> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/spread_of_fire> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/standard> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/standard_thickness> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/structure> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/sum> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/sum_total> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/support> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/surface> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/surface_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/surface_temperature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/target_emission_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/target_fabric_energy_efficiency_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/target_primary_energy_rate> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/temperature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/termination_point> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/thermal_integrity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/thick> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/thickness> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/tie_force> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/time-lapse> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/topography> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_air_flow> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_capital_cost> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_combined_window_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_cost> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_extract_air_flow> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_floor_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_load> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_minimum_width> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_number> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_thickness> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/total_useful_floor_area> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/travel> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/travel_distance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/tread> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/use> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/vertical_spacing> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/vicinity> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/visual_contrast> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/water_temperature> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/water_vapour_resistance> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/wide> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/width> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
+<https://w3id.org/lbd/aec3po/wind_load> a <https://w3id.org/lbd/aec3po/ACCORDTerm> ;
+    dcterms:coverage <https://w3id.org/lbd/aec3po/Finland> .
+
