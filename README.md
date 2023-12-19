@@ -162,6 +162,10 @@ The following table represents a summary of the use cases:
 |UK     |UK1 - Timber Structure  | This example represents check in `compression parallel to the grain in timber structures`, as described in the latest version of Eurocode 5 (EN 1995-1-1:2004+A2:2014) ([More details](https://github.com/Accord-Project/aec3po/tree/main/examples/UK)). | [link](https://github.com/Accord-Project/aec3po/blob/main/examples/UK/UK-Timber%20Structure.ttl) | 
 
 ## AEC3PO Dissemination
+Building Compliance and Permitting Ontology, Linked Data and Ontologies, The Third Building Digital Twin International Congress, Antwerp, May 3rd, 2023, Belgium. 
+
+1th Linked Data in Architecture and Construction Workshop (LDAC 2023), 15-16 June 2023, Italy. In this workshop, AEC3PO has been presented as part of the Industrial Talk titled "Semantisation of Rules for Automated Compliance Checking"
+
 
 ## Pre-commits
 
