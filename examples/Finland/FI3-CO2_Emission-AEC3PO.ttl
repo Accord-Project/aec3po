@@ -785,7 +785,7 @@ ex:FI_statement_1_section_1_New aec3po:hasRequiredData
     ex:FI3_ClimateReport_carbonFootprint_UseCategory_New ,
     ex:FI3_ClimateReport_carbonFootprint_TotalCarbonFootprint_New .
 
-# Define and Instantiate all the CheckMethod(s) that will operationalize the Statements defined above. The assumption here is that microservices are handeling the "CheckAct".
+# Define and Instantiate all the CheckMethod(s) that will operationalize the Statements defined above. The assumption here is that microservices are handeling the "CheckingAct".
 
 ex:FI3_numericalCheckMethod_AssessmentPeriod rdf:type aec3po:ProcedurialCheck ;
   aec3po:operationalizes ex:FI3_numericalCheckStatement_AssessmentPeriod .
