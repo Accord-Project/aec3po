@@ -4,7 +4,7 @@
 AEC3PO aims to model all aspects of compliance and permitting on the AEC domain, across different regulatory systems.
 It is organised into modules, comprising of classes and properties. The figure below shows an overview of these modules and their relations.
 
-![AEC3PO Overview](diagrams/aec3po_v1.0.2_Modules.png)
+![AEC3PO Overview](diagrams/OverviewAEC3PO.png)
 
 Below is an overview of the core modules and their components:
 
