@@ -16,6 +16,7 @@
 @prefix schema: <https://schema.org/> .
 PREFIX ex: <http://example.com/exampleOntology#>
 
+aec3po:demoCase_FI3 a owl:Ontology ;
 # Instantiate the Decree of the Ministry of the Environment Document as a Document
 ex:FI_Dec_Env_Doc a aec3po:Document ;
     dct:identifier <https://vttgroup.sharepoint.com/:w:/r/sites/EU-projectpreparationDigitalpermitsandcompliancecheck/_layouts/15/Doc.aspx?sourcedoc=%7BB135D7E5-FBF8-4AA2-A12D-7F5856EE7A38%7D&file=Use%20Case%20FI3%20extract%20from%20the%20regulations.docx&action=default&mobileredirect=true> ;
