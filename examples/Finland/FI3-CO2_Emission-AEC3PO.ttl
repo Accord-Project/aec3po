@@ -632,8 +632,8 @@ ex:FI3_BooleanCheckStatement_ClimateReportAuthorTraining a aec3po:BooleanCheckSt
 # Instantiate the FI3_categoryCheckStatement_CarbonAssessmentResult as a subClassOf CheckStatement
 ex:FI3_categoryCheckStatement_AssessmentReport a aec3po:CategoryCheckStatement .
 
-# Instantiate the FI3_categoryCheckStatement_CarbonFootprintResult as a subClassOf CheckStatement
-ex:FI3_categoryCheckStatement_CarbonFootprintResult a aec3po:CategoryCheckStatement .
+# Instantiate the FI3_categoryCheckStatement_CarbonFootprint as a subClassOf CheckStatement
+ex:FI3_categoryCheckStatement_CarbonFootprint a aec3po:CategoryCheckStatement .
 
 #--------End of document and statements description and their classifications
 
@@ -797,8 +797,8 @@ ex:FI3_booleanCheckMethod_AssessmentReport rdf:type aec3po:ProcedurialCheck ;
 ex:FI3_categoryCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialCheck ;
   aec3po:operationalizes ex:FI3_categoryCheckStatement_CarbonAssessmentResult . 
 
-ex:FI3_categoryCheckMethod_CarbonFootprintResult rdf:type aec3po:ProcedurialCheck ;
-  aec3po:operationalizes ex:FI3_categoryCheckStatement_CarbonFootprintResult .
+ex:FI3_categoryCheckMethod_CarbonFootprint rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_categoryCheckStatement_CarbonFootprint .
 
 #### Define all the subchecks of the ex:FI3_booleanCheckMethod_AssessmentReport
 ex:FI3_BooleanCheckMethod_BuildingID rdf:type aec3po:ProcedurialCheck .
