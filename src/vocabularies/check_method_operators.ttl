@@ -44,13 +44,14 @@ aec3po:CheckMethodOperatorNomenclature a skos:ConceptScheme ;
         aec3po:CheckMethodOperator-subtraction,
         aec3po:CheckMethodOperator-division.
 
-aec3po:CheckMethodOperator-eq a owl:NamedIndividual, skos:Concept,
-        aec3po:CheckMethodOperator ;
-    rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "equal-to operator."@en ;
-    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "equal-to"@en ;
-    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+#moved to CheckMethodComparator Nomenclature
+#aec3po:CheckMethodOperator-eq a owl:NamedIndividual, skos:Concept,
+ #       aec3po:CheckMethodOperator ;
+  #  rdfs:isDefinedBy aec3po:check_method_operators ;
+   # skos:definition "equal-to operator."@en ;
+    #skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+    #skos:prefLabel "equal-to"@en ;
+    #skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
 #moved to CheckMethodComparator Nomenclature
 #aec3po:CheckMethodOperator-neq a owl:NamedIndividual, skos:Concept,
@@ -166,9 +167,9 @@ aec3po:CheckMethodOperator-addition a owl:NamedIndividual, skos:Concept,
 aec3po:CheckMethodOperator-subtraction a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodOperator ;
     rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "addition operator."@en ;
+    skos:definition "subtraction operator."@en ;
     skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "addition"@en ;
+    skos:prefLabel "subtraction"@en ;
     skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
 aec3po:hasOperator a owl:FunctionalProperty,
