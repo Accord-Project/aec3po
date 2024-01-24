@@ -33,24 +33,16 @@ aec3po:CheckMethodOperatorNomenclature a skos:ConceptScheme ;
     skos:definition """A set of operators for the check method.
   AEC3PO includes a set of operators for this nomenclature.
   These operators are :
-  - _eq : equal-to operator;
-  - operator_neq : not equal-to operator.
-  - operator_lt : less-than operator.
-  - operator_le : less-equal operator.
-  - operator_gt : greater-than operator.
-  - operator_ge : greater-equal operator.
   - operator_exists : exists operator.
   - operator_notExists : not-exists operator.
   - operator_forall : forall operator."""@en ;
-    skos:hasTopConcept aec3po:CheckMethodOperator-eq, 
-        aec3po:CheckMethodOperator-neq, 
-        aec3po:CheckMethodOperator-lt, 
-        aec3po:CheckMethodOperator-le, 
-        aec3po:CheckMethodOperator-gt,
-        aec3po:CheckMethodOperator-ge,
-        aec3po:CheckMethodOperator-exists,
-        aec3po:CheckMethodOperator-notExists,
-        aec3po:CheckMethodOperator-forall.
+    skos:hasTopConcept aec3po:CheckMethodOperator-exists, 
+        aec3po:CheckMethodOperator-notExists, 
+        aec3po:CheckMethodOperator-forall, 
+        aec3po:CheckMethodOperator-addition, 
+        aec3po:CheckMethodOperator-multiplication,
+        aec3po:CheckMethodOperator-subtraction,
+        aec3po:CheckMethodOperator-division.
 
 aec3po:CheckMethodOperator-eq a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodOperator ;
@@ -60,45 +52,50 @@ aec3po:CheckMethodOperator-eq a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "equal-to"@en ;
     skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
-aec3po:CheckMethodOperator-neq a owl:NamedIndividual, skos:Concept,
-        aec3po:CheckMethodOperator ;
-    rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "not equal-to operator."@en ;
-    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "not equal-to"@en ;
-    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+#moved to CheckMethodComparator Nomenclature
+#aec3po:CheckMethodOperator-neq a owl:NamedIndividual, skos:Concept,
+       # aec3po:CheckMethodOperator ;
+    #rdfs:isDefinedBy aec3po:check_method_operators ;
+   # skos:definition "not equal-to operator."@en ;
+   # skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+   # skos:prefLabel "not equal-to"@en ;
+   # skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
-aec3po:CheckMethodOperator-lt a owl:NamedIndividual, skos:Concept,
-        aec3po:CheckMethodOperator ;
-    rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "less-than operator."@en ;
-    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "less than"@en ;
-    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+#moved to CheckMethodComparator Nomenclature
+#aec3po:CheckMethodOperator-lt a owl:NamedIndividual, skos:Concept,
+ #       aec3po:CheckMethodOperator ;
+  #  rdfs:isDefinedBy aec3po:check_method_operators ;
+   # skos:definition "less-than operator."@en ;
+    #skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+    #skos:prefLabel "less than"@en ;
+    #skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
-aec3po:CheckMethodOperator-le a owl:NamedIndividual, skos:Concept,
-        aec3po:CheckMethodOperator ;
-    rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "less-equal operator."@en ;
-    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "less equal"@en ;
-    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+#moved to CheckMethodComparator Nomenclature
+#aec3po:CheckMethodOperator-le a owl:NamedIndividual, skos:Concept,
+ #       aec3po:CheckMethodOperator ;
+  #  rdfs:isDefinedBy aec3po:check_method_operators ;
+   # skos:definition "less-equal operator."@en ;
+    #skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+    #skos:prefLabel "less equal"@en ;
+    #skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
-aec3po:CheckMethodOperator-gt a owl:NamedIndividual, skos:Concept,
-        aec3po:CheckMethodOperator ;
-    rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "greater-than operator."@en ;
-    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "greater than"@en ;
-    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+#moved to CheckMethodComparator Nomenclature
+#aec3po:CheckMethodOperator-gt a owl:NamedIndividual, skos:Concept,
+ #       aec3po:CheckMethodOperator ;
+  #  rdfs:isDefinedBy aec3po:check_method_operators ;
+   # skos:definition "greater-than operator."@en ;
+    #skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+    #skos:prefLabel "greater than"@en ;
+    #skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
-aec3po:CheckMethodOperator-ge a owl:NamedIndividual, skos:Concept,
-        aec3po:CheckMethodOperator ;
-    rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "greater-equal operator."@en ;
-    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "greater equal"@en ;
-    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+#moved to CheckMethodComparator Nomenclature
+#aec3po:CheckMethodOperator-ge a owl:NamedIndividual, skos:Concept,
+ #       aec3po:CheckMethodOperator ;
+  #  rdfs:isDefinedBy aec3po:check_method_operators ;
+   # skos:definition "greater-equal operator."@en ;
+    #skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+    #skos:prefLabel "greater equal"@en ;
+    #skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
 aec3po:CheckMethodOperator-exists a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodOperator ;
@@ -124,21 +121,23 @@ aec3po:CheckMethodOperator-forall a owl:NamedIndividual, skos:Concept,
     skos:prefLabel "forall"@en ;
     skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
-aec3po:CheckMethodOperator-logicalAND a owl:NamedIndividual, skos:Concept,
-        aec3po:CheckMethodOperator ;
-    rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "logical AND operator."@en ;
-    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "logicalAND"@en ;
-    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+#moved to CheckMethodComparator Nomenclature
+#aec3po:CheckMethodOperator-logicalAND a owl:NamedIndividual, skos:Concept,
+ #       aec3po:CheckMethodOperator ;
+  #  rdfs:isDefinedBy aec3po:check_method_operators ;
+   # skos:definition "logical AND operator."@en ;
+    #skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+    #skos:prefLabel "logicalAND"@en ;
+    #skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
-aec3po:CheckMethodOperator-logicalOR a owl:NamedIndividual, skos:Concept,
-        aec3po:CheckMethodOperator ;
-    rdfs:isDefinedBy aec3po:check_method_operators ;
-    skos:definition "logical OR operator."@en ;
-    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
-    skos:prefLabel "logicalOR"@en ;
-    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+#moved to CheckMethodComparator Nomenclature
+#aec3po:CheckMethodOperator-logicalOR a owl:NamedIndividual, skos:Concept,
+ #       aec3po:CheckMethodOperator ;
+  #  rdfs:isDefinedBy aec3po:check_method_operators ;
+   # skos:definition "logical OR operator."@en ;
+    #skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+    #skos:prefLabel "logicalOR"@en ;
+    #skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
 aec3po:CheckMethodOperator-multiplication a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodOperator ;
@@ -157,6 +156,14 @@ aec3po:CheckMethodOperator-division a owl:NamedIndividual, skos:Concept,
     skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
 
 aec3po:CheckMethodOperator-addition a owl:NamedIndividual, skos:Concept,
+        aec3po:CheckMethodOperator ;
+    rdfs:isDefinedBy aec3po:check_method_operators ;
+    skos:definition "addition operator."@en ;
+    skos:inScheme aec3po:CheckMethodOperatorNomenclature ;
+    skos:prefLabel "addition"@en ;
+    skos:topConceptOf aec3po:CheckMethodOperatorNomenclature .
+
+aec3po:CheckMethodOperator-subtraction a owl:NamedIndividual, skos:Concept,
         aec3po:CheckMethodOperator ;
     rdfs:isDefinedBy aec3po:check_method_operators ;
     skos:definition "addition operator."@en ;
