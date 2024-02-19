@@ -1,1 +1,1038 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ifcOWL: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL/index.html> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix schema: <https://schema.org/> .
+PREFIX ex: <http://example.com/exampleOntology#>
 
+aec3po:demoCase_FI3 a owl:Ontology ;
+# Instantiate the Decree of the Ministry of the Environment Document as a Document
+ex:FI_Dec_Env_Doc a aec3po:Document ;
+    dct:identifier <https://vttgroup.sharepoint.com/:w:/r/sites/EU-projectpreparationDigitalpermitsandcompliancecheck/_layouts/15/Doc.aspx?sourcedoc=%7BB135D7E5-FBF8-4AA2-A12D-7F5856EE7A38%7D&file=Use%20Case%20FI3%20extract%20from%20the%20regulations.docx&action=default&mobileredirect=true> ;
+    dct:issued "2022-09-30"^^xsd:date ;
+    dct:references <reference_here> ;
+    dct:coverage aec3po:Finland .
+
+# Instantiate the first DocumentSubdivision that contains the rule to be checked
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 a aec3po:DocumentSubdivision ;
+    dct:identifier "Finnish_Environment/4" ;
+    dct:title "Length of the assessment period" .
+
+# Instantiate the second DocumentSubdivision that contains the rule to be checked
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 a aec3po:DocumentSubdivision ;
+    dct:identifier "23" ;
+    dct:title "Content of the climate report" .
+
+# Instantiate the third DocumentSubdivision that contains the rule to be checked
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 a aec3po:DocumentSubdivision ;
+    dct:identifier "Finnish_Environment/24" ;
+    dct:title "Presentation of the results of the low-carbon assessment in the climate report" . 
+
+# Instantiate the fourth DocumentSubdivision that contains the rule to be checked
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_1_New a aec3po:DocumentSubdivision ;
+    dct:identifier "Finnish_Environment/New/1" ;
+    dct:title "Expected new regulation" ;
+    rdfs:comment "this is a new regulation that probably will be part of the new Building Act related to the Decree about the climate assessment." .      
+
+# Link the DocumentSubdivisions to the Document using hasPart property
+ex:FI_Dec_Env_Doc dct:hasPart 
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 ,
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 ,
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 ,
+    ex:FI_Dec_Env_Doc_DocSubdivision_Section_1_New . 
+
+# ---- Define the statements of the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
+
+# Instantiate the first statement from the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
+ex:FI_statement_1_section_4 a aec3po:NumericalCheckStatement ;
+    dct:identifier "Finnish_Environment/4/1" ;
+    aec3po:asText "The period for assessing the low-carbon performance of a new building or a building undergoing major renovation during its operational phase shall be the first 50 years after construction or major renovation." .
+
+# Instantiate the second statement from the first DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4
+ex:FI_statement_2_section_4 a aec3po:NumericalCheckStatement ;
+    dct:identifier "Finnish_Environment/4/2" ;
+    aec3po:asText "The assessment period for the use phase of a building intended to be mobile and temporary shall be the length of the temporary use, up to a maximum of 50 years." .
+
+# Link the first and the second statements to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 using hasPart property
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_4 dct:hasPart   ex:FI_statement_1_section_4 , ex:FI_statement_2_section_4 . 
+
+# ---- Define the statement of the second DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23
+ex:FI_statement_1_section_23 a aec3po:CheckListStatement ;
+    dct:identifier "Finnish_Environment/23/1" ;
+    aec3po:asText "The climate report shall contain at least the following information:" ;
+    aec3po:hasPart ex:list_section_23 .
+
+# Define the list defined in the statement of section 23
+
+ex:list_section_23 a rdf:List ;
+    rdf:_1 " permanent building identification number " ;
+    rdf:_2 " use category or use categories of the building " ;
+    rdf:_3 " net heated area of the new building or the area of the measure of major renovation " ;
+    rdf:_4 " area of the building site " ;
+    rdf:_5 " results of the carbon assessment for each use category separately and as a sum of the results " ; 
+    rdf:_6 " planned number of users of the building " ;
+    rdf:_7 " calculated energy consumption of the building " ; 
+    rdf:_8 " length of the assessment periods used " ;
+    rdf:_9 " main construction material of the load-bearing structures included in the assessment " ;
+    rdf:_10 " target lifetime of the building " ;
+    rdf:_11 " calculation software used in the assessment " ;
+    rdf:_12 " date of the climate report " ; 
+    rdf:_13 " name and training of the author of the report " .
+
+# Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 using hasPart property
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_23 dct:hasPart ex:FI_statement_1_section_23 .  
+
+# ---- Define the statement of the third DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_24
+ex:FI_statement_1_section_24 a aec3po:Statement ;
+    dct:identifier "Finnish_Environment/24/1" ;
+    aec3po:asText "The climate report shall contain the results of the low-carbon assessment for each stage of the life cycle of the building to be assessed, broken down separately for the building and for the building site, in accordance with the following tables: " ;
+        aec3po:hasPart ex:container_tables_section_24 . 
+        
+# Define a container that contains the two tables defined in the statement of section 24, and define the two tables with their contents. 
+ex:container_tables_section_24 a aec3po:Container ;
+    aec3po:contains 
+        ex:table_section_24_carbon_footprint ,
+        ex:table_section_24_carbon_handprint .
+
+# Define the table ex:table_section_24_carbon_footprint 
+ex:table_section_24_carbon_footprint a aec3po:Table ;
+    aec3po:contains 
+        ex:table_section_24_carbon_footprint_column_1 ,
+        ex:table_section_24_carbon_footprint_column_2 ,
+        ex:table_section_24_carbon_footprint_row_1 ,
+        ex:table_section_24_carbon_footprint_row_2 ,
+        ex:table_section_24_carbon_footprint_row_3 ,
+        ex:table_section_24_carbon_footprint_row_4 ,
+        ex:table_section_24_carbon_footprint_row_5 ,
+        ex:table_section_24_carbon_footprint_row_6 ,
+        ex:table_section_24_carbon_footprint_row_7 , 
+        ex:table_section_24_carbon_footprint_row_8 ,
+        ex:table_section_24_carbon_footprint_row_9 , 
+        ex:table_section_24_carbon_footprint_row_10 .
+
+# Define column 1 of the table table_section_24_carbon_footprint
+ex:table_section_24_carbon_footprint_column_1 a aec3po:Column ;
+   aec3po:hasValue "" .
+# Define column 2 of the table table_section_24_carbon_footprint
+ex:table_section_24_carbon_footprint_column_2 a aec3po:Column ;
+   aec3po:hasValue "Carbon footprint" ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_column_2_subcolumn_1 ,
+    ex:table_section_24_carbon_footprint_column_2_subcolumn_2 .
+#Define the subculumns of column 2 
+#subColumn 1
+ex:table_section_24_carbon_footprint_column_2_subcolumn_1 a aec3po:Column ;
+   aec3po:hasValue "Building" .
+#subColumn 2
+ex:table_section_24_carbon_footprint_column_2_subcolumn_2 a aec3po:Column ;
+   aec3po:hasValue "Building site" .
+
+#Define the rows of the table table_section_24_carbon_footprint
+#row_1
+ex:table_section_24_carbon_footprint_row_1 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_1.1 ,
+    ex:table_section_24_carbon_footprint_cell_1.2 .
+#Define the cells of row_1
+#Cell 1.1
+ex:table_section_24_carbon_footprint_cell_1.1 a aec3po:Cell ;
+   aec3po:hasValue "" .
+#Cell 1.2
+ex:table_section_24_carbon_footprint_cell_1.2 a aec3po:Cell ;
+   aec3po:hasValue ex:table_section_24_carbon_footprint_column_2.   
+
+#row_2
+ex:table_section_24_carbon_footprint_row_2 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_2.1 ,
+    ex:table_section_24_carbon_footprint_cell_2.2 ,
+    ex:table_section_24_carbon_footprint_cell_2.3 .
+#Define the cells of row_2
+#Cell 2.1
+ex:table_section_24_carbon_footprint_cell_2.1 a aec3po:Cell ;
+   aec3po:hasValue "A1-3 Building products manufacturing" .
+#Cell 2.2
+ex:table_section_24_carbon_footprint_cell_2.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 2.3
+ex:table_section_24_carbon_footprint_cell_2.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_3
+ex:table_section_24_carbon_footprint_row_3 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_3.1 ,
+    ex:table_section_24_carbon_footprint_cell_3.2 ,
+    ex:table_section_24_carbon_footprint_cell_3.3 .
+#Define the cells of row_3
+#Cell 3.1
+ex:table_section_24_carbon_footprint_cell_3.1 a aec3po:Cell ;
+   aec3po:hasValue "A4 Transport" .
+#Cell 3.2
+ex:table_section_24_carbon_footprint_cell_3.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 3.3
+ex:table_section_24_carbon_footprint_cell_3.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_4
+ex:table_section_24_carbon_footprint_row_4 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_4.1 ,
+    ex:table_section_24_carbon_footprint_cell_4.2 ,
+    ex:table_section_24_carbon_footprint_cell_4.3 .
+#Define the cells of row_4
+#Cell 4.1
+ex:table_section_24_carbon_footprint_cell_4.1 a aec3po:Cell ;
+   aec3po:hasValue "A5 Site activities" .
+#Cell 4.2
+ex:table_section_24_carbon_footprint_cell_4.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 4.3
+ex:table_section_24_carbon_footprint_cell_4.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .
+
+#row_5
+ex:table_section_24_carbon_footprint_row_5 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_5.1 ,
+    ex:table_section_24_carbon_footprint_cell_5.2 ,
+    ex:table_section_24_carbon_footprint_cell_5.3 .
+#Define the cells of row_5
+#Cell 5.1
+ex:table_section_24_carbon_footprint_cell_5.1 a aec3po:Cell ;
+   aec3po:hasValue "B4 Replacement of construction products" .
+#Cell 5.2
+ex:table_section_24_carbon_footprint_cell_5.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 5.3
+ex:table_section_24_carbon_footprint_cell_5.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .
+
+#row_6
+ex:table_section_24_carbon_footprint_row_6 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_6.1 ,
+    ex:table_section_24_carbon_footprint_cell_6.2 ,
+    ex:table_section_24_carbon_footprint_cell_6.3 .
+#Define the cells of row_6
+#Cell 6.1
+ex:table_section_24_carbon_footprint_cell_6.1 a aec3po:Cell ;
+   aec3po:hasValue "B6 Energy use" .
+#Cell 6.2
+ex:table_section_24_carbon_footprint_cell_6.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 6.3
+ex:table_section_24_carbon_footprint_cell_6.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .  
+
+#row_7
+ex:table_section_24_carbon_footprint_row_7 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_7.1 ,
+    ex:table_section_24_carbon_footprint_cell_7.2 ,
+    ex:table_section_24_carbon_footprint_cell_7.3 .
+#Define the cells of row_7
+#Cell 7.1
+ex:table_section_24_carbon_footprint_cell_7.1 a aec3po:Cell ;
+   aec3po:hasValue "C1 Demolition" .
+#Cell 7.2
+ex:table_section_24_carbon_footprint_cell_7.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 7.3
+ex:table_section_24_carbon_footprint_cell_7.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_8
+ex:table_section_24_carbon_footprint_row_8 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_8.1 ,
+    ex:table_section_24_carbon_footprint_cell_8.2 ,
+    ex:table_section_24_carbon_footprint_cell_8.3 .
+#Define the cells of row_8
+#Cell 8.1
+ex:table_section_24_carbon_footprint_cell_8.1 a aec3po:Cell ;
+   aec3po:hasValue "C2 Transport of demolition waste" .
+#Cell 8.2
+ex:table_section_24_carbon_footprint_cell_8.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 8.3
+ex:table_section_24_carbon_footprint_cell_8.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_9
+ex:table_section_24_carbon_footprint_row_9 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_9.1 ,
+    ex:table_section_24_carbon_footprint_cell_9.2 ,
+    ex:table_section_24_carbon_footprint_cell_9.3 .
+#Define the cells of row_9
+#Cell 9.1
+ex:table_section_24_carbon_footprint_cell_9.1 a aec3po:Cell ;
+   aec3po:hasValue "C4 Disposal of demolition waste" .
+#Cell 9.2
+ex:table_section_24_carbon_footprint_cell_9.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 9.3
+ex:table_section_24_carbon_footprint_cell_9.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_10
+ex:table_section_24_carbon_footprint_row_10 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_footprint_cell_10.1 ,
+    ex:table_section_24_carbon_footprint_cell_10.2 ,
+    ex:table_section_24_carbon_footprint_cell_10.3 .
+#Define the cells of row_10
+#Cell 10.1
+ex:table_section_24_carbon_footprint_cell_10.1 a aec3po:Cell ;
+   aec3po:hasValue "Total carbon footprint" .
+#Cell 10.2
+ex:table_section_24_carbon_footprint_cell_10.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 10.3
+ex:table_section_24_carbon_footprint_cell_10.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .        
+
+# Define the table ex:table_section_24_carbon_handprint
+ex:table_section_24_carbon_handprint a aec3po:Table ;
+    aec3po:contains 
+        ex:table_section_24_carbon_handprint_column_1 ,
+        ex:table_section_24_carbon_handprint_column_2 ,
+        ex:table_section_24_carbon_handprint_row_1 ,
+        ex:table_section_24_carbon_handprint_row_2 ,
+        ex:table_section_24_carbon_handprint_row_3 ,
+        ex:table_section_24_carbon_handprint_row_4 ,
+        ex:table_section_24_carbon_handprint_row_5 ,
+        ex:table_section_24_carbon_handprint_row_6 ,
+        ex:table_section_24_carbon_handprint_row_7 .
+
+# Define column 1 of the table table_section_24_carbon_handprint
+ex:table_section_24_carbon_handprint_column_1 a aec3po:Column ;
+   aec3po:hasValue "" .
+# Define column 2 of the table table_section_24_carbon_handprint
+ex:table_section_24_carbon_handprint_column_2 a aec3po:Column ;
+   aec3po:hasValue "Carbon handprint" ;
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_column_2_subcolumn_1 ,
+    ex:table_section_24_carbon_handprint_column_2_subcolumn_2 .
+#Define the subculumns of column 2 
+#subColumn 1
+ex:table_section_24_carbon_handprint_column_2_subcolumn_1 a aec3po:Column ;
+   aec3po:hasValue "Building" .
+#subColumn 2
+ex:table_section_24_carbon_handprint_column_2_subcolumn_2 a aec3po:Column ;
+   aec3po:hasValue "Building site" .
+
+#Define the rows of the table table_section_24_carbon_handprint
+#row_1
+ex:table_section_24_carbon_handprint_row_1 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_1.1 ,
+    ex:table_section_24_carbon_handprint_cell_1.2 .
+#Define the cells of row_1
+#Cell 1.1
+ex:table_section_24_carbon_handprint_cell_1.1 a aec3po:Cell ;
+   aec3po:hasValue "" .
+#Cell 1.2
+ex:table_section_24_carbon_handprint_cell_1.2 a aec3po:Cell ;
+   aec3po:hasValue ex:table_section_24_carbon_handprint_column_2.   
+
+#row_2
+ex:table_section_24_carbon_handprint_row_2 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_2.1 ,
+    ex:table_section_24_carbon_handprint_cell_2.2 ,
+    ex:table_section_24_carbon_handprint_cell_2.3 .
+   
+#Define the cells of row_2
+#Cell 2.1
+ex:table_section_24_carbon_handprint_cell_2.1 a aec3po:Cell ;
+   aec3po:hasValue "D1. Reuse and recycling" .
+#Cell 2.2
+ex:table_section_24_carbon_handprint_cell_2.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 2.3
+ex:table_section_24_carbon_handprint_cell_2.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_3
+ex:table_section_24_carbon_handprint_row_3 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_3.1 ,
+    ex:table_section_24_carbon_handprint_cell_3.2 ,
+    ex:table_section_24_carbon_handprint_cell_3.3 .
+#Define the cells of row_3
+#Cell 3.1
+ex:table_section_24_carbon_handprint_cell_3.1 a aec3po:Cell ;
+   aec3po:hasValue "D2. Energy recovery" .
+#Cell 3.2
+ex:table_section_24_carbon_handprint_cell_3.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 3.3
+ex:table_section_24_carbon_handprint_cell_3.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " . 
+
+#row_4
+ex:table_section_24_carbon_handprint_row_4 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_4.1 ,
+    ex:table_section_24_carbon_handprint_cell_4.2 ,
+    ex:table_section_24_carbon_handprint_cell_4.3 .
+#Define the cells of row_4
+#Cell 4.1
+ex:table_section_24_carbon_handprint_cell_4.1 a aec3po:Cell ;
+   aec3po:hasValue "D3 Excess renewable energy" .
+#Cell 4.2
+ex:table_section_24_carbon_handprint_cell_4.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 4.3
+ex:table_section_24_carbon_handprint_cell_4.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .
+
+#row_5
+ex:table_section_24_carbon_handprint_row_5 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_5.1 ,
+    ex:table_section_24_carbon_handprint_cell_5.2 ,
+    ex:table_section_24_carbon_handprint_cell_5.3 .
+#Define the cells of row_5
+#Cell 5.1
+ex:table_section_24_carbon_handprint_cell_5.1 a aec3po:Cell ;
+   aec3po:hasValue "D4. carbon stock effect of products" .
+#Cell 5.2
+ex:table_section_24_carbon_handprint_cell_5.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 5.3
+ex:table_section_24_carbon_handprint_cell_5.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .
+
+#row_6
+ex:table_section_24_carbon_handprint_row_6 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_6.1 ,
+    ex:table_section_24_carbon_handprint_cell_6.2 ,
+    ex:table_section_24_carbon_handprint_cell_6.3 .
+#Define the cells of row_6
+#Cell 6.1
+ex:table_section_24_carbon_handprint_cell_6.1 a aec3po:Cell ;
+   aec3po:hasValue "D5. Carbonation" .
+#Cell 6.2
+ex:table_section_24_carbon_handprint_cell_6.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 6.3
+ex:table_section_24_carbon_handprint_cell_6.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .  
+
+#row_7
+ex:table_section_24_carbon_handprint_row_7 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_24_carbon_handprint_cell_7.1 ,
+    ex:table_section_24_carbon_handprint_cell_7.2 ,
+    ex:table_section_24_carbon_handprint_cell_7.3 .
+#Define the cells of row_7
+#Cell 7.1
+ex:table_section_24_carbon_handprint_cell_7.1 a aec3po:Cell ;
+   aec3po:hasValue "D6. Planted wood" .
+#Cell 7.2
+ex:table_section_24_carbon_handprint_cell_7.2 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a" .  
+#Cell 7.3
+ex:table_section_24_carbon_handprint_cell_7.3 a aec3po:Cell ;
+   aec3po:hasValue "kgCO2e/m2/a " .  
+
+#Define the caption of the tables as a DefinitionStatement
+ex:caption_tables_section_24 a aec3po:caption ; 
+   rdf:type aec3po:DefinitionStatement ;
+   aec3po:asText "“kgCO2e” means greenhouse gases emitted, avoided or removed, expressed in kilograms of carbon dioxide equivalent and rounded symmetrically to two decimal places; " ;
+   aec3po:asText "“m2” means the sum of the heated floor areas of the storeys, calculated according to the internal planes of the external walls surrounding the storeys; " ;
+   aec3po:asText "“a” means the length of the assessment period in years according to Article 4. " .     
+
+#Add the caption to the container using the property contains
+ex:container_tables_section_24 aec3po:contains ex:caption_tables_section_24 .
+
+# Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 using hasPart property
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_24 dct:hasPart ex:FI_statement_1_section_24 .
+
+# ---- Define the statement of the fourth DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_1_New
+ex:FI_statement_1_section_1_New a aec3po:Statement ;
+    dct:identifier "Finnish_Environment/new/1" ;
+    aec3po:asText "The carbon footprint of the building or each of its parts with the use category named in Table 1 shall not exceed the limit value from the following table:  " ;
+    aec3po:hasPart ex:container_table_section_new_1 . 
+        
+# Define a container that contains the table defined in the statement of section 1 of the expected new regulation, and define the table with its content. 
+ex:container_table_section_new_1 a aec3po:Container ;
+    aec3po:contains ex:table_section_new_1_total_carbon_footprint .
+
+# Define the table ex:table_section_new_1_total_carbon_footprint 
+ex:table_section_new_1_total_carbon_footprint a aec3po:Table ;
+    aec3po:contains 
+        ex:table_section_new_1_total_carbon_footprint_column_1 ,
+        ex:table_section_new_1_total_carbon_footprint_column_2 ,
+        ex:table_section_new_1_total_carbon_footprint_row_1 ,
+        ex:table_section_new_1_total_carbon_footprint_row_2 ,
+        ex:table_section_new_1_total_carbon_footprint_row_3 ,
+        ex:table_section_new_1_total_carbon_footprint_row_4 ,
+        ex:table_section_new_1_total_carbon_footprint_row_5 ,
+        ex:table_section_new_1_total_carbon_footprint_row_6 ,
+        ex:table_section_new_1_total_carbon_footprint_row_7 ,
+        ex:table_section_new_1_total_carbon_footprint_row_8 . 
+
+# Define column 1 of the table ex:table_section_new_1_total_carbon_footprint
+ex:table_section_new_1_total_carbon_footprint_column_1 a aec3po:Column ;
+   aec3po:hasValue "Use category" .
+# Define column 2 of the table ex:table_section_new_1_total_carbon_footprint
+ex:table_section_new_1_total_carbon_footprint_column_2 a aec3po:Column ;
+   aec3po:hasValue "Total carbon footprint" .
+
+#Define the rows of the table ex:table_section_new_1_total_carbon_footprint
+#row_1
+ex:table_section_new_1_total_carbon_footprint_row_1 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_1.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_1.2 .
+#Define the cells of row_1
+#Cell 1.1
+ex:table_section_new_1_total_carbon_footprint_cell_1.1 a aec3po:Cell ;
+   aec3po:hasValue "Accommodation / hotel " .
+#Cell 1.2
+ex:table_section_new_1_total_carbon_footprint_cell_1.2 a aec3po:Cell ;
+   aec3po:hasValue "80 kgCO2e/m2/a " . 
+
+#row_2
+ex:table_section_new_1_total_carbon_footprint_row_2 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_2.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_2.2 .
+#Define the cells of row_2
+#Cell 2.1
+ex:table_section_new_1_total_carbon_footprint_cell_2.1 a aec3po:Cell ;
+   aec3po:hasValue "Apartment building " .
+#Cell 2.2
+ex:table_section_new_1_total_carbon_footprint_cell_2.2 a aec3po:Cell ;
+   aec3po:hasValue "60 kgCO2e/m2/a " .   
+
+#row_3
+ex:table_section_new_1_total_carbon_footprint_row_3 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_3.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_3.2 .
+#Define the cells of row_3
+#Cell 3.1
+ex:table_section_new_1_total_carbon_footprint_cell_3.1 a aec3po:Cell ;
+   aec3po:hasValue "Educational building " .
+#Cell 3.2
+ex:table_section_new_1_total_carbon_footprint_cell_3.2 a aec3po:Cell ;
+   aec3po:hasValue "100 kgCO2e/m2/a " . 
+
+#row_4
+ex:table_section_new_1_total_carbon_footprint_row_4 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_4.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_4.2 .
+#Define the cells of row_4
+#Cell 4.1
+ex:table_section_new_1_total_carbon_footprint_cell_4.1 a aec3po:Cell ;
+   aec3po:hasValue "Office " .
+#Cell 4.2
+ex:table_section_new_1_total_carbon_footprint_cell_4.2 a aec3po:Cell ;
+   aec3po:hasValue "120 kgCO2e/m2/a " .                  
+
+#row_6
+ex:table_section_new_1_total_carbon_footprint_row_6 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_6.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_6.2 .
+#Define the cells of row_6
+#Cell 6.1
+ex:table_section_new_1_total_carbon_footprint_cell_6.1 a aec3po:Cell ;
+   aec3po:hasValue "Shopping centre " .
+#Cell 6.2
+ex:table_section_new_1_total_carbon_footprint_cell_6.2 a aec3po:Cell ;
+   aec3po:hasValue "120 kgCO2e/m2/a " . 
+
+#row_7
+ex:table_section_new_1_total_carbon_footprint_row_7 a aec3po:Row ;
+   aec3po:contains 
+    ex:table_section_new_1_total_carbon_footprint_cell_7.1 ,
+    ex:table_section_new_1_total_carbon_footprint_cell_7.2 .
+#Define the cells of row_7
+#Cell 7.1
+ex:table_section_new_1_total_carbon_footprint_cell_7.1 a aec3po:Cell ;
+   aec3po:hasValue "Other " .
+#Cell 7.2
+ex:table_section_new_1_total_carbon_footprint_cell_7.2 a aec3po:Cell ;
+   aec3po:hasValue "n/a " .   
+
+# Link the statement to the DocumentSubdivision ex:FI_Dec_Env_Doc_DocSubdivision_Section_1_New using hasPart property
+ex:FI_Dec_Env_Doc_DocSubdivision_Section_1_New dct:hasPart  ex:FI_statement_1_section_1_New .
+
+#-------Instantiate the checkStatements expressed in the statement
+
+# Instantiate the FI3_numericalCheckStatement_AssessmentPeriod as a subClassOf CheckStatement
+ex:FI3_numericalCheckStatement_AssessmentPeriod a aec3po:NumericalCheckStatement .
+
+# Instantiate the FI3_checkListStatement_AssessmentReport as a subClassOf Statement
+ex:FI3_checkListStatement_AssessmentReport a aec3po:CheckListStatement .
+
+#### Define the list of checks of this checklistStatement ### Add BooleanCheckStatement to the core ontology
+ex:FI3_BooleanCheckStatement_BuildingID a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+ex:FI3_BooleanCheckStatement_UseCategoryName a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .  
+
+ex:FI3_BooleanCheckStatement_HeatedFloorArea a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:FI3_BooleanCheckStatement_BuildingSiteArea a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+ex:FI3_BooleanCheckStatement_CarbonAssessmentResult a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:FI3_BooleanCheckStatement_Users a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .  
+
+ex:FI3_BooleanCheckStatement_EnergyConsumption a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:FI3_BooleanCheckStatement_AssessmentPeriod a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .  
+
+ex:FI3_BooleanCheckStatement_MainConstructionMaterial a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:FI3_BooleanCheckStatement_DesignLife a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean . 
+
+ex:FI3_BooleanCheckStatement_CalculationSoftware a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .  
+
+ex:FI3_BooleanCheckStatement_ClimateReportDate a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .         
+
+ex:FI3_BooleanCheckStatement_ClimateReportAuthorName a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+ex:FI3_BooleanCheckStatement_ClimateReportAuthorTraining a aec3po:BooleanCheckStatement ;
+   aec3po:hasValue "true"^^xsd:boolean .
+
+# Instantiate the FI3_categoryCheckStatement_CarbonAssessmentResult as a subClassOf CheckStatement
+ex:FI3_categoryCheckStatement_AssessmentReport a aec3po:CategoryCheckStatement .
+
+# Instantiate the FI3_categoryCheckStatement_CarbonFootprint as a subClassOf CheckStatement
+ex:FI3_categoryCheckStatement_CarbonFootprint a aec3po:CategoryCheckStatement .
+
+#--------End of document and statements description and their classifications
+
+#-------Required Data informed by the Statement
+
+# Instantiate the building and the building site as FeatureOfInterest 
+ex:FI3_building a aec3po:FeatureOfInterest ;
+    rdf:type ifcOWL:ifcBuilding .
+
+ex:FI3_buildingSite a aec3po:FeatureOfInterest ;
+    rdf:type ifcOWL:ifcSite . 
+
+# Define the properties of the building and constraints based on the Statement
+ex:FI3_building_assessmentPeriod a aec3po:Property ;
+    aec3po:hasValue 50 ;
+    qudt:hasUnit "years"  ;
+    aec3po:hasComparator aec3po:CheckMethodComparisonOperator-le .
+
+ex:FI3_building_ClimateReport a aec3po:Property ;
+    rdf:type aec3po:Document ; 
+    dct:title "Climate Report" .   
+
+ex:FI3_building_ID a aec3po:Property ;
+   rdf:type ifcOWL:buildingID .
+
+ex:FI3_building_UseCategoryName a aec3po:Property ;
+   rdf:type ifcOWL:MarketCategory .
+
+ex:FI3_building_heatedFloorArea a aec3po:Property ;
+   rdf:type ifcOWL:TotalHeatingLoad . 
+
+ex:FI3_building_siteArea a aec3po:Property ;
+   rdf:type ifcOWL:TotaArea .
+
+ex:FI3_building_carbonAssessmentResult a aec3po:Property .  
+
+ex:FI3_building_Users a aec3po:Property .
+
+ex:FI3_building_EnergyConsumption a aec3po:Property ;
+   rdf:type ifcOWL:TotalPrimaryEnergyConsumption . # property of IfcBuildingElementProxy
+
+ex:FI3_building_MainConstructionMaterial a aec3po:Property ;
+   rdf:type ifcOWL:ifcMaterial .
+
+ex:FI3_building_DesignLife a aec3po:Property . 
+
+ex:FI3_building_CalculationSoftware a aec3po:Property .
+
+ex:FI3_building_ClimateReportDate a aec3po:Property ;
+   rdf:type ifcOWL:ifcDate . ## OR dct:Date.  
+
+ex:FI3_building_ClimateReportAuthorName a aec3po:Property ;
+   rdf:type dct:contributor .
+
+ex:FI3_building_ClimateReportAuthorTraining a aec3po:Property .   
+
+#Link the climate report to its properties using dct:hasPart
+ex:FI3_building_ClimateReport dct:hasPart 
+    ex:FI3_building_ID ,
+    ex:FI3_building_UseCategoryName ,
+    ex:FI3_building_HeatedFloorArea ,
+    ex:FI3_building_SiteArea ,
+    ex:FI3_building_CarbonAssessmentResult ,
+    ex:FI3_building_Users ,
+    ex:FI3_building_EnergyConsumption ,
+    ex:FI3_building_MainConstructionMaterial ,
+    ex:FI3_building_DesignLife ,
+    ex:FI3_building_CalculationSoftware ,
+    ex:FI3_building_ClimateReportDate ,
+    ex:FI3_building_ClimateReportAuthorName ,
+    ex:FI3_building_ClimateReportAuthorTraining .
+
+ex:FI3_ClimateReport_carbonFootprint_UseCategory a aec3po:Property ;
+    rdf:type rdf:List ;
+    rdf:_1 "A1-3 Building products manufacturing " ;
+    rdf:_2 "A4 Transport " ;
+    rdf:_3 "A5 Site activities " ;
+    rdf:_4 "B4 Replacement of construction products " ;
+    rdf:_5 "B6 Energy use " ;
+    rdf:_6 "C1 Demolition " ;
+    rdf:_7 "C2 Transport of demolition waste " ;
+    rdf:_8 "C4 Disposal of demolition waste " ;
+    rdf:_9 "Total carbon footprint " .
+
+ex:FI3_ClimateReport_carbonFootprint_Unit_Building a aec3po:Property ;  
+    rdf:type ifcOWL:IfcMeasureWithUnit ; 
+    aec3po:hasValue "kgCO2e/m2/a" .
+    #qudt:hasUnit "kgCO2e/m2/a" .
+
+ex:FI3_ClimateReport_carbonFootprint_Unit_SiteBuilding a aec3po:Property ;  
+    rdf:type ifcOWL:IfcMeasureWithUnit ; 
+    aec3po:hasValue "kgCO2e/m2/a" .
+    #qudt:hasUnit "kgCO2e/m2/a" .
+
+ex:FI3_ClimateReport_carbonHandprint_UseCategory a aec3po:Property ;
+    rdf:type rdf:List ;
+    rdf:_1 "D1. Reuse and recycling " ;
+    rdf:_2 "AD2. Energy recovery " ;
+    rdf:_3 "D3 Excess renewable energy " ;
+    rdf:_4 "D4. carbon stock effect of products " ;
+    rdf:_5 "D5. Carbonation " ;
+    rdf:_6 "D6. Planted wood  " .
+
+ex:FI3_ClimateReport_carbonHandprint_Unit_Building a aec3po:Property ;  
+    rdf:type ifcOWL:IfcMeasureWithUnit ; 
+    aec3po:hasValue "kgCO2e/m2/a" .
+    #qudt:hasUnit "kgCO2e/m2/a" .
+
+ex:FI3_ClimateReport_carbonHandprint_Unit_SiteBuilding a aec3po:Property ;  
+    rdf:type ifcOWL:IfcMeasureWithUnit ; 
+    aec3po:hasValue "kgCO2e/m2/a" .
+    #qudt:hasUnit "kgCO2e/m2/a" .
+ex:FI3_ClimateReport_carbonFootprint_UseCategory_New a aec3po:Property ;
+    rdf:type rdf:List ;
+    rdf:_1 "Accommodation / hotel " ;
+    rdf:_2 "Apartment building " ;
+    rdf:_3 "Educational building " ;
+    rdf:_4 "Office " ;
+    rdf:_5 "Other retail building " ;
+    rdf:_6 "Shopping centre " ;
+    rdf:_7 "Other " .
+
+ex:FI3_ClimateReport_carbonFootprint_TotalCarbonFootprint_New a aec3po:Property ;
+    aec3po:hasValue 
+        80 ,
+        60 ,
+        100 ,
+        120 ,
+        100 ,
+        120 ;
+    qudt:hasUnit "kgCO2e/m2/a" . 
+
+## Define the required data for each statement
+ex:FI_statement_1_section_4 aec3po:hasRequiredData ex:FI3_building_assessmentPeriod .
+ex:FI_statement_2_section_4 aec3po:hasRequiredData ex:FI3_building_assessmentPeriod .
+
+ex:FI_statement_1_section_23 aec3po:hasRequiredData ex:FI3_building_ClimateReport .
+
+ex:FI_statement_1_section_24 aec3po:hasRequiredData 
+    ex:FI3_building_ClimateReport  ,
+    ex:FI3_ClimateReport_carbonFootprint_UseCategory ,
+    ex:FI3_ClimateReport_carbonFootprint_Unit_Building ,
+    ex:FI3_ClimateReport_carbonFootprint_Unit_SiteBuilding ,
+    ex:FI3_ClimateReport_carbonHandprint_UseCategory ,
+    ex:FI3_ClimateReport_carbonHandprint_Unit_Building ,
+    ex:FI3_ClimateReport_carbonHandprint_Unit_SiteBuilding .
+
+ex:FI_statement_1_section_1_New aec3po:hasRequiredData 
+    ex:FI3_building_ClimateReport ,
+    ex:FI3_ClimateReport_carbonFootprint_UseCategory_New ,
+    ex:FI3_ClimateReport_carbonFootprint_TotalCarbonFootprint_New .
+
+# Define and Instantiate all the CheckMethod(s) that will operationalize the Statements defined above. The assumption here is that microservices are handeling the "CheckingAct".
+
+ex:FI3_numericalCheckMethod_AssessmentPeriod rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_numericalCheckStatement_AssessmentPeriod .
+
+ex:FI3_booleanCheckMethod_AssessmentReport rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_checkListStatement_AssessmentReport .  
+
+ex:FI3_categoryCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_categoryCheckStatement_CarbonAssessmentResult . 
+
+ex:FI3_categoryCheckMethod_CarbonFootprint rdf:type aec3po:ProcedurialCheck ;
+  aec3po:operationalizes ex:FI3_categoryCheckStatement_CarbonFootprint .
+
+#### Define all the subchecks of the ex:FI3_booleanCheckMethod_AssessmentReport
+ex:FI3_BooleanCheckMethod_BuildingID rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_UseCategoryName rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_HeatedFloorArea rdf:type aec3po:ProcedurialCheck .  
+ex:FI3_BooleanCheckMethod_SiteArea rdf:type aec3po:ProcedurialCheck . 
+ex:FI3_BooleanCheckMethod_CarbonAssessmentResult rdf:type aec3po:ProcedurialCheck .   
+ex:FI3_BooleanCheckMethod_Users rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_EnergyConsumption rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_assessmentPeriod rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_MainConstructionMaterial rdf:type aec3po:ProcedurialCheck .   
+ex:FI3_BooleanCheckMethod_DesignLife rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_CalculationSoftware rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_ClimateReportDate rdf:type aec3po:ProcedurialCheck .  
+ex:FI3_BooleanCheckMethod_ClimateReportAuthorName rdf:type aec3po:ProcedurialCheck .
+ex:FI3_BooleanCheckMethod_ClimateReportAuthorTraining rdf:type aec3po:ProcedurialCheck .  
+
+# Instantiate the AndCheck for the ex:FI3_booleanCheckMethod_AssessmentReport
+ex:FI3_AndCheck_AssessmentReport a aec3po:AndCheck ;
+    aec3po:hasSubCheck 
+        ex:FI3_BooleanCheckMethod_BuildingID ,
+        ex:FI3_BooleanCheckMethod_UseCategoryName  ,
+        ex:FI3_BooleanCheckMethod_HeatedFloorArea   ,
+        ex:FI3_BooleanCheckMethod_SiteArea  ,
+        ex:FI3_BooleanCheckMethod_CarbonAssessmentResult    ,
+        ex:FI3_BooleanCheckMethod_Users ,
+        ex:FI3_BooleanCheckMethod_EnergyConsumption ,
+        ex:FI3_BooleanCheckMethod_assessmentPeriod ,
+        ex:FI3_BooleanCheckMethod_MainConstructionMaterial   , 
+        ex:FI3_BooleanCheckMethod_DesignLife ,
+        ex:FI3_BooleanCheckMethod_CalculationSoftware ,
+        ex:FI3_BooleanCheckMethod_ClimateReportDate   ,
+        ex:FI3_BooleanCheckMethod_ClimateReportAuthorName ,
+        ex:FI3_BooleanCheckMethod_ClimateReportAuthorTraining .
+
+# Instantiate the AndCheck related to the four statements
+ex:FI3_AndCheck a aec3po:AndCheck ;
+    aec3po:hasSubCheck 
+        ex:FI3_numericalCheckMethod_AssessmentPeriod ,
+        ex:FI3_AndCheck_AssessmentReport ,
+        ex:FI3_categoryCheckMethod_CarbonAssessmentResult ,
+        ex:FI3_categoryCheckMethod_CarbonFootprintResult .
+# Start describing the "real" Buildin from the Finnish Demo Case - FI3
+# Define the design of the building as a 3DModel
+ex:FI3_building_design a aec3po:Design ;
+    rdf:type schema:3DModel .
+
+# Define the design of the properties of the building
+## Define the design of the length assessment period
+ex:FI3_design_length_AssessmentPeriod a aec3po:PropertyDesign .
+# Define the properties of this property design and link them with hasProperty
+ex:FI3_building_DesignLifeProperty a aec3po:Property ;
+    aec3po:hasValue 50 ;
+     qudt:hasUnit "years" .
+
+ex:FI3_building_assessmentPeriodProperty a aec3po:Property ;
+    aec3po:hasValue 50 ;
+     qudt:hasUnit "years" .
+
+ex:FI3_design_length_AssessmentPeriod aec3po:hasProperty 
+    ex:FI3_building_DesignLifeProperty ,
+    ex:FI3_building_assessmentPeriodProperty .
+
+## Define the design of the climate report
+ex:FI3_design_climateReport a aec3po:PropertyDesign .
+###General Info
+ex:FI3_design_climateReport_generalInfo a aec3po:PropertyDesign ;
+   dct:title "AC(CO2)RD ENVIRONMENTAL DECLARATION" ;
+   dct:issued "2023-06-27"^^xsd:date ;
+   dct:contributor "Petr Hradil" .
+
+ ###Content of the climate report
+ ex:FI3_design_climateReport_contentPropertyDesign a aec3po:PropertyDesign .
+
+ ####Define the properties of the content
+
+ ex:FI3_building_IDProperty a aec3po:Property ;
+    aec3po:hasValue "AcPr001" .
+
+ ex:FI3_building_UseCategoryNameProperty a aec3po:Property ;
+    aec3po:hasValue "Other retail building" .
+
+ ex:FI3_building_HeatedFloorAreaProperty a aec3po:Property ;
+    aec3po:hasValue 1315.0 ;
+    qudt:hasUnit unit:M2 .      
+
+  ex:FI3_building_SiteAreaProperty a aec3po:Property ;
+    aec3po:hasValue 4500 ;
+    qudt:hasUnit unit:M2 .  
+
+  ex:FI3_building_AssessmentResultProperty a aec3po:PropertyDesign . ## should be defined later
+        
+ ex:FI3_building_UsersProperty a aec3po:Property ;
+    aec3po:hasValue 10 .
+
+ ex:FI3_building_EnergyConsumptionProperty a aec3po:Property ;
+    aec3po:hasValue 68.44106463878326 ;  
+    qudt:hasUnit "kWh/m2a" .  
+
+#ex:FI3_building_assessmentPeriodProperty    is also property of the climate report content. It has been defined above
+
+ ex:FI3_building_MainConstructionMaterialProperty a aec3po:Property ;
+    aec3po:hasValue "Steel" . 
+
+#ex:FI3_building_DesignLifeProperty    is also property of the climate report content. It has been defined above     
+
+ex:FI3_building_CalculationSoftwareProperty a aec3po:Property ;
+    aec3po:hasValue "AC(CO2)RD" .
+
+ex:FI3_building_ClimateReportDateProperty a aec3po:Property ;
+    dct:issued "2023-06-27"^^xsd:date . 
+
+ex:FI3_building_ClimateReportAuthorNameProperty a aec3po:Property ;
+    dct:contributor "Petr Hradil" .
+
+ex:FI3_building_ClimateReportAuthorTrainingProperty a aec3po:Property ;
+    aec3po:hasValue "Ing. PhD in civil engineering" .    
+
+#Link the design ex:FI3_design_climateReport_content to its properties with hasProperty
+ex:FI3_design_climateReport_contentPropertyDesign aec3po:hasProperty 
+     ex:FI3_building_IDProperty ,
+     ex:FI3_building_UseCategoryNameProperty ,
+     ex:FI3_building_HeatedFloorAreaProperty ,
+     ex:FI3_building_SiteAreaProperty ,
+     ex:FI3_building_AssessmentResultProperty ,
+     ex:FI3_building_UsersProperty ,
+     ex:FI3_building_EnergyConsumptionProperty ,
+     ex:FI3_building_assessmentPeriodProperty ,
+     ex:FI3_building_MainConstructionMaterialProperty ,
+     ex:FI3_building_DesignLifeProperty ,
+     ex:FI3_building_CalculationSoftwareProperty ,
+     ex:FI3_building_ClimateReportDateProperty ,
+     ex:FI3_building_ClimateReportAuthorNameProperty ,
+     ex:FI3_building_ClimateReportAuthorTrainingProperty .
+
+##Define the design of the Assessment Result
+ex:FI3_building_AssessmentResultPropertyDesign a aec3po:PropertyDesign .
+###Define the properties of this PropertyDesign
+ex:FI3_building_AssessmentResultProperty_A1-A3 a aec3po:Property ;
+   aec3po:hasValue 6.133454213652279 ;
+   qudt:hasUnit "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_A4 a aec3po:Property ;
+   aec3po:hasValue 0.54 ;
+   qudt:hasUnit "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_A5 a aec3po:Property ;
+   aec3po:hasValue 1.7 ;
+   qudt:hasUnit "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_B4 a aec3po:Property ;
+   aec3po:hasValue 0.82 ;
+   qudt:hasUnit "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_B6 a aec3po:Property ;
+   aec3po:hasValue 9.21303422053232 ;
+   qudt:hasUnit "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_C1 a aec3po:Property ;
+   aec3po:hasValue 0.27999999999999997 ;
+   qudt:hasUnit "kWh/m2a" . 
+
+ex:FI3_building_AssessmentResultProperty_C2 a aec3po:Property ;
+   aec3po:hasValue 0.54 ;
+   qudt:hasUnit "kWh/m2a" .  
+
+ex:FI3_building_AssessmentResultProperty_C4 a aec3po:Property ;
+   aec3po:hasValue 0.10223336938946116 ;
+   qudt:hasUnit "kWh/m2a" .  
+
+ex:FI3_building_AssessmentResultProperty_D1 a aec3po:Property ;
+   aec3po:hasValue -1.5989308024240876 ;
+   qudt:hasUnit "kWh/m2a" .          
+
+##Link the above properties to the propertyDesign ex:FI3_building_AssessmentResultPropertyDesign
+ex:FI3_building_AssessmentResultPropertyDesign aec3po:hasProperty 
+    ex:FI3_building_AssessmentResultProperty_A1-A3 ,
+    ex:FI3_building_AssessmentResultProperty_A4 ,
+    ex:FI3_building_AssessmentResultProperty_A5 ,
+    ex:FI3_building_AssessmentResultProperty_B4 ,
+    ex:FI3_building_AssessmentResultProperty_B6 ,
+    ex:FI3_building_AssessmentResultProperty_C1 ,
+    ex:FI3_building_AssessmentResultProperty_C2 ,
+    ex:FI3_building_AssessmentResultProperty_C4 ,
+    ex:FI3_building_AssessmentResultProperty_D1 .
+
+#Link the ex:FI3_design_climateReport to its propertyDesign with hasProperty
+ex:FI3_design_climateReport aec3po:hasProperty 
+    ex:FI3_design_climateReport_generalInfoPropertyDesign ,
+    ex:FI3_design_climateReport_contentPropertyDesign ,
+    ex:FI3_building_AssessmentResultPropertyDesign .
+
+##Define the design of the carbon footprint result
+ex:FI3_building_CarbonFootprintResultPropertyDesign a aec3po:PropertyDesign .
+###Define the properties of this PropertyDesign
+ex:FI3_building_carbonFootprint_UseCategory_New_Property a aec3po:Property ;
+   aec3po:hasValue ex:FI3_building_UseCategoryNameProperty .
+
+ex:FI3_building_carbonFootprint_TotalCarbonFootprint_New_Property a aec3po:Property ;
+   aec3po:hasValue 17.606406942307498 ;
+   qudt:hasUnit "kWh/m2a" . 
+
+#Link ex:FI3_building_CarbonFootprintResultPropertyDesign to its properties with hasProperty
+ex:FI3_building_CarbonFootprintResultPropertyDesign aec3po:hasProperty 
+    ex:FI3_building_carbonFootprint_UseCategory_New_Property ,
+    ex:FI3_building_carbonFootprint_TotalCarbonFootprint_New_Property . 
+
+#Link ex:FI3_building_design to all its propertyDesign(s) with hasProperty
+ex:FI3_building_design aec3po:hasProperty 
+    ex:FI3_design_length_AssessmentPeriodPropertyDesign ,
+    ex:FI3_design_climateReportPropertyDesign ,
+    ex:FI3_building_AssessmentResultPropertyDesign ,
+    ex:FI3_building_CarbonFootprintResultPropertyDesign .
+
+# Link all the properties designs to the respective CheckMethods using forDesign property
+ex:FI3_numericalCheckMethod_AssessmentPeriod aec3po:forDesign ex:FI3_design_length_AssessmentPeriodPropertyDesign .
+ex:FI3_booleanCheckMethod_AssessmentReport aec3po:forDesign ex:FI3_design_climateReportPropertyDesign .
+ex:FI3_categoryCheckMethod_CarbonAssessmentResult aec3po:forDesign ex:FI3_building_AssessmentResultPropertyDesign .
+ex:FI3_categoryCheckMethod_CarbonFootprintResult aec3po:forDesign ex:FI3_building_CarbonFootprintResultPropertyDesign .
+
+
+# Conduct the checking act and generate a compliance verification report. 
+ex:FI3_CO2Emission_checkingAct a aec3po:CheckingAct .
+
+# Link the checkingAct to all the CheckMethods using usedMethod property
+ex:FI3_CO2Emission_checkingAct aec3po:usedMethod 
+    ex:FI3_numericalCheckMethod_AssessmentPeriod ,
+    ex:FI3_booleanCheckMethod_AssessmentReport ,
+    ex:FI3_categoryCheckMethod_CarbonAssessmentResult ,
+    ex:FI3_categoryCheckMethod_CarbonFootprintResult .
+
+# Instantiate the compliance verification report
+ex:FI3_CO2Emission_ComplianceVerificationReport a aec3po:ComplianceVerificationReport ;
+    aec3po:conforms true . ## Whole life carbon footprint: 19.3 kgCO2e/m2a, while the limit is 30 kgCO2e/m2a.
+
+# Link the checkingAct to the compliance verification report using hasReport property
+ex:FI3_CO2Emission_checkingAct aec3po:hasReport ex:FI3_CO2Emission_ComplianceVerificationReport .
