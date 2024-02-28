@@ -43,6 +43,20 @@ aec3po:CheckingAct a owl:Class ;
             owl:onProperty aec3po:hasReport ],
         dul:Event .
 
+aec3po:startTime a owl:DatatypeProperty ;
+    rdfs:label "start time"@en ;
+    rdfs:comment "the start time of the checking act"@en ;
+    rdfs:domain aec3po:CheckingAct ;
+    rdfs:range xsd:dateTime ;
+    rdfs:isDefinedBy aec3po:checking_act .
+
+aec3po:endTime a owl:DatatypeProperty ;
+    rdfs:label "end time"@en ;
+    rdfs:comment "the end time of the checking act"@en ;
+    rdfs:domain aec3po:CheckingAct ;
+    rdfs:range xsd:dateTime ;
+    rdfs:isDefinedBy aec3po:checking_act .
+    
 aec3po:usedMethod a owl:ObjectProperty ;
     rdfs:label "used method"@en ;
     rdfs:comment "Links a checking act to the method it used (a aec3po:CheckMethod)."@en ;
@@ -57,9 +71,9 @@ aec3po:madeBy a owl:ObjectProperty ;
     rdfs:isDefinedBy aec3po:checking_act ;
     rdfs:range aec3po:ProcessVerifier .
 
-aec3po:checks a owl:ObjectProperty ;
-    rdfs:label "checks"@en ;
-    rdfs:comment "Links a checking act to some entity it checked."@en ;
+aec3po:checked a owl:ObjectProperty ;
+    rdfs:label "checked"@en ;
+    rdfs:comment "Links a checking act to some entity (ex. statement, feature of interest, property) it checked."@en ;
     rdfs:domain aec3po:CheckingAct ;
     rdfs:isDefinedBy aec3po:checking_act .
 

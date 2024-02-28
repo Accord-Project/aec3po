@@ -134,20 +134,3 @@ aec3po:asText a owl:DatatypeProperty, owl:FunctionalProperty ;
     skos:hiddenLabel "text" ;
     rdfs:range xsd:string.
 
-
-# candidates for deletion as these classes are not used at all in the examples
-
-# aec3po:ClassificationDesign a owl:Class ;
-#     rdfs:label "classification design"@en ;
-#     rdfs:comment "Designs that take values in classification schemes, described using SKOS"@en ;
-#     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-#                         owl:onProperty skos:inScheme ;
-#                         owl:someValuesFrom skos:ConceptScheme ] ) ] ;
-#     skos:note """classification design are expected to be taken in existing concept schemes. AEC3PO defines some concept schemes such as aec3po:building_structure. Existing concept schemes may also be used such as Ifc classes, or bSDD."""@en .
-# aec3po:hasComparisonOperator a owl:FunctionalProperty,
-#         owl:ObjectProperty ;
-#     rdfs:label "has comparisonOperator"@en ;
-#     rdfs:comment "The comparisonOperator of a property kind design. A set of values is defined by C3PO in the corresponding concept scheme."@en ;
-#     rdfs:range aec3po:ComparisonOperator ;
-#     rdfs:subPropertyOf aec3po:hasDesign .
-

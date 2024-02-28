@@ -35,10 +35,10 @@ aec3po:RequirementStatement a owl:Class ;
 
 aec3po:requires a owl:ObjectProperty ;
   rdfs:label "requires"@en ;
-  rdfs:comment "Links a check to the expression of a thing that is required by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
+  rdfs:comment "Links a check statement to the expression of a thing that is required by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
   skos:note "Usually, the Required/Requirement statements are highlighted in blue."@en ;
-  rdfs:subPropertyOf aec3po:hasSubStatement ;
-#  rdfs:domain aec3po:RASEDecomposedStatement ;
+  rdfs:subPropertyOf aec3po:hasSubdivision ;
+  rdfs:domain aec3po:CheckStatement ;
   rdfs:range aec3po:RequirementStatement ;
  rdfs:isDefinedBy aec3po:rase_statement .
 
@@ -51,10 +51,10 @@ aec3po:ApplicationStatement a owl:Class ;
 
 aec3po:appliesTo a owl:ObjectProperty ;
   rdfs:label "applies to"@en ;
-  rdfs:comment "Links a check to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
+  rdfs:comment "Links a check statement to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
   skos:note "Usually, the Applies/Application statements are highlighted in green."@en ;
-  rdfs:subPropertyOf aec3po:hasSubStatement ;
-#  rdfs:domain aec3po:RASEDecomposedStatement ;
+  rdfs:subPropertyOf aec3po:hasSubdivision ;
+  rdfs:domain aec3po:CheckStatement ;
   rdfs:range aec3po:ApplicationStatement ;
  rdfs:isDefinedBy aec3po:rase_statement .
 
@@ -67,10 +67,10 @@ aec3po:ExceptionStatement a owl:Class ;
 
 aec3po:except a owl:ObjectProperty ;
   rdfs:label "except"@en ;
-  rdfs:comment "Links a check to the expression of a thing that is excepted by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
+  rdfs:comment "Links a check statement to the expression of a thing that is excepted by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
   skos:note "Usually, the Excepted/Exception statements are highlighted in yellow."@en ;
-  rdfs:subPropertyOf aec3po:hasSubStatement ;
-#  rdfs:domain aec3po:RASEDecomposedStatement ;
+  rdfs:subPropertyOf aec3po:hasSubdivision ;
+  rdfs:domain aec3po:CheckStatement ;
   rdfs:range aec3po:ExceptionStatement ;
  rdfs:isDefinedBy aec3po:rase_statement .
 
@@ -83,10 +83,10 @@ aec3po:SelectionStatement a owl:Class ;
 
 aec3po:selects a owl:ObjectProperty ;
   rdfs:label "selects"@en ;
-  rdfs:comment "Links a check to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
+  rdfs:comment "Links a check statement to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en;
   skos:note "Usually, the Select/Selection statements are highlighted in purple."@en ;
-  rdfs:subPropertyOf aec3po:hasSubStatement ;
-#  rdfs:domain aec3po:RASEDecomposedStatement ;
+  rdfs:subPropertyOf aec3po:hasSubdivision ;
+  rdfs:domain aec3po:CheckStatement ;
   rdfs:range aec3po:RequirementStatement ;
  rdfs:isDefinedBy aec3po:rase_statement .
 

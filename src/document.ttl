@@ -32,7 +32,7 @@ aec3po:Document a owl:Class ;
     rdfs:comment "links an entity such as a legal verifier to the document it is for."@en ;
     rdfs:range aec3po:Document ;
     rdfs:isDefinedBy aec3po:document ;
-    rdfs:domain aec3po:LegalVerifier ;
+    # rdfs:domain aec3po:LegalVerifier ; # entity **such as** a legal verifier
     rdfs:range aec3po:Document .
 
     aec3po:usesDocument a owl:ObjectProperty ;
@@ -40,7 +40,7 @@ aec3po:Document a owl:Class ;
     rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it uses."@en ;
     rdfs:isDefinedBy aec3po:document ;
     rdfs:range aec3po:Document ;
-    rdfs:domain aec3po:LegalVerifier ;
+    # rdfs:domain aec3po:LegalVerifier ; # entity **such as** a legal verifier
     rdfs:range aec3po:Document .
 
     aec3po:requiresDocument a owl:ObjectProperty ;

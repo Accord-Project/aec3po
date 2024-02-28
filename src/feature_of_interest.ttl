@@ -8,6 +8,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix og: <https://ogp.me/ns#>.
+@prefix saref: <https://saref.etsi.org/core/>.
 
 aec3po:feature_of_interest a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -23,7 +24,7 @@ aec3po:FeatureOfInterest a owl:Class ;
     rdfs:label "Feature Of Interest"@en ;
     rdfs:comment "The object whose conformance against checks is verified."@en ;
     rdfs:isDefinedBy aec3po:feature_of_interest ;
-    rdfs:subClassOf dul:Object ;
+    rdfs:subClassOf dul:Object , saref:FeatureOfInterest ;
     skos:example "A building, a building space, a building element, the set of columns in a building, ..."@en ;
     skos:note """It is expected that classes in other ontologies are used to multi-type instances of FeatureOfInterest.
   For example a feature of interest may also be:
@@ -37,7 +38,7 @@ aec3po:Property a owl:Class ;
     rdfs:subClassOf dul:Quality ;
     skos:example "The height of a building, the area of a space, the U-value of a wall"@en .
 
-aec3po:hasProperty a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+aec3po:hasProperty a owl:ObjectProperty ;
     rdfs:label "has Property"@en ;
     rdfs:comment "Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it."@en ;
     rdfs:domain aec3po:FeatureOfInterest ;
@@ -47,8 +48,14 @@ aec3po:hasProperty a owl:ObjectProperty , owl:InverseFunctionalProperty ;
 
 aec3po:hasQuantityKind a owl:ObjectProperty ;
     rdfs:label "has quantity kind"@en ;
-    rdfs:comment "Links a property of a feature of interest to its quantity kind"@en ;
+    rdfs:comment "Links a property to its quantity kind"@en ;
     rdfs:domain aec3po:Property ;
+    rdfs:range aec3po:QuantityKind ;
     rdfs:isDefinedBy aec3po:feature_of_interest ;
     skos:example "A space area property to the property kind \"area\"."@en .
 
+aec3po:QuantityKind a owl:Class ;
+    rdfs:label "Quantity Kind"@en ;
+    rdfs:comment "A kind of quantity."@en ;
+    rdfs:isDefinedBy aec3po:feature_of_interest ;
+    skos:example "height, area, U-value"@en .

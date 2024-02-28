@@ -14,6 +14,6 @@ For a "thing" to pass any given regulations it must either:
 The figure below illustrates the core concepts of the RASE Statement module
 
 <figure>
-  <img src="diagrams/rase_statement.png" alt="Illustration of the core concepts in the RASE Statement module" />
+  <img src="diagrams/aec3po-rase_statement.png" alt="Illustration of the core concepts in the RASE Statement module" />
   <figcaption>Illustration of the core concepts in the RASE Statement module</figcaption>
 </figure>

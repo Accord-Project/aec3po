@@ -66,6 +66,13 @@ aec3po:NumericalCheckMethod a owl:Class ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:CheckMethod .
 
+aec3po:hasComparator a owl:ObjectProperty ;
+    rdfs:label "has comparator"@en ;
+    rdfs:comment "Links a numerical check method to the check method comparator it uses (=, <, >, etc.)"@en ;
+    rdfs:domain aec3po:NumericalCheckMethod ;
+    rdfs:range aec3po:CheckMethodComparator ;
+    rdfs:isDefinedBy aec3po:check_method .
+
 aec3po:CertificateCheckMethod a owl:Class ;
     rdfs:label "Certificate Check Method"@en ;
     rdfs:comment "Certificate check method is a formal process used to verify and validate the authenticity and compliance of certificates related to construction projects. It involves a systematic review and examination of certificates issued by authorised entities to ensure that they meet all the necessary regulatory requirements, standards, and specifications."@en ;
@@ -123,8 +130,7 @@ aec3po:CompositeCheckMethod a owl:Class ;
     rdfs:comment "The target refers to either the name of an object, the name of property or a function."@en ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:CheckMethod) ] ;
-    rdfs:isDefinedBy aec3po:check_method ;
-    rdfs:subPropertyOf aec3po:hasDesign .
+    rdfs:isDefinedBy aec3po:check_method .
 
 ## hasValue has been defined in the core ontology 
 #aec3po:hasValue a owl:FunctionalProperty,
@@ -136,24 +142,13 @@ aec3po:CompositeCheckMethod a owl:Class ;
   #  rdfs:isDefinedBy aec3po:check_method ;
  #   rdfs:subPropertyOf aec3po:hasDesign .
 
-aec3po:hasUnit a owl:FunctionalProperty,
-        owl:ObjectProperty ;
+aec3po:hasUnit a owl:FunctionalProperty, owl:ObjectProperty ;
     rdfs:label "hasUnit"@en ;
-   rdfs:comment "the hasUnit property is used to link a specific property or feature of interest to its corresponding unit of measurement. For example, it could be a property related to physical quantities, such as temperature, length, or weight."@en ;
+    rdfs:comment "the hasUnit property is used to link a specific property or feature of interest to its corresponding unit of measurement. For example, it could be a property related to physical quantities, such as temperature, length, or weight."@en ;
     owl:eqivalentProperty qudt:hasValue ;
-    rdfs:domain qudt:Unit ;
-    rdfs:range [ a owl:Class ;
-            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:CheckMethod) ] ;
-    rdfs:isDefinedBy aec3po:check_method ;
-    rdfs:subPropertyOf aec3po:hasDesign .
-
-# Removed - no longer needed
-#aec3po:nests a owl:ObjectProperty ;
-      #  rdfs:label "nests"@en ;
-        # rdfs:comment "Links an ACCORDCheckMethod to another ACCORDCheckMethod that is nested within it."@en ;
-       # rdfs:domain aec3po:ACCORDCheckMethod ;
-      #  rdfs:range aec3po:ACCORDCheckMethod ;
-      #  rdfs:isDefinedBy aec3po:check_method .
+    rdfs:domain [ a owl:Class ; owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:CheckMethod) ] ;
+    rdfs:range qudt:Unit ;
+    rdfs:isDefinedBy aec3po:check_method .
 
 aec3po:JenaCheckMethod a owl:Class ;
     rdfs:label "Jena Check Method"@en ;
@@ -166,6 +161,13 @@ aec3po:BooleanCheckMethod a owl:Class ;
     rdfs:comment "Boolean check method refers to a type of validation method that checks whether a certain condition or property is either true or false. It is a simple binary check that evaluates the compliance or non-compliance of a specific aspect in the construction process. "@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:CheckMethod .
+
+aec3po:hasOperator a owl:ObjectProperty ;
+    rdfs:label "has operator"@en ;
+    rdfs:comment "Links a boolean check method to the check method operator it uses (exists, for all, etc.)"@en ;
+    rdfs:domain aec3po:BooleanCheckMethod ;
+    rdfs:range aec3po:CheckMethodOperator ;
+    rdfs:isDefinedBy aec3po:check_method .
 
 aec3po:FunctionCheckMethod a owl:Class ;
     rdfs:label "Function Check Method"@en ;

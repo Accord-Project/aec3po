@@ -43,7 +43,7 @@ aec3po:Statement a owl:Class ;
 
 aec3po:hasInlinePart a owl:ObjectProperty ;
   rdfs:label "hasInlinePart"@en ;
-  rdfs:comment "Defines the position of a sub statement within the text of a Statement."@en;
+  rdfs:comment "Links a statement to an inline subdivision of that statement."@en;
   rdfs:subPropertyOf dct:hasPart ;
   rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/43> ;
   rdfs:isDefinedBy aec3po:statement .

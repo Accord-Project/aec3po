@@ -18,6 +18,13 @@ aec3po:data_requirement a owl:Ontology ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports aec3po:statement .
 
+aec3po:hasRequiredData a owl:Class ;
+ rdfs:label "has required data"@en ;
+ rdfs:comment "Links a statement to some data that is required in order to perform a check to demonstrate compliance checking."@en ;
+ rdfs:domain aec3po:Statement ;
+ rdfs:range aec3po:DataRequirement ;
+ rdfs:isDefinedBy aec3po:data_requirement .
+
 aec3po:DataRequirement a owl:Class ;
  rdfs:label "Data Requirement"@en ;
  rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en ;

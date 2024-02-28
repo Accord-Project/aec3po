@@ -27,7 +27,7 @@ aec3po:Model a owl:Class ;
 aec3po:name a owl:DatatypeProperty ;
  rdfs:label "name"@en ;
  rdfs:comment "The name or the identifier of the BIM model."@en ;
- rdfs:domain schema:3DModel ;
+ rdfs:domain schema:Model ;
  rdfs:range xsd:string ;
  owl:inverseOf schema:subjectOf ;
  owl:equivalentProperty schema:about .
@@ -35,21 +35,21 @@ aec3po:name a owl:DatatypeProperty ;
 aec3po:description a owl:DatatypeProperty ;
  rdfs:label "description"@en ;
  rdfs:comment "A textual description providing additional details about the BIM model."@en ;
- rdfs:domain schema:3DModel ;
+ rdfs:domain schema:Model ;
  rdfs:range xsd:string ;
  owl:equivalentProperty schema:abstract .
 
 aec3po:location a owl:ObjectProperty ;
  rdfs:label "location"@en ;
  rdfs:comment "The physical or geographic location of the building or structure represented in the BIM model."@en ;
- rdfs:domain schema:3DModel ;
+ rdfs:domain schema:Model ;
  rdfs:range schema:Place ;
  owl:equivalentProperty schema:spatial .
 
 aec3po:locationCoverage a owl:ObjectProperty ;
  rdfs:label "location coverage"@en ;
  rdfs:comment "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en ;
- rdfs:domain schema:3DModel ;
+ rdfs:domain schema:Model ;
  rdfs:range [ a owl:Class ;
  owl:unionOf ( schema:Place aec3po:AdministrativeArea ) ] ;
  owl:equivalentProperty schema:spatialCoverage .
@@ -57,7 +57,7 @@ aec3po:locationCoverage a owl:ObjectProperty ;
 aec3po:material a owl:DatatypeProperty ;
  rdfs:label "material"@en ;
  rdfs:comment "The materials used for different parts of the building, such as walls, floors, and roofs."@en ;
- rdfs:domain schema:3DModel ;
+ rdfs:domain schema:Model ;
  rdfs:range xsd:string ;
  owl:equivalentProperty schema:material .
 

@@ -48,7 +48,7 @@ rule formalization tool (Task 2.3), facilitating seamless communication and coll
 8. What type of check methods need to be performed for a Statement to comply?
 9. Which check statement does a check method operationalize?
 10. What are the required data to perform a check?
-11. Which feature of interest needs to be checked and how it is designed?
+11. Is a property of a feature of interest greater than a value?
 12. Which checking act needs to be made and which check method it uses?
 13. How to access the outcomes of a checking act?
 14. How to transform normative documents into a single well-defined rule that can be implemented into BIM / IFC based model checking software using RASE methodology?

@@ -4,7 +4,7 @@
 AEC3PO aims to model all aspects of compliance and permitting on the AEC domain, across different regulatory systems.
 It is organised into modules, comprising of classes and properties. The figure below shows an overview of these modules and their relations.
 
-![AEC3PO Overview](diagrams/OverviewAEC3PO.png)
+![AEC3PO Overview](diagrams/aec3po-overview-modules.png)
 
 Below is an overview of the core modules and their components:
 
@@ -30,7 +30,7 @@ Below is an overview of the core modules and their components:
   
 6. **[FeatureOfInterest](https://ci.mines-stetienne.fr/aec3po/feature_of_interest)**: An element of a site, building, or piece of infrastructure that is of interest. Typically, this will be a building component that needs to be compliant to regulations, or be documented in the permitting process. 
     - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_, _etc_.
-    -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasDesign_, _hasContext_, _etc_.
+    -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasContext_, _etc_.
   
 7. **[CheckingAct](https://ci.mines-stetienne.fr/aec3po/checking_act)**: The act of checking an entity for compliance, and producing the respective report.
     - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
@@ -40,23 +40,18 @@ Below is an overview of the core modules and their components:
     - Classes: _ComplianceverificationReport_, _result_, _ValidationResult_,_Severity_, _etc_.
     - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
 
-9. **[Design](https://ci.mines-stetienne.fr/aec3po/design)**: This AEC3PO module describes descriptions of some design of features of interest, in terms of structure, geometry, and function. 
-    - Classes: _Design_, _PropertyDesign_.
-    - Properties: _hasDesign_.
-
-10. **[Legal Verifier](https://ci.mines-stetienne.fr/aec3po/legal_verifier)**: This AEC3PO module defines state and private verifiers. 
+9. **[Legal Verifier](https://ci.mines-stetienne.fr/aec3po/legal_verifier)**: This AEC3PO module defines state and private verifiers. 
     - Classes: _LegalVerifier_, _PrivateVerifier_, _StateVerifier_.
-    - Properties: _hasDesign_. 
 
-11. **[Model](https://ci.mines-stetienne.fr/aec3po/model)**: A model representing part or the entirety of a site, building, or piece of infrastructure. Typically these will be Building Information Models.
+10. **[Model](https://ci.mines-stetienne.fr/aec3po/model)**: A model representing part or the entirety of a site, building, or piece of infrastructure. Typically these will be Building Information Models.
     - Classes: _Model_, _Phase_, _Element_, _Classification_, _etc_.
     - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimension_, _hasElementPhase_, _hasClassification_, _etc._
 
-12. **[Table](https://ci.mines-stetienne.fr/aec3po/table)**:A table as representations of data in rows and columns. Tables are described by captions.
+11. **[Table](https://ci.mines-stetienne.fr/aec3po/table)**:A table as representations of data in rows and columns. Tables are described by captions.
     - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
     - Properties: _contains_, _isContainedIn_, _caption_.
 
-13. **[RASEStatement](https://ci.mines-stetienne.fr/aec3po/rase_statement)**: This AEC3PO module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology.
+12. **[RASEStatement](https://ci.mines-stetienne.fr/aec3po/rase_statement)**: This AEC3PO module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology.
     - Classes:  _RequirementStatement_, _ApplicationStatement_, _SelectionStatement_, _ExceptionStatement_.
     - Properties: _requires_, _appliesTo_, _selects_, _except_. 
  

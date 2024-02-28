@@ -11,7 +11,7 @@
 aec3po:compliance_verification_report a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcesVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
+    dct:description "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcessVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
     dct:modified "2023-05-26"^^xsd:date ;
     dct:title "AEC3PO: Compliance Verification Report"@en ;
     owl:imports aec3po:check_method , aec3po:compliance_verification_report ;
@@ -26,7 +26,7 @@ aec3po:conforms a owl:DatatypeProperty ;
     rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:range xsd:boolean .
 
-aec3po:ComplianceChekingReport a owl:Class ;
+aec3po:ComplianceVerificationReport a owl:Class ;
     rdfs:label "Compliance Verification Report"@en ;
     rdfs:comment """Result of a checking act. May be compliant or not."""@en ;
     rdfs:isDefinedBy aec3po:compliance_verification_report ;
@@ -34,41 +34,40 @@ aec3po:ComplianceChekingReport a owl:Class ;
             owl:onProperty aec3po:conforms ;
             owl:cardinality 1 ] .
 
-aec3po:result a owl:Class ;
-    rdfs:label "Result"@en ;
-    rdfs:comment """For every compliance result that is produced by a checking act, the instance of aec3po:ComplianceVerificationReport in the results graph has a value for the property ae3cpo:result. Each value of aec3po:result is an instance of the class aec3po:ValidationResult."""@en ;
+aec3po:hasResult a owl:ObjectProperty ;
+    rdfs:label "has result"@en ;
+    rdfs:comment """Links a compliance verification report to some verification result."""@en ;
     rdfs:isDefinedBy aec3po:compliance_verification_report ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty aec3po:conforms ;
-            owl:cardinality 1 ] .
+    rdfs:domain aec3po:ComplianceVerificationReport ;
+    rdfs:range  aec3po:VerificationResult .
 
-aec3po:ValidationResult a owl:Class ;
-    rdfs:label "Validation Result"@en ;
-    rdfs:comment """Individual validation result of a Compliance Verification Report."""@en ;
+aec3po:VerificationResult a owl:Class ;
+    rdfs:label "Verification Result"@en ;
+    rdfs:comment """Individual verification result of a Compliance Verification Report."""@en ;
     rdfs:isDefinedBy aec3po:compliance_verification_report ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty aec3po:focus ;
+            owl:onProperty aec3po:verificationFocus ;
             owl:cardinality 1 ] ,
             [ a owl:Restriction ;
-            owl:onProperty aec3po:resultSeverity ;
+            owl:onProperty aec3po:hasSeverity ;
             owl:cardinality 1 ] .
 
-aec3po:focus a owl:ObjectProperty ;
-    rdfs:label "focus"@en ;
-    rdfs:comment "Each validation result has exactly one value for the property aec3po:focus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the validation result was produced." ;
-    rdfs:domain aec3po:ValidationResult ;
+aec3po:verificationFocus a owl:ObjectProperty ;
+    rdfs:label "verification focus"@en ;
+    rdfs:comment "Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced." ;
+    rdfs:domain aec3po:VerificationResult ;
     rdfs:isDefinedBy aec3po:compliance_verification_report .
 
 aec3po:resultMessage a owl:DatatypeProperty ;
-    rdfs:label "message"@en ;
-    rdfs:comment "Validation results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values are produced based on the values of aec3po:message of the statements in the AEC3PO graph." ;
-    rdfs:domain aec3po:ValidationResult ;
+    rdfs:label "result message"@en ;
+    rdfs:comment "Verification results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values may be produced based on the statements in the AEC3PO graph." ;
+    rdfs:domain aec3po:VerificationResult ;
     rdfs:isDefinedBy aec3po:compliance_verification_report .
 
-aec3po:resultSeverity a owl:ObjectProperty ;
-    rdfs:label "result severity"@en ;
-    rdfs:comment "Each validation result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the shape." ;
-    rdfs:domain aec3po:ValidationResult ;
+aec3po:severity a owl:ObjectProperty ;
+    rdfs:label "severity"@en ;
+    rdfs:comment "Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the statement." ;
+    rdfs:domain aec3po:VerificationResult ;
     rdfs:range aec3po:Severity ;
     rdfs:isDefinedBy aec3po:compliance_verification_report .
 
@@ -77,17 +76,17 @@ aec3po:Severity a owl:Class ;
 	rdfs:comment "The class of validation result severity levels, including violation and warning levels."@en ;
     rdfs:isDefinedBy aec3po:compliance_verification_report .
 
-aec3po:Info a owl:NamedIndividual, aec3po:Severity ;
-	rdfs:label "Info"@en ;
-	rdfs:comment "The severity for an informational validation result."@en ;
-    rdfs:isDefinedBy aec3po:compliance_verification_report .
+    aec3po:Info a owl:NamedIndividual, aec3po:Severity ;
+        rdfs:label "Info"@en ;
+        rdfs:comment "The severity for an informational validation result."@en ;
+        rdfs:isDefinedBy aec3po:compliance_verification_report .
 
-aec3po:Violation a owl:NamedIndividual, aec3po:Severity ;
-	rdfs:label "Violation"@en ;
-	rdfs:comment "The severity for a violation validation result."@en ;
-    rdfs:isDefinedBy aec3po:compliance_verification_report .
+    aec3po:Violation a owl:NamedIndividual, aec3po:Severity ;
+        rdfs:label "Violation"@en ;
+        rdfs:comment "The severity for a violation validation result."@en ;
+        rdfs:isDefinedBy aec3po:compliance_verification_report .
 
-aec3po:Warning a owl:NamedIndividual, aec3po:Severity ;
-	rdfs:label "Warning"@en ;
-	rdfs:comment "The severity for a warning validation result."@en ;
-    rdfs:isDefinedBy aec3po:compliance_verification_report .
+    aec3po:Warning a owl:NamedIndividual, aec3po:Severity ;
+        rdfs:label "Warning"@en ;
+        rdfs:comment "The severity for a warning validation result."@en ;
+        rdfs:isDefinedBy aec3po:compliance_verification_report .
