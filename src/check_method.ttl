@@ -132,6 +132,18 @@ aec3po:CompositeCheckMethod a owl:Class ;
             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:CheckMethod) ] ;
     rdfs:isDefinedBy aec3po:check_method .
 
+ aec3po:hasBSSDDValue a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasBSSDDValue"@en ;
+    rdfs:comment "TBD"@en ;
+    rdfs:isDefinedBy aec3po:check_method .
+
+ aec3po:hasNestedValue a owl:ObjectProperty ;
+    rdfs:label "hasNestedValue"@en ;
+    rdfs:comment "TBD"@en ;
+    rdfs:domain aec3po:CheckMethod ;
+    rdfs:isDefinedBy aec3po:check_method .
+
 ## hasValue has been defined in the core ontology 
 #aec3po:hasValue a owl:FunctionalProperty,
       #  owl:ObjectProperty ;
