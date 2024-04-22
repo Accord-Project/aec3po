@@ -179,16 +179,8 @@ aec3po:hasNestedTarget a owl:ObjectProperty ;
 aec3po:hasTarget a owl:DatatypeProperty ;
  rdfs:label "hasTarget"@en ;
  rdfs:comment "TBD"@en ;
-rdfs:range [
-        rdf:type rdfs:Datatype ;
-        owl:unionOf (
-            xsd:string
-            xsd:boolean
-            xsd:decimal
-        )
-    ] .
-
-
+ rdfs:range xsd:string .
+          
 aec3po:FunctionCheckMethod a owl:Class ;
     rdfs:label "Function Check Method"@en ;
     rdfs:comment "Methods of check defined by functions. The function can be general purpose, not tied to specific project and reused i.e. getArea(), getVolume(). This concept is equivalent to the Execution class in the Function ontology: https://fno.io/spec/ "@en ;
