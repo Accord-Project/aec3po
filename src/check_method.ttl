@@ -169,6 +169,13 @@ aec3po:hasOperator a owl:ObjectProperty ;
     rdfs:range aec3po:CheckMethodOperator ;
     rdfs:isDefinedBy aec3po:check_method .
 
+
+aec3po:hasNestedTarget a owl:ObjectProperty ;
+    rdfs:label "hasNestedTarget"@en ;
+    rdfs:comment ""@en ;
+    rdfs:range aec3po:CheckMethod ;
+    rdfs:isDefinedBy aec3po:check_method .
+
 aec3po:FunctionCheckMethod a owl:Class ;
     rdfs:label "Function Check Method"@en ;
     rdfs:comment "Methods of check defined by functions. The function can be general purpose, not tied to specific project and reused i.e. getArea(), getVolume(). This concept is equivalent to the Execution class in the Function ontology: https://fno.io/spec/ "@en ;
