@@ -192,6 +192,13 @@ aec3po:hasTarget a owl:DatatypeProperty ;
  rdfs:label "hasTarget"@en ;
  rdfs:comment "TBD"@en ;
  rdfs:range xsd:string .
+
+aec3po:hasBooleanTarget a owl:DatatypeProperty ;
+ rdfs:label "hasBooleanTarget"@en ;
+ rdfs:comment "TBD"@en ;
+ rdfs:range xsd:boolean .
+
+
           
 aec3po:FunctionCheckMethod a owl:Class ;
     rdfs:label "Function Check Method"@en ;
