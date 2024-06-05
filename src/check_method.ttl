@@ -189,13 +189,11 @@ aec3po:hasNestedTarget a owl:ObjectProperty ;
 
 aec3po:hasTarget a owl:DatatypeProperty ;
  rdfs:label "hasTarget"@en ;
- rdfs:comment "TBD"@en .
+ rdfs:comment ""@en .
 
-aec3po:hasBooleanTarget a owl:DatatypeProperty ;
- rdfs:label "hasBooleanTarget"@en ;
- rdfs:comment "TBD"@en ;
- rdfs:range xsd:boolean .
-
+aec3po:hasBSDDTarget a owl:ObjectProperty ;
+ rdfs:label "hasBSDDTarget"@en ;
+ rdfs:comment ""@en .
         
 aec3po:FunctionCheckMethod a owl:Class ;
     rdfs:label "Function Check Method"@en ;
