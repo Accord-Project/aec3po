@@ -186,13 +186,21 @@ def convert_context_to_jsonld():
     with open('public/aec3po.jsonld', 'w') as json_file:
         json.dump(configuration, json_file, indent=2)
 
+def convert_frame_to_jsonld():
+    with open('public/aec3po_frame.yaml', 'r') as file:
+        configuration = yaml.safe_load(file)
+    with open('public/aec3po_from.jsonld', 'w') as json_file:
+        json.dump(configuration, json_file, indent=2)
+
 if __name__ == "__main__":
     shutil.copyfile('src/aec3po.yaml', 'public/aec3po.yaml')
+    shutil.copyfile('src/aec3po_frame.yaml', 'public/aec3po_frame.yaml')
     if len(sys.argv) == 1:
         for root, dirs, files in os.walk("src"):
             for name in files:
                 process(os.path.join(root, name))
     convert_context_to_jsonld()
+    convert_frame_to_jsonld()
     for input_file_path in sys.argv[1:]:
         process(input_file_path)
         

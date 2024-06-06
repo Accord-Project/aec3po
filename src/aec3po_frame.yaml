@@ -1,0 +1,7 @@
+---
+"@base": https://regulations.accordproject.eu/
+"@context":
+- https://w3id.org/lbd/aec3po/aec3po.jsonld
+- terms: https://identifier.buildingsmart.org/uri/accord/ACCORD-1.0/
+  functions: https://functions.accordproject.eu/
+"@type": Document
