@@ -189,7 +189,7 @@ def convert_context_to_jsonld():
 def convert_frame_to_jsonld():
     with open('public/aec3po_frame.yaml', 'r') as file:
         configuration = yaml.safe_load(file)
-    with open('public/aec3po_from.jsonld', 'w') as json_file:
+    with open('public/aec3po_frame.jsonld', 'w') as json_file:
         json.dump(configuration, json_file, indent=2)
 
 if __name__ == "__main__":
