@@ -124,7 +124,7 @@ aec3po:CompositeCheckMethod a owl:Class ;
   #  rdfs:isDefinedBy aec3po:check_method ;
   #  rdfs:subPropertyOf aec3po:hasDesign .
 
-  aec3po:hasBSSDDTarget a owl:FunctionalProperty,
+  aec3po:hasBSDDTarget a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "hasBSSDDTarget"@en ;
     rdfs:comment "The target refers to either the name of an object, the name of property or a function."@en ;
@@ -132,7 +132,7 @@ aec3po:CompositeCheckMethod a owl:Class ;
             owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:CheckMethod) ] ;
     rdfs:isDefinedBy aec3po:check_method .
 
- aec3po:hasBSSDDValue a owl:FunctionalProperty,
+ aec3po:hasBSDDValue a owl:FunctionalProperty,
         owl:ObjectProperty ;
     rdfs:label "hasBSSDDValue"@en ;
     rdfs:comment "TBD"@en ;
@@ -189,10 +189,6 @@ aec3po:hasNestedTarget a owl:ObjectProperty ;
 
 aec3po:hasTarget a owl:DatatypeProperty ;
  rdfs:label "hasTarget"@en ;
- rdfs:comment ""@en .
-
-aec3po:hasBSDDTarget a owl:ObjectProperty ;
- rdfs:label "hasBSDDTarget"@en ;
  rdfs:comment ""@en .
         
 aec3po:FunctionCheckMethod a owl:Class ;
