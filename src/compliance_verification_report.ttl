@@ -58,6 +58,19 @@ aec3po:verificationFocus a owl:ObjectProperty ;
     rdfs:domain aec3po:VerificationResult ;
     rdfs:isDefinedBy aec3po:compliance_verification_report .
 
+aec3po:verificationStatement a owl:ObjectProperty ;
+    rdfs:label "verification statement"@en ;
+    rdfs:comment "Statement that was validated when the verification result was produced." ;
+    rdfs:domain aec3po:VerificationResult ;
+    rdfs:range aec3po:CheckStatement;
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+aec3po:verificationPlanZone a owl:ObjectProperty ;
+    rdfs:label "verification plan zone"@en ;
+    rdfs:comment "Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced." ;
+    rdfs:domain aec3po:VerificationResult ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
+
 aec3po:resultMessage a owl:DatatypeProperty ;
     rdfs:label "result message"@en ;
     rdfs:comment "Verification results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values may be produced based on the statements in the AEC3PO graph." ;
