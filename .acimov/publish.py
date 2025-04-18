@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 import os
 import sys
+from pathlib import Path
 import logging
 import shutil
 import subprocess
 import rdflib
 from rdflib import Graph, URIRef, Literal, BNode
 from rdflib.namespace import RDF, OWL, DCTERMS, XSD, RDFS, SKOS
-import pylode
-import mistune
+from pylode.profiles import OntPub
 import yaml, json
 from bs4 import BeautifulSoup as bs
 import markdown
 
 # This script checks the quality of the ontology, generates the html documentation, and ultimately builds the `public` folder that contains the documentation website of the ontology
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.ERROR)
 
 base = "https://w3id.org/lbd/aec3po/"
 dest = "public"
@@ -29,7 +29,7 @@ def process_turtle_file(input_file_path:str, dest_path:str):
     module_name = dest_path.split("/")[-1]
 
     # parse and check ttl syntax
-    g = Graph()
+    g = Graph(base=base)
     try:
         g.parse(input_file_path)
     except rdflib.plugins.parsers.notation3.BadSyntax as err:
@@ -66,8 +66,10 @@ def process_turtle_file(input_file_path:str, dest_path:str):
         logging.debug(f"adding last git commit date as dct:modified value: {git_dct_modified.lstrip()}")
 
     # generate html documentation and rdf variants
-    html = pylode.MakeDocco(input_data_file=input_file_path).document()
+    html = OntPub(input_file_path).make_html()
+    
     soup = bs(html, 'html.parser')
+    Path("public/test.html").write_text(soup.prettify(), encoding='utf-8')
 
     # delete made with pyLODE
     soup.find(id="pylode").extract()
@@ -92,11 +94,10 @@ def process_turtle_file(input_file_path:str, dest_path:str):
         except:
             snippet = None
     if snippet:
-        tag = soup.find(id="description")
-        tag.previous_sibling.extract()
-        tag.previous_sibling.extract()
-        tag.clear()
-        tag.append(bs(snippet, 'html.parser'))
+        tag = [ tag for tag in soup.find(id="metadata").find_all('div') if "Description" in tag.find("dt").text ][0]
+        tag.extract()
+        tag = soup.find(id="metadata")
+        tag.insert_after(bs(f"""<div class="section" id="description">{snippet}</div>""", 'html.parser'))
 
     # inject overview if it exists
     input_file, _ = os.path.splitext(input_file_path)
@@ -110,10 +111,17 @@ def process_turtle_file(input_file_path:str, dest_path:str):
         except:
             snippet = None
     if snippet:
-        tag = soup.find(id="overview")
-        tag.clear()
-        tag.append(bs(snippet, 'html.parser'))
-    
+        
+        tag = soup.find(id="description") or soup.find(id="metadata")
+        tag.insert_after(bs(f"""<div class="section" id="overview">{snippet}</div>""", 'html.parser'))
+
+    # edit toc
+    if soup.find(id="overview"):
+        soup.select_one("#toc ul").insert(3, bs(f"""<li><h4><a href="#overview">Overview</a></h4></li>""", 'html.parser'))
+
+    if soup.find(id="description"):
+        soup.select_one("#toc ul").insert(3, bs(f"""<li><h4><a href="#description">Description</a></h4></li>""", 'html.parser'))
+
     # inject contributors if they exist
     # inject overview if it exists
     input_file, _ = os.path.splitext(input_file_path)
@@ -124,6 +132,8 @@ def process_turtle_file(input_file_path:str, dest_path:str):
         try:
             with open(input_file + ".contributors.html", 'r') as html_file:
                 snippet = html_file.read()
+                if not snippet.startswith("<p") and not snippet.startswith("<div"):
+                    snippet = "<p>" + snippet + "</p>"
         except:
             snippet = None
     if snippet:
