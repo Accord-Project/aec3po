@@ -81,25 +81,32 @@ aec3po:CertificateCheckMethod a owl:Class ;
 
 aec3po:CategoryCheckMethod a owl:Class ;
     rdfs:label "Category Check Method"@en ;
-    rdfs:comment "Category check method is a validation type that involves comparing content against a textual concept."@en ;
+    rdfs:comment "A validation type that involves comparing content against a textual concept."@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:CheckMethod .
 
 aec3po:ComponentCheckMethod a owl:Class ;
     rdfs:label "Component Check Method"@en ;
-    rdfs:comment "Component check method refers to a process of inspecting and verifying specific components or elements of a building or infrastructure to ensure they meet the required standards, specifications, and regulations. This method is used to assess the quality, functionality, and safety of individual components used in construction projects. Formally defined as checks for some feature of interest"@en ;
+    rdfs:comment "Refers to a process of inspecting and verifying specific components or elements of a building or infrastructure to ensure they meet the required standards, specifications, and regulations. This method is used to assess the quality, functionality, and safety of individual components used in construction projects. Formally defined as checks for some feature of interest"@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:CheckMethod ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( aec3po:CheckMethod [ a owl:Restriction ;
-                        owl:allValuesFrom [ a owl:Restriction ;
-                                owl:allValuesFrom aec3po:FeatureOfInterest ;
-                                owl:onProperty [ owl:inverseOf aec3po:forDesign ] ] ;
-                        owl:onProperty aec3po:forDesign ] ) ] .
+    owl:intersectionOf ( 
+      aec3po:CheckMethod 
+      [ a owl:Restriction ;
+        owl:allValuesFrom [ a owl:Restriction ;
+          owl:allValuesFrom aec3po:FeatureOfInterest ;
+          owl:onProperty [ owl:inverseOf aec3po:forDesign ] ] ;
+        owl:onProperty aec3po:forDesign ] ).
+
+aec3po:SPARQLCheckMethod a owl:Class ;
+    rdfs:label "SPARQL Check Method"@en ;
+    rdfs:comment "Refers to a validation process that ensures compliance of data with a predefined SPARQL query, stored in aec3po:asText"@en ;
+    rdfs:isDefinedBy aec3po:check_method ;
+    rdfs:subClassOf aec3po:DeclarativeCheckMethod .
 
 aec3po:SHACLCheckMethod a owl:Class ;
     rdfs:label "SHACL Check Method"@en ;
-    rdfs:comment "Shacl check method refers to a validation process that ensures compliance of data with predefined SHACL shapes, constraints, and rules. "@en ;
+    rdfs:comment "Refers to a validation process that ensures compliance of data with predefined SHACL shapes, constraints, and rules."@en ;
     rdfs:isDefinedBy aec3po:check_method ;
     rdfs:subClassOf aec3po:DeclarativeCheckMethod .
 
