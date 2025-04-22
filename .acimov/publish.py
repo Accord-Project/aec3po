@@ -66,7 +66,7 @@ def process_turtle_file(input_file_path:str, dest_path:str):
         logging.debug(f"adding last git commit date as dct:modified value: {git_dct_modified.lstrip()}")
 
     # generate html documentation and rdf variants
-    html = OntPub(input_file_path).make_html()
+    html = OntPub(g).make_html()
     
     soup = bs(html, 'html.parser')
     Path("public/test.html").write_text(soup.prettify(), encoding='utf-8')
