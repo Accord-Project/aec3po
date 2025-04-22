@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Quantity Kind nomenclature
+  </title>
+  <style>
+   #pylode {
+            position: fixed;
+            top: 205px;
+            left: -150px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+        #pylode #p {
+            color: #329545;
+        }
+        #pylode #y {
+            color: #f9cb33;
+        }
+        #pylode #version {
+            font-size: 1.0em;
+        }
+
+        #profile {
+            font-style: italic;
+            font-size: 1.25em;
+            color: darkred!important;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dl {
+            /*border: 1px solid navy;*/
+            /*padding:5px;*/
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 0;
+        }
+
+        dd {
+            margin-bottom: 10px;
+            padding-top: 7px;
+        }
+
+        #metadata ul,
+        #classes ul {
+            list-style-type: none;
+        }
+
+        #metadata ul li,
+        #classes ul li {
+            margin-left: -40px;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: left;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-con,
+        .sup-col {
+            cursor:help;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-con {
+            color:orange;
+        }
+
+        .sup-col {
+            color:darkred;
+        }
+
+        sup {
+            margin-left: -3px;
+        }
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+
+#toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    border: solid 1px navy;
+    font-size: small;
+    width: 180px;
+}
+#toc h3 {
+    margin-top: 5px;
+}
+
+#toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#toc .first > li {
+    margin-top: 5px;
+}
+
+#toc .second,
+#toc .third {
+    padding-left: 10px;
+}
+
+#content {
+    width: calc(100% - 150px);
+}
+
+.hover_property {
+    cursor: help;
+    text-decoration: none;
+    border-bottom: dashed 1px;
+}
+
+.setclass {
+    list-style-type: none;
+}
+
+code{
+    word-wrap: break-word;
+  }
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+td {
+    word-wrap: break-word;
+}
+#legend table.entity {
+    width: 25%;
+}
+  </style>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <script id="schema.org" type="application/ld+json">
+   [
+  {
+    "@id": "https://w3id.org/lbd/aec3po/QuantityKindNomenclature",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "A set of values for quantity kinds.\n    AEC3PO includes a set of values for this nomenclature."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "Quantity Kind nomenclature"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/lbd/aec3po/quantity_kinds",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/contributor": [
+      {
+        "@id": "http://maxime-lefrancois.info/me#"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)\n\n  Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) \n\n  This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "AEC3PO: Quantity Kinds"
+      }
+    ]
+  }
+]
+  </script>
+  <link href="../accord-ico-32x32.png" rel="icon" sizes="32x32"/>
+  <link href="../accord-ico-192x192.png" rel="icon" sizes="192x192"/>
+ </head>
+ <body>
+  <div id="content">
+   <div class="section" id="metadata">
+    <h1>
+     AEC3PO: Quantity KindsQuantity Kind nomenclature
+    </h1>
+    <h2>
+     Metadata
+    </h2>
+    <dl>
+     <div>
+      <dt>
+       <strong>
+        IRI
+       </strong>
+      </dt>
+      <dd>
+       <code>
+        https://w3id.org/lbd/aec3po/QuantityKindNomenclature
+       </code>
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">
+        Title
+       </a>
+      </dt>
+      <dd>
+       <ul>
+        <li>
+         <p>
+          AEC3PO: Quantity Kinds
+         </p>
+        </li>
+        <li>
+         <p>
+          Quantity Kind nomenclature
+         </p>
+        </li>
+       </ul>
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/dc/terms/contributor" title="An entity responsible for making contributions to the resource. Defined in DCMI Metadata Terms">
+        Contributor
+       </a>
+      </dt>
+      <dd>
+       http://maxime-lefrancois.info/me#
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">
+        Preferred Namespace Prefix
+       </a>
+      </dt>
+      <dd>
+       <p>
+        aec3po
+       </p>
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">
+        Preferred Namespace Uri
+       </a>
+      </dt>
+      <dd>
+       <a href="https://w3id.org/lbd/aec3po/">
+        aec3po:
+       </a>
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+        Description
+       </a>
+      </dt>
+      <dd>
+       <ul>
+        <li>
+         <p>
+          Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)
+         </p>
+         <p>
+          Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused
+          <a href="http://qudt.org/2.1/vocab/quantitykind">
+           QUDT Quantity Kind vocabulary
+          </a>
+         </p>
+         <p>
+          This AEC3PO module defines
+          <code>
+           c3po:QuantityKind
+          </code>
+          as an equivalent to
+          <code>
+           qudt:QuantityKind
+          </code>
+          , and some instances that a relevant for the AEC3PO domain.
+         </p>
+        </li>
+        <li>
+         <p>
+          A set of values for quantity kinds.
+    AEC3PO includes a set of values for this nomenclature.
+         </p>
+        </li>
+       </ul>
+      </dd>
+     </div>
+    </dl>
+   </div>
+   <div class="section" id="classes">
+    <h2>
+     Classes
+    </h2>
+    <div class="property entity" id="QuantityKind">
+     <h3>
+      Quantity Kind
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/QuantityKind
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#quantity_kinds">
+         AEC3PO: Quantity Kinds
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+        </p>
+        <p>
+         It is expected that the property kinds are organized in a hierarchy of concepts using
+         <code>
+          skos:broader
+         </code>
+         /
+         <code>
+          skos:narrower
+         </code>
+         .
+        </p>
+        <p>
+         Property kinds may be taken from the
+         <a href="http://qudt.org/2.1/vocab/quantitykind">
+          QUDT Quantity Kind vocabulary
+         </a>
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2004/02/skos/core#example" title="An example of the use of a concept. Defined in SKOS Vocabulary">
+         Example
+        </a>
+       </th>
+       <td>
+        <pre>Length, Area, U-Value.</pre>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2004/02/skos/core#note" title="A general note, for any purpose. Defined in SKOS Vocabulary">
+         Note
+        </a>
+       </th>
+       <td>
+        <p>
+         Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as "Length" or "Thermal Transmittance" is a maximal Region, and a specific quantity value such as "13 m" or "3.5 W/(m^2.K)" is a minimal Region.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <ul>
+         <li>
+          <span>
+           <a href="http://www.w3.org/2004/02/skos/core#Concept">
+            Concept
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+         <li>
+          <a href="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region">
+           dul:Region
+          </a>
+         </li>
+         <li>
+          <span>
+           <a href="http://qudt.org/schema/qudt/QuantityKind">
+            qudt:QuantityKind
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+        </ul>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">
+         Equivalentclass
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="http://www.w3.org/2004/02/skos/core#Concept">
+          Concept
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+        <span class="cardinality">
+         and
+        </span>
+        <span>
+         <span>
+          <span>
+           <a href="http://www.w3.org/2004/02/skos/core#inScheme">
+            is in scheme
+           </a>
+           <sup class="sup-op" title="OWL Object Property">
+            op
+           </sup>
+          </span>
+          <span>
+           <span class="cardinality">
+            value
+           </span>
+           <span>
+            <span>
+             <a href="#QuantityKindNomenclature">
+              Quantity Kind nomenclature
+             </a>
+             <sup class="sup-c" title="OWL/RDFS Class">
+              c
+             </sup>
+            </span>
+           </span>
+          </span>
+          <br/>
+         </span>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="QuantityKind1">
+     <h3>
+      Quantity Kind
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         http://qudt.org/schema/qudt/QuantityKind
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="http://qudt.org/2.1/schema/qudt">
+         http://qudt.org/2.1/schema/qudt
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">
+         Super Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#QuantityKind">
+          Quantity Kind
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+   <div id="namespaces">
+    <h2>
+     Namespaces
+    </h2>
+    <dl>
+     <dt id="aec3po">
+      aec3po
+     </dt>
+     <dd>
+      <code>
+       https://w3id.org/lbd/aec3po/
+      </code>
+     </dd>
+     <dt id="cc">
+      cc
+     </dt>
+     <dd>
+      <code>
+       http://creativecommons.org/ns#
+      </code>
+     </dd>
+     <dt id="dct">
+      dct
+     </dt>
+     <dd>
+      <code>
+       http://purl.org/dc/terms/
+      </code>
+     </dd>
+     <dt id="dul">
+      dul
+     </dt>
+     <dd>
+      <code>
+       http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#
+      </code>
+     </dd>
+     <dt id="owl">
+      owl
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/2002/07/owl#
+      </code>
+     </dd>
+     <dt id="qkdv">
+      qkdv
+     </dt>
+     <dd>
+      <code>
+       http://qudt.org/vocab/dimensionvector/
+      </code>
+     </dd>
+     <dt id="quantitykind">
+      quantitykind
+     </dt>
+     <dd>
+      <code>
+       http://qudt.org/vocab/quantitykind/
+      </code>
+     </dd>
+     <dt id="qudt">
+      qudt
+     </dt>
+     <dd>
+      <code>
+       http://qudt.org/schema/qudt/
+      </code>
+     </dd>
+     <dt id="rdf">
+      rdf
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/1999/02/22-rdf-syntax-ns#
+      </code>
+     </dd>
+     <dt id="rdfs">
+      rdfs
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/2000/01/rdf-schema#
+      </code>
+     </dd>
+     <dt id="skos">
+      skos
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/2004/02/skos/core#
+      </code>
+     </dd>
+     <dt id="unit">
+      unit
+     </dt>
+     <dd>
+      <code>
+       http://qudt.org/vocab/unit/
+      </code>
+     </dd>
+     <dt id="vann">
+      vann
+     </dt>
+     <dd>
+      <code>
+       http://purl.org/vocab/vann/
+      </code>
+     </dd>
+    </dl>
+   </div>
+   <div id="legend">
+    <h2>
+     Legend
+    </h2>
+    <table class="entity">
+     <tr>
+      <td>
+       <sup class="sup-c" title="OWL/RDFS Class">
+        c
+       </sup>
+      </td>
+      <td>
+       Classes
+      </td>
+     </tr>
+    </table>
+   </div>
+  </div>
+  <div id="toc">
+   <h3>
+    Table of Contents
+   </h3>
+   <ul class="first">
+    <li>
+     <h4>
+      <a href="#metadata">
+       Metadata
+      </a>
+     </h4>
+    </li>
+    <li>
+     <h4>
+      <a href="#classes">
+       Classes
+      </a>
+     </h4>
+     <ul class="second">
+      <li>
+       <a href="#QuantityKind">
+        Quantity Kind
+       </a>
+      </li>
+      <li>
+       <a href="#QuantityKind1">
+        Quantity Kind
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <h4>
+      <a href="#namespaces">
+       Namespaces
+      </a>
+     </h4>
+     <ul class="second">
+      <li>
+       <a href="#aec3po">
+        aec3po
+       </a>
+      </li>
+      <li>
+       <a href="#cc">
+        cc
+       </a>
+      </li>
+      <li>
+       <a href="#dct">
+        dct
+       </a>
+      </li>
+      <li>
+       <a href="#dul">
+        dul
+       </a>
+      </li>
+      <li>
+       <a href="#owl">
+        owl
+       </a>
+      </li>
+      <li>
+       <a href="#qkdv">
+        qkdv
+       </a>
+      </li>
+      <li>
+       <a href="#quantitykind">
+        quantitykind
+       </a>
+      </li>
+      <li>
+       <a href="#qudt">
+        qudt
+       </a>
+      </li>
+      <li>
+       <a href="#rdf">
+        rdf
+       </a>
+      </li>
+      <li>
+       <a href="#rdfs">
+        rdfs
+       </a>
+      </li>
+      <li>
+       <a href="#skos">
+        skos
+       </a>
+      </li>
+      <li>
+       <a href="#unit">
+        unit
+       </a>
+      </li>
+      <li>
+       <a href="#vann">
+        vann
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <h4>
+      <a href="#legend">
+       Legend
+      </a>
+     </h4>
+     <ul class="second">
+     </ul>
+    </li>
+   </ul>
+  </div>
+ </body>
+</html>

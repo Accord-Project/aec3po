@@ -1,0 +1,136 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+
+# ontology declaration
+
+aec3po: a owl:Ontology ;
+
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+dct:creator aec3po:edlira, 
+aec3po:pan;
+    dct:contributor <http://maxime-lefrancois.info/me#>,        
+        aec3po:amna,
+        aec3po:thomas ,
+        aec3po:vladimir ;
+    dct:description "The Architecture, Engineering and Construction Compliance Checking and Permitting ontology (AEC3PO), based on the statements on building compliance-related document and design codes."@en ;
+    dct:title "AEC3PO"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
+    skos:note "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en ;
+    owl:imports aec3po:check_method, aec3po:checking_act, aec3po:conformance_report, aec3po:design, aec3po:document, aec3po:feature_of_interest, aec3po:legal_verifier, aec3po:model, aec3po:statement, aec3po:table, aec3po:evidence, aec3po:evidence, aec3po:data_requirement, aec3po:rase_statement .
+
+# declaration of reused external entities
+
+cc:license a owl:AnnotationProperty .
+
+dct:contributor a owl:AnnotationProperty .
+
+dct:creator a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:issued a owl:AnnotationProperty .
+
+dct:source a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+schema:affiliation a owl:AnnotationProperty .
+
+schema:email a owl:AnnotationProperty .
+
+schema:identifier a owl:AnnotationProperty .
+
+schema:name a owl:AnnotationProperty .
+
+schema:url a owl:AnnotationProperty .
+
+skos:example a owl:AnnotationProperty .
+
+skos:note a owl:AnnotationProperty .
+
+# authors and contributors
+
+<http://maxime-lefrancois.info/me#> a schema:Person ;
+    schema:affiliation <https://www.mines-stetienne.fr/> ;
+    schema:email "maxime.lefrancois@emse.fr" ;
+    schema:identifier <http://orcid.org/0000-0001-9814-8991> ;
+    schema:name "Maxime Lefrançois" ;
+    schema:url <http://maxime-lefrancois.info/> .
+
+<https://www.mines-stetienne.fr/> schema:name "MINES Saint-Étienne" ;
+    schema:url <https://mines-stetienne.fr> .
+
+aec3po:edlira a schema:Person ;
+    schema:affiliation <https://www.bcu.ac.uk/> ;
+    schema:email "edlira.vakaj@bcu.ac.uk" ;
+    schema:identifier <http://orcid.org/0000-0002-0712-0959> ;
+    schema:name "Edlira Vakaj" ;
+    schema:url <https://www.bcu.ac.uk/computing/about-us/our-staff/edlira-vakaj> .
+
+aec3po:amna a schema:Person ;
+    schema:affiliation <https://www.bcu.ac.uk/> ;
+    schema:email "Amna.Dridi@bcu.ac.uk" ;
+    schema:identifier <http://orcid.org/0000-0002-0185-103X> ;
+    schema:name "Amna Dridi" ;
+    schema:url <https://www.researchgate.net/profile/Amna-Dridi-3> .
+
+aec3po:pan a schema:Person ;
+    schema:affiliation <https://www.bcu.ac.uk/> ;
+    schema:email "Panagiotis.Patlakas@bcu.ac.uk" ;
+    schema:identifier <http://orcid.org/0000-0002-7248-8952> ;
+    schema:name "Panagiotis Patlakas" ;
+    schema:url <https://www.bcu.ac.uk/built-environment/about-us/our-staff/panagiotis-patlakas> .
+
+<https://www.bcu.ac.uk/> schema:name "Birmingham City University" ;
+    schema:url <https://www.bcu.ac.uk/> .
+
+aec3po:thomas a schema:Person ;
+    schema:affiliation <https://www.cardiff.ac.uk/> ;
+    schema:email "beachth@cardiff.ac.uk" ;
+    schema:identifier <http://orcid.org/0000-0001-5610-8027> ;
+    schema:name "Thomas Beach" ;
+    schema:url <https://profiles.cardiff.ac.uk/staff/beachth> .
+
+<https://www.cardiff.ac.uk/> schema:name "Cardiff University" ;
+    schema:url <https://www.cardiff.ac.uk/> .
+
+aec3po:vladimir a schema:Person ;
+    schema:affiliation <https://www.ontotext.com/> ;
+    schema:email "vladimir.alexiev@ontotext.com" ;
+    schema:identifier <https://orcid.org/0000-0001-7508-7428> ;
+    schema:name "Vladimir Alexiev" ;
+    schema:url <https://www.ontotext.com/blog/author/vladimir/> .
+
+<https://www.ontotext.com/> schema:name "Ontotext" ;
+    schema:url <https://www.ontotext.com/> .
+
+
+# hasValue is used widely (and wildly)
+
+aec3po:hasValue a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label "has value"@en ;
+    rdfs:comment "de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal."@en ;
+    rdfs:isDefinedBy aec3po: ;
+    skos:note "The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( aec3po:FeatureOfInterest aec3po:Property aec3po:CheckMethod) ] .
+
+aec3po:asText a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:label "as text"@en ;
+    rdfs:comment "de facto used to link something (anything: property, statement, property design, check, cell, column, ...) to a literal string."@en ;
+    rdfs:isDefinedBy aec3po: ;
+    skos:hiddenLabel "text" ;
+    rdfs:range xsd:string.
+

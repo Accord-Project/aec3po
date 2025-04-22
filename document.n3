@@ -1,0 +1,105 @@
+@base <https://w3id.org/lbd/aec3po/> .
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<DocumentSubdivision_asLiteral> a owl:DatatypeProperty ;
+    rdfs:label "as literal"@en ;
+    rdfs:comment "Links a document subdivision to its literal representation. The literal datatype may be xsd:string, rdf:HTMLLiteral, xsd:base64Binary, or any other relevant datatype."@en ;
+    rdfs:domain <DocumentSubdivision> ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:range rdfs:Literal ;
+    skos:hiddenLabel "text" .
+
+<Drawing> a owl:Class ;
+    rdfs:label "Drawing"@en ;
+    rdfs:comment "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)"@en ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:subClassOf <Document> .
+
+<Image> a owl:Class ;
+    rdfs:label "Image"@en ;
+    rdfs:comment "An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)"@en ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:subClassOf <Document> .
+
+<forDocument> a owl:ObjectProperty ;
+    rdfs:label "for document"@en ;
+    rdfs:comment "links an entity such as a legal verifier to the document it is for."@en ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:range <Document> .
+
+<hasFirstSubdivision> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has first subdivision"@en ;
+    rdfs:comment "Links a document part to the first of its subdivision"@en ;
+    rdfs:domain [ owl:unionOf ( <Document> <DocumentSubdivision> ) ] ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:range <DocumentSubdivision> ;
+    rdfs:subPropertyOf <hasSubdivision> .
+
+<hasNextSubdivision> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has next subdivision"@en ;
+    rdfs:comment "Links a document subdivision to the document subdivision that immediately follows it, if it exists"@en ;
+    rdfs:domain <DocumentSubdivision> ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:range <DocumentSubdivision> .
+
+<requiresDocument> a owl:ObjectProperty ;
+    rdfs:label "requires document"@en ;
+    rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it requires."@en ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:range <Document> ;
+    rdfs:subPropertyOf <usesDocument> .
+
+<usesDocument> a owl:ObjectProperty ;
+    rdfs:label "uses document"@en ;
+    rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the document it uses."@en ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:range <Document> .
+
+<hasSubdivision> a owl:ObjectProperty ;
+    rdfs:label "has subdivision"@en ;
+    rdfs:comment "links a document part to some of its subdivision"@en ;
+    rdfs:domain [ owl:unionOf ( <Document> <DocumentSubdivision> ) ] ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:range <DocumentSubdivision> ;
+    rdfs:subPropertyOf dct:hasPart .
+
+<Document> a owl:Class ;
+    rdfs:label "Document"@en ;
+    rdfs:comment "A document representing AEC regulations, guidelines, building codes etc."@en ;
+    rdfs:isDefinedBy <document> ;
+    skos:example "Approved Document A, Eurocode, Finish Regulations, etc."@en ;
+    skos:note "a Document is expected to be annotated using properties from the Dublin Core Terms vocabulary."@en .
+
+<DocumentSubdivision> a owl:Class ;
+    rdfs:label "Document Subdivision"@en ;
+    rdfs:comment "Any subdivision of a document, including sections, paragraphs, definitions, words, etc."@en ;
+    rdfs:isDefinedBy <document> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom <DocumentSubdivision> ;
+            owl:onProperty <hasSubdivision> ] ;
+    skos:example "Paragraph, section, definition..."@en .
+
+<document> a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:created "2023-05-25"^^xsd:date ;
+    dct:description <file:///home/runner/work/aec3po/aec3po/src/document.png>,
+        """The AEC3PO Document module describes a document, of any kind, typically related to compliance and permitting. Documents are split into division and subdivisions, down to individual statements.
+
+Document subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back."""@en ;
+    dct:modified "2023-05-25"^^xsd:date,
+        "2024-02-28"^^xsd:date ;
+    dct:title "AEC3PO: document"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+

@@ -1,0 +1,204 @@
+'@context':
+  '@base': https://data.accordproject.eu/ # may not work due to security concerns. Specify @base in the instance file
+  $type:   '@type'
+  $id:     '@id'
+  # prefixes
+  aec3po: https://w3id.org/lbd/aec3po/
+  dct:    http://purl.org/dc/terms/
+  dc:     http://purl.org/dc/elements/1.1/
+  xsd:    http://www.w3.org/2001/XMLSchema#
+  qudt:   http://qudt.org/schema/qudt/
+  unit:   http://qudt.org/vocab/unit/
+  fno:    https://w3id.org/function/ontology#
+  # dct metadata
+  hasPart:                {'@id': dct:hasPart, '@type': '@id'}
+  identifier:             dct:identifier
+  issued:                 {'@id': dct:issued, '@type': xsd:date}
+  modified:               {'@id': dct:modified, '@type': xsd:date}
+  spatial:                dct:spatial                               # not dct:coverage
+  subject:                {'@id': dct:subject, '@type': '@id'}      # URL
+  subjectText:            dc:subject                                # text
+  temporal:               {'@id': dct:temporal, '@type': xsd:gYear} # not xsd:date
+  title:                  dct:title
+  relation:               dct:relation
+  references:             dct:references
+  # external ontologies
+  executes:               {'@id': fno:executes, '@type': '@id' }
+  hasUnit:                {'@id': qudt:hasUnit, '@type': '@id' }
+  # defined terms
+  CheckMethod: aec3po:CheckMethod
+  operationalizes: {'@id': aec3po:operationalizes, '@type': '@id'}
+  isOperationalizedBy: {'@id': aec3po:isOperationalizedBy, '@type': '@id'}
+  ProceduralCheckMethod: aec3po:ProceduralCheckMethod
+  DeclarativeCheckMethod: aec3po:DeclarativeCheckMethod
+  ConceptCheckMethod: aec3po:ConceptCheckMethod
+  NumericalCheckMethod: aec3po:NumericalCheckMethod
+  hasComparator: {'@id': aec3po:hasComparator, '@type': '@id'}
+  CertificateCheckMethod: aec3po:CertificateCheckMethod
+  CategoryCheckMethod: aec3po:CategoryCheckMethod
+  ComponentCheckMethod: aec3po:ComponentCheckMethod
+  SPARQLCheckMethod: aec3po:SPARQLCheckMethod
+  SHACLCheckMethod: aec3po:SHACLCheckMethod
+  SWRLCheckMethod: aec3po:SWRLCheckMethod
+  CompositeCheckMethod: aec3po:CompositeCheckMethod
+  hasBSDDTarget: {'@id': aec3po:hasBSDDTarget, '@type': '@id'}
+  hasBSDDValue: {'@id': aec3po:hasBSDDValue, '@type': '@id'}
+  hasNestedValue: {'@id': aec3po:hasNestedValue, '@type': '@id'}
+  hasUnit: {'@id': aec3po:hasUnit, '@type': '@id'}
+  JenaCheckMethod: aec3po:JenaCheckMethod
+  BooleanCheckMethod: aec3po:BooleanCheckMethod
+  hasOperator: {'@id': aec3po:hasOperator, '@type': '@id'}
+  hasNestedTarget: {'@id': aec3po:hasNestedTarget, '@type': '@id'}
+  FunctionCheckMethod: aec3po:FunctionCheckMethod
+  FeatureOfInterest: aec3po:FeatureOfInterest
+  Property: aec3po:Property
+  hasProperty: {'@id': aec3po:hasProperty, '@type': '@id'}
+  hasQuantityKind: {'@id': aec3po:hasQuantityKind, '@type': '@id'}
+  QuantityKind: aec3po:QuantityKind
+  LegalVerifier: aec3po:LegalVerifier
+  PrivateVerifier: aec3po:PrivateVerifier
+  StateVerifier: aec3po:StateVerifier
+  Document: aec3po:Document
+  forDocument: {'@id': aec3po:forDocument, '@type': '@id'}
+  usesDocument: {'@id': aec3po:usesDocument, '@type': '@id'}
+  requiresDocument: {'@id': aec3po:requiresDocument, '@type': '@id'}
+  DocumentSubdivision: aec3po:DocumentSubdivision
+  DocumentSubdivision_asLiteral: aec3po:DocumentSubdivision_asLiteral
+  text: aec3po:DocumentSubdivision_asLiteral
+  hasSubdivision: {'@id': aec3po:hasSubdivision, '@type': '@id'}
+  hasNextSubdivision: {'@id': aec3po:hasNextSubdivision, '@type': '@id'}
+  hasFirstSubdivision: {'@id': aec3po:hasFirstSubdivision, '@type': '@id'}
+  Drawing: aec3po:Drawing
+  Image: aec3po:Image
+  Model: aec3po:Model
+  Phase: aec3po:Phase
+  Element: aec3po:Element
+  Dimension: aec3po:Dimension
+  Classification: aec3po:Classification
+  hasValue: aec3po:hasValue
+  asText: aec3po:asText
+  text: aec3po:asText
+  Evidence: aec3po:Evidence
+  hasFormat: {'@id': aec3po:hasFormat, '@type': '@id'}
+  hasRequiredData: aec3po:hasRequiredData
+  DataRequirement: aec3po:DataRequirement
+  IDS: aec3po:IDS
+  Statement: aec3po:Statement
+  hasEvidence: {'@id': aec3po:hasEvidence, '@type': '@id'}
+  hasInlinePart: {'@id': aec3po:hasInlinePart, '@type': '@id'}
+  DefinitionStatement: aec3po:DefinitionStatement
+  definitionOf: {'@id': aec3po:definitionOf, '@type': '@id'}
+  hasDefinition: {'@id': aec3po:hasDefinition, '@type': '@id'}
+  CheckStatement: aec3po:CheckStatement
+  CategoryCheckStatement: aec3po:CategoryCheckStatement
+  CertificateCheckStatement: aec3po:CertificateCheckStatement
+  ChecklistStatement: aec3po:ChecklistStatement
+  HumanEvaluatedCheckStatement: aec3po:HumanEvaluatedCheckStatement
+  hasEvaluator: {'@id': aec3po:hasEvaluator, '@type': '@id'}
+  NumericalCheckStatement: aec3po:NumericalCheckStatement
+  BooleanCheckStatement: aec3po:BooleanCheckStatement
+  AndCheckStatement: aec3po:AndCheckStatement
+  OrCheckStatement: aec3po:OrCheckStatement
+  NotCheckStatement: aec3po:NotCheckStatement
+  CheckingAct: aec3po:CheckingAct
+  startTime: aec3po:startTime
+  endTime: aec3po:endTime
+  usedMethod: {'@id': aec3po:usedMethod, '@type': '@id'}
+  madeBy: {'@id': aec3po:madeBy, '@type': '@id'}
+  checked: {'@id': aec3po:checked, '@type': '@id'}
+  hasReport: {'@id': aec3po:hasReport, '@type': '@id'}
+  RequirementStatement: aec3po:RequirementStatement
+  requires: {'@id': aec3po:requires, '@type': '@id'}
+  ApplicationStatement: aec3po:ApplicationStatement
+  appliesTo: {'@id': aec3po:appliesTo, '@type': '@id'}
+  ExceptionStatement: aec3po:ExceptionStatement
+  except: {'@id': aec3po:except, '@type': '@id'}
+  SelectionStatement: aec3po:SelectionStatement
+  selects: {'@id': aec3po:selects, '@type': '@id'}
+  Container: aec3po:Container
+  Table: aec3po:Table
+  contains: {'@id': aec3po:contains, '@type': '@id'}
+  isContainedIn: {'@id': aec3po:isContainedIn, '@type': '@id'}
+  caption: aec3po:caption
+  Column: aec3po:Column
+  Row: aec3po:Row
+  Cell: aec3po:Cell
+  conforms: aec3po:conforms
+  ComplianceVerificationReport: aec3po:ComplianceVerificationReport
+  hasResult: {'@id': aec3po:hasResult, '@type': '@id'}
+  VerificationResult: aec3po:VerificationResult
+  verificationFocus: {'@id': aec3po:verificationFocus, '@type': '@id'}
+  verificationStatement: {'@id': aec3po:verificationStatement, '@type': '@id'}
+  verificationPlanZone: {'@id': aec3po:verificationPlanZone, '@type': '@id'}
+  resultMessage: aec3po:resultMessage
+  severity: {'@id': aec3po:severity, '@type': '@id'}
+  Severity: aec3po:Severity
+  Info: aec3po:Info
+  Violation: aec3po:Violation
+  Warning: aec3po:Warning
+  BuildingUsage: aec3po:BuildingUsage
+  BuildingUsageNomenclature: aec3po:BuildingUsageNomenclature
+  forBuildingUsage: {'@id': aec3po:forBuildingUsage, '@type': '@id'}
+  hasBuildingUsage: {'@id': aec3po:hasBuildingUsage, '@type': '@id'}
+  BuildingUsage-commercial: aec3po:BuildingUsage-commercial
+  BuildingUsage-residential: aec3po:BuildingUsage-residential
+  BuildingUsage-cultural: aec3po:BuildingUsage-cultural
+  QuantityKind: aec3po:QuantityKind
+  QuantityKindNomenclature: aec3po:QuantityKindNomenclature
+  ModularRoomHeight: aec3po:ModularRoomHeight
+  WidthOfAngledCorridor: aec3po:WidthOfAngledCorridor
+  CompressiveForce: aec3po:CompressiveForce
+  PartialSafetyFactor: aec3po:PartialSafetyFactor
+  PartialSafetyFactor0: aec3po:PartialSafetyFactor0
+  PartialSafetyFactor1: aec3po:PartialSafetyFactor1
+  AxialCompressionStress: aec3po:AxialCompressionStress
+  ModificationFactorKmod: aec3po:ModificationFactorKmod
+  CheckMethodComparator: aec3po:CheckMethodComparator
+  CheckMethodComparatorNomenclature: aec3po:CheckMethodComparatorNomenclature
+  CheckMethodcomparator-eq: aec3po:CheckMethodcomparator-eq
+  CheckMethodComparator-neq: aec3po:CheckMethodComparator-neq
+  CheckMethodComparator-lt: aec3po:CheckMethodComparator-lt
+  CheckMethodComparator-le: aec3po:CheckMethodComparator-le
+  CheckMethodComparator-gt: aec3po:CheckMethodComparator-gt
+  CheckMethodComparator-ge: aec3po:CheckMethodComparator-ge
+  CheckMethodcomparator-logicalAND: aec3po:CheckMethodcomparator-logicalAND
+  CheckMethodComparator-logicalOR: aec3po:CheckMethodComparator-logicalOR
+  hasComparator: {'@id': aec3po:hasComparator, '@type': '@id'}
+  Discipline: aec3po:Discipline
+  DisciplineNomenclature: aec3po:DisciplineNomenclature
+  hasDiscipline: {'@id': aec3po:hasDiscipline, '@type': '@id'}
+  Discipline-architecture: aec3po:Discipline-architecture
+  Discipline-buildingServices: aec3po:Discipline-buildingServices
+  Discipline-construction: aec3po:Discipline-construction
+  Discipline-planning: aec3po:Discipline-planning
+  Discipline-structuralEngineering: aec3po:Discipline-structuralEngineering
+  CheckMethodOperator: aec3po:CheckMethodOperator
+  CheckMethodOperatorNomenclature: aec3po:CheckMethodOperatorNomenclature
+  CheckMethodOperator-exists: aec3po:CheckMethodOperator-exists
+  CheckMethodOperator-notExists: aec3po:CheckMethodOperator-notExists
+  CheckMethodOperator-forall: aec3po:CheckMethodOperator-forall
+  CheckMethodOperator-multiplication: aec3po:CheckMethodOperator-multiplication
+  CheckMethodOperator-division: aec3po:CheckMethodOperator-division
+  CheckMethodOperator-addition: aec3po:CheckMethodOperator-addition
+  CheckMethodOperator-subtraction: aec3po:CheckMethodOperator-subtraction
+  AdministrativeArea: aec3po:AdministrativeArea
+  AdministrativeAreaNomenclature: aec3po:AdministrativeAreaNomenclature
+  forAdministrativeArea: {'@id': aec3po:forAdministrativeArea, '@type': '@id'}
+  England: aec3po:England
+  Estonia: aec3po:Estonia
+  Finland: aec3po:Finland
+  France: aec3po:France
+  Germany: aec3po:Germany
+  Italy: aec3po:Italy
+  Spain: aec3po:Spain
+  BuildingStructure: aec3po:BuildingStructure
+  BuildingStructureNomenclature: aec3po:BuildingStructureNomenclature
+  forBuildingStructure: {'@id': aec3po:forBuildingStructure, '@type': '@id'}
+  hasBuildingStructure: {'@id': aec3po:hasBuildingStructure, '@type': '@id'}
+  BuildingStructure-steel: aec3po:BuildingStructure-steel
+  BuildingStructure-timber: aec3po:BuildingStructure-timber
+  PermittingStage: aec3po:PermittingStage
+  PermittingStageNomenclature: aec3po:PermittingStageNomenclature
+  hasPermittingStage: {'@id': aec3po:hasPermittingStage, '@type': '@id'}
+  UK_Building_Control_Submission: aec3po:UK_Building_Control_Submission
+  UK_Planning_Permission: aec3po:UK_Planning_Permission

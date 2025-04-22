@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   AEC3PO: statement
+  </title>
+  <style>
+   #pylode {
+            position: fixed;
+            top: 205px;
+            left: -150px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+        #pylode #p {
+            color: #329545;
+        }
+        #pylode #y {
+            color: #f9cb33;
+        }
+        #pylode #version {
+            font-size: 1.0em;
+        }
+
+        #profile {
+            font-style: italic;
+            font-size: 1.25em;
+            color: darkred!important;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dl {
+            /*border: 1px solid navy;*/
+            /*padding:5px;*/
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 0;
+        }
+
+        dd {
+            margin-bottom: 10px;
+            padding-top: 7px;
+        }
+
+        #metadata ul,
+        #classes ul {
+            list-style-type: none;
+        }
+
+        #metadata ul li,
+        #classes ul li {
+            margin-left: -40px;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: left;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-con,
+        .sup-col {
+            cursor:help;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-con {
+            color:orange;
+        }
+
+        .sup-col {
+            color:darkred;
+        }
+
+        sup {
+            margin-left: -3px;
+        }
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+
+#toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    border: solid 1px navy;
+    font-size: small;
+    width: 180px;
+}
+#toc h3 {
+    margin-top: 5px;
+}
+
+#toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#toc .first > li {
+    margin-top: 5px;
+}
+
+#toc .second,
+#toc .third {
+    padding-left: 10px;
+}
+
+#content {
+    width: calc(100% - 150px);
+}
+
+.hover_property {
+    cursor: help;
+    text-decoration: none;
+    border-bottom: dashed 1px;
+}
+
+.setclass {
+    list-style-type: none;
+}
+
+code{
+    word-wrap: break-word;
+  }
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+td {
+    word-wrap: break-word;
+}
+#legend table.entity {
+    width: 25%;
+}
+  </style>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <script id="schema.org" type="application/ld+json">
+   [
+  {
+    "@id": "https://w3id.org/lbd/aec3po/statement",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/contributor": [
+      {
+        "@id": "http://maxime-lefrancois.info/me#"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "The AEC3PO Statement module describes a statement, of any kind, found in a document."
+      },
+      {
+        "@id": "file:///home/runner/work/aec3po/aec3po/src/statement.png"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "AEC3PO: statement"
+      }
+    ]
+  }
+]
+  </script>
+  <link href="accord-ico-32x32.png" rel="icon" sizes="32x32"/>
+  <link href="accord-ico-192x192.png" rel="icon" sizes="192x192"/>
+ </head>
+ <body>
+  <div id="content">
+   <div class="section" id="metadata">
+    <h1>
+     AEC3PO: statement
+    </h1>
+    <h2>
+     Metadata
+    </h2>
+    <dl>
+     <div>
+      <dt>
+       <strong>
+        IRI
+       </strong>
+      </dt>
+      <dd>
+       <code>
+        https://w3id.org/lbd/aec3po/statement
+       </code>
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">
+        Title
+       </a>
+      </dt>
+      <dd>
+       <p>
+        AEC3PO: statement
+       </p>
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/dc/terms/contributor" title="An entity responsible for making contributions to the resource. Defined in DCMI Metadata Terms">
+        Contributor
+       </a>
+      </dt>
+      <dd>
+       <p>
+        <a href="http://orcid.org/0000-0001-5610-8027">
+         Thomas Beach
+        </a>
+        <a href="">
+         <svg height="15px" version="1.1" viewbox="0 0 72 72" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>
+           Orcid logo
+          </title>
+          <g fill="none" fill-rule="evenodd" id="Symbols" stroke="none" stroke-width="1">
+           <g fill-rule="nonzero" id="hero" transform="translate(-924.000000, -72.000000)">
+            <g id="Group-4">
+             <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+              <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" fill="#A6CE39" id="Path">
+              </path>
+              <g fill="#FFFFFF" id="Group" transform="translate(18.868966, 12.910345)">
+               <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878">
+               </polygon>
+               <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape">
+               </path>
+               <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path">
+               </path>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </a>
+        (
+        <a href="mailto:beachth@cardiff.ac.uk">
+         beachth@cardiff.ac.uk
+        </a>
+        ) of
+        <a href="https://www.cardiff.ac.uk/">
+         Cardiff University
+        </a>
+        <br/>
+        <a href="http://orcid.org/0000-0001-9814-8991">
+         Maxime Lefrançois
+        </a>
+        <a href="">
+         <svg height="15px" version="1.1" viewbox="0 0 72 72" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>
+           Orcid logo
+          </title>
+          <g fill="none" fill-rule="evenodd" id="Symbols" stroke="none" stroke-width="1">
+           <g fill-rule="nonzero" id="hero" transform="translate(-924.000000, -72.000000)">
+            <g id="Group-4">
+             <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+              <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" fill="#A6CE39" id="Path">
+              </path>
+              <g fill="#FFFFFF" id="Group" transform="translate(18.868966, 12.910345)">
+               <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878">
+               </polygon>
+               <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape">
+               </path>
+               <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path">
+               </path>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </a>
+        (
+        <a href="mailto:maxime.lefrancois@emse.fr">
+         maxime.lefrancois@emse.fr
+        </a>
+        ) of
+        <a href="https://mines-stetienne.fr">
+         MINES Saint-Étienne
+        </a>
+        <br/>
+        <a href="http://orcid.org/0000-0002-0185-103X">
+         Amna Dridi
+        </a>
+        <a href="">
+         <svg height="15px" version="1.1" viewbox="0 0 72 72" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>
+           Orcid logo
+          </title>
+          <g fill="none" fill-rule="evenodd" id="Symbols" stroke="none" stroke-width="1">
+           <g fill-rule="nonzero" id="hero" transform="translate(-924.000000, -72.000000)">
+            <g id="Group-4">
+             <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+              <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" fill="#A6CE39" id="Path">
+              </path>
+              <g fill="#FFFFFF" id="Group" transform="translate(18.868966, 12.910345)">
+               <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878">
+               </polygon>
+               <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape">
+               </path>
+               <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path">
+               </path>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </a>
+        (
+        <a href="mailto:Amna.Dridi@bcu.ac.uk">
+         Amna.Dridi@bcu.ac.uk
+        </a>
+        ) of
+        <a href="https://www.bcu.ac.uk/">
+         Birmingham City University
+        </a>
+        <br/>
+        <a href="http://orcid.org/0000-0002-0712-0959">
+         Edlira Vakaj
+        </a>
+        <a href="">
+         <svg height="15px" version="1.1" viewbox="0 0 72 72" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>
+           Orcid logo
+          </title>
+          <g fill="none" fill-rule="evenodd" id="Symbols" stroke="none" stroke-width="1">
+           <g fill-rule="nonzero" id="hero" transform="translate(-924.000000, -72.000000)">
+            <g id="Group-4">
+             <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+              <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" fill="#A6CE39" id="Path">
+              </path>
+              <g fill="#FFFFFF" id="Group" transform="translate(18.868966, 12.910345)">
+               <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878">
+               </polygon>
+               <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape">
+               </path>
+               <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path">
+               </path>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </a>
+        (
+        <a href="mailto:edlira.vakaj@bcu.ac.uk">
+         edlira.vakaj@bcu.ac.uk
+        </a>
+        ) of
+        <a href="https://www.bcu.ac.uk/">
+         Birmingham City University
+        </a>
+        <br/>
+        <a href="http://orcid.org/0000-0002-7248-8952">
+         Panagiotis Patlakas
+        </a>
+        <a href="">
+         <svg height="15px" version="1.1" viewbox="0 0 72 72" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>
+           Orcid logo
+          </title>
+          <g fill="none" fill-rule="evenodd" id="Symbols" stroke="none" stroke-width="1">
+           <g fill-rule="nonzero" id="hero" transform="translate(-924.000000, -72.000000)">
+            <g id="Group-4">
+             <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+              <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" fill="#A6CE39" id="Path">
+              </path>
+              <g fill="#FFFFFF" id="Group" transform="translate(18.868966, 12.910345)">
+               <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878">
+               </polygon>
+               <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape">
+               </path>
+               <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path">
+               </path>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </a>
+        (
+        <a href="mailto:Panagiotis.Patlakas@bcu.ac.uk">
+         Panagiotis.Patlakas@bcu.ac.uk
+        </a>
+        ) of
+        <a href="https://www.bcu.ac.uk/">
+         Birmingham City University
+        </a>
+        <br/>
+        <a href="https://orcid.org/0000-0001-7508-7428">
+         Vladimir Alexiev
+        </a>
+        <a href="">
+         <svg height="15px" version="1.1" viewbox="0 0 72 72" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>
+           Orcid logo
+          </title>
+          <g fill="none" fill-rule="evenodd" id="Symbols" stroke="none" stroke-width="1">
+           <g fill-rule="nonzero" id="hero" transform="translate(-924.000000, -72.000000)">
+            <g id="Group-4">
+             <g id="vector_iD_icon" transform="translate(924.000000, 72.000000)">
+              <path d="M72,36 C72,55.884375 55.884375,72 36,72 C16.115625,72 0,55.884375 0,36 C0,16.115625 16.115625,0 36,0 C55.884375,0 72,16.115625 72,36 Z" fill="#A6CE39" id="Path">
+              </path>
+              <g fill="#FFFFFF" id="Group" transform="translate(18.868966, 12.910345)">
+               <polygon id="Path" points="5.03734929 39.1250878 0.695429861 39.1250878 0.695429861 9.14431787 5.03734929 9.14431787 5.03734929 22.6930505 5.03734929 39.1250878">
+               </polygon>
+               <path d="M11.409257,9.14431787 L23.1380784,9.14431787 C34.303014,9.14431787 39.2088191,17.0664074 39.2088191,24.1486995 C39.2088191,31.846843 33.1470485,39.1530811 23.1944669,39.1530811 L11.409257,39.1530811 L11.409257,9.14431787 Z M15.7511765,35.2620194 L22.6587756,35.2620194 C32.49858,35.2620194 34.7541226,27.8438084 34.7541226,24.1486995 C34.7541226,18.1301509 30.8915059,13.0353795 22.4332213,13.0353795 L15.7511765,13.0353795 L15.7511765,35.2620194 Z" id="Shape">
+               </path>
+               <path d="M5.71401206,2.90182329 C5.71401206,4.441452 4.44526937,5.72914146 2.86638958,5.72914146 C1.28750978,5.72914146 0.0187670918,4.441452 0.0187670918,2.90182329 C0.0187670918,1.33420133 1.28750978,0.0745051096 2.86638958,0.0745051096 C4.44526937,0.0745051096 5.71401206,1.36219458 5.71401206,2.90182329 Z" id="Path">
+               </path>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </svg>
+        </a>
+        (
+        <a href="mailto:vladimir.alexiev@ontotext.com">
+         vladimir.alexiev@ontotext.com
+        </a>
+        ) of
+        <a href="https://www.ontotext.com/">
+         Ontotext
+        </a>
+        <br/>
+       </p>
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">
+        Preferred Namespace Prefix
+       </a>
+      </dt>
+      <dd>
+       <p>
+        aec3po
+       </p>
+      </dd>
+     </div>
+     <div>
+      <dt>
+       <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">
+        Preferred Namespace Uri
+       </a>
+      </dt>
+      <dd>
+       <a href="https://w3id.org/lbd/aec3po/">
+        aec3po:
+       </a>
+      </dd>
+     </div>
+    </dl>
+   </div>
+   <div class="section" id="description">
+    <h2>
+     Description
+    </h2>
+    <p>
+     The AEC3PO Statement module describes things stated in a building compliance-related document.
+     <p>
+      <p>
+       Statements can be described as literals using
+       <i>
+        asText
+       </i>
+       property. They can be classified into different classes such as
+       <i>
+        DefinitionStatement
+       </i>
+       ,
+       <i>
+        CheckStatement
+       </i>
+       ,
+       <i>
+        CheckListStatement
+       </i>
+       , etc.
+      </p>
+      <figure>
+       <img alt="Illustration of the core concepts in the Statement module" src="diagrams/aec3po-statement.png"/>
+       <figcaption>
+        Illustration of the core concepts in the Statement module
+       </figcaption>
+      </figure>
+     </p>
+    </p>
+   </div>
+   <div class="section" id="overview">
+    <p>
+     This is an overview of the Statement module.
+    </p>
+   </div>
+   <div class="section" id="classes">
+    <h2>
+     Classes
+    </h2>
+    <div class="property entity" id="Statement">
+     <h3>
+      Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/Statement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Something stated in a building compliance-related document
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2004/02/skos/core#example" title="An example of the use of a concept. Defined in SKOS Vocabulary">
+         Example
+        </a>
+       </th>
+       <td>
+        <pre>Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building.</pre>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <a href="#DocumentSubdivision">
+         aec3po:DocumentSubdivision
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+         In Domain Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#hasEvidence">
+          hasEvidence
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">
+         In Range Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#hasEvaluator">
+          has evaluator
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">
+         Super Class Of
+        </a>
+       </th>
+       <td>
+        <ul>
+         <li>
+          <span>
+           <a href="#DefinitionStatement">
+            Definition Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+         <li>
+          <span>
+           <a href="#CheckStatement">
+            Check Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+        </ul>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="DefinitionStatement">
+     <h3>
+      Definition Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/DefinitionStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#Statement">
+          Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+         In Domain Of
+        </a>
+       </th>
+       <td>
+        <ul>
+         <li>
+          <span>
+           <a href="#definitionOf">
+            definition of
+           </a>
+           <sup class="sup-op" title="OWL Object Property">
+            op
+           </sup>
+          </span>
+         </li>
+         <li>
+          <span>
+           <a href="#hasDefinition">
+            has definition
+           </a>
+           <sup class="sup-op" title="OWL Object Property">
+            op
+           </sup>
+          </span>
+         </li>
+        </ul>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="CheckStatement">
+     <h3>
+      Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/CheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#Statement">
+          Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">
+         Super Class Of
+        </a>
+       </th>
+       <td>
+        <ul>
+         <li>
+          <span>
+           <a href="#CategoryCheckStatement">
+            Category Check Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+         <li>
+          <span>
+           <a href="#CertificateCheckStatement">
+            Certificate Check Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+         <li>
+          <span>
+           <a href="#ChecklistStatement">
+            Checklist Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+         <li>
+          <span>
+           <a href="#HumanEvaluatedCheckStatement">
+            Human Evaluated Check Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+         <li>
+          <span>
+           <a href="#NumericalCheckStatement">
+            Numerical Check Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+         <li>
+          <span>
+           <a href="#BooleanCheckStatement">
+            Boolean Check Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+        </ul>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="CategoryCheckStatement">
+     <h3>
+      Category Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/CategoryCheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#CheckStatement">
+          Check Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="CertificateCheckStatement">
+     <h3>
+      Certificate Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/CertificateCheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#CheckStatement">
+          Check Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="ChecklistStatement">
+     <h3>
+      Checklist Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/ChecklistStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Checklist statement is a type of check statement that represents a list of checks that need to be verified.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#CheckStatement">
+          Check Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">
+         Super Class Of
+        </a>
+       </th>
+       <td>
+        <ul>
+         <li>
+          <span>
+           <a href="#AndCheckStatement">
+            And Check Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+         <li>
+          <span>
+           <a href="#OrCheckStatement">
+            Or Check Statement
+           </a>
+           <sup class="sup-c" title="OWL/RDFS Class">
+            c
+           </sup>
+          </span>
+         </li>
+        </ul>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="HumanEvaluatedCheckStatement">
+     <h3>
+      Human Evaluated Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         A type of check statement that is evaluated by a human.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2004/02/skos/core#example" title="An example of the use of a concept. Defined in SKOS Vocabulary">
+         Example
+        </a>
+       </th>
+       <td>
+        <pre>"is aesthetically appropriate"</pre>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2004/02/skos/core#note" title="A general note, for any purpose. Defined in SKOS Vocabulary">
+         Note
+        </a>
+       </th>
+       <td>
+        <p>
+         Those are primarily for issues of perception
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#CheckStatement">
+          Check Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">
+         In Domain Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#hasEvaluator">
+          has evaluator
+         </a>
+         <sup class="sup-op" title="OWL Object Property">
+          op
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="NumericalCheckStatement">
+     <h3>
+      Numerical Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/NumericalCheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         A type of check that involves checking one numerical property against another, i.e. x &lt; y or similar.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#CheckStatement">
+          Check Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="BooleanCheckStatement">
+     <h3>
+      Boolean Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/BooleanCheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         A type of check that checks the existence of an element (property) related to a feature of interest.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#CheckStatement">
+          Check Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="AndCheckStatement">
+     <h3>
+      And Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/AndCheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Check verified if and only if all of its sub-checks are verified.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#ChecklistStatement">
+          Checklist Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+         Restriction
+        </a>
+       </th>
+       <td>
+        <span>
+         <span>
+          <a href="#hasSubdivision">
+           aec3po:hasSubdivision
+          </a>
+          <span>
+           <span class="cardinality">
+            min
+           </span>
+           <span>
+            1
+           </span>
+          </span>
+          <br/>
+         </span>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="OrCheckStatement">
+     <h3>
+      Or Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/OrCheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Check verified if and only if at least one of its sub-checks is verified.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Class Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#ChecklistStatement">
+          Checklist Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+         Restriction
+        </a>
+       </th>
+       <td>
+        <span>
+         <span>
+          <a href="#hasSubdivision">
+           aec3po:hasSubdivision
+          </a>
+          <span>
+           <span class="cardinality">
+            min
+           </span>
+           <span>
+            1
+           </span>
+          </span>
+          <br/>
+         </span>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="NotCheckStatement">
+     <h3>
+      Not Check Statement
+      <sup class="sup-c" title="OWL/RDFS Class">
+       c
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/NotCheckStatement
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Check verified if and only if the sub-check is not verified.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">
+         Restriction
+        </a>
+       </th>
+       <td>
+        <span>
+         <span>
+          <a href="#hasSubdivision">
+           aec3po:hasSubdivision
+          </a>
+          <span>
+           <span class="cardinality">
+            exactly
+           </span>
+           <span>
+            1
+           </span>
+          </span>
+          <br/>
+         </span>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+   <div class="section" id="objectproperties">
+    <h2>
+     Object Properties
+    </h2>
+    <div class="property entity" id="hasEvidence">
+     <h3>
+      hasEvidence
+      <sup class="sup-op" title="OWL Object Property">
+       op
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/hasEvidence
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Links a statement to a piece of evidence for that statement (assertion, statement, or claim).
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2004/02/skos/core#note" title="A general note, for any purpose. Defined in SKOS Vocabulary">
+         Note
+        </a>
+       </th>
+       <td>
+        <p>
+         Unstable. Need evidence of how this property is intended to be used
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+         Domain
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#Statement">
+          Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="hasInlinePart">
+     <h3>
+      hasInlinePart
+      <sup class="sup-op" title="OWL Object Property">
+       op
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/hasInlinePart
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Links a statement to an inline subdivision of that statement.
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Property Of
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="http://purl.org/dc/terms/hasPart">
+          Has Part
+         </a>
+         <sup class="sup-p" title="RDF Property">
+          p
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="definitionOf">
+     <h3>
+      definition of
+      <sup class="sup-op" title="OWL Object Property">
+       op
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/definitionOf
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Links a definition statement to the term that is defined
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+         Domain
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#DefinitionStatement">
+          Definition Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+         Range
+        </a>
+       </th>
+       <td>
+        <a href="#DocumentSubdivision">
+         aec3po:DocumentSubdivision
+        </a>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="hasDefinition">
+     <h3>
+      has definition
+      <sup class="sup-op" title="OWL Object Property">
+       op
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/hasDefinition
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Links a definition statement to the definition of the term
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+         Domain
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#DefinitionStatement">
+          Definition Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+         Range
+        </a>
+       </th>
+       <td>
+        <a href="#DocumentSubdivision">
+         aec3po:DocumentSubdivision
+        </a>
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div class="property entity" id="hasEvaluator">
+     <h3>
+      has evaluator
+      <sup class="sup-op" title="OWL Object Property">
+       op
+      </sup>
+     </h3>
+     <table>
+      <tr>
+       <th>
+        IRI
+       </th>
+       <td>
+        <code>
+         https://w3id.org/lbd/aec3po/hasEvaluator
+        </code>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">
+         Is Defined By
+        </a>
+       </th>
+       <td>
+        <a href="#statement">
+         AEC3PO: statement
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">
+         Description
+        </a>
+       </th>
+       <td>
+        <p>
+         Links a human evaluated statement to the subdivision that expresses who shall verify this check
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+         Domain
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#HumanEvaluatedCheckStatement">
+          Human Evaluated Check Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+         Range
+        </a>
+       </th>
+       <td>
+        <span>
+         <a href="#Statement">
+          Statement
+         </a>
+         <sup class="sup-c" title="OWL/RDFS Class">
+          c
+         </sup>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+   <div id="namespaces">
+    <h2>
+     Namespaces
+    </h2>
+    <dl>
+     <dt id="aec3po">
+      aec3po
+     </dt>
+     <dd>
+      <code>
+       https://w3id.org/lbd/aec3po/
+      </code>
+     </dd>
+     <dt id="cc">
+      cc
+     </dt>
+     <dd>
+      <code>
+       http://creativecommons.org/ns#
+      </code>
+     </dd>
+     <dt id="dct">
+      dct
+     </dt>
+     <dd>
+      <code>
+       http://purl.org/dc/terms/
+      </code>
+     </dd>
+     <dt id="owl">
+      owl
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/2002/07/owl#
+      </code>
+     </dd>
+     <dt id="rdf">
+      rdf
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/1999/02/22-rdf-syntax-ns#
+      </code>
+     </dd>
+     <dt id="rdfs">
+      rdfs
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/2000/01/rdf-schema#
+      </code>
+     </dd>
+     <dt id="skos">
+      skos
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/2004/02/skos/core#
+      </code>
+     </dd>
+     <dt id="vann">
+      vann
+     </dt>
+     <dd>
+      <code>
+       http://purl.org/vocab/vann/
+      </code>
+     </dd>
+    </dl>
+   </div>
+   <div id="legend">
+    <h2>
+     Legend
+    </h2>
+    <table class="entity">
+     <tr>
+      <td>
+       <sup class="sup-c" title="OWL/RDFS Class">
+        c
+       </sup>
+      </td>
+      <td>
+       Classes
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <sup class="sup-op" title="OWL Object Property">
+        op
+       </sup>
+      </td>
+      <td>
+       Object Properties
+      </td>
+     </tr>
+    </table>
+   </div>
+  </div>
+  <div id="toc">
+   <h3>
+    Table of Contents
+   </h3>
+   <ul class="first">
+    <li>
+     <h4>
+      <a href="#metadata">
+       Metadata
+      </a>
+     </h4>
+    </li>
+    <li>
+     <h4>
+      <a href="#description">
+       Description
+      </a>
+     </h4>
+    </li>
+    <li>
+     <h4>
+      <a href="#overview">
+       Overview
+      </a>
+     </h4>
+    </li>
+    <li>
+     <h4>
+      <a href="#classes">
+       Classes
+      </a>
+     </h4>
+     <ul class="second">
+      <li>
+       <a href="#Statement">
+        Statement
+       </a>
+      </li>
+      <li>
+       <a href="#DefinitionStatement">
+        Definition Statement
+       </a>
+      </li>
+      <li>
+       <a href="#CheckStatement">
+        Check Statement
+       </a>
+      </li>
+      <li>
+       <a href="#CategoryCheckStatement">
+        Category Check Statement
+       </a>
+      </li>
+      <li>
+       <a href="#CertificateCheckStatement">
+        Certificate Check Statement
+       </a>
+      </li>
+      <li>
+       <a href="#ChecklistStatement">
+        Checklist Statement
+       </a>
+      </li>
+      <li>
+       <a href="#HumanEvaluatedCheckStatement">
+        Human Evaluated Check Statement
+       </a>
+      </li>
+      <li>
+       <a href="#NumericalCheckStatement">
+        Numerical Check Statement
+       </a>
+      </li>
+      <li>
+       <a href="#BooleanCheckStatement">
+        Boolean Check Statement
+       </a>
+      </li>
+      <li>
+       <a href="#AndCheckStatement">
+        And Check Statement
+       </a>
+      </li>
+      <li>
+       <a href="#OrCheckStatement">
+        Or Check Statement
+       </a>
+      </li>
+      <li>
+       <a href="#NotCheckStatement">
+        Not Check Statement
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <h4>
+      <a href="#objectproperties">
+       Object Properties
+      </a>
+     </h4>
+     <ul class="second">
+      <li>
+       <a href="#hasEvidence">
+        hasEvidence
+       </a>
+      </li>
+      <li>
+       <a href="#hasInlinePart">
+        hasInlinePart
+       </a>
+      </li>
+      <li>
+       <a href="#definitionOf">
+        definition of
+       </a>
+      </li>
+      <li>
+       <a href="#hasDefinition">
+        has definition
+       </a>
+      </li>
+      <li>
+       <a href="#hasEvaluator">
+        has evaluator
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <h4>
+      <a href="#namespaces">
+       Namespaces
+      </a>
+     </h4>
+     <ul class="second">
+      <li>
+       <a href="#aec3po">
+        aec3po
+       </a>
+      </li>
+      <li>
+       <a href="#cc">
+        cc
+       </a>
+      </li>
+      <li>
+       <a href="#dct">
+        dct
+       </a>
+      </li>
+      <li>
+       <a href="#owl">
+        owl
+       </a>
+      </li>
+      <li>
+       <a href="#rdf">
+        rdf
+       </a>
+      </li>
+      <li>
+       <a href="#rdfs">
+        rdfs
+       </a>
+      </li>
+      <li>
+       <a href="#skos">
+        skos
+       </a>
+      </li>
+      <li>
+       <a href="#vann">
+        vann
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <h4>
+      <a href="#legend">
+       Legend
+      </a>
+     </h4>
+     <ul class="second">
+     </ul>
+    </li>
+   </ul>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,93 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aec3po:checking_act a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description "The AEC3PO Checking Act module describes the act of checking some entities for something and generating a compliance verification report."@en ;
+    dct:modified "2023-05-26"^^xsd:date ;
+    dct:title "AEC3PO: Checking Act"@en ;
+    owl:imports aec3po:check_method , aec3po:compliance_verification_report ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+
+aec3po:CheckingAct a owl:Class ;
+    rdfs:label "Checking Act"@en ;
+    rdfs:comment """Act of checking some entities for something and generating a compliance verification report. 
+    
+- Links to the check method that was used, which operationalizes a statement in a document;
+- Links to the process verifier that made the checking act;
+- Links to the entities that are checked;
+- Links to compliance verification report that resulted.
+
+"""@en ;
+    rdfs:isDefinedBy aec3po:checking_act ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:someValuesFrom aec3po:CheckMethod ;
+            owl:onProperty aec3po:usedMethod ],
+        [ a owl:Restriction ;
+            owl:onProperty aec3po:madeBy ;
+            owl:someValuesFrom aec3po:ProcessVerifier ],
+        [ a owl:Restriction ;
+            owl:someValuesFrom owl:Thing ;
+            owl:onProperty aec3po:checked ],
+        [ a owl:Restriction ;
+            owl:someValuesFrom aec3po:ComplianceVerificationReport ;
+            owl:onProperty aec3po:hasReport ],
+        dul:Event .
+
+aec3po:startTime a owl:DatatypeProperty ;
+    rdfs:label "start time"@en ;
+    rdfs:comment "the start time of the checking act"@en ;
+    rdfs:domain aec3po:CheckingAct ;
+    rdfs:range xsd:dateTime ;
+    rdfs:isDefinedBy aec3po:checking_act .
+
+aec3po:endTime a owl:DatatypeProperty ;
+    rdfs:label "end time"@en ;
+    rdfs:comment "the end time of the checking act"@en ;
+    rdfs:domain aec3po:CheckingAct ;
+    rdfs:range xsd:dateTime ;
+    rdfs:isDefinedBy aec3po:checking_act .
+    
+aec3po:usedMethod a owl:ObjectProperty ;
+    rdfs:label "used method"@en ;
+    rdfs:comment "Links a checking act to the method it used (a aec3po:CheckMethod)."@en ;
+    rdfs:domain aec3po:CheckingAct ;
+    rdfs:isDefinedBy aec3po:checking_act ;
+    rdfs:range aec3po:CheckMethod .
+
+aec3po:madeBy a owl:ObjectProperty ;
+    rdfs:label "made by"@en ;
+    rdfs:comment "Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier)."@en ;
+    rdfs:domain aec3po:CheckingAct ;
+    rdfs:isDefinedBy aec3po:checking_act ;
+    rdfs:range aec3po:ProcessVerifier .
+
+aec3po:checked a owl:ObjectProperty ;
+    rdfs:label "checked"@en ;
+    rdfs:comment "Links a checking act to some entity (ex. statement, feature of interest, property) it checked."@en ;
+    rdfs:domain aec3po:CheckingAct ;
+    rdfs:isDefinedBy aec3po:checking_act .
+
+aec3po:hasReport a owl:ObjectProperty ;
+    rdfs:label "has report"@en ;
+    rdfs:comment "Links a checking act to the resulting compliance verification report."@en ;
+    rdfs:domain aec3po:CheckingAct ;
+    rdfs:isDefinedBy aec3po:checking_act ;
+    rdfs:range aec3po:ComplianceVerificationReport .
+
+#aec3po:conforms a owl:DatatypeProperty ;
+  #  rdfs:label "conforms"@en ;
+ #   rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
+ #   rdfs:domain aec3po:ComplianceVerificationeReport ;
+  #  rdfs:isDefinedBy aec3po:checking_act ;
+   # rdfs:range xsd:boolean .
+

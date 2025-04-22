@@ -1,0 +1,71 @@
+@base <https://w3id.org/lbd/aec3po/> .
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dicl: <https://w3id.org/digitalconstruction/0.5/Lifecycle#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<hasPermittingStage> a owl:ObjectProperty ;
+    rdfs:label "has permitting stage"@en ;
+    rdfs:comment "Links an entity to the permitting stage this entity pertains"@en ;
+    rdfs:isDefinedBy <permitting_stage> ;
+    rdfs:range <PermittingStage> ;
+    owl:equivalentProperty dicl:hasStage .
+
+<UK_Building_Control_Submission> a owl:NamedIndividual,
+        skos:Concept,
+        <PermittingStage> ;
+    rdfs:isDefinedBy <permitting_stage> ;
+    skos:definition "The UK Building Control Submission permitting stage."@en ;
+    skos:inScheme <PermittingStageNomenclature> ;
+    skos:prefLabel "building control submission"@en ;
+    skos:topConceptOf <PermittingStageNomenclature> ;
+    <forAdministrativeArea> <England> .
+
+<UK_Planning_Permission> a owl:NamedIndividual,
+        skos:Concept,
+        <PermittingStage> ;
+    rdfs:isDefinedBy <permitting_stage> ;
+    skos:definition "The UK Planning Permission permitting stage."@en ;
+    skos:inScheme <PermittingStageNomenclature> ;
+    skos:prefLabel "planning permission"@en ;
+    skos:topConceptOf <PermittingStageNomenclature> ;
+    <forAdministrativeArea> <England> .
+
+<PermittingStage> a owl:Class ;
+    rdfs:label "Permitting Stage"@en ;
+    rdfs:comment "The class of permitting stages."@en ;
+    rdfs:isDefinedBy <permitting_stage> ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue <PermittingStageNomenclature> ;
+                        owl:onProperty skos:inScheme ] ) ] .
+
+<PermittingStageNomenclature> a skos:ConceptScheme ;
+    rdfs:label "Permitting stage nomenclature"@en ;
+    rdfs:isDefinedBy <permitting_stage> ;
+    skos:definition """A set of values for permitting stages.
+  AEC3PO includes a set of values for this nomenclature.
+  These values are :
+  - UK_Building_Control_Submission;
+  - UK_Planning_Permission."""@en ;
+    skos:hasTopConcept <UK_Building_Control_Submission>,
+        <UK_Planning_Permission> .
+
+<permitting_stage> a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:created "2023-05-25"^^xsd:date ;
+    dct:description "Definition of a permitting stage concept scheme for AEC3PO."@en ;
+    dct:modified "2023-05-25"^^xsd:date,
+        "2023-08-31"^^xsd:date ;
+    dct:title "AEC3PO: Permitting Stage"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
+    owl:imports <administrative_areas> .
+

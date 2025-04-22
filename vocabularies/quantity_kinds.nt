@@ -1,0 +1,112 @@
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2004/02/skos/core#example> "Length, Area, U-Value."@en .
+_:n48a11ce3b45a4f7f9bd48646db28350eb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://www.w3.org/2004/02/skos/core#prefLabel> "Partial Safety Factor"@en .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+_:n48a11ce3b45a4f7f9bd48646db28350eb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/QuantityKind> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://qudt.org/schema/qudt/hasDimensionVector> <http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Length> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/QuantityKind> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://www.w3.org/2004/02/skos/core#prefLabel> "width of angled corridor"@en .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor> <http://www.w3.org/2004/02/skos/core#prefLabel> "Partial Safety Factor"@en .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor> <http://qudt.org/schema/qudt/hasDimensionVector> <http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/QuantityKind> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://qudt.org/schema/qudt/hasDimensionVector> <http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T0D0> .
+_:n48a11ce3b45a4f7f9bd48646db28350eb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/IN> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://www.w3.org/2004/02/skos/core#prefLabel> "modular room height"@en .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/MilliM> .
+<http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://purl.org/dc/terms/title> "AEC3PO: Quantity Kinds"@en .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Force> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/CentiM> .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2004/02/skos/core#note> "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/QuantityKind> .
+<https://w3id.org/lbd/aec3po/QuantityKindNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity Kind nomenclature"@en .
+<https://w3id.org/lbd/aec3po/AxialCompressionStress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity Kind"@en .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/QuantityKind> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://www.w3.org/2004/02/skos/core#definition> "Also written γM0, the partial safety factor for resistance related to member resistance without instability."@en .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://qudt.org/schema/qudt/normativeReference> "https://www.iso.org/obp/ui/#iso:std:iso:7176:-5:ed-2:v1:en:term:3.25"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lbd/aec3po/PartialSafetyFactor> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://www.w3.org/2004/02/skos/core#broader> <https://w3id.org/lbd/aec3po/PartialSafetyFactor> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/M> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://www.w3.org/2004/02/skos/core#definition> "Also written γM1, the partial safety factor for resistance related to any limit state where instability governs."@en .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2002/07/owl#equivalentClass> _:n48a11ce3b45a4f7f9bd48646db28350eb1 .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://qudt.org/schema/qudt/normativeReference> "https://www.iso.org/obp/ui/#iso:std:iso:6707:-1:ed-6:v1:en:term:3.7.2.47"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://www.w3.org/2004/02/skos/core#definition> "Force tending to reduce the size of a body." .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor> <http://www.w3.org/2004/02/skos/core#definition> "Also written γM, the partial safety factor for resistance."@en .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/QuantityKind> .
+<https://w3id.org/lbd/aec3po/ModificationFactorKmod> <http://www.w3.org/2004/02/skos/core#definition> "Modification Factor to take into account the duration of load"@en .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n48a11ce3b45a4f7f9bd48646db28350eb1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n48a11ce3b45a4f7f9bd48646db28350eb3 .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://www.w3.org/2004/02/skos/core#definition> "vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling."@en .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://purl.org/dc/terms/modified> "2023-09-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/CentiM> .
+<https://w3id.org/lbd/aec3po/AxialCompressionStress> <http://qudt.org/schema/qudt/hasDimensionVector> <http://qudt.org/vocab/dimensionvector/A0E0L1I0M-1H0T-2D0> .
+<https://w3id.org/lbd/aec3po/QuantityKindNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for quantity kinds.\n    AEC3PO includes a set of values for this nomenclature."@en .
+<http://qudt.org/schema/qudt/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://qudt.org/2.1/schema/qudt> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://qudt.org/schema/qudt/hasDimensionVector> <http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/MilliIN> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/ModificationFactorKmod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/QuantityKind> .
+<https://w3id.org/lbd/aec3po/ModificationFactorKmod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/ModificationFactorKmod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/ModificationFactorKmod> <http://qudt.org/schema/qudt/hasDimensionVector> <http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0> .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://qudt.org/schema/qudt/symbol> "C" .
+<https://w3id.org/lbd/aec3po/QuantityKindNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.\n\n  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.\n\n  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) \n    "@en .
+<https://w3id.org/lbd/aec3po/AxialCompressionStress> <http://www.w3.org/2004/02/skos/core#prefLabel> "axial compression stress"@en .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+_:n48a11ce3b45a4f7f9bd48646db28350eb2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/QuantityKindNomenclature> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Length> .
+<https://w3id.org/lbd/aec3po/QuantityKindNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/ModificationFactorKmod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:n48a11ce3b45a4f7f9bd48646db28350eb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n48a11ce3b45a4f7f9bd48646db28350eb2 .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/UNITLESS> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://www.w3.org/2000/01/rdf-schema#label> "Partial Safety Factor"@en .
+_:n48a11ce3b45a4f7f9bd48646db28350eb2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://qudt.org/schema/qudt/hasDimensionVector> <http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-2D0> .
+<https://w3id.org/lbd/aec3po/AxialCompressionStress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/QuantityKindNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:n48a11ce3b45a4f7f9bd48646db28350eb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n48a11ce3b45a4f7f9bd48646db28350eb4 .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/IN> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/UNITLESS> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor0> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/UNITLESS> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://www.w3.org/2004/02/skos/core#definition> "width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions."@en .
+<https://w3id.org/lbd/aec3po/AxialCompressionStress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/QuantityKind> .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/MilliM> .
+<https://w3id.org/lbd/aec3po/ModificationFactorKmod> <http://www.w3.org/2004/02/skos/core#prefLabel> "Modification Factor Kmod"@en .
+<https://w3id.org/lbd/aec3po/CompressiveForce> <http://www.w3.org/2004/02/skos/core#prefLabel> "compressive force"@en .
+<https://w3id.org/lbd/aec3po/ModificationFactorKmod> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/UNITLESS> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/ModularRoomHeight> <http://qudt.org/schema/qudt/hasDimensionVector> <http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T0D0> .
+<https://w3id.org/lbd/aec3po/AxialCompressionStress> <http://www.w3.org/2004/02/skos/core#definition> "also known as fc0k" .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region> .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://purl.org/dc/terms/created> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/WidthOfAngledCorridor> <http://qudt.org/schema/qudt/applicableUnit> <http://qudt.org/vocab/unit/MilliIN> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/quantity_kinds> <http://purl.org/dc/terms/description> "Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)\n\n  Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) \n\n  This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain."@en .
+<https://w3id.org/lbd/aec3po/AxialCompressionStress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/PartialSafetyFactor1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/QuantityKind> .

@@ -1,0 +1,89 @@
+@base <https://w3id.org/lbd/aec3po/> .
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<endTime> a owl:DatatypeProperty ;
+    rdfs:label "end time"@en ;
+    rdfs:comment "the end time of the checking act"@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range xsd:dateTime .
+
+<startTime> a owl:DatatypeProperty ;
+    rdfs:label "start time"@en ;
+    rdfs:comment "the start time of the checking act"@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range xsd:dateTime .
+
+<checked> a owl:ObjectProperty ;
+    rdfs:label "checked"@en ;
+    rdfs:comment "Links a checking act to some entity (ex. statement, feature of interest, property) it checked."@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> .
+
+<hasReport> a owl:ObjectProperty ;
+    rdfs:label "has report"@en ;
+    rdfs:comment "Links a checking act to the resulting compliance verification report."@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range <ComplianceVerificationReport> .
+
+<madeBy> a owl:ObjectProperty ;
+    rdfs:label "made by"@en ;
+    rdfs:comment "Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier)."@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range <ProcessVerifier> .
+
+<usedMethod> a owl:ObjectProperty ;
+    rdfs:label "used method"@en ;
+    rdfs:comment "Links a checking act to the method it used (a aec3po:CheckMethod)."@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range <CheckMethod> .
+
+<CheckingAct> a owl:Class ;
+    rdfs:label "Checking Act"@en ;
+    rdfs:comment """Act of checking some entities for something and generating a compliance verification report. 
+    
+- Links to the check method that was used, which operationalizes a statement in a document;
+- Links to the process verifier that made the checking act;
+- Links to the entities that are checked;
+- Links to compliance verification report that resulted.
+
+"""@en ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <usedMethod> ;
+            owl:someValuesFrom <CheckMethod> ],
+        [ a owl:Restriction ;
+            owl:onProperty <madeBy> ;
+            owl:someValuesFrom <ProcessVerifier> ],
+        [ a owl:Restriction ;
+            owl:onProperty <checked> ;
+            owl:someValuesFrom owl:Thing ],
+        [ a owl:Restriction ;
+            owl:onProperty <hasReport> ;
+            owl:someValuesFrom <ComplianceVerificationReport> ],
+        dul:Event .
+
+<checking_act> a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:created "2023-05-26"^^xsd:date ;
+    dct:description "The AEC3PO Checking Act module describes the act of checking some entities for something and generating a compliance verification report."@en ;
+    dct:modified "2023-05-26"^^xsd:date,
+        "2024-02-28"^^xsd:date ;
+    dct:title "AEC3PO: Checking Act"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
+    owl:imports <check_method>,
+        <compliance_verification_report> .
+

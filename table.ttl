@@ -1,0 +1,66 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aec3po:table a owl:Ontology ;
+  cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dct:contributor aec3po:edlira ;
+  dct:description "The AEC3PO Table module describes tables as representations of data in rows and columns. Tables are described by captions."@en ;
+  dct:modified "2023-05-26"^^xsd:date ;
+  dct:title "AEC3PO: Table"@en ;
+  owl:imports aec3po:document ;
+  vann:preferredNamespacePrefix "aec3po" ;
+  vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+
+aec3po:Container a owl:Class ;
+  rdfs:subClassOf aec3po:DocumentSubdivision ;
+  rdfs:label "Container"@en ;
+  rdfs:comment """A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)""" ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:Table a owl:Class ;
+  rdfs:label "Table"@en ;
+  rdfs:comment """A table is a form of representing information or data in rows and columns. Tables are described by captions.""" ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:contains a owl:ObjectProperty ;
+  rdfs:label "Contains"@en ;
+  rdfs:comment """A container contains a table and its caption. A table contains row, columns and other elements."""@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image aec3po:Row aec3po:Column) ] ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:isContainedIn a owl:ObjectProperty ;
+  rdfs:label "is contained by"@en ;
+  rdfs:comment """A table contains row, columns and other elements."""@en ;
+  rdfs:range [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image aec3po:Row aec3po:Column aec3po:Cell) ] ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:caption a owl:DatatypeProperty ;
+  rdfs:label "caption"@en ;
+  rdfs:comment """The caption of a table, image, etc. """@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( aec3po:Table aec3po:Image) ] ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:Column a owl:Class ;
+  rdfs:label "Column"@en ;
+  rdfs:subClassOf aec3po:Table ;
+  rdfs:comment """A column in a table.""" ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:Row a owl:Class ;
+  rdfs:label "Row"@en ;
+  rdfs:subClassOf aec3po:Table ;
+  rdfs:comment """A row in a table.""" ;
+  rdfs:isDefinedBy aec3po:table .
+
+aec3po:Cell a owl:Class ;
+  rdfs:label "Cell"@en ;
+  rdfs:subClassOf aec3po:Table ;
+  rdfs:comment """A cell in a table. Cells are contained in rows and columns""" ;
+  rdfs:isDefinedBy aec3po:table .

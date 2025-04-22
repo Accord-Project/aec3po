@@ -1,0 +1,125 @@
+@base <https://w3id.org/lbd/aec3po/> .
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<forAdministrativeArea> a owl:ObjectProperty ;
+    rdfs:label "for administrative area"@en ;
+    rdfs:comment """The administrative area for which something applies.
+  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    rdfs:range <AdministrativeArea> .
+
+<England> a owl:NamedIndividual,
+        skos:Concept,
+        <AdministrativeArea> ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    skos:definition "England"@en ;
+    skos:inScheme <AdministrativeAreaNomenclature> ;
+    skos:prefLabel "England"@en ;
+    skos:topConceptOf <AdministrativeAreaNomenclature> .
+
+<Estonia> a owl:NamedIndividual,
+        skos:Concept,
+        <AdministrativeArea> ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    skos:definition "Estonia"@en ;
+    skos:inScheme <AdministrativeAreaNomenclature> ;
+    skos:prefLabel "Estonia"@en ;
+    skos:topConceptOf <AdministrativeAreaNomenclature> .
+
+<Finland> a owl:NamedIndividual,
+        skos:Concept,
+        <AdministrativeArea> ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    skos:definition "Finland"@en ;
+    skos:inScheme <AdministrativeAreaNomenclature> ;
+    skos:prefLabel "Finland"@en ;
+    skos:topConceptOf <AdministrativeAreaNomenclature> .
+
+<France> a owl:NamedIndividual,
+        skos:Concept,
+        <AdministrativeArea> ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    skos:definition "France"@en ;
+    skos:inScheme <AdministrativeAreaNomenclature> ;
+    skos:prefLabel "France"@en ;
+    skos:topConceptOf <AdministrativeAreaNomenclature> .
+
+<Germany> a owl:NamedIndividual,
+        skos:Concept,
+        <AdministrativeArea> ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    skos:definition "Germany"@en ;
+    skos:inScheme <AdministrativeAreaNomenclature> ;
+    skos:prefLabel "Germany"@en ;
+    skos:topConceptOf <AdministrativeAreaNomenclature> .
+
+<Italy> a owl:NamedIndividual,
+        skos:Concept,
+        <AdministrativeArea> ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    skos:definition "Italy"@en ;
+    skos:inScheme <AdministrativeAreaNomenclature> ;
+    skos:prefLabel "Italy"@en ;
+    skos:topConceptOf <AdministrativeAreaNomenclature> .
+
+<Spain> a owl:NamedIndividual,
+        skos:Concept,
+        <AdministrativeArea> ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    skos:definition "Spain"@en ;
+    skos:inScheme <AdministrativeAreaNomenclature> ;
+    skos:prefLabel "Spain"@en ;
+    skos:topConceptOf <AdministrativeAreaNomenclature> .
+
+<AdministrativeArea> a owl:Class ;
+    rdfs:label "Administrative Area"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept either in concept scheme aec3po:AdministrativeAreaNomenclature or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit nomenclature published of the EU Publications Office)."@en ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    rdfs:seeAlso <https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu> ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue <AdministrativeAreaNomenclature> ;
+                        owl:onProperty skos:inScheme ] ) ],
+        eli:AdministrativeArea .
+
+<administrative_areas> a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:created "2023-05-25"^^xsd:date ;
+    dct:description "Definition of an administrative areas concept scheme for AEC3PO."@en ;
+    dct:modified "2023-05-25"^^xsd:date,
+        "2023-08-31"^^xsd:date ;
+    dct:title "AEC3PO: Administrative Areas"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+
+<AdministrativeAreaNomenclature> a skos:ConceptScheme ;
+    rdfs:label "Administrative Area nomenclature"@en ;
+    rdfs:isDefinedBy <administrative_areas> ;
+    skos:definition """A set of values for the administrative areas.
+  aec3po includes a set of values for this nomenclature.
+  These values are :
+  - England
+  - Estonia
+  - Finland
+  - France
+  - Germany
+  - Italy
+  - Spain"""@en ;
+    skos:hasTopConcept <England>,
+        <Estonia>,
+        <Finland>,
+        <France>,
+        <Germany>,
+        <Italy>,
+        <Spain> .
+

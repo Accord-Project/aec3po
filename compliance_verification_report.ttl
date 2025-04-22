@@ -1,0 +1,105 @@
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+aec3po:compliance_verification_report a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:description "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcessVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
+    dct:modified "2023-05-26"^^xsd:date ;
+    dct:title "AEC3PO: Compliance Verification Report"@en ;
+    owl:imports aec3po:check_method , aec3po:compliance_verification_report ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+
+aec3po:conforms a owl:DatatypeProperty ;
+    rdfs:label "conforms"@en ;
+#    rdfs:comment "True if the checking act did not produce any validation results, and false otherwise."@en ;
+    rdfs:comment "True if the Checking act confirms the check was validated, and false otherwise."@en ;
+    rdfs:domain aec3po:ComplianceVerificationReport ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
+    rdfs:range xsd:boolean .
+
+aec3po:ComplianceVerificationReport a owl:Class ;
+    rdfs:label "Compliance Verification Report"@en ;
+    rdfs:comment """Result of a checking act. May be compliant or not."""@en ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty aec3po:conforms ;
+            owl:cardinality 1 ] .
+
+aec3po:hasResult a owl:ObjectProperty ;
+    rdfs:label "has result"@en ;
+    rdfs:comment """Links a compliance verification report to some verification result."""@en ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
+    rdfs:domain aec3po:ComplianceVerificationReport ;
+    rdfs:range  aec3po:VerificationResult .
+
+aec3po:VerificationResult a owl:Class ;
+    rdfs:label "Verification Result"@en ;
+    rdfs:comment """Individual verification result of a Compliance Verification Report."""@en ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty aec3po:verificationFocus ;
+            owl:cardinality 1 ] ,
+            [ a owl:Restriction ;
+            owl:onProperty aec3po:hasSeverity ;
+            owl:cardinality 1 ] .
+
+aec3po:verificationFocus a owl:ObjectProperty ;
+    rdfs:label "verification focus"@en ;
+    rdfs:comment "Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced." ;
+    rdfs:domain aec3po:VerificationResult ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+aec3po:verificationStatement a owl:ObjectProperty ;
+    rdfs:label "verification statement"@en ;
+    rdfs:comment "Statement that was validated when the verification result was produced." ;
+    rdfs:domain aec3po:VerificationResult ;
+    rdfs:range aec3po:CheckStatement;
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+aec3po:verificationPlanZone a owl:ObjectProperty ;
+    rdfs:label "verification plan zone"@en ;
+    rdfs:comment "Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced." ;
+    rdfs:domain aec3po:VerificationResult ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+aec3po:resultMessage a owl:DatatypeProperty ;
+    rdfs:label "result message"@en ;
+    rdfs:comment "Verification results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values may be produced based on the statements in the AEC3PO graph." ;
+    rdfs:domain aec3po:VerificationResult ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+aec3po:severity a owl:ObjectProperty ;
+    rdfs:label "severity"@en ;
+    rdfs:comment "Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the statement." ;
+    rdfs:domain aec3po:VerificationResult ;
+    rdfs:range aec3po:Severity ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+aec3po:Severity a owl:Class ;
+	rdfs:label "Severity"@en ;
+	rdfs:comment "The class of validation result severity levels, including violation and warning levels."@en ;
+    rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+    aec3po:Info a owl:NamedIndividual, aec3po:Severity ;
+        rdfs:label "Info"@en ;
+        rdfs:comment "The severity for an informational validation result."@en ;
+        rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+    aec3po:Violation a owl:NamedIndividual, aec3po:Severity ;
+        rdfs:label "Violation"@en ;
+        rdfs:comment "The severity for a violation validation result."@en ;
+        rdfs:isDefinedBy aec3po:compliance_verification_report .
+
+    aec3po:Warning a owl:NamedIndividual, aec3po:Severity ;
+        rdfs:label "Warning"@en ;
+        rdfs:comment "The severity for a warning validation result."@en ;
+        rdfs:isDefinedBy aec3po:compliance_verification_report .

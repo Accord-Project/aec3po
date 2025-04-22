@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:cc="http://creativecommons.org/ns#"
+>
+  <owl:ObjectProperty rdf:about="hasFormat">
+    <rdfs:comment xml:lang="en">Defines the format of an evidence, which is of type dct:format.</rdfs:comment>
+    <skos:example xml:lang="en">an image, a drawing or a model can be an evidence.</skos:example>
+    <rdfs:domain rdf:resource="Statement"/>
+    <rdfs:range rdf:resource="http://purl.org/dc/terms/format"/>
+    <rdfs:isDefinedBy>
+      <owl:Ontology rdf:about="evidence">
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
+        <dct:description xml:lang="en">The AEC3PO Evidence module describes the evidence that an actor in the compliance and permitting process needs to provide in order to prove that the requirements derived from a Statement have been met.</dct:description>
+        <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/Evidence.png"/>
+        <dct:title xml:lang="en">AEC3PO: evidence</dct:title>
+        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+        <owl:imports rdf:resource="statement"/>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-23</dct:created>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-11</dct:modified>
+      </owl:Ontology>
+    </rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasEvidence">
+    <rdfs:comment xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</rdfs:comment>
+    <skos:note xml:lang="en">Unstable. Need evidence of how this property is intended to be used</skos:note>
+    <rdfs:domain rdf:resource="Statement"/>
+    <rdfs:isDefinedBy rdf:resource="statement"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="Evidence">
+    <rdfs:label xml:lang="en">Evidence</rdfs:label>
+    <rdfs:comment xml:lang="en">A resource used as an evidence for a statement</rdfs:comment>
+    <skos:example xml:lang="en">A drawing can be an evidence.</skos:example>
+    <rdfs:isDefinedBy rdf:resource="evidence"/>
+  </owl:Class>
+</rdf:RDF>
