@@ -11,7 +11,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:n00192119cf8147559bfc144d7d75f853b1 a rdfs:Class,
+_:n3b7a3fea62ba4eaf93dd210b2e3fa3cab1 a rdfs:Class,
         owl:Class ;
     owl:unionOf ( schema:Place <AdministrativeArea> ) ;
     ns1:inRangeOf <locationCoverage> .
@@ -72,28 +72,19 @@ _:n00192119cf8147559bfc144d7d75f853b1 a rdfs:Class,
     ns1:inRangeOf <hasBuildingPhase>,
         <hasElementPhase> .
 
+xsd:string ns1:inRangeOf <material> .
+
+owl:DatatypeProperty ns1:hasMember <material> .
+
 owl:Ontology ns1:hasMember <model> .
 
 <amna> a prov:Agent .
 
 schema:Place ns1:inRangeOf <location> .
 
-xsd:string ns1:inRangeOf <description>,
-        <material>,
-        <name> .
-
-owl:DatatypeProperty ns1:hasMember <description>,
-        <material>,
-        <name> .
-
-<description> a owl:DatatypeProperty ;
-    rdfs:label "description"@en ;
-    dct:description "A textual description providing additional details about the BIM model."@en ;
-    dct:title "description"@en ;
-    rdfs:comment "A textual description providing additional details about the BIM model."@en ;
-    rdfs:domain schema:Model ;
-    rdfs:range xsd:string ;
-    owl:equivalentProperty schema:abstract .
+schema:Model ns1:inDomainOf <location>,
+        <locationCoverage>,
+        <material> .
 
 <hasBuildingPhase> a owl:ObjectProperty ;
     rdfs:label "has building phase"@en ;
@@ -142,7 +133,7 @@ owl:DatatypeProperty ns1:hasMember <description>,
     dct:title "location coverage"@en ;
     rdfs:comment "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en ;
     rdfs:domain schema:Model ;
-    rdfs:range _:n00192119cf8147559bfc144d7d75f853b1 ;
+    rdfs:range _:n3b7a3fea62ba4eaf93dd210b2e3fa3cab1 ;
     owl:equivalentProperty schema:spatialCoverage .
 
 <material> a owl:DatatypeProperty ;
@@ -154,30 +145,14 @@ owl:DatatypeProperty ns1:hasMember <description>,
     rdfs:range xsd:string ;
     owl:equivalentProperty schema:material .
 
-<name> a owl:DatatypeProperty ;
-    rdfs:label "name"@en ;
-    dct:description "The name or the identifier of the BIM model."@en ;
-    dct:title "name"@en ;
-    rdfs:comment "The name or the identifier of the BIM model."@en ;
-    rdfs:domain schema:Model ;
-    rdfs:range xsd:string ;
-    owl:equivalentProperty schema:about ;
-    owl:inverseOf schema:subjectOf .
-
-schema:Model ns1:inDomainOf <description>,
-        <location>,
-        <locationCoverage>,
-        <material>,
-        <name> .
-
-rdfs:Class ns1:hasMember _:n00192119cf8147559bfc144d7d75f853b1,
+rdfs:Class ns1:hasMember _:n3b7a3fea62ba4eaf93dd210b2e3fa3cab1,
         <Classification>,
         <Dimension>,
         <Element>,
         <Model>,
         <Phase> .
 
-owl:Class ns1:hasMember _:n00192119cf8147559bfc144d7d75f853b1,
+owl:Class ns1:hasMember _:n3b7a3fea62ba4eaf93dd210b2e3fa3cab1,
         <Classification>,
         <Dimension>,
         <Element>,
@@ -197,7 +172,7 @@ owl:ObjectProperty ns1:hasMember <hasBuildingPhase>,
     dct:created "2023-08-16"^^xsd:date ;
     dct:description "The AEC3PO model module describes a model representing part or the entirety of a site, building, or piece of infrastructure. Typically, this will be in the form of a Building Information Model."@en ;
     dct:modified "2023-08-15"^^xsd:date,
-        "2024-02-28"^^xsd:date ;
+        "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO:Model"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;

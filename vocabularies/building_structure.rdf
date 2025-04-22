@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:ns1="https://w3id.org/profile/ontdoc/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
-  xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
 >
   <owl:Class rdf:about="BuildingStructure">
     <rdf:type>
@@ -46,10 +46,10 @@
       </rdf:Description>
     </rdfs:subClassOf>
     <owl:equivalentClass>
-      <owl:Class rdf:nodeID="nac8db227dacd4612aa74af3354a4fe94b1">
+      <owl:Class rdf:nodeID="n0fda363dfc9c4b67b9b7578c01913f9fb1">
         <owl:intersectionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="nac8db227dacd4612aa74af3354a4fe94b2">
+          <owl:Restriction rdf:nodeID="n0fda363dfc9c4b67b9b7578c01913f9fb2">
             <owl:hasValue>
               <skos:ConceptScheme rdf:about="BuildingStructureNomenclature">
                 <rdfs:label xml:lang="en">Building structure nomenclature</rdfs:label>
@@ -130,35 +130,35 @@
       </owl:NamedIndividual>
     </ns1:hasMember>
   </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="nac8db227dacd4612aa74af3354a4fe94b2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="forDesign">
-    <ns1:superPropertyOf rdf:resource="forBuildingStructure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
-    <ns1:hasMember rdf:resource="hasBuildingStructure"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
+    <ns1:hasMember rdf:resource="BuildingStructure-steel"/>
+    <ns1:hasMember rdf:resource="BuildingStructure-timber"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
     <ns1:hasMember rdf:resource="forBuildingStructure"/>
     <ns1:hasMember rdf:resource="hasBuildingStructure"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
-    <ns1:hasMember rdf:resource="building_structure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="BuildingStructure"/>
-    <ns1:hasMember rdf:nodeID="nac8db227dacd4612aa74af3354a4fe94b1"/>
-  </rdf:Description>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
-    <ns1:hasMember rdf:resource="BuildingStructure-steel"/>
-    <ns1:hasMember rdf:resource="BuildingStructure-timber"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
     <ns1:hasMember rdf:resource="BuildingStructureNomenclature"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="BuildingStructure"/>
+    <ns1:hasMember rdf:nodeID="n0fda363dfc9c4b67b9b7578c01913f9fb1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
+    <ns1:hasMember rdf:resource="hasBuildingStructure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="n0fda363dfc9c4b67b9b7578c01913f9fb2"/>
+  </rdf:Description>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+  <rdf:Description rdf:about="forDesign">
+    <ns1:superPropertyOf rdf:resource="forBuildingStructure"/>
+  </rdf:Description>
   <prov:Agent rdf:about="etc"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="building_structure"/>
+  </rdf:Description>
   <rdf:Description rdf:about="hasDesign">
     <ns1:superPropertyOf rdf:resource="hasBuildingStructure"/>
   </rdf:Description>

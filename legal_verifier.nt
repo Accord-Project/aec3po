@@ -1,52 +1,52 @@
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that has the legal capacity to verify compliance with this regulation."@en .
-_:n14005b08b15f45638f08c2661678b572b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/2000/01/rdf-schema#comment> "State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. "@en .
-<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/legal_verifier> .
-<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://purl.org/dc/terms/description> "Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en .
-<http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/legal_verifier> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/description> "The AEC3PO Legal Verifier module describes actors of the compliance and permitting process that have the legal capacity to verify that a specific Statement of a compliance document has been met in a satisfactory manner."@en .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/StateVerifier> .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n14005b08b15f45638f08c2661678b572b1 .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/title> "AEC3PO: legal verifier"@en .
-_:n14005b08b15f45638f08c2661678b572b1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/lbd/aec3po/Document> .
-<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/LegalVerifier> .
-<https://w3id.org/lbd/aec3po/StateVerifier> <http://purl.org/dc/terms/title> "State Verifier"@en .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/PrivateVerifier> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/PrivateVerifier> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/2000/01/rdf-schema#label> "Private Verifier"@en .
-<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:n14005b08b15f45638f08c2661678b572b1 .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/LegalVerifier> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/created> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://purl.org/dc/terms/description> "An entity that has the legal capacity to verify compliance with this regulation."@en .
-<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://purl.org/dc/terms/title> "Private Verifier"@en .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/StateVerifier> .
-<https://w3id.org/lbd/aec3po/StateVerifier> <http://purl.org/dc/terms/description> "State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. "@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/PrivateVerifier> .
-<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/legal_verifier> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#label> "Legal Verifier"@en .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
-<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en .
-_:n14005b08b15f45638f08c2661678b572b1 <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/LegalVerifier> .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://purl.org/dc/terms/title> "Legal Verifier"@en .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/StateVerifier> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/LegalVerifier> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
 <https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/legal_verifier.png> .
-<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/legal_verifier> .
-_:n14005b08b15f45638f08c2661678b572b1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/forDocument> .
-<https://w3id.org/lbd/aec3po/legal_verifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://purl.org/dc/terms/title> "Legal Verifier"@en .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/PrivateVerifier> .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://xmlns.com/foaf/0.1/Agent> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/LegalVerifier> .
-<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#label> "Legal Verifier"@en .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://purl.org/dc/terms/description> "An entity that has the legal capacity to verify compliance with this regulation."@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/PrivateVerifier> .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/legal_verifier> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/PrivateVerifier> .
+<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/lbd/aec3po/StateVerifier> <http://purl.org/dc/terms/description> "State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. "@en .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/title> "AEC3PO: legal verifier"@en .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:nb8783af1a55c44b99a9d5b1543b6691bb1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/lbd/aec3po/Document> .
 <https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/2000/01/rdf-schema#label> "State Verifier"@en .
+<https://w3id.org/lbd/aec3po/StateVerifier> <http://purl.org/dc/terms/title> "State Verifier"@en .
+<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en .
+<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/LegalVerifier> .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/created> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/legal_verifier> .
+_:nb8783af1a55c44b99a9d5b1543b6691bb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb8783af1a55c44b99a9d5b1543b6691bb1 .
+<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://purl.org/dc/terms/description> "Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en .
+<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:nb8783af1a55c44b99a9d5b1543b6691bb1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/forDocument> .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://purl.org/dc/terms/title> "Private Verifier"@en .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/LegalVerifier> .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/legal_verifier> .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/StateVerifier> .
+_:nb8783af1a55c44b99a9d5b1543b6691bb1 <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/LegalVerifier> .
+<https://w3id.org/lbd/aec3po/PrivateVerifier> <http://www.w3.org/2000/01/rdf-schema#label> "Private Verifier"@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/StateVerifier> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/StateVerifier> .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that has the legal capacity to verify compliance with this regulation."@en .
+<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:nb8783af1a55c44b99a9d5b1543b6691bb1 .
+<https://w3id.org/lbd/aec3po/LegalVerifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/LegalVerifier> .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://purl.org/dc/terms/description> "The AEC3PO Legal Verifier module describes actors of the compliance and permitting process that have the legal capacity to verify that a specific Statement of a compliance document has been met in a satisfactory manner."@en .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/LegalVerifier> .
+<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/2000/01/rdf-schema#comment> "State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. "@en .
+<https://w3id.org/lbd/aec3po/StateVerifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/legal_verifier> .
+<https://w3id.org/lbd/aec3po/legal_verifier> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .

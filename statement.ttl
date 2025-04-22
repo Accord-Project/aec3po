@@ -17,7 +17,7 @@
     dct:title "And Check Statement"@en ;
     rdfs:comment "Check verified if and only if all of its sub-checks are verified."@en ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf _:na50d2b18858a452080c225f69200f915b1,
+    rdfs:subClassOf _:nd8635e60c1e14c5d8b216e862a7ba694b1,
         <ChecklistStatement> .
 
 <BooleanCheckStatement> a rdfs:Class,
@@ -107,7 +107,7 @@
     dct:title "Not Check Statement"@en ;
     rdfs:comment "Check verified if and only if the sub-check is not verified."@en ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf _:na50d2b18858a452080c225f69200f915b3 .
+    rdfs:subClassOf _:nd8635e60c1e14c5d8b216e862a7ba694b3 .
 
 <NumericalCheckStatement> a rdfs:Class,
         owl:Class ;
@@ -126,7 +126,7 @@
     dct:title "Or Check Statement"@en ;
     rdfs:comment "Check verified if and only if at least one of its sub-checks is verified."@en ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf _:na50d2b18858a452080c225f69200f915b2,
+    rdfs:subClassOf _:nd8635e60c1e14c5d8b216e862a7ba694b2,
         <ChecklistStatement> .
 
 <Statement> a rdfs:Class,
@@ -167,9 +167,9 @@ owl:Ontology ns1:hasMember <statement> .
     rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/43> ;
     rdfs:subPropertyOf dct:hasPart .
 
-owl:Restriction ns1:hasMember _:na50d2b18858a452080c225f69200f915b1,
-        _:na50d2b18858a452080c225f69200f915b2,
-        _:na50d2b18858a452080c225f69200f915b3 .
+owl:Restriction ns1:hasMember _:nd8635e60c1e14c5d8b216e862a7ba694b1,
+        _:nd8635e60c1e14c5d8b216e862a7ba694b2,
+        _:nd8635e60c1e14c5d8b216e862a7ba694b3 .
 
 <DocumentSubdivision> ns1:inRangeOf <definitionOf>,
         <hasDefinition> ;
@@ -246,17 +246,17 @@ owl:Class ns1:hasMember <AndCheckStatement>,
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <document> .
 
-_:na50d2b18858a452080c225f69200f915b1 a owl:Restriction ;
+_:nd8635e60c1e14c5d8b216e862a7ba694b1 a owl:Restriction ;
     owl:minCardinality 1 ;
     owl:onProperty <hasSubdivision> ;
     ns1:superClassOf <AndCheckStatement> .
 
-_:na50d2b18858a452080c225f69200f915b2 a owl:Restriction ;
+_:nd8635e60c1e14c5d8b216e862a7ba694b2 a owl:Restriction ;
     owl:minCardinality 1 ;
     owl:onProperty <hasSubdivision> ;
     ns1:superClassOf <OrCheckStatement> .
 
-_:na50d2b18858a452080c225f69200f915b3 a owl:Restriction ;
+_:nd8635e60c1e14c5d8b216e862a7ba694b3 a owl:Restriction ;
     owl:cardinality 1 ;
     owl:onProperty <hasSubdivision> ;
     ns1:superClassOf <NotCheckStatement> .

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:ns1="https://w3id.org/profile/ontdoc/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
   <owl:ObjectProperty rdf:about="hasEvidence">
     <rdfs:comment xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</rdfs:comment>
@@ -47,16 +47,11 @@
     </rdfs:isDefinedBy>
     <dct:description xml:lang="en">Defines the format of an evidence. A sub-property of dct:format</dct:description>
   </owl:ObjectProperty>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
-    <ns1:hasMember rdf:resource="evidence"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="Evidence"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
     <ns1:hasMember rdf:resource="hasEvidence"/>
     <ns1:hasMember rdf:resource="hasFormat"/>
   </rdf:Description>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
   <owl:Class rdf:about="Evidence">
     <rdf:type>
       <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
@@ -70,5 +65,10 @@
     <dct:title xml:lang="en">Evidence</dct:title>
     <dct:description xml:lang="en">A resource used as an evidence for a statement</dct:description>
   </owl:Class>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="Evidence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="evidence"/>
+  </rdf:Description>
 </rdf:RDF>

@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:ns1="https://w3id.org/profile/ontdoc/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+    <ns1:inRangeOf>
+      <owl:DatatypeProperty rdf:about="startTime">
+        <rdfs:label xml:lang="en">start time</rdfs:label>
+        <rdfs:comment xml:lang="en">the start time of the checking act</rdfs:comment>
+        <rdfs:domain rdf:resource="CheckingAct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:isDefinedBy rdf:resource="checking_act"/>
+        <dct:title xml:lang="en">start time</dct:title>
+        <dct:description xml:lang="en">the start time of the checking act</dct:description>
+      </owl:DatatypeProperty>
+    </ns1:inRangeOf>
+    <ns1:inRangeOf>
+      <owl:DatatypeProperty rdf:about="endTime">
+        <rdfs:label xml:lang="en">end time</rdfs:label>
+        <rdfs:comment xml:lang="en">the end time of the checking act</rdfs:comment>
+        <rdfs:domain rdf:resource="CheckingAct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:isDefinedBy rdf:resource="checking_act"/>
+        <dct:title xml:lang="en">end time</dct:title>
+        <dct:description xml:lang="en">the end time of the checking act</dct:description>
+      </owl:DatatypeProperty>
+    </ns1:inRangeOf>
+  </rdf:Description>
   <owl:Class rdf:about="CheckingAct">
     <rdf:type>
       <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
@@ -40,28 +64,28 @@
       </owl:Ontology>
     </rdfs:isDefinedBy>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb1">
+      <owl:Restriction rdf:nodeID="n91d995ee228547bba028da91f80be7dab1">
         <owl:someValuesFrom rdf:resource="CheckMethod"/>
         <owl:onProperty rdf:resource="usedMethod"/>
         <ns1:superClassOf rdf:resource="CheckingAct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb2">
+      <owl:Restriction rdf:nodeID="n91d995ee228547bba028da91f80be7dab2">
         <owl:onProperty rdf:resource="madeBy"/>
         <owl:someValuesFrom rdf:resource="ProcessVerifier"/>
         <ns1:superClassOf rdf:resource="CheckingAct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb3">
+      <owl:Restriction rdf:nodeID="n91d995ee228547bba028da91f80be7dab3">
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <owl:onProperty rdf:resource="checked"/>
         <ns1:superClassOf rdf:resource="CheckingAct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb4">
+      <owl:Restriction rdf:nodeID="n91d995ee228547bba028da91f80be7dab4">
         <owl:someValuesFrom rdf:resource="ComplianceVerificationReport"/>
         <owl:onProperty rdf:resource="hasReport"/>
         <ns1:superClassOf rdf:resource="CheckingAct"/>
@@ -81,28 +105,8 @@
 - Links to compliance verification report that resulted.
 
 </dct:description>
-    <ns1:inDomainOf>
-      <owl:DatatypeProperty rdf:about="startTime">
-        <rdfs:label xml:lang="en">start time</rdfs:label>
-        <rdfs:comment xml:lang="en">the start time of the checking act</rdfs:comment>
-        <rdfs:domain rdf:resource="CheckingAct"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:isDefinedBy rdf:resource="checking_act"/>
-        <dct:title xml:lang="en">start time</dct:title>
-        <dct:description xml:lang="en">the start time of the checking act</dct:description>
-      </owl:DatatypeProperty>
-    </ns1:inDomainOf>
-    <ns1:inDomainOf>
-      <owl:DatatypeProperty rdf:about="endTime">
-        <rdfs:label xml:lang="en">end time</rdfs:label>
-        <rdfs:comment xml:lang="en">the end time of the checking act</rdfs:comment>
-        <rdfs:domain rdf:resource="CheckingAct"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:isDefinedBy rdf:resource="checking_act"/>
-        <dct:title xml:lang="en">end time</dct:title>
-        <dct:description xml:lang="en">the end time of the checking act</dct:description>
-      </owl:DatatypeProperty>
-    </ns1:inDomainOf>
+    <ns1:inDomainOf rdf:resource="startTime"/>
+    <ns1:inDomainOf rdf:resource="endTime"/>
     <ns1:inDomainOf>
       <owl:ObjectProperty rdf:about="usedMethod">
         <rdfs:label xml:lang="en">used method</rdfs:label>
@@ -148,13 +152,16 @@
     </ns1:inDomainOf>
   </owl:Class>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb1"/>
-    <ns1:hasMember rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb2"/>
-    <ns1:hasMember rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb3"/>
-    <ns1:hasMember rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb4"/>
+    <ns1:hasMember rdf:nodeID="n91d995ee228547bba028da91f80be7dab1"/>
+    <ns1:hasMember rdf:nodeID="n91d995ee228547bba028da91f80be7dab2"/>
+    <ns1:hasMember rdf:nodeID="n91d995ee228547bba028da91f80be7dab3"/>
+    <ns1:hasMember rdf:nodeID="n91d995ee228547bba028da91f80be7dab4"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="CheckingAct"/>
+  <rdf:Description rdf:about="ProcessVerifier">
+    <ns1:inRangeOf rdf:resource="madeBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="ComplianceVerificationReport">
+    <ns1:inRangeOf rdf:resource="hasReport"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
     <ns1:hasMember rdf:resource="usedMethod"/>
@@ -162,25 +169,18 @@
     <ns1:hasMember rdf:resource="checked"/>
     <ns1:hasMember rdf:resource="hasReport"/>
   </rdf:Description>
-  <rdf:Description rdf:about="ComplianceVerificationReport">
-    <ns1:inRangeOf rdf:resource="hasReport"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="CheckingAct"/>
   </rdf:Description>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
     <ns1:hasMember rdf:resource="checking_act"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
-    <ns1:inRangeOf rdf:resource="startTime"/>
-    <ns1:inRangeOf rdf:resource="endTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="ProcessVerifier">
-    <ns1:inRangeOf rdf:resource="madeBy"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="CheckMethod">
-    <ns1:inRangeOf rdf:resource="usedMethod"/>
-  </rdf:Description>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
     <ns1:hasMember rdf:resource="startTime"/>
     <ns1:hasMember rdf:resource="endTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="CheckMethod">
+    <ns1:inRangeOf rdf:resource="usedMethod"/>
   </rdf:Description>
 </rdf:RDF>

@@ -20,7 +20,7 @@
     rdfs:isDefinedBy <check_method_comparators> ;
     rdfs:subClassOf skos:Concept,
         <CheckMethod> ;
-    owl:equivalentClass _:n054a34c22b134c409ab2a872c59f32eab1 ;
+    owl:equivalentClass _:n80904d9834744c99bee0cb2b582cffe1b1 ;
     ns1:hasMember <CheckMethodComparator-ge>,
         <CheckMethodComparator-gt>,
         <CheckMethodComparator-le>,
@@ -37,7 +37,7 @@ owl:ObjectProperty ns1:hasMember <hasComparator> .
 
 owl:Ontology ns1:hasMember <check_method_comparators> .
 
-owl:Restriction ns1:hasMember _:n054a34c22b134c409ab2a872c59f32eab2 .
+owl:Restriction ns1:hasMember _:n80904d9834744c99bee0cb2b582cffe1b2 .
 
 skos:ConceptScheme ns1:hasMember <CheckMethodComparatorNomenclature> .
 
@@ -47,7 +47,7 @@ skos:ConceptScheme ns1:hasMember <CheckMethodComparatorNomenclature> .
 
 <hasDesign> ns1:superPropertyOf <hasComparator> .
 
-owl:Class ns1:hasMember _:n054a34c22b134c409ab2a872c59f32eab1,
+owl:Class ns1:hasMember _:n80904d9834744c99bee0cb2b582cffe1b1,
         <CheckMethodComparator> .
 
 <CheckMethod> ns1:inRangeOf <hasComparator> ;
@@ -223,13 +223,13 @@ skos:Concept ns1:hasMember <CheckMethodComparator-ge>,
         <CheckMethodcomparator-lt>,
         <CheckMethodcomparator-neq> .
 
-_:n054a34c22b134c409ab2a872c59f32eab3 rdf:first skos:Concept ;
-    rdf:rest ( _:n054a34c22b134c409ab2a872c59f32eab2 ) .
+_:n80904d9834744c99bee0cb2b582cffe1b3 rdf:first skos:Concept ;
+    rdf:rest ( _:n80904d9834744c99bee0cb2b582cffe1b2 ) .
 
-_:n054a34c22b134c409ab2a872c59f32eab1 a owl:Class ;
-    owl:intersectionOf _:n054a34c22b134c409ab2a872c59f32eab3 .
+_:n80904d9834744c99bee0cb2b582cffe1b1 a owl:Class ;
+    owl:intersectionOf _:n80904d9834744c99bee0cb2b582cffe1b3 .
 
-_:n054a34c22b134c409ab2a872c59f32eab2 a owl:Restriction ;
+_:n80904d9834744c99bee0cb2b582cffe1b2 a owl:Restriction ;
     owl:hasValue <CheckMethodComparatorNomenclature> ;
     owl:onProperty skos:inScheme .
 

@@ -20,7 +20,7 @@
     rdfs:isDefinedBy <check_method_operators> ;
     rdfs:subClassOf skos:Concept,
         <CheckMethod> ;
-    owl:equivalentClass _:n92fa4a6c6f26496c9eb8ebbbc00cfba5b1 ;
+    owl:equivalentClass _:nd2e25e05b97e4b788aaa4449a47629bfb1 ;
     ns1:hasMember <CheckMethodOperator-addition>,
         <CheckMethodOperator-division>,
         <CheckMethodOperator-exists>,
@@ -37,7 +37,7 @@ owl:ObjectProperty ns1:hasMember <hasOperator> .
 
 owl:Ontology ns1:hasMember <check_method_operators> .
 
-owl:Restriction ns1:hasMember _:n92fa4a6c6f26496c9eb8ebbbc00cfba5b2 .
+owl:Restriction ns1:hasMember _:nd2e25e05b97e4b788aaa4449a47629bfb2 .
 
 skos:ConceptScheme ns1:hasMember <CheckMethodOperatorNomenclature> .
 
@@ -45,7 +45,7 @@ skos:ConceptScheme ns1:hasMember <CheckMethodOperatorNomenclature> .
 
 <hasDesign> ns1:superPropertyOf <hasOperator> .
 
-owl:Class ns1:hasMember _:n92fa4a6c6f26496c9eb8ebbbc00cfba5b1,
+owl:Class ns1:hasMember _:nd2e25e05b97e4b788aaa4449a47629bfb1,
         <CheckMethodOperator> .
 
 <CheckMethod> ns1:inRangeOf <hasOperator> ;
@@ -192,13 +192,13 @@ skos:Concept ns1:hasMember <CheckMethodOperator-addition>,
         <CheckMethodOperator-notExists>,
         <CheckMethodOperator-subtraction> .
 
-_:n92fa4a6c6f26496c9eb8ebbbc00cfba5b3 rdf:first skos:Concept ;
-    rdf:rest ( _:n92fa4a6c6f26496c9eb8ebbbc00cfba5b2 ) .
+_:nd2e25e05b97e4b788aaa4449a47629bfb3 rdf:first skos:Concept ;
+    rdf:rest ( _:nd2e25e05b97e4b788aaa4449a47629bfb2 ) .
 
-_:n92fa4a6c6f26496c9eb8ebbbc00cfba5b1 a owl:Class ;
-    owl:intersectionOf _:n92fa4a6c6f26496c9eb8ebbbc00cfba5b3 .
+_:nd2e25e05b97e4b788aaa4449a47629bfb1 a owl:Class ;
+    owl:intersectionOf _:nd2e25e05b97e4b788aaa4449a47629bfb3 .
 
-_:n92fa4a6c6f26496c9eb8ebbbc00cfba5b2 a owl:Restriction ;
+_:nd2e25e05b97e4b788aaa4449a47629bfb2 a owl:Restriction ;
     owl:hasValue <CheckMethodOperatorNomenclature> ;
     owl:onProperty skos:inScheme .
 

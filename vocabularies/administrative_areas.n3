@@ -21,7 +21,7 @@
     rdfs:isDefinedBy <administrative_areas> ;
     rdfs:seeAlso <https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu> ;
     rdfs:subClassOf skos:Concept ;
-    owl:equivalentClass _:n1926d00c42f9466b97c34a6909702c23b1,
+    owl:equivalentClass _:nc252eaf60f464f41a3a830776ff20cd3b1,
         eli:AdministrativeArea ;
     ns1:hasMember <England>,
         <Estonia>,
@@ -40,11 +40,11 @@ owl:ObjectProperty ns1:hasMember <forAdministrativeArea> .
 
 owl:Ontology ns1:hasMember <administrative_areas> .
 
-owl:Restriction ns1:hasMember _:n1926d00c42f9466b97c34a6909702c23b2 .
+owl:Restriction ns1:hasMember _:nc252eaf60f464f41a3a830776ff20cd3b2 .
 
 skos:ConceptScheme ns1:hasMember <AdministrativeAreaNomenclature> .
 
-owl:Class ns1:hasMember _:n1926d00c42f9466b97c34a6909702c23b1,
+owl:Class ns1:hasMember _:nc252eaf60f464f41a3a830776ff20cd3b1,
         <AdministrativeArea> .
 
 <forAdministrativeArea> a owl:ObjectProperty ;
@@ -194,13 +194,13 @@ skos:Concept ns1:hasMember <England>,
         <Italy>,
         <Spain> .
 
-_:n1926d00c42f9466b97c34a6909702c23b3 rdf:first skos:Concept ;
-    rdf:rest ( _:n1926d00c42f9466b97c34a6909702c23b2 ) .
+_:nc252eaf60f464f41a3a830776ff20cd3b3 rdf:first skos:Concept ;
+    rdf:rest ( _:nc252eaf60f464f41a3a830776ff20cd3b2 ) .
 
-_:n1926d00c42f9466b97c34a6909702c23b1 a owl:Class ;
-    owl:intersectionOf _:n1926d00c42f9466b97c34a6909702c23b3 .
+_:nc252eaf60f464f41a3a830776ff20cd3b1 a owl:Class ;
+    owl:intersectionOf _:nc252eaf60f464f41a3a830776ff20cd3b3 .
 
-_:n1926d00c42f9466b97c34a6909702c23b2 a owl:Restriction ;
+_:nc252eaf60f464f41a3a830776ff20cd3b2 a owl:Restriction ;
     owl:hasValue <AdministrativeAreaNomenclature> ;
     owl:onProperty skos:inScheme .
 

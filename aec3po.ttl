@@ -12,7 +12,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:nea4e1f87977b4166939993c71552d3fdb1 a rdfs:Class,
+_:nc8efd584ba85466bb9650df8c5fc0c52b1 a rdfs:Class,
         owl:Class ;
     owl:unionOf ( <FeatureOfInterest> <Property> <CheckMethod> ) ;
     ns1:inDomainOf <hasValue> .
@@ -45,11 +45,11 @@ schema1:name a owl:AnnotationProperty .
 
 schema1:url a owl:AnnotationProperty .
 
-rdfs:Class ns1:hasMember _:nea4e1f87977b4166939993c71552d3fdb1 .
+rdfs:Class ns1:hasMember _:nc8efd584ba85466bb9650df8c5fc0c52b1 .
 
 xsd:string ns1:inRangeOf <asText> .
 
-owl:Class ns1:hasMember _:nea4e1f87977b4166939993c71552d3fdb1 .
+owl:Class ns1:hasMember _:nc8efd584ba85466bb9650df8c5fc0c52b1 .
 
 owl:Ontology ns1:hasMember <> .
 
@@ -165,7 +165,7 @@ owl:FunctionalProperty ns1:hasMember <asText>,
     dct:description "de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal."@en ;
     dct:title "has value"@en ;
     rdfs:comment "de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal."@en ;
-    rdfs:domain _:nea4e1f87977b4166939993c71552d3fdb1 ;
+    rdfs:domain _:nc8efd584ba85466bb9650df8c5fc0c52b1 ;
     rdfs:isDefinedBy <> ;
     skos:note "The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum"@en .
 
