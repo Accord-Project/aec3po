@@ -77,9 +77,9 @@
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:created "2023-09-07"^^xsd:date ;
-    dct:description <file:///home/runner/work/aec3po/aec3po/src/rase_statement.png>,
+    dct:description <file:///home/runner/work/aec3po/aec3po/src/diagrams/rase_statement.png>,
         "The AEC3PO RASE Statement module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology."@en ;
-    dct:modified "2024-02-28"^^xsd:date ;
+    dct:modified "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: RASE statement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;

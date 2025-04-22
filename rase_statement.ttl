@@ -12,7 +12,7 @@ aec3po:rase_statement a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description """The AEC3PO RASE Statement module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology."""@en ;
-    dct:description <rase_statement.png> ;
+    dct:description <diagrams/rase_statement.png> ;
     dct:title "AEC3PO: RASE statement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;

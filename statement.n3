@@ -135,9 +135,9 @@
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:created "2023-08-31"^^xsd:date ;
-    dct:description <file:///home/runner/work/aec3po/aec3po/src/statement.png>,
+    dct:description <file:///home/runner/work/aec3po/aec3po/src/diagrams/statement.png>,
         "The AEC3PO Statement module describes a statement, of any kind, found in a document."@en ;
-    dct:modified "2024-02-28"^^xsd:date ;
+    dct:modified "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: statement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;

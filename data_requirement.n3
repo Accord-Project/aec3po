@@ -31,9 +31,9 @@
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:created "2023-10-01"^^xsd:date ;
-    dct:description <file:///home/runner/work/aec3po/aec3po/src/DataRequirement.png>,
+    dct:description <file:///home/runner/work/aec3po/aec3po/src/diagrams/data_requirement.png>,
         "The AEC3PO DataRequirement module describes the data requirements that derive from a statement. These can describe any aspect of the building model or any type of property, physical or conceptual, associated with it."@en ;
-    dct:modified "2024-02-28"^^xsd:date ;
+    dct:modified "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: Data Requirement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;

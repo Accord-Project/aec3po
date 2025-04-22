@@ -1,90 +1,90 @@
-<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#label> "verification statement"@en .
-_:n1f52cbea264a46f98d157d8b6d623f39b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/2000/01/rdf-schema#label> "Violation"@en .
-<https://w3id.org/lbd/aec3po/Info> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/check_method> .
-<https://w3id.org/lbd/aec3po/Info> <http://www.w3.org/2000/01/rdf-schema#label> "Info"@en .
-<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/title> "AEC3PO: Compliance Verification Report"@en .
-<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a compliance verification report to some verification result."@en .
-<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Severity> .
-_:n1f52cbea264a46f98d157d8b6d623f39b2 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n1f52cbea264a46f98d157d8b6d623f39b2 .
-<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#label> "Verification Result"@en .
-<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/2000/01/rdf-schema#label> "Compliance Verification Report"@en .
-_:n1f52cbea264a46f98d157d8b6d623f39b1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/conforms> .
-<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/ComplianceVerificationReport> .
-<https://w3id.org/lbd/aec3po/Severity> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of validation result severity levels, including violation and warning levels."@en .
-<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity for a violation validation result."@en .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual verification result of a Compliance Verification Report."@en .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/created> "2023-10-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/Severity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/2000/01/rdf-schema#label> "result message"@en .
-<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n1f52cbea264a46f98d157d8b6d623f39b1 .
-<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "Verification results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values may be produced based on the statements in the AEC3PO graph." .
-<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/2000/01/rdf-schema#label> "verification plan zone"@en .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/modified> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#comment> "True if the Checking act confirms the check was validated, and false otherwise."@en .
-<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
-<https://w3id.org/lbd/aec3po/Severity> <http://www.w3.org/2000/01/rdf-schema#label> "Severity"@en .
-<https://w3id.org/lbd/aec3po/Info> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/2000/01/rdf-schema#comment> "Result of a checking act. May be compliant or not."@en .
-<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
-<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-_:n1f52cbea264a46f98d157d8b6d623f39b2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/verificationFocus> .
-<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#label> "conforms"@en .
-_:n1f52cbea264a46f98d157d8b6d623f39b3 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/2000/01/rdf-schema#comment> "Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced." .
-<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-_:n1f52cbea264a46f98d157d8b6d623f39b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
-<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity for a warning validation result."@en .
-<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+_:nb7fc1303453d4e1f833c302046773d46b3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSeverity> .
+_:nb7fc1303453d4e1f833c302046773d46b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/modified> "2025-04-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-_:n1f52cbea264a46f98d157d8b6d623f39b1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/VerificationResult> .
-<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Severity> .
-<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/2000/01/rdf-schema#label> "verification focus"@en .
-<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Severity> .
-_:n1f52cbea264a46f98d157d8b6d623f39b3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSeverity> .
-_:n1f52cbea264a46f98d157d8b6d623f39b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#comment> "True if the Checking act confirms the check was validated, and false otherwise."@en .
 <https://w3id.org/lbd/aec3po/Info> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity for an informational validation result."@en .
-<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced." .
-<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
-<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "has result"@en .
-<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#comment> "Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the statement." .
-<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/2000/01/rdf-schema#label> "Warning"@en .
-<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/ComplianceVerificationReport> .
 <https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Statement that was validated when the verification result was produced." .
-<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
-<https://w3id.org/lbd/aec3po/Severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/lbd/aec3po/Info> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Severity> .
+<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual verification result of a Compliance Verification Report."@en .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
 <https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n1f52cbea264a46f98d157d8b6d623f39b3 .
+<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#label> "conforms"@en .
+<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced." .
+<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/ComplianceVerificationReport> .
+<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a compliance verification report to some verification result."@en .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/check_method> .
+<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Severity> .
+<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#label> "Verification Result"@en .
+_:nb7fc1303453d4e1f833c302046773d46b3 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb7fc1303453d4e1f833c302046773d46b2 .
+<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#label> "has result"@en .
+<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+_:nb7fc1303453d4e1f833c302046773d46b2 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "Verification results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values may be produced based on the statements in the AEC3PO graph." .
+<https://w3id.org/lbd/aec3po/Severity> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of validation result severity levels, including violation and warning levels."@en .
+<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/2000/01/rdf-schema#label> "Violation"@en .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/2000/01/rdf-schema#label> "verification plan zone"@en .
 <https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/description> "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcessVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en .
+_:nb7fc1303453d4e1f833c302046773d46b2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/verificationFocus> .
+<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
+<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:nb7fc1303453d4e1f833c302046773d46b1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:nb7fc1303453d4e1f833c302046773d46b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/2000/01/rdf-schema#label> "Warning"@en .
+<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb7fc1303453d4e1f833c302046773d46b1 .
+<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/VerificationResult> .
+<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/Severity> <http://www.w3.org/2000/01/rdf-schema#label> "Severity"@en .
+<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
+<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#comment> "Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the statement." .
+<https://w3id.org/lbd/aec3po/verificationPlanZone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Severity> .
+<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/modified> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/Violation> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity for a violation validation result."@en .
+<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#label> "severity"@en .
+<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/2000/01/rdf-schema#comment> "Result of a checking act. May be compliant or not."@en .
+_:nb7fc1303453d4e1f833c302046773d46b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/Info> <http://www.w3.org/2000/01/rdf-schema#label> "Info"@en .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#label> "verification statement"@en .
+<https://w3id.org/lbd/aec3po/Info> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/2000/01/rdf-schema#comment> "Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced." .
+<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+_:nb7fc1303453d4e1f833c302046773d46b1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/conforms> .
+<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
+<https://w3id.org/lbd/aec3po/Warning> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity for a warning validation result."@en .
+<https://w3id.org/lbd/aec3po/Severity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/resultMessage> <http://www.w3.org/2000/01/rdf-schema#label> "result message"@en .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/title> "AEC3PO: Compliance Verification Report"@en .
+<https://w3id.org/lbd/aec3po/severity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Severity> .
+<https://w3id.org/lbd/aec3po/VerificationResult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb7fc1303453d4e1f833c302046773d46b3 .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/created> "2023-10-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/conforms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/lbd/aec3po/Severity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/2000/01/rdf-schema#label> "verification focus"@en .
+<https://w3id.org/lbd/aec3po/compliance_verification_report> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/2000/01/rdf-schema#label> "Compliance Verification Report"@en .
+<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/VerificationResult> .
+<https://w3id.org/lbd/aec3po/Info> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/hasResult> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/ComplianceVerificationReport> .
+<https://w3id.org/lbd/aec3po/verificationFocus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<https://w3id.org/lbd/aec3po/ComplianceVerificationReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/verificationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

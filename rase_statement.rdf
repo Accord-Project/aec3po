@@ -1,35 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <owl:ObjectProperty rdf:about="selects">
-    <rdfs:label xml:lang="en">selects</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a check statement to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology.</rdfs:comment>
-    <skos:note xml:lang="en">Usually, the Select/Selection statements are highlighted in purple.</skos:note>
-    <rdfs:subPropertyOf rdf:resource="hasSubdivision"/>
-    <rdfs:domain rdf:resource="CheckStatement"/>
-    <rdfs:range rdf:resource="RequirementStatement"/>
-    <rdfs:isDefinedBy>
-      <owl:Ontology rdf:about="rase_statement">
-        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
-        <dct:description xml:lang="en">The AEC3PO RASE Statement module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology.</dct:description>
-        <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/rase_statement.png"/>
-        <dct:title xml:lang="en">AEC3PO: RASE statement</dct:title>
-        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
-        <owl:imports rdf:resource="statement"/>
-        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-07</dct:created>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-28</dct:modified>
-      </owl:Ontology>
-    </rdfs:isDefinedBy>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="appliesTo">
     <rdfs:label xml:lang="en">applies to</rdfs:label>
     <rdfs:comment xml:lang="en">Links a check statement to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology.</rdfs:comment>
@@ -37,6 +15,28 @@
     <rdfs:subPropertyOf rdf:resource="hasSubdivision"/>
     <rdfs:domain rdf:resource="CheckStatement"/>
     <rdfs:range rdf:resource="ApplicationStatement"/>
+    <rdfs:isDefinedBy>
+      <owl:Ontology rdf:about="rase_statement">
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
+        <dct:description xml:lang="en">The AEC3PO RASE Statement module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology.</dct:description>
+        <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/diagrams/rase_statement.png"/>
+        <dct:title xml:lang="en">AEC3PO: RASE statement</dct:title>
+        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+        <owl:imports rdf:resource="statement"/>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-07</dct:created>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
+      </owl:Ontology>
+    </rdfs:isDefinedBy>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="selects">
+    <rdfs:label xml:lang="en">selects</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a check statement to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology.</rdfs:comment>
+    <skos:note xml:lang="en">Usually, the Select/Selection statements are highlighted in purple.</skos:note>
+    <rdfs:subPropertyOf rdf:resource="hasSubdivision"/>
+    <rdfs:domain rdf:resource="CheckStatement"/>
+    <rdfs:range rdf:resource="RequirementStatement"/>
     <rdfs:isDefinedBy rdf:resource="rase_statement"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="requires">
@@ -48,7 +48,7 @@
     <rdfs:range rdf:resource="RequirementStatement"/>
     <rdfs:isDefinedBy rdf:resource="rase_statement"/>
   </owl:ObjectProperty>
-  <owl:AllDifferent rdf:nodeID="n9c5e97527e5d4cd482c9ce699860e0a5b1">
+  <owl:AllDifferent rdf:nodeID="n8976c6a81c234939a554a997756f909ab1">
     <owl:members rdf:parseType="Collection">
       <rdf:Description rdf:about="ApplicationStatement"/>
       <rdf:Description rdf:about="SelectionStatement"/>
@@ -65,6 +65,20 @@
     <rdfs:range rdf:resource="ExceptionStatement"/>
     <rdfs:isDefinedBy rdf:resource="rase_statement"/>
   </owl:ObjectProperty>
+  <owl:Class rdf:about="SelectionStatement">
+    <rdfs:label xml:lang="en">Selection Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology.</rdfs:comment>
+    <skos:note xml:lang="en">Usually, the Select/Selection statements are highlighted in purple.</skos:note>
+    <rdfs:subClassOf rdf:resource="Statement"/>
+    <rdfs:isDefinedBy rdf:resource="rase_statement"/>
+  </owl:Class>
+  <owl:Class rdf:about="RequirementStatement">
+    <rdfs:label xml:lang="en">Requirement Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology.</rdfs:comment>
+    <skos:note xml:lang="en">Usually, the Required/Requirement statements are highlighted in blue.</skos:note>
+    <rdfs:subClassOf rdf:resource="Statement"/>
+    <rdfs:isDefinedBy rdf:resource="rase_statement"/>
+  </owl:Class>
   <owl:Class rdf:about="ApplicationStatement">
     <rdfs:label xml:lang="en">ApplicationStatement</rdfs:label>
     <rdfs:comment xml:lang="en">Represents the Applications tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology.</rdfs:comment>
@@ -76,20 +90,6 @@
     <rdfs:label xml:lang="en">Exception Statement</rdfs:label>
     <rdfs:comment xml:lang="en">Represents the Exception tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology.</rdfs:comment>
     <skos:note xml:lang="en">Usually, the Excepted/Exception statements are highlighted in yellow.</skos:note>
-    <rdfs:subClassOf rdf:resource="Statement"/>
-    <rdfs:isDefinedBy rdf:resource="rase_statement"/>
-  </owl:Class>
-  <owl:Class rdf:about="RequirementStatement">
-    <rdfs:label xml:lang="en">Requirement Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology.</rdfs:comment>
-    <skos:note xml:lang="en">Usually, the Required/Requirement statements are highlighted in blue.</skos:note>
-    <rdfs:subClassOf rdf:resource="Statement"/>
-    <rdfs:isDefinedBy rdf:resource="rase_statement"/>
-  </owl:Class>
-  <owl:Class rdf:about="SelectionStatement">
-    <rdfs:label xml:lang="en">Selection Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology.</rdfs:comment>
-    <skos:note xml:lang="en">Usually, the Select/Selection statements are highlighted in purple.</skos:note>
     <rdfs:subClassOf rdf:resource="Statement"/>
     <rdfs:isDefinedBy rdf:resource="rase_statement"/>
   </owl:Class>

@@ -12,7 +12,7 @@ aec3po:statement a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description """The AEC3PO Statement module describes a statement, of any kind, found in a document."""@en ;
-    dct:description <statement.png> ;
+    dct:description <diagrams/statement.png> ;
     dct:title "AEC3PO: statement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;

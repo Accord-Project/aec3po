@@ -106,7 +106,8 @@
     dct:created """2024-01-24'
 '2023-09-25"""^^xsd:date ;
     dct:description "Definition of comparators scheme for AEC3PO."@en ;
-    dct:modified "2024-01-24"^^xsd:date ;
+    dct:modified "2024-01-24"^^xsd:date,
+        "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: comparators"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
@@ -115,14 +116,18 @@
     rdfs:label "check method nomenclature"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition """A set of comparators for the check method.
+
   AEC3PO includes a set of comparators for this nomenclature.
+
   These comparators are :
+
   - _eq : equal-to comparator;
   - comparator_neq : not equal-to comparator.
   - comparator_lt : less-than comparator.
   - comparator_le : less-equal comparator.
   - comparator_gt : greater-than comparator.
-  - comparator_ge : greater-equal comparator."""@en ;
+  - comparator_ge : greater-equal comparator.
+  """@en ;
     skos:hasTopConcept <CheckMethodComparator-eq>,
         <CheckMethodcomparator-ge>,
         <CheckMethodcomparator-gt>,

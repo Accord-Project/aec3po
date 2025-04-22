@@ -31,14 +31,18 @@ aec3po:CheckMethodComparatorNomenclature a skos:ConceptScheme ;
     rdfs:label "check method nomenclature"@en ;
     rdfs:isDefinedBy aec3po:check_method_comparators ;
     skos:definition """A set of comparators for the check method.
+
   AEC3PO includes a set of comparators for this nomenclature.
+
   These comparators are :
+
   - _eq : equal-to comparator;
   - comparator_neq : not equal-to comparator.
   - comparator_lt : less-than comparator.
   - comparator_le : less-equal comparator.
   - comparator_gt : greater-than comparator.
-  - comparator_ge : greater-equal comparator."""@en ;
+  - comparator_ge : greater-equal comparator.
+  """@en ;
     skos:hasTopConcept aec3po:CheckMethodComparator-eq, 
         aec3po:CheckMethodcomparator-neq, 
         aec3po:CheckMethodcomparator-lt, 

@@ -114,13 +114,13 @@ skos:note a owl:AnnotationProperty .
     dct:creator <edlira>,
         <pan> ;
     dct:description "The Architecture, Engineering and Construction Compliance Checking and Permitting ontology (AEC3PO), based on the statements on building compliance-related document and design codes."@en ;
-    dct:modified "2024-02-28"^^xsd:date ;
+    dct:modified "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <check_method>,
         <checking_act>,
-        <conformance_report>,
+        <compliance_verification_report>,
         <data_requirement>,
         <design>,
         <document>,

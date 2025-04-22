@@ -298,7 +298,7 @@ td {
         "@value": "The AEC3PO Evidence module describes the evidence that an actor in the compliance and permitting process needs to provide in order to prove that the requirements derived from a Statement have been met."
       },
       {
-        "@id": "file:///home/runner/work/aec3po/aec3po/src/Evidence.png"
+        "@id": "file:///home/runner/work/aec3po/aec3po/src/diagrams/evidence.png"
       }
     ],
     "https://schema.org/name": [
@@ -614,7 +614,7 @@ td {
      The AEC3PO Evidence module describes all resources that can be used to assess the validity and relevance of the statement.
      <p>
       <figure>
-       <img alt="Illustration of the core concepts in the Evidence module" src="diagrams/Evidence.png"/>
+       <img alt="Illustration of the core concepts in the Evidence module" src="diagrams/evidence.png"/>
        <figcaption>
         Illustration of the core concepts in the Evidence module
        </figcaption>
@@ -796,7 +796,7 @@ td {
        </th>
        <td>
         <p>
-         Defines the format of an evidence, which is of type dct:format.
+         Defines the format of an evidence. A sub-property of dct:format
         </p>
        </td>
       </tr>
@@ -812,20 +812,8 @@ td {
       </tr>
       <tr>
        <th>
-        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
-         Domain
-        </a>
-       </th>
-       <td>
-        <a href="#Statement">
-         aec3po:Statement
-        </a>
-       </td>
-      </tr>
-      <tr>
-       <th>
-        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
-         Range
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">
+         Sub Property Of
         </a>
        </th>
        <td>
@@ -837,6 +825,18 @@ td {
           p
          </sup>
         </span>
+       </td>
+      </tr>
+      <tr>
+       <th>
+        <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">
+         Domain
+        </a>
+       </th>
+       <td>
+        <a href="#Statement">
+         aec3po:Statement
+        </a>
        </td>
       </tr>
      </table>

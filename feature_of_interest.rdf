@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <owl:ObjectProperty rdf:about="hasProperty">
-    <rdfs:label xml:lang="en">has Property</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it.</rdfs:comment>
-    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+  <owl:ObjectProperty rdf:about="hasQuantityKind">
+    <rdfs:label xml:lang="en">has quantity kind</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a property to its quantity kind</rdfs:comment>
+    <rdfs:domain rdf:resource="Property"/>
+    <rdfs:range rdf:resource="QuantityKind"/>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="feature_of_interest">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -26,16 +27,15 @@
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:created>
       </owl:Ontology>
     </rdfs:isDefinedBy>
+    <skos:example xml:lang="en">A space area property to the property kind "area".</skos:example>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasProperty">
+    <rdfs:label xml:lang="en">has Property</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it.</rdfs:comment>
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
     <rdfs:range rdf:resource="Property"/>
     <skos:example xml:lang="en">Links a space to the area property of that space, a wall to the U-value property of that wall...</skos:example>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="hasQuantityKind">
-    <rdfs:label xml:lang="en">has quantity kind</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a property to its quantity kind</rdfs:comment>
-    <rdfs:domain rdf:resource="Property"/>
-    <rdfs:range rdf:resource="QuantityKind"/>
-    <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
-    <skos:example xml:lang="en">A space area property to the property kind "area".</skos:example>
   </owl:ObjectProperty>
   <owl:Class rdf:about="Property">
     <rdfs:label xml:lang="en">Property</rdfs:label>

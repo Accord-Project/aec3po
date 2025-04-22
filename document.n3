@@ -93,12 +93,12 @@
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:created "2023-05-25"^^xsd:date ;
-    dct:description <file:///home/runner/work/aec3po/aec3po/src/document.png>,
+    dct:description <file:///home/runner/work/aec3po/aec3po/src/diagrams/document.png>,
         """The AEC3PO Document module describes a document, of any kind, typically related to compliance and permitting. Documents are split into division and subdivisions, down to individual statements.
 
 Document subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back."""@en ;
     dct:modified "2023-05-25"^^xsd:date,
-        "2024-02-28"^^xsd:date ;
+        "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: document"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
