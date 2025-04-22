@@ -23,7 +23,8 @@ The ontology is built using Semantic Web technologies, adhering to standards lik
       2. [Permitting](#permitting)
 3. [Overview of AEC3PO Modules and Alignments](#overview)
    1. [AEC3PO Modules](#modules)
-   2. [AEC3PO Alignments](#alignments)
+   2. [AEC3PO Vocabularies](#vocabularies)
+   3. [AEC3PO Alignments](#alignments)
 4. [Examples](#examples)
 ## Namespace <a name="namespace"></a>
 The AEC3PO ontology's namespace is `https://w3id.org/lbd/aec3po/`.
@@ -32,7 +33,7 @@ The prefixed is `aec3po:`.
 
 ## Ontology Requirements <a name="requirements"></a>
 
-### ACCORD Requirements <a name="porposal"></a>
+### ACCORD Requirements <a name="proposal"></a>
 
 The AEC3PO is a significant component of the Compliance and Permitting Semantic Framework developed in the ACCORD project. As part of Work Package 2 (WP2), AEC3PO plays a pivotal role in Task T2.2, building upon the foundation laid by the literature prepared in Task T2.1. Drawing inspiration from the ontologies presented in T2.1, AEC3PO establishes a structured knowledge representation that captures essential concepts, relationships, and rules related to compliance checks and permitting stages within construction projects. By aligning with the objectives of the ACCORD project, AEC3PO serves as the basis of i) rule formalization methodology (Task 2.3); ii) Domain Specific Rule Language, and iii) 
 rule formalization tool (Task 2.3), facilitating seamless communication and collaboration among experts, stakeholders, and regulatory bodies in the AEC industry.
@@ -118,6 +119,20 @@ Below is an overview of each module and its sub-components:
       
 Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, SHACL and composite checks. 
 Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the **_ComplianceVerificationReport_** stores the outcomes of the check, their validation results and the corresponding messages. 
+
+### AEC3PO Vocabularies <a name="vocabularies"></a>
+
+AEC3PO contains stub of concept schemes for describing:
+
+* [administrative areas](vocabularies/administrative_areas)
+* [permitting stages](vocabularies/permitting_stages)
+* [building structures](vocabularies/building_structure)
+* [building usage](vocabularies/building_usage)
+* [disciplines](vocabularies/disciplines)
+* [quantity kinds](vocabularies/quantity_kinds)
+* [check method comparators](vocabularies/check_method_comparators)
+* [check method operators](vocabularies/check_method_operators)
+
 
 ### AEC3PO Alignments <a name="alignments"></a>
 AEC3PO contains five modules, each of them imports an external ontology, and specifies a set of alignment axioms to connect the terms of the imported ontologies with each other. The figure below illustrates the alignment of the AEC3PO ontology with various other ontologies, showcasing how different domains and concepts interconnect for a comprehensive representation of compliance and permitting in the AEC industry.

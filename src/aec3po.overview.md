@@ -56,6 +56,20 @@ Below is an overview of the core modules and their components:
     - Properties: _requires_, _appliesTo_, _selects_, _except_. 
  
 
+
+### AEC3PO Vocabularies <a name="vocabularies"></a>
+
+AEC3PO contains stub of concept schemes for describing:
+
+* [administrative areas](vocabularies/administrative_areas)
+* [permitting stages](vocabularies/permitting_stages)
+* [building structures](vocabularies/building_structure)
+* [building usage](vocabularies/building_usage)
+* [disciplines](vocabularies/disciplines)
+* [quantity kinds](vocabularies/quantity_kinds)
+* [check method comparators](vocabularies/check_method_comparators)
+* [check method operators](vocabularies/check_method_operators)
+
 ### AEC3PO Alignments and Reuse <a name="alignments"></a>
 AEC3PO contains five modules, which import an external ontology and specify alignment axioms to connect the terms. 
 The figure below illustrates the alignment of AEC3PO with the imported ontologies.
