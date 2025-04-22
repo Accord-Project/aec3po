@@ -24,21 +24,6 @@ aec3po:Model a owl:Class ;
   rdfs:comment """A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information.""" ;
   rdfs:isDefinedBy aec3po:model .
 
-aec3po:name a owl:DatatypeProperty ;
- rdfs:label "name"@en ;
- rdfs:comment "The name or the identifier of the BIM model."@en ;
- rdfs:domain schema:Model ;
- rdfs:range xsd:string ;
- owl:inverseOf schema:subjectOf ;
- owl:equivalentProperty schema:about .
-
-aec3po:description a owl:DatatypeProperty ;
- rdfs:label "description"@en ;
- rdfs:comment "A textual description providing additional details about the BIM model."@en ;
- rdfs:domain schema:Model ;
- rdfs:range xsd:string ;
- owl:equivalentProperty schema:abstract .
-
 aec3po:location a owl:ObjectProperty ;
  rdfs:label "location"@en ;
  rdfs:comment "The physical or geographic location of the building or structure represented in the BIM model."@en ;
