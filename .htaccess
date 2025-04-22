@@ -36,7 +36,7 @@ RewriteRule ^(.*)$ /aec3po/rase_statement#$1 [R=303,NE]
 RewriteCond %{REQUEST_URI} ^/aec3po/(Container|Table|contains|isContainedIn|caption|Column|Row|Cell)$
 RewriteRule ^(.*)$ /aec3po/table#$1 [R=303,NE]
             
-RewriteCond %{REQUEST_URI} ^/aec3po/(conforms|ComplianceVerificationReport|hasResult|VerificationResult|verificationFocus|verificationStatement|verificationPlanZone|resultMessage|severity|Severity|Info|Violation|Warning)$
+RewriteCond %{REQUEST_URI} ^/aec3po/(conforms|ComplianceVerificationReport|hasResult|VerificationResult|verificationFocus|verificationStatement|verificationPlanZone|resultMessage|hasSeverity|Severity|Info|Violation|Warning)$
 RewriteRule ^(.*)$ /aec3po/compliance_verification_report#$1 [R=303,NE]
             
 RewriteCond %{REQUEST_URI} ^/aec3po/(BuildingUsage|BuildingUsageNomenclature|forBuildingUsage|hasBuildingUsage|BuildingUsage-commercial|BuildingUsage-residential|BuildingUsage-cultural)$

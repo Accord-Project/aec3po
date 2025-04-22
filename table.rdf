@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:cc="http://creativecommons.org/ns#"
   xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
 >
   <owl:DatatypeProperty rdf:about="caption">
     <rdfs:label xml:lang="en">caption</rdfs:label>
     <rdfs:comment xml:lang="en">The caption of a table, image, etc. </rdfs:comment>
     <rdfs:domain>
-      <owl:Class rdf:nodeID="n6aa4f58cc8844450a3cd66306dc6b159b12">
+      <owl:Class rdf:nodeID="n90b1d94a3d3444edb6c83f593f9aaa9bb12">
         <owl:unionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="Table"/>
           <rdf:Description rdf:about="Image"/>
@@ -33,32 +33,11 @@
       </owl:Ontology>
     </rdfs:isDefinedBy>
   </owl:DatatypeProperty>
-  <owl:Class rdf:about="Container">
-    <rdfs:subClassOf rdf:resource="DocumentSubdivision"/>
-    <rdfs:label xml:lang="en">Container</rdfs:label>
-    <rdfs:comment>A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="table"/>
-  </owl:Class>
-  <owl:ObjectProperty rdf:about="contains">
-    <rdfs:label xml:lang="en">Contains</rdfs:label>
-    <rdfs:comment xml:lang="en">A container contains a table and its caption. A table contains row, columns and other elements.</rdfs:comment>
-    <rdfs:domain>
-      <owl:Class rdf:nodeID="n6aa4f58cc8844450a3cd66306dc6b159b1">
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="Table"/>
-          <rdf:Description rdf:about="Image"/>
-          <rdf:Description rdf:about="Row"/>
-          <rdf:Description rdf:about="Column"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
-    <rdfs:isDefinedBy rdf:resource="table"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="isContainedIn">
     <rdfs:label xml:lang="en">is contained by</rdfs:label>
     <rdfs:comment xml:lang="en">A table contains row, columns and other elements.</rdfs:comment>
     <rdfs:range>
-      <owl:Class rdf:nodeID="n6aa4f58cc8844450a3cd66306dc6b159b6">
+      <owl:Class rdf:nodeID="n90b1d94a3d3444edb6c83f593f9aaa9bb6">
         <owl:unionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="Table"/>
           <rdf:Description rdf:about="Image"/>
@@ -70,10 +49,25 @@
     </rdfs:range>
     <rdfs:isDefinedBy rdf:resource="table"/>
   </owl:ObjectProperty>
-  <owl:Class rdf:about="Column">
-    <rdfs:label xml:lang="en">Column</rdfs:label>
-    <rdfs:subClassOf rdf:resource="Table"/>
-    <rdfs:comment>A column in a table.</rdfs:comment>
+  <owl:ObjectProperty rdf:about="contains">
+    <rdfs:label xml:lang="en">Contains</rdfs:label>
+    <rdfs:comment xml:lang="en">A container contains a table and its caption. A table contains row, columns and other elements.</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class rdf:nodeID="n90b1d94a3d3444edb6c83f593f9aaa9bb1">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="Table"/>
+          <rdf:Description rdf:about="Image"/>
+          <rdf:Description rdf:about="Row"/>
+          <rdf:Description rdf:about="Column"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:isDefinedBy rdf:resource="table"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="Container">
+    <rdfs:subClassOf rdf:resource="DocumentSubdivision"/>
+    <rdfs:label xml:lang="en">Container</rdfs:label>
+    <rdfs:comment>A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="table"/>
   </owl:Class>
   <owl:Class rdf:about="Cell">
@@ -82,9 +76,10 @@
     <rdfs:comment>A cell in a table. Cells are contained in rows and columns</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="table"/>
   </owl:Class>
-  <owl:Class rdf:about="Table">
-    <rdfs:label xml:lang="en">Table</rdfs:label>
-    <rdfs:comment>A table is a form of representing information or data in rows and columns. Tables are described by captions.</rdfs:comment>
+  <owl:Class rdf:about="Column">
+    <rdfs:label xml:lang="en">Column</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Table"/>
+    <rdfs:comment>A column in a table.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="table"/>
   </owl:Class>
   <owl:Class rdf:about="Row">
@@ -93,8 +88,9 @@
     <rdfs:comment>A row in a table.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="table"/>
   </owl:Class>
-  <rdf:Description rdf:nodeID="n6aa4f58cc8844450a3cd66306dc6b159b5">
-    <rdf:first rdf:resource="Column"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
+  <owl:Class rdf:about="Table">
+    <rdfs:label xml:lang="en">Table</rdfs:label>
+    <rdfs:comment>A table is a form of representing information or data in rows and columns. Tables are described by captions.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="table"/>
+  </owl:Class>
 </rdf:RDF>

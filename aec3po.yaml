@@ -131,7 +131,7 @@
   verificationStatement: {'@id': aec3po:verificationStatement, '@type': '@id'}
   verificationPlanZone: {'@id': aec3po:verificationPlanZone, '@type': '@id'}
   resultMessage: aec3po:resultMessage
-  severity: {'@id': aec3po:severity, '@type': '@id'}
+  hasSeverity: {'@id': aec3po:hasSeverity, '@type': '@id'}
   Severity: aec3po:Severity
   Info: aec3po:Info
   Violation: aec3po:Violation

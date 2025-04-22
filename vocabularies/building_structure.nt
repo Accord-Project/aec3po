@@ -1,61 +1,61 @@
-<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Building structure nomenclature"@en .
-<https://w3id.org/lbd/aec3po/building_structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/etc> .
-<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
-<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/forDesign> .
 <https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/modified> "2023-04-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingStructure> .
-<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-_:n5c5c0ee6666a46289f748859eef6f18eb2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2004/02/skos/core#prefLabel> "timber"@en .
+<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2002/07/owl#equivalentClass> _:n4d419d7d64824757bf97b39a32e38ad5b1 .
+<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/etc> .
+_:n4d419d7d64824757bf97b39a32e38ad5b2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
 <https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "The building structure for which a specific check, verifier, or check result applies.\n  A set of values is defined by aec3po in the corresponding concept scheme."@en .
-<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
-_:n5c5c0ee6666a46289f748859eef6f18eb2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
-<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for the building structure design.\n  aec3po includes a set of values for this nomenclature.\n  These values are :\n  - steel : steel building;\n  - timber : timber building."@en .
-<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingStructure> .
+<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/description> "Definition of a building structure concept scheme for AEC3PO."@en .
+<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
+_:n4d419d7d64824757bf97b39a32e38ad5b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/BuildingStructure-timber> .
-<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/BuildingStructure> .
+_:n4d419d7d64824757bf97b39a32e38ad5b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4d419d7d64824757bf97b39a32e38ad5b4 .
+<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
+<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "has building structure"@en .
+<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2004/02/skos/core#prefLabel> "steel"@en .
+<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Design> .
+_:n4d419d7d64824757bf97b39a32e38ad5b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4d419d7d64824757bf97b39a32e38ad5b2 .
+<https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/BuildingStructure> .
+<https://w3id.org/lbd/aec3po/building_structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for the building structure design.\n  aec3po includes a set of values for this nomenclature.\n  These values are :\n  - steel : steel building;\n  - timber : timber building."@en .
+<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
+_:n4d419d7d64824757bf97b39a32e38ad5b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2004/02/skos/core#definition> "Building has steel structure."@en .
+<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
+<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
 <https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "building structure"@en .
+_:n4d419d7d64824757bf97b39a32e38ad5b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n4d419d7d64824757bf97b39a32e38ad5b3 .
+<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/modified> "2023-04-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingStructureNomenclature"@en .
+_:n4d419d7d64824757bf97b39a32e38ad5b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingStructure> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingStructure> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasDesign> .
 <https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-_:n5c5c0ee6666a46289f748859eef6f18eb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5c5c0ee6666a46289f748859eef6f18eb2 .
-_:n5c5c0ee6666a46289f748859eef6f18eb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n5c5c0ee6666a46289f748859eef6f18eb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5c5c0ee6666a46289f748859eef6f18eb4 .
-<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/BuildingStructure-steel> .
-<https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "for building structure"@en .
-<https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/BuildingStructure> .
-<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "has building structure"@en .
-<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "The building structure design of a feature of interest or a property of that feature of interest.\n  A set of values is defined by aec3po in the corresponding concept scheme."@en .
-<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:n5c5c0ee6666a46289f748859eef6f18eb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2002/07/owl#equivalentClass> _:n5c5c0ee6666a46289f748859eef6f18eb1 .
-<https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/forDesign> .
-<https://w3id.org/lbd/aec3po/building_structure> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2004/02/skos/core#prefLabel> "steel"@en .
-<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2004/02/skos/core#definition> "Building has steel structure."@en .
-_:n5c5c0ee6666a46289f748859eef6f18eb1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n5c5c0ee6666a46289f748859eef6f18eb3 .
-<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
+<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/title> "AEC3PO: Building Structure"@en .
-<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
-<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/dc/terms/description> "Definition of a building structure concept scheme for AEC3PO."@en .
-<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/BuildingStructure-steel> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> .
 <https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
-<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Design> .
-_:n5c5c0ee6666a46289f748859eef6f18eb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_structure> .
-<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2004/02/skos/core#definition> "Building has timber structure."@en .
-<https://w3id.org/lbd/aec3po/BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingStructureNomenclature"@en .
+<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "The building structure design of a feature of interest or a property of that feature of interest.\n  A set of values is defined by aec3po in the corresponding concept scheme."@en .
+<https://w3id.org/lbd/aec3po/hasBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/BuildingStructure> .
+<https://w3id.org/lbd/aec3po/BuildingStructureNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Building structure nomenclature"@en .
+<https://w3id.org/lbd/aec3po/building_structure> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/BuildingStructure-steel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/forBuildingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "for building structure"@en .
+<https://w3id.org/lbd/aec3po/building_structure> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/BuildingStructure-timber> <http://www.w3.org/2004/02/skos/core#prefLabel> "timber"@en .
+_:n4d419d7d64824757bf97b39a32e38ad5b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

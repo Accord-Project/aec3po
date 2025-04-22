@@ -1,44 +1,44 @@
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/QuantityKind> .
-<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/title> "AEC3PO: Feature of Interest"@en .
-<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
-<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2004/02/skos/core#example> "The height of a building, the area of a space, the U-value of a wall"@en .
-<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a property to its quantity kind"@en .
-<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
-<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "has quantity kind"@en .
-<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en .
-<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/quantity_kinds> .
-<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it."@en .
-<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2004/02/skos/core#example> "A space area property to the property kind \"area\"."@en .
-<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has Property"@en .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
-<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#note> "It is expected that classes in other ontologies are used to multi-type instances of FeatureOfInterest.\n  For example a feature of interest may also be:\n  - a bot:Zone or a bot:Element\n  - a ifc:IfcRamp, a ifc:IfcSurfaceFeature"@en .
-<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/description> "The AEC3PO Feature of Interest module describes an entity (feature) of a site, building, or piece of infrastructure that is of interest. Typically, this will be a building component that needs to be compliant to regulations, or be documented in the permitting process. ."@en .
-<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Of Interest"@en .
-<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2004/02/skos/core#example> "Links a space to the area property of that space, a wall to the U-value property of that wall..."@en .
-<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/modified> "2024-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/modified> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "A kind of quantity."@en .
-<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Property> .
+<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it."@en .
 <https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2004/02/skos/core#example> "height, area, U-value"@en .
-<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity Kind"@en .
 <https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#example> "A building, a building space, a building element, the set of columns in a building, ..."@en .
-<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/FeatureOfInterest> .
-<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
-<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Property> .
-<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> .
-<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "The object whose conformance against checks is verified."@en .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
 <https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object> .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
+<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/quantity_kinds> .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/title> "AEC3PO: Feature of Interest"@en .
+<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2004/02/skos/core#example> "A space area property to the property kind \"area\"."@en .
+<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
+<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en .
+<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "The object whose conformance against checks is verified."@en .
+<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
+<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Of Interest"@en .
+<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Property> .
+<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/QuantityKind> .
+<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2004/02/skos/core#example> "The height of a building, the area of a space, the U-value of a wall"@en .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "has quantity kind"@en .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/FeatureOfInterest> <http://www.w3.org/2004/02/skos/core#note> "It is expected that classes in other ontologies are used to multi-type instances of FeatureOfInterest.\n  For example a feature of interest may also be:\n  - a bot:Zone or a bot:Element\n  - a ifc:IfcRamp, a ifc:IfcSurfaceFeature"@en .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "A kind of quantity."@en .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/modified> "2024-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
+<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2004/02/skos/core#example> "Links a space to the area property of that space, a wall to the U-value property of that wall..."@en .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/description> "The AEC3PO Feature of Interest module describes an entity (feature) of a site, building, or piece of infrastructure that is of interest. Typically, this will be a building component that needs to be compliant to regulations, or be documented in the permitting process. ."@en .
+<https://w3id.org/lbd/aec3po/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity Kind"@en .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
+<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Property> .
+<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a property to its quantity kind"@en .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/feature_of_interest> .
+<https://w3id.org/lbd/aec3po/hasProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/FeatureOfInterest> .
+<https://w3id.org/lbd/aec3po/feature_of_interest> <http://purl.org/dc/terms/modified> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .

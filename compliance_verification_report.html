@@ -846,8 +846,8 @@ td {
          </li>
          <li>
           <span>
-           <a href="#severity">
-            severity
+           <a href="#hasSeverity">
+            has severity
            </a>
            <sup class="sup-op" title="OWL Object Property">
             op
@@ -908,9 +908,14 @@ td {
          <li>
           <span>
            <span>
-            <a href="#hasSeverity">
-             aec3po:hasSeverity
-            </a>
+            <span>
+             <a href="#hasSeverity">
+              has severity
+             </a>
+             <sup class="sup-op" title="OWL Object Property">
+              op
+             </sup>
+            </span>
             <span>
              <span class="cardinality">
               exactly
@@ -978,8 +983,8 @@ td {
        </th>
        <td>
         <span>
-         <a href="#severity">
-          severity
+         <a href="#hasSeverity">
+          has severity
          </a>
          <sup class="sup-op" title="OWL Object Property">
           op
@@ -1267,9 +1272,9 @@ td {
       </tr>
      </table>
     </div>
-    <div class="property entity" id="severity">
+    <div class="property entity" id="hasSeverity">
      <h3>
-      severity
+      has severity
       <sup class="sup-op" title="OWL Object Property">
        op
       </sup>
@@ -1281,7 +1286,7 @@ td {
        </th>
        <td>
         <code>
-         https://w3id.org/lbd/aec3po/severity
+         https://w3id.org/lbd/aec3po/hasSeverity
         </code>
        </td>
       </tr>
@@ -1305,7 +1310,7 @@ td {
        </th>
        <td>
         <p>
-         Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the statement.
+         Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:hasSeverity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:hasSeverity has been specified for the statement.
         </p>
        </td>
       </tr>
@@ -1672,8 +1677,8 @@ td {
        </a>
       </li>
       <li>
-       <a href="#severity">
-        severity
+       <a href="#hasSeverity">
+        has severity
        </a>
       </li>
      </ul>

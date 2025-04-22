@@ -1,68 +1,68 @@
-<https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
-_:n6df0bf756a1044648547214ff041c36eb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n6df0bf756a1044648547214ff041c36eb2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/madeBy> .
-<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
-_:n6df0bf756a1044648547214ff041c36eb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/ComplianceVerificationReport> .
-<https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:n6df0bf756a1044648547214ff041c36eb4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasReport> .
-_:n6df0bf756a1044648547214ff041c36eb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/created> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
+<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n1f130a8328ad4d3a934ff3c29775a3adb1 .
+<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n1f130a8328ad4d3a934ff3c29775a3adb1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/lbd/aec3po/CheckMethod> .
+<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/CheckMethod> .
+<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/2000/01/rdf-schema#label> "checked"@en .
+<https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
+<https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#label> "end time"@en .
+<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/ProcessVerifier> .
+<https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a checking act to some entity (ex. statement, feature of interest, property) it checked."@en .
+<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+_:n1f130a8328ad4d3a934ff3c29775a3adb1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/usedMethod> .
+<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
+_:n1f130a8328ad4d3a934ff3c29775a3adb3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/2000/01/rdf-schema#label> "has report"@en .
+<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/modified> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/modified> "2024-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#label> "made by"@en .
 <https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:n6df0bf756a1044648547214ff041c36eb2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/lbd/aec3po/ProcessVerifier> .
+<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
+<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
+<https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#comment> "the end time of the checking act"@en .
+<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier)."@en .
+_:n1f130a8328ad4d3a934ff3c29775a3adb2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/lbd/aec3po/ProcessVerifier> .
+<https://w3id.org/lbd/aec3po/checking_act> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/title> "AEC3PO: Checking Act"@en .
+<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/ComplianceVerificationReport> .
+<https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
 <https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#label> "used method"@en .
-<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a checking act to the method it used (a aec3po:CheckMethod)."@en .
+_:n1f130a8328ad4d3a934ff3c29775a3adb2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/madeBy> .
 <https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a checking act to the resulting compliance verification report."@en .
-<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
+<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#label> "Checking Act"@en .
+<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n1f130a8328ad4d3a934ff3c29775a3adb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/checking_act> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/check_method> .
 <https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/2000/01/rdf-schema#comment> "the start time of the checking act"@en .
 <https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/title> "AEC3PO: Checking Act"@en .
-<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#label> "Checking Act"@en .
-<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6df0bf756a1044648547214ff041c36eb4 .
-<https://w3id.org/lbd/aec3po/checking_act> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/check_method> .
-_:n6df0bf756a1044648547214ff041c36eb4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/lbd/aec3po/ComplianceVerificationReport> .
-<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n1f130a8328ad4d3a934ff3c29775a3adb2 .
+_:n1f130a8328ad4d3a934ff3c29775a3adb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/modified> "2024-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/ProcessVerifier> .
-<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6df0bf756a1044648547214ff041c36eb2 .
-<https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
-<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/CheckMethod> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
-<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
-_:n6df0bf756a1044648547214ff041c36eb1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/lbd/aec3po/CheckMethod> .
-<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#label> "made by"@en .
-_:n6df0bf756a1044648547214ff041c36eb3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
-<https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
-<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
-<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier)."@en .
-<https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/modified> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/description> "The AEC3PO Checking Act module describes the act of checking some entities for something and generating a compliance verification report."@en .
-<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/created> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-_:n6df0bf756a1044648547214ff041c36eb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/2000/01/rdf-schema#label> "has report"@en .
-<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n6df0bf756a1044648547214ff041c36eb3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/checked> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
-<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6df0bf756a1044648547214ff041c36eb3 .
-<https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a checking act to some entity (ex. statement, feature of interest, property) it checked."@en .
-<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-_:n6df0bf756a1044648547214ff041c36eb1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/usedMethod> .
-<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
 <https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#label> "end time"@en .
-<https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#comment> "the end time of the checking act"@en .
+<https://w3id.org/lbd/aec3po/checking_act> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+_:n1f130a8328ad4d3a934ff3c29775a3adb4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasReport> .
 <https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
-<https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/2000/01/rdf-schema#label> "checked"@en .
 <https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#comment> "Act of checking some entities for something and generating a compliance verification report. \n    \n- Links to the check method that was used, which operationalizes a statement in a document;\n- Links to the process verifier that made the checking act;\n- Links to the entities that are checked;\n- Links to compliance verification report that resulted.\n\n"@en .
-<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n6df0bf756a1044648547214ff041c36eb1 .
-<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n1f130a8328ad4d3a934ff3c29775a3adb3 .
+<https://w3id.org/lbd/aec3po/CheckingAct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n1f130a8328ad4d3a934ff3c29775a3adb4 .
+_:n1f130a8328ad4d3a934ff3c29775a3adb4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/lbd/aec3po/ComplianceVerificationReport> .
+_:n1f130a8328ad4d3a934ff3c29775a3adb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
+<https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/2000/01/rdf-schema#label> "start time"@en .
+<https://w3id.org/lbd/aec3po/startTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/lbd/aec3po/usedMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a checking act to the method it used (a aec3po:CheckMethod)."@en .
+<https://w3id.org/lbd/aec3po/madeBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/checking_act> .
+<https://w3id.org/lbd/aec3po/checking_act> <http://purl.org/dc/terms/description> "The AEC3PO Checking Act module describes the act of checking some entities for something and generating a compliance verification report."@en .
+<https://w3id.org/lbd/aec3po/hasReport> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
+<https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/lbd/aec3po/checked> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .
+_:n1f130a8328ad4d3a934ff3c29775a3adb3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/checked> .
+<https://w3id.org/lbd/aec3po/checking_act> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+_:n1f130a8328ad4d3a934ff3c29775a3adb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/endTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckingAct> .

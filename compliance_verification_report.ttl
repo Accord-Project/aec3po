@@ -77,9 +77,9 @@ aec3po:resultMessage a owl:DatatypeProperty ;
     rdfs:domain aec3po:VerificationResult ;
     rdfs:isDefinedBy aec3po:compliance_verification_report .
 
-aec3po:severity a owl:ObjectProperty ;
-    rdfs:label "severity"@en ;
-    rdfs:comment "Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the statement." ;
+aec3po:hasSeverity a owl:ObjectProperty ;
+    rdfs:label "has severity"@en ;
+    rdfs:comment "Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:hasSeverity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:hasSeverity has been specified for the statement." ;
     rdfs:domain aec3po:VerificationResult ;
     rdfs:range aec3po:Severity ;
     rdfs:isDefinedBy aec3po:compliance_verification_report .

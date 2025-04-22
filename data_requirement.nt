@@ -1,27 +1,27 @@
-<https://w3id.org/lbd/aec3po/DataRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "Data Requirement"@en .
-<https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/created> "2023-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/2000/01/rdf-schema#label> "IDS"@en .
-<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a statement to some data that is required in order to perform a check to demonstrate compliance checking."@en .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/description> "The AEC3PO DataRequirement module describes the data requirements that derive from a statement. These can describe any aspect of the building model or any type of property, physical or conceptual, associated with it."@en .
 <https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/DataRequirement> .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/data_requirement> .
-<https://w3id.org/lbd/aec3po/DataRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/data_requirement.png> .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/title> "AEC3PO: Data Requirement"@en .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Statement> .
 <https://w3id.org/lbd/aec3po/DataRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en .
-<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#label> "has required data"@en .
-<https://w3id.org/lbd/aec3po/data_requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/DataRequirement> <http://www.w3.org/2004/02/skos/core#example> "The minimum width of a door can be a data requirement."@en .
-<https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/2000/01/rdf-schema#comment> "Required data defined in an Information Delivery Format (IDS)."@en .
 <https://w3id.org/lbd/aec3po/data_requirement> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a statement to some data that is required in order to perform a check to demonstrate compliance checking."@en .
+<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/data_requirement> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/title> "AEC3PO: Data Requirement"@en .
+<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#label> "has required data"@en .
+<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DataRequirement> .
-<https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/data_requirement> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/created> "2023-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/DataRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/description> "The AEC3PO DataRequirement module describes the data requirements that derive from a statement. These can describe any aspect of the building model or any type of property, physical or conceptual, associated with it."@en .
+<https://w3id.org/lbd/aec3po/DataRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "Data Requirement"@en .
+<https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/2000/01/rdf-schema#comment> "Required data defined in an Information Delivery Format (IDS)."@en .
+<https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/2000/01/rdf-schema#label> "IDS"@en .
+<https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/data_requirement> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/DataRequirement> <http://www.w3.org/2004/02/skos/core#example> "The minimum width of a door can be a data requirement."@en .
 <https://w3id.org/lbd/aec3po/DataRequirement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/data_requirement> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/IDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/data_requirement> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/data_requirement.png> .
+<https://w3id.org/lbd/aec3po/hasRequiredData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Statement> .

@@ -38,13 +38,6 @@
     rdfs:domain <VerificationResult> ;
     rdfs:isDefinedBy <compliance_verification_report> .
 
-<severity> a owl:ObjectProperty ;
-    rdfs:label "severity"@en ;
-    rdfs:comment "Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:severity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:severity has been specified for the statement." ;
-    rdfs:domain <VerificationResult> ;
-    rdfs:isDefinedBy <compliance_verification_report> ;
-    rdfs:range <Severity> .
-
 <verificationPlanZone> a owl:ObjectProperty ;
     rdfs:label "verification plan zone"@en ;
     rdfs:comment "Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced." ;
@@ -64,6 +57,13 @@
     rdfs:domain <ComplianceVerificationReport> ;
     rdfs:isDefinedBy <compliance_verification_report> ;
     rdfs:range xsd:boolean .
+
+<hasSeverity> a owl:ObjectProperty ;
+    rdfs:label "has severity"@en ;
+    rdfs:comment "Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:hasSeverity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:hasSeverity has been specified for the statement." ;
+    rdfs:domain <VerificationResult> ;
+    rdfs:isDefinedBy <compliance_verification_report> ;
+    rdfs:range <Severity> .
 
 <verificationFocus> a owl:ObjectProperty ;
     rdfs:label "verification focus"@en ;
@@ -101,7 +101,7 @@
     dct:created "2023-10-30"^^xsd:date ;
     dct:description "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcessVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
     dct:modified "2023-05-26"^^xsd:date,
-        "2025-04-17"^^xsd:date ;
+        "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: Compliance Verification Report"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;

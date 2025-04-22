@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:schema1="http://schema.org/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:cc="http://creativecommons.org/ns#"
   xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <owl:DatatypeProperty rdf:about="asText">
+  <rdf:Description rdf:about="https://www.cardiff.ac.uk/">
+    <schema1:name>Cardiff University</schema1:name>
+    <schema1:url rdf:resource="https://www.cardiff.ac.uk/"/>
+  </rdf:Description>
+  <owl:DatatypeProperty rdf:about="hasValue">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:label xml:lang="en">as text</rdfs:label>
-    <rdfs:comment xml:lang="en">de facto used to link something (anything: property, statement, property design, check, cell, column, ...) to a literal string.</rdfs:comment>
+    <rdfs:label xml:lang="en">has value</rdfs:label>
+    <rdfs:comment xml:lang="en">de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal.</rdfs:comment>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -44,17 +48,9 @@
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-    <skos:hiddenLabel>text</skos:hiddenLabel>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="hasValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:label xml:lang="en">has value</rdfs:label>
-    <rdfs:comment xml:lang="en">de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource=""/>
     <skos:note xml:lang="en">The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum</skos:note>
     <rdfs:domain>
-      <owl:Class rdf:nodeID="nd9abbca841144791acb0626a3221c07cb1">
+      <owl:Class rdf:nodeID="n2f54689a6d414f999bfbf0bbc0819623b1">
         <owl:unionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="FeatureOfInterest"/>
           <rdf:Description rdf:about="Property"/>
@@ -63,47 +59,51 @@
       </owl:Class>
     </rdfs:domain>
   </owl:DatatypeProperty>
-  <owl:AnnotationProperty rdf:about="http://schema.org/identifier"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-  <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-  <rdf:Description rdf:about="https://www.bcu.ac.uk/">
-    <schema1:name>Birmingham City University</schema1:name>
-    <schema1:url rdf:resource="https://www.bcu.ac.uk/"/>
-  </rdf:Description>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-  <owl:AnnotationProperty rdf:about="http://schema.org/email"/>
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-  <rdf:Description rdf:about="https://www.cardiff.ac.uk/">
-    <schema1:name>Cardiff University</schema1:name>
-    <schema1:url rdf:resource="https://www.cardiff.ac.uk/"/>
-  </rdf:Description>
-  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+  <owl:AnnotationProperty rdf:about="http://schema.org/identifier"/>
   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+  <owl:DatatypeProperty rdf:about="asText">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">as text</rdfs:label>
+    <rdfs:comment xml:lang="en">de facto used to link something (anything: property, statement, property design, check, cell, column, ...) to a literal string.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <skos:hiddenLabel>text</skos:hiddenLabel>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+  <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
   <owl:AnnotationProperty rdf:about="http://schema.org/url"/>
   <rdf:Description rdf:about="https://www.ontotext.com/">
     <schema1:name>Ontotext</schema1:name>
     <schema1:url rdf:resource="https://www.ontotext.com/"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://www.bcu.ac.uk/">
+    <schema1:name>Birmingham City University</schema1:name>
+    <schema1:url rdf:resource="https://www.bcu.ac.uk/"/>
+  </rdf:Description>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
   <owl:AnnotationProperty rdf:about="http://schema.org/name"/>
   <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+  <owl:AnnotationProperty rdf:about="http://schema.org/email"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+  <schema1:Person rdf:about="thomas">
+    <schema1:affiliation rdf:resource="https://www.cardiff.ac.uk/"/>
+    <schema1:email>beachth@cardiff.ac.uk</schema1:email>
+    <schema1:identifier rdf:resource="http://orcid.org/0000-0001-5610-8027"/>
+    <schema1:name>Thomas Beach</schema1:name>
+    <schema1:url rdf:resource="https://profiles.cardiff.ac.uk/staff/beachth"/>
+  </schema1:Person>
   <schema1:Person rdf:about="edlira">
     <schema1:affiliation rdf:resource="https://www.bcu.ac.uk/"/>
     <schema1:email>edlira.vakaj@bcu.ac.uk</schema1:email>
     <schema1:identifier rdf:resource="http://orcid.org/0000-0002-0712-0959"/>
     <schema1:name>Edlira Vakaj</schema1:name>
     <schema1:url rdf:resource="https://www.bcu.ac.uk/computing/about-us/our-staff/edlira-vakaj"/>
-  </schema1:Person>
-  <schema1:Person rdf:about="vladimir">
-    <schema1:affiliation rdf:resource="https://www.ontotext.com/"/>
-    <schema1:email>vladimir.alexiev@ontotext.com</schema1:email>
-    <schema1:identifier rdf:resource="https://orcid.org/0000-0001-7508-7428"/>
-    <schema1:name>Vladimir Alexiev</schema1:name>
-    <schema1:url rdf:resource="https://www.ontotext.com/blog/author/vladimir/"/>
   </schema1:Person>
   <schema1:Person rdf:about="http://maxime-lefrancois.info/me#">
     <schema1:affiliation>
@@ -117,12 +117,12 @@
     <schema1:name>Maxime Lefrançois</schema1:name>
     <schema1:url rdf:resource="http://maxime-lefrancois.info/"/>
   </schema1:Person>
-  <schema1:Person rdf:about="thomas">
-    <schema1:affiliation rdf:resource="https://www.cardiff.ac.uk/"/>
-    <schema1:email>beachth@cardiff.ac.uk</schema1:email>
-    <schema1:identifier rdf:resource="http://orcid.org/0000-0001-5610-8027"/>
-    <schema1:name>Thomas Beach</schema1:name>
-    <schema1:url rdf:resource="https://profiles.cardiff.ac.uk/staff/beachth"/>
+  <schema1:Person rdf:about="amna">
+    <schema1:affiliation rdf:resource="https://www.bcu.ac.uk/"/>
+    <schema1:email>Amna.Dridi@bcu.ac.uk</schema1:email>
+    <schema1:identifier rdf:resource="http://orcid.org/0000-0002-0185-103X"/>
+    <schema1:name>Amna Dridi</schema1:name>
+    <schema1:url rdf:resource="https://www.researchgate.net/profile/Amna-Dridi-3"/>
   </schema1:Person>
   <schema1:Person rdf:about="pan">
     <schema1:affiliation rdf:resource="https://www.bcu.ac.uk/"/>
@@ -131,11 +131,11 @@
     <schema1:name>Panagiotis Patlakas</schema1:name>
     <schema1:url rdf:resource="https://www.bcu.ac.uk/built-environment/about-us/our-staff/panagiotis-patlakas"/>
   </schema1:Person>
-  <schema1:Person rdf:about="amna">
-    <schema1:affiliation rdf:resource="https://www.bcu.ac.uk/"/>
-    <schema1:email>Amna.Dridi@bcu.ac.uk</schema1:email>
-    <schema1:identifier rdf:resource="http://orcid.org/0000-0002-0185-103X"/>
-    <schema1:name>Amna Dridi</schema1:name>
-    <schema1:url rdf:resource="https://www.researchgate.net/profile/Amna-Dridi-3"/>
+  <schema1:Person rdf:about="vladimir">
+    <schema1:affiliation rdf:resource="https://www.ontotext.com/"/>
+    <schema1:email>vladimir.alexiev@ontotext.com</schema1:email>
+    <schema1:identifier rdf:resource="https://orcid.org/0000-0001-7508-7428"/>
+    <schema1:name>Vladimir Alexiev</schema1:name>
+    <schema1:url rdf:resource="https://www.ontotext.com/blog/author/vladimir/"/>
   </schema1:Person>
 </rdf:RDF>

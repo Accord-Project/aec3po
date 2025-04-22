@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
 >
   <owl:ObjectProperty rdf:about="hasDiscipline">
@@ -27,21 +27,16 @@
     </rdfs:isDefinedBy>
     <rdfs:range rdf:resource="Discipline"/>
   </owl:ObjectProperty>
-  <owl:Class rdf:about="Discipline">
-    <rdfs:label xml:lang="en">Discipline</rdfs:label>
-    <rdfs:comment>The AEC discipline to which something pertains.</rdfs:comment>
+  <owl:NamedIndividual rdf:about="Discipline-structuralEngineering">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="Discipline"/>
     <rdfs:isDefinedBy rdf:resource="discipline"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <owl:equivalentClass>
-      <rdf:Description rdf:nodeID="n91f2271feefd42ad873a8be9632d1102b1">
-        <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="n91f2271feefd42ad873a8be9632d1102b2">
-            <owl:hasValue>
-              <skos:ConceptScheme rdf:about="DisciplineNomenclature">
-                <rdfs:label xml:lang="en">Discipline nomenclature</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="discipline"/>
-                <skos:definition xml:lang="en">A set of values for disciplines.
+    <skos:definition xml:lang="en">The Structural Engineering discipline.</skos:definition>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="DisciplineNomenclature">
+        <rdfs:label xml:lang="en">Discipline nomenclature</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="discipline"/>
+        <skos:definition xml:lang="en">A set of values for disciplines.
   AEC3PO includes a set of values for this nomenclature.
   These values are :
   - architecture;
@@ -49,46 +44,33 @@
   - structural engineering;
   - building services;
   - planning.</skos:definition>
-                <skos:hasTopConcept rdf:resource="Discipline-architecture"/>
-                <skos:hasTopConcept rdf:resource="Discipline-buildingServices"/>
-                <skos:hasTopConcept rdf:resource="Discipline-construction"/>
-                <skos:hasTopConcept rdf:resource="Discipline-planning"/>
-                <skos:hasTopConcept rdf:resource="Discipline-structuralEngineering"/>
-              </skos:ConceptScheme>
-            </owl:hasValue>
+        <skos:hasTopConcept rdf:resource="Discipline-architecture"/>
+        <skos:hasTopConcept rdf:resource="Discipline-buildingServices"/>
+        <skos:hasTopConcept rdf:resource="Discipline-construction"/>
+        <skos:hasTopConcept rdf:resource="Discipline-planning"/>
+        <skos:hasTopConcept rdf:resource="Discipline-structuralEngineering"/>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="en">structural engineering</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="DisciplineNomenclature"/>
+  </owl:NamedIndividual>
+  <owl:Class rdf:about="Discipline">
+    <rdfs:label xml:lang="en">Discipline</rdfs:label>
+    <rdfs:comment>The AEC discipline to which something pertains.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="discipline"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:equivalentClass>
+      <rdf:Description rdf:nodeID="n1ecd60341a39494a9ceaedf9373c95fbb1">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+          <owl:Restriction rdf:nodeID="n1ecd60341a39494a9ceaedf9373c95fbb2">
+            <owl:hasValue rdf:resource="DisciplineNomenclature"/>
             <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
           </owl:Restriction>
         </owl:intersectionOf>
       </rdf:Description>
     </owl:equivalentClass>
   </owl:Class>
-  <owl:NamedIndividual rdf:about="Discipline-planning">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="Discipline"/>
-    <rdfs:isDefinedBy rdf:resource="discipline"/>
-    <skos:definition xml:lang="en">The Planning discipline.</skos:definition>
-    <skos:inScheme rdf:resource="DisciplineNomenclature"/>
-    <skos:prefLabel xml:lang="en">planning</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="DisciplineNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Discipline-structuralEngineering">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="Discipline"/>
-    <rdfs:isDefinedBy rdf:resource="discipline"/>
-    <skos:definition xml:lang="en">The Structural Engineering discipline.</skos:definition>
-    <skos:inScheme rdf:resource="DisciplineNomenclature"/>
-    <skos:prefLabel xml:lang="en">structural engineering</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="DisciplineNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Discipline-architecture">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="Discipline"/>
-    <rdfs:isDefinedBy rdf:resource="discipline"/>
-    <skos:definition xml:lang="en">The Architecture discipline.</skos:definition>
-    <skos:inScheme rdf:resource="DisciplineNomenclature"/>
-    <skos:prefLabel xml:lang="en">architecture</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="DisciplineNomenclature"/>
-  </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="Discipline-buildingServices">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="Discipline"/>
@@ -105,6 +87,24 @@
     <skos:definition xml:lang="en">The Construction discipline.</skos:definition>
     <skos:inScheme rdf:resource="DisciplineNomenclature"/>
     <skos:prefLabel xml:lang="en">construction</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="DisciplineNomenclature"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="Discipline-planning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="Discipline"/>
+    <rdfs:isDefinedBy rdf:resource="discipline"/>
+    <skos:definition xml:lang="en">The Planning discipline.</skos:definition>
+    <skos:inScheme rdf:resource="DisciplineNomenclature"/>
+    <skos:prefLabel xml:lang="en">planning</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="DisciplineNomenclature"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="Discipline-architecture">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="Discipline"/>
+    <rdfs:isDefinedBy rdf:resource="discipline"/>
+    <skos:definition xml:lang="en">The Architecture discipline.</skos:definition>
+    <skos:inScheme rdf:resource="DisciplineNomenclature"/>
+    <skos:prefLabel xml:lang="en">architecture</skos:prefLabel>
     <skos:topConceptOf rdf:resource="DisciplineNomenclature"/>
   </owl:NamedIndividual>
 </rdf:RDF>

@@ -1,77 +1,77 @@
-_:n8976c6a81c234939a554a997756f909ab2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/ApplicationStatement> .
-<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Select/Selection statements are highlighted in purple."@en .
-<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/description> "The AEC3PO RASE Statement module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology."@en .
-_:n8976c6a81c234939a554a997756f909ab3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/SelectionStatement> .
-<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
-<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n8976c6a81c234939a554a997756f909ab5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/ExceptionStatement> .
-<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a check statement to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology."@en .
-<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
-<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Applies/Application statements are highlighted in green."@en .
-<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
-<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#label> "requires"@en .
-_:n8976c6a81c234939a554a997756f909ab1 <http://www.w3.org/2002/07/owl#members> _:n8976c6a81c234939a554a997756f909ab2 .
-<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
-_:n8976c6a81c234939a554a997756f909ab3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n8976c6a81c234939a554a997756f909ab4 .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/rase_statement.png> .
-<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Exception Statement"@en .
-<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
-<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#label> "selects"@en .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Selection Statement"@en .
-<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Excepted/Exception statements are highlighted in yellow."@en .
-<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
-<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Applies/Application statements are highlighted in green."@en .
-<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/created> "2023-09-07"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Applications tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en .
-<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Exception tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/ExceptionStatement> .
-<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a check statement to the expression of a thing that is required by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en .
-<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a check statement to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en .
-<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2000/01/rdf-schema#label> "ApplicationStatement"@en .
-<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#label> "applies to"@en .
-<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Required/Requirement statements are highlighted in blue."@en .
-<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
-_:n8976c6a81c234939a554a997756f909ab4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/RequirementStatement> .
-<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Select/Selection statements are highlighted in purple."@en .
-_:n8976c6a81c234939a554a997756f909ab2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n8976c6a81c234939a554a997756f909ab3 .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
-_:n8976c6a81c234939a554a997756f909ab5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
-<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/ApplicationStatement> .
-_:n8976c6a81c234939a554a997756f909ab4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n8976c6a81c234939a554a997756f909ab5 .
-<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement Statement"@en .
-<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Required/Requirement statements are highlighted in blue."@en .
-<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/RequirementStatement> .
-<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/RequirementStatement> .
 <https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n8976c6a81c234939a554a997756f909ab1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
-<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en .
+<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#label> "requires"@en .
 <https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
-<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
-<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en .
-<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#label> "except"@en .
-<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/title> "AEC3PO: RASE statement"@en .
+<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckStatement> .
+_:nd15cc9bca717406cbaf55717ec4943ccb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/ExceptionStatement> .
+<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Applies/Application statements are highlighted in green."@en .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/RequirementStatement> .
+<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckStatement> .
+_:nd15cc9bca717406cbaf55717ec4943ccb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nd15cc9bca717406cbaf55717ec4943ccb3 .
+<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement Statement"@en .
 <https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a check statement to the expression of a thing that is excepted by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en .
 <https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Excepted/Exception statements are highlighted in yellow."@en .
+<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en .
+<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
+_:nd15cc9bca717406cbaf55717ec4943ccb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nd15cc9bca717406cbaf55717ec4943ccb4 .
+<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/rase_statement.png> .
+<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/ExceptionStatement> .
+<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
+<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
+<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
+<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Select/Selection statements are highlighted in purple."@en .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a check statement to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology."@en .
+<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
+<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
+<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#label> "except"@en .
+<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Excepted/Exception statements are highlighted in yellow."@en .
+<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Exception tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en .
+_:nd15cc9bca717406cbaf55717ec4943ccb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nd15cc9bca717406cbaf55717ec4943ccb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/SelectionStatement> .
+<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
+<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Required/Requirement statements are highlighted in blue."@en .
+<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
+_:nd15cc9bca717406cbaf55717ec4943ccb1 <http://www.w3.org/2002/07/owl#members> _:nd15cc9bca717406cbaf55717ec4943ccb2 .
+<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2000/01/rdf-schema#label> "ApplicationStatement"@en .
+<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en .
+<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Required/Requirement statements are highlighted in blue."@en .
+_:nd15cc9bca717406cbaf55717ec4943ccb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nd15cc9bca717406cbaf55717ec4943ccb5 .
+<https://w3id.org/lbd/aec3po/RequirementStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
+<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#label> "applies to"@en .
+<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/description> "The AEC3PO RASE Statement module describes statements decomposed following the Requirement Application Selection and Exception (RASE) methodology."@en .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/created> "2023-09-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/except> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
+<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/RequirementStatement> .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://purl.org/dc/terms/title> "AEC3PO: RASE statement"@en .
+<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nd15cc9bca717406cbaf55717ec4943ccb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
+<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<https://w3id.org/lbd/aec3po/ApplicationStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Applications tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en .
+<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/rase_statement> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a check statement to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en .
+<https://w3id.org/lbd/aec3po/SelectionStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Selection Statement"@en .
+_:nd15cc9bca717406cbaf55717ec4943ccb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/RequirementStatement> .
+<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
+<https://w3id.org/lbd/aec3po/ExceptionStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Exception Statement"@en .
+<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/rase_statement> .
+<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/ApplicationStatement> .
+<https://w3id.org/lbd/aec3po/selects> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Select/Selection statements are highlighted in purple."@en .
+_:nd15cc9bca717406cbaf55717ec4943ccb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/ApplicationStatement> .
+<https://w3id.org/lbd/aec3po/appliesTo> <http://www.w3.org/2004/02/skos/core#note> "Usually, the Applies/Application statements are highlighted in green."@en .
+<https://w3id.org/lbd/aec3po/requires> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a check statement to the expression of a thing that is required by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en .
