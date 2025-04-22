@@ -2,20 +2,14 @@
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:cc="http://creativecommons.org/ns#"
   xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
-  <owl:DatatypeProperty rdf:about="hasTarget">
-    <rdfs:label xml:lang="en">hasTarget</rdfs:label>
-    <rdfs:comment xml:lang="en"></rdfs:comment>
-  </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="hasOperator">
-    <rdfs:label xml:lang="en">has operator</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a boolean check method to the check method operator it uses (exists, for all, etc.)</rdfs:comment>
-    <rdfs:domain rdf:resource="BooleanCheckMethod"/>
-    <rdfs:range rdf:resource="CheckMethodOperator"/>
+  <owl:Class rdf:about="JenaCheckMethod">
+    <rdfs:label xml:lang="en">Jena Check Method</rdfs:label>
+    <rdfs:comment xml:lang="en">A check implemented using the Jena rule language. </rdfs:comment>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="check_method">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -31,7 +25,27 @@
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-26</dct:created>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-  </owl:ObjectProperty>
+    <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:about="hasBSDDTarget">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasBSSDDTarget</rdfs:label>
+    <rdfs:comment xml:lang="en">The target refers to either the name of an object, the name of property or a function.</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class rdf:nodeID="n924f2004f83b47a3985690cc99bb8e59b6">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="FeatureOfInterest"/>
+          <rdf:Description rdf:about="Property"/>
+          <rdf:Description rdf:about="CheckMethod"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:isDefinedBy rdf:resource="check_method"/>
+  </owl:FunctionalProperty>
+  <owl:DatatypeProperty rdf:about="hasTarget">
+    <rdfs:label xml:lang="en">hasTarget</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+  </owl:DatatypeProperty>
   <owl:Class rdf:about="FunctionCheckMethod">
     <rdfs:label xml:lang="en">Function Check Method</rdfs:label>
     <rdfs:comment xml:lang="en">Methods of check defined by functions. The function can be general purpose, not tied to specific project and reused i.e. getArea(), getVolume(). This concept is equivalent to the Execution class in the Function ontology: https://fno.io/spec/ </rdfs:comment>
@@ -39,31 +53,44 @@
     <rdfs:isDefinedBy rdf:resource="check_method"/>
     <rdfs:subClassOf rdf:resource="CheckMethod"/>
   </owl:Class>
+  <owl:Class rdf:about="CertificateCheckMethod">
+    <rdfs:label xml:lang="en">Certificate Check Method</rdfs:label>
+    <rdfs:comment xml:lang="en">Certificate check method is a formal process used to verify and validate the authenticity and compliance of certificates related to construction projects. It involves a systematic review and examination of certificates issued by authorised entities to ensure that they meet all the necessary regulatory requirements, standards, and specifications.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="check_method"/>
+    <rdfs:subClassOf rdf:resource="CheckMethod"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="hasNestedTarget">
+    <rdfs:label xml:lang="en">hasNestedTarget</rdfs:label>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <rdfs:range rdf:resource="CheckMethod"/>
+    <rdfs:isDefinedBy rdf:resource="check_method"/>
+  </owl:ObjectProperty>
   <owl:Class rdf:about="CategoryCheckMethod">
     <rdfs:label xml:lang="en">Category Check Method</rdfs:label>
     <rdfs:comment xml:lang="en">A validation type that involves comparing content against a textual concept.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
     <rdfs:subClassOf rdf:resource="CheckMethod"/>
   </owl:Class>
-  <owl:Class rdf:about="SWRLCheckMethod">
-    <rdfs:label xml:lang="en">SWRL Check Method</rdfs:label>
-    <rdfs:comment xml:lang="en">A check method implemented using SWRL rules. </rdfs:comment>
+  <owl:FunctionalProperty rdf:about="hasBSDDValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasBSSDDValue</rdfs:label>
+    <rdfs:comment xml:lang="en">TBD</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
-    <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
-  </owl:Class>
-  <owl:Class rdf:about="CompositeCheckMethod">
-    <rdfs:label xml:lang="en">Composite Check Method</rdfs:label>
-    <rdfs:comment xml:lang="en">A check implemented by grouping and nesting other checks using the ACCORD rule language. </rdfs:comment>
+  </owl:FunctionalProperty>
+  <owl:ObjectProperty rdf:about="hasOperator">
+    <rdfs:label xml:lang="en">has operator</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a boolean check method to the check method operator it uses (exists, for all, etc.)</rdfs:comment>
+    <rdfs:domain rdf:resource="BooleanCheckMethod"/>
+    <rdfs:range rdf:resource="CheckMethodOperator"/>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
-    <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
-  </owl:Class>
+  </owl:ObjectProperty>
   <owl:FunctionalProperty rdf:about="hasUnit">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:label xml:lang="en">hasUnit</rdfs:label>
     <rdfs:comment xml:lang="en">the hasUnit property is used to link a specific property or feature of interest to its corresponding unit of measurement. For example, it could be a property related to physical quantities, such as temperature, length, or weight.</rdfs:comment>
     <owl:eqivalentProperty rdf:resource="http://qudt.org/schema/qudt/hasValue"/>
     <rdfs:domain>
-      <owl:Class rdf:nodeID="nb6f05b0457304ccfbbdca0456a2bc461b10">
+      <owl:Class rdf:nodeID="n924f2004f83b47a3985690cc99bb8e59b10">
         <owl:unionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="FeatureOfInterest"/>
           <rdf:Description rdf:about="Property"/>
@@ -74,18 +101,6 @@
     <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
   </owl:FunctionalProperty>
-  <owl:Class rdf:about="CertificateCheckMethod">
-    <rdfs:label xml:lang="en">Certificate Check Method</rdfs:label>
-    <rdfs:comment xml:lang="en">Certificate check method is a formal process used to verify and validate the authenticity and compliance of certificates related to construction projects. It involves a systematic review and examination of certificates issued by authorised entities to ensure that they meet all the necessary regulatory requirements, standards, and specifications.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="check_method"/>
-    <rdfs:subClassOf rdf:resource="CheckMethod"/>
-  </owl:Class>
-  <owl:Class rdf:about="SHACLCheckMethod">
-    <rdfs:label xml:lang="en">SHACL Check Method</rdfs:label>
-    <rdfs:comment xml:lang="en">Refers to a validation process that ensures compliance of data with predefined SHACL shapes, constraints, and rules.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="check_method"/>
-    <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
-  </owl:Class>
   <owl:ObjectProperty rdf:about="hasComparator">
     <rdfs:label xml:lang="en">has comparator</rdfs:label>
     <rdfs:comment xml:lang="en"><![CDATA[Links a numerical check method to the check method comparator it uses (=, <, >, etc.)]]></rdfs:comment>
@@ -93,30 +108,9 @@
     <rdfs:range rdf:resource="CheckMethodComparator"/>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="hasNestedTarget">
-    <rdfs:label xml:lang="en">hasNestedTarget</rdfs:label>
-    <rdfs:comment xml:lang="en"></rdfs:comment>
-    <rdfs:range rdf:resource="CheckMethod"/>
-    <rdfs:isDefinedBy rdf:resource="check_method"/>
-  </owl:ObjectProperty>
-  <owl:FunctionalProperty rdf:about="hasBSDDTarget">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">hasBSSDDTarget</rdfs:label>
-    <rdfs:comment xml:lang="en">The target refers to either the name of an object, the name of property or a function.</rdfs:comment>
-    <rdfs:domain>
-      <owl:Class rdf:nodeID="nb6f05b0457304ccfbbdca0456a2bc461b6">
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="FeatureOfInterest"/>
-          <rdf:Description rdf:about="Property"/>
-          <rdf:Description rdf:about="CheckMethod"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
-    <rdfs:isDefinedBy rdf:resource="check_method"/>
-  </owl:FunctionalProperty>
-  <owl:Class rdf:about="SPARQLCheckMethod">
-    <rdfs:label xml:lang="en">SPARQL Check Method</rdfs:label>
-    <rdfs:comment xml:lang="en">Refers to a validation process that ensures compliance of data with a predefined SPARQL query, stored in aec3po:asText</rdfs:comment>
+  <owl:Class rdf:about="CompositeCheckMethod">
+    <rdfs:label xml:lang="en">Composite Check Method</rdfs:label>
+    <rdfs:comment xml:lang="en">A check implemented by grouping and nesting other checks using the ACCORD rule language. </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
     <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
   </owl:Class>
@@ -126,29 +120,35 @@
     <rdfs:isDefinedBy rdf:resource="check_method"/>
     <rdfs:subClassOf rdf:resource="CheckMethod"/>
   </owl:Class>
-  <owl:Class rdf:about="ConceptCheckMethod">
-    <rdfs:label xml:lang="en">Check for Concept</rdfs:label>
-    <rdfs:comment xml:lang="en">Concept check method refers to a process of evaluating and verifying the validity and applicability of concepts used in construction projects. It involves a systematic examination of the concepts and ideas proposed for the design, construction, or management of a building or infrastructure to ensure they are appropriate, compliant, and align with industry standards.</rdfs:comment>
+  <owl:Class rdf:about="SPARQLCheckMethod">
+    <rdfs:label xml:lang="en">SPARQL Check Method</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a validation process that ensures compliance of data with a predefined SPARQL query, stored in aec3po:asText</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
-    <rdfs:subClassOf rdf:resource="CheckMethod"/>
+    <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
   </owl:Class>
-  <owl:FunctionalProperty rdf:about="hasBSDDValue">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">hasBSSDDValue</rdfs:label>
-    <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+  <owl:Class rdf:about="SWRLCheckMethod">
+    <rdfs:label xml:lang="en">SWRL Check Method</rdfs:label>
+    <rdfs:comment xml:lang="en">A check method implemented using SWRL rules. </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
-  </owl:FunctionalProperty>
+    <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
+  </owl:Class>
+  <owl:Class rdf:about="SHACLCheckMethod">
+    <rdfs:label xml:lang="en">SHACL Check Method</rdfs:label>
+    <rdfs:comment xml:lang="en">Refers to a validation process that ensures compliance of data with predefined SHACL shapes, constraints, and rules.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="check_method"/>
+    <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
+  </owl:Class>
   <owl:ObjectProperty rdf:about="hasNestedValue">
     <rdfs:label xml:lang="en">hasNestedValue</rdfs:label>
     <rdfs:comment xml:lang="en">TBD</rdfs:comment>
     <rdfs:domain rdf:resource="CheckMethod"/>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
   </owl:ObjectProperty>
-  <owl:Class rdf:about="JenaCheckMethod">
-    <rdfs:label xml:lang="en">Jena Check Method</rdfs:label>
-    <rdfs:comment xml:lang="en">A check implemented using the Jena rule language. </rdfs:comment>
+  <owl:Class rdf:about="ConceptCheckMethod">
+    <rdfs:label xml:lang="en">Check for Concept</rdfs:label>
+    <rdfs:comment xml:lang="en">Concept check method refers to a process of evaluating and verifying the validity and applicability of concepts used in construction projects. It involves a systematic examination of the concepts and ideas proposed for the design, construction, or management of a building or infrastructure to ensure they are appropriate, compliant, and align with industry standards.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
-    <rdfs:subClassOf rdf:resource="DeclarativeCheckMethod"/>
+    <rdfs:subClassOf rdf:resource="CheckMethod"/>
   </owl:Class>
   <owl:Class rdf:about="ComponentCheckMethod">
     <rdfs:label xml:lang="en">Component Check Method</rdfs:label>
@@ -157,12 +157,12 @@
     <rdfs:subClassOf rdf:resource="CheckMethod"/>
     <owl:intersectionOf rdf:parseType="Collection">
       <rdf:Description rdf:about="CheckMethod"/>
-      <owl:Restriction rdf:nodeID="nb6f05b0457304ccfbbdca0456a2bc461b1">
+      <owl:Restriction rdf:nodeID="n924f2004f83b47a3985690cc99bb8e59b1">
         <owl:allValuesFrom>
-          <owl:Restriction rdf:nodeID="nb6f05b0457304ccfbbdca0456a2bc461b2">
+          <owl:Restriction rdf:nodeID="n924f2004f83b47a3985690cc99bb8e59b2">
             <owl:allValuesFrom rdf:resource="FeatureOfInterest"/>
             <owl:onProperty>
-              <rdf:Description rdf:nodeID="nb6f05b0457304ccfbbdca0456a2bc461b3">
+              <rdf:Description rdf:nodeID="n924f2004f83b47a3985690cc99bb8e59b3">
                 <owl:inverseOf rdf:resource="forDesign"/>
               </rdf:Description>
             </owl:onProperty>
@@ -195,6 +195,12 @@
     <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
   </owl:Class>
+  <owl:Class rdf:about="BooleanCheckMethod">
+    <rdfs:label xml:lang="en">Boolean Check Method</rdfs:label>
+    <rdfs:comment xml:lang="en">Boolean check method refers to a type of validation method that checks whether a certain condition or property is either true or false. It is a simple binary check that evaluates the compliance or non-compliance of a specific aspect in the construction process. </rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="check_method"/>
+    <rdfs:subClassOf rdf:resource="CheckMethod"/>
+  </owl:Class>
   <owl:Class rdf:about="NumericalCheckMethod">
     <rdfs:label xml:lang="en">Numerical Check Method</rdfs:label>
     <rdfs:comment xml:lang="en">Numerical check method refers to a type of check that involves assessing and verifying numerical data or values for accuracy and adherence to specific criteria or standards. This method typically includes comparing numerical inputs to predefined rules, constraints, or mathematical calculations to ensure data integrity and correctness. </rdfs:comment>
@@ -204,12 +210,6 @@
   <owl:Class rdf:about="DeclarativeCheckMethod">
     <rdfs:label xml:lang="en">Declarative Check Method</rdfs:label>
     <rdfs:comment xml:lang="en">Declarative check, expressed in IDS, SPARQL, BimSPARQL (SPARQL with eg HDF5 for geometry access, with extra SPARQL functions), or any other declarative language. The identifier of a Declarative Check is expected to be dereferenceable, potentially with mediatype-based content negotiation. The content type of the retrieved representation indicates which type of declaration language it uses. Alternatively, the check expression may be given using a property such as aec3po:asText.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="check_method"/>
-    <rdfs:subClassOf rdf:resource="CheckMethod"/>
-  </owl:Class>
-  <owl:Class rdf:about="BooleanCheckMethod">
-    <rdfs:label xml:lang="en">Boolean Check Method</rdfs:label>
-    <rdfs:comment xml:lang="en">Boolean check method refers to a type of validation method that checks whether a certain condition or property is either true or false. It is a simple binary check that evaluates the compliance or non-compliance of a specific aspect in the construction process. </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="check_method"/>
     <rdfs:subClassOf rdf:resource="CheckMethod"/>
   </owl:Class>

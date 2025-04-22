@@ -2,13 +2,17 @@
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:schema1="http://schema.org/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
+  <rdf:Description rdf:about="https://www.bcu.ac.uk/">
+    <schema1:name>Birmingham City University</schema1:name>
+    <schema1:url rdf:resource="https://www.bcu.ac.uk/"/>
+  </rdf:Description>
   <owl:DatatypeProperty rdf:about="hasValue">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:label xml:lang="en">has value</rdfs:label>
@@ -46,7 +50,7 @@
     </rdfs:isDefinedBy>
     <skos:note xml:lang="en">The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum</skos:note>
     <rdfs:domain>
-      <owl:Class rdf:nodeID="nb3ceca4b33504f6d943bfd0bbbe74c97b1">
+      <owl:Class rdf:nodeID="nb23e756c52574758aa17c48b6cc59480b1">
         <owl:unionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="FeatureOfInterest"/>
           <rdf:Description rdf:about="Property"/>
@@ -55,10 +59,7 @@
       </owl:Class>
     </rdfs:domain>
   </owl:DatatypeProperty>
-  <rdf:Description rdf:about="https://www.bcu.ac.uk/">
-    <schema1:name>Birmingham City University</schema1:name>
-    <schema1:url rdf:resource="https://www.bcu.ac.uk/"/>
-  </rdf:Description>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
   <owl:DatatypeProperty rdf:about="asText">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:label xml:lang="en">as text</rdfs:label>
@@ -67,43 +68,42 @@
     <skos:hiddenLabel>text</skos:hiddenLabel>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
-  <owl:AnnotationProperty rdf:about="http://schema.org/name"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
   <rdf:Description rdf:about="https://www.ontotext.com/">
     <schema1:name>Ontotext</schema1:name>
     <schema1:url rdf:resource="https://www.ontotext.com/"/>
   </rdf:Description>
+  <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
   <rdf:Description rdf:about="https://www.cardiff.ac.uk/">
     <schema1:name>Cardiff University</schema1:name>
     <schema1:url rdf:resource="https://www.cardiff.ac.uk/"/>
   </rdf:Description>
-  <owl:AnnotationProperty rdf:about="http://schema.org/identifier"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
-  <owl:AnnotationProperty rdf:about="http://schema.org/url"/>
-  <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-  <owl:AnnotationProperty rdf:about="http://schema.org/email"/>
-  <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+  <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
   <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+  <owl:AnnotationProperty rdf:about="http://schema.org/name"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+  <owl:AnnotationProperty rdf:about="http://schema.org/email"/>
+  <owl:AnnotationProperty rdf:about="http://schema.org/url"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+  <owl:AnnotationProperty rdf:about="http://schema.org/identifier"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+  <schema1:Person rdf:about="amna">
+    <schema1:affiliation rdf:resource="https://www.bcu.ac.uk/"/>
+    <schema1:email>Amna.Dridi@bcu.ac.uk</schema1:email>
+    <schema1:identifier rdf:resource="http://orcid.org/0000-0002-0185-103X"/>
+    <schema1:name>Amna Dridi</schema1:name>
+    <schema1:url rdf:resource="https://www.researchgate.net/profile/Amna-Dridi-3"/>
+  </schema1:Person>
   <schema1:Person rdf:about="thomas">
     <schema1:affiliation rdf:resource="https://www.cardiff.ac.uk/"/>
     <schema1:email>beachth@cardiff.ac.uk</schema1:email>
     <schema1:identifier rdf:resource="http://orcid.org/0000-0001-5610-8027"/>
     <schema1:name>Thomas Beach</schema1:name>
     <schema1:url rdf:resource="https://profiles.cardiff.ac.uk/staff/beachth"/>
-  </schema1:Person>
-  <schema1:Person rdf:about="pan">
-    <schema1:affiliation rdf:resource="https://www.bcu.ac.uk/"/>
-    <schema1:email>Panagiotis.Patlakas@bcu.ac.uk</schema1:email>
-    <schema1:identifier rdf:resource="http://orcid.org/0000-0002-7248-8952"/>
-    <schema1:name>Panagiotis Patlakas</schema1:name>
-    <schema1:url rdf:resource="https://www.bcu.ac.uk/built-environment/about-us/our-staff/panagiotis-patlakas"/>
   </schema1:Person>
   <schema1:Person rdf:about="http://maxime-lefrancois.info/me#">
     <schema1:affiliation>
@@ -124,12 +124,12 @@
     <schema1:name>Vladimir Alexiev</schema1:name>
     <schema1:url rdf:resource="https://www.ontotext.com/blog/author/vladimir/"/>
   </schema1:Person>
-  <schema1:Person rdf:about="amna">
+  <schema1:Person rdf:about="pan">
     <schema1:affiliation rdf:resource="https://www.bcu.ac.uk/"/>
-    <schema1:email>Amna.Dridi@bcu.ac.uk</schema1:email>
-    <schema1:identifier rdf:resource="http://orcid.org/0000-0002-0185-103X"/>
-    <schema1:name>Amna Dridi</schema1:name>
-    <schema1:url rdf:resource="https://www.researchgate.net/profile/Amna-Dridi-3"/>
+    <schema1:email>Panagiotis.Patlakas@bcu.ac.uk</schema1:email>
+    <schema1:identifier rdf:resource="http://orcid.org/0000-0002-7248-8952"/>
+    <schema1:name>Panagiotis Patlakas</schema1:name>
+    <schema1:url rdf:resource="https://www.bcu.ac.uk/built-environment/about-us/our-staff/panagiotis-patlakas"/>
   </schema1:Person>
   <schema1:Person rdf:about="edlira">
     <schema1:affiliation rdf:resource="https://www.bcu.ac.uk/"/>

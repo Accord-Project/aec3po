@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:cc="http://creativecommons.org/ns#"
   xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
 >
-  <owl:Ontology rdf:about="compliance_verification_report">
-    <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
-    <dct:description xml:lang="en">The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcessVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated.</dct:description>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-26</dct:modified>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
-    <dct:title xml:lang="en">AEC3PO: Compliance Verification Report</dct:title>
-    <owl:imports rdf:resource="check_method"/>
-    <owl:imports rdf:resource="compliance_verification_report"/>
-    <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
-    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-30</dct:created>
-  </owl:Ontology>
   <owl:ObjectProperty rdf:about="hasResult">
     <rdfs:label xml:lang="en">has result</rdfs:label>
     <rdfs:comment xml:lang="en">Links a compliance verification report to some verification result.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <rdfs:isDefinedBy>
+      <owl:Ontology rdf:about="compliance_verification_report">
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
+        <dct:description xml:lang="en">The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcessVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated.</dct:description>
+        <dct:title xml:lang="en">AEC3PO: Compliance Verification Report</dct:title>
+        <owl:imports rdf:resource="check_method"/>
+        <owl:imports rdf:resource="compliance_verification_report"/>
+        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-30</dct:created>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
+      </owl:Ontology>
+    </rdfs:isDefinedBy>
     <rdfs:domain rdf:resource="ComplianceVerificationReport"/>
     <rdfs:range rdf:resource="VerificationResult"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="verificationPlanZone">
+    <rdfs:label xml:lang="en">verification plan zone</rdfs:label>
+    <rdfs:comment>Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced.</rdfs:comment>
+    <rdfs:domain rdf:resource="VerificationResult"/>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:ObjectProperty>
   <owl:NamedIndividual rdf:about="Info">
     <rdf:type rdf:resource="Severity"/>
@@ -34,12 +40,6 @@
     <rdfs:comment xml:lang="en">The severity for an informational validation result.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:NamedIndividual>
-  <owl:ObjectProperty rdf:about="verificationPlanZone">
-    <rdfs:label xml:lang="en">verification plan zone</rdfs:label>
-    <rdfs:comment>Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced.</rdfs:comment>
-    <rdfs:domain rdf:resource="VerificationResult"/>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-  </owl:ObjectProperty>
   <owl:NamedIndividual rdf:about="Violation">
     <rdf:type rdf:resource="Severity"/>
     <rdfs:label xml:lang="en">Violation</rdfs:label>
@@ -71,16 +71,34 @@
     <rdfs:domain rdf:resource="VerificationResult"/>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:ObjectProperty>
-  <owl:Class rdf:about="ComplianceVerificationReport">
-    <rdfs:label xml:lang="en">Compliance Verification Report</rdfs:label>
-    <rdfs:comment xml:lang="en">Result of a checking act. May be compliant or not.</rdfs:comment>
+  <owl:DatatypeProperty rdf:about="conforms">
+    <rdfs:label xml:lang="en">conforms</rdfs:label>
+    <rdfs:comment xml:lang="en">True if the Checking act confirms the check was validated, and false otherwise.</rdfs:comment>
+    <rdfs:domain rdf:resource="ComplianceVerificationReport"/>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="VerificationResult">
+    <rdfs:label xml:lang="en">Verification Result</rdfs:label>
+    <rdfs:comment xml:lang="en">Individual verification result of a Compliance Verification Report.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="ndbbf2ccca77946fe990b6fb6509c7fc9b1">
-        <owl:onProperty rdf:resource="conforms"/>
+      <owl:Restriction rdf:nodeID="n42ee515bcf5240928b5d262d1d9d13fbb2">
+        <owl:onProperty rdf:resource="verificationFocus"/>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="n42ee515bcf5240928b5d262d1d9d13fbb3">
+        <owl:onProperty rdf:resource="hasSeverity"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="Severity">
+    <rdfs:label xml:lang="en">Severity</rdfs:label>
+    <rdfs:comment xml:lang="en">The class of validation result severity levels, including violation and warning levels.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:Class>
   <owl:ObjectProperty rdf:about="hasSeverity">
     <rdfs:label xml:lang="en">has severity</rdfs:label>
@@ -89,33 +107,15 @@
     <rdfs:range rdf:resource="Severity"/>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:ObjectProperty>
-  <owl:Class rdf:about="Severity">
-    <rdfs:label xml:lang="en">Severity</rdfs:label>
-    <rdfs:comment xml:lang="en">The class of validation result severity levels, including violation and warning levels.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-  </owl:Class>
-  <owl:Class rdf:about="VerificationResult">
-    <rdfs:label xml:lang="en">Verification Result</rdfs:label>
-    <rdfs:comment xml:lang="en">Individual verification result of a Compliance Verification Report.</rdfs:comment>
+  <owl:Class rdf:about="ComplianceVerificationReport">
+    <rdfs:label xml:lang="en">Compliance Verification Report</rdfs:label>
+    <rdfs:comment xml:lang="en">Result of a checking act. May be compliant or not.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="ndbbf2ccca77946fe990b6fb6509c7fc9b2">
-        <owl:onProperty rdf:resource="verificationFocus"/>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="ndbbf2ccca77946fe990b6fb6509c7fc9b3">
-        <owl:onProperty rdf:resource="hasSeverity"/>
+      <owl:Restriction rdf:nodeID="n42ee515bcf5240928b5d262d1d9d13fbb1">
+        <owl:onProperty rdf:resource="conforms"/>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:DatatypeProperty rdf:about="conforms">
-    <rdfs:label xml:lang="en">conforms</rdfs:label>
-    <rdfs:comment xml:lang="en">True if the Checking act confirms the check was validated, and false otherwise.</rdfs:comment>
-    <rdfs:domain rdf:resource="ComplianceVerificationReport"/>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </owl:DatatypeProperty>
 </rdf:RDF>
