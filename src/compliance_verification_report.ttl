@@ -13,7 +13,7 @@ aec3po:compliance_verification_report a owl:Ontology ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
     dct:description "The AEC3PO Compliance Verification Report module describes results of some `aec3po:ProcessVerifier` checking some entity via a `aec3po:CheckingAct`. Entities may be validated or repudiated."@en ;
     dct:title "AEC3PO: Compliance Verification Report"@en ;
-    owl:imports aec3po:check_method , aec3po:compliance_verification_report ;
+    owl:imports aec3po:check_method ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
