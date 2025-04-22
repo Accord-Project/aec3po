@@ -1,108 +1,108 @@
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "check method nomenclature"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
 <https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/2004/02/skos/core#definition> "less-equal comparator."@en .
-_:n5a9af7333011468db740d24132346331b2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
 <https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2004/02/skos/core#prefLabel> "equal-to"@en .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/created> "2024-01-24'\n'2023-09-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasDesign> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalOR> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2004/02/skos/core#prefLabel> "less than"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-neq> .
-_:n5a9af7333011468db740d24132346331b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n5a9af7333011468db740d24132346331b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of comparators for the check method.\n\n  AEC3PO includes a set of comparators for this nomenclature.\n\n  These comparators are :\n\n  - _eq : equal-to comparator;\n  - comparator_neq : not equal-to comparator.\n  - comparator_lt : less-than comparator.\n  - comparator_le : less-equal comparator.\n  - comparator_gt : greater-than comparator.\n  - comparator_ge : greater-equal comparator.\n  "@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodComparator-eq> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#comment> "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodComparatorNomenclature"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2002/07/owl#equivalentClass> _:n5a9af7333011468db740d24132346331b1 .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2004/02/skos/core#prefLabel> "greater than"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#label> "check method comparator"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
 <https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2004/02/skos/core#definition> "logical OR comparator."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#comment> "The comparator of a feature of interest or a property of that is needed by the check method.\n  A set of comparators is defined by aec3po in the corresponding concept scheme."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/modified> "2024-01-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#label> "has comparator"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2004/02/skos/core#definition> "equal-to comparator."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2004/02/skos/core#prefLabel> "logicalAND"@en .
-<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/2004/02/skos/core#prefLabel> "greater equal"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2004/02/skos/core#definition> "less-than comparator."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
-_:n5a9af7333011468db740d24132346331b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n5a9af7333011468db740d24132346331b2 .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/2004/02/skos/core#prefLabel> "less equal"@en .
+_:nc021ef661c974a9d88f1dda2476bd839b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:nc021ef661c974a9d88f1dda2476bd839b3 .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-ge> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2004/02/skos/core#definition> "logical AND comparator."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/amna> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-gt> .
-<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
 <https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2004/02/skos/core#prefLabel> "not equal-to"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-lt> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-_:n5a9af7333011468db740d24132346331b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-_:n5a9af7333011468db740d24132346331b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n5a9af7333011468db740d24132346331b4 .
-<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-le> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2004/02/skos/core#prefLabel> "logicalOR"@en .
-_:n5a9af7333011468db740d24132346331b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n5a9af7333011468db740d24132346331b3 .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-ge> .
+_:nc021ef661c974a9d88f1dda2476bd839b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nc021ef661c974a9d88f1dda2476bd839b2 .
 <https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2004/02/skos/core#definition> "greater-than comparator."@en .
-<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/CheckMethod> .
-<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodcomparator> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/title> "AEC3PO: comparators"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckMethod> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/description> "Definition of comparators scheme for AEC3PO."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
-_:n5a9af7333011468db740d24132346331b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+_:nc021ef661c974a9d88f1dda2476bd839b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#label> "has comparator"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2004/02/skos/core#definition> "not equal-to comparator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
+<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
+<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasDesign> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/description> "Definition of comparators scheme for AEC3PO."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#label> "check method comparator"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-gt> .
 <https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/2004/02/skos/core#definition> "greater-equal comparator."@en .
-<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2004/02/skos/core#prefLabel> "equal-to"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2004/02/skos/core#definition> "greater-than comparator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2004/02/skos/core#prefLabel> "greater than"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodComparator-eq> .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2004/02/skos/core#definition> "less-than comparator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-lt> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2004/02/skos/core#definition> "logical AND comparator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
+_:nc021ef661c974a9d88f1dda2476bd839b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2004/02/skos/core#prefLabel> "not equal-to"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of comparators for the check method.\n\n  AEC3PO includes a set of comparators for this nomenclature.\n\n  These comparators are :\n\n  - _eq : equal-to comparator;\n  - comparator_neq : not equal-to comparator.\n  - comparator_lt : less-than comparator.\n  - comparator_le : less-equal comparator.\n  - comparator_gt : greater-than comparator.\n  - comparator_ge : greater-equal comparator.\n  "@en .
+_:nc021ef661c974a9d88f1dda2476bd839b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
+_:nc021ef661c974a9d88f1dda2476bd839b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc021ef661c974a9d88f1dda2476bd839b4 .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2004/02/skos/core#prefLabel> "logicalOR"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2002/07/owl#equivalentClass> _:nc021ef661c974a9d88f1dda2476bd839b1 .
+<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/CheckMethod> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2004/02/skos/core#prefLabel> "logicalAND"@en .
 <https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2004/02/skos/core#prefLabel> "less than"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#comment> "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodComparatorNomenclature"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_comparators> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalAND> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/modified> "2024-01-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:nc021ef661c974a9d88f1dda2476bd839b2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckMethod> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-le> .
+_:nc021ef661c974a9d88f1dda2476bd839b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/created> "2024-01-24'\n'2023-09-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/2004/02/skos/core#definition> "not equal-to comparator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/2004/02/skos/core#prefLabel> "greater equal"@en .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/title> "AEC3PO: comparators"@en .
+<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/2000/01/rdf-schema#comment> "The comparator of a feature of interest or a property of that is needed by the check method.\n  A set of comparators is defined by aec3po in the corresponding concept scheme."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/amna> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-neq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2004/02/skos/core#definition> "equal-to comparator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-logicalOR> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-logicalOR> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/hasComparator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "check method nomenclature"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/2004/02/skos/core#prefLabel> "less equal"@en .
+<https://w3id.org/lbd/aec3po/check_method_comparators> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-ge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodComparator> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-le> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparator-gt> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodcomparator> .
+<https://w3id.org/lbd/aec3po/CheckMethodcomparator-eq> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodComparatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodcomparator-neq> .

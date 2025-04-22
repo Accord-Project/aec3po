@@ -1,99 +1,99 @@
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2004/02/skos/core#prefLabel> "forall"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckMethod> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2004/02/skos/core#prefLabel> "multiplication"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "check method nomenclature"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2004/02/skos/core#definition> "forall operator."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2004/02/skos/core#definition> "multiplication Operator."@en .
-_:nfcdad9a9058b4bd29e5e0c5bca3ce593b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nfcdad9a9058b4bd29e5e0c5bca3ce593b2 .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#label> "has operator"@en .
-<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/CheckMethod> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/amna> .
-<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2004/02/skos/core#definition> "exists operator."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2004/02/skos/core#prefLabel> "exists"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodOperatorNomenclature"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2004/02/skos/core#definition> "subtraction operator."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2004/02/skos/core#prefLabel> "division"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/title> "AEC3PO: Operators"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/description> "Definition of operators scheme for AEC3PO."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/created> "2024-01-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "The operator of a feature of interest or a property of that is needed by the check method.\n  A set of operators is defined by aec3po in the corresponding concept scheme."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2004/02/skos/core#definition> "not exists operator."@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2004/02/skos/core#prefLabel> "subtraction"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-division> .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-_:nfcdad9a9058b4bd29e5e0c5bca3ce593b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
-_:nfcdad9a9058b4bd29e5e0c5bca3ce593b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nfcdad9a9058b4bd29e5e0c5bca3ce593b4 .
 <https://w3id.org/lbd/aec3po/check_method_operators> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2004/02/skos/core#prefLabel> "addition"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#label> "has operator"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of operators for the check method.\n  AEC3PO includes a set of operators for this nomenclature.\n  These operators are :\n  - operator_exists : exists operator.\n  - operator_notExists : not-exists operator.\n  - operator_forall : forall operator."@en .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2002/07/owl#equivalentClass> _:nfcdad9a9058b4bd29e5e0c5bca3ce593b1 .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
-_:nfcdad9a9058b4bd29e5e0c5bca3ce593b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2004/02/skos/core#definition> "addition operator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2004/02/skos/core#prefLabel> "exists"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2004/02/skos/core#definition> "forall operator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2004/02/skos/core#prefLabel> "addition"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2004/02/skos/core#definition> "not exists operator."@en .
+<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasDesign> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "The operator of a feature of interest or a property of that is needed by the check method.\n  A set of operators is defined by aec3po in the corresponding concept scheme."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2004/02/skos/core#prefLabel> "multiplication"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/created> "2024-01-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_Operators> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckMethod> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#label> "check method operator"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2004/02/skos/core#prefLabel> "not exists"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+_:n9895d347f4014700a2d3e15fdd641e03b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+_:n9895d347f4014700a2d3e15fdd641e03b2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/amna> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2004/02/skos/core#definition> "exists operator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2004/02/skos/core#definition> "division Operator."@en .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/modified> "2023-09-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "check method nomenclature"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2004/02/skos/core#prefLabel> "subtraction"@en .
+_:n9895d347f4014700a2d3e15fdd641e03b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n9895d347f4014700a2d3e15fdd641e03b3 .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2004/02/skos/core#definition> "subtraction operator."@en .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2004/02/skos/core#definition> "multiplication Operator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-division> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
+_:n9895d347f4014700a2d3e15fdd641e03b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n9895d347f4014700a2d3e15fdd641e03b4 .
+<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of operators for the check method.\n  AEC3PO includes a set of operators for this nomenclature.\n  These operators are :\n  - operator_exists : exists operator.\n  - operator_notExists : not-exists operator.\n  - operator_forall : forall operator."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/2004/02/skos/core#prefLabel> "division"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2002/07/owl#equivalentClass> _:n9895d347f4014700a2d3e15fdd641e03b1 .
+_:n9895d347f4014700a2d3e15fdd641e03b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/title> "AEC3PO: Operators"@en .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/modified> "2024-01-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+_:n9895d347f4014700a2d3e15fdd641e03b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
+_:n9895d347f4014700a2d3e15fdd641e03b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n9895d347f4014700a2d3e15fdd641e03b2 .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2004/02/skos/core#definition> "addition operator."@en .
+<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/CheckMethod> .
 <https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-division> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> .
-_:nfcdad9a9058b4bd29e5e0c5bca3ce593b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:nfcdad9a9058b4bd29e5e0c5bca3ce593b3 .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#label> "check method operator"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/modified> "2023-09-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-_:nfcdad9a9058b4bd29e5e0c5bca3ce593b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/CheckMethodOperator> .
-_:nfcdad9a9058b4bd29e5e0c5bca3ce593b2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/2004/02/skos/core#prefLabel> "not exists"@en .
-<https://w3id.org/lbd/aec3po/CheckMethodOperator-subtraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasDesign> .
-<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_Operators> .
-_:nfcdad9a9058b4bd29e5e0c5bca3ce593b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/modified> "2024-01-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-exists> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/check_method_operators> .
+_:n9895d347f4014700a2d3e15fdd641e03b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<https://w3id.org/lbd/aec3po/check_method_operators> <http://purl.org/dc/terms/description> "Definition of operators scheme for AEC3PO."@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-notExists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodOperatorNomenclature"@en .
+<https://w3id.org/lbd/aec3po/hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-multiplication> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/CheckMethodOperatorNomenclature> .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-forall> <http://www.w3.org/2004/02/skos/core#prefLabel> "forall"@en .
+<https://w3id.org/lbd/aec3po/CheckMethodOperator-addition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .

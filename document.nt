@@ -1,91 +1,91 @@
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/title> "AEC3PO: document"@en .
-<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "A document representing AEC regulations, guidelines, building codes etc."@en .
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
 <https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#label> "as literal"@en .
-<https://w3id.org/lbd/aec3po/document> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/description> "The AEC3PO Document module describes a document, of any kind, typically related to compliance and permitting. Documents are split into division and subdivisions, down to individual statements.\n\nDocument subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back."@en .
-<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#label> "has next subdivision"@en .
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/modified> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbad2c84eaf7a4ecda7fd6fc2ab30a817b4 .
-<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/document.png> .
-<https://w3id.org/lbd/aec3po/document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2000/01/rdf-schema#comment> "Any subdivision of a document, including sections, paragraphs, definitions, words, etc."@en .
-<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Document> .
-<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#label> "requires document"@en .
-<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "text" .
-<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a document subdivision to the document subdivision that immediately follows it, if it exists"@en .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbad2c84eaf7a4ecda7fd6fc2ab30a817b1 .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "links an entity such as a legal verifier to the document it is for."@en .
-<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/2000/01/rdf-schema#label> "Drawing"@en .
-<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2004/02/skos/core#example> "Approved Document A, Eurocode, Finish Regulations, etc."@en .
-<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/2000/01/rdf-schema#comment> "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)"@en .
-<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)"@en .
-<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#domain> _:nbad2c84eaf7a4ecda7fd6fc2ab30a817b5 .
-<https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Document> .
-<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Document> .
-<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Document> .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a document subdivision to its literal representation. The literal datatype may be xsd:string, rdf:HTMLLiteral, xsd:base64Binary, or any other relevant datatype."@en .
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2004/02/skos/core#note> "a Document is expected to be annotated using properties from the Dublin Core Terms vocabulary."@en .
-<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#comment> "links a document part to some of its subdivision"@en .
-<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
-<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b5 <http://www.w3.org/2002/07/owl#unionOf> _:nbad2c84eaf7a4ecda7fd6fc2ab30a817b6 .
-<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/usesDocument> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2004/02/skos/core#example> "Paragraph, section, definition..."@en .
 <https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2000/01/rdf-schema#label> "Document Subdivision"@en .
-<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b2 <http://www.w3.org/2002/07/owl#unionOf> _:nbad2c84eaf7a4ecda7fd6fc2ab30a817b3 .
-<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#label> "has first subdivision"@en .
-<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbad2c84eaf7a4ecda7fd6fc2ab30a817b7 .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Document> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#comment> "links a document part to some of its subdivision"@en .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+_:n466cd4d44a254f7e85c051160080ad61b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/document.png> .
+<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/2000/01/rdf-schema#label> "Drawing"@en .
+<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/modified> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:n466cd4d44a254f7e85c051160080ad61b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Document> .
+<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
+_:n466cd4d44a254f7e85c051160080ad61b1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSubdivision> .
 <https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Document> .
-<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity (procedure, statement, verifier, ...) to the document it requires."@en .
-<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#domain> _:nbad2c84eaf7a4ecda7fd6fc2ab30a817b2 .
-<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a document part to the first of its subdivision"@en .
-<https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/2000/01/rdf-schema#label> "for document"@en .
-<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/2000/01/rdf-schema#label> "uses document"@en .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:nbad2c84eaf7a4ecda7fd6fc2ab30a817b1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/hasPart> .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity (procedure, statement, verifier, ...) to the document it uses."@en .
-<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#label> "has subdivision"@en .
-<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Document> .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
 <https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n466cd4d44a254f7e85c051160080ad61b5 <http://www.w3.org/2002/07/owl#unionOf> _:n466cd4d44a254f7e85c051160080ad61b6 .
+<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasSubdivision> .
+<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/2000/01/rdf-schema#comment> "Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)"@en .
+<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#label> "requires document"@en .
+<https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/2000/01/rdf-schema#label> "for document"@en .
+<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:n466cd4d44a254f7e85c051160080ad61b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/usesDocument> .
+<https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Document> .
+<https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/title> "AEC3PO: document"@en .
+<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity (procedure, statement, verifier, ...) to the document it uses."@en .
+_:n466cd4d44a254f7e85c051160080ad61b2 <http://www.w3.org/2002/07/owl#unionOf> _:n466cd4d44a254f7e85c051160080ad61b3 .
+<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2004/02/skos/core#example> "Approved Document A, Eurocode, Finish Regulations, etc."@en .
+_:n466cd4d44a254f7e85c051160080ad61b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n466cd4d44a254f7e85c051160080ad61b1 .
+<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Document> .
+<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Document> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2004/02/skos/core#example> "Paragraph, section, definition..."@en .
+<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n466cd4d44a254f7e85c051160080ad61b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "A document representing AEC regulations, guidelines, building codes etc."@en .
+_:n466cd4d44a254f7e85c051160080ad61b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n466cd4d44a254f7e85c051160080ad61b7 .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "text" .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a document subdivision to its literal representation. The literal datatype may be xsd:string, rdf:HTMLLiteral, xsd:base64Binary, or any other relevant datatype."@en .
+<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n466cd4d44a254f7e85c051160080ad61b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Document> .
+_:n466cd4d44a254f7e85c051160080ad61b1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity (procedure, statement, verifier, ...) to the document it requires."@en .
+_:n466cd4d44a254f7e85c051160080ad61b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#label> "has next subdivision"@en .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Document> .
+<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#domain> _:n466cd4d44a254f7e85c051160080ad61b5 .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2000/01/rdf-schema#comment> "Any subdivision of a document, including sections, paragraphs, definitions, words, etc."@en .
+<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a document subdivision to the document subdivision that immediately follows it, if it exists"@en .
+_:n466cd4d44a254f7e85c051160080ad61b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n466cd4d44a254f7e85c051160080ad61b4 .
+<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a document part to the first of its subdivision"@en .
+<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/hasPart> .
+<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#label> "has first subdivision"@en .
+<https://w3id.org/lbd/aec3po/document> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision_asLiteral> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/Document> <http://www.w3.org/2004/02/skos/core#note> "a Document is expected to be annotated using properties from the Dublin Core Terms vocabulary."@en .
+<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#domain> _:n466cd4d44a254f7e85c051160080ad61b2 .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/usesDocument> <http://www.w3.org/2000/01/rdf-schema#label> "uses document"@en .
+<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/requiresDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/hasSubdivision> <http://www.w3.org/2000/01/rdf-schema#label> "has subdivision"@en .
+<https://w3id.org/lbd/aec3po/hasNextSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/forDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "links an entity such as a legal verifier to the document it is for."@en .
+<https://w3id.org/lbd/aec3po/hasFirstSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)"@en .
+<https://w3id.org/lbd/aec3po/document> <http://purl.org/dc/terms/description> "The AEC3PO Document module describes a document, of any kind, typically related to compliance and permitting. Documents are split into division and subdivisions, down to individual statements.\n\nDocument subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back."@en .
+<https://w3id.org/lbd/aec3po/Drawing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Document> .

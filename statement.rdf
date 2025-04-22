@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <owl:Class rdf:about="NumericalCheckStatement">
-    <rdfs:label xml:lang="en">Numerical Check Statement</rdfs:label>
-    <rdfs:comment>A type of check that involves checking one numerical property against another, i.e. x &lt; y or similar.</rdfs:comment>
+  <owl:Class rdf:about="CategoryCheckStatement">
+    <rdfs:label xml:lang="en">Category Check Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://github.com/Accord-Project/aec3po/issues/56"/>
     <rdfs:subClassOf rdf:resource="CheckStatement"/>
-    <rdfs:seeAlso rdf:resource="https://github.com/Accord-Project/aec3po/issues/57"/>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="statement">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -28,11 +28,67 @@
       </owl:Ontology>
     </rdfs:isDefinedBy>
   </owl:Class>
+  <owl:Class rdf:about="OrCheckStatement">
+    <rdfs:label xml:lang="en">Or Check Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">Check verified if and only if at least one of its sub-checks is verified.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nd0b7169b5ea6416cb0de07be8df09c1eb2">
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+        <owl:onProperty rdf:resource="hasSubdivision"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="ChecklistStatement"/>
+    <rdfs:isDefinedBy rdf:resource="statement"/>
+  </owl:Class>
+  <owl:Class rdf:about="NotCheckStatement">
+    <rdfs:label xml:lang="en">Not Check Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">Check verified if and only if the sub-check is not verified.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nd0b7169b5ea6416cb0de07be8df09c1eb3">
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
+        <owl:onProperty rdf:resource="hasSubdivision"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource="statement"/>
+  </owl:Class>
   <owl:ObjectProperty rdf:about="hasEvidence">
     <rdfs:label xml:lang="en">hasEvidence</rdfs:label>
     <rdfs:comment xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</rdfs:comment>
     <skos:note xml:lang="en">Unstable. Need evidence of how this property is intended to be used</skos:note>
     <rdfs:domain rdf:resource="Statement"/>
+    <rdfs:isDefinedBy rdf:resource="statement"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="AndCheckStatement">
+    <rdfs:label xml:lang="en">And Check Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">Check verified if and only if all of its sub-checks are verified.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="nd0b7169b5ea6416cb0de07be8df09c1eb1">
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
+        <owl:onProperty rdf:resource="hasSubdivision"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="ChecklistStatement"/>
+    <rdfs:isDefinedBy rdf:resource="statement"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="definitionOf">
+    <rdfs:label xml:lang="en">definition of</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a definition statement to the term that is defined</rdfs:comment>
+    <rdfs:domain rdf:resource="DefinitionStatement"/>
+    <rdfs:range rdf:resource="DocumentSubdivision"/>
+    <rdfs:isDefinedBy rdf:resource="statement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasDefinition">
+    <rdfs:label xml:lang="en">has definition</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a definition statement to the definition of the term</rdfs:comment>
+    <rdfs:domain rdf:resource="DefinitionStatement"/>
+    <rdfs:range rdf:resource="DocumentSubdivision"/>
+    <rdfs:isDefinedBy rdf:resource="statement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasEvaluator">
+    <rdfs:label xml:lang="en">has evaluator</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a human evaluated statement to the subdivision that expresses who shall verify this check</rdfs:comment>
+    <rdfs:domain rdf:resource="HumanEvaluatedCheckStatement"/>
+    <rdfs:range rdf:resource="Statement"/>
     <rdfs:isDefinedBy rdf:resource="statement"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="hasInlinePart">
@@ -42,41 +98,10 @@
     <rdfs:seeAlso rdf:resource="https://github.com/Accord-Project/aec3po/issues/43"/>
     <rdfs:isDefinedBy rdf:resource="statement"/>
   </owl:ObjectProperty>
-  <owl:Class rdf:about="OrCheckStatement">
-    <rdfs:label xml:lang="en">Or Check Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">Check verified if and only if at least one of its sub-checks is verified.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n8c3312ee3f174237935761610fcd860ab2">
-        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
-        <owl:onProperty rdf:resource="hasSubdivision"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="ChecklistStatement"/>
-    <rdfs:isDefinedBy rdf:resource="statement"/>
-  </owl:Class>
-  <owl:Class rdf:about="AndCheckStatement">
-    <rdfs:label xml:lang="en">And Check Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">Check verified if and only if all of its sub-checks are verified.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n8c3312ee3f174237935761610fcd860ab1">
-        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:minCardinality>
-        <owl:onProperty rdf:resource="hasSubdivision"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="ChecklistStatement"/>
-    <rdfs:isDefinedBy rdf:resource="statement"/>
-  </owl:Class>
-  <owl:ObjectProperty rdf:about="hasEvaluator">
-    <rdfs:label xml:lang="en">has evaluator</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a human evaluated statement to the subdivision that expresses who shall verify this check</rdfs:comment>
-    <rdfs:domain rdf:resource="HumanEvaluatedCheckStatement"/>
-    <rdfs:range rdf:resource="Statement"/>
-    <rdfs:isDefinedBy rdf:resource="statement"/>
-  </owl:ObjectProperty>
-  <owl:Class rdf:about="CategoryCheckStatement">
-    <rdfs:label xml:lang="en">Category Check Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://github.com/Accord-Project/aec3po/issues/56"/>
+  <owl:Class rdf:about="BooleanCheckStatement">
+    <rdfs:label xml:lang="en">Boolean Check Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of check that checks the existence of an element (property) related to a feature of interest.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://github.com/Accord-Project/aec3po/issues/58"/>
     <rdfs:subClassOf rdf:resource="CheckStatement"/>
     <rdfs:isDefinedBy rdf:resource="statement"/>
   </owl:Class>
@@ -87,38 +112,26 @@
     <rdfs:seeAlso rdf:resource="https://github.com/Accord-Project/aec3po/issues/59"/>
     <rdfs:isDefinedBy rdf:resource="statement"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="definitionOf">
-    <rdfs:label xml:lang="en">definition of</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a definition statement to the term that is defined</rdfs:comment>
-    <rdfs:domain rdf:resource="DefinitionStatement"/>
-    <rdfs:range rdf:resource="DocumentSubdivision"/>
-    <rdfs:isDefinedBy rdf:resource="statement"/>
-  </owl:ObjectProperty>
-  <owl:Class rdf:about="BooleanCheckStatement">
-    <rdfs:label xml:lang="en">Boolean Check Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">A type of check that checks the existence of an element (property) related to a feature of interest.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://github.com/Accord-Project/aec3po/issues/58"/>
+  <owl:Class rdf:about="NumericalCheckStatement">
+    <rdfs:label xml:lang="en">Numerical Check Statement</rdfs:label>
+    <rdfs:comment>A type of check that involves checking one numerical property against another, i.e. x &lt; y or similar.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="CheckStatement"/>
+    <rdfs:seeAlso rdf:resource="https://github.com/Accord-Project/aec3po/issues/57"/>
     <rdfs:isDefinedBy rdf:resource="statement"/>
   </owl:Class>
-  <owl:Class rdf:about="NotCheckStatement">
-    <rdfs:label xml:lang="en">Not Check Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">Check verified if and only if the sub-check is not verified.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n8c3312ee3f174237935761610fcd860ab3">
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
-        <owl:onProperty rdf:resource="hasSubdivision"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+  <owl:Class rdf:about="DefinitionStatement">
+    <rdfs:label xml:lang="en">Definition Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="Statement"/>
     <rdfs:isDefinedBy rdf:resource="statement"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="hasDefinition">
-    <rdfs:label xml:lang="en">has definition</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a definition statement to the definition of the term</rdfs:comment>
-    <rdfs:domain rdf:resource="DefinitionStatement"/>
-    <rdfs:range rdf:resource="DocumentSubdivision"/>
+  <owl:Class rdf:about="Statement">
+    <rdfs:label xml:lang="en">Statement</rdfs:label>
+    <rdfs:comment xml:lang="en">Something stated in a building compliance-related document</rdfs:comment>
+    <skos:example xml:lang="en">Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building.</skos:example>
+    <rdfs:subClassOf rdf:resource="DocumentSubdivision"/>
     <rdfs:isDefinedBy rdf:resource="statement"/>
-  </owl:ObjectProperty>
+  </owl:Class>
   <owl:Class rdf:about="CheckStatement">
     <rdfs:label xml:lang="en">Check Statement</rdfs:label>
     <rdfs:comment xml:lang="en">refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain.</rdfs:comment>
@@ -138,19 +151,6 @@
     <rdfs:label xml:lang="en">Checklist Statement</rdfs:label>
     <rdfs:comment xml:lang="en">Checklist statement is a type of check statement that represents a list of checks that need to be verified.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="CheckStatement"/>
-    <rdfs:isDefinedBy rdf:resource="statement"/>
-  </owl:Class>
-  <owl:Class rdf:about="Statement">
-    <rdfs:label xml:lang="en">Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">Something stated in a building compliance-related document</rdfs:comment>
-    <skos:example xml:lang="en">Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building.</skos:example>
-    <rdfs:subClassOf rdf:resource="DocumentSubdivision"/>
-    <rdfs:isDefinedBy rdf:resource="statement"/>
-  </owl:Class>
-  <owl:Class rdf:about="DefinitionStatement">
-    <rdfs:label xml:lang="en">Definition Statement</rdfs:label>
-    <rdfs:comment xml:lang="en">A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="Statement"/>
     <rdfs:isDefinedBy rdf:resource="statement"/>
   </owl:Class>
 </rdf:RDF>

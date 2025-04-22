@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:qudt="http://qudt.org/schema/qudt/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:qudt="http://qudt.org/schema/qudt/"
+  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
 >
-  <owl:NamedIndividual rdf:about="CompressiveForce">
+  <owl:NamedIndividual rdf:about="PartialSafetyFactor0">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">compressive force</skos:prefLabel>
-    <skos:definition>Force tending to reduce the size of a body.</skos:definition>
-    <qudt:symbol>C</qudt:symbol>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-2D0"/>
+    <skos:prefLabel xml:lang="en">Partial Safety Factor</skos:prefLabel>
+    <skos:definition xml:lang="en">Also written γM0, the partial safety factor for resistance related to member resistance without instability.</skos:definition>
+    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
+    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="quantity_kinds">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -33,7 +33,25 @@
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-29</dct:modified>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-    <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Force"/>
+    <skos:broader>
+      <owl:NamedIndividual rdf:about="PartialSafetyFactor">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="QuantityKind"/>
+        <skos:prefLabel xml:lang="en">Partial Safety Factor</skos:prefLabel>
+        <skos:definition xml:lang="en">Also written γM, the partial safety factor for resistance.</skos:definition>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
+        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
+        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+      </owl:NamedIndividual>
+    </skos:broader>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="AxialCompressionStress">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="QuantityKind"/>
+    <skos:prefLabel xml:lang="en">axial compression stress</skos:prefLabel>
+    <skos:definition>also known as fc0k</skos:definition>
+    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M-1H0T-2D0"/>
+    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="WidthOfAngledCorridor">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -49,36 +67,6 @@
     <qudt:normativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/obp/ui/#iso:std:iso:7176:-5:ed-2:v1:en:term:3.25</qudt:normativeReference>
     <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
     <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="PartialSafetyFactor0">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">Partial Safety Factor</skos:prefLabel>
-    <skos:definition xml:lang="en">Also written γM0, the partial safety factor for resistance related to member resistance without instability.</skos:definition>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:broader>
-      <owl:NamedIndividual rdf:about="PartialSafetyFactor">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="QuantityKind"/>
-        <skos:prefLabel xml:lang="en">Partial Safety Factor</skos:prefLabel>
-        <skos:definition xml:lang="en">Also written γM, the partial safety factor for resistance.</skos:definition>
-        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
-        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
-        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-      </owl:NamedIndividual>
-    </skos:broader>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="PartialSafetyFactor1">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <rdfs:label xml:lang="en">Partial Safety Factor</rdfs:label>
-    <skos:definition xml:lang="en">Also written γM1, the partial safety factor for resistance related to any limit state where instability governs.</skos:definition>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:broader rdf:resource="PartialSafetyFactor"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="ModificationFactorKmod">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -104,20 +92,25 @@
     <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
     <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="AxialCompressionStress">
+  <owl:NamedIndividual rdf:about="PartialSafetyFactor1">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">axial compression stress</skos:prefLabel>
-    <skos:definition>also known as fc0k</skos:definition>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M-1H0T-2D0"/>
+    <rdfs:label xml:lang="en">Partial Safety Factor</rdfs:label>
+    <skos:definition xml:lang="en">Also written γM1, the partial safety factor for resistance related to any limit state where instability governs.</skos:definition>
+    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
+    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
     <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+    <skos:broader rdf:resource="PartialSafetyFactor"/>
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="QuantityKindNomenclature">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <rdfs:label xml:lang="en">Quantity Kind nomenclature</rdfs:label>
+  <owl:NamedIndividual rdf:about="CompressiveForce">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="QuantityKind"/>
+    <skos:prefLabel xml:lang="en">compressive force</skos:prefLabel>
+    <skos:definition>Force tending to reduce the size of a body.</skos:definition>
+    <qudt:symbol>C</qudt:symbol>
+    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-2D0"/>
     <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:definition xml:lang="en">A set of values for quantity kinds.
-    AEC3PO includes a set of values for this nomenclature.</skos:definition>
+    <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Force"/>
   </owl:NamedIndividual>
   <owl:Class rdf:about="QuantityKind">
     <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
@@ -134,11 +127,19 @@
     <skos:example xml:lang="en">Length, Area, U-Value.</skos:example>
     <skos:note xml:lang="en">Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as "Length" or "Thermal Transmittance" is a maximal Region, and a specific quantity value such as "13 m" or "3.5 W/(m^2.K)" is a minimal Region.</skos:note>
     <owl:equivalentClass>
-      <rdf:Description rdf:nodeID="n77f670bd452a4fc6a94bdd784fc69fa4b1">
+      <rdf:Description rdf:nodeID="n231360bbd4fd4bcf8e045f785f4d073ab1">
         <owl:intersectionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="n77f670bd452a4fc6a94bdd784fc69fa4b2">
-            <owl:hasValue rdf:resource="QuantityKindNomenclature"/>
+          <owl:Restriction rdf:nodeID="n231360bbd4fd4bcf8e045f785f4d073ab2">
+            <owl:hasValue>
+              <owl:NamedIndividual rdf:about="QuantityKindNomenclature">
+                <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+                <rdfs:label xml:lang="en">Quantity Kind nomenclature</rdfs:label>
+                <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+                <skos:definition xml:lang="en">A set of values for quantity kinds.
+    AEC3PO includes a set of values for this nomenclature.</skos:definition>
+              </owl:NamedIndividual>
+            </owl:hasValue>
             <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
           </owl:Restriction>
         </owl:intersectionOf>

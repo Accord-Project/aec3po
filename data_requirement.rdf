@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <owl:Class rdf:about="hasRequiredData">
-    <rdfs:label xml:lang="en">has required data</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a statement to some data that is required in order to perform a check to demonstrate compliance checking.</rdfs:comment>
-    <rdfs:domain rdf:resource="Statement"/>
-    <rdfs:range rdf:resource="DataRequirement"/>
+  <owl:Class rdf:about="IDS">
+    <rdfs:label xml:lang="en">IDS</rdfs:label>
+    <rdfs:comment xml:lang="en">Required data defined in an Information Delivery Format (IDS).</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="DataRequirement"/>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="data_requirement">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -28,10 +27,11 @@
       </owl:Ontology>
     </rdfs:isDefinedBy>
   </owl:Class>
-  <owl:Class rdf:about="IDS">
-    <rdfs:label xml:lang="en">IDS</rdfs:label>
-    <rdfs:comment xml:lang="en">Required data defined in an Information Delivery Format (IDS).</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="DataRequirement"/>
+  <owl:Class rdf:about="hasRequiredData">
+    <rdfs:label xml:lang="en">has required data</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a statement to some data that is required in order to perform a check to demonstrate compliance checking.</rdfs:comment>
+    <rdfs:domain rdf:resource="Statement"/>
+    <rdfs:range rdf:resource="DataRequirement"/>
     <rdfs:isDefinedBy rdf:resource="data_requirement"/>
   </owl:Class>
   <owl:Class rdf:about="DataRequirement">

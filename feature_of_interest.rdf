@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <owl:ObjectProperty rdf:about="hasProperty">
     <rdfs:label xml:lang="en">has Property</rdfs:label>
@@ -49,17 +49,17 @@
   - a bot:Zone or a bot:Element
   - a ifc:IfcRamp, a ifc:IfcSurfaceFeature</skos:note>
   </owl:Class>
+  <owl:Class rdf:about="QuantityKind">
+    <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
+    <rdfs:comment xml:lang="en">A kind of quantity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
+    <skos:example xml:lang="en">height, area, U-value</skos:example>
+  </owl:Class>
   <owl:Class rdf:about="Property">
     <rdfs:label xml:lang="en">Property</rdfs:label>
     <rdfs:comment xml:lang="en">An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
     <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
     <skos:example xml:lang="en">The height of a building, the area of a space, the U-value of a wall</skos:example>
-  </owl:Class>
-  <owl:Class rdf:about="QuantityKind">
-    <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
-    <rdfs:comment xml:lang="en">A kind of quantity.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
-    <skos:example xml:lang="en">height, area, U-value</skos:example>
   </owl:Class>
 </rdf:RDF>

@@ -1,68 +1,68 @@
-<https://w3id.org/lbd/aec3po/building_usage> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/BuildingUsage> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2002/07/owl#equivalentClass> _:n229955e7ba034a6eb4ba6fe2316f31b2b1 .
-<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
-_:n229955e7ba034a6eb4ba6fe2316f31b2b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n229955e7ba034a6eb4ba6fe2316f31b2b2 .
-<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingUsage> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingUsage> .
-_:n229955e7ba034a6eb4ba6fe2316f31b2b2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
-_:n229955e7ba034a6eb4ba6fe2316f31b2b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n229955e7ba034a6eb4ba6fe2316f31b2b3 .
-<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
-_:n229955e7ba034a6eb4ba6fe2316f31b2b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n229955e7ba034a6eb4ba6fe2316f31b2b4 .
-<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/BuildingUsage-commercial> .
-<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2004/02/skos/core#prefLabel> "commercial"@en .
-<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/2004/02/skos/core#prefLabel> "residential"@en .
-<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2004/02/skos/core#definition> "Building has commercial usage."@en .
-<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#label> "has building usage"@en .
+_:n6c3c3242118c4bf1a1210a0c86e3af2bb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/title> "AEC3PO: Building Usage"@en .
+<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2004/02/skos/core#prefLabel> "cultural"@en .
+<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n6c3c3242118c4bf1a1210a0c86e3af2bb1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n6c3c3242118c4bf1a1210a0c86e3af2bb3 .
 <https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#label> "for building usage"@en .
-<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<https://w3id.org/lbd/aec3po/building_usage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2004/02/skos/core#definition> "Building has cultural usage."@en .
+<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:n6c3c3242118c4bf1a1210a0c86e3af2bb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+_:n6c3c3242118c4bf1a1210a0c86e3af2bb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n6c3c3242118c4bf1a1210a0c86e3af2bb2 .
+<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#comment> "The building usage for which a specific check, verifier, or check result applies.\n  A set of values is defined by aec3po in the corresponding concept scheme."@en .
 <https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+_:n6c3c3242118c4bf1a1210a0c86e3af2bb2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/description> "Definition of a building usage concept scheme for AEC3PO."@en .
+<https://w3id.org/lbd/aec3po/building_usage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2002/07/owl#equivalentClass> _:n6c3c3242118c4bf1a1210a0c86e3af2bb1 .
+<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/BuildingUsage> .
+<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/2004/02/skos/core#prefLabel> "residential"@en .
+<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasDesign> .
+<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
+<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/BuildingUsage-commercial> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:n6c3c3242118c4bf1a1210a0c86e3af2bb2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Design> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/building_usage> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingUsage> .
+<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/forDesign> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingUsage> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#label> "has building usage"@en .
+<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/2004/02/skos/core#definition> "Building has residential usage."@en .
+<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#comment> "The building usage design of a feature of interest or a property of that feature of interest.\n  A set of values is defined by aec3po in the corresponding concept scheme."@en .
 <https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/BuildingUsage> .
-<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/hasDesign> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2004/02/skos/core#definition> "Building has cultural usage."@en .
-<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/BuildingUsage-residential> .
-<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#label> "building usage"@en .
-<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/title> "AEC3PO: Building Usage"@en .
-<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
-<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/description> "Definition of a building usage concept scheme for AEC3PO."@en .
-<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Building usage nomenclature"@en .
-<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-_:n229955e7ba034a6eb4ba6fe2316f31b2b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for the building usage design.\n  AEC3PO includes a set of values for this nomenclature.\n  These values are :\n  - residential : residential building;\n  - commercial : commercial building."@en .
-<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
-_:n229955e7ba034a6eb4ba6fe2316f31b2b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#comment> "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingUsageNomenclature"@en .
-<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingUsage> .
-<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
-<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
-_:n229955e7ba034a6eb4ba6fe2316f31b2b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
+_:n6c3c3242118c4bf1a1210a0c86e3af2bb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/modified> "2023-04-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#comment> "The building usage for which a specific check, verifier, or check result applies.\n  A set of values is defined by aec3po in the corresponding concept scheme."@en .
-<https://w3id.org/lbd/aec3po/hasBuildingUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-_:n229955e7ba034a6eb4ba6fe2316f31b2b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2004/02/skos/core#prefLabel> "cultural"@en .
+<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2004/02/skos/core#prefLabel> "commercial"@en .
 <https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#label> "building usage"@en .
+<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Building usage nomenclature"@en .
 <https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
-<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Design> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+<https://w3id.org/lbd/aec3po/BuildingUsage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for the building usage design.\n  AEC3PO includes a set of values for this nomenclature.\n  These values are :\n  - residential : residential building;\n  - commercial : commercial building."@en .
+_:n6c3c3242118c4bf1a1210a0c86e3af2bb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n6c3c3242118c4bf1a1210a0c86e3af2bb4 .
+<https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/BuildingUsage-residential> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/building_usage> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/BuildingUsage> .
 <https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/forBuildingUsage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbd/aec3po/forDesign> .
-<https://w3id.org/lbd/aec3po/building_usage> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/BuildingUsage-residential> <http://www.w3.org/2004/02/skos/core#definition> "Building has residential usage."@en .
-<https://w3id.org/lbd/aec3po/BuildingUsage-cultural> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/BuildingUsageNomenclature> .
+<https://w3id.org/lbd/aec3po/BuildingUsage-commercial> <http://www.w3.org/2004/02/skos/core#definition> "Building has commercial usage."@en .
