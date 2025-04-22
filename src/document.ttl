@@ -14,7 +14,7 @@ aec3po:document a owl:Ontology ;
  dct:description """The AEC3PO Document module describes a document, of any kind, typically related to compliance and permitting. Documents are split into division and subdivisions, down to individual statements.
 
 Document subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back."""@en ;
- dct:description <document.png> ;
+ dct:description <diagrams/document.png> ;
  dct:modified "2023-05-25"^^xsd:date ;
  dct:title "AEC3PO: document"@en ;
  vann:preferredNamespacePrefix "aec3po" ;

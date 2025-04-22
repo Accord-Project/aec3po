@@ -65,7 +65,7 @@ rule formalization tool (Task 2.3), facilitating seamless communication and coll
 ### AEC3PO Modules <a name="modules"></a> 
 The AEC3PO ontology is designed to represent various aspects of the construction domain, focusing on compliance and permitting. It is organised into different modules, each comprising classes, and properties. These modules facilitate the modeling of different components and relationships within the construction domain. The figure below shows an overview of these modules and the relations among them.
 
-![AEC3PO Overview](images/aec3po_v1.0.2_Modules.png) 
+![AEC3PO Overview](resources/diagrams/overview-modules.png) 
 
 Below is an overview of each module and its sub-components:
 1. **Module 1: Document**: This module describes the metadata of a building-compliance related document and its composition in terms of subdivisions (sections, tables, images) which come in a hierarchical form.
@@ -124,7 +124,7 @@ AEC3PO contains five modules, each of them imports an external ontology, and spe
 
 In the figure, the AEC3PO ontology is positioned at the center, with arrows extending outward to connect with other related ontologies. Each ontology is represented as a distinct node, emphasising the integration of diverse knowledge domains. The alignment signifies the synergy achieved by harmonising multiple ontologies to enhance the overall understanding and modeling of compliance and permitting processes in the AEC sector.
 
-![AEC3PO Overview](images/aec3po-Alignment2.png)
+![AEC3PO Overview](resources/diagrams/alignment.png)
 
 The figure above effectively conveys the interconnectedness of different ontologies with AEC3PO for a holistic understanding of compliance and permitting processes in the construction industry. This alignment facilitates cross-domain information sharing, enabling more accurate and comprehensive modeling of the complex construction ecosystem. The table below lists all the external ontologies, the namespaces and the suggested prefix for each ontology modules is also provided.
 

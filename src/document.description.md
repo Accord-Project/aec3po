@@ -5,6 +5,6 @@ The AEC3PO Document module describes building-compliance related documents, thei
 Document subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back.
 
 <figure>
-  <img src="diagrams/aec3po-document.png" alt="Illustration of the core concepts in the Document module" />
+  <img src="diagrams/document.png" alt="Illustration of the core concepts in the Document module" />
   <figcaption>Illustration of the core concepts in the Document module</figcaption>
 </figure>

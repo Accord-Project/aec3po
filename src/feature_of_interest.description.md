@@ -7,7 +7,7 @@ Properties may have some quantity kind, and be valued.
 
 
 <figure>
-  <img src="diagrams/aec3po-feature_of_interest.png" alt="Illustration of the core concepts in the Feature of Interest module" />
+  <img src="diagrams/feature_of_interest.png" alt="Illustration of the core concepts in the Feature of Interest module" />
   <figcaption>Illustration of the core concepts in the Feature of Interest module</figcaption>
 </figure>
 

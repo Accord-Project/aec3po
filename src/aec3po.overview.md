@@ -4,7 +4,7 @@
 AEC3PO aims to model all aspects of compliance and permitting on the AEC domain, across different regulatory systems.
 It is organised into modules, comprising of classes and properties. The figure below shows an overview of these modules and their relations.
 
-![AEC3PO Overview](diagrams/aec3po-overview-modules.png)
+![AEC3PO Overview](diagrams/overview-modules.png)
 
 Below is an overview of the core modules and their components:
 
@@ -36,7 +36,7 @@ Below is an overview of the core modules and their components:
     - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
     - Properties: _usedMethod_, _madeBy_, _hasReport_, _checks_, _etc_.
 
-8. **[ComplianceVerificationReport](https://ci.mines-stetienne.fr/aec3po/conformance_report)**: An automatically generated report that checks if all the assigned compliance requirements (typically Checks) have been met. This will typically show the results of some `aec3po:ProcesVerifier` checking entities via some `aec3po:CheckingAct`. Entities may be validated or repudiated.
+8. **[ComplianceVerificationReport](https://ci.mines-stetienne.fr/aec3po/compliance_verification_report)**: An automatically generated report that checks if all the assigned compliance requirements (typically Checks) have been met. This will typically show the results of some `aec3po:ProcesVerifier` checking entities via some `aec3po:CheckingAct`. Entities may be validated or repudiated.
     - Classes: _ComplianceverificationReport_, _result_, _ValidationResult_,_Severity_, _etc_.
     - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_, _Info_, _Violation_, _Severity_,_etc._
 
@@ -62,7 +62,7 @@ The figure below illustrates the alignment of AEC3PO with the imported ontologie
 AEC3PO is positioned in the centre, with the imported ontologies represented as separate nodes.
 
 
-![AEC3PO Overview](diagrams/aec3po-Alignment2.png)
+![AEC3PO Overview](diagrams/alignment.png)
 
 
 | Ontology          |  Namespace                        | Prefix    | Description and Usage                                                        |
