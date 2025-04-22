@@ -1,43 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <owl:ObjectProperty rdf:about="hasFirstSubdivision">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:label xml:lang="en">has first subdivision</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a document part to the first of its subdivision</rdfs:comment>
-    <rdfs:domain>
-      <rdf:Description rdf:nodeID="n80ab2a772f4345c6abeb21488c3e3a5db5">
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="Document"/>
-          <rdf:Description rdf:about="DocumentSubdivision"/>
-        </owl:unionOf>
-      </rdf:Description>
-    </rdfs:domain>
-    <rdfs:range rdf:resource="DocumentSubdivision"/>
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="hasSubdivision">
-        <rdfs:label xml:lang="en">has subdivision</rdfs:label>
-        <rdfs:comment xml:lang="en">links a document part to some of its subdivision</rdfs:comment>
-        <rdfs:domain>
-          <rdf:Description rdf:nodeID="n80ab2a772f4345c6abeb21488c3e3a5db2">
-            <owl:unionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="Document"/>
-              <rdf:Description rdf:about="DocumentSubdivision"/>
-            </owl:unionOf>
-          </rdf:Description>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="DocumentSubdivision"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
-        <rdfs:isDefinedBy rdf:resource="document"/>
-      </owl:ObjectProperty>
-    </rdfs:subPropertyOf>
+  <owl:DatatypeProperty rdf:about="DocumentSubdivision_asLiteral">
+    <rdfs:label xml:lang="en">as literal</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a document subdivision to its literal representation. The literal datatype may be xsd:string, rdf:HTMLLiteral, xsd:base64Binary, or any other relevant datatype.</rdfs:comment>
+    <skos:hiddenLabel>text</skos:hiddenLabel>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="document">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -54,13 +28,23 @@ Document subdivisions can be described as literals, link to their first part, an
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:created>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="forDocument">
-    <rdfs:label xml:lang="en">for document</rdfs:label>
-    <rdfs:comment xml:lang="en">links an entity such as a legal verifier to the document it is for.</rdfs:comment>
-    <rdfs:range rdf:resource="Document"/>
+    <rdfs:domain rdf:resource="DocumentSubdivision"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="hasNextSubdivision">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label xml:lang="en">has next subdivision</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a document subdivision to the document subdivision that immediately follows it, if it exists</rdfs:comment>
+    <rdfs:domain rdf:resource="DocumentSubdivision"/>
+    <rdfs:range rdf:resource="DocumentSubdivision"/>
     <rdfs:isDefinedBy rdf:resource="document"/>
   </owl:ObjectProperty>
+  <owl:Class rdf:about="Image">
+    <rdfs:label xml:lang="en">Image</rdfs:label>
+    <rdfs:comment xml:lang="en">An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="Document"/>
+    <rdfs:isDefinedBy rdf:resource="document"/>
+  </owl:Class>
   <owl:ObjectProperty rdf:about="requiresDocument">
     <rdfs:label xml:lang="en">requires document</rdfs:label>
     <rdfs:comment xml:lang="en">Links an entity (procedure, statement, verifier, ...) to the document it requires.</rdfs:comment>
@@ -81,28 +65,44 @@ Document subdivisions can be described as literals, link to their first part, an
     <rdfs:subClassOf rdf:resource="Document"/>
     <rdfs:isDefinedBy rdf:resource="document"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="hasNextSubdivision">
+  <owl:ObjectProperty rdf:about="hasFirstSubdivision">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:label xml:lang="en">has next subdivision</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a document subdivision to the document subdivision that immediately follows it, if it exists</rdfs:comment>
-    <rdfs:domain rdf:resource="DocumentSubdivision"/>
+    <rdfs:label xml:lang="en">has first subdivision</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a document part to the first of its subdivision</rdfs:comment>
+    <rdfs:domain>
+      <rdf:Description rdf:nodeID="nbad2c84eaf7a4ecda7fd6fc2ab30a817b5">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="Document"/>
+          <rdf:Description rdf:about="DocumentSubdivision"/>
+        </owl:unionOf>
+      </rdf:Description>
+    </rdfs:domain>
     <rdfs:range rdf:resource="DocumentSubdivision"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="hasSubdivision">
+        <rdfs:label xml:lang="en">has subdivision</rdfs:label>
+        <rdfs:comment xml:lang="en">links a document part to some of its subdivision</rdfs:comment>
+        <rdfs:domain>
+          <rdf:Description rdf:nodeID="nbad2c84eaf7a4ecda7fd6fc2ab30a817b2">
+            <owl:unionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="Document"/>
+              <rdf:Description rdf:about="DocumentSubdivision"/>
+            </owl:unionOf>
+          </rdf:Description>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="DocumentSubdivision"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:isDefinedBy rdf:resource="document"/>
+      </owl:ObjectProperty>
+    </rdfs:subPropertyOf>
     <rdfs:isDefinedBy rdf:resource="document"/>
   </owl:ObjectProperty>
-  <owl:Class rdf:about="Image">
-    <rdfs:label xml:lang="en">Image</rdfs:label>
-    <rdfs:comment xml:lang="en">An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="Document"/>
+  <owl:ObjectProperty rdf:about="forDocument">
+    <rdfs:label xml:lang="en">for document</rdfs:label>
+    <rdfs:comment xml:lang="en">links an entity such as a legal verifier to the document it is for.</rdfs:comment>
+    <rdfs:range rdf:resource="Document"/>
     <rdfs:isDefinedBy rdf:resource="document"/>
-  </owl:Class>
-  <owl:DatatypeProperty rdf:about="DocumentSubdivision_asLiteral">
-    <rdfs:label xml:lang="en">as literal</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a document subdivision to its literal representation. The literal datatype may be xsd:string, rdf:HTMLLiteral, xsd:base64Binary, or any other relevant datatype.</rdfs:comment>
-    <skos:hiddenLabel>text</skos:hiddenLabel>
-    <rdfs:isDefinedBy rdf:resource="document"/>
-    <rdfs:domain rdf:resource="DocumentSubdivision"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-  </owl:DatatypeProperty>
+  </owl:ObjectProperty>
   <owl:Class rdf:about="Document">
     <rdfs:label xml:lang="en">Document</rdfs:label>
     <rdfs:comment xml:lang="en">A document representing AEC regulations, guidelines, building codes etc.</rdfs:comment>
@@ -115,7 +115,7 @@ Document subdivisions can be described as literals, link to their first part, an
     <rdfs:comment xml:lang="en">Any subdivision of a document, including sections, paragraphs, definitions, words, etc.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="document"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n80ab2a772f4345c6abeb21488c3e3a5db1">
+      <owl:Restriction rdf:nodeID="nbad2c84eaf7a4ecda7fd6fc2ab30a817b1">
         <owl:onProperty rdf:resource="hasSubdivision"/>
         <owl:allValuesFrom rdf:resource="DocumentSubdivision"/>
       </owl:Restriction>

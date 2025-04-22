@@ -1,78 +1,78 @@
-<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Image> .
-<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/2000/01/rdf-schema#comment> "A cell in a table. Cells are contained in rows and columns" .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb1 <http://www.w3.org/2002/07/owl#unionOf> _:n90b1d94a3d3444edb6c83f593f9aaa9bb2 .
-<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is contained by"@en .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n90b1d94a3d3444edb6c83f593f9aaa9bb10 .
-<https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/2000/01/rdf-schema#label> "Contains"@en .
-<https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/2000/01/rdf-schema#label> "Column"@en .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Image> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Row> .
-<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/2000/01/rdf-schema#comment> "The caption of a table, image, etc. "@en .
-<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/created> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/edlira> .
-<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
-<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/modified> "2023-11-01"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Table> .
-<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/2000/01/rdf-schema#domain> _:n90b1d94a3d3444edb6c83f593f9aaa9bb12 .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Column> .
-<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
-<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Table> .
-<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
-<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/2000/01/rdf-schema#label> "Container"@en .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n90b1d94a3d3444edb6c83f593f9aaa9bb11 .
-<https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
-<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/2000/01/rdf-schema#comment> "A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)" .
-<https://w3id.org/lbd/aec3po/table> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Row> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/lbd/aec3po/Table> <http://www.w3.org/2000/01/rdf-schema#comment> "A table is a form of representing information or data in rows and columns. Tables are described by captions." .
-<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Table> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Table> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb12 <http://www.w3.org/2002/07/owl#unionOf> _:n90b1d94a3d3444edb6c83f593f9aaa9bb13 .
-<https://w3id.org/lbd/aec3po/Table> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
-<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n90b1d94a3d3444edb6c83f593f9aaa9bb14 .
-<https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/2000/01/rdf-schema#comment> "A column in a table." .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n90b1d94a3d3444edb6c83f593f9aaa9bb3 .
-<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/description> "The AEC3PO Table module describes tables as representations of data in rows and columns. Tables are described by captions."@en .
-<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:n90b1d94a3d3444edb6c83f593f9aaa9bb6 .
-<https://w3id.org/lbd/aec3po/table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Column> .
-<https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/2000/01/rdf-schema#comment> "A container contains a table and its caption. A table contains row, columns and other elements."@en .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Image> .
-<https://w3id.org/lbd/aec3po/Table> <http://www.w3.org/2000/01/rdf-schema#label> "Table"@en .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n90b1d94a3d3444edb6c83f593f9aaa9bb9 .
-<https://w3id.org/lbd/aec3po/table> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n90b1d94a3d3444edb6c83f593f9aaa9bb8 .
-<https://w3id.org/lbd/aec3po/Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/table> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/document> .
-<https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/2000/01/rdf-schema#domain> _:n90b1d94a3d3444edb6c83f593f9aaa9bb1 .
-<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/2000/01/rdf-schema#label> "Row"@en .
-<https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Table> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Cell> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Table> .
-<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/title> "AEC3PO: Table"@en .
-<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/2000/01/rdf-schema#label> "caption"@en .
-<https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb6 <http://www.w3.org/2002/07/owl#unionOf> _:n90b1d94a3d3444edb6c83f593f9aaa9bb7 .
-<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A table contains row, columns and other elements."@en .
-<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/modified> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/2000/01/rdf-schema#label> "Cell"@en .
-<https://w3id.org/lbd/aec3po/table> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/2000/01/rdf-schema#comment> "A row in a table." .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n90b1d94a3d3444edb6c83f593f9aaa9bb4 .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:n90b1d94a3d3444edb6c83f593f9aaa9bb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n90b1d94a3d3444edb6c83f593f9aaa9bb5 .
+<https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/2000/01/rdf-schema#label> "Column"@en .
+<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/2000/01/rdf-schema#label> "Cell"@en .
+_:n119775f3fe5b49749136e0d3a72fb46db5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/table> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+_:n119775f3fe5b49749136e0d3a72fb46db3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n119775f3fe5b49749136e0d3a72fb46db4 .
+<https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/2000/01/rdf-schema#comment> "A container contains a table and its caption. A table contains row, columns and other elements."@en .
+<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/created> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/modified> "2023-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
+<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
+_:n119775f3fe5b49749136e0d3a72fb46db11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Cell> .
+_:n119775f3fe5b49749136e0d3a72fb46db3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Image> .
+_:n119775f3fe5b49749136e0d3a72fb46db9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Row> .
+<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/2000/01/rdf-schema#label> "Container"@en .
+_:n119775f3fe5b49749136e0d3a72fb46db11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n119775f3fe5b49749136e0d3a72fb46db6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/modified> "2023-11-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:n119775f3fe5b49749136e0d3a72fb46db5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Column> .
+_:n119775f3fe5b49749136e0d3a72fb46db9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n119775f3fe5b49749136e0d3a72fb46db10 .
+<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Table> .
+_:n119775f3fe5b49749136e0d3a72fb46db8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n119775f3fe5b49749136e0d3a72fb46db9 .
+_:n119775f3fe5b49749136e0d3a72fb46db12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Table> .
+<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/title> "AEC3PO: Table"@en .
 <https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/2000/01/rdf-schema#comment> "A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)" .
+<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/description> "The AEC3PO Table module describes tables as representations of data in rows and columns. Tables are described by captions."@en .
+_:n119775f3fe5b49749136e0d3a72fb46db4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n119775f3fe5b49749136e0d3a72fb46db5 .
+<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/2000/01/rdf-schema#range> _:n119775f3fe5b49749136e0d3a72fb46db6 .
+<https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
+<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/2000/01/rdf-schema#label> "Row"@en .
+_:n119775f3fe5b49749136e0d3a72fb46db6 <http://www.w3.org/2002/07/owl#unionOf> _:n119775f3fe5b49749136e0d3a72fb46db7 .
+_:n119775f3fe5b49749136e0d3a72fb46db1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n119775f3fe5b49749136e0d3a72fb46db10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Column> .
+_:n119775f3fe5b49749136e0d3a72fb46db7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Table> .
+_:n119775f3fe5b49749136e0d3a72fb46db10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n119775f3fe5b49749136e0d3a72fb46db11 .
+<https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/2000/01/rdf-schema#domain> _:n119775f3fe5b49749136e0d3a72fb46db1 .
+<https://w3id.org/lbd/aec3po/Table> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
+_:n119775f3fe5b49749136e0d3a72fb46db14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Image> .
+<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
+_:n119775f3fe5b49749136e0d3a72fb46db7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n119775f3fe5b49749136e0d3a72fb46db8 .
+_:n119775f3fe5b49749136e0d3a72fb46db1 <http://www.w3.org/2002/07/owl#unionOf> _:n119775f3fe5b49749136e0d3a72fb46db2 .
+_:n119775f3fe5b49749136e0d3a72fb46db2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n119775f3fe5b49749136e0d3a72fb46db3 .
+<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/2000/01/rdf-schema#comment> "A row in a table." .
+<https://w3id.org/lbd/aec3po/table> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/table> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/document> .
+_:n119775f3fe5b49749136e0d3a72fb46db13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Table> .
+<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A table contains row, columns and other elements."@en .
+<https://w3id.org/lbd/aec3po/Row> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
+<https://w3id.org/lbd/aec3po/table> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is contained by"@en .
+_:n119775f3fe5b49749136e0d3a72fb46db8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Image> .
+<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
+<https://w3id.org/lbd/aec3po/table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/Table> <http://www.w3.org/2000/01/rdf-schema#label> "Table"@en .
+<https://w3id.org/lbd/aec3po/Column> <http://www.w3.org/2000/01/rdf-schema#comment> "A column in a table." .
+<https://w3id.org/lbd/aec3po/contains> <http://www.w3.org/2000/01/rdf-schema#label> "Contains"@en .
+<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/2000/01/rdf-schema#label> "caption"@en .
+_:n119775f3fe5b49749136e0d3a72fb46db12 <http://www.w3.org/2002/07/owl#unionOf> _:n119775f3fe5b49749136e0d3a72fb46db13 .
+<https://w3id.org/lbd/aec3po/isContainedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/table> .
+_:n119775f3fe5b49749136e0d3a72fb46db14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/2000/01/rdf-schema#comment> "A cell in a table. Cells are contained in rows and columns" .
+<https://w3id.org/lbd/aec3po/Container> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Cell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Table> .
+<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/2000/01/rdf-schema#comment> "The caption of a table, image, etc. "@en .
+<https://w3id.org/lbd/aec3po/Table> <http://www.w3.org/2000/01/rdf-schema#comment> "A table is a form of representing information or data in rows and columns. Tables are described by captions." .
+<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:n119775f3fe5b49749136e0d3a72fb46db2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Table> .
+<https://w3id.org/lbd/aec3po/table> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/edlira> .
+_:n119775f3fe5b49749136e0d3a72fb46db13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n119775f3fe5b49749136e0d3a72fb46db14 .
+_:n119775f3fe5b49749136e0d3a72fb46db4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Row> .
+<https://w3id.org/lbd/aec3po/caption> <http://www.w3.org/2000/01/rdf-schema#domain> _:n119775f3fe5b49749136e0d3a72fb46db12 .

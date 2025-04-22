@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <owl:ObjectProperty rdf:about="hasFormat">
-    <rdfs:comment xml:lang="en">Defines the format of an evidence. A sub-property of dct:format</rdfs:comment>
-    <skos:example xml:lang="en">an image, a drawing or a model can be an evidence.</skos:example>
+  <owl:ObjectProperty rdf:about="hasEvidence">
+    <rdfs:comment xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</rdfs:comment>
+    <skos:note xml:lang="en">Unstable. Need evidence of how this property is intended to be used</skos:note>
     <rdfs:domain rdf:resource="Statement"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/format"/>
+    <rdfs:isDefinedBy rdf:resource="statement"/>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="Evidence">
+    <rdfs:label xml:lang="en">Evidence</rdfs:label>
+    <rdfs:comment xml:lang="en">A resource used as an evidence for a statement</rdfs:comment>
+    <skos:example xml:lang="en">A drawing can be an evidence.</skos:example>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="evidence">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -27,17 +32,12 @@
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-  </owl:ObjectProperty>
-  <owl:Class rdf:about="Evidence">
-    <rdfs:label xml:lang="en">Evidence</rdfs:label>
-    <rdfs:comment xml:lang="en">A resource used as an evidence for a statement</rdfs:comment>
-    <skos:example xml:lang="en">A drawing can be an evidence.</skos:example>
-    <rdfs:isDefinedBy rdf:resource="evidence"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="hasEvidence">
-    <rdfs:comment xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</rdfs:comment>
-    <skos:note xml:lang="en">Unstable. Need evidence of how this property is intended to be used</skos:note>
+  <owl:ObjectProperty rdf:about="hasFormat">
+    <rdfs:comment xml:lang="en">Defines the format of an evidence. A sub-property of dct:format</rdfs:comment>
+    <skos:example xml:lang="en">an image, a drawing or a model can be an evidence.</skos:example>
     <rdfs:domain rdf:resource="Statement"/>
-    <rdfs:isDefinedBy rdf:resource="statement"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/format"/>
+    <rdfs:isDefinedBy rdf:resource="evidence"/>
   </owl:ObjectProperty>
 </rdf:RDF>

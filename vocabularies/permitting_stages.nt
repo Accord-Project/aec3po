@@ -1,55 +1,55 @@
-<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/UK_Planning_Permission> .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <https://w3id.org/lbd/aec3po/forAdministrativeArea> <https://w3id.org/lbd/aec3po/England> .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
-<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2000/01/rdf-schema#label> "has permitting stage"@en .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/title> "AEC3PO: Permitting Stage"@en .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2004/02/skos/core#prefLabel> "planning permission"@en .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/PermittingStage> .
-_:n76d0ff412f9d46858e7d33bc8b66d0e0b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n76d0ff412f9d46858e7d33bc8b66d0e0b3 .
-_:n76d0ff412f9d46858e7d33bc8b66d0e0b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n76d0ff412f9d46858e7d33bc8b66d0e0b2 .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2004/02/skos/core#definition> "The UK Building Control Submission permitting stage."@en .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/digitalconstruction/0.5/Lifecycle#hasStage> .
-_:n76d0ff412f9d46858e7d33bc8b66d0e0b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/modified> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/PermittingStage> .
-<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/description> "Definition of a permitting stage concept scheme for AEC3PO."@en .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for permitting stages.\n  AEC3PO includes a set of values for this nomenclature.\n  These values are :\n  - UK_Building_Control_Submission;\n  - UK_Planning_Permission."@en .
-<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-_:n76d0ff412f9d46858e7d33bc8b66d0e0b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n76d0ff412f9d46858e7d33bc8b66d0e0b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Permitting stage nomenclature"@en .
-<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
-_:n76d0ff412f9d46858e7d33bc8b66d0e0b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2004/02/skos/core#definition> "The UK Planning Permission permitting stage."@en .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <https://w3id.org/lbd/aec3po/forAdministrativeArea> <https://w3id.org/lbd/aec3po/England> .
-<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
-<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of permitting stages."@en .
-<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2000/01/rdf-schema#label> "Permitting Stage"@en .
-<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2002/07/owl#equivalentClass> _:n76d0ff412f9d46858e7d33bc8b66d0e0b1 .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/PermittingStage> .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
-<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> .
-<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity to the permitting stage this entity pertains"@en .
-_:n76d0ff412f9d46858e7d33bc8b66d0e0b2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
-<https://w3id.org/lbd/aec3po/permitting_stage> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/administrative_areas> .
-_:n76d0ff412f9d46858e7d33bc8b66d0e0b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n76d0ff412f9d46858e7d33bc8b66d0e0b4 .
-<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2004/02/skos/core#prefLabel> "building control submission"@en .
-<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
+<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2004/02/skos/core#prefLabel> "building control submission"@en .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
+<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2002/07/owl#equivalentClass> _:nb39bfd3cf6384adf9d073b2472ba9f2db1 .
+_:nb39bfd3cf6384adf9d073b2472ba9f2db1 <http://www.w3.org/2002/07/owl#intersectionOf> _:nb39bfd3cf6384adf9d073b2472ba9f2db3 .
+<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/UK_Planning_Permission> .
+<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/digitalconstruction/0.5/Lifecycle#hasStage> .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <https://w3id.org/lbd/aec3po/forAdministrativeArea> <https://w3id.org/lbd/aec3po/England> .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:nb39bfd3cf6384adf9d073b2472ba9f2db4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
+_:nb39bfd3cf6384adf9d073b2472ba9f2db3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nb39bfd3cf6384adf9d073b2472ba9f2db4 .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2004/02/skos/core#prefLabel> "planning permission"@en .
+_:nb39bfd3cf6384adf9d073b2472ba9f2db2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+_:nb39bfd3cf6384adf9d073b2472ba9f2db2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
+<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2000/01/rdf-schema#label> "has permitting stage"@en .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2000/01/rdf-schema#label> "Permitting Stage"@en .
+<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity to the permitting stage this entity pertains"@en .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of permitting stages."@en .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/PermittingStage> .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/2004/02/skos/core#definition> "The UK Building Control Submission permitting stage."@en .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/modified> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/title> "AEC3PO: Permitting Stage"@en .
+_:nb39bfd3cf6384adf9d073b2472ba9f2db3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:nb39bfd3cf6384adf9d073b2472ba9f2db2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/administrative_areas> .
+<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Permitting stage nomenclature"@en .
+_:nb39bfd3cf6384adf9d073b2472ba9f2db4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nb39bfd3cf6384adf9d073b2472ba9f2db2 .
+<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/permitting_stage> .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/PermittingStageNomenclature> .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/description> "Definition of a permitting stage concept scheme for AEC3PO."@en .
+<https://w3id.org/lbd/aec3po/permitting_stage> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <https://w3id.org/lbd/aec3po/forAdministrativeArea> <https://w3id.org/lbd/aec3po/England> .
+<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for permitting stages.\n  AEC3PO includes a set of values for this nomenclature.\n  These values are :\n  - UK_Building_Control_Submission;\n  - UK_Planning_Permission."@en .
+<https://w3id.org/lbd/aec3po/UK_Planning_Permission> <http://www.w3.org/2004/02/skos/core#definition> "The UK Planning Permission permitting stage."@en .
+<https://w3id.org/lbd/aec3po/hasPermittingStage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/PermittingStage> .
+<https://w3id.org/lbd/aec3po/PermittingStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/PermittingStage> .
+<https://w3id.org/lbd/aec3po/PermittingStageNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/UK_Building_Control_Submission> .
