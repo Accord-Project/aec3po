@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:ns1="https://w3id.org/profile/ontdoc/"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <owl:Ontology rdf:about="legal_verifier">
-    <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <dct:contributor>
-      <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
-    </dct:contributor>
-    <dct:description xml:lang="en">The AEC3PO Legal Verifier module describes actors of the compliance and permitting process that have the legal capacity to verify that a specific Statement of a compliance document has been met in a satisfactory manner.</dct:description>
-    <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/diagrams/legal_verifier.png"/>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-31</dct:modified>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
-    <dct:title xml:lang="en">AEC3PO: legal verifier</dct:title>
-    <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
-    <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
-    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-31</dct:created>
-  </owl:Ontology>
   <owl:Class rdf:about="LegalVerifier">
     <rdf:type>
       <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
@@ -38,14 +24,27 @@
       </rdf:Description>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="nb8783af1a55c44b99a9d5b1543b6691bb1">
+      <owl:Restriction rdf:nodeID="n325179904d1b4575b034647b804677ecb1">
         <owl:onProperty rdf:resource="forDocument"/>
         <owl:allValuesFrom rdf:resource="Document"/>
         <ns1:superClassOf rdf:resource="LegalVerifier"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment xml:lang="en">An entity that has the legal capacity to verify compliance with this regulation.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="legal_verifier"/>
+    <rdfs:isDefinedBy>
+      <owl:Ontology rdf:about="legal_verifier">
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
+        <dct:description xml:lang="en">The AEC3PO Legal Verifier module describes actors of the compliance and permitting process that have the legal capacity to verify that a specific Statement of a compliance document has been met in a satisfactory manner.</dct:description>
+        <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/diagrams/legal_verifier.png"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-31</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
+        <dct:title xml:lang="en">AEC3PO: legal verifier</dct:title>
+        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-31</dct:created>
+      </owl:Ontology>
+    </rdfs:isDefinedBy>
     <dct:title xml:lang="en">Legal Verifier</dct:title>
     <dct:description xml:lang="en">An entity that has the legal capacity to verify compliance with this regulation.</dct:description>
     <ns1:superClassOf rdf:resource="PrivateVerifier"/>
@@ -60,11 +59,6 @@
     <dct:title xml:lang="en">State Verifier</dct:title>
     <dct:description xml:lang="en">State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. </dct:description>
   </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="LegalVerifier"/>
-    <ns1:hasMember rdf:resource="PrivateVerifier"/>
-    <ns1:hasMember rdf:resource="StateVerifier"/>
-  </rdf:Description>
   <owl:Class rdf:about="PrivateVerifier">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Private Verifier</rdfs:label>
@@ -74,10 +68,16 @@
     <dct:title xml:lang="en">Private Verifier</dct:title>
     <dct:description xml:lang="en">Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. </dct:description>
   </owl:Class>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
     <ns1:hasMember rdf:resource="legal_verifier"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="LegalVerifier"/>
+    <ns1:hasMember rdf:resource="PrivateVerifier"/>
+    <ns1:hasMember rdf:resource="StateVerifier"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="nb8783af1a55c44b99a9d5b1543b6691bb1"/>
+    <ns1:hasMember rdf:nodeID="n325179904d1b4575b034647b804677ecb1"/>
   </rdf:Description>
 </rdf:RDF>

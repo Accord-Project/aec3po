@@ -1,49 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:prov="http://www.w3.org/ns/prov#"
-  xmlns:ns1="https://w3id.org/profile/ontdoc/"
-  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <owl:Class rdf:about="Document">
-    <rdf:type>
-      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
-        <ns1:hasMember rdf:resource="Document"/>
-        <ns1:hasMember rdf:resource="DocumentSubdivision"/>
-        <ns1:hasMember rdf:resource="Drawing"/>
-        <ns1:hasMember rdf:resource="Image"/>
-      </rdf:Description>
-    </rdf:type>
-    <rdfs:label xml:lang="en">Document</rdfs:label>
-    <rdfs:comment xml:lang="en">A document representing AEC regulations, guidelines, building codes etc.</rdfs:comment>
-    <skos:note xml:lang="en">a Document is expected to be annotated using properties from the Dublin Core Terms vocabulary.</skos:note>
-    <skos:example xml:lang="en">Approved Document A, Eurocode, Finish Regulations, etc.</skos:example>
-    <rdfs:isDefinedBy>
-      <owl:Ontology rdf:about="document">
-        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
-        <dct:description xml:lang="en">The AEC3PO Document module describes a document, of any kind, typically related to compliance and permitting. Documents are split into division and subdivisions, down to individual statements.
-
-Document subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back.</dct:description>
-        <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/diagrams/document.png"/>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:modified>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
-        <dct:title xml:lang="en">AEC3PO: document</dct:title>
-        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
-        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:created>
-      </owl:Ontology>
-    </rdfs:isDefinedBy>
-    <dct:title xml:lang="en">Document</dct:title>
-    <dct:description xml:lang="en">A document representing AEC regulations, guidelines, building codes etc.</dct:description>
-    <ns1:superClassOf rdf:resource="Drawing"/>
-    <ns1:superClassOf rdf:resource="Image"/>
-    <ns1:inRangeOf>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <ns1:hasMember>
       <owl:ObjectProperty rdf:about="forDocument">
         <rdfs:label xml:lang="en">for document</rdfs:label>
         <rdfs:comment xml:lang="en">links an entity such as a legal verifier to the document it is for.</rdfs:comment>
@@ -52,8 +20,8 @@ Document subdivisions can be described as literals, link to their first part, an
         <dct:title xml:lang="en">for document</dct:title>
         <dct:description xml:lang="en">links an entity such as a legal verifier to the document it is for.</dct:description>
       </owl:ObjectProperty>
-    </ns1:inRangeOf>
-    <ns1:inRangeOf>
+    </ns1:hasMember>
+    <ns1:hasMember>
       <owl:ObjectProperty rdf:about="usesDocument">
         <rdfs:label xml:lang="en">uses document</rdfs:label>
         <rdfs:comment xml:lang="en">Links an entity (procedure, statement, verifier, ...) to the document it uses.</rdfs:comment>
@@ -63,8 +31,8 @@ Document subdivisions can be described as literals, link to their first part, an
         <dct:description xml:lang="en">Links an entity (procedure, statement, verifier, ...) to the document it uses.</dct:description>
         <ns1:superPropertyOf rdf:resource="requiresDocument"/>
       </owl:ObjectProperty>
-    </ns1:inRangeOf>
-    <ns1:inRangeOf>
+    </ns1:hasMember>
+    <ns1:hasMember>
       <owl:ObjectProperty rdf:about="requiresDocument">
         <rdfs:label xml:lang="en">requires document</rdfs:label>
         <rdfs:comment xml:lang="en">Links an entity (procedure, statement, verifier, ...) to the document it requires.</rdfs:comment>
@@ -74,20 +42,96 @@ Document subdivisions can be described as literals, link to their first part, an
         <dct:title xml:lang="en">requires document</dct:title>
         <dct:description xml:lang="en">Links an entity (procedure, statement, verifier, ...) to the document it requires.</dct:description>
       </owl:ObjectProperty>
-    </ns1:inRangeOf>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:ObjectProperty rdf:about="hasSubdivision">
+        <rdfs:label xml:lang="en">has subdivision</rdfs:label>
+        <rdfs:comment xml:lang="en">links a document part to some of its subdivision</rdfs:comment>
+        <rdfs:domain rdf:nodeID="n0f9b2839ef4646fa93c323c167def21db2"/>
+        <rdfs:range rdf:resource="DocumentSubdivision"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:isDefinedBy rdf:resource="document"/>
+        <dct:title xml:lang="en">has subdivision</dct:title>
+        <dct:description xml:lang="en">links a document part to some of its subdivision</dct:description>
+        <ns1:superPropertyOf rdf:resource="hasFirstSubdivision"/>
+      </owl:ObjectProperty>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:ObjectProperty rdf:about="hasNextSubdivision">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has next subdivision</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a document subdivision to the document subdivision that immediately follows it, if it exists</rdfs:comment>
+        <rdfs:domain rdf:resource="DocumentSubdivision"/>
+        <rdfs:range rdf:resource="DocumentSubdivision"/>
+        <rdfs:isDefinedBy rdf:resource="document"/>
+        <dct:title xml:lang="en">has next subdivision</dct:title>
+        <dct:description xml:lang="en">Links a document subdivision to the document subdivision that immediately follows it, if it exists</dct:description>
+      </owl:ObjectProperty>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:ObjectProperty rdf:about="hasFirstSubdivision">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has first subdivision</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a document part to the first of its subdivision</rdfs:comment>
+        <rdfs:domain rdf:nodeID="n0f9b2839ef4646fa93c323c167def21db5"/>
+        <rdfs:range rdf:resource="DocumentSubdivision"/>
+        <rdfs:subPropertyOf rdf:resource="hasSubdivision"/>
+        <rdfs:isDefinedBy rdf:resource="document"/>
+        <dct:title xml:lang="en">has first subdivision</dct:title>
+        <dct:description xml:lang="en">Links a document part to the first of its subdivision</dct:description>
+      </owl:ObjectProperty>
+    </ns1:hasMember>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
+    <ns1:superPropertyOf rdf:resource="hasSubdivision"/>
+  </rdf:Description>
+  <owl:Ontology rdf:about="document">
+    <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:contributor>
+      <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+    </dct:contributor>
+    <dct:description xml:lang="en">The AEC3PO Document module describes a document, of any kind, typically related to compliance and permitting. Documents are split into division and subdivisions, down to individual statements.
+
+Document subdivisions can be described as literals, link to their first part, and to their immediate following subdivision. This enables roundtripping from a document to its AEC3PO description, and back.</dct:description>
+    <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/diagrams/document.png"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
+    <dct:title xml:lang="en">AEC3PO: document</dct:title>
+    <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:created>
+  </owl:Ontology>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember>
+      <owl:Restriction rdf:nodeID="n0f9b2839ef4646fa93c323c167def21db1">
+        <owl:onProperty rdf:resource="hasSubdivision"/>
+        <owl:allValuesFrom rdf:resource="DocumentSubdivision"/>
+        <ns1:superClassOf rdf:resource="DocumentSubdivision"/>
+      </owl:Restriction>
+    </ns1:hasMember>
+  </rdf:Description>
+  <owl:Class rdf:about="Drawing">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="Document"/>
+        <ns1:hasMember rdf:resource="DocumentSubdivision"/>
+        <ns1:hasMember rdf:resource="Drawing"/>
+        <ns1:hasMember rdf:resource="Image"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">Drawing</rdfs:label>
+    <rdfs:comment xml:lang="en">Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="Document"/>
+    <rdfs:isDefinedBy rdf:resource="document"/>
+    <dct:title xml:lang="en">Drawing</dct:title>
+    <dct:description xml:lang="en">Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)</dct:description>
   </owl:Class>
   <owl:Class rdf:about="DocumentSubdivision">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Document Subdivision</rdfs:label>
     <rdfs:comment xml:lang="en">Any subdivision of a document, including sections, paragraphs, definitions, words, etc.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="document"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="nde74e8929339460ea8a8f35a2483d7f5b1">
-        <owl:onProperty rdf:resource="hasSubdivision"/>
-        <owl:allValuesFrom rdf:resource="DocumentSubdivision"/>
-        <ns1:superClassOf rdf:resource="DocumentSubdivision"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:nodeID="n0f9b2839ef4646fa93c323c167def21db1"/>
     <skos:example xml:lang="en">Paragraph, section, definition...</skos:example>
     <dct:title xml:lang="en">Document Subdivision</dct:title>
     <dct:description xml:lang="en">Any subdivision of a document, including sections, paragraphs, definitions, words, etc.</dct:description>
@@ -103,63 +147,54 @@ Document subdivisions can be described as literals, link to their first part, an
         <dct:description xml:lang="en">Links a document subdivision to its literal representation. The literal datatype may be xsd:string, rdf:HTMLLiteral, xsd:base64Binary, or any other relevant datatype.</dct:description>
       </owl:DatatypeProperty>
     </ns1:inDomainOf>
-    <ns1:inDomainOf>
-      <owl:ObjectProperty rdf:about="hasNextSubdivision">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:label xml:lang="en">has next subdivision</rdfs:label>
-        <rdfs:comment xml:lang="en">Links a document subdivision to the document subdivision that immediately follows it, if it exists</rdfs:comment>
-        <rdfs:domain rdf:resource="DocumentSubdivision"/>
-        <rdfs:range rdf:resource="DocumentSubdivision"/>
-        <rdfs:isDefinedBy rdf:resource="document"/>
-        <dct:title xml:lang="en">has next subdivision</dct:title>
-        <dct:description xml:lang="en">Links a document subdivision to the document subdivision that immediately follows it, if it exists</dct:description>
-      </owl:ObjectProperty>
-    </ns1:inDomainOf>
-    <ns1:inRangeOf>
-      <owl:ObjectProperty rdf:about="hasSubdivision">
-        <rdfs:label xml:lang="en">has subdivision</rdfs:label>
-        <rdfs:comment xml:lang="en">links a document part to some of its subdivision</rdfs:comment>
-        <rdfs:domain rdf:nodeID="nde74e8929339460ea8a8f35a2483d7f5b2"/>
-        <rdfs:range rdf:resource="DocumentSubdivision"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
-        <rdfs:isDefinedBy rdf:resource="document"/>
-        <dct:title xml:lang="en">has subdivision</dct:title>
-        <dct:description xml:lang="en">links a document part to some of its subdivision</dct:description>
-        <ns1:superPropertyOf rdf:resource="hasFirstSubdivision"/>
-      </owl:ObjectProperty>
-    </ns1:inRangeOf>
+    <ns1:inDomainOf rdf:resource="hasNextSubdivision"/>
+    <ns1:inRangeOf rdf:resource="hasSubdivision"/>
     <ns1:inRangeOf rdf:resource="hasNextSubdivision"/>
-    <ns1:inRangeOf>
-      <owl:ObjectProperty rdf:about="hasFirstSubdivision">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:label xml:lang="en">has first subdivision</rdfs:label>
-        <rdfs:comment xml:lang="en">Links a document part to the first of its subdivision</rdfs:comment>
-        <rdfs:domain rdf:nodeID="nde74e8929339460ea8a8f35a2483d7f5b5"/>
-        <rdfs:range rdf:resource="DocumentSubdivision"/>
-        <rdfs:subPropertyOf rdf:resource="hasSubdivision"/>
-        <rdfs:isDefinedBy rdf:resource="document"/>
-        <dct:title xml:lang="en">has first subdivision</dct:title>
-        <dct:description xml:lang="en">Links a document part to the first of its subdivision</dct:description>
-      </owl:ObjectProperty>
-    </ns1:inRangeOf>
+    <ns1:inRangeOf rdf:resource="hasFirstSubdivision"/>
   </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
-    <ns1:hasMember rdf:resource="forDocument"/>
-    <ns1:hasMember rdf:resource="usesDocument"/>
-    <ns1:hasMember rdf:resource="requiresDocument"/>
-    <ns1:hasMember rdf:resource="hasSubdivision"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="Document"/>
+    <ns1:hasMember rdf:resource="DocumentSubdivision"/>
+    <ns1:hasMember rdf:resource="Drawing"/>
+    <ns1:hasMember rdf:resource="Image"/>
+    <ns1:hasMember>
+      <owl:Class rdf:nodeID="n0f9b2839ef4646fa93c323c167def21db2">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="Document"/>
+          <rdf:Description rdf:about="DocumentSubdivision"/>
+        </owl:unionOf>
+        <ns1:inDomainOf rdf:resource="hasSubdivision"/>
+      </owl:Class>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:Class rdf:nodeID="n0f9b2839ef4646fa93c323c167def21db5">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="Document"/>
+          <rdf:Description rdf:about="DocumentSubdivision"/>
+        </owl:unionOf>
+        <ns1:inDomainOf rdf:resource="hasFirstSubdivision"/>
+      </owl:Class>
+    </ns1:hasMember>
+  </rdf:Description>
+  <owl:Class rdf:about="Document">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Document</rdfs:label>
+    <rdfs:comment xml:lang="en">A document representing AEC regulations, guidelines, building codes etc.</rdfs:comment>
+    <skos:note xml:lang="en">a Document is expected to be annotated using properties from the Dublin Core Terms vocabulary.</skos:note>
+    <skos:example xml:lang="en">Approved Document A, Eurocode, Finish Regulations, etc.</skos:example>
+    <rdfs:isDefinedBy rdf:resource="document"/>
+    <dct:title xml:lang="en">Document</dct:title>
+    <dct:description xml:lang="en">A document representing AEC regulations, guidelines, building codes etc.</dct:description>
+    <ns1:superClassOf rdf:resource="Drawing"/>
+    <ns1:superClassOf rdf:resource="Image"/>
+    <ns1:inRangeOf rdf:resource="forDocument"/>
+    <ns1:inRangeOf rdf:resource="usesDocument"/>
+    <ns1:inRangeOf rdf:resource="requiresDocument"/>
+  </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
     <ns1:hasMember rdf:resource="hasNextSubdivision"/>
     <ns1:hasMember rdf:resource="hasFirstSubdivision"/>
   </rdf:Description>
-  <owl:Class rdf:about="Drawing">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label xml:lang="en">Drawing</rdfs:label>
-    <rdfs:comment xml:lang="en">Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="Document"/>
-    <rdfs:isDefinedBy rdf:resource="document"/>
-    <dct:title xml:lang="en">Drawing</dct:title>
-    <dct:description xml:lang="en">Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. (Source: Wikipedia)</dct:description>
-  </owl:Class>
   <owl:Class rdf:about="Image">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Image</rdfs:label>
@@ -169,48 +204,13 @@ Document subdivisions can be described as literals, link to their first part, an
     <dct:title xml:lang="en">Image</dct:title>
     <dct:description xml:lang="en">An image is a visual representation of something. It can be two-dimensional, three-dimensional, or somehow otherwise feed into the visual system to convey information. (Source: Wikipedia)</dct:description>
   </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="nde74e8929339460ea8a8f35a2483d7f5b1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="Document"/>
-    <ns1:hasMember rdf:resource="DocumentSubdivision"/>
-    <ns1:hasMember rdf:resource="Drawing"/>
-    <ns1:hasMember rdf:resource="Image"/>
-    <ns1:hasMember>
-      <owl:Class rdf:nodeID="nde74e8929339460ea8a8f35a2483d7f5b2">
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="Document"/>
-          <rdf:Description rdf:about="DocumentSubdivision"/>
-        </owl:unionOf>
-        <ns1:inDomainOf rdf:resource="hasSubdivision"/>
-      </owl:Class>
-    </ns1:hasMember>
-    <ns1:hasMember>
-      <owl:Class rdf:nodeID="nde74e8929339460ea8a8f35a2483d7f5b5">
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="Document"/>
-          <rdf:Description rdf:about="DocumentSubdivision"/>
-        </owl:unionOf>
-        <ns1:inDomainOf rdf:resource="hasFirstSubdivision"/>
-      </owl:Class>
-    </ns1:hasMember>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
-    <ns1:hasMember rdf:resource="hasNextSubdivision"/>
-    <ns1:hasMember rdf:resource="hasFirstSubdivision"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
-    <ns1:hasMember rdf:resource="DocumentSubdivision_asLiteral"/>
-  </rdf:Description>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
     <ns1:hasMember rdf:resource="document"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
-    <ns1:superPropertyOf rdf:resource="hasSubdivision"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
     <ns1:inRangeOf rdf:resource="DocumentSubdivision_asLiteral"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
+    <ns1:hasMember rdf:resource="DocumentSubdivision_asLiteral"/>
   </rdf:Description>
 </rdf:RDF>

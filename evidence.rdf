@@ -1,57 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <owl:ObjectProperty rdf:about="hasEvidence">
-    <rdfs:comment xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</rdfs:comment>
-    <skos:note xml:lang="en">Unstable. Need evidence of how this property is intended to be used</skos:note>
-    <rdfs:domain>
-      <rdf:Description rdf:about="Statement">
-        <ns1:inDomainOf rdf:resource="hasEvidence"/>
-        <ns1:inDomainOf rdf:resource="hasFormat"/>
-      </rdf:Description>
-    </rdfs:domain>
-    <rdfs:isDefinedBy rdf:resource="statement"/>
-    <dct:description xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</dct:description>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="hasFormat">
-    <rdfs:comment xml:lang="en">Defines the format of an evidence. A sub-property of dct:format</rdfs:comment>
-    <skos:example xml:lang="en">an image, a drawing or a model can be an evidence.</skos:example>
-    <rdfs:domain rdf:resource="Statement"/>
-    <rdfs:subPropertyOf>
-      <rdf:Description rdf:about="http://purl.org/dc/terms/format">
-        <ns1:superPropertyOf rdf:resource="hasFormat"/>
-      </rdf:Description>
-    </rdfs:subPropertyOf>
-    <rdfs:isDefinedBy>
-      <owl:Ontology rdf:about="evidence">
-        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
-        <dct:description xml:lang="en">The AEC3PO Evidence module describes the evidence that an actor in the compliance and permitting process needs to provide in order to prove that the requirements derived from a Statement have been met.</dct:description>
-        <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/diagrams/evidence.png"/>
-        <dct:title xml:lang="en">AEC3PO: evidence</dct:title>
-        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
-        <owl:imports rdf:resource="statement"/>
-        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-23</dct:created>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
-      </owl:Ontology>
-    </rdfs:isDefinedBy>
-    <dct:description xml:lang="en">Defines the format of an evidence. A sub-property of dct:format</dct:description>
-  </owl:ObjectProperty>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
-    <ns1:hasMember rdf:resource="hasEvidence"/>
-    <ns1:hasMember rdf:resource="hasFormat"/>
-  </rdf:Description>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+  <owl:Ontology rdf:about="evidence">
+    <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:contributor>
+      <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+    </dct:contributor>
+    <dct:description xml:lang="en">The AEC3PO Evidence module describes the evidence that an actor in the compliance and permitting process needs to provide in order to prove that the requirements derived from a Statement have been met.</dct:description>
+    <dct:description rdf:resource="file:///home/runner/work/aec3po/aec3po/src/diagrams/evidence.png"/>
+    <dct:title xml:lang="en">AEC3PO: evidence</dct:title>
+    <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+    <owl:imports rdf:resource="statement"/>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-23</dct:created>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
+  </owl:Ontology>
   <owl:Class rdf:about="Evidence">
     <rdf:type>
       <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
@@ -65,10 +37,38 @@
     <dct:title xml:lang="en">Evidence</dct:title>
     <dct:description xml:lang="en">A resource used as an evidence for a statement</dct:description>
   </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="Evidence"/>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/format">
+    <ns1:superPropertyOf>
+      <owl:ObjectProperty rdf:about="hasFormat">
+        <rdfs:comment xml:lang="en">Defines the format of an evidence. A sub-property of dct:format</rdfs:comment>
+        <skos:example xml:lang="en">an image, a drawing or a model can be an evidence.</skos:example>
+        <rdfs:domain rdf:resource="Statement"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/format"/>
+        <rdfs:isDefinedBy rdf:resource="evidence"/>
+        <dct:description xml:lang="en">Defines the format of an evidence. A sub-property of dct:format</dct:description>
+      </owl:ObjectProperty>
+    </ns1:superPropertyOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="Statement">
+    <ns1:inDomainOf>
+      <owl:ObjectProperty rdf:about="hasEvidence">
+        <rdfs:comment xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</rdfs:comment>
+        <skos:note xml:lang="en">Unstable. Need evidence of how this property is intended to be used</skos:note>
+        <rdfs:domain rdf:resource="Statement"/>
+        <rdfs:isDefinedBy rdf:resource="statement"/>
+        <dct:description xml:lang="en">Links a statement to a piece of evidence for that statement (assertion, statement, or claim).</dct:description>
+      </owl:ObjectProperty>
+    </ns1:inDomainOf>
+    <ns1:inDomainOf rdf:resource="hasFormat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <ns1:hasMember rdf:resource="hasEvidence"/>
+    <ns1:hasMember rdf:resource="hasFormat"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
     <ns1:hasMember rdf:resource="evidence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="Evidence"/>
   </rdf:Description>
 </rdf:RDF>

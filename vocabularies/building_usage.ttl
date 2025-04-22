@@ -20,7 +20,7 @@
     rdfs:isDefinedBy <building_usage> ;
     rdfs:subClassOf skos:Concept,
         <Design> ;
-    owl:equivalentClass _:n8a31aae64a544c78a426d4e6c066450cb1 ;
+    owl:equivalentClass _:n5ba4fb8a52c24165b9706e1c987668e4b1 ;
     ns1:hasMember <BuildingUsage-commercial>,
         <BuildingUsage-cultural>,
         <BuildingUsage-residential> ;
@@ -35,7 +35,7 @@ owl:FunctionalProperty ns1:hasMember <hasBuildingUsage> .
 
 owl:Ontology ns1:hasMember <building_usage> .
 
-owl:Restriction ns1:hasMember _:n8a31aae64a544c78a426d4e6c066450cb2 .
+owl:Restriction ns1:hasMember _:n5ba4fb8a52c24165b9706e1c987668e4b2 .
 
 skos:ConceptScheme ns1:hasMember <BuildingUsageNomenclature> .
 
@@ -45,7 +45,7 @@ skos:ConceptScheme ns1:hasMember <BuildingUsageNomenclature> .
 
 <hasDesign> ns1:superPropertyOf <hasBuildingUsage> .
 
-owl:Class ns1:hasMember _:n8a31aae64a544c78a426d4e6c066450cb1,
+owl:Class ns1:hasMember _:n5ba4fb8a52c24165b9706e1c987668e4b1,
         <BuildingUsage> .
 
 owl:ObjectProperty ns1:hasMember <forBuildingUsage>,
@@ -144,13 +144,13 @@ skos:Concept ns1:hasMember <BuildingUsage-commercial>,
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
-_:n8a31aae64a544c78a426d4e6c066450cb3 rdf:first skos:Concept ;
-    rdf:rest ( _:n8a31aae64a544c78a426d4e6c066450cb2 ) .
+_:n5ba4fb8a52c24165b9706e1c987668e4b3 rdf:first skos:Concept ;
+    rdf:rest ( _:n5ba4fb8a52c24165b9706e1c987668e4b2 ) .
 
-_:n8a31aae64a544c78a426d4e6c066450cb1 a owl:Class ;
-    owl:intersectionOf _:n8a31aae64a544c78a426d4e6c066450cb3 .
+_:n5ba4fb8a52c24165b9706e1c987668e4b1 a owl:Class ;
+    owl:intersectionOf _:n5ba4fb8a52c24165b9706e1c987668e4b3 .
 
-_:n8a31aae64a544c78a426d4e6c066450cb2 a owl:Restriction ;
+_:n5ba4fb8a52c24165b9706e1c987668e4b2 a owl:Restriction ;
     owl:hasValue <BuildingUsageNomenclature> ;
     owl:onProperty skos:inScheme .
 

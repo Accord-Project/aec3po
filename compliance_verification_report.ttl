@@ -16,7 +16,7 @@
     dct:title "Compliance Verification Report"@en ;
     rdfs:comment "Result of a checking act. May be compliant or not."@en ;
     rdfs:isDefinedBy <compliance_verification_report> ;
-    rdfs:subClassOf _:n2d272a59dee74cbba188bba1f4351354b1 ;
+    rdfs:subClassOf _:n735a7adadb204070a7ff8325c0f58887b1 ;
     ns1:inDomainOf <conforms>,
         <hasResult> .
 
@@ -39,8 +39,8 @@
     dct:title "Verification Result"@en ;
     rdfs:comment "Individual verification result of a Compliance Verification Report."@en ;
     rdfs:isDefinedBy <compliance_verification_report> ;
-    rdfs:subClassOf _:n2d272a59dee74cbba188bba1f4351354b2,
-        _:n2d272a59dee74cbba188bba1f4351354b3 ;
+    rdfs:subClassOf _:n735a7adadb204070a7ff8325c0f58887b2,
+        _:n735a7adadb204070a7ff8325c0f58887b3 ;
     ns1:inDomainOf <hasSeverity>,
         <resultMessage>,
         <verificationFocus>,
@@ -111,9 +111,9 @@ owl:NamedIndividual ns1:hasMember <Info>,
         <Violation>,
         <Warning> .
 
-owl:Restriction ns1:hasMember _:n2d272a59dee74cbba188bba1f4351354b1,
-        _:n2d272a59dee74cbba188bba1f4351354b2,
-        _:n2d272a59dee74cbba188bba1f4351354b3 .
+owl:Restriction ns1:hasMember _:n735a7adadb204070a7ff8325c0f58887b1,
+        _:n735a7adadb204070a7ff8325c0f58887b2,
+        _:n735a7adadb204070a7ff8325c0f58887b3 .
 
 <hasResult> a owl:ObjectProperty ;
     rdfs:label "has result"@en ;
@@ -174,20 +174,19 @@ owl:ObjectProperty ns1:hasMember <hasResult>,
     dct:title "AEC3PO: Compliance Verification Report"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
-    owl:imports <check_method>,
-        <compliance_verification_report> .
+    owl:imports <check_method> .
 
-_:n2d272a59dee74cbba188bba1f4351354b1 a owl:Restriction ;
+_:n735a7adadb204070a7ff8325c0f58887b1 a owl:Restriction ;
     owl:cardinality 1 ;
     owl:onProperty <conforms> ;
     ns1:superClassOf <ComplianceVerificationReport> .
 
-_:n2d272a59dee74cbba188bba1f4351354b2 a owl:Restriction ;
+_:n735a7adadb204070a7ff8325c0f58887b2 a owl:Restriction ;
     owl:cardinality 1 ;
     owl:onProperty <verificationFocus> ;
     ns1:superClassOf <VerificationResult> .
 
-_:n2d272a59dee74cbba188bba1f4351354b3 a owl:Restriction ;
+_:n735a7adadb204070a7ff8325c0f58887b3 a owl:Restriction ;
     owl:cardinality 1 ;
     owl:onProperty <hasSeverity> ;
     ns1:superClassOf <VerificationResult> .

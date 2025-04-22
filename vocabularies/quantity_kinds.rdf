@@ -1,30 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:qudt="http://qudt.org/schema/qudt/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:qudt="http://qudt.org/schema/qudt/"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:ns1="https://w3id.org/profile/ontdoc/"
-  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
   xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
 >
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
-    <ns1:hasMember>
-      <owl:NamedIndividual rdf:about="QuantityKindNomenclature">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <rdfs:label xml:lang="en">Quantity Kind nomenclature</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-        <skos:definition xml:lang="en">A set of values for quantity kinds.
+  <owl:Class rdf:about="QuantityKind">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="QuantityKind"/>
+        <ns1:hasMember rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
+    <rdfs:comment xml:lang="en">A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+
+  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
+
+  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+    </rdfs:comment>
+    <rdfs:isDefinedBy>
+      <owl:Ontology rdf:about="quantity_kinds">
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
+        <dct:description xml:lang="en">Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)
+
+  Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+
+  This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain.</dct:description>
+        <dct:title xml:lang="en">AEC3PO: Quantity Kinds</dct:title>
+        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-31</dct:created>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
+      </owl:Ontology>
+    </rdfs:isDefinedBy>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <ns1:superClassOf rdf:resource="QuantityKind"/>
+        <ns1:hasMember rdf:resource="ModularRoomHeight"/>
+        <ns1:hasMember rdf:resource="WidthOfAngledCorridor"/>
+        <ns1:hasMember rdf:resource="CompressiveForce"/>
+        <ns1:hasMember rdf:resource="PartialSafetyFactor"/>
+        <ns1:hasMember rdf:resource="PartialSafetyFactor0"/>
+        <ns1:hasMember rdf:resource="PartialSafetyFactor1"/>
+        <ns1:hasMember rdf:resource="AxialCompressionStress"/>
+        <ns1:hasMember rdf:resource="ModificationFactorKmod"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region">
+        <ns1:superClassOf rdf:resource="QuantityKind"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+    <skos:example xml:lang="en">Length, Area, U-Value.</skos:example>
+    <skos:note xml:lang="en">Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as "Length" or "Thermal Transmittance" is a maximal Region, and a specific quantity value such as "13 m" or "3.5 W/(m^2.K)" is a minimal Region.</skos:note>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="nf2a7ad4589694cb1b05355b5663f5a94b1">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+          <owl:Restriction rdf:nodeID="nf2a7ad4589694cb1b05355b5663f5a94b2">
+            <owl:hasValue>
+              <owl:NamedIndividual rdf:about="QuantityKindNomenclature">
+                <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+                <rdfs:label xml:lang="en">Quantity Kind nomenclature</rdfs:label>
+                <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+                <skos:definition xml:lang="en">A set of values for quantity kinds.
     AEC3PO includes a set of values for this nomenclature.</skos:definition>
-        <dct:title xml:lang="en">Quantity Kind nomenclature</dct:title>
-        <dct:description xml:lang="en">A set of values for quantity kinds.
+                <dct:title xml:lang="en">Quantity Kind nomenclature</dct:title>
+                <dct:description xml:lang="en">A set of values for quantity kinds.
     AEC3PO includes a set of values for this nomenclature.</dct:description>
-      </owl:NamedIndividual>
-    </ns1:hasMember>
+              </owl:NamedIndividual>
+            </owl:hasValue>
+            <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <dct:title xml:lang="en">Quantity Kind</dct:title>
+    <dct:description xml:lang="en">A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+
+  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
+
+  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+    </dct:description>
     <ns1:hasMember>
       <owl:NamedIndividual rdf:about="ModularRoomHeight">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -129,76 +196,17 @@
         <dct:description xml:lang="en">Modification Factor to take into account the duration of load</dct:description>
       </owl:NamedIndividual>
     </ns1:hasMember>
+  </owl:Class>
+  <owl:Class rdf:about="http://qudt.org/schema/qudt/QuantityKind">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/qudt"/>
+    <ns1:superClassOf rdf:resource="QuantityKind"/>
+  </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="quantity_kinds"/>
   </rdf:Description>
-  <owl:Class rdf:about="QuantityKind">
-    <rdf:type>
-      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
-        <ns1:hasMember rdf:resource="QuantityKind"/>
-        <ns1:hasMember rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
-      </rdf:Description>
-    </rdf:type>
-    <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
-    <rdfs:comment xml:lang="en">A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
-
-  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
-
-  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
-    </rdfs:comment>
-    <rdfs:isDefinedBy>
-      <owl:Ontology rdf:about="quantity_kinds">
-        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
-        <dct:description xml:lang="en">Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)
-
-  Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
-
-  This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain.</dct:description>
-        <dct:title xml:lang="en">AEC3PO: Quantity Kinds</dct:title>
-        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
-        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-31</dct:created>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
-      </owl:Ontology>
-    </rdfs:isDefinedBy>
-    <rdfs:subClassOf>
-      <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-        <ns1:superClassOf rdf:resource="QuantityKind"/>
-        <ns1:hasMember rdf:resource="ModularRoomHeight"/>
-        <ns1:hasMember rdf:resource="WidthOfAngledCorridor"/>
-        <ns1:hasMember rdf:resource="CompressiveForce"/>
-        <ns1:hasMember rdf:resource="PartialSafetyFactor"/>
-        <ns1:hasMember rdf:resource="PartialSafetyFactor0"/>
-        <ns1:hasMember rdf:resource="PartialSafetyFactor1"/>
-        <ns1:hasMember rdf:resource="AxialCompressionStress"/>
-        <ns1:hasMember rdf:resource="ModificationFactorKmod"/>
-      </rdf:Description>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region">
-        <ns1:superClassOf rdf:resource="QuantityKind"/>
-      </rdf:Description>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
-    <skos:example xml:lang="en">Length, Area, U-Value.</skos:example>
-    <skos:note xml:lang="en">Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as "Length" or "Thermal Transmittance" is a maximal Region, and a specific quantity value such as "13 m" or "3.5 W/(m^2.K)" is a minimal Region.</skos:note>
-    <owl:equivalentClass>
-      <owl:Class rdf:nodeID="nbefea034c81545ae80286de8cd5b16b1b1">
-        <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="nbefea034c81545ae80286de8cd5b16b1b2">
-            <owl:hasValue rdf:resource="QuantityKindNomenclature"/>
-            <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-    <dct:title xml:lang="en">Quantity Kind</dct:title>
-    <dct:description xml:lang="en">A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
-
-  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
-
-  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
-    </dct:description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
+    <ns1:hasMember rdf:resource="QuantityKindNomenclature"/>
     <ns1:hasMember rdf:resource="ModularRoomHeight"/>
     <ns1:hasMember rdf:resource="WidthOfAngledCorridor"/>
     <ns1:hasMember rdf:resource="CompressiveForce"/>
@@ -207,25 +215,17 @@
     <ns1:hasMember rdf:resource="PartialSafetyFactor1"/>
     <ns1:hasMember rdf:resource="AxialCompressionStress"/>
     <ns1:hasMember rdf:resource="ModificationFactorKmod"/>
-  </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
-    <ns1:hasMember rdf:resource="quantity_kinds"/>
   </rdf:Description>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
     <ns1:hasMember rdf:resource="QuantityKind"/>
     <ns1:hasMember rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
-    <ns1:hasMember rdf:nodeID="nbefea034c81545ae80286de8cd5b16b1b1"/>
+    <ns1:hasMember rdf:nodeID="nf2a7ad4589694cb1b05355b5663f5a94b1"/>
   </rdf:Description>
-  <owl:Class rdf:about="http://qudt.org/schema/qudt/QuantityKind">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/qudt"/>
-    <ns1:superClassOf rdf:resource="QuantityKind"/>
-  </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="nf2a7ad4589694cb1b05355b5663f5a94b2"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
     <ns1:hasMember rdf:resource="QuantityKindNomenclature"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="nbefea034c81545ae80286de8cd5b16b1b2"/>
-  </rdf:Description>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
 </rdf:RDF>

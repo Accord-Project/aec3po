@@ -1,152 +1,152 @@
-<https://w3id.org/lbd/aec3po/edlira> <http://schema.org/name> "Edlira Vakaj" .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/creator> <https://w3id.org/lbd/aec3po/pan> .
-<https://w3id.org/lbd/aec3po/amna> <http://schema.org/affiliation> <https://www.bcu.ac.uk/> .
-<https://www.bcu.ac.uk/> <http://schema.org/url> <https://www.bcu.ac.uk/> .
-<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/name> "Thomas Beach" .
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/email> "beachth@cardiff.ac.uk" .
-<http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasValue> .
-<https://w3id.org/lbd/aec3po/edlira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
-_:nc8efd584ba85466bb9650df8c5fc0c52b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Property> .
-<http://maxime-lefrancois.info/me#> <http://schema.org/affiliation> <https://www.mines-stetienne.fr/> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://www.w3.org/2004/02/skos/core#example> .
-<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/created> "2023-05-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://www.mines-stetienne.fr/> <http://schema.org/url> <https://mines-stetienne.fr> .
-<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2000/01/rdf-schema#comment> "de facto used to link something (anything: property, statement, property design, check, cell, column, ...) to a literal string."@en .
-<https://w3id.org/lbd/aec3po/amna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/lbd/aec3po/amna> <http://schema.org/name> "Amna Dridi" .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> _:nc8efd584ba85466bb9650df8c5fc0c52b1 .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> _:nc8efd584ba85466bb9650df8c5fc0c52b1 .
+<https://w3id.org/lbd/aec3po/pan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
 <https://w3id.org/lbd/aec3po/vladimir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/identifier> <http://orcid.org/0000-0001-5610-8027> .
-<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/asText> <http://purl.org/dc/terms/title> "as text"@en .
-<https://w3id.org/lbd/aec3po/pan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/legal_verifier> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2000/01/rdf-schema#label> "as text"@en .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/identifier> .
-<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/edlira> .
-<https://w3id.org/lbd/aec3po/pan> <http://schema.org/identifier> <http://orcid.org/0000-0002-7248-8952> .
-<http://www.w3.org/2002/07/owl#FunctionalProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasValue> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
-<http://maxime-lefrancois.info/me#> <http://schema.org/name> "Maxime Lefrançois" .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://creativecommons.org/ns#license> .
-<https://w3id.org/lbd/aec3po/hasValue> <http://purl.org/dc/terms/title> "has value"@en .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://www.w3.org/2004/02/skos/core#note> .
-<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/vocab/vann/preferredNamespacePrefix> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/source> .
-<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/title> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/model> .
-<https://www.cardiff.ac.uk/> <http://schema.org/url> <https://www.cardiff.ac.uk/> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/contributor> .
-<https://w3id.org/lbd/aec3po/edlira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/creator> <https://w3id.org/lbd/aec3po/edlira> .
-<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/hasValue> <http://purl.org/dc/terms/description> "de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal."@en .
-<https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/name> "Vladimir Alexiev" .
-<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/amna> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/issued> .
-<http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/design> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/check_method> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/vladimir> .
-<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/amna> <http://schema.org/url> <https://www.researchgate.net/profile/Amna-Dridi-3> .
-_:nc8efd584ba85466bb9650df8c5fc0c52b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/CheckMethod> .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/affiliation> <https://www.cardiff.ac.uk/> .
-<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/> .
-<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/> .
-<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/affiliation> .
-<https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/identifier> <https://orcid.org/0000-0001-7508-7428> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/email> .
-<https://w3id.org/lbd/aec3po/edlira> <http://schema.org/affiliation> <https://www.bcu.ac.uk/> .
+<https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/name> "Vladimir Alexiev" .
 <https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/evidence> .
-<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/thomas> .
-<https://www.mines-stetienne.fr/> <http://schema.org/name> "MINES Saint-Étienne" .
-<https://w3id.org/lbd/aec3po/pan> <http://schema.org/name> "Panagiotis Patlakas" .
-<http://www.w3.org/2002/07/owl#FunctionalProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/asText> .
-<https://w3id.org/lbd/aec3po/> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/amna> <http://schema.org/identifier> <http://orcid.org/0000-0002-0185-103X> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/feature_of_interest> .
-<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
-_:nc8efd584ba85466bb9650df8c5fc0c52b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/url> .
-_:nc8efd584ba85466bb9650df8c5fc0c52b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/FeatureOfInterest> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/rase_statement> .
+<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:ndd21df2481c145fb80f964930f2aed6ab1 <http://www.w3.org/2002/07/owl#unionOf> _:ndd21df2481c145fb80f964930f2aed6ab2 .
+<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/affiliation> <https://www.cardiff.ac.uk/> .
+_:ndd21df2481c145fb80f964930f2aed6ab4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/lbd/aec3po/amna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
 <https://w3id.org/lbd/aec3po/thomas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/pan> <http://schema.org/affiliation> <https://www.bcu.ac.uk/> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2004/02/skos/core#note> "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en .
-<http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/asText> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/creator> .
-<https://w3id.org/lbd/aec3po/pan> <http://schema.org/email> "Panagiotis.Patlakas@bcu.ac.uk" .
-_:nc8efd584ba85466bb9650df8c5fc0c52b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc8efd584ba85466bb9650df8c5fc0c52b4 .
-<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:nc8efd584ba85466bb9650df8c5fc0c52b1 .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/title> "AEC3PO"@en .
+<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/identifier> <http://orcid.org/0000-0001-5610-8027> .
+<https://w3id.org/lbd/aec3po/asText> <http://purl.org/dc/terms/title> "as text"@en .
+<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "text" .
+<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
 <https://w3id.org/lbd/aec3po/pan> <http://schema.org/url> <https://www.bcu.ac.uk/built-environment/about-us/our-staff/panagiotis-patlakas> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/data_requirement> .
-<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/document> .
-<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://maxime-lefrancois.info/me#> <http://schema.org/url> <http://maxime-lefrancois.info/> .
 <http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/vocab/vann/preferredNamespaceUri> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/table> .
-<https://www.bcu.ac.uk/> <http://schema.org/name> "Birmingham City University" .
-<https://www.cardiff.ac.uk/> <http://schema.org/name> "Cardiff University" .
-_:nc8efd584ba85466bb9650df8c5fc0c52b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nc8efd584ba85466bb9650df8c5fc0c52b3 .
-<http://www.w3.org/2001/XMLSchema#string> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/asText> .
-<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/url> <https://www.ontotext.com/blog/author/vladimir/> .
+<https://www.bcu.ac.uk/> <http://schema.org/url> <https://www.bcu.ac.uk/> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/lbd/aec3po/pan> <http://schema.org/name> "Panagiotis Patlakas" .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/lbd/aec3po/amna> <http://schema.org/url> <https://www.researchgate.net/profile/Amna-Dridi-3> .
+_:ndd21df2481c145fb80f964930f2aed6ab3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/Property> .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/created> "2023-05-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/url> .
 <http://maxime-lefrancois.info/me#> <http://schema.org/email> "maxime.lefrancois@emse.fr" .
 <https://w3id.org/lbd/aec3po/edlira> <http://schema.org/url> <https://www.bcu.ac.uk/computing/about-us/our-staff/edlira-vakaj> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/description> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/thomas> .
-<https://w3id.org/lbd/aec3po/edlira> <http://schema.org/email> "edlira.vakaj@bcu.ac.uk" .
-<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-_:nc8efd584ba85466bb9650df8c5fc0c52b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/checking_act> .
-<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal."@en .
-<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/lbd/aec3po/thomas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/name> .
-<https://w3id.org/lbd/aec3po/amna> <http://schema.org/email> "Amna.Dridi@bcu.ac.uk" .
-<https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/affiliation> <https://www.ontotext.com/> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-_:nc8efd584ba85466bb9650df8c5fc0c52b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://maxime-lefrancois.info/me#> <http://schema.org/identifier> <http://orcid.org/0000-0001-9814-8991> .
-<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "text" .
-<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/pan> .
-<https://www.ontotext.com/> <http://schema.org/url> <https://www.ontotext.com/> .
-<https://w3id.org/lbd/aec3po/amna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
-<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2004/02/skos/core#note> "The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum"@en .
-<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/description> "The Architecture, Engineering and Construction Compliance Checking and Permitting ontology (AEC3PO), based on the statements on building compliance-related document and design codes."@en .
-<https://w3id.org/lbd/aec3po/vladimir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
-<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/amna> .
-<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/url> <https://profiles.cardiff.ac.uk/staff/beachth> .
-<https://w3id.org/lbd/aec3po/asText> <http://purl.org/dc/terms/description> "de facto used to link something (anything: property, statement, property design, check, cell, column, ...) to a literal string."@en .
-<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/vladimir> .
-<https://www.ontotext.com/> <http://schema.org/name> "Ontotext" .
-<https://w3id.org/lbd/aec3po/pan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
-_:nc8efd584ba85466bb9650df8c5fc0c52b1 <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasValue> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://maxime-lefrancois.info/me#> <http://schema.org/url> <http://maxime-lefrancois.info/> .
+<https://w3id.org/lbd/aec3po/pan> <http://schema.org/email> "Panagiotis.Patlakas@bcu.ac.uk" .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://creativecommons.org/ns#license> .
 <https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/email> "vladimir.alexiev@ontotext.com" .
-<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/amna> .
+<http://www.w3.org/2002/07/owl#FunctionalProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasValue> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/description> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2004/02/skos/core#note> "Main classes and properties in the AEC3PO ontology are aligned to higher level ontologies, such as DUL."@en .
+<https://w3id.org/lbd/aec3po/pan> <http://schema.org/affiliation> <https://www.bcu.ac.uk/> .
+<https://w3id.org/lbd/aec3po/pan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/identifier> <https://orcid.org/0000-0001-7508-7428> .
+<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> _:ndd21df2481c145fb80f964930f2aed6ab1 .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/title> "AEC3PO"@en .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/amna> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://www.w3.org/2004/02/skos/core#note> .
+<https://w3id.org/lbd/aec3po/amna> <http://schema.org/email> "Amna.Dridi@bcu.ac.uk" .
+<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/email> "beachth@cardiff.ac.uk" .
+<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2000/01/rdf-schema#label> "as text"@en .
+<https://w3id.org/lbd/aec3po/thomas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/name> "Thomas Beach" .
+_:ndd21df2481c145fb80f964930f2aed6ab1 <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasValue> .
+<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/lbd/aec3po/edlira> <http://schema.org/affiliation> <https://www.bcu.ac.uk/> .
+<https://w3id.org/lbd/aec3po/edlira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/title> .
+<https://w3id.org/lbd/aec3po/amna> <http://schema.org/affiliation> <https://www.bcu.ac.uk/> .
+<http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasValue> .
+<https://w3id.org/lbd/aec3po/amna> <http://schema.org/identifier> <http://orcid.org/0000-0002-0185-103X> .
+<https://www.bcu.ac.uk/> <http://schema.org/name> "Birmingham City University" .
+<https://w3id.org/lbd/aec3po/amna> <http://schema.org/name> "Amna Dridi" .
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:ndd21df2481c145fb80f964930f2aed6ab2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndd21df2481c145fb80f964930f2aed6ab3 .
+<http://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2001/XMLSchema#string> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/asText> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/data_requirement> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/design> .
+<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> _:ndd21df2481c145fb80f964930f2aed6ab1 .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/creator> .
+_:ndd21df2481c145fb80f964930f2aed6ab1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasValue> <http://purl.org/dc/terms/title> "has value"@en .
+<http://maxime-lefrancois.info/me#> <http://schema.org/identifier> <http://orcid.org/0000-0001-9814-8991> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/table> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/feature_of_interest> .
+_:ndd21df2481c145fb80f964930f2aed6ab2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/FeatureOfInterest> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/name> .
+<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.mines-stetienne.fr/> <http://schema.org/url> <https://mines-stetienne.fr> .
+<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2004/02/skos/core#note> "The value of the literal may be a XSD literal (boolean, integer, decimal, string), it may also use custom datatypes such as cdt:ucum"@en .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/affiliation> .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/description> "The Architecture, Engineering and Construction Compliance Checking and Permitting ontology (AEC3PO), based on the statements on building compliance-related document and design codes."@en .
+<http://www.w3.org/2002/07/owl#FunctionalProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/asText> .
+<https://w3id.org/lbd/aec3po/> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/url> <https://www.ontotext.com/blog/author/vladimir/> .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/thomas> .
+<https://w3id.org/lbd/aec3po/asText> <http://purl.org/dc/terms/description> "de facto used to link something (anything: property, statement, property design, check, cell, column, ...) to a literal string."@en .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/legal_verifier> .
+<https://www.ontotext.com/> <http://schema.org/url> <https://www.ontotext.com/> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/contributor> .
+<https://w3id.org/lbd/aec3po/pan> <http://schema.org/identifier> <http://orcid.org/0000-0002-7248-8952> .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/> .
+<http://maxime-lefrancois.info/me#> <http://schema.org/affiliation> <https://www.mines-stetienne.fr/> .
 <https://w3id.org/lbd/aec3po/edlira> <http://schema.org/identifier> <http://orcid.org/0000-0002-0712-0959> .
-_:nc8efd584ba85466bb9650df8c5fc0c52b1 <http://www.w3.org/2002/07/owl#unionOf> _:nc8efd584ba85466bb9650df8c5fc0c52b2 .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/check_method> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/rase_statement> .
+_:ndd21df2481c145fb80f964930f2aed6ab4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/CheckMethod> .
+<https://www.mines-stetienne.fr/> <http://schema.org/name> "MINES Saint-Étienne" .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/statement> .
+<http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/asText> .
+<https://www.ontotext.com/> <http://schema.org/name> "Ontotext" .
+<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/lbd/aec3po/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal."@en .
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/model> .
+<https://w3id.org/lbd/aec3po/thomas> <http://schema.org/url> <https://profiles.cardiff.ac.uk/staff/beachth> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/source> .
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2000/01/rdf-schema#comment> "de facto used to link something (anything: property, statement, property design, check, cell, column, ...) to a literal string."@en .
+<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/thomas> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/email> .
+<http://maxime-lefrancois.info/me#> <http://schema.org/name> "Maxime Lefrançois" .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/vladimir> .
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/dc/terms/issued> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://purl.org/vocab/vann/preferredNamespacePrefix> .
+<https://w3id.org/lbd/aec3po/vladimir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/lbd/aec3po/vladimir> <http://schema.org/affiliation> <https://www.ontotext.com/> .
+<https://w3id.org/lbd/aec3po/edlira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/creator> <https://w3id.org/lbd/aec3po/pan> .
+<https://w3id.org/lbd/aec3po/edlira> <http://schema.org/email> "edlira.vakaj@bcu.ac.uk" .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/creator> <https://w3id.org/lbd/aec3po/edlira> .
+<https://w3id.org/lbd/aec3po/amna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<https://w3id.org/lbd/aec3po/edlira> <http://schema.org/name> "Edlira Vakaj" .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://www.cardiff.ac.uk/> <http://schema.org/name> "Cardiff University" .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://www.w3.org/2004/02/skos/core#example> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/compliance_verification_report> .
+_:ndd21df2481c145fb80f964930f2aed6ab1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/2002/07/owl#AnnotationProperty> <https://w3id.org/profile/ontdoc/hasMember> <http://schema.org/identifier> .
+<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <http://maxime-lefrancois.info/me#> .
+<https://www.cardiff.ac.uk/> <http://schema.org/url> <https://www.cardiff.ac.uk/> .
+<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/pan> .
+_:ndd21df2481c145fb80f964930f2aed6ab3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndd21df2481c145fb80f964930f2aed6ab4 .
+<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/edlira> .
+<https://w3id.org/lbd/aec3po/asText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> _:ndd21df2481c145fb80f964930f2aed6ab1 .
+<https://w3id.org/lbd/aec3po/hasValue> <http://purl.org/dc/terms/description> "de facto used to link something (anything: property, property design, check, cell, column, ...) to a value, expressed as a literal."@en .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/checking_act> .
+<https://w3id.org/lbd/aec3po/> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/document> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://schema.org/Person> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/vladimir> .

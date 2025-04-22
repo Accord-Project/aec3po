@@ -1,222 +1,222 @@
-<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/description> "The AEC3PO Statement module describes a statement, of any kind, found in a document."@en .
+<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#label> "hasInlinePart"@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/OrCheckStatement> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/CertificateCheckStatement> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/definitionOf> .
+<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Boolean Check Statement"@en .
+<https://w3id.org/lbd/aec3po/Statement> <http://purl.org/dc/terms/description> "Something stated in a building compliance-related document"@en .
+<https://w3id.org/lbd/aec3po/statement> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/hasInlinePart> <http://purl.org/dc/terms/title> "hasInlinePart"@en .
+<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a human evaluated statement to the subdivision that expresses who shall verify this check"@en .
+<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://purl.org/dc/terms/title> "Boolean Check Statement"@en .
+<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "has definition"@en .
+<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <http://purl.org/dc/terms/description> "refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain."@en .
+<http://purl.org/dc/terms/hasPart> <https://w3id.org/profile/ontdoc/superPropertyOf> <https://w3id.org/lbd/aec3po/hasInlinePart> .
+<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Checklist Statement"@en .
+<https://w3id.org/lbd/aec3po/DefinitionStatement> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasDefinition> .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Check verified if and only if at least one of its sub-checks is verified."@en .
+<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfa096f0c69c14bebbea6acefc23e619fb3 .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://purl.org/dc/terms/description> "Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects"@en .
 <https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Not Check Statement"@en .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/definitionOf> .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/CategoryCheckStatement> .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Checklist statement is a type of check statement that represents a list of checks that need to be verified."@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/NumericalCheckStatement> .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://purl.org/dc/terms/description> "A type of check statement that is evaluated by a human."@en .
+<https://w3id.org/lbd/aec3po/Statement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/59> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/BooleanCheckStatement> .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more."@en .
+_:nfa096f0c69c14bebbea6acefc23e619fb1 <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/AndCheckStatement> .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+_:nfa096f0c69c14bebbea6acefc23e619fb3 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Statement> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/NotCheckStatement> .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Check verified if and only if all of its sub-checks are verified."@en .
+<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a definition statement to the term that is defined"@en .
+<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/43> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/57> .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Statement> .
+<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/AndCheckStatement> .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
+<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2000/01/rdf-schema#comment> "Something stated in a building compliance-related document"@en .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://purl.org/dc/terms/description> "A type of check that checks the existence of an element (property) related to a feature of interest."@en .
+<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/DefinitionStatement> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/definitionOf> .
+<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects"@en .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://purl.org/dc/terms/description> "A type of check that involves checking one numerical property against another, i.e. x < y or similar." .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document."@en .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasEvaluator> .
+<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/description> "The AEC3PO Statement module describes a statement, of any kind, found in a document."@en .
+<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/58> .
+<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/OrCheckStatement> .
+<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasEvidence> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/NumericalCheckStatement> .
+<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/title> "AEC3PO: statement"@en .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://purl.org/dc/terms/title> "Certificate Check Statement"@en .
+<https://w3id.org/lbd/aec3po/statement> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2004/02/skos/core#note> "Those are primarily for issues of perception"@en .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://purl.org/dc/terms/description> "Checklist statement is a type of check statement that represents a list of checks that need to be verified."@en .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/AndCheckStatement> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Statement> .
+<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://purl.org/dc/terms/description> "Check verified if and only if the sub-check is not verified."@en .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/hasPart> .
+<https://w3id.org/lbd/aec3po/Statement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> .
+<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2000/01/rdf-schema#label> "Statement"@en .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/created> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> .
+<https://w3id.org/lbd/aec3po/Statement> <http://purl.org/dc/terms/title> "Statement"@en .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfa096f0c69c14bebbea6acefc23e619fb1 .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/60> .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "And Check Statement"@en .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of check that involves checking one numerical property against another, i.e. x < y or similar." .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/OrCheckStatement> .
+<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <http://purl.org/dc/terms/title> "Check Statement"@en .
+_:nfa096f0c69c14bebbea6acefc23e619fb2 <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/OrCheckStatement> .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://purl.org/dc/terms/title> "And Check Statement"@en .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasEvaluator> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CertificateCheckStatement> .
+<https://w3id.org/lbd/aec3po/statement> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/document> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2004/02/skos/core#example> "\"is aesthetically appropriate\""@en .
+_:nfa096f0c69c14bebbea6acefc23e619fb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain."@en .
+<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasEvaluator> <http://purl.org/dc/terms/description> "Links a human evaluated statement to the subdivision that expresses who shall verify this check"@en .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Certificate Check Statement"@en .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<https://w3id.org/lbd/aec3po/Statement> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasEvidence> .
+_:nfa096f0c69c14bebbea6acefc23e619fb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a definition statement to the definition of the term"@en .
+_:nfa096f0c69c14bebbea6acefc23e619fb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/NumericalCheckStatement> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CategoryCheckStatement> .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
+_:nfa096f0c69c14bebbea6acefc23e619fb3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSubdivision> .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
+_:nfa096f0c69c14bebbea6acefc23e619fb3 <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/NotCheckStatement> .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/BooleanCheckStatement> .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://purl.org/dc/terms/title> "Or Check Statement"@en .
+<https://w3id.org/lbd/aec3po/hasInlinePart> <http://purl.org/dc/terms/description> "Links a statement to an inline subdivision of that statement."@en .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2004/02/skos/core#note> "Unstable. Need evidence of how this property is intended to be used"@en .
+<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:nfa096f0c69c14bebbea6acefc23e619fb2 .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://purl.org/dc/terms/description> "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en .
+<https://w3id.org/lbd/aec3po/definitionOf> <http://purl.org/dc/terms/title> "definition of"@en .
+<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Numerical Check Statement"@en .
+_:nfa096f0c69c14bebbea6acefc23e619fb1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSubdivision> .
+<https://w3id.org/lbd/aec3po/Statement> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasEvaluator> .
+<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://purl.org/dc/terms/description> "Check verified if and only if all of its sub-checks are verified."@en .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasDefinition> .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Check Statement"@en .
+<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://purl.org/dc/terms/title> "Numerical Check Statement"@en .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://purl.org/dc/terms/title> "Human Evaluated Check Statement"@en .
+<https://w3id.org/lbd/aec3po/statement> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Statement> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/56> .
+<https://w3id.org/lbd/aec3po/hasEvaluator> <http://purl.org/dc/terms/title> "has evaluator"@en .
 <https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Definition Statement"@en .
 <https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of check that checks the existence of an element (property) related to a feature of interest."@en .
-<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:nd8635e60c1e14c5d8b216e862a7ba694b1 .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/NotCheckStatement> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/NotCheckStatement> .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "And Check Statement"@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Checklist statement is a type of check statement that represents a list of checks that need to be verified."@en .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://purl.org/dc/terms/title> "Certificate Check Statement"@en .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/definitionOf> .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
-<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#label> "has evaluator"@en .
-<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Statement> .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b3 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:nd8635e60c1e14c5d8b216e862a7ba694b2 .
-<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2004/02/skos/core#example> "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/59> .
-<https://w3id.org/lbd/aec3po/Statement> <http://purl.org/dc/terms/title> "Statement"@en .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Statement> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/NumericalCheckStatement> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/NumericalCheckStatement> .
-<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Check verified if and only if the sub-check is not verified."@en .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects"@en .
-<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document."@en .
-<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/hasPart> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://purl.org/dc/terms/title> "Or Check Statement"@en .
-<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://purl.org/dc/terms/description> "A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document."@en .
-<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a statement to an inline subdivision of that statement."@en .
-<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2000/01/rdf-schema#comment> "Something stated in a building compliance-related document"@en .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en .
-<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a human evaluated statement to the subdivision that expresses who shall verify this check"@en .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/definitionOf> .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nd8635e60c1e14c5d8b216e862a7ba694b1 .
-<https://w3id.org/lbd/aec3po/hasEvaluator> <http://purl.org/dc/terms/description> "Links a human evaluated statement to the subdivision that expresses who shall verify this check"@en .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasEvidence> .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://purl.org/dc/terms/description> "Check verified if and only if all of its sub-checks are verified."@en .
-<https://w3id.org/lbd/aec3po/statement> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain."@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://purl.org/dc/terms/description> "A type of check that checks the existence of an element (property) related to a feature of interest."@en .
-<http://purl.org/dc/terms/hasPart> <https://w3id.org/profile/ontdoc/superPropertyOf> <https://w3id.org/lbd/aec3po/hasInlinePart> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b2 <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/OrCheckStatement> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://purl.org/dc/terms/title> "hasEvidence"@en .
-<https://w3id.org/lbd/aec3po/hasEvaluator> <http://purl.org/dc/terms/title> "has evaluator"@en .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/56> .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasEvaluator> .
-<http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/statement> .
 <https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://purl.org/dc/terms/description> "Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more."@en .
-_:nd8635e60c1e14c5d8b216e862a7ba694b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Certificate Check Statement"@en .
-<https://w3id.org/lbd/aec3po/statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://purl.org/dc/terms/description> "Checklist statement is a type of check statement that represents a list of checks that need to be verified."@en .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvidence"@en .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2004/02/skos/core#note> "Unstable. Need evidence of how this property is intended to be used"@en .
-<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
-<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b1 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/lbd/aec3po/statement> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/document> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/AndCheckStatement> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/AndCheckStatement> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasEvaluator> .
-<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2000/01/rdf-schema#label> "Statement"@en .
-<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://purl.org/dc/terms/title> "Boolean Check Statement"@en .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://purl.org/dc/terms/title> "Human Evaluated Check Statement"@en .
-<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/CertificateCheckStatement> .
-<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b2 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/statement> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Check verified if and only if all of its sub-checks are verified."@en .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Human Evaluated Check Statement"@en .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Statement> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/hasDefinition> <http://purl.org/dc/terms/title> "has definition"@en .
-<https://w3id.org/lbd/aec3po/hasInlinePart> <http://purl.org/dc/terms/description> "Links a statement to an inline subdivision of that statement."@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
-<https://w3id.org/lbd/aec3po/statement> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
-<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://purl.org/dc/terms/description> "Check verified if and only if the sub-check is not verified."@en .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://purl.org/dc/terms/description> "Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects"@en .
-<https://w3id.org/lbd/aec3po/Statement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a definition statement to the definition of the term"@en .
-<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "has definition"@en .
-<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#label> "definition of"@en .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://purl.org/dc/terms/title> "Checklist Statement"@en .
-<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/CategoryCheckStatement> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nd8635e60c1e14c5d8b216e862a7ba694b2 .
-<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of check statement that is evaluated by a human."@en .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://purl.org/dc/terms/title> "Category Check Statement"@en .
-<https://w3id.org/lbd/aec3po/hasDefinition> <http://purl.org/dc/terms/description> "Links a definition statement to the definition of the term"@en .
-<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/BooleanCheckStatement> .
-<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Checklist Statement"@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/OrCheckStatement> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasInlinePart> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/OrCheckStatement> .
-<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/created> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://purl.org/dc/terms/description> "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en .
-<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://purl.org/dc/terms/description> "A type of check that involves checking one numerical property against another, i.e. x < y or similar." .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Check verified if and only if at least one of its sub-checks is verified."@en .
-_:nd8635e60c1e14c5d8b216e862a7ba694b3 <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/NotCheckStatement> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Numerical Check Statement"@en .
-<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://purl.org/dc/terms/description> "Check verified if and only if at least one of its sub-checks is verified."@en .
-<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:nd8635e60c1e14c5d8b216e862a7ba694b3 .
-<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/58> .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2004/02/skos/core#note> "Those are primarily for issues of perception"@en .
-<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/57> .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <http://purl.org/dc/terms/title> "Check Statement"@en .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/AndCheckStatement> .
-<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a definition statement to the term that is defined"@en .
-<https://w3id.org/lbd/aec3po/definitionOf> <http://purl.org/dc/terms/description> "Links a definition statement to the term that is defined"@en .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Check Statement"@en .
-<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
-<https://w3id.org/lbd/aec3po/Statement> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasEvaluator> .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Boolean Check Statement"@en .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://purl.org/dc/terms/title> "And Check Statement"@en .
-<https://w3id.org/lbd/aec3po/Statement> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasEvidence> .
-<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/43> .
-<https://w3id.org/lbd/aec3po/DocumentSubdivision> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasDefinition> .
-<https://w3id.org/lbd/aec3po/Statement> <http://purl.org/dc/terms/description> "Something stated in a building compliance-related document"@en .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-_:nd8635e60c1e14c5d8b216e862a7ba694b1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSubdivision> .
-<https://w3id.org/lbd/aec3po/definitionOf> <http://purl.org/dc/terms/title> "definition of"@en .
-_:nd8635e60c1e14c5d8b216e862a7ba694b1 <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/AndCheckStatement> .
-<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more."@en .
-<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/NumericalCheckStatement> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of check that involves checking one numerical property against another, i.e. x < y or similar." .
 <http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CertificateCheckStatement> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CertificateCheckStatement> .
-<https://w3id.org/lbd/aec3po/hasInlinePart> <http://purl.org/dc/terms/title> "hasInlinePart"@en .
-<https://w3id.org/lbd/aec3po/hasDefinition> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Category Check Statement"@en .
-<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#label> "hasInlinePart"@en .
-<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nd8635e60c1e14c5d8b216e862a7ba694b3 .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://purl.org/dc/terms/description> "A type of check statement that is evaluated by a human."@en .
-<https://w3id.org/lbd/aec3po/CheckStatement> <http://purl.org/dc/terms/description> "refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain."@en .
-<https://w3id.org/lbd/aec3po/DefinitionStatement> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/definitionOf> .
-<https://w3id.org/lbd/aec3po/NumericalCheckStatement> <http://purl.org/dc/terms/title> "Numerical Check Statement"@en .
-<https://w3id.org/lbd/aec3po/ChecklistStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/OrCheckStatement> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CategoryCheckStatement> .
-<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CategoryCheckStatement> .
-<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/BooleanCheckStatement> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/BooleanCheckStatement> .
-<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Statement> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Statement> .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://github.com/Accord-Project/aec3po/issues/60> .
-<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Or Check Statement"@en .
-<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/statement.png> .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2004/02/skos/core#example> "\"is aesthetically appropriate\""@en .
-<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/CheckStatement> .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/DefinitionStatement> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasDefinition> .
-<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/title> "AEC3PO: statement"@en .
-<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasDefinition> .
-<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> .
-<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/DocumentSubdivision> .
-<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://purl.org/dc/terms/title> "Not Check Statement"@en .
+<https://w3id.org/lbd/aec3po/CheckStatement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/ChecklistStatement> .
+<https://w3id.org/lbd/aec3po/definitionOf> <http://purl.org/dc/terms/description> "Links a definition statement to the term that is defined"@en .
 <https://w3id.org/lbd/aec3po/DefinitionStatement> <http://purl.org/dc/terms/title> "Definition Statement"@en .
-<https://w3id.org/lbd/aec3po/AndCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/Statement> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
+_:nfa096f0c69c14bebbea6acefc23e619fb1 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CheckStatement> .
+<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/DocumentSubdivision> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasDefinition> .
+_:nfa096f0c69c14bebbea6acefc23e619fb2 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/lbd/aec3po/DefinitionStatement> <http://purl.org/dc/terms/description> "A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document."@en .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Statement> .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasInlinePart> .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/CategoryCheckStatement> .
+<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://purl.org/dc/terms/title> "Not Check Statement"@en .
 <https://w3id.org/lbd/aec3po/DefinitionStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Statement> .
+<https://w3id.org/lbd/aec3po/hasInlinePart> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a statement to an inline subdivision of that statement."@en .
+<https://w3id.org/lbd/aec3po/CheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/definitionOf> <http://www.w3.org/2000/01/rdf-schema#label> "definition of"@en .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://purl.org/dc/terms/description> "Check verified if and only if at least one of its sub-checks is verified."@en .
+<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of check statement that is evaluated by a human."@en .
+<https://w3id.org/lbd/aec3po/hasDefinition> <http://purl.org/dc/terms/title> "has definition"@en .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nfa096f0c69c14bebbea6acefc23e619fb2 .
+<https://w3id.org/lbd/aec3po/ChecklistStatement> <http://purl.org/dc/terms/title> "Checklist Statement"@en .
+<https://w3id.org/lbd/aec3po/hasDefinition> <http://purl.org/dc/terms/description> "Links a definition statement to the definition of the term"@en .
+<https://w3id.org/lbd/aec3po/statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Or Check Statement"@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/BooleanCheckStatement> .
+<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2004/02/skos/core#example> "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvidence"@en .
+<https://w3id.org/lbd/aec3po/BooleanCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/NotCheckStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Check verified if and only if the sub-check is not verified."@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/AndCheckStatement> .
+<https://w3id.org/lbd/aec3po/CertificateCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Human Evaluated Check Statement"@en .
+<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:nfa096f0c69c14bebbea6acefc23e619fb3 .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://purl.org/dc/terms/title> "hasEvidence"@en .
+_:nfa096f0c69c14bebbea6acefc23e619fb2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/lbd/aec3po/hasSubdivision> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/NotCheckStatement> .
+<https://w3id.org/lbd/aec3po/hasEvaluator> <http://www.w3.org/2000/01/rdf-schema#label> "has evaluator"@en .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://purl.org/dc/terms/description> "Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more."@en .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Category Check Statement"@en .
+<https://w3id.org/lbd/aec3po/statement> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/statement.png> .
+<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/OrCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/DefinitionStatement> .
+<https://w3id.org/lbd/aec3po/HumanEvaluatedCheckStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/CategoryCheckStatement> <http://purl.org/dc/terms/title> "Category Check Statement"@en .
+<http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/Statement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:nfa096f0c69c14bebbea6acefc23e619fb1 .

@@ -40,7 +40,7 @@ qudt:QuantityKind a rdfs:Class,
     rdfs:subClassOf qudt:QuantityKind,
         dul:Region,
         skos:Concept ;
-    owl:equivalentClass _:nbefea034c81545ae80286de8cd5b16b1b1 ;
+    owl:equivalentClass _:nf2a7ad4589694cb1b05355b5663f5a94b1 ;
     skos:example "Length, Area, U-Value."@en ;
     skos:note "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en ;
     ns1:hasMember <AxialCompressionStress>,
@@ -58,14 +58,14 @@ dul:Region ns1:superClassOf <QuantityKind> .
 
 owl:Ontology ns1:hasMember <quantity_kinds> .
 
-owl:Restriction ns1:hasMember _:nbefea034c81545ae80286de8cd5b16b1b2 .
+owl:Restriction ns1:hasMember _:nf2a7ad4589694cb1b05355b5663f5a94b2 .
 
 skos:ConceptScheme ns1:hasMember <QuantityKindNomenclature> .
 
 rdfs:Class ns1:hasMember qudt:QuantityKind,
         <QuantityKind> .
 
-owl:Class ns1:hasMember _:nbefea034c81545ae80286de8cd5b16b1b1,
+owl:Class ns1:hasMember _:nf2a7ad4589694cb1b05355b5663f5a94b1,
         qudt:QuantityKind,
         <QuantityKind> .
 
@@ -201,13 +201,13 @@ skos:Concept ns1:hasMember <AxialCompressionStress>,
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
-_:nbefea034c81545ae80286de8cd5b16b1b3 rdf:first skos:Concept ;
-    rdf:rest ( _:nbefea034c81545ae80286de8cd5b16b1b2 ) .
+_:nf2a7ad4589694cb1b05355b5663f5a94b3 rdf:first skos:Concept ;
+    rdf:rest ( _:nf2a7ad4589694cb1b05355b5663f5a94b2 ) .
 
-_:nbefea034c81545ae80286de8cd5b16b1b1 a owl:Class ;
-    owl:intersectionOf _:nbefea034c81545ae80286de8cd5b16b1b3 .
+_:nf2a7ad4589694cb1b05355b5663f5a94b1 a owl:Class ;
+    owl:intersectionOf _:nf2a7ad4589694cb1b05355b5663f5a94b3 .
 
-_:nbefea034c81545ae80286de8cd5b16b1b2 a owl:Restriction ;
+_:nf2a7ad4589694cb1b05355b5663f5a94b2 a owl:Restriction ;
     owl:hasValue <QuantityKindNomenclature> ;
     owl:onProperty skos:inScheme .
 

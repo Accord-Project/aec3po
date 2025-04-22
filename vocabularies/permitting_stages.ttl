@@ -20,7 +20,7 @@
     rdfs:comment "The class of permitting stages."@en ;
     rdfs:isDefinedBy <permitting_stage> ;
     rdfs:subClassOf skos:Concept ;
-    owl:equivalentClass _:n06d85102d1db4f21bb47830175d8708fb1 ;
+    owl:equivalentClass _:n2cf5492505df4290a678dced1a9d4c59b1 ;
     ns1:hasMember <UK_Building_Control_Submission>,
         <UK_Planning_Permission> ;
     ns1:inRangeOf <hasPermittingStage> .
@@ -33,11 +33,11 @@ owl:ObjectProperty ns1:hasMember <hasPermittingStage> .
 
 owl:Ontology ns1:hasMember <permitting_stage> .
 
-owl:Restriction ns1:hasMember _:n06d85102d1db4f21bb47830175d8708fb2 .
+owl:Restriction ns1:hasMember _:n2cf5492505df4290a678dced1a9d4c59b2 .
 
 skos:ConceptScheme ns1:hasMember <PermittingStageNomenclature> .
 
-owl:Class ns1:hasMember _:n06d85102d1db4f21bb47830175d8708fb1,
+owl:Class ns1:hasMember _:n2cf5492505df4290a678dced1a9d4c59b1,
         <PermittingStage> .
 
 owl:NamedIndividual ns1:hasMember <UK_Building_Control_Submission>,
@@ -109,13 +109,13 @@ skos:Concept ns1:hasMember <UK_Building_Control_Submission>,
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <administrative_areas> .
 
-_:n06d85102d1db4f21bb47830175d8708fb3 rdf:first skos:Concept ;
-    rdf:rest ( _:n06d85102d1db4f21bb47830175d8708fb2 ) .
+_:n2cf5492505df4290a678dced1a9d4c59b3 rdf:first skos:Concept ;
+    rdf:rest ( _:n2cf5492505df4290a678dced1a9d4c59b2 ) .
 
-_:n06d85102d1db4f21bb47830175d8708fb1 a owl:Class ;
-    owl:intersectionOf _:n06d85102d1db4f21bb47830175d8708fb3 .
+_:n2cf5492505df4290a678dced1a9d4c59b1 a owl:Class ;
+    owl:intersectionOf _:n2cf5492505df4290a678dced1a9d4c59b3 .
 
-_:n06d85102d1db4f21bb47830175d8708fb2 a owl:Restriction ;
+_:n2cf5492505df4290a678dced1a9d4c59b2 a owl:Restriction ;
     owl:hasValue <PermittingStageNomenclature> ;
     owl:onProperty skos:inScheme .
 

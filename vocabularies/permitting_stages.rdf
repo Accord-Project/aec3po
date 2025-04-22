@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-    <ns1:superClassOf rdf:resource="PermittingStage"/>
-    <ns1:hasMember>
-      <owl:NamedIndividual rdf:about="UK_Building_Control_Submission">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="PermittingStage"/>
-        <rdfs:isDefinedBy rdf:resource="permitting_stage"/>
-        <skos:definition xml:lang="en">The UK Building Control Submission permitting stage.</skos:definition>
-        <skos:inScheme rdf:resource="PermittingStageNomenclature"/>
-        <skos:prefLabel xml:lang="en">building control submission</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="PermittingStageNomenclature"/>
-        <aec3po:forAdministrativeArea rdf:resource="England"/>
-        <dct:title xml:lang="en">building control submission</dct:title>
-        <dct:description xml:lang="en">The UK Building Control Submission permitting stage.</dct:description>
-      </owl:NamedIndividual>
-    </ns1:hasMember>
-    <ns1:hasMember>
-      <owl:NamedIndividual rdf:about="UK_Planning_Permission">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="PermittingStage"/>
-        <rdfs:isDefinedBy rdf:resource="permitting_stage"/>
-        <skos:definition xml:lang="en">The UK Planning Permission permitting stage.</skos:definition>
-        <skos:inScheme rdf:resource="PermittingStageNomenclature"/>
-        <skos:prefLabel xml:lang="en">planning permission</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="PermittingStageNomenclature"/>
-        <aec3po:forAdministrativeArea rdf:resource="England"/>
-        <dct:title xml:lang="en">planning permission</dct:title>
-        <dct:description xml:lang="en">The UK Planning Permission permitting stage.</dct:description>
-      </owl:NamedIndividual>
-    </ns1:hasMember>
-  </rdf:Description>
-  <skos:ConceptScheme rdf:about="PermittingStageNomenclature">
-    <rdfs:label xml:lang="en">Permitting stage nomenclature</rdfs:label>
+  <owl:NamedIndividual rdf:about="UK_Building_Control_Submission">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <ns1:superClassOf rdf:resource="PermittingStage"/>
+        <ns1:hasMember rdf:resource="UK_Building_Control_Submission"/>
+        <ns1:hasMember rdf:resource="UK_Planning_Permission"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdf:type rdf:resource="PermittingStage"/>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="permitting_stage">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -58,46 +34,32 @@
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:created>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-    <skos:definition xml:lang="en">A set of values for permitting stages.
+    <skos:definition xml:lang="en">The UK Building Control Submission permitting stage.</skos:definition>
+    <skos:inScheme>
+      <skos:ConceptScheme rdf:about="PermittingStageNomenclature">
+        <rdfs:label xml:lang="en">Permitting stage nomenclature</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="permitting_stage"/>
+        <skos:definition xml:lang="en">A set of values for permitting stages.
   AEC3PO includes a set of values for this nomenclature.
   These values are :
   - UK_Building_Control_Submission;
   - UK_Planning_Permission.</skos:definition>
-    <skos:hasTopConcept rdf:resource="UK_Building_Control_Submission"/>
-    <skos:hasTopConcept rdf:resource="UK_Planning_Permission"/>
-    <dct:title xml:lang="en">Permitting stage nomenclature</dct:title>
-    <dct:description xml:lang="en">A set of values for permitting stages.
+        <skos:hasTopConcept rdf:resource="UK_Building_Control_Submission"/>
+        <skos:hasTopConcept rdf:resource="UK_Planning_Permission"/>
+        <dct:title xml:lang="en">Permitting stage nomenclature</dct:title>
+        <dct:description xml:lang="en">A set of values for permitting stages.
   AEC3PO includes a set of values for this nomenclature.
   These values are :
   - UK_Building_Control_Submission;
   - UK_Planning_Permission.</dct:description>
-  </skos:ConceptScheme>
-  <owl:ObjectProperty rdf:about="hasPermittingStage">
-    <rdfs:label xml:lang="en">has permitting stage</rdfs:label>
-    <rdfs:comment xml:lang="en">Links an entity to the permitting stage this entity pertains</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="permitting_stage"/>
-    <owl:equivalentProperty rdf:resource="https://w3id.org/digitalconstruction/0.5/Lifecycle#hasStage"/>
-    <rdfs:range rdf:resource="PermittingStage"/>
-    <dct:title xml:lang="en">has permitting stage</dct:title>
-    <dct:description xml:lang="en">Links an entity to the permitting stage this entity pertains</dct:description>
-  </owl:ObjectProperty>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
-    <ns1:hasMember rdf:resource="hasPermittingStage"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="PermittingStage"/>
-    <ns1:hasMember>
-      <owl:Class rdf:nodeID="n06d85102d1db4f21bb47830175d8708fb1">
-        <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="n06d85102d1db4f21bb47830175d8708fb2">
-            <owl:hasValue rdf:resource="PermittingStageNomenclature"/>
-            <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </ns1:hasMember>
-  </rdf:Description>
+      </skos:ConceptScheme>
+    </skos:inScheme>
+    <skos:prefLabel xml:lang="en">building control submission</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="PermittingStageNomenclature"/>
+    <aec3po:forAdministrativeArea rdf:resource="England"/>
+    <dct:title xml:lang="en">building control submission</dct:title>
+    <dct:description xml:lang="en">The UK Building Control Submission permitting stage.</dct:description>
+  </owl:NamedIndividual>
   <owl:Class rdf:about="PermittingStage">
     <rdf:type>
       <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
@@ -108,12 +70,45 @@
     <rdfs:comment xml:lang="en">The class of permitting stages.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="permitting_stage"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <owl:equivalentClass rdf:nodeID="n06d85102d1db4f21bb47830175d8708fb1"/>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n2cf5492505df4290a678dced1a9d4c59b1">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+          <owl:Restriction rdf:nodeID="n2cf5492505df4290a678dced1a9d4c59b2">
+            <owl:hasValue rdf:resource="PermittingStageNomenclature"/>
+            <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
     <dct:title xml:lang="en">Permitting Stage</dct:title>
     <dct:description xml:lang="en">The class of permitting stages.</dct:description>
-    <ns1:inRangeOf rdf:resource="hasPermittingStage"/>
+    <ns1:inRangeOf>
+      <owl:ObjectProperty rdf:about="hasPermittingStage">
+        <rdfs:label xml:lang="en">has permitting stage</rdfs:label>
+        <rdfs:comment xml:lang="en">Links an entity to the permitting stage this entity pertains</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="permitting_stage"/>
+        <owl:equivalentProperty rdf:resource="https://w3id.org/digitalconstruction/0.5/Lifecycle#hasStage"/>
+        <rdfs:range rdf:resource="PermittingStage"/>
+        <dct:title xml:lang="en">has permitting stage</dct:title>
+        <dct:description xml:lang="en">Links an entity to the permitting stage this entity pertains</dct:description>
+      </owl:ObjectProperty>
+    </ns1:inRangeOf>
     <ns1:hasMember rdf:resource="UK_Building_Control_Submission"/>
-    <ns1:hasMember rdf:resource="UK_Planning_Permission"/>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="UK_Planning_Permission">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="PermittingStage"/>
+        <rdfs:isDefinedBy rdf:resource="permitting_stage"/>
+        <skos:definition xml:lang="en">The UK Planning Permission permitting stage.</skos:definition>
+        <skos:inScheme rdf:resource="PermittingStageNomenclature"/>
+        <skos:prefLabel xml:lang="en">planning permission</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="PermittingStageNomenclature"/>
+        <aec3po:forAdministrativeArea rdf:resource="England"/>
+        <dct:title xml:lang="en">planning permission</dct:title>
+        <dct:description xml:lang="en">The UK Planning Permission permitting stage.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
   </owl:Class>
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
     <ns1:hasMember rdf:resource="PermittingStageNomenclature"/>
@@ -122,11 +117,18 @@
     <ns1:hasMember rdf:resource="UK_Building_Control_Submission"/>
     <ns1:hasMember rdf:resource="UK_Planning_Permission"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="n06d85102d1db4f21bb47830175d8708fb2"/>
-  </rdf:Description>
   <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="n2cf5492505df4290a678dced1a9d4c59b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="PermittingStage"/>
+    <ns1:hasMember rdf:nodeID="n2cf5492505df4290a678dced1a9d4c59b1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
     <ns1:hasMember rdf:resource="permitting_stage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <ns1:hasMember rdf:resource="hasPermittingStage"/>
   </rdf:Description>
 </rdf:RDF>

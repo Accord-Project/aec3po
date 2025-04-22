@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:ns1="https://w3id.org/profile/ontdoc/"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <owl:NamedIndividual rdf:about="CheckMethodComparator-neq">
+  <owl:Class rdf:about="CheckMethodComparator">
     <rdf:type>
-      <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-        <ns1:superClassOf rdf:resource="CheckMethodComparator"/>
-        <ns1:hasMember rdf:resource="CheckMethodcomparator-eq"/>
-        <ns1:hasMember rdf:resource="CheckMethodComparator-neq"/>
-        <ns1:hasMember rdf:resource="CheckMethodComparator-lt"/>
-        <ns1:hasMember rdf:resource="CheckMethodComparator-le"/>
-        <ns1:hasMember rdf:resource="CheckMethodComparator-gt"/>
-        <ns1:hasMember rdf:resource="CheckMethodComparator-ge"/>
-        <ns1:hasMember rdf:resource="CheckMethodcomparator-logicalAND"/>
-        <ns1:hasMember rdf:resource="CheckMethodComparator-logicalOR"/>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="CheckMethodComparator"/>
       </rdf:Description>
     </rdf:type>
-    <rdf:type rdf:resource="CheckMethodComparator"/>
+    <rdfs:label xml:lang="en">check method comparator</rdfs:label>
+    <rdfs:comment xml:lang="en">Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodComparatorNomenclature</rdfs:comment>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="check_method_comparators">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -40,12 +33,35 @@
 '2023-09-25</dct:created>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-    <skos:definition xml:lang="en">not equal-to comparator.</skos:definition>
-    <skos:inScheme>
-      <skos:ConceptScheme rdf:about="CheckMethodComparatorNomenclature">
-        <rdfs:label xml:lang="en">check method nomenclature</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
-        <skos:definition xml:lang="en">A set of comparators for the check method.
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <ns1:superClassOf rdf:resource="CheckMethodComparator"/>
+        <ns1:hasMember rdf:resource="CheckMethodcomparator-eq"/>
+        <ns1:hasMember rdf:resource="CheckMethodComparator-neq"/>
+        <ns1:hasMember rdf:resource="CheckMethodComparator-lt"/>
+        <ns1:hasMember rdf:resource="CheckMethodComparator-le"/>
+        <ns1:hasMember rdf:resource="CheckMethodComparator-gt"/>
+        <ns1:hasMember rdf:resource="CheckMethodComparator-ge"/>
+        <ns1:hasMember rdf:resource="CheckMethodcomparator-logicalAND"/>
+        <ns1:hasMember rdf:resource="CheckMethodComparator-logicalOR"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="CheckMethod">
+        <ns1:superClassOf rdf:resource="CheckMethodComparator"/>
+        <ns1:inRangeOf rdf:resource="hasComparator"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n6285b7615b8040869538a3e6602b9a6ab1">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+          <owl:Restriction rdf:nodeID="n6285b7615b8040869538a3e6602b9a6ab2">
+            <owl:hasValue>
+              <skos:ConceptScheme rdf:about="CheckMethodComparatorNomenclature">
+                <rdfs:label xml:lang="en">check method nomenclature</rdfs:label>
+                <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
+                <skos:definition xml:lang="en">A set of comparators for the check method.
 
   AEC3PO includes a set of comparators for this nomenclature.
 
@@ -58,16 +74,16 @@
   - comparator_gt : greater-than comparator.
   - comparator_ge : greater-equal comparator.
   </skos:definition>
-        <skos:hasTopConcept rdf:resource="CheckMethodComparator-eq"/>
-        <skos:hasTopConcept rdf:resource="CheckMethodcomparator-neq"/>
-        <skos:hasTopConcept rdf:resource="CheckMethodcomparator-lt"/>
-        <skos:hasTopConcept rdf:resource="CheckMethodcomparator-le"/>
-        <skos:hasTopConcept rdf:resource="CheckMethodcomparator-gt"/>
-        <skos:hasTopConcept rdf:resource="CheckMethodcomparator-ge"/>
-        <skos:hasTopConcept rdf:resource="CheckMethodcomparator-logicalAND"/>
-        <skos:hasTopConcept rdf:resource="CheckMethodcomparator-logicalOR"/>
-        <dct:title xml:lang="en">check method nomenclature</dct:title>
-        <dct:description xml:lang="en">A set of comparators for the check method.
+                <skos:hasTopConcept rdf:resource="CheckMethodComparator-eq"/>
+                <skos:hasTopConcept rdf:resource="CheckMethodcomparator-neq"/>
+                <skos:hasTopConcept rdf:resource="CheckMethodcomparator-lt"/>
+                <skos:hasTopConcept rdf:resource="CheckMethodcomparator-le"/>
+                <skos:hasTopConcept rdf:resource="CheckMethodcomparator-gt"/>
+                <skos:hasTopConcept rdf:resource="CheckMethodcomparator-ge"/>
+                <skos:hasTopConcept rdf:resource="CheckMethodcomparator-logicalAND"/>
+                <skos:hasTopConcept rdf:resource="CheckMethodcomparator-logicalOR"/>
+                <dct:title xml:lang="en">check method nomenclature</dct:title>
+                <dct:description xml:lang="en">A set of comparators for the check method.
 
   AEC3PO includes a set of comparators for this nomenclature.
 
@@ -80,57 +96,8 @@
   - comparator_gt : greater-than comparator.
   - comparator_ge : greater-equal comparator.
   </dct:description>
-      </skos:ConceptScheme>
-    </skos:inScheme>
-    <skos:prefLabel xml:lang="en">not equal-to</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodComparatorNomenclature"/>
-    <dct:title xml:lang="en">not equal-to</dct:title>
-    <dct:description xml:lang="en">not equal-to comparator.</dct:description>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="CheckMethodcomparator-logicalAND">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="CheckMethodComparator"/>
-    <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
-    <skos:definition xml:lang="en">logical AND comparator.</skos:definition>
-    <skos:inScheme rdf:resource="CheckMethodComparatorNomenclature"/>
-    <skos:prefLabel xml:lang="en">logicalAND</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodComparatorNomenclature"/>
-    <dct:title xml:lang="en">logicalAND</dct:title>
-    <dct:description xml:lang="en">logical AND comparator.</dct:description>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="CheckMethodComparator-ge">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="CheckMethodComparator"/>
-    <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
-    <skos:definition xml:lang="en">greater-equal comparator.</skos:definition>
-    <skos:inScheme rdf:resource="CheckMethodComparatorNomenclature"/>
-    <skos:prefLabel xml:lang="en">greater equal</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodComparatorNomenclature"/>
-    <dct:title xml:lang="en">greater equal</dct:title>
-    <dct:description xml:lang="en">greater-equal comparator.</dct:description>
-  </owl:NamedIndividual>
-  <owl:Class rdf:about="CheckMethodComparator">
-    <rdf:type>
-      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
-        <ns1:hasMember rdf:resource="CheckMethodComparator"/>
-      </rdf:Description>
-    </rdf:type>
-    <rdfs:label xml:lang="en">check method comparator</rdfs:label>
-    <rdfs:comment xml:lang="en">Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodComparatorNomenclature</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf>
-      <rdf:Description rdf:about="CheckMethod">
-        <ns1:superClassOf rdf:resource="CheckMethodComparator"/>
-        <ns1:inRangeOf rdf:resource="hasComparator"/>
-      </rdf:Description>
-    </rdfs:subClassOf>
-    <owl:equivalentClass>
-      <owl:Class rdf:nodeID="n80904d9834744c99bee0cb2b582cffe1b1">
-        <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="n80904d9834744c99bee0cb2b582cffe1b2">
-            <owl:hasValue rdf:resource="CheckMethodComparatorNomenclature"/>
+              </skos:ConceptScheme>
+            </owl:hasValue>
             <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
           </owl:Restriction>
         </owl:intersectionOf>
@@ -138,7 +105,19 @@
     </owl:equivalentClass>
     <dct:title xml:lang="en">check method comparator</dct:title>
     <dct:description xml:lang="en">Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodComparatorNomenclature</dct:description>
-    <ns1:hasMember rdf:resource="CheckMethodComparator-neq"/>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodComparator-neq">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodComparator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
+        <skos:definition xml:lang="en">not equal-to comparator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodComparatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">not equal-to</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodComparatorNomenclature"/>
+        <dct:title xml:lang="en">not equal-to</dct:title>
+        <dct:description xml:lang="en">not equal-to comparator.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
     <ns1:hasMember>
       <owl:NamedIndividual rdf:about="CheckMethodComparator-lt">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -178,8 +157,32 @@
         <dct:description xml:lang="en">greater-than comparator.</dct:description>
       </owl:NamedIndividual>
     </ns1:hasMember>
-    <ns1:hasMember rdf:resource="CheckMethodComparator-ge"/>
-    <ns1:hasMember rdf:resource="CheckMethodcomparator-logicalAND"/>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodComparator-ge">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodComparator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
+        <skos:definition xml:lang="en">greater-equal comparator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodComparatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">greater equal</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodComparatorNomenclature"/>
+        <dct:title xml:lang="en">greater equal</dct:title>
+        <dct:description xml:lang="en">greater-equal comparator.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodcomparator-logicalAND">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodComparator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
+        <skos:definition xml:lang="en">logical AND comparator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodComparatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">logicalAND</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodComparatorNomenclature"/>
+        <dct:title xml:lang="en">logicalAND</dct:title>
+        <dct:description xml:lang="en">logical AND comparator.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
     <ns1:hasMember>
       <owl:NamedIndividual rdf:about="CheckMethodComparator-logicalOR">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -194,38 +197,45 @@
       </owl:NamedIndividual>
     </ns1:hasMember>
   </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
-    <ns1:hasMember>
-      <owl:FunctionalProperty rdf:about="hasComparator">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-        <rdfs:label xml:lang="en">has comparator</rdfs:label>
-        <rdfs:comment xml:lang="en">The comparator of a feature of interest or a property of that is needed by the check method.
+  <owl:FunctionalProperty rdf:about="hasComparator">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+        <ns1:hasMember rdf:resource="hasComparator"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">has comparator</rdfs:label>
+    <rdfs:comment xml:lang="en">The comparator of a feature of interest or a property of that is needed by the check method.
   A set of comparators is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
-        <rdfs:range rdf:resource="CheckMethod"/>
-        <rdfs:subPropertyOf rdf:resource="hasDesign"/>
-        <dct:title xml:lang="en">has comparator</dct:title>
-        <dct:description xml:lang="en">The comparator of a feature of interest or a property of that is needed by the check method.
+    <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
+    <rdfs:range rdf:resource="CheckMethod"/>
+    <rdfs:subPropertyOf>
+      <rdf:Description rdf:about="hasDesign">
+        <ns1:superPropertyOf rdf:resource="hasComparator"/>
+      </rdf:Description>
+    </rdfs:subPropertyOf>
+    <dct:title xml:lang="en">has comparator</dct:title>
+    <dct:description xml:lang="en">The comparator of a feature of interest or a property of that is needed by the check method.
   A set of comparators is defined by aec3po in the corresponding concept scheme.</dct:description>
-      </owl:FunctionalProperty>
+  </owl:FunctionalProperty>
+  <rdf:Description rdf:about="CheckMethodcomparator">
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodcomparator-eq">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodcomparator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
+        <skos:definition xml:lang="en">equal-to comparator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodComparatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">equal-to</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodComparatorNomenclature"/>
+        <dct:title xml:lang="en">equal-to</dct:title>
+        <dct:description xml:lang="en">equal-to comparator.</dct:description>
+      </owl:NamedIndividual>
     </ns1:hasMember>
   </rdf:Description>
   <prov:Agent rdf:about="amna"/>
-  <owl:NamedIndividual rdf:about="CheckMethodcomparator-eq">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type>
-      <rdf:Description rdf:about="CheckMethodcomparator">
-        <ns1:hasMember rdf:resource="CheckMethodcomparator-eq"/>
-      </rdf:Description>
-    </rdf:type>
-    <rdfs:isDefinedBy rdf:resource="check_method_comparators"/>
-    <skos:definition xml:lang="en">equal-to comparator.</skos:definition>
-    <skos:inScheme rdf:resource="CheckMethodComparatorNomenclature"/>
-    <skos:prefLabel xml:lang="en">equal-to</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodComparatorNomenclature"/>
-    <dct:title xml:lang="en">equal-to</dct:title>
-    <dct:description xml:lang="en">equal-to comparator.</dct:description>
-  </owl:NamedIndividual>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="check_method_comparators"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
     <ns1:hasMember rdf:resource="CheckMethodcomparator-eq"/>
     <ns1:hasMember rdf:resource="CheckMethodComparator-neq"/>
@@ -238,21 +248,15 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
     <ns1:hasMember rdf:resource="CheckMethodComparator"/>
-    <ns1:hasMember rdf:nodeID="n80904d9834744c99bee0cb2b582cffe1b1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="hasDesign">
-    <ns1:superPropertyOf rdf:resource="hasComparator"/>
+    <ns1:hasMember rdf:nodeID="n6285b7615b8040869538a3e6602b9a6ab1"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="n80904d9834744c99bee0cb2b582cffe1b2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
-    <ns1:hasMember rdf:resource="check_method_comparators"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
-    <ns1:hasMember rdf:resource="hasComparator"/>
+    <ns1:hasMember rdf:nodeID="n6285b7615b8040869538a3e6602b9a6ab2"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
     <ns1:hasMember rdf:resource="CheckMethodComparatorNomenclature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
+    <ns1:hasMember rdf:resource="hasComparator"/>
   </rdf:Description>
 </rdf:RDF>

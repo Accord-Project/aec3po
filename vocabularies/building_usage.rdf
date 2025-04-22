@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:ns1="https://w3id.org/profile/ontdoc/"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:dct="http://purl.org/dc/terms/"
 >
-  <owl:ObjectProperty rdf:about="forBuildingUsage">
-    <rdfs:label xml:lang="en">for building usage</rdfs:label>
-    <rdfs:comment xml:lang="en">The building usage for which a specific check, verifier, or check result applies.
+  <owl:FunctionalProperty rdf:about="hasBuildingUsage">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+        <ns1:hasMember rdf:resource="forBuildingUsage"/>
+        <ns1:hasMember rdf:resource="hasBuildingUsage"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">has building usage</rdfs:label>
+    <rdfs:comment xml:lang="en">The building usage design of a feature of interest or a property of that feature of interest.
   A set of values is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="building_usage">
@@ -30,6 +36,21 @@
     </rdfs:isDefinedBy>
     <rdfs:range rdf:resource="BuildingUsage"/>
     <rdfs:subPropertyOf>
+      <rdf:Description rdf:about="hasDesign">
+        <ns1:superPropertyOf rdf:resource="hasBuildingUsage"/>
+      </rdf:Description>
+    </rdfs:subPropertyOf>
+    <dct:title xml:lang="en">has building usage</dct:title>
+    <dct:description xml:lang="en">The building usage design of a feature of interest or a property of that feature of interest.
+  A set of values is defined by aec3po in the corresponding concept scheme.</dct:description>
+  </owl:FunctionalProperty>
+  <owl:ObjectProperty rdf:about="forBuildingUsage">
+    <rdfs:label xml:lang="en">for building usage</rdfs:label>
+    <rdfs:comment xml:lang="en">The building usage for which a specific check, verifier, or check result applies.
+  A set of values is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="building_usage"/>
+    <rdfs:range rdf:resource="BuildingUsage"/>
+    <rdfs:subPropertyOf>
       <rdf:Description rdf:about="forDesign">
         <ns1:superPropertyOf rdf:resource="forBuildingUsage"/>
       </rdf:Description>
@@ -38,23 +59,47 @@
     <dct:description xml:lang="en">The building usage for which a specific check, verifier, or check result applies.
   A set of values is defined by aec3po in the corresponding concept scheme.</dct:description>
   </owl:ObjectProperty>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
-    <ns1:hasMember rdf:resource="forBuildingUsage"/>
-    <ns1:hasMember>
-      <owl:FunctionalProperty rdf:about="hasBuildingUsage">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-        <rdfs:label xml:lang="en">has building usage</rdfs:label>
-        <rdfs:comment xml:lang="en">The building usage design of a feature of interest or a property of that feature of interest.
-  A set of values is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
+  <skos:ConceptScheme rdf:about="BuildingUsageNomenclature">
+    <rdfs:label xml:lang="en">Building usage nomenclature</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="building_usage"/>
+    <skos:definition xml:lang="en">A set of values for the building usage design.
+  AEC3PO includes a set of values for this nomenclature.
+  These values are :
+  - residential : residential building;
+  - commercial : commercial building.</skos:definition>
+    <skos:hasTopConcept>
+      <owl:NamedIndividual rdf:about="BuildingUsage-commercial">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="BuildingUsage"/>
         <rdfs:isDefinedBy rdf:resource="building_usage"/>
-        <rdfs:range rdf:resource="BuildingUsage"/>
-        <rdfs:subPropertyOf rdf:resource="hasDesign"/>
-        <dct:title xml:lang="en">has building usage</dct:title>
-        <dct:description xml:lang="en">The building usage design of a feature of interest or a property of that feature of interest.
-  A set of values is defined by aec3po in the corresponding concept scheme.</dct:description>
-      </owl:FunctionalProperty>
-    </ns1:hasMember>
-  </rdf:Description>
+        <skos:definition xml:lang="en">Building has commercial usage.</skos:definition>
+        <skos:inScheme rdf:resource="BuildingUsageNomenclature"/>
+        <skos:prefLabel xml:lang="en">commercial</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="BuildingUsageNomenclature"/>
+        <dct:title xml:lang="en">commercial</dct:title>
+        <dct:description xml:lang="en">Building has commercial usage.</dct:description>
+      </owl:NamedIndividual>
+    </skos:hasTopConcept>
+    <skos:hasTopConcept>
+      <owl:NamedIndividual rdf:about="BuildingUsage-residential">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="BuildingUsage"/>
+        <rdfs:isDefinedBy rdf:resource="building_usage"/>
+        <skos:definition xml:lang="en">Building has residential usage.</skos:definition>
+        <skos:inScheme rdf:resource="BuildingUsageNomenclature"/>
+        <skos:prefLabel xml:lang="en">residential</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="BuildingUsageNomenclature"/>
+        <dct:title xml:lang="en">residential</dct:title>
+        <dct:description xml:lang="en">Building has residential usage.</dct:description>
+      </owl:NamedIndividual>
+    </skos:hasTopConcept>
+    <dct:title xml:lang="en">Building usage nomenclature</dct:title>
+    <dct:description xml:lang="en">A set of values for the building usage design.
+  AEC3PO includes a set of values for this nomenclature.
+  These values are :
+  - residential : residential building;
+  - commercial : commercial building.</dct:description>
+  </skos:ConceptScheme>
   <owl:Class rdf:about="BuildingUsage">
     <rdf:type>
       <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
@@ -78,29 +123,11 @@
       </rdf:Description>
     </rdfs:subClassOf>
     <owl:equivalentClass>
-      <owl:Class rdf:nodeID="n8a31aae64a544c78a426d4e6c066450cb1">
+      <owl:Class rdf:nodeID="n5ba4fb8a52c24165b9706e1c987668e4b1">
         <owl:intersectionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="n8a31aae64a544c78a426d4e6c066450cb2">
-            <owl:hasValue>
-              <skos:ConceptScheme rdf:about="BuildingUsageNomenclature">
-                <rdfs:label xml:lang="en">Building usage nomenclature</rdfs:label>
-                <rdfs:isDefinedBy rdf:resource="building_usage"/>
-                <skos:definition xml:lang="en">A set of values for the building usage design.
-  AEC3PO includes a set of values for this nomenclature.
-  These values are :
-  - residential : residential building;
-  - commercial : commercial building.</skos:definition>
-                <skos:hasTopConcept rdf:resource="BuildingUsage-commercial"/>
-                <skos:hasTopConcept rdf:resource="BuildingUsage-residential"/>
-                <dct:title xml:lang="en">Building usage nomenclature</dct:title>
-                <dct:description xml:lang="en">A set of values for the building usage design.
-  AEC3PO includes a set of values for this nomenclature.
-  These values are :
-  - residential : residential building;
-  - commercial : commercial building.</dct:description>
-              </skos:ConceptScheme>
-            </owl:hasValue>
+          <owl:Restriction rdf:nodeID="n5ba4fb8a52c24165b9706e1c987668e4b2">
+            <owl:hasValue rdf:resource="BuildingUsageNomenclature"/>
             <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
           </owl:Restriction>
         </owl:intersectionOf>
@@ -110,32 +137,8 @@
     <dct:description xml:lang="en">Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingUsageNomenclature</dct:description>
     <ns1:inRangeOf rdf:resource="forBuildingUsage"/>
     <ns1:inRangeOf rdf:resource="hasBuildingUsage"/>
-    <ns1:hasMember>
-      <owl:NamedIndividual rdf:about="BuildingUsage-commercial">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="BuildingUsage"/>
-        <rdfs:isDefinedBy rdf:resource="building_usage"/>
-        <skos:definition xml:lang="en">Building has commercial usage.</skos:definition>
-        <skos:inScheme rdf:resource="BuildingUsageNomenclature"/>
-        <skos:prefLabel xml:lang="en">commercial</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="BuildingUsageNomenclature"/>
-        <dct:title xml:lang="en">commercial</dct:title>
-        <dct:description xml:lang="en">Building has commercial usage.</dct:description>
-      </owl:NamedIndividual>
-    </ns1:hasMember>
-    <ns1:hasMember>
-      <owl:NamedIndividual rdf:about="BuildingUsage-residential">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="BuildingUsage"/>
-        <rdfs:isDefinedBy rdf:resource="building_usage"/>
-        <skos:definition xml:lang="en">Building has residential usage.</skos:definition>
-        <skos:inScheme rdf:resource="BuildingUsageNomenclature"/>
-        <skos:prefLabel xml:lang="en">residential</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="BuildingUsageNomenclature"/>
-        <dct:title xml:lang="en">residential</dct:title>
-        <dct:description xml:lang="en">Building has residential usage.</dct:description>
-      </owl:NamedIndividual>
-    </ns1:hasMember>
+    <ns1:hasMember rdf:resource="BuildingUsage-commercial"/>
+    <ns1:hasMember rdf:resource="BuildingUsage-residential"/>
     <ns1:hasMember>
       <owl:NamedIndividual rdf:about="BuildingUsage-cultural">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -150,29 +153,26 @@
       </owl:NamedIndividual>
     </ns1:hasMember>
   </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="BuildingUsage"/>
-    <ns1:hasMember rdf:nodeID="n8a31aae64a544c78a426d4e6c066450cb1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="hasDesign">
-    <ns1:superPropertyOf rdf:resource="hasBuildingUsage"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
     <ns1:hasMember rdf:resource="BuildingUsage-commercial"/>
     <ns1:hasMember rdf:resource="BuildingUsage-residential"/>
     <ns1:hasMember rdf:resource="BuildingUsage-cultural"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="n5ba4fb8a52c24165b9706e1c987668e4b2"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
     <ns1:hasMember rdf:resource="BuildingUsageNomenclature"/>
-  </rdf:Description>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="n8a31aae64a544c78a426d4e6c066450cb2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
-    <ns1:hasMember rdf:resource="hasBuildingUsage"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
     <ns1:hasMember rdf:resource="building_usage"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
+    <ns1:hasMember rdf:resource="hasBuildingUsage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="BuildingUsage"/>
+    <ns1:hasMember rdf:nodeID="n5ba4fb8a52c24165b9706e1c987668e4b1"/>
+  </rdf:Description>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
 </rdf:RDF>

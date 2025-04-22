@@ -17,7 +17,7 @@
     dct:title "Legal Verifier"@en ;
     rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en ;
     rdfs:isDefinedBy <legal_verifier> ;
-    rdfs:subClassOf _:nb8783af1a55c44b99a9d5b1543b6691bb1,
+    rdfs:subClassOf _:n325179904d1b4575b034647b804677ecb1,
         foaf:Agent ;
     ns1:superClassOf <PrivateVerifier>,
         <StateVerifier> .
@@ -44,7 +44,7 @@
 
 owl:Ontology ns1:hasMember <legal_verifier> .
 
-owl:Restriction ns1:hasMember _:nb8783af1a55c44b99a9d5b1543b6691bb1 .
+owl:Restriction ns1:hasMember _:n325179904d1b4575b034647b804677ecb1 .
 
 foaf:Agent ns1:superClassOf <LegalVerifier> .
 
@@ -68,7 +68,7 @@ owl:Class ns1:hasMember <LegalVerifier>,
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
-_:nb8783af1a55c44b99a9d5b1543b6691bb1 a owl:Restriction ;
+_:n325179904d1b4575b034647b804677ecb1 a owl:Restriction ;
     owl:allValuesFrom <Document> ;
     owl:onProperty <forDocument> ;
     ns1:superClassOf <LegalVerifier> .
