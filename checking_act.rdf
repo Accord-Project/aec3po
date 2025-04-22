@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:cc="http://creativecommons.org/ns#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
-  <owl:DatatypeProperty rdf:about="endTime">
-    <rdfs:label xml:lang="en">end time</rdfs:label>
-    <rdfs:comment xml:lang="en">the end time of the checking act</rdfs:comment>
+  <owl:DatatypeProperty rdf:about="startTime">
+    <rdfs:label xml:lang="en">start time</rdfs:label>
+    <rdfs:comment xml:lang="en">the start time of the checking act</rdfs:comment>
     <rdfs:domain rdf:resource="CheckingAct"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <rdfs:isDefinedBy>
@@ -28,13 +28,20 @@
       </owl:Ontology>
     </rdfs:isDefinedBy>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="startTime">
-    <rdfs:label xml:lang="en">start time</rdfs:label>
-    <rdfs:comment xml:lang="en">the start time of the checking act</rdfs:comment>
+  <owl:DatatypeProperty rdf:about="endTime">
+    <rdfs:label xml:lang="en">end time</rdfs:label>
+    <rdfs:comment xml:lang="en">the end time of the checking act</rdfs:comment>
     <rdfs:domain rdf:resource="CheckingAct"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     <rdfs:isDefinedBy rdf:resource="checking_act"/>
   </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="madeBy">
+    <rdfs:label xml:lang="en">made by</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier).</rdfs:comment>
+    <rdfs:domain rdf:resource="CheckingAct"/>
+    <rdfs:isDefinedBy rdf:resource="checking_act"/>
+    <rdfs:range rdf:resource="ProcessVerifier"/>
+  </owl:ObjectProperty>
   <owl:Class rdf:about="CheckingAct">
     <rdfs:label xml:lang="en">Checking Act</rdfs:label>
     <rdfs:comment xml:lang="en">Act of checking some entities for something and generating a compliance verification report. 
@@ -47,38 +54,31 @@
 </rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="checking_act"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="na3e9d1c94ec6480aad0c6045d8bd8e56b1">
+      <owl:Restriction rdf:nodeID="nd5cf681513854d29aa0a3f6322405c0eb1">
         <owl:someValuesFrom rdf:resource="CheckMethod"/>
         <owl:onProperty rdf:resource="usedMethod"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="na3e9d1c94ec6480aad0c6045d8bd8e56b2">
+      <owl:Restriction rdf:nodeID="nd5cf681513854d29aa0a3f6322405c0eb2">
         <owl:onProperty rdf:resource="madeBy"/>
         <owl:someValuesFrom rdf:resource="ProcessVerifier"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="na3e9d1c94ec6480aad0c6045d8bd8e56b3">
+      <owl:Restriction rdf:nodeID="nd5cf681513854d29aa0a3f6322405c0eb3">
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <owl:onProperty rdf:resource="checked"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="na3e9d1c94ec6480aad0c6045d8bd8e56b4">
+      <owl:Restriction rdf:nodeID="nd5cf681513854d29aa0a3f6322405c0eb4">
         <owl:someValuesFrom rdf:resource="ComplianceVerificationReport"/>
         <owl:onProperty rdf:resource="hasReport"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="usedMethod">
-    <rdfs:label xml:lang="en">used method</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a checking act to the method it used (a aec3po:CheckMethod).</rdfs:comment>
-    <rdfs:domain rdf:resource="CheckingAct"/>
-    <rdfs:isDefinedBy rdf:resource="checking_act"/>
-    <rdfs:range rdf:resource="CheckMethod"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="hasReport">
     <rdfs:label xml:lang="en">has report</rdfs:label>
     <rdfs:comment xml:lang="en">Links a checking act to the resulting compliance verification report.</rdfs:comment>
@@ -92,11 +92,11 @@
     <rdfs:domain rdf:resource="CheckingAct"/>
     <rdfs:isDefinedBy rdf:resource="checking_act"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="madeBy">
-    <rdfs:label xml:lang="en">made by</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier).</rdfs:comment>
+  <owl:ObjectProperty rdf:about="usedMethod">
+    <rdfs:label xml:lang="en">used method</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a checking act to the method it used (a aec3po:CheckMethod).</rdfs:comment>
     <rdfs:domain rdf:resource="CheckingAct"/>
     <rdfs:isDefinedBy rdf:resource="checking_act"/>
-    <rdfs:range rdf:resource="ProcessVerifier"/>
+    <rdfs:range rdf:resource="CheckMethod"/>
   </owl:ObjectProperty>
 </rdf:RDF>

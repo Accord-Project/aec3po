@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
-  <owl:ObjectProperty rdf:about="forBuildingStructure">
-    <rdfs:label xml:lang="en">for building structure</rdfs:label>
-    <rdfs:comment xml:lang="en">The building structure for which a specific check, verifier, or check result applies.
+  <owl:FunctionalProperty rdf:about="hasBuildingStructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has building structure</rdfs:label>
+    <rdfs:comment xml:lang="en">The building structure design of a feature of interest or a property of that feature of interest.
   A set of values is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="building_structure">
@@ -28,22 +29,21 @@
       </owl:Ontology>
     </rdfs:isDefinedBy>
     <rdfs:range rdf:resource="BuildingStructure"/>
-    <rdfs:subPropertyOf rdf:resource="forDesign"/>
-  </owl:ObjectProperty>
-  <owl:FunctionalProperty rdf:about="hasBuildingStructure">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">has building structure</rdfs:label>
-    <rdfs:comment xml:lang="en">The building structure design of a feature of interest or a property of that feature of interest.
+    <rdfs:subPropertyOf rdf:resource="hasDesign"/>
+  </owl:FunctionalProperty>
+  <owl:ObjectProperty rdf:about="forBuildingStructure">
+    <rdfs:label xml:lang="en">for building structure</rdfs:label>
+    <rdfs:comment xml:lang="en">The building structure for which a specific check, verifier, or check result applies.
   A set of values is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="building_structure"/>
     <rdfs:range rdf:resource="BuildingStructure"/>
-    <rdfs:subPropertyOf rdf:resource="hasDesign"/>
-  </owl:FunctionalProperty>
-  <owl:NamedIndividual rdf:about="BuildingStructure-timber">
+    <rdfs:subPropertyOf rdf:resource="forDesign"/>
+  </owl:ObjectProperty>
+  <owl:NamedIndividual rdf:about="BuildingStructure-steel">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="BuildingStructure"/>
     <rdfs:isDefinedBy rdf:resource="building_structure"/>
-    <skos:definition xml:lang="en">Building has timber structure.</skos:definition>
+    <skos:definition xml:lang="en">Building has steel structure.</skos:definition>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="BuildingStructureNomenclature">
         <rdfs:label xml:lang="en">Building structure nomenclature</rdfs:label>
@@ -57,15 +57,6 @@
         <skos:hasTopConcept rdf:resource="BuildingStructure-timber"/>
       </skos:ConceptScheme>
     </skos:inScheme>
-    <skos:prefLabel xml:lang="en">timber</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="BuildingStructureNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="BuildingStructure-steel">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="BuildingStructure"/>
-    <rdfs:isDefinedBy rdf:resource="building_structure"/>
-    <skos:definition xml:lang="en">Building has steel structure.</skos:definition>
-    <skos:inScheme rdf:resource="BuildingStructureNomenclature"/>
     <skos:prefLabel xml:lang="en">steel</skos:prefLabel>
     <skos:topConceptOf rdf:resource="BuildingStructureNomenclature"/>
   </owl:NamedIndividual>
@@ -76,10 +67,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:subClassOf rdf:resource="Design"/>
     <owl:equivalentClass>
-      <rdf:Description rdf:nodeID="nb8d05e7111634928a750eb292cb91ae3b1">
+      <rdf:Description rdf:nodeID="ne040171c079a4911bdc1f61a3ba8f6c8b1">
         <owl:intersectionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="nb8d05e7111634928a750eb292cb91ae3b2">
+          <owl:Restriction rdf:nodeID="ne040171c079a4911bdc1f61a3ba8f6c8b2">
             <owl:hasValue rdf:resource="BuildingStructureNomenclature"/>
             <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
           </owl:Restriction>
@@ -87,4 +78,13 @@
       </rdf:Description>
     </owl:equivalentClass>
   </owl:Class>
+  <owl:NamedIndividual rdf:about="BuildingStructure-timber">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="BuildingStructure"/>
+    <rdfs:isDefinedBy rdf:resource="building_structure"/>
+    <skos:definition xml:lang="en">Building has timber structure.</skos:definition>
+    <skos:inScheme rdf:resource="BuildingStructureNomenclature"/>
+    <skos:prefLabel xml:lang="en">timber</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="BuildingStructureNomenclature"/>
+  </owl:NamedIndividual>
 </rdf:RDF>

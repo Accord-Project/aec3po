@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
   <owl:ObjectProperty rdf:about="forAdministrativeArea">
     <rdfs:label xml:lang="en">for administrative area</rdfs:label>
@@ -28,11 +28,11 @@
     </rdfs:isDefinedBy>
     <rdfs:range rdf:resource="AdministrativeArea"/>
   </owl:ObjectProperty>
-  <owl:NamedIndividual rdf:about="Finland">
+  <owl:NamedIndividual rdf:about="England">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="AdministrativeArea"/>
     <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">Finland</skos:definition>
+    <skos:definition xml:lang="en">England</skos:definition>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="AdministrativeAreaNomenclature">
         <rdfs:label xml:lang="en">Administrative Area nomenclature</rdfs:label>
@@ -56,25 +56,16 @@
         <skos:hasTopConcept rdf:resource="Spain"/>
       </skos:ConceptScheme>
     </skos:inScheme>
-    <skos:prefLabel xml:lang="en">Finland</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Estonia">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="AdministrativeArea"/>
-    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">Estonia</skos:definition>
-    <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
-    <skos:prefLabel xml:lang="en">Estonia</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="England">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="AdministrativeArea"/>
-    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">England</skos:definition>
-    <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
     <skos:prefLabel xml:lang="en">England</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="France">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="AdministrativeArea"/>
+    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
+    <skos:definition xml:lang="en">France</skos:definition>
+    <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
+    <skos:prefLabel xml:lang="en">France</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="Germany">
@@ -86,13 +77,13 @@
     <skos:prefLabel xml:lang="en">Germany</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Spain">
+  <owl:NamedIndividual rdf:about="Italy">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="AdministrativeArea"/>
     <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">Spain</skos:definition>
+    <skos:definition xml:lang="en">Italy</skos:definition>
     <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
-    <skos:prefLabel xml:lang="en">Spain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Italy</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
   </owl:NamedIndividual>
   <owl:Class rdf:about="AdministrativeArea">
@@ -103,10 +94,10 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <owl:equivalentClass rdf:resource="http://data.europa.eu/eli/ontology#AdministrativeArea"/>
     <owl:equivalentClass>
-      <rdf:Description rdf:nodeID="nd8100c8a7fdc4a3b94f3974d6ccf3fe2b1">
+      <rdf:Description rdf:nodeID="ne040bb8aa0134fc9b73cc07d6952adedb1">
         <owl:intersectionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="nd8100c8a7fdc4a3b94f3974d6ccf3fe2b2">
+          <owl:Restriction rdf:nodeID="ne040bb8aa0134fc9b73cc07d6952adedb2">
             <owl:hasValue rdf:resource="AdministrativeAreaNomenclature"/>
             <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
           </owl:Restriction>
@@ -114,22 +105,31 @@
       </rdf:Description>
     </owl:equivalentClass>
   </owl:Class>
-  <owl:NamedIndividual rdf:about="France">
+  <owl:NamedIndividual rdf:about="Estonia">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="AdministrativeArea"/>
     <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">France</skos:definition>
+    <skos:definition xml:lang="en">Estonia</skos:definition>
     <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
-    <skos:prefLabel xml:lang="en">France</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Estonia</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Italy">
+  <owl:NamedIndividual rdf:about="Finland">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="AdministrativeArea"/>
     <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">Italy</skos:definition>
+    <skos:definition xml:lang="en">Finland</skos:definition>
     <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
-    <skos:prefLabel xml:lang="en">Italy</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Finland</skos:prefLabel>
+    <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="Spain">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="AdministrativeArea"/>
+    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
+    <skos:definition xml:lang="en">Spain</skos:definition>
+    <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
+    <skos:prefLabel xml:lang="en">Spain</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
   </owl:NamedIndividual>
 </rdf:RDF>

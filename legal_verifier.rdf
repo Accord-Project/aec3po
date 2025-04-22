@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
   <owl:Class rdf:about="PrivateVerifier">
     <rdfs:label xml:lang="en">Private Verifier</rdfs:label>
@@ -36,7 +36,7 @@
     <rdfs:label xml:lang="en">Legal Verifier</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     <rdfs:subClassOf>
-      <rdf:Description rdf:nodeID="n332a984d3fd8410f8742b0e1a13bb041b1">
+      <rdf:Description rdf:nodeID="n482dc0d5c30f436aaa1dc6f3f5e138efb1">
         <owl:onProperty rdf:resource="forDocument"/>
         <owl:allValuesFrom rdf:resource="Document"/>
       </rdf:Description>

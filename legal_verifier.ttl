@@ -1,39 +1,42 @@
+@base <https://w3id.org/lbd/aec3po/> .
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-aec3po:legal_verifier a owl:Ontology ;
+<PrivateVerifier> a owl:Class ;
+    rdfs:label "Private Verifier"@en ;
+    rdfs:comment "Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en ;
+    rdfs:isDefinedBy <legal_verifier> ;
+    rdfs:subClassOf <LegalVerifier> .
+
+<StateVerifier> a owl:Class ;
+    rdfs:label "State Verifier"@en ;
+    rdfs:comment "State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. "@en ;
+    rdfs:isDefinedBy <legal_verifier> ;
+    rdfs:subClassOf <LegalVerifier> .
+
+<LegalVerifier> a owl:Class ;
+    rdfs:label "Legal Verifier"@en ;
+    rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en ;
+    rdfs:isDefinedBy <legal_verifier> ;
+    rdfs:subClassOf [ owl:allValuesFrom <Document> ;
+            owl:onProperty <forDocument> ],
+        foaf:Agent .
+
+<legal_verifier> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description """The AEC3PO Legal Verifier module describes actors of the compliance and permitting process that have the legal capacity to verify that a specific Statement of a compliance document has been met in a satisfactory manner."""@en ;
-    dct:description <diagrams/legal_verifier.png> ;
-    dct:modified "2023-08-31"^^xsd:date ;
+    dct:created "2023-08-31"^^xsd:date ;
+    dct:description <file:///home/runner/work/aec3po/aec3po/src/diagrams/legal_verifier.png>,
+        "The AEC3PO Legal Verifier module describes actors of the compliance and permitting process that have the legal capacity to verify that a specific Statement of a compliance document has been met in a satisfactory manner."@en ;
+    dct:modified "2023-08-31"^^xsd:date,
+        "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: legal verifier"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
-aec3po:LegalVerifier a owl:Class ;
-    rdfs:label "Legal Verifier"@en ;
-    rdfs:subClassOf foaf:Agent ;
-    rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en ;
-    rdfs:subClassOf [ owl:onProperty aec3po:forDocument ; owl:allValuesFrom aec3po:Document ] ;
-    rdfs:isDefinedBy aec3po:legal_verifier .
-
-aec3po:PrivateVerifier a owl:Class ;
-    rdfs:label "Private Verifier"@en ;
-    rdfs:comment "Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en ;
-    rdfs:subClassOf aec3po:LegalVerifier ;
-    rdfs:isDefinedBy aec3po:legal_verifier .
-
-aec3po:StateVerifier a owl:Class ;
-    rdfs:label "State Verifier"@en ;
-    rdfs:comment "State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. "@en ;
-    rdfs:subClassOf aec3po:LegalVerifier ;
-    rdfs:isDefinedBy aec3po:legal_verifier .

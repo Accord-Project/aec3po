@@ -1,38 +1,41 @@
+@base <https://w3id.org/lbd/aec3po/> .
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-aec3po:data_requirement a owl:Ontology ;
+<IDS> a owl:Class ;
+    rdfs:label "IDS"@en ;
+    rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
+    rdfs:isDefinedBy <data_requirement> ;
+    rdfs:subClassOf <DataRequirement> .
+
+<hasRequiredData> a owl:Class ;
+    rdfs:label "has required data"@en ;
+    rdfs:comment "Links a statement to some data that is required in order to perform a check to demonstrate compliance checking."@en ;
+    rdfs:domain <Statement> ;
+    rdfs:isDefinedBy <data_requirement> ;
+    rdfs:range <DataRequirement> .
+
+<DataRequirement> a owl:Class ;
+    rdfs:label "Data Requirement"@en ;
+    rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en ;
+    rdfs:isDefinedBy <data_requirement> ;
+    skos:example "The minimum width of a door can be a data requirement."@en .
+
+<data_requirement> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description """The AEC3PO DataRequirement module describes the data requirements that derive from a statement. These can describe any aspect of the building model or any type of property, physical or conceptual, associated with it."""@en ;
-    dct:description <diagrams/data_requirement.png> ;
+    dct:created "2023-10-01"^^xsd:date ;
+    dct:description <file:///home/runner/work/aec3po/aec3po/src/diagrams/data_requirement.png>,
+        "The AEC3PO DataRequirement module describes the data requirements that derive from a statement. These can describe any aspect of the building model or any type of property, physical or conceptual, associated with it."@en ;
+    dct:modified "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: Data Requirement"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
-    owl:imports aec3po:statement .
+    owl:imports <statement> .
 
-aec3po:hasRequiredData a owl:Class ;
- rdfs:label "has required data"@en ;
- rdfs:comment "Links a statement to some data that is required in order to perform a check to demonstrate compliance checking."@en ;
- rdfs:domain aec3po:Statement ;
- rdfs:range aec3po:DataRequirement ;
- rdfs:isDefinedBy aec3po:data_requirement .
-
-aec3po:DataRequirement a owl:Class ;
- rdfs:label "Data Requirement"@en ;
- rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en ;
- skos:example "The minimum width of a door can be a data requirement."@en ;
- rdfs:isDefinedBy aec3po:data_requirement .
-
-aec3po:IDS a owl:Class ;
- rdfs:label "IDS"@en ;
- rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
- rdfs:subClassOf aec3po:DataRequirement ;
- rdfs:isDefinedBy aec3po:data_requirement .

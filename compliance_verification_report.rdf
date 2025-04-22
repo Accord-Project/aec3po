@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:cc="http://creativecommons.org/ns#"
 >
-  <owl:ObjectProperty rdf:about="hasResult">
-    <rdfs:label xml:lang="en">has result</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a compliance verification report to some verification result.</rdfs:comment>
+  <owl:DatatypeProperty rdf:about="resultMessage">
+    <rdfs:label xml:lang="en">result message</rdfs:label>
+    <rdfs:comment>Verification results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values may be produced based on the statements in the AEC3PO graph.</rdfs:comment>
+    <rdfs:domain rdf:resource="VerificationResult"/>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="compliance_verification_report">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -25,39 +26,26 @@
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-    <rdfs:domain rdf:resource="ComplianceVerificationReport"/>
-    <rdfs:range rdf:resource="VerificationResult"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="verificationPlanZone">
-    <rdfs:label xml:lang="en">verification plan zone</rdfs:label>
-    <rdfs:comment>Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced.</rdfs:comment>
-    <rdfs:domain rdf:resource="VerificationResult"/>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-  </owl:ObjectProperty>
+  </owl:DatatypeProperty>
   <owl:NamedIndividual rdf:about="Info">
     <rdf:type rdf:resource="Severity"/>
     <rdfs:label xml:lang="en">Info</rdfs:label>
     <rdfs:comment xml:lang="en">The severity for an informational validation result.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="hasResult">
+    <rdfs:label xml:lang="en">has result</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a compliance verification report to some verification result.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <rdfs:domain rdf:resource="ComplianceVerificationReport"/>
+    <rdfs:range rdf:resource="VerificationResult"/>
+  </owl:ObjectProperty>
   <owl:NamedIndividual rdf:about="Violation">
     <rdf:type rdf:resource="Severity"/>
     <rdfs:label xml:lang="en">Violation</rdfs:label>
     <rdfs:comment xml:lang="en">The severity for a violation validation result.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Warning">
-    <rdf:type rdf:resource="Severity"/>
-    <rdfs:label xml:lang="en">Warning</rdfs:label>
-    <rdfs:comment xml:lang="en">The severity for a warning validation result.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-  </owl:NamedIndividual>
-  <owl:DatatypeProperty rdf:about="resultMessage">
-    <rdfs:label xml:lang="en">result message</rdfs:label>
-    <rdfs:comment>Verification results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values may be produced based on the statements in the AEC3PO graph.</rdfs:comment>
-    <rdfs:domain rdf:resource="VerificationResult"/>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-  </owl:DatatypeProperty>
   <owl:ObjectProperty rdf:about="verificationStatement">
     <rdfs:label xml:lang="en">verification statement</rdfs:label>
     <rdfs:comment>Statement that was validated when the verification result was produced.</rdfs:comment>
@@ -65,12 +53,18 @@
     <rdfs:range rdf:resource="CheckStatement"/>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="verificationFocus">
-    <rdfs:label xml:lang="en">verification focus</rdfs:label>
-    <rdfs:comment>Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced.</rdfs:comment>
+  <owl:ObjectProperty rdf:about="verificationPlanZone">
+    <rdfs:label xml:lang="en">verification plan zone</rdfs:label>
+    <rdfs:comment>Planning (urban regulation) zone where the verificationFocus entity (building or building component) is located, and that defines the regulation (verificationStatement) that was validated when the verification result was produced.</rdfs:comment>
     <rdfs:domain rdf:resource="VerificationResult"/>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:ObjectProperty>
+  <owl:NamedIndividual rdf:about="Warning">
+    <rdf:type rdf:resource="Severity"/>
+    <rdfs:label xml:lang="en">Warning</rdfs:label>
+    <rdfs:comment xml:lang="en">The severity for a warning validation result.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+  </owl:NamedIndividual>
   <owl:DatatypeProperty rdf:about="conforms">
     <rdfs:label xml:lang="en">conforms</rdfs:label>
     <rdfs:comment xml:lang="en">True if the Checking act confirms the check was validated, and false otherwise.</rdfs:comment>
@@ -83,13 +77,13 @@
     <rdfs:comment xml:lang="en">Individual verification result of a Compliance Verification Report.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n42ee515bcf5240928b5d262d1d9d13fbb2">
+      <owl:Restriction rdf:nodeID="nd7cc22cd62e14854b47c852263b35d28b2">
         <owl:onProperty rdf:resource="verificationFocus"/>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n42ee515bcf5240928b5d262d1d9d13fbb3">
+      <owl:Restriction rdf:nodeID="nd7cc22cd62e14854b47c852263b35d28b3">
         <owl:onProperty rdf:resource="hasSeverity"/>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
       </owl:Restriction>
@@ -100,6 +94,12 @@
     <rdfs:comment xml:lang="en">The class of validation result severity levels, including violation and warning levels.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
   </owl:Class>
+  <owl:ObjectProperty rdf:about="verificationFocus">
+    <rdfs:label xml:lang="en">verification focus</rdfs:label>
+    <rdfs:comment>Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced.</rdfs:comment>
+    <rdfs:domain rdf:resource="VerificationResult"/>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="hasSeverity">
     <rdfs:label xml:lang="en">has severity</rdfs:label>
     <rdfs:comment>Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:hasSeverity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:hasSeverity has been specified for the statement.</rdfs:comment>
@@ -112,7 +112,7 @@
     <rdfs:comment xml:lang="en">Result of a checking act. May be compliant or not.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n42ee515bcf5240928b5d262d1d9d13fbb1">
+      <owl:Restriction rdf:nodeID="nd7cc22cd62e14854b47c852263b35d28b1">
         <owl:onProperty rdf:resource="conforms"/>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
       </owl:Restriction>

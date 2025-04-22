@@ -1,132 +1,144 @@
-  @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
-  @prefix cc: <http://creativecommons.org/ns#> .
-  @prefix dct: <http://purl.org/dc/terms/> .
-  @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
-  @prefix owl: <http://www.w3.org/2002/07/owl#> .
-  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-  @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-  @prefix vann: <http://purl.org/vocab/vann/> .
-  @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-  @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
-  @prefix qudt: <http://qudt.org/schema/qudt/> .
-  @prefix unit: <http://qudt.org/vocab/unit/> .
-  @prefix qkdv: <http://qudt.org/vocab/dimensionvector/> .
-  @prefix dicl: <https://w3id.org/digitalconstruction/0.5/Lifecycle#> .
+@base <https://w3id.org/lbd/aec3po/> .
+@prefix aec3po: <https://w3id.org/lbd/aec3po/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qkdv: <http://qudt.org/vocab/dimensionvector/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<AxialCompressionStress> a owl:NamedIndividual,
+        skos:Concept,
+        <QuantityKind> ;
+    qudt:hasDimensionVector qkdv:A0E0L1I0M-1H0T-2D0 ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:definition "also known as fc0k" ;
+    skos:prefLabel "axial compression stress"@en .
 
-  aec3po:quantity_kinds a owl:Ontology ;
-      cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-      dct:contributor <http://maxime-lefrancois.info/me#> ;
-      dct:description """Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)
+<CompressiveForce> a owl:NamedIndividual,
+        skos:Concept,
+        <QuantityKind> ;
+    qudt:hasDimensionVector qkdv:A0E0L1I0M1H0T-2D0 ;
+    qudt:symbol "C" ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:broader quantitykind:Force ;
+    skos:definition "Force tending to reduce the size of a body." ;
+    skos:prefLabel "compressive force"@en .
 
-  Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+<ModificationFactorKmod> a owl:NamedIndividual,
+        skos:Concept,
+        <QuantityKind> ;
+    qudt:applicableUnit unit:UNITLESS ;
+    qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:definition "Modification Factor to take into account the duration of load"@en ;
+    skos:prefLabel "Modification Factor Kmod"@en .
 
-  This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain."""@en ;
-      dct:title "AEC3PO: Quantity Kinds"@en ;
-      vann:preferredNamespacePrefix "aec3po" ;
-      vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+<ModularRoomHeight> a owl:NamedIndividual,
+        skos:Concept,
+        <QuantityKind> ;
+    qudt:applicableUnit unit:CentiM,
+        unit:IN,
+        unit:M,
+        unit:MilliIN,
+        unit:MilliM ;
+    qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
+    qudt:normativeReference "https://www.iso.org/obp/ui/#iso:std:iso:6707:-1:ed-6:v1:en:term:3.7.2.47"^^xsd:anyURI ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:broader quantitykind:Length ;
+    skos:definition "vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling."@en ;
+    skos:prefLabel "modular room height"@en .
 
-  aec3po:QuantityKind a owl:Class ;
-      rdfs:label "Quantity Kind"@en ;
-      rdfs:comment """A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+<PartialSafetyFactor0> a owl:NamedIndividual,
+        skos:Concept,
+        <QuantityKind> ;
+    qudt:applicableUnit unit:UNITLESS ;
+    qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:broader <PartialSafetyFactor> ;
+    skos:definition "Also written γM0, the partial safety factor for resistance related to member resistance without instability."@en ;
+    skos:prefLabel "Partial Safety Factor"@en .
+
+<PartialSafetyFactor1> a owl:NamedIndividual,
+        skos:Concept,
+        <QuantityKind> ;
+    rdfs:label "Partial Safety Factor"@en ;
+    qudt:applicableUnit unit:UNITLESS ;
+    qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:broader <PartialSafetyFactor> ;
+    skos:definition "Also written γM1, the partial safety factor for resistance related to any limit state where instability governs."@en .
+
+<WidthOfAngledCorridor> a owl:NamedIndividual,
+        skos:Concept,
+        <QuantityKind> ;
+    qudt:applicableUnit unit:CentiM,
+        unit:IN,
+        unit:M,
+        unit:MilliIN,
+        unit:MilliM ;
+    qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
+    qudt:normativeReference "https://www.iso.org/obp/ui/#iso:std:iso:7176:-5:ed-2:v1:en:term:3.25"^^xsd:anyURI ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:broader quantitykind:Length ;
+    skos:definition "width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions."@en ;
+    skos:prefLabel "width of angled corridor"@en .
+
+qudt:QuantityKind a owl:Class ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> .
+
+<QuantityKindNomenclature> a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Quantity Kind nomenclature"@en ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:definition """A set of values for quantity kinds.
+    AEC3PO includes a set of values for this nomenclature."""@en .
+
+<PartialSafetyFactor> a owl:NamedIndividual,
+        skos:Concept,
+        <QuantityKind> ;
+    qudt:applicableUnit unit:UNITLESS ;
+    qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:definition "Also written γM, the partial safety factor for resistance."@en ;
+    skos:prefLabel "Partial Safety Factor"@en .
+
+<QuantityKind> a owl:Class ;
+    rdfs:label "Quantity Kind"@en ;
+    rdfs:comment """A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
 
   It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
 
   Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
     """@en ;
-      rdfs:isDefinedBy aec3po:quantity_kinds ;
-      rdfs:subClassOf skos:Concept , dul:Region ;
-      skos:example "Length, Area, U-Value."@en ;
-      skos:note "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en ;
-      rdfs:subClassOf qudt:QuantityKind ;    
-      owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                          owl:hasValue aec3po:QuantityKindNomenclature ;
-                          owl:onProperty skos:inScheme ] ) ] .
+    rdfs:isDefinedBy <quantity_kinds> ;
+    rdfs:subClassOf qudt:QuantityKind,
+        dul:Region,
+        skos:Concept ;
+    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
+                        owl:hasValue <QuantityKindNomenclature> ;
+                        owl:onProperty skos:inScheme ] ) ] ;
+    skos:example "Length, Area, U-Value."@en ;
+    skos:note "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en .
 
-  aec3po:QuantityKindNomenclature a owl:NamedIndividual, skos:ConceptScheme ;
-      rdfs:label "Quantity Kind nomenclature"@en ;
-      rdfs:isDefinedBy aec3po:quantity_kinds ;
-      skos:definition """A set of values for quantity kinds.
-    AEC3PO includes a set of values for this nomenclature."""@en .
+<quantity_kinds> a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:created "2023-08-31"^^xsd:date ;
+    dct:description """Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity. (source: QUDT)
 
-  qudt:QuantityKind a owl:Class ;
-      rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> .
+  Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
 
-  aec3po:ModularRoomHeight a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
-    skos:prefLabel "modular room height"@en ;
-    skos:definition "vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling."@en ;
-    qudt:applicableUnit unit:CentiM ;
-    qudt:applicableUnit unit:IN ;
-    qudt:applicableUnit unit:M ;
-    qudt:applicableUnit unit:MilliIN ;
-    qudt:applicableUnit unit:MilliM ;
-    qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
-    qudt:normativeReference "https://www.iso.org/obp/ui/#iso:std:iso:6707:-1:ed-6:v1:en:term:3.7.2.47"^^xsd:anyURI ;
-    rdfs:isDefinedBy aec3po:quantity_kinds ;
-    skos:broader quantitykind:Length .
-
-  aec3po:WidthOfAngledCorridor a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
-    skos:prefLabel "width of angled corridor"@en ;
-    skos:definition "width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions."@en ;
-    qudt:applicableUnit unit:CentiM ;
-    qudt:applicableUnit unit:IN ;
-    qudt:applicableUnit unit:M ;
-    qudt:applicableUnit unit:MilliIN ;
-    qudt:applicableUnit unit:MilliM ;
-    qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
-    qudt:normativeReference "https://www.iso.org/obp/ui/#iso:std:iso:7176:-5:ed-2:v1:en:term:3.25"^^xsd:anyURI ;
-    rdfs:isDefinedBy aec3po:quantity_kinds ;
-    skos:broader quantitykind:Length .
-
-
-  aec3po:CompressiveForce a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
-    skos:prefLabel "compressive force"@en ;
-    skos:definition "Force tending to reduce the size of a body." ;
-    qudt:symbol "C" ;
-    qudt:hasDimensionVector qkdv:A0E0L1I0M1H0T-2D0 ;
-    rdfs:isDefinedBy aec3po:quantity_kinds ;
-    skos:broader quantitykind:Force .
-
-  #quantitykind:CrossSectionalArea a aec3po:QuantityKind ;
-   # qudt:hasDimensionVector qkdv:A0E0L2I0M0H0T0D0 ;
-   # qudt:symbol "A" ;
-   # skos:prefLabel "Cross-sectional Area"@en ;
-   # rdfs:isDefinedBy aec3po:quantity_kinds ;
-  #  skos:broader quantitykind:Area .
-
-  aec3po:PartialSafetyFactor a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
-    skos:prefLabel "Partial Safety Factor"@en ;
-    skos:definition "Also written γM, the partial safety factor for resistance."@en ;
-    qudt:applicableUnit unit:UNITLESS ;
-    qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
-    rdfs:isDefinedBy aec3po:quantity_kinds .
-
-  aec3po:PartialSafetyFactor0 a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
-    skos:prefLabel "Partial Safety Factor"@en ;
-    skos:definition "Also written γM0, the partial safety factor for resistance related to member resistance without instability."@en ;
-    qudt:applicableUnit unit:UNITLESS ;
-    qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
-    rdfs:isDefinedBy aec3po:quantity_kinds ;
-    skos:broader aec3po:PartialSafetyFactor .
-
-  aec3po:PartialSafetyFactor1 a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
-    rdfs:label "Partial Safety Factor"@en ;
-    skos:definition "Also written γM1, the partial safety factor for resistance related to any limit state where instability governs."@en ;
-    qudt:applicableUnit unit:UNITLESS ;
-    qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
-    rdfs:isDefinedBy aec3po:quantity_kinds ;
-    skos:broader aec3po:PartialSafetyFactor .
-
-  aec3po:AxialCompressionStress a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
-    skos:prefLabel "axial compression stress"@en ;
-    skos:definition "also known as fc0k" ;
-    qudt:hasDimensionVector qkdv:A0E0L1I0M-1H0T-2D0 ;
-    rdfs:isDefinedBy aec3po:quantity_kinds .
-
-  aec3po:ModificationFactorKmod a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
-    skos:prefLabel "Modification Factor Kmod"@en ;
-    skos:definition "Modification Factor to take into account the duration of load"@en ;
-    qudt:applicableUnit unit:UNITLESS ;
-    qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
-    rdfs:isDefinedBy aec3po:quantity_kinds .
+  This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain."""@en ;
+    dct:modified "2023-09-29"^^xsd:date ;
+    dct:title "AEC3PO: Quantity Kinds"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 

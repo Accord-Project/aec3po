@@ -1,27 +1,27 @@
-<https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the format of an evidence. A sub-property of dct:format"@en .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en .
-<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/evidence.png> .
-<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/title> "AEC3PO: evidence"@en .
-<https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/2004/02/skos/core#example> "A drawing can be an evidence."@en .
-<https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/evidence> .
-<https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/evidence> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/evidence> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/2004/02/skos/core#example> "an image, a drawing or a model can be an evidence."@en .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/evidence> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the format of an evidence. A sub-property of dct:format"@en .
+<https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/2004/02/skos/core#example> "A drawing can be an evidence."@en .
 <https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Statement> .
-<https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
-<https://w3id.org/lbd/aec3po/evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/title> "AEC3PO: evidence"@en .
+<https://w3id.org/lbd/aec3po/evidence> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource used as an evidence for a statement"@en .
+<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/description> <file:///home/runner/work/aec3po/aec3po/src/diagrams/evidence.png> .
 <https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/evidence> .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
-<https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence"@en .
-<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2004/02/skos/core#note> "Unstable. Need evidence of how this property is intended to be used"@en .
 <https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/description> "The AEC3PO Evidence module describes the evidence that an actor in the compliance and permitting process needs to provide in order to prove that the requirements derived from a Statement have been met."@en .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en .
+<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2004/02/skos/core#note> "Unstable. Need evidence of how this property is intended to be used"@en .
 <https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/created> "2023-09-23"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Statement> .
-<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/evidence> .
+<https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence"@en .
+<https://w3id.org/lbd/aec3po/evidence> <http://purl.org/dc/terms/modified> "2025-04-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/evidence> .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/statement> .
+<https://w3id.org/lbd/aec3po/hasFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
+<https://w3id.org/lbd/aec3po/hasEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

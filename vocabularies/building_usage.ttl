@@ -1,3 +1,4 @@
+@base <https://w3id.org/lbd/aec3po/> .
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -8,76 +9,79 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-aec3po:building_usage a owl:Ontology ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:contributor <http://maxime-lefrancois.info/me#> ;
-    dct:description "Definition of a building usage concept scheme for AEC3PO."@en ;
-    dct:modified "2023-04-26"^^xsd:date ;
-    dct:title "AEC3PO: Building Usage"@en ;
-    vann:preferredNamespacePrefix "aec3po" ;
-    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
-    
-aec3po:BuildingUsage a owl:Class ;
+<BuildingUsage-cultural> a owl:NamedIndividual,
+        skos:Concept,
+        <BuildingUsage> ;
+    rdfs:isDefinedBy <building_usage> ;
+    skos:definition "Building has cultural usage."@en ;
+    skos:inScheme <BuildingUsageNomenclature> ;
+    skos:prefLabel "cultural"@en ;
+    skos:topConceptOf <BuildingUsageNomenclature> .
+
+<forBuildingUsage> a owl:ObjectProperty ;
+    rdfs:label "for building usage"@en ;
+    rdfs:comment """The building usage for which a specific check, verifier, or check result applies.
+  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
+    rdfs:isDefinedBy <building_usage> ;
+    rdfs:range <BuildingUsage> ;
+    rdfs:subPropertyOf <forDesign> .
+
+<hasBuildingUsage> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has building usage"@en ;
+    rdfs:comment """The building usage design of a feature of interest or a property of that feature of interest.
+  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
+    rdfs:isDefinedBy <building_usage> ;
+    rdfs:range <BuildingUsage> ;
+    rdfs:subPropertyOf <hasDesign> .
+
+<BuildingUsage-commercial> a owl:NamedIndividual,
+        skos:Concept,
+        <BuildingUsage> ;
+    rdfs:isDefinedBy <building_usage> ;
+    skos:definition "Building has commercial usage."@en ;
+    skos:inScheme <BuildingUsageNomenclature> ;
+    skos:prefLabel "commercial"@en ;
+    skos:topConceptOf <BuildingUsageNomenclature> .
+
+<BuildingUsage-residential> a owl:NamedIndividual,
+        skos:Concept,
+        <BuildingUsage> ;
+    rdfs:isDefinedBy <building_usage> ;
+    skos:definition "Building has residential usage."@en ;
+    skos:inScheme <BuildingUsageNomenclature> ;
+    skos:prefLabel "residential"@en ;
+    skos:topConceptOf <BuildingUsageNomenclature> .
+
+<BuildingUsage> a owl:Class ;
     rdfs:label "building usage"@en ;
     rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingUsageNomenclature"@en ;
-    rdfs:isDefinedBy aec3po:building_usage ;
+    rdfs:isDefinedBy <building_usage> ;
     rdfs:subClassOf skos:Concept,
-        aec3po:Design ;
+        <Design> ;
     owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue aec3po:BuildingUsageNomenclature ;
+                        owl:hasValue <BuildingUsageNomenclature> ;
                         owl:onProperty skos:inScheme ] ) ] .
 
-aec3po:BuildingUsageNomenclature a skos:ConceptScheme ;
+<BuildingUsageNomenclature> a skos:ConceptScheme ;
     rdfs:label "Building usage nomenclature"@en ;
-    rdfs:isDefinedBy aec3po:building_usage ;
+    rdfs:isDefinedBy <building_usage> ;
     skos:definition """A set of values for the building usage design.
   AEC3PO includes a set of values for this nomenclature.
   These values are :
   - residential : residential building;
   - commercial : commercial building."""@en ;
-    skos:hasTopConcept aec3po:BuildingUsage-commercial,
-        aec3po:BuildingUsage-residential .
+    skos:hasTopConcept <BuildingUsage-commercial>,
+        <BuildingUsage-residential> .
 
-aec3po:forBuildingUsage a owl:ObjectProperty ;
-    rdfs:label "for building usage"@en ;
-    rdfs:comment """The building usage for which a specific check, verifier, or check result applies.
-  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
-    rdfs:isDefinedBy aec3po:building_usage ;
-    rdfs:range aec3po:BuildingUsage ;
-    rdfs:subPropertyOf aec3po:forDesign .
-
-aec3po:hasBuildingUsage a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "has building usage"@en ;
-    rdfs:comment """The building usage design of a feature of interest or a property of that feature of interest.
-  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
-    rdfs:isDefinedBy aec3po:building_usage ;
-    rdfs:range aec3po:BuildingUsage ;
-    rdfs:subPropertyOf aec3po:hasDesign .
-
-aec3po:BuildingUsage-commercial a owl:NamedIndividual, skos:Concept,
-        aec3po:BuildingUsage ;
-    rdfs:isDefinedBy aec3po:building_usage ;
-    skos:definition "Building has commercial usage."@en ;
-    skos:inScheme aec3po:BuildingUsageNomenclature ;
-    skos:prefLabel "commercial"@en ;
-    skos:topConceptOf aec3po:BuildingUsageNomenclature .
-
-aec3po:BuildingUsage-residential a owl:NamedIndividual, skos:Concept,
-        aec3po:BuildingUsage ;
-    rdfs:isDefinedBy aec3po:building_usage ;
-    skos:definition "Building has residential usage."@en ;
-    skos:inScheme aec3po:BuildingUsageNomenclature ;
-    skos:prefLabel "residential"@en ;
-    skos:topConceptOf aec3po:BuildingUsageNomenclature .
-
-aec3po:BuildingUsage-cultural a owl:NamedIndividual, skos:Concept,
-        aec3po:BuildingUsage ;
-    rdfs:isDefinedBy aec3po:building_usage ;
-    skos:definition "Building has cultural usage."@en ;
-    skos:inScheme aec3po:BuildingUsageNomenclature ;
-    skos:prefLabel "cultural"@en ;
-    skos:topConceptOf aec3po:BuildingUsageNomenclature .
-
-
+<building_usage> a owl:Ontology ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:contributor <http://maxime-lefrancois.info/me#> ;
+    dct:created "2023-05-25"^^xsd:date ;
+    dct:description "Definition of a building usage concept scheme for AEC3PO."@en ;
+    dct:modified "2023-04-26"^^xsd:date,
+        "2023-08-31"^^xsd:date ;
+    dct:title "AEC3PO: Building Usage"@en ;
+    vann:preferredNamespacePrefix "aec3po" ;
+    vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 

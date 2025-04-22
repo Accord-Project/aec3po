@@ -1,51 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:cc="http://creativecommons.org/ns#"
 >
-  <owl:DatatypeProperty rdf:about="material">
-    <rdfs:label xml:lang="en">material</rdfs:label>
-    <rdfs:comment xml:lang="en">The materials used for different parts of the building, such as walls, floors, and roofs.</rdfs:comment>
-    <rdfs:domain rdf:resource="https://schema.org/Model"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:equivalentProperty rdf:resource="https://schema.org/material"/>
-  </owl:DatatypeProperty>
-  <owl:ObjectProperty rdf:about="locationCoverage">
-    <rdfs:label xml:lang="en">location coverage</rdfs:label>
-    <rdfs:comment xml:lang="en">The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model.</rdfs:comment>
-    <rdfs:domain rdf:resource="https://schema.org/Model"/>
-    <rdfs:range>
-      <owl:Class rdf:nodeID="n10966edb4e344d2798aedb2937ff3186b1">
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="https://schema.org/Place"/>
-          <rdf:Description rdf:about="AdministrativeArea"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:range>
-    <owl:equivalentProperty rdf:resource="https://schema.org/spatialCoverage"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="hasDimension">
-    <rdfs:label xml:lang="en">has dimension</rdfs:label>
-    <rdfs:comment xml:lang="en">is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. </rdfs:comment>
-    <rdfs:domain rdf:resource="Model"/>
-    <rdfs:range rdf:resource="Dimension"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="hasClassification">
     <rdfs:label xml:lang="en">has dimension</rdfs:label>
     <rdfs:comment xml:lang="en">is used to link building components, elements, or other entities to a classification scheme that provides a standardised way of categorising and organising them.. </rdfs:comment>
     <rdfs:domain rdf:resource="Model"/>
     <rdfs:range rdf:resource="Classification"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="description">
-    <rdfs:label xml:lang="en">description</rdfs:label>
-    <rdfs:comment xml:lang="en">A textual description providing additional details about the BIM model.</rdfs:comment>
+  <owl:DatatypeProperty rdf:about="material">
+    <rdfs:label xml:lang="en">material</rdfs:label>
+    <rdfs:comment xml:lang="en">The materials used for different parts of the building, such as walls, floors, and roofs.</rdfs:comment>
     <rdfs:domain rdf:resource="https://schema.org/Model"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <owl:equivalentProperty rdf:resource="https://schema.org/abstract"/>
+    <owl:equivalentProperty rdf:resource="https://schema.org/material"/>
   </owl:DatatypeProperty>
   <owl:ObjectProperty rdf:about="location">
     <rdfs:label xml:lang="en">location</rdfs:label>
@@ -62,17 +35,44 @@
     <owl:inverseOf rdf:resource="https://schema.org/subjectOf"/>
     <owl:equivalentProperty rdf:resource="https://schema.org/about"/>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="description">
+    <rdfs:label xml:lang="en">description</rdfs:label>
+    <rdfs:comment xml:lang="en">A textual description providing additional details about the BIM model.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://schema.org/Model"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:equivalentProperty rdf:resource="https://schema.org/abstract"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="hasElementPhase">
+    <rdfs:label xml:lang="en">has element phase</rdfs:label>
+    <rdfs:comment xml:lang="en">is used to establish a relationship between a construction element or component and the specific phase of the building process in which that element is relevant or applicable. (Inspired by the BIM shared ontology)</rdfs:comment>
+    <rdfs:domain rdf:resource="Model"/>
+    <rdfs:range rdf:resource="Phase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="locationCoverage">
+    <rdfs:label xml:lang="en">location coverage</rdfs:label>
+    <rdfs:comment xml:lang="en">The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://schema.org/Model"/>
+    <rdfs:range>
+      <owl:Class rdf:nodeID="n9d122eb9441b4a71b1d22847d9aa24b9b1">
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="https://schema.org/Place"/>
+          <rdf:Description rdf:about="AdministrativeArea"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <owl:equivalentProperty rdf:resource="https://schema.org/spatialCoverage"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="hasBuildingPhase">
     <rdfs:label xml:lang="en">has building phase</rdfs:label>
     <rdfs:comment xml:lang="en">describes the relationship between a construction-related entity and the phase of the building process it is associated with. (Inspired by the BIM shared ontology)</rdfs:comment>
     <rdfs:domain rdf:resource="Model"/>
     <rdfs:range rdf:resource="Phase"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="hasElementPhase">
-    <rdfs:label xml:lang="en">has element phase</rdfs:label>
-    <rdfs:comment xml:lang="en">is used to establish a relationship between a construction element or component and the specific phase of the building process in which that element is relevant or applicable. (Inspired by the BIM shared ontology)</rdfs:comment>
+  <owl:ObjectProperty rdf:about="hasDimension">
+    <rdfs:label xml:lang="en">has dimension</rdfs:label>
+    <rdfs:comment xml:lang="en">is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. </rdfs:comment>
     <rdfs:domain rdf:resource="Model"/>
-    <rdfs:range rdf:resource="Phase"/>
+    <rdfs:range rdf:resource="Dimension"/>
   </owl:ObjectProperty>
   <owl:Class rdf:about="Element">
     <rdfs:label xml:lang="en">Element</rdfs:label>
@@ -93,6 +93,12 @@
       </owl:Ontology>
     </rdfs:isDefinedBy>
   </owl:Class>
+  <owl:Class rdf:about="Phase">
+    <rdfs:label xml:lang="en">Phase</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Model"/>
+    <rdfs:comment>A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="model"/>
+  </owl:Class>
   <owl:Class rdf:about="Classification">
     <rdfs:label xml:lang="en">Classification</rdfs:label>
     <rdfs:subClassOf rdf:resource="Model"/>
@@ -103,12 +109,6 @@
     <rdfs:label xml:lang="en">Dimension</rdfs:label>
     <rdfs:subClassOf rdf:resource="Model"/>
     <rdfs:comment>Measurements and sizes of various building components and elements.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="model"/>
-  </owl:Class>
-  <owl:Class rdf:about="Phase">
-    <rdfs:label xml:lang="en">Phase</rdfs:label>
-    <rdfs:subClassOf rdf:resource="Model"/>
-    <rdfs:comment>A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="model"/>
   </owl:Class>
   <owl:Class rdf:about="Model">
