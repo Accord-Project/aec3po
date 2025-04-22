@@ -55,11 +55,6 @@
   aec3po:ModularRoomHeight a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
     skos:prefLabel "modular room height"@en ;
     skos:definition "vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling."@en ;
-    qudt:applicableUnit unit:CentiM ;
-    qudt:applicableUnit unit:IN ;
-    qudt:applicableUnit unit:M ;
-    qudt:applicableUnit unit:MilliIN ;
-    qudt:applicableUnit unit:MilliM ;
     qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
     qudt:normativeReference "https://www.iso.org/obp/ui/#iso:std:iso:6707:-1:ed-6:v1:en:term:3.7.2.47"^^xsd:anyURI ;
     rdfs:isDefinedBy aec3po:quantity_kinds ;
@@ -68,11 +63,6 @@
   aec3po:WidthOfAngledCorridor a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
     skos:prefLabel "width of angled corridor"@en ;
     skos:definition "width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions."@en ;
-    qudt:applicableUnit unit:CentiM ;
-    qudt:applicableUnit unit:IN ;
-    qudt:applicableUnit unit:M ;
-    qudt:applicableUnit unit:MilliIN ;
-    qudt:applicableUnit unit:MilliM ;
     qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
     qudt:normativeReference "https://www.iso.org/obp/ui/#iso:std:iso:7176:-5:ed-2:v1:en:term:3.25"^^xsd:anyURI ;
     rdfs:isDefinedBy aec3po:quantity_kinds ;
@@ -97,14 +87,12 @@
   aec3po:PartialSafetyFactor a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
     skos:prefLabel "Partial Safety Factor"@en ;
     skos:definition "Also written γM, the partial safety factor for resistance."@en ;
-    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy aec3po:quantity_kinds .
 
   aec3po:PartialSafetyFactor0 a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
     skos:prefLabel "Partial Safety Factor"@en ;
     skos:definition "Also written γM0, the partial safety factor for resistance related to member resistance without instability."@en ;
-    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy aec3po:quantity_kinds ;
     skos:broader aec3po:PartialSafetyFactor .
@@ -112,7 +100,6 @@
   aec3po:PartialSafetyFactor1 a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
     rdfs:label "Partial Safety Factor"@en ;
     skos:definition "Also written γM1, the partial safety factor for resistance related to any limit state where instability governs."@en ;
-    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy aec3po:quantity_kinds ;
     skos:broader aec3po:PartialSafetyFactor .
@@ -126,7 +113,6 @@
   aec3po:ModificationFactorKmod a owl:NamedIndividual, skos:Concept, aec3po:QuantityKind ;
     skos:prefLabel "Modification Factor Kmod"@en ;
     skos:definition "Modification Factor to take into account the duration of load"@en ;
-    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy aec3po:quantity_kinds .
 
