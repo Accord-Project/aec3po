@@ -2,33 +2,79 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<BuildingStructure> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "building structure"@en ;
+    dct:description "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingStructureNomenclature"@en ;
+    dct:title "building structure"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingStructureNomenclature"@en ;
+    rdfs:isDefinedBy <building_structure> ;
+    rdfs:subClassOf skos:Concept,
+        <Design> ;
+    owl:equivalentClass _:nb488c1e92da34d6da024705e030e8470b1 ;
+    ns1:hasMember <BuildingStructure-steel>,
+        <BuildingStructure-timber> ;
+    ns1:inRangeOf <forBuildingStructure>,
+        <hasBuildingStructure> .
+
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+rdfs:Class ns1:hasMember <BuildingStructure> .
+
+owl:FunctionalProperty ns1:hasMember <hasBuildingStructure> .
+
+owl:Ontology ns1:hasMember <building_structure> .
+
+owl:Restriction ns1:hasMember _:nb488c1e92da34d6da024705e030e8470b2 .
+
+skos:ConceptScheme ns1:hasMember <BuildingStructureNomenclature> .
+
+<Design> ns1:superClassOf <BuildingStructure> .
+
+<etc> a prov:Agent .
+
+<forDesign> ns1:superPropertyOf <forBuildingStructure> .
+
+<hasDesign> ns1:superPropertyOf <hasBuildingStructure> .
+
+owl:Class ns1:hasMember _:nb488c1e92da34d6da024705e030e8470b1,
+        <BuildingStructure> .
+
+owl:NamedIndividual ns1:hasMember <BuildingStructure-steel>,
+        <BuildingStructure-timber> .
+
+owl:ObjectProperty ns1:hasMember <forBuildingStructure>,
+        <hasBuildingStructure> .
+
 <forBuildingStructure> a owl:ObjectProperty ;
     rdfs:label "for building structure"@en ;
+    dct:description """The building structure for which a specific check, verifier, or check result applies.
+  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
+    dct:title "for building structure"@en ;
     rdfs:comment """The building structure for which a specific check, verifier, or check result applies.
   A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
     rdfs:isDefinedBy <building_structure> ;
     rdfs:range <BuildingStructure> ;
     rdfs:subPropertyOf <forDesign> .
 
-<hasBuildingStructure> a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "has building structure"@en ;
-    rdfs:comment """The building structure design of a feature of interest or a property of that feature of interest.
-  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
-    rdfs:isDefinedBy <building_structure> ;
-    rdfs:range <BuildingStructure> ;
-    rdfs:subPropertyOf <hasDesign> .
+skos:Concept ns1:hasMember <BuildingStructure-steel>,
+        <BuildingStructure-timber> ;
+    ns1:superClassOf <BuildingStructure> .
 
 <BuildingStructure-steel> a owl:NamedIndividual,
         skos:Concept,
         <BuildingStructure> ;
+    dct:description "Building has steel structure."@en ;
+    dct:title "steel"@en ;
     rdfs:isDefinedBy <building_structure> ;
     skos:definition "Building has steel structure."@en ;
     skos:inScheme <BuildingStructureNomenclature> ;
@@ -38,24 +84,34 @@
 <BuildingStructure-timber> a owl:NamedIndividual,
         skos:Concept,
         <BuildingStructure> ;
+    dct:description "Building has timber structure."@en ;
+    dct:title "timber"@en ;
     rdfs:isDefinedBy <building_structure> ;
     skos:definition "Building has timber structure."@en ;
     skos:inScheme <BuildingStructureNomenclature> ;
     skos:prefLabel "timber"@en ;
     skos:topConceptOf <BuildingStructureNomenclature> .
 
-<BuildingStructure> a owl:Class ;
-    rdfs:label "building structure"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:BuildingStructureNomenclature"@en ;
+<hasBuildingStructure> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has building structure"@en ;
+    dct:description """The building structure design of a feature of interest or a property of that feature of interest.
+  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
+    dct:title "has building structure"@en ;
+    rdfs:comment """The building structure design of a feature of interest or a property of that feature of interest.
+  A set of values is defined by aec3po in the corresponding concept scheme."""@en ;
     rdfs:isDefinedBy <building_structure> ;
-    rdfs:subClassOf skos:Concept,
-        <Design> ;
-    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue <BuildingStructureNomenclature> ;
-                        owl:onProperty skos:inScheme ] ) ] .
+    rdfs:range <BuildingStructure> ;
+    rdfs:subPropertyOf <hasDesign> .
 
 <BuildingStructureNomenclature> a skos:ConceptScheme ;
     rdfs:label "Building structure nomenclature"@en ;
+    dct:description """A set of values for the building structure design.
+  aec3po includes a set of values for this nomenclature.
+  These values are :
+  - steel : steel building;
+  - timber : timber building."""@en ;
+    dct:title "Building structure nomenclature"@en ;
     rdfs:isDefinedBy <building_structure> ;
     skos:definition """A set of values for the building structure design.
   aec3po includes a set of values for this nomenclature.
@@ -76,4 +132,14 @@
     dct:title "AEC3PO: Building Structure"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+
+_:nb488c1e92da34d6da024705e030e8470b3 rdf:first skos:Concept ;
+    rdf:rest ( _:nb488c1e92da34d6da024705e030e8470b2 ) .
+
+_:nb488c1e92da34d6da024705e030e8470b1 a owl:Class ;
+    owl:intersectionOf _:nb488c1e92da34d6da024705e030e8470b3 .
+
+_:nb488c1e92da34d6da024705e030e8470b2 a owl:Restriction ;
+    owl:hasValue <BuildingStructureNomenclature> ;
+    owl:onProperty skos:inScheme .
 

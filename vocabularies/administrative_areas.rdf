@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
   xmlns:cc="http://creativecommons.org/ns#"
 >
-  <owl:ObjectProperty rdf:about="forAdministrativeArea">
-    <rdfs:label xml:lang="en">for administrative area</rdfs:label>
-    <rdfs:comment xml:lang="en">The administrative area for which something applies.
-  A set of values is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
+  <owl:NamedIndividual rdf:about="Germany">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <ns1:superClassOf rdf:resource="AdministrativeArea"/>
+        <ns1:hasMember rdf:resource="England"/>
+        <ns1:hasMember rdf:resource="Estonia"/>
+        <ns1:hasMember rdf:resource="Finland"/>
+        <ns1:hasMember rdf:resource="France"/>
+        <ns1:hasMember rdf:resource="Germany"/>
+        <ns1:hasMember rdf:resource="Italy"/>
+        <ns1:hasMember rdf:resource="Spain"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdf:type rdf:resource="AdministrativeArea"/>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="administrative_areas">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -26,13 +38,7 @@
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:created>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-    <rdfs:range rdf:resource="AdministrativeArea"/>
-  </owl:ObjectProperty>
-  <owl:NamedIndividual rdf:about="England">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="AdministrativeArea"/>
-    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">England</skos:definition>
+    <skos:definition xml:lang="en">Germany</skos:definition>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="AdministrativeAreaNomenclature">
         <rdfs:label xml:lang="en">Administrative Area nomenclature</rdfs:label>
@@ -54,57 +60,38 @@
         <skos:hasTopConcept rdf:resource="Germany"/>
         <skos:hasTopConcept rdf:resource="Italy"/>
         <skos:hasTopConcept rdf:resource="Spain"/>
+        <dct:title xml:lang="en">Administrative Area nomenclature</dct:title>
+        <dct:description xml:lang="en">A set of values for the administrative areas.
+  aec3po includes a set of values for this nomenclature.
+  These values are :
+  - England
+  - Estonia
+  - Finland
+  - France
+  - Germany
+  - Italy
+  - Spain</dct:description>
       </skos:ConceptScheme>
     </skos:inScheme>
-    <skos:prefLabel xml:lang="en">England</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="France">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="AdministrativeArea"/>
-    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">France</skos:definition>
-    <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
-    <skos:prefLabel xml:lang="en">France</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Germany">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="AdministrativeArea"/>
-    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">Germany</skos:definition>
-    <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
     <skos:prefLabel xml:lang="en">Germany</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+    <dct:title xml:lang="en">Germany</dct:title>
+    <dct:description xml:lang="en">Germany</dct:description>
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Italy">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="AdministrativeArea"/>
-    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">Italy</skos:definition>
-    <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
-    <skos:prefLabel xml:lang="en">Italy</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:Class rdf:about="AdministrativeArea">
-    <rdfs:label xml:lang="en">Administrative Area</rdfs:label>
-    <rdfs:comment xml:lang="en">Formally defined as the set of skos:Concept either in concept scheme aec3po:AdministrativeAreaNomenclature or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit nomenclature published of the EU Publications Office).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <rdfs:seeAlso rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <owl:equivalentClass rdf:resource="http://data.europa.eu/eli/ontology#AdministrativeArea"/>
-    <owl:equivalentClass>
-      <rdf:Description rdf:nodeID="ne040bb8aa0134fc9b73cc07d6952adedb1">
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="AdministrativeArea"/>
+    <ns1:hasMember>
+      <owl:Class rdf:nodeID="nfdcc6d865c93456287fcba63c1a99903b1">
         <owl:intersectionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="ne040bb8aa0134fc9b73cc07d6952adedb2">
+          <owl:Restriction rdf:nodeID="nfdcc6d865c93456287fcba63c1a99903b2">
             <owl:hasValue rdf:resource="AdministrativeAreaNomenclature"/>
             <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
           </owl:Restriction>
         </owl:intersectionOf>
-      </rdf:Description>
-    </owl:equivalentClass>
-  </owl:Class>
+      </owl:Class>
+    </ns1:hasMember>
+  </rdf:Description>
   <owl:NamedIndividual rdf:about="Estonia">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="AdministrativeArea"/>
@@ -113,7 +100,26 @@
     <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
     <skos:prefLabel xml:lang="en">Estonia</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+    <dct:title xml:lang="en">Estonia</dct:title>
+    <dct:description xml:lang="en">Estonia</dct:description>
   </owl:NamedIndividual>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <ns1:hasMember>
+      <owl:ObjectProperty rdf:about="forAdministrativeArea">
+        <rdfs:label xml:lang="en">for administrative area</rdfs:label>
+        <rdfs:comment xml:lang="en">The administrative area for which something applies.
+  A set of values is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
+        <rdfs:range rdf:resource="AdministrativeArea"/>
+        <dct:title xml:lang="en">for administrative area</dct:title>
+        <dct:description xml:lang="en">The administrative area for which something applies.
+  A set of values is defined by aec3po in the corresponding concept scheme.</dct:description>
+      </owl:ObjectProperty>
+    </ns1:hasMember>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="administrative_areas"/>
+  </rdf:Description>
   <owl:NamedIndividual rdf:about="Finland">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="AdministrativeArea"/>
@@ -122,14 +128,94 @@
     <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
     <skos:prefLabel xml:lang="en">Finland</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+    <dct:title xml:lang="en">Finland</dct:title>
+    <dct:description xml:lang="en">Finland</dct:description>
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="Spain">
+  <owl:NamedIndividual rdf:about="England">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="AdministrativeArea"/>
     <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
-    <skos:definition xml:lang="en">Spain</skos:definition>
+    <skos:definition xml:lang="en">England</skos:definition>
     <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
-    <skos:prefLabel xml:lang="en">Spain</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">England</skos:prefLabel>
     <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+    <dct:title xml:lang="en">England</dct:title>
+    <dct:description xml:lang="en">England</dct:description>
   </owl:NamedIndividual>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
+    <ns1:hasMember rdf:resource="England"/>
+    <ns1:hasMember rdf:resource="Estonia"/>
+    <ns1:hasMember rdf:resource="Finland"/>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="France">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="AdministrativeArea"/>
+        <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
+        <skos:definition xml:lang="en">France</skos:definition>
+        <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
+        <skos:prefLabel xml:lang="en">France</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+        <dct:title xml:lang="en">France</dct:title>
+        <dct:description xml:lang="en">France</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember rdf:resource="Germany"/>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="Italy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="AdministrativeArea"/>
+        <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
+        <skos:definition xml:lang="en">Italy</skos:definition>
+        <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
+        <skos:prefLabel xml:lang="en">Italy</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+        <dct:title xml:lang="en">Italy</dct:title>
+        <dct:description xml:lang="en">Italy</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="Spain">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="AdministrativeArea"/>
+        <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
+        <skos:definition xml:lang="en">Spain</skos:definition>
+        <skos:inScheme rdf:resource="AdministrativeAreaNomenclature"/>
+        <skos:prefLabel xml:lang="en">Spain</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="AdministrativeAreaNomenclature"/>
+        <dct:title xml:lang="en">Spain</dct:title>
+        <dct:description xml:lang="en">Spain</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <ns1:hasMember rdf:resource="AdministrativeAreaNomenclature"/>
+  </rdf:Description>
+  <owl:Class rdf:about="AdministrativeArea">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="AdministrativeArea"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">Administrative Area</rdfs:label>
+    <rdfs:comment xml:lang="en">Formally defined as the set of skos:Concept either in concept scheme aec3po:AdministrativeAreaNomenclature or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit nomenclature published of the EU Publications Office).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="administrative_areas"/>
+    <rdfs:seeAlso rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/atu"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <owl:equivalentClass rdf:resource="http://data.europa.eu/eli/ontology#AdministrativeArea"/>
+    <owl:equivalentClass rdf:nodeID="nfdcc6d865c93456287fcba63c1a99903b1"/>
+    <dct:title xml:lang="en">Administrative Area</dct:title>
+    <dct:description xml:lang="en">Formally defined as the set of skos:Concept either in concept scheme aec3po:AdministrativeAreaNomenclature or in concept scheme http://publications.europa.eu/mdr/authority/atu (Administrative Territorial Unit nomenclature published of the EU Publications Office).</dct:description>
+    <ns1:inRangeOf rdf:resource="forAdministrativeArea"/>
+    <ns1:hasMember rdf:resource="England"/>
+    <ns1:hasMember rdf:resource="Estonia"/>
+    <ns1:hasMember rdf:resource="Finland"/>
+    <ns1:hasMember rdf:resource="France"/>
+    <ns1:hasMember rdf:resource="Germany"/>
+    <ns1:hasMember rdf:resource="Italy"/>
+    <ns1:hasMember rdf:resource="Spain"/>
+  </owl:Class>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="nfdcc6d865c93456287fcba63c1a99903b2"/>
+  </rdf:Description>
 </rdf:RDF>

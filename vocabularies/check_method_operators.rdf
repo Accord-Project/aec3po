@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:vann="http://purl.org/vocab/vann/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
+  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:cc="http://creativecommons.org/ns#"
 >
-  <owl:FunctionalProperty rdf:about="hasOperator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">has operator</rdfs:label>
-    <rdfs:comment xml:lang="en">The operator of a feature of interest or a property of that is needed by the check method.
-  A set of operators is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="check_method_Operators"/>
-    <rdfs:range rdf:resource="CheckMethod"/>
-    <rdfs:subPropertyOf rdf:resource="hasDesign"/>
-  </owl:FunctionalProperty>
-  <owl:NamedIndividual rdf:about="CheckMethodOperator-exists">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <owl:Ontology rdf:about="check_method_operators">
+    <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:contributor>
+      <prov:Agent rdf:about="amna"/>
+    </dct:contributor>
+    <dct:description xml:lang="en">Definition of operators scheme for AEC3PO.</dct:description>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-25</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-24</dct:modified>
+    <dct:title xml:lang="en">AEC3PO: Operators</dct:title>
+    <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-22</dct:created>
+  </owl:Ontology>
+  <owl:NamedIndividual rdf:about="CheckMethodOperator-addition">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <ns1:superClassOf rdf:resource="CheckMethodOperator"/>
+        <ns1:hasMember rdf:resource="CheckMethodOperator-exists"/>
+        <ns1:hasMember rdf:resource="CheckMethodOperator-notExists"/>
+        <ns1:hasMember rdf:resource="CheckMethodOperator-forall"/>
+        <ns1:hasMember rdf:resource="CheckMethodOperator-multiplication"/>
+        <ns1:hasMember rdf:resource="CheckMethodOperator-division"/>
+        <ns1:hasMember rdf:resource="CheckMethodOperator-addition"/>
+        <ns1:hasMember rdf:resource="CheckMethodOperator-subtraction"/>
+      </rdf:Description>
+    </rdf:type>
     <rdf:type rdf:resource="CheckMethodOperator"/>
-    <rdfs:isDefinedBy>
-      <owl:Ontology rdf:about="check_method_operators">
-        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:contributor rdf:resource="amna"/>
-        <dct:description xml:lang="en">Definition of operators scheme for AEC3PO.</dct:description>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-25</dct:modified>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-24</dct:modified>
-        <dct:title xml:lang="en">AEC3PO: Operators</dct:title>
-        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
-        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-22</dct:created>
-      </owl:Ontology>
-    </rdfs:isDefinedBy>
-    <skos:definition xml:lang="en">exists operator.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
+    <skos:definition xml:lang="en">addition operator.</skos:definition>
     <skos:inScheme>
       <skos:ConceptScheme rdf:about="CheckMethodOperatorNomenclature">
         <rdfs:label xml:lang="en">check method nomenclature</rdfs:label>
@@ -52,64 +57,19 @@
         <skos:hasTopConcept rdf:resource="CheckMethodOperator-multiplication"/>
         <skos:hasTopConcept rdf:resource="CheckMethodOperator-subtraction"/>
         <skos:hasTopConcept rdf:resource="CheckMethodOperator-division"/>
+        <dct:title xml:lang="en">check method nomenclature</dct:title>
+        <dct:description xml:lang="en">A set of operators for the check method.
+  AEC3PO includes a set of operators for this nomenclature.
+  These operators are :
+  - operator_exists : exists operator.
+  - operator_notExists : not-exists operator.
+  - operator_forall : forall operator.</dct:description>
       </skos:ConceptScheme>
     </skos:inScheme>
-    <skos:prefLabel xml:lang="en">exists</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="CheckMethodOperator-forall">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="CheckMethodOperator"/>
-    <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
-    <skos:definition xml:lang="en">forall operator.</skos:definition>
-    <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
-    <skos:prefLabel xml:lang="en">forall</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="CheckMethodOperator-addition">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="CheckMethodOperator"/>
-    <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
-    <skos:definition xml:lang="en">addition operator.</skos:definition>
-    <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
     <skos:prefLabel xml:lang="en">addition</skos:prefLabel>
     <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="CheckMethodOperator-subtraction">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="CheckMethodOperator"/>
-    <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
-    <skos:definition xml:lang="en">subtraction operator.</skos:definition>
-    <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
-    <skos:prefLabel xml:lang="en">subtraction</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
-  </owl:NamedIndividual>
-  <owl:Class rdf:about="CheckMethodOperator">
-    <rdfs:label xml:lang="en">check method operator</rdfs:label>
-    <rdfs:comment xml:lang="en">Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodOperatorNomenclature</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="CheckMethod"/>
-    <owl:equivalentClass>
-      <rdf:Description rdf:nodeID="n20e225810624456a8c162f5b467d6e3db1">
-        <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="n20e225810624456a8c162f5b467d6e3db2">
-            <owl:hasValue rdf:resource="CheckMethodOperatorNomenclature"/>
-            <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </rdf:Description>
-    </owl:equivalentClass>
-  </owl:Class>
-  <owl:NamedIndividual rdf:about="CheckMethodOperator-division">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="CheckMethodOperator"/>
-    <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
-    <skos:definition xml:lang="en">division Operator.</skos:definition>
-    <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
-    <skos:prefLabel xml:lang="en">division</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
+    <dct:title xml:lang="en">addition</dct:title>
+    <dct:description xml:lang="en">addition operator.</dct:description>
   </owl:NamedIndividual>
   <owl:NamedIndividual rdf:about="CheckMethodOperator-notExists">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -119,14 +79,149 @@
     <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
     <skos:prefLabel xml:lang="en">not exists</skos:prefLabel>
     <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
+    <dct:title xml:lang="en">not exists</dct:title>
+    <dct:description xml:lang="en">not exists operator.</dct:description>
   </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="CheckMethodOperator-multiplication">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="CheckMethodOperator"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodOperator-exists">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodOperator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
+        <skos:definition xml:lang="en">exists operator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">exists</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
+        <dct:title xml:lang="en">exists</dct:title>
+        <dct:description xml:lang="en">exists operator.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-notExists"/>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodOperator-forall">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodOperator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
+        <skos:definition xml:lang="en">forall operator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">forall</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
+        <dct:title xml:lang="en">forall</dct:title>
+        <dct:description xml:lang="en">forall operator.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodOperator-multiplication">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodOperator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
+        <skos:definition xml:lang="en">multiplication Operator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">multiplication</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
+        <dct:title xml:lang="en">multiplication</dct:title>
+        <dct:description xml:lang="en">multiplication Operator.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodOperator-division">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodOperator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
+        <skos:definition xml:lang="en">division Operator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">division</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
+        <dct:title xml:lang="en">division</dct:title>
+        <dct:description xml:lang="en">division Operator.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-addition"/>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CheckMethodOperator-subtraction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="CheckMethodOperator"/>
+        <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
+        <skos:definition xml:lang="en">subtraction operator.</skos:definition>
+        <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
+        <skos:prefLabel xml:lang="en">subtraction</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
+        <dct:title xml:lang="en">subtraction</dct:title>
+        <dct:description xml:lang="en">subtraction operator.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+  </rdf:Description>
+  <owl:Class rdf:about="CheckMethodOperator">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="CheckMethodOperator"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">check method operator</rdfs:label>
+    <rdfs:comment xml:lang="en">Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodOperatorNomenclature</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="check_method_operators"/>
-    <skos:definition xml:lang="en">multiplication Operator.</skos:definition>
-    <skos:inScheme rdf:resource="CheckMethodOperatorNomenclature"/>
-    <skos:prefLabel xml:lang="en">multiplication</skos:prefLabel>
-    <skos:topConceptOf rdf:resource="CheckMethodOperatorNomenclature"/>
-  </owl:NamedIndividual>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="CheckMethod">
+        <ns1:superClassOf rdf:resource="CheckMethodOperator"/>
+        <ns1:inRangeOf rdf:resource="hasOperator"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n7bcd1de0eaba40dfa341ac2aaa6f6ce2b1">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+          <owl:Restriction rdf:nodeID="n7bcd1de0eaba40dfa341ac2aaa6f6ce2b2">
+            <owl:hasValue rdf:resource="CheckMethodOperatorNomenclature"/>
+            <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <dct:title xml:lang="en">check method operator</dct:title>
+    <dct:description xml:lang="en">Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodOperatorNomenclature</dct:description>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-exists"/>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-notExists"/>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-forall"/>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-multiplication"/>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-division"/>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-addition"/>
+    <ns1:hasMember rdf:resource="CheckMethodOperator-subtraction"/>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:about="hasOperator">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+        <ns1:hasMember rdf:resource="hasOperator"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">has operator</rdfs:label>
+    <rdfs:comment xml:lang="en">The operator of a feature of interest or a property of that is needed by the check method.
+  A set of operators is defined by aec3po in the corresponding concept scheme.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="check_method_Operators"/>
+    <rdfs:range rdf:resource="CheckMethod"/>
+    <rdfs:subPropertyOf>
+      <rdf:Description rdf:about="hasDesign">
+        <ns1:superPropertyOf rdf:resource="hasOperator"/>
+      </rdf:Description>
+    </rdfs:subPropertyOf>
+    <dct:title xml:lang="en">has operator</dct:title>
+    <dct:description xml:lang="en">The operator of a feature of interest or a property of that is needed by the check method.
+  A set of operators is defined by aec3po in the corresponding concept scheme.</dct:description>
+  </owl:FunctionalProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="check_method_operators"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="CheckMethodOperator"/>
+    <ns1:hasMember rdf:nodeID="n7bcd1de0eaba40dfa341ac2aaa6f6ce2b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="n7bcd1de0eaba40dfa341ac2aaa6f6ce2b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <ns1:hasMember rdf:resource="CheckMethodOperatorNomenclature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
+    <ns1:hasMember rdf:resource="hasOperator"/>
+  </rdf:Description>
 </rdf:RDF>

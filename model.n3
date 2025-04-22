@@ -2,21 +2,94 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <https://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<Element> a owl:Class ;
+_:ndc68289391b84d849b4acfafc81d0c45b1 a rdfs:Class,
+        owl:Class ;
+    owl:unionOf ( schema:Place <AdministrativeArea> ) ;
+    ns1:inRangeOf <locationCoverage> .
+
+<Classification> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Classification"@en ;
+    dct:description "Classification systems or codes used to categorise and organise building components." ;
+    dct:title "Classification"@en ;
+    rdfs:comment "Classification systems or codes used to categorise and organise building components." ;
+    rdfs:isDefinedBy <model> ;
+    rdfs:subClassOf <Model> ;
+    ns1:inRangeOf <hasClassification> .
+
+<Dimension> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Dimension"@en ;
+    dct:description "Measurements and sizes of various building components and elements." ;
+    dct:title "Dimension"@en ;
+    rdfs:comment "Measurements and sizes of various building components and elements." ;
+    rdfs:isDefinedBy <model> ;
+    rdfs:subClassOf <Model> ;
+    ns1:inRangeOf <hasDimension> .
+
+<Element> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Element"@en ;
+    dct:description "Specific attributes of individual elements, such as doors, windows, walls, etc." ;
+    dct:title "Element"@en ;
     rdfs:comment "Specific attributes of individual elements, such as doors, windows, walls, etc." ;
     rdfs:isDefinedBy <model> ;
     rdfs:subClassOf <Model> .
 
+<Model> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Model"@en ;
+    dct:description "A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information." ;
+    dct:title "Model"@en ;
+    rdfs:comment "A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information." ;
+    rdfs:isDefinedBy <model> ;
+    ns1:inDomainOf <hasBuildingPhase>,
+        <hasClassification>,
+        <hasDimension>,
+        <hasElementPhase> ;
+    ns1:superClassOf <Classification>,
+        <Dimension>,
+        <Element>,
+        <Phase> .
+
+<Phase> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Phase"@en ;
+    dct:description "A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)" ;
+    dct:title "Phase"@en ;
+    rdfs:comment "A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)" ;
+    rdfs:isDefinedBy <model> ;
+    rdfs:subClassOf <Model> ;
+    ns1:inRangeOf <hasBuildingPhase>,
+        <hasElementPhase> .
+
+owl:Ontology ns1:hasMember <model> .
+
+<amna> a prov:Agent .
+
+schema:Place ns1:inRangeOf <location> .
+
+xsd:string ns1:inRangeOf <description>,
+        <material>,
+        <name> .
+
+owl:DatatypeProperty ns1:hasMember <description>,
+        <material>,
+        <name> .
+
 <description> a owl:DatatypeProperty ;
     rdfs:label "description"@en ;
+    dct:description "A textual description providing additional details about the BIM model."@en ;
+    dct:title "description"@en ;
     rdfs:comment "A textual description providing additional details about the BIM model."@en ;
     rdfs:domain schema:Model ;
     rdfs:range xsd:string ;
@@ -24,30 +97,40 @@
 
 <hasBuildingPhase> a owl:ObjectProperty ;
     rdfs:label "has building phase"@en ;
+    dct:description "describes the relationship between a construction-related entity and the phase of the building process it is associated with. (Inspired by the BIM shared ontology)"@en ;
+    dct:title "has building phase"@en ;
     rdfs:comment "describes the relationship between a construction-related entity and the phase of the building process it is associated with. (Inspired by the BIM shared ontology)"@en ;
     rdfs:domain <Model> ;
     rdfs:range <Phase> .
 
 <hasClassification> a owl:ObjectProperty ;
     rdfs:label "has dimension"@en ;
+    dct:description "is used to link building components, elements, or other entities to a classification scheme that provides a standardised way of categorising and organising them.. "@en ;
+    dct:title "has dimension"@en ;
     rdfs:comment "is used to link building components, elements, or other entities to a classification scheme that provides a standardised way of categorising and organising them.. "@en ;
     rdfs:domain <Model> ;
     rdfs:range <Classification> .
 
 <hasDimension> a owl:ObjectProperty ;
     rdfs:label "has dimension"@en ;
+    dct:description "is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. "@en ;
+    dct:title "has dimension"@en ;
     rdfs:comment "is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. "@en ;
     rdfs:domain <Model> ;
     rdfs:range <Dimension> .
 
 <hasElementPhase> a owl:ObjectProperty ;
     rdfs:label "has element phase"@en ;
+    dct:description "is used to establish a relationship between a construction element or component and the specific phase of the building process in which that element is relevant or applicable. (Inspired by the BIM shared ontology)"@en ;
+    dct:title "has element phase"@en ;
     rdfs:comment "is used to establish a relationship between a construction element or component and the specific phase of the building process in which that element is relevant or applicable. (Inspired by the BIM shared ontology)"@en ;
     rdfs:domain <Model> ;
     rdfs:range <Phase> .
 
 <location> a owl:ObjectProperty ;
     rdfs:label "location"@en ;
+    dct:description "The physical or geographic location of the building or structure represented in the BIM model."@en ;
+    dct:title "location"@en ;
     rdfs:comment "The physical or geographic location of the building or structure represented in the BIM model."@en ;
     rdfs:domain schema:Model ;
     rdfs:range schema:Place ;
@@ -55,14 +138,17 @@
 
 <locationCoverage> a owl:ObjectProperty ;
     rdfs:label "location coverage"@en ;
+    dct:description "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en ;
+    dct:title "location coverage"@en ;
     rdfs:comment "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en ;
     rdfs:domain schema:Model ;
-    rdfs:range [ a owl:Class ;
-            owl:unionOf ( schema:Place <AdministrativeArea> ) ] ;
+    rdfs:range _:ndc68289391b84d849b4acfafc81d0c45b1 ;
     owl:equivalentProperty schema:spatialCoverage .
 
 <material> a owl:DatatypeProperty ;
     rdfs:label "material"@en ;
+    dct:description "The materials used for different parts of the building, such as walls, floors, and roofs."@en ;
+    dct:title "material"@en ;
     rdfs:comment "The materials used for different parts of the building, such as walls, floors, and roofs."@en ;
     rdfs:domain schema:Model ;
     rdfs:range xsd:string ;
@@ -70,29 +156,40 @@
 
 <name> a owl:DatatypeProperty ;
     rdfs:label "name"@en ;
+    dct:description "The name or the identifier of the BIM model."@en ;
+    dct:title "name"@en ;
     rdfs:comment "The name or the identifier of the BIM model."@en ;
     rdfs:domain schema:Model ;
     rdfs:range xsd:string ;
     owl:equivalentProperty schema:about ;
     owl:inverseOf schema:subjectOf .
 
-<Classification> a owl:Class ;
-    rdfs:label "Classification"@en ;
-    rdfs:comment "Classification systems or codes used to categorise and organise building components." ;
-    rdfs:isDefinedBy <model> ;
-    rdfs:subClassOf <Model> .
+schema:Model ns1:inDomainOf <description>,
+        <location>,
+        <locationCoverage>,
+        <material>,
+        <name> .
 
-<Dimension> a owl:Class ;
-    rdfs:label "Dimension"@en ;
-    rdfs:comment "Measurements and sizes of various building components and elements." ;
-    rdfs:isDefinedBy <model> ;
-    rdfs:subClassOf <Model> .
+rdfs:Class ns1:hasMember _:ndc68289391b84d849b4acfafc81d0c45b1,
+        <Classification>,
+        <Dimension>,
+        <Element>,
+        <Model>,
+        <Phase> .
 
-<Phase> a owl:Class ;
-    rdfs:label "Phase"@en ;
-    rdfs:comment "A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)" ;
-    rdfs:isDefinedBy <model> ;
-    rdfs:subClassOf <Model> .
+owl:Class ns1:hasMember _:ndc68289391b84d849b4acfafc81d0c45b1,
+        <Classification>,
+        <Dimension>,
+        <Element>,
+        <Model>,
+        <Phase> .
+
+owl:ObjectProperty ns1:hasMember <hasBuildingPhase>,
+        <hasClassification>,
+        <hasDimension>,
+        <hasElementPhase>,
+        <location>,
+        <locationCoverage> .
 
 <model> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -105,9 +202,4 @@
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <evidence> .
-
-<Model> a owl:Class ;
-    rdfs:label "Model"@en ;
-    rdfs:comment "A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information." ;
-    rdfs:isDefinedBy <model> .
 

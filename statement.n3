@@ -2,89 +2,157 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<AndCheckStatement> a owl:Class ;
+<AndCheckStatement> a rdfs:Class,
+        owl:Class ;
     rdfs:label "And Check Statement"@en ;
+    dct:description "Check verified if and only if all of its sub-checks are verified."@en ;
+    dct:title "And Check Statement"@en ;
     rdfs:comment "Check verified if and only if all of its sub-checks are verified."@en ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty <hasSubdivision> ],
+    rdfs:subClassOf _:n9115cae1015b486a9080725b0df5a1ecb1,
         <ChecklistStatement> .
 
-<BooleanCheckStatement> a owl:Class ;
+<BooleanCheckStatement> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Boolean Check Statement"@en ;
+    dct:description "A type of check that checks the existence of an element (property) related to a feature of interest."@en ;
+    dct:title "Boolean Check Statement"@en ;
     rdfs:comment "A type of check that checks the existence of an element (property) related to a feature of interest."@en ;
     rdfs:isDefinedBy <statement> ;
     rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/58> ;
     rdfs:subClassOf <CheckStatement> .
 
-<CategoryCheckStatement> a owl:Class ;
+<CategoryCheckStatement> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Category Check Statement"@en ;
+    dct:description "Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more."@en ;
+    dct:title "Category Check Statement"@en ;
     rdfs:comment "Category check statement refers to a type of statement or requirement that focuses on verifying compliance with specific categories of regulations, standards, or guidelines within the construction industry. Category check statements are used to assess whether a construction project aligns with predefined categories of criteria, such as safety, environmental impact, energy efficiency, accessibility, and more."@en ;
     rdfs:isDefinedBy <statement> ;
     rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/56> ;
     rdfs:subClassOf <CheckStatement> .
 
-<CertificateCheckStatement> a owl:Class ;
+<CertificateCheckStatement> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Certificate Check Statement"@en ;
+    dct:description "Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects"@en ;
+    dct:title "Certificate Check Statement"@en ;
     rdfs:comment "Certificate check statement refers to a type of statement or requirement that focuses on verifying and validating the authenticity and compliance of certificates related to construction projects"@en ;
     rdfs:isDefinedBy <statement> ;
     rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/59> ;
     rdfs:subClassOf <CheckStatement> .
 
-<NotCheckStatement> a owl:Class ;
+<CheckStatement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Check Statement"@en ;
+    dct:description "refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain."@en ;
+    dct:title "Check Statement"@en ;
+    rdfs:comment "refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain."@en ;
+    rdfs:isDefinedBy <statement> ;
+    rdfs:subClassOf <Statement> ;
+    ns1:superClassOf <BooleanCheckStatement>,
+        <CategoryCheckStatement>,
+        <CertificateCheckStatement>,
+        <ChecklistStatement>,
+        <HumanEvaluatedCheckStatement>,
+        <NumericalCheckStatement> .
+
+<ChecklistStatement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Checklist Statement"@en ;
+    dct:description "Checklist statement is a type of check statement that represents a list of checks that need to be verified."@en ;
+    dct:title "Checklist Statement"@en ;
+    rdfs:comment "Checklist statement is a type of check statement that represents a list of checks that need to be verified."@en ;
+    rdfs:isDefinedBy <statement> ;
+    rdfs:subClassOf <CheckStatement> ;
+    ns1:superClassOf <AndCheckStatement>,
+        <OrCheckStatement> .
+
+<DefinitionStatement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Definition Statement"@en ;
+    dct:description "A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document."@en ;
+    dct:title "Definition Statement"@en ;
+    rdfs:comment "A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document."@en ;
+    rdfs:isDefinedBy <statement> ;
+    rdfs:subClassOf <Statement> ;
+    ns1:inDomainOf <definitionOf>,
+        <hasDefinition> .
+
+<HumanEvaluatedCheckStatement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Human Evaluated Check Statement"@en ;
+    dct:description "A type of check statement that is evaluated by a human."@en ;
+    dct:title "Human Evaluated Check Statement"@en ;
+    rdfs:comment "A type of check statement that is evaluated by a human."@en ;
+    rdfs:isDefinedBy <statement> ;
+    rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/60> ;
+    rdfs:subClassOf <CheckStatement> ;
+    skos:example "\"is aesthetically appropriate\""@en ;
+    skos:note "Those are primarily for issues of perception"@en ;
+    ns1:inDomainOf <hasEvaluator> .
+
+<NotCheckStatement> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Not Check Statement"@en ;
+    dct:description "Check verified if and only if the sub-check is not verified."@en ;
+    dct:title "Not Check Statement"@en ;
     rdfs:comment "Check verified if and only if the sub-check is not verified."@en ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:cardinality 1 ;
-            owl:onProperty <hasSubdivision> ] .
+    rdfs:subClassOf _:n9115cae1015b486a9080725b0df5a1ecb3 .
 
-<NumericalCheckStatement> a owl:Class ;
+<NumericalCheckStatement> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Numerical Check Statement"@en ;
+    dct:description "A type of check that involves checking one numerical property against another, i.e. x < y or similar." ;
+    dct:title "Numerical Check Statement"@en ;
     rdfs:comment "A type of check that involves checking one numerical property against another, i.e. x < y or similar." ;
     rdfs:isDefinedBy <statement> ;
     rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/57> ;
     rdfs:subClassOf <CheckStatement> .
 
-<OrCheckStatement> a owl:Class ;
+<OrCheckStatement> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Or Check Statement"@en ;
+    dct:description "Check verified if and only if at least one of its sub-checks is verified."@en ;
+    dct:title "Or Check Statement"@en ;
     rdfs:comment "Check verified if and only if at least one of its sub-checks is verified."@en ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:minCardinality 1 ;
-            owl:onProperty <hasSubdivision> ],
+    rdfs:subClassOf _:n9115cae1015b486a9080725b0df5a1ecb2,
         <ChecklistStatement> .
 
-<definitionOf> a owl:ObjectProperty ;
-    rdfs:label "definition of"@en ;
-    rdfs:comment "Links a definition statement to the term that is defined"@en ;
-    rdfs:domain <DefinitionStatement> ;
+<Statement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Statement"@en ;
+    dct:description "Something stated in a building compliance-related document"@en ;
+    dct:title "Statement"@en ;
+    rdfs:comment "Something stated in a building compliance-related document"@en ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:range <DocumentSubdivision> .
+    rdfs:subClassOf <DocumentSubdivision> ;
+    skos:example "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en ;
+    ns1:inDomainOf <hasEvidence> ;
+    ns1:inRangeOf <hasEvaluator> ;
+    ns1:superClassOf <CheckStatement>,
+        <DefinitionStatement> .
 
-<hasDefinition> a owl:ObjectProperty ;
-    rdfs:label "has definition"@en ;
-    rdfs:comment "Links a definition statement to the definition of the term"@en ;
-    rdfs:domain <DefinitionStatement> ;
-    rdfs:isDefinedBy <statement> ;
-    rdfs:range <DocumentSubdivision> .
+<http://maxime-lefrancois.info/me#> a prov:Agent .
 
-<hasEvaluator> a owl:ObjectProperty ;
-    rdfs:label "has evaluator"@en ;
-    rdfs:comment "Links a human evaluated statement to the subdivision that expresses who shall verify this check"@en ;
-    rdfs:domain <HumanEvaluatedCheckStatement> ;
-    rdfs:isDefinedBy <statement> ;
-    rdfs:range <Statement> .
+dct:hasPart ns1:superPropertyOf <hasInlinePart> .
+
+owl:Ontology ns1:hasMember <statement> .
 
 <hasEvidence> a owl:ObjectProperty ;
     rdfs:label "hasEvidence"@en ;
+    dct:description "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
+    dct:title "hasEvidence"@en ;
     rdfs:comment "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
     rdfs:domain <Statement> ;
     rdfs:isDefinedBy <statement> ;
@@ -92,44 +160,79 @@
 
 <hasInlinePart> a owl:ObjectProperty ;
     rdfs:label "hasInlinePart"@en ;
+    dct:description "Links a statement to an inline subdivision of that statement."@en ;
+    dct:title "hasInlinePart"@en ;
     rdfs:comment "Links a statement to an inline subdivision of that statement."@en ;
     rdfs:isDefinedBy <statement> ;
     rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/43> ;
     rdfs:subPropertyOf dct:hasPart .
 
-<HumanEvaluatedCheckStatement> a owl:Class ;
-    rdfs:label "Human Evaluated Check Statement"@en ;
-    rdfs:comment "A type of check statement that is evaluated by a human."@en ;
-    rdfs:isDefinedBy <statement> ;
-    rdfs:seeAlso <https://github.com/Accord-Project/aec3po/issues/60> ;
-    rdfs:subClassOf <CheckStatement> ;
-    skos:example "\"is aesthetically appropriate\""@en ;
-    skos:note "Those are primarily for issues of perception"@en .
+owl:Restriction ns1:hasMember _:n9115cae1015b486a9080725b0df5a1ecb1,
+        _:n9115cae1015b486a9080725b0df5a1ecb2,
+        _:n9115cae1015b486a9080725b0df5a1ecb3 .
 
-<ChecklistStatement> a owl:Class ;
-    rdfs:label "Checklist Statement"@en ;
-    rdfs:comment "Checklist statement is a type of check statement that represents a list of checks that need to be verified."@en ;
-    rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf <CheckStatement> .
+<DocumentSubdivision> ns1:inRangeOf <definitionOf>,
+        <hasDefinition> ;
+    ns1:superClassOf <Statement> .
 
-<DefinitionStatement> a owl:Class ;
-    rdfs:label "Definition Statement"@en ;
-    rdfs:comment "A type of statement that provides a formal and precise definition for a specific concept or term, scoped to this document."@en ;
+<definitionOf> a owl:ObjectProperty ;
+    rdfs:label "definition of"@en ;
+    dct:description "Links a definition statement to the term that is defined"@en ;
+    dct:title "definition of"@en ;
+    rdfs:comment "Links a definition statement to the term that is defined"@en ;
+    rdfs:domain <DefinitionStatement> ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf <Statement> .
+    rdfs:range <DocumentSubdivision> .
 
-<Statement> a owl:Class ;
-    rdfs:label "Statement"@en ;
-    rdfs:comment "Something stated in a building compliance-related document"@en ;
+<hasDefinition> a owl:ObjectProperty ;
+    rdfs:label "has definition"@en ;
+    dct:description "Links a definition statement to the definition of the term"@en ;
+    dct:title "has definition"@en ;
+    rdfs:comment "Links a definition statement to the definition of the term"@en ;
+    rdfs:domain <DefinitionStatement> ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf <DocumentSubdivision> ;
-    skos:example "Any solar protection solutions in the building shall be taken into account in the calculation of solar energy gains for the building."@en .
+    rdfs:range <DocumentSubdivision> .
 
-<CheckStatement> a owl:Class ;
-    rdfs:label "Check Statement"@en ;
-    rdfs:comment "refers to a type of statement that is used to specify conditions, criteria, or rules for evaluating the compliance, correctness, or validity of certain properties, features, or aspects of a system, process, or domain."@en ;
+<hasEvaluator> a owl:ObjectProperty ;
+    rdfs:label "has evaluator"@en ;
+    dct:description "Links a human evaluated statement to the subdivision that expresses who shall verify this check"@en ;
+    dct:title "has evaluator"@en ;
+    rdfs:comment "Links a human evaluated statement to the subdivision that expresses who shall verify this check"@en ;
+    rdfs:domain <HumanEvaluatedCheckStatement> ;
     rdfs:isDefinedBy <statement> ;
-    rdfs:subClassOf <Statement> .
+    rdfs:range <Statement> .
+
+owl:ObjectProperty ns1:hasMember <definitionOf>,
+        <hasDefinition>,
+        <hasEvaluator>,
+        <hasEvidence>,
+        <hasInlinePart> .
+
+rdfs:Class ns1:hasMember <AndCheckStatement>,
+        <BooleanCheckStatement>,
+        <CategoryCheckStatement>,
+        <CertificateCheckStatement>,
+        <CheckStatement>,
+        <ChecklistStatement>,
+        <DefinitionStatement>,
+        <HumanEvaluatedCheckStatement>,
+        <NotCheckStatement>,
+        <NumericalCheckStatement>,
+        <OrCheckStatement>,
+        <Statement> .
+
+owl:Class ns1:hasMember <AndCheckStatement>,
+        <BooleanCheckStatement>,
+        <CategoryCheckStatement>,
+        <CertificateCheckStatement>,
+        <CheckStatement>,
+        <ChecklistStatement>,
+        <DefinitionStatement>,
+        <HumanEvaluatedCheckStatement>,
+        <NotCheckStatement>,
+        <NumericalCheckStatement>,
+        <OrCheckStatement>,
+        <Statement> .
 
 <statement> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -142,4 +245,19 @@
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <document> .
+
+_:n9115cae1015b486a9080725b0df5a1ecb1 a owl:Restriction ;
+    owl:minCardinality 1 ;
+    owl:onProperty <hasSubdivision> ;
+    ns1:superClassOf <AndCheckStatement> .
+
+_:n9115cae1015b486a9080725b0df5a1ecb2 a owl:Restriction ;
+    owl:minCardinality 1 ;
+    owl:onProperty <hasSubdivision> ;
+    ns1:superClassOf <OrCheckStatement> .
+
+_:n9115cae1015b486a9080725b0df5a1ecb3 a owl:Restriction ;
+    owl:cardinality 1 ;
+    owl:onProperty <hasSubdivision> ;
+    ns1:superClassOf <NotCheckStatement> .
 

@@ -2,30 +2,45 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<Evidence> a owl:Class ;
+<Evidence> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Evidence"@en ;
+    dct:description "A resource used as an evidence for a statement"@en ;
+    dct:title "Evidence"@en ;
     rdfs:comment "A resource used as an evidence for a statement"@en ;
     rdfs:isDefinedBy <evidence> ;
     skos:example "A drawing can be an evidence."@en .
 
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+dct:format ns1:superPropertyOf <hasFormat> .
+
+rdfs:Class ns1:hasMember <Evidence> .
+
+owl:Class ns1:hasMember <Evidence> .
+
+owl:Ontology ns1:hasMember <evidence> .
+
+owl:ObjectProperty ns1:hasMember <hasEvidence>,
+        <hasFormat> .
+
+<Statement> ns1:inDomainOf <hasEvidence>,
+        <hasFormat> .
+
 <hasEvidence> a owl:ObjectProperty ;
+    dct:description "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
     rdfs:comment "Links a statement to a piece of evidence for that statement (assertion, statement, or claim)."@en ;
     rdfs:domain <Statement> ;
     rdfs:isDefinedBy <statement> ;
     skos:note "Unstable. Need evidence of how this property is intended to be used"@en .
-
-<hasFormat> a owl:ObjectProperty ;
-    rdfs:comment "Defines the format of an evidence. A sub-property of dct:format"@en ;
-    rdfs:domain <Statement> ;
-    rdfs:isDefinedBy <evidence> ;
-    rdfs:subPropertyOf dct:format ;
-    skos:example "an image, a drawing or a model can be an evidence."@en .
 
 <evidence> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -38,4 +53,12 @@
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <statement> .
+
+<hasFormat> a owl:ObjectProperty ;
+    dct:description "Defines the format of an evidence. A sub-property of dct:format"@en ;
+    rdfs:comment "Defines the format of an evidence. A sub-property of dct:format"@en ;
+    rdfs:domain <Statement> ;
+    rdfs:isDefinedBy <evidence> ;
+    rdfs:subPropertyOf dct:format ;
+    skos:example "an image, a drawing or a model can be an evidence."@en .
 

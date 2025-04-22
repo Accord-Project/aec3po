@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:dct="http://purl.org/dc/terms/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:vann="http://purl.org/vocab/vann/"
 >
   <owl:Class rdf:about="PrivateVerifier">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="LegalVerifier"/>
+        <ns1:hasMember rdf:resource="PrivateVerifier"/>
+        <ns1:hasMember rdf:resource="StateVerifier"/>
+      </rdf:Description>
+    </rdf:type>
     <rdfs:label xml:lang="en">Private Verifier</rdfs:label>
     <rdfs:comment xml:lang="en">Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. </rdfs:comment>
     <rdfs:subClassOf rdf:resource="LegalVerifier"/>
@@ -25,23 +34,50 @@
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-31</dct:created>
       </owl:Ontology>
     </rdfs:isDefinedBy>
+    <dct:title xml:lang="en">Private Verifier</dct:title>
+    <dct:description xml:lang="en">Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. </dct:description>
+  </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="LegalVerifier"/>
+    <ns1:hasMember rdf:resource="PrivateVerifier"/>
+    <ns1:hasMember rdf:resource="StateVerifier"/>
+  </rdf:Description>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+  <owl:Class rdf:about="LegalVerifier">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Legal Verifier</rdfs:label>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <ns1:superClassOf rdf:resource="LegalVerifier"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="n1d1c62ba23504616b07908665d51a847b1">
+        <owl:onProperty rdf:resource="forDocument"/>
+        <owl:allValuesFrom rdf:resource="Document"/>
+        <ns1:superClassOf rdf:resource="LegalVerifier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">An entity that has the legal capacity to verify compliance with this regulation.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="legal_verifier"/>
+    <dct:title xml:lang="en">Legal Verifier</dct:title>
+    <dct:description xml:lang="en">An entity that has the legal capacity to verify compliance with this regulation.</dct:description>
+    <ns1:superClassOf rdf:resource="PrivateVerifier"/>
+    <ns1:superClassOf rdf:resource="StateVerifier"/>
   </owl:Class>
   <owl:Class rdf:about="StateVerifier">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">State Verifier</rdfs:label>
     <rdfs:comment xml:lang="en">State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. </rdfs:comment>
     <rdfs:subClassOf rdf:resource="LegalVerifier"/>
     <rdfs:isDefinedBy rdf:resource="legal_verifier"/>
+    <dct:title xml:lang="en">State Verifier</dct:title>
+    <dct:description xml:lang="en">State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. </dct:description>
   </owl:Class>
-  <owl:Class rdf:about="LegalVerifier">
-    <rdfs:label xml:lang="en">Legal Verifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    <rdfs:subClassOf>
-      <rdf:Description rdf:nodeID="n482dc0d5c30f436aaa1dc6f3f5e138efb1">
-        <owl:onProperty rdf:resource="forDocument"/>
-        <owl:allValuesFrom rdf:resource="Document"/>
-      </rdf:Description>
-    </rdfs:subClassOf>
-    <rdfs:comment xml:lang="en">An entity that has the legal capacity to verify compliance with this regulation.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="legal_verifier"/>
-  </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="legal_verifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="n1d1c62ba23504616b07908665d51a847b1"/>
+  </rdf:Description>
 </rdf:RDF>

@@ -2,15 +2,95 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<ApplicationStatement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "ApplicationStatement"@en ;
+    dct:description "Represents the Applications tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+    dct:title "ApplicationStatement"@en ;
+    rdfs:comment "Represents the Applications tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+    rdfs:isDefinedBy <rase_statement> ;
+    rdfs:subClassOf <Statement> ;
+    skos:note "Usually, the Applies/Application statements are highlighted in green."@en ;
+    ns1:inRangeOf <appliesTo> .
+
+<ExceptionStatement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Exception Statement"@en ;
+    dct:description "Represents the Exception tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+    dct:title "Exception Statement"@en ;
+    rdfs:comment "Represents the Exception tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+    rdfs:isDefinedBy <rase_statement> ;
+    rdfs:subClassOf <Statement> ;
+    skos:note "Usually, the Excepted/Exception statements are highlighted in yellow."@en ;
+    ns1:inRangeOf <except> .
+
+<RequirementStatement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Requirement Statement"@en ;
+    dct:description "Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+    dct:title "Requirement Statement"@en ;
+    rdfs:comment "Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
+    rdfs:isDefinedBy <rase_statement> ;
+    rdfs:subClassOf <Statement> ;
+    skos:note "Usually, the Required/Requirement statements are highlighted in blue."@en ;
+    ns1:inRangeOf <requires>,
+        <selects> .
+
+<SelectionStatement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Selection Statement"@en ;
+    dct:description "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
+    dct:title "Selection Statement"@en ;
+    rdfs:comment "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
+    rdfs:isDefinedBy <rase_statement> ;
+    rdfs:subClassOf <Statement> ;
+    skos:note "Usually, the Select/Selection statements are highlighted in purple."@en .
+
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+owl:AllDifferent ns1:hasMember [ a owl:AllDifferent ;
+            owl:members ( <ApplicationStatement> <SelectionStatement> <RequirementStatement> <ExceptionStatement> ) ] .
+
+owl:Ontology ns1:hasMember <rase_statement> .
+
+rdfs:Class ns1:hasMember <ApplicationStatement>,
+        <ExceptionStatement>,
+        <RequirementStatement>,
+        <SelectionStatement> .
+
+owl:Class ns1:hasMember <ApplicationStatement>,
+        <ExceptionStatement>,
+        <RequirementStatement>,
+        <SelectionStatement> .
+
+owl:ObjectProperty ns1:hasMember <appliesTo>,
+        <except>,
+        <requires>,
+        <selects> .
+
+<CheckStatement> ns1:inDomainOf <appliesTo>,
+        <except>,
+        <requires>,
+        <selects> .
+
+<Statement> ns1:superClassOf <ApplicationStatement>,
+        <ExceptionStatement>,
+        <RequirementStatement>,
+        <SelectionStatement> .
+
 <appliesTo> a owl:ObjectProperty ;
     rdfs:label "applies to"@en ;
+    dct:description "Links a check statement to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology."@en ;
+    dct:title "applies to"@en ;
     rdfs:comment "Links a check statement to the expression of a thing it applies to, as per the Requirement Application Selection and Exception (RASE) methodology."@en ;
     rdfs:domain <CheckStatement> ;
     rdfs:isDefinedBy <rase_statement> ;
@@ -20,6 +100,8 @@
 
 <except> a owl:ObjectProperty ;
     rdfs:label "except"@en ;
+    dct:description "Links a check statement to the expression of a thing that is excepted by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en ;
+    dct:title "except"@en ;
     rdfs:comment "Links a check statement to the expression of a thing that is excepted by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en ;
     rdfs:domain <CheckStatement> ;
     rdfs:isDefinedBy <rase_statement> ;
@@ -27,8 +109,15 @@
     rdfs:subPropertyOf <hasSubdivision> ;
     skos:note "Usually, the Excepted/Exception statements are highlighted in yellow."@en .
 
+<hasSubdivision> ns1:superPropertyOf <appliesTo>,
+        <except>,
+        <requires>,
+        <selects> .
+
 <requires> a owl:ObjectProperty ;
     rdfs:label "requires"@en ;
+    dct:description "Links a check statement to the expression of a thing that is required by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en ;
+    dct:title "requires"@en ;
     rdfs:comment "Links a check statement to the expression of a thing that is required by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en ;
     rdfs:domain <CheckStatement> ;
     rdfs:isDefinedBy <rase_statement> ;
@@ -38,40 +127,14 @@
 
 <selects> a owl:ObjectProperty ;
     rdfs:label "selects"@en ;
+    dct:description "Links a check statement to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en ;
+    dct:title "selects"@en ;
     rdfs:comment "Links a check statement to the expression of a thing that is selected by the check, as per the Requirement Application Selection and Exception (RASE) methodology."@en ;
     rdfs:domain <CheckStatement> ;
     rdfs:isDefinedBy <rase_statement> ;
     rdfs:range <RequirementStatement> ;
     rdfs:subPropertyOf <hasSubdivision> ;
     skos:note "Usually, the Select/Selection statements are highlighted in purple."@en .
-
-<SelectionStatement> a owl:Class ;
-    rdfs:label "Selection Statement"@en ;
-    rdfs:comment "Represents the Selection tag in the semantic mark-up Requirements Applications Selections and Exceptions (RASE) methodology."@en ;
-    rdfs:isDefinedBy <rase_statement> ;
-    rdfs:subClassOf <Statement> ;
-    skos:note "Usually, the Select/Selection statements are highlighted in purple."@en .
-
-<ApplicationStatement> a owl:Class ;
-    rdfs:label "ApplicationStatement"@en ;
-    rdfs:comment "Represents the Applications tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
-    rdfs:isDefinedBy <rase_statement> ;
-    rdfs:subClassOf <Statement> ;
-    skos:note "Usually, the Applies/Application statements are highlighted in green."@en .
-
-<ExceptionStatement> a owl:Class ;
-    rdfs:label "Exception Statement"@en ;
-    rdfs:comment "Represents the Exception tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
-    rdfs:isDefinedBy <rase_statement> ;
-    rdfs:subClassOf <Statement> ;
-    skos:note "Usually, the Excepted/Exception statements are highlighted in yellow."@en .
-
-<RequirementStatement> a owl:Class ;
-    rdfs:label "Requirement Statement"@en ;
-    rdfs:comment "Represents the Requirement tag in the semantic mark-up Requirement Application Selection and Exception (RASE) methodology."@en ;
-    rdfs:isDefinedBy <rase_statement> ;
-    rdfs:subClassOf <Statement> ;
-    skos:note "Usually, the Required/Requirement statements are highlighted in blue."@en .
 
 <rase_statement> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -84,7 +147,4 @@
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <statement> .
-
-[] a owl:AllDifferent ;
-    owl:members ( <ApplicationStatement> <SelectionStatement> <RequirementStatement> <ExceptionStatement> ) .
 

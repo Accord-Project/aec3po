@@ -2,25 +2,60 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<hasOperator> a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "has operator"@en ;
-    rdfs:comment """The operator of a feature of interest or a property of that is needed by the check method.
-  A set of operators is defined by aec3po in the corresponding concept scheme."""@en ;
-    rdfs:isDefinedBy <check_method_Operators> ;
-    rdfs:range <CheckMethod> ;
-    rdfs:subPropertyOf <hasDesign> .
+<CheckMethodOperator> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "check method operator"@en ;
+    dct:description "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodOperatorNomenclature"@en ;
+    dct:title "check method operator"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodOperatorNomenclature"@en ;
+    rdfs:isDefinedBy <check_method_operators> ;
+    rdfs:subClassOf skos:Concept,
+        <CheckMethod> ;
+    owl:equivalentClass _:n7bcd1de0eaba40dfa341ac2aaa6f6ce2b1 ;
+    ns1:hasMember <CheckMethodOperator-addition>,
+        <CheckMethodOperator-division>,
+        <CheckMethodOperator-exists>,
+        <CheckMethodOperator-forall>,
+        <CheckMethodOperator-multiplication>,
+        <CheckMethodOperator-notExists>,
+        <CheckMethodOperator-subtraction> .
+
+rdfs:Class ns1:hasMember <CheckMethodOperator> .
+
+owl:FunctionalProperty ns1:hasMember <hasOperator> .
+
+owl:ObjectProperty ns1:hasMember <hasOperator> .
+
+owl:Ontology ns1:hasMember <check_method_operators> .
+
+owl:Restriction ns1:hasMember _:n7bcd1de0eaba40dfa341ac2aaa6f6ce2b2 .
+
+skos:ConceptScheme ns1:hasMember <CheckMethodOperatorNomenclature> .
+
+<amna> a prov:Agent .
+
+<hasDesign> ns1:superPropertyOf <hasOperator> .
+
+owl:Class ns1:hasMember _:n7bcd1de0eaba40dfa341ac2aaa6f6ce2b1,
+        <CheckMethodOperator> .
+
+<CheckMethod> ns1:inRangeOf <hasOperator> ;
+    ns1:superClassOf <CheckMethodOperator> .
 
 <CheckMethodOperator-addition> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodOperator> ;
+    dct:description "addition operator."@en ;
+    dct:title "addition"@en ;
     rdfs:isDefinedBy <check_method_operators> ;
     skos:definition "addition operator."@en ;
     skos:inScheme <CheckMethodOperatorNomenclature> ;
@@ -30,6 +65,8 @@
 <CheckMethodOperator-division> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodOperator> ;
+    dct:description "division Operator."@en ;
+    dct:title "division"@en ;
     rdfs:isDefinedBy <check_method_operators> ;
     skos:definition "division Operator."@en ;
     skos:inScheme <CheckMethodOperatorNomenclature> ;
@@ -39,6 +76,8 @@
 <CheckMethodOperator-exists> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodOperator> ;
+    dct:description "exists operator."@en ;
+    dct:title "exists"@en ;
     rdfs:isDefinedBy <check_method_operators> ;
     skos:definition "exists operator."@en ;
     skos:inScheme <CheckMethodOperatorNomenclature> ;
@@ -48,6 +87,8 @@
 <CheckMethodOperator-forall> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodOperator> ;
+    dct:description "forall operator."@en ;
+    dct:title "forall"@en ;
     rdfs:isDefinedBy <check_method_operators> ;
     skos:definition "forall operator."@en ;
     skos:inScheme <CheckMethodOperatorNomenclature> ;
@@ -57,6 +98,8 @@
 <CheckMethodOperator-multiplication> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodOperator> ;
+    dct:description "multiplication Operator."@en ;
+    dct:title "multiplication"@en ;
     rdfs:isDefinedBy <check_method_operators> ;
     skos:definition "multiplication Operator."@en ;
     skos:inScheme <CheckMethodOperatorNomenclature> ;
@@ -66,6 +109,8 @@
 <CheckMethodOperator-notExists> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodOperator> ;
+    dct:description "not exists operator."@en ;
+    dct:title "not exists"@en ;
     rdfs:isDefinedBy <check_method_operators> ;
     skos:definition "not exists operator."@en ;
     skos:inScheme <CheckMethodOperatorNomenclature> ;
@@ -75,21 +120,42 @@
 <CheckMethodOperator-subtraction> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodOperator> ;
+    dct:description "subtraction operator."@en ;
+    dct:title "subtraction"@en ;
     rdfs:isDefinedBy <check_method_operators> ;
     skos:definition "subtraction operator."@en ;
     skos:inScheme <CheckMethodOperatorNomenclature> ;
     skos:prefLabel "subtraction"@en ;
     skos:topConceptOf <CheckMethodOperatorNomenclature> .
 
-<CheckMethodOperator> a owl:Class ;
-    rdfs:label "check method operator"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodOperatorNomenclature"@en ;
-    rdfs:isDefinedBy <check_method_operators> ;
-    rdfs:subClassOf skos:Concept,
-        <CheckMethod> ;
-    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue <CheckMethodOperatorNomenclature> ;
-                        owl:onProperty skos:inScheme ] ) ] .
+<hasOperator> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has operator"@en ;
+    dct:description """The operator of a feature of interest or a property of that is needed by the check method.
+  A set of operators is defined by aec3po in the corresponding concept scheme."""@en ;
+    dct:title "has operator"@en ;
+    rdfs:comment """The operator of a feature of interest or a property of that is needed by the check method.
+  A set of operators is defined by aec3po in the corresponding concept scheme."""@en ;
+    rdfs:isDefinedBy <check_method_Operators> ;
+    rdfs:range <CheckMethod> ;
+    rdfs:subPropertyOf <hasDesign> .
+
+owl:NamedIndividual ns1:hasMember <CheckMethodOperator-addition>,
+        <CheckMethodOperator-division>,
+        <CheckMethodOperator-exists>,
+        <CheckMethodOperator-forall>,
+        <CheckMethodOperator-multiplication>,
+        <CheckMethodOperator-notExists>,
+        <CheckMethodOperator-subtraction> .
+
+skos:Concept ns1:hasMember <CheckMethodOperator-addition>,
+        <CheckMethodOperator-division>,
+        <CheckMethodOperator-exists>,
+        <CheckMethodOperator-forall>,
+        <CheckMethodOperator-multiplication>,
+        <CheckMethodOperator-notExists>,
+        <CheckMethodOperator-subtraction> ;
+    ns1:superClassOf <CheckMethodOperator> .
 
 <check_method_operators> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -104,6 +170,13 @@
 
 <CheckMethodOperatorNomenclature> a skos:ConceptScheme ;
     rdfs:label "check method nomenclature"@en ;
+    dct:description """A set of operators for the check method.
+  AEC3PO includes a set of operators for this nomenclature.
+  These operators are :
+  - operator_exists : exists operator.
+  - operator_notExists : not-exists operator.
+  - operator_forall : forall operator."""@en ;
+    dct:title "check method nomenclature"@en ;
     rdfs:isDefinedBy <check_method_operators> ;
     skos:definition """A set of operators for the check method.
   AEC3PO includes a set of operators for this nomenclature.
@@ -118,4 +191,14 @@
         <CheckMethodOperator-multiplication>,
         <CheckMethodOperator-notExists>,
         <CheckMethodOperator-subtraction> .
+
+_:n7bcd1de0eaba40dfa341ac2aaa6f6ce2b3 rdf:first skos:Concept ;
+    rdf:rest ( _:n7bcd1de0eaba40dfa341ac2aaa6f6ce2b2 ) .
+
+_:n7bcd1de0eaba40dfa341ac2aaa6f6ce2b1 a owl:Class ;
+    owl:intersectionOf _:n7bcd1de0eaba40dfa341ac2aaa6f6ce2b3 .
+
+_:n7bcd1de0eaba40dfa341ac2aaa6f6ce2b2 a owl:Restriction ;
+    owl:hasValue <CheckMethodOperatorNomenclature> ;
+    owl:onProperty skos:inScheme .
 

@@ -2,15 +2,50 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<Discipline> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Discipline"@en ;
+    dct:description "The AEC discipline to which something pertains." ;
+    dct:title "Discipline"@en ;
+    rdfs:comment "The AEC discipline to which something pertains." ;
+    rdfs:isDefinedBy <discipline> ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass _:na4223ab140b44ce09c06d6cf37c9990cb1 ;
+    ns1:hasMember <Discipline-architecture>,
+        <Discipline-buildingServices>,
+        <Discipline-construction>,
+        <Discipline-planning>,
+        <Discipline-structuralEngineering> ;
+    ns1:inRangeOf <hasDiscipline> .
+
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+rdfs:Class ns1:hasMember <Discipline> .
+
+owl:ObjectProperty ns1:hasMember <hasDiscipline> .
+
+owl:Ontology ns1:hasMember <discipline> .
+
+owl:Restriction ns1:hasMember _:na4223ab140b44ce09c06d6cf37c9990cb2 .
+
+skos:ConceptScheme ns1:hasMember <DisciplineNomenclature> .
+
+owl:Class ns1:hasMember _:na4223ab140b44ce09c06d6cf37c9990cb1,
+        <Discipline> .
+
 <hasDiscipline> a owl:ObjectProperty ;
     rdfs:label "has discipline"@en ;
+    dct:description "Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."@en ;
+    dct:title "has discipline"@en ;
     rdfs:comment "Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."@en ;
     rdfs:isDefinedBy <discipline> ;
     rdfs:range <Discipline> .
@@ -18,6 +53,8 @@
 <Discipline-architecture> a owl:NamedIndividual,
         skos:Concept,
         <Discipline> ;
+    dct:description "The Architecture discipline."@en ;
+    dct:title "architecture"@en ;
     rdfs:isDefinedBy <discipline> ;
     skos:definition "The Architecture discipline."@en ;
     skos:inScheme <DisciplineNomenclature> ;
@@ -27,6 +64,8 @@
 <Discipline-buildingServices> a owl:NamedIndividual,
         skos:Concept,
         <Discipline> ;
+    dct:description "The Building Services discipline."@en ;
+    dct:title "building services"@en ;
     rdfs:isDefinedBy <discipline> ;
     skos:definition "The Building Services discipline."@en ;
     skos:inScheme <DisciplineNomenclature> ;
@@ -36,6 +75,8 @@
 <Discipline-construction> a owl:NamedIndividual,
         skos:Concept,
         <Discipline> ;
+    dct:description "The Construction discipline."@en ;
+    dct:title "construction"@en ;
     rdfs:isDefinedBy <discipline> ;
     skos:definition "The Construction discipline."@en ;
     skos:inScheme <DisciplineNomenclature> ;
@@ -45,6 +86,8 @@
 <Discipline-planning> a owl:NamedIndividual,
         skos:Concept,
         <Discipline> ;
+    dct:description "The Planning discipline."@en ;
+    dct:title "planning"@en ;
     rdfs:isDefinedBy <discipline> ;
     skos:definition "The Planning discipline."@en ;
     skos:inScheme <DisciplineNomenclature> ;
@@ -54,20 +97,26 @@
 <Discipline-structuralEngineering> a owl:NamedIndividual,
         skos:Concept,
         <Discipline> ;
+    dct:description "The Structural Engineering discipline."@en ;
+    dct:title "structural engineering"@en ;
     rdfs:isDefinedBy <discipline> ;
     skos:definition "The Structural Engineering discipline."@en ;
     skos:inScheme <DisciplineNomenclature> ;
     skos:prefLabel "structural engineering"@en ;
     skos:topConceptOf <DisciplineNomenclature> .
 
-<Discipline> a owl:Class ;
-    rdfs:label "Discipline"@en ;
-    rdfs:comment "The AEC discipline to which something pertains." ;
-    rdfs:isDefinedBy <discipline> ;
-    rdfs:subClassOf skos:Concept ;
-    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue <DisciplineNomenclature> ;
-                        owl:onProperty skos:inScheme ] ) ] .
+owl:NamedIndividual ns1:hasMember <Discipline-architecture>,
+        <Discipline-buildingServices>,
+        <Discipline-construction>,
+        <Discipline-planning>,
+        <Discipline-structuralEngineering> .
+
+skos:Concept ns1:hasMember <Discipline-architecture>,
+        <Discipline-buildingServices>,
+        <Discipline-construction>,
+        <Discipline-planning>,
+        <Discipline-structuralEngineering> ;
+    ns1:superClassOf <Discipline> .
 
 <discipline> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -82,6 +131,15 @@
 
 <DisciplineNomenclature> a skos:ConceptScheme ;
     rdfs:label "Discipline nomenclature"@en ;
+    dct:description """A set of values for disciplines.
+  AEC3PO includes a set of values for this nomenclature.
+  These values are :
+  - architecture;
+  - construction;
+  - structural engineering;
+  - building services;
+  - planning."""@en ;
+    dct:title "Discipline nomenclature"@en ;
     rdfs:isDefinedBy <discipline> ;
     skos:definition """A set of values for disciplines.
   AEC3PO includes a set of values for this nomenclature.
@@ -96,4 +154,14 @@
         <Discipline-construction>,
         <Discipline-planning>,
         <Discipline-structuralEngineering> .
+
+_:na4223ab140b44ce09c06d6cf37c9990cb3 rdf:first skos:Concept ;
+    rdf:rest ( _:na4223ab140b44ce09c06d6cf37c9990cb2 ) .
+
+_:na4223ab140b44ce09c06d6cf37c9990cb1 a owl:Class ;
+    owl:intersectionOf _:na4223ab140b44ce09c06d6cf37c9990cb3 .
+
+_:na4223ab140b44ce09c06d6cf37c9990cb2 a owl:Restriction ;
+    owl:hasValue <DisciplineNomenclature> ;
+    owl:onProperty skos:inScheme .
 

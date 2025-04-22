@@ -3,7 +3,9 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qkdv: <http://qudt.org/vocab/dimensionvector/> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
@@ -14,9 +16,65 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+qudt:QuantityKind a rdfs:Class,
+        owl:Class ;
+    rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> ;
+    ns1:superClassOf <QuantityKind> .
+
+<QuantityKind> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Quantity Kind"@en ;
+    dct:description """A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+
+  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
+
+  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+    """@en ;
+    dct:title "Quantity Kind"@en ;
+    rdfs:comment """A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+
+  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
+
+  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+    """@en ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    rdfs:subClassOf qudt:QuantityKind,
+        dul:Region,
+        skos:Concept ;
+    owl:equivalentClass _:n69665afa4c3445ff93f7bf8912ab2b55b1 ;
+    skos:example "Length, Area, U-Value."@en ;
+    skos:note "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en ;
+    ns1:hasMember <AxialCompressionStress>,
+        <CompressiveForce>,
+        <ModificationFactorKmod>,
+        <ModularRoomHeight>,
+        <PartialSafetyFactor>,
+        <PartialSafetyFactor0>,
+        <PartialSafetyFactor1>,
+        <WidthOfAngledCorridor> .
+
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+dul:Region ns1:superClassOf <QuantityKind> .
+
+owl:Ontology ns1:hasMember <quantity_kinds> .
+
+owl:Restriction ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b2 .
+
+skos:ConceptScheme ns1:hasMember <QuantityKindNomenclature> .
+
+rdfs:Class ns1:hasMember qudt:QuantityKind,
+        <QuantityKind> .
+
+owl:Class ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b1,
+        qudt:QuantityKind,
+        <QuantityKind> .
+
 <AxialCompressionStress> a owl:NamedIndividual,
         skos:Concept,
         <QuantityKind> ;
+    dct:description "also known as fc0k" ;
+    dct:title "axial compression stress"@en ;
     qudt:hasDimensionVector qkdv:A0E0L1I0M-1H0T-2D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
     skos:definition "also known as fc0k" ;
@@ -25,6 +83,8 @@
 <CompressiveForce> a owl:NamedIndividual,
         skos:Concept,
         <QuantityKind> ;
+    dct:description "Force tending to reduce the size of a body." ;
+    dct:title "compressive force"@en ;
     qudt:hasDimensionVector qkdv:A0E0L1I0M1H0T-2D0 ;
     qudt:symbol "C" ;
     rdfs:isDefinedBy <quantity_kinds> ;
@@ -35,6 +95,8 @@
 <ModificationFactorKmod> a owl:NamedIndividual,
         skos:Concept,
         <QuantityKind> ;
+    dct:description "Modification Factor to take into account the duration of load"@en ;
+    dct:title "Modification Factor Kmod"@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
@@ -44,6 +106,8 @@
 <ModularRoomHeight> a owl:NamedIndividual,
         skos:Concept,
         <QuantityKind> ;
+    dct:description "vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling."@en ;
+    dct:title "modular room height"@en ;
     qudt:applicableUnit unit:CentiM,
         unit:IN,
         unit:M,
@@ -59,6 +123,8 @@
 <PartialSafetyFactor0> a owl:NamedIndividual,
         skos:Concept,
         <QuantityKind> ;
+    dct:description "Also written γM0, the partial safety factor for resistance related to member resistance without instability."@en ;
+    dct:title "Partial Safety Factor"@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
@@ -70,15 +136,29 @@
         skos:Concept,
         <QuantityKind> ;
     rdfs:label "Partial Safety Factor"@en ;
+    dct:description "Also written γM1, the partial safety factor for resistance related to any limit state where instability governs."@en ;
+    dct:title "Partial Safety Factor"@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
     skos:broader <PartialSafetyFactor> ;
     skos:definition "Also written γM1, the partial safety factor for resistance related to any limit state where instability governs."@en .
 
+<QuantityKindNomenclature> a owl:NamedIndividual,
+        skos:ConceptScheme ;
+    rdfs:label "Quantity Kind nomenclature"@en ;
+    dct:description """A set of values for quantity kinds.
+    AEC3PO includes a set of values for this nomenclature."""@en ;
+    dct:title "Quantity Kind nomenclature"@en ;
+    rdfs:isDefinedBy <quantity_kinds> ;
+    skos:definition """A set of values for quantity kinds.
+    AEC3PO includes a set of values for this nomenclature."""@en .
+
 <WidthOfAngledCorridor> a owl:NamedIndividual,
         skos:Concept,
         <QuantityKind> ;
+    dct:description "width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions."@en ;
+    dct:title "width of angled corridor"@en ;
     qudt:applicableUnit unit:CentiM,
         unit:IN,
         unit:M,
@@ -91,42 +171,36 @@
     skos:definition "width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions."@en ;
     skos:prefLabel "width of angled corridor"@en .
 
-qudt:QuantityKind a owl:Class ;
-    rdfs:isDefinedBy <http://qudt.org/2.1/schema/qudt> .
-
-<QuantityKindNomenclature> a owl:NamedIndividual,
-        skos:ConceptScheme ;
-    rdfs:label "Quantity Kind nomenclature"@en ;
-    rdfs:isDefinedBy <quantity_kinds> ;
-    skos:definition """A set of values for quantity kinds.
-    AEC3PO includes a set of values for this nomenclature."""@en .
-
 <PartialSafetyFactor> a owl:NamedIndividual,
         skos:Concept,
         <QuantityKind> ;
+    dct:description "Also written γM, the partial safety factor for resistance."@en ;
+    dct:title "Partial Safety Factor"@en ;
     qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
     skos:definition "Also written γM, the partial safety factor for resistance."@en ;
     skos:prefLabel "Partial Safety Factor"@en .
 
-<QuantityKind> a owl:Class ;
-    rdfs:label "Quantity Kind"@en ;
-    rdfs:comment """A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+owl:NamedIndividual ns1:hasMember <AxialCompressionStress>,
+        <CompressiveForce>,
+        <ModificationFactorKmod>,
+        <ModularRoomHeight>,
+        <PartialSafetyFactor>,
+        <PartialSafetyFactor0>,
+        <PartialSafetyFactor1>,
+        <QuantityKindNomenclature>,
+        <WidthOfAngledCorridor> .
 
-  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
-
-  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
-    """@en ;
-    rdfs:isDefinedBy <quantity_kinds> ;
-    rdfs:subClassOf qudt:QuantityKind,
-        dul:Region,
-        skos:Concept ;
-    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue <QuantityKindNomenclature> ;
-                        owl:onProperty skos:inScheme ] ) ] ;
-    skos:example "Length, Area, U-Value."@en ;
-    skos:note "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en .
+skos:Concept ns1:hasMember <AxialCompressionStress>,
+        <CompressiveForce>,
+        <ModificationFactorKmod>,
+        <ModularRoomHeight>,
+        <PartialSafetyFactor>,
+        <PartialSafetyFactor0>,
+        <PartialSafetyFactor1>,
+        <WidthOfAngledCorridor> ;
+    ns1:superClassOf <QuantityKind> .
 
 <quantity_kinds> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -141,4 +215,14 @@ qudt:QuantityKind a owl:Class ;
     dct:title "AEC3PO: Quantity Kinds"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+
+_:n69665afa4c3445ff93f7bf8912ab2b55b3 rdf:first skos:Concept ;
+    rdf:rest ( _:n69665afa4c3445ff93f7bf8912ab2b55b2 ) .
+
+_:n69665afa4c3445ff93f7bf8912ab2b55b1 a owl:Class ;
+    owl:intersectionOf _:n69665afa4c3445ff93f7bf8912ab2b55b3 .
+
+_:n69665afa4c3445ff93f7bf8912ab2b55b2 a owl:Restriction ;
+    owl:hasValue <QuantityKindNomenclature> ;
+    owl:onProperty skos:inScheme .
 

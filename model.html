@@ -292,10 +292,20 @@ td {
         "@id": "https://w3id.org/lbd/aec3po/amna"
       }
     ],
+    "https://schema.org/dateCreated": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-08-16"
+      }
+    ],
     "https://schema.org/dateModified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
         "@value": "2023-08-15"
+      },
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2024-02-28"
       }
     ],
     "https://schema.org/description": [
@@ -585,14 +595,35 @@ td {
      </div>
      <div>
       <dt>
+       <a class="hover_property" href="http://purl.org/dc/terms/created" title="Date of creation of the resource. Defined in DCMI Metadata Terms">
+        Date Created
+       </a>
+      </dt>
+      <dd>
+       <p>
+        2023-08-16
+       </p>
+      </dd>
+     </div>
+     <div>
+      <dt>
        <a class="hover_property" href="http://purl.org/dc/terms/modified" title="Date on which the resource was changed. Defined in DCMI Metadata Terms">
         Date Modified
        </a>
       </dt>
       <dd>
-       <p>
-        2023-08-15
-       </p>
+       <ul>
+        <li>
+         <p>
+          2023-08-15
+         </p>
+        </li>
+        <li>
+         <p>
+          2024-02-28
+         </p>
+        </li>
+       </ul>
       </dd>
      </div>
      <div>
@@ -1210,8 +1241,8 @@ td {
        </th>
        <td>
         <span>
-         <a href="https://schema.org/Place">
-          schema:Place
+         <a href="#AdministrativeArea">
+          aec3po:AdministrativeArea
          </a>
          <sup class="sup-c" title="OWL/RDFS Class">
           c
@@ -1221,8 +1252,8 @@ td {
          or
         </span>
         <span>
-         <a href="#AdministrativeArea">
-          aec3po:AdministrativeArea
+         <a href="https://schema.org/Place">
+          schema:Place
          </a>
          <sup class="sup-c" title="OWL/RDFS Class">
           c
@@ -1707,6 +1738,14 @@ td {
        http://www.w3.org/2002/07/owl#
       </code>
      </dd>
+     <dt id="prov">
+      prov
+     </dt>
+     <dd>
+      <code>
+       http://www.w3.org/ns/prov#
+      </code>
+     </dd>
      <dt id="rdf">
       rdf
      </dt>
@@ -1935,6 +1974,11 @@ td {
       <li>
        <a href="#owl">
         owl
+       </a>
+      </li>
+      <li>
+       <a href="#prov">
+        prov
        </a>
       </li>
       <li>

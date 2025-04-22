@@ -3,31 +3,20 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix saref: <https://saref.etsi.org/core/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<hasProperty> a owl:ObjectProperty ;
-    rdfs:label "has Property"@en ;
-    rdfs:comment "Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it."@en ;
-    rdfs:domain <FeatureOfInterest> ;
-    rdfs:isDefinedBy <feature_of_interest> ;
-    rdfs:range <Property> ;
-    skos:example "Links a space to the area property of that space, a wall to the U-value property of that wall..."@en .
-
-<hasQuantityKind> a owl:ObjectProperty ;
-    rdfs:label "has quantity kind"@en ;
-    rdfs:comment "Links a property to its quantity kind"@en ;
-    rdfs:domain <Property> ;
-    rdfs:isDefinedBy <feature_of_interest> ;
-    rdfs:range <QuantityKind> ;
-    skos:example "A space area property to the property kind \"area\"."@en .
-
-<FeatureOfInterest> a owl:Class ;
+<FeatureOfInterest> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Feature Of Interest"@en ;
+    dct:description "The object whose conformance against checks is verified."@en ;
+    dct:title "Feature Of Interest"@en ;
     rdfs:comment "The object whose conformance against checks is verified."@en ;
     rdfs:isDefinedBy <feature_of_interest> ;
     rdfs:subClassOf dul:Object,
@@ -36,20 +25,71 @@
     skos:note """It is expected that classes in other ontologies are used to multi-type instances of FeatureOfInterest.
   For example a feature of interest may also be:
   - a bot:Zone or a bot:Element
-  - a ifc:IfcRamp, a ifc:IfcSurfaceFeature"""@en .
+  - a ifc:IfcRamp, a ifc:IfcSurfaceFeature"""@en ;
+    ns1:inDomainOf <hasProperty> .
 
-<QuantityKind> a owl:Class ;
-    rdfs:label "Quantity Kind"@en ;
-    rdfs:comment "A kind of quantity."@en ;
-    rdfs:isDefinedBy <feature_of_interest> ;
-    skos:example "height, area, U-value"@en .
-
-<Property> a owl:Class ;
+<Property> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Property"@en ;
+    dct:description "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en ;
+    dct:title "Property"@en ;
     rdfs:comment "An aspect of a feature of interest that is intrinsic to and cannot exist without the feature of interest."@en ;
     rdfs:isDefinedBy <feature_of_interest> ;
     rdfs:subClassOf dul:Quality ;
-    skos:example "The height of a building, the area of a space, the U-value of a wall"@en .
+    skos:example "The height of a building, the area of a space, the U-value of a wall"@en ;
+    ns1:inDomainOf <hasQuantityKind> ;
+    ns1:inRangeOf <hasProperty> .
+
+<QuantityKind> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Quantity Kind"@en ;
+    dct:description "A kind of quantity."@en ;
+    dct:title "Quantity Kind"@en ;
+    rdfs:comment "A kind of quantity."@en ;
+    rdfs:isDefinedBy <feature_of_interest> ;
+    skos:example "height, area, U-value"@en ;
+    ns1:inRangeOf <hasQuantityKind> .
+
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+dul:Object ns1:superClassOf <FeatureOfInterest> .
+
+dul:Quality ns1:superClassOf <Property> .
+
+owl:Ontology ns1:hasMember <feature_of_interest> .
+
+saref:FeatureOfInterest ns1:superClassOf <FeatureOfInterest> .
+
+owl:ObjectProperty ns1:hasMember <hasProperty>,
+        <hasQuantityKind> .
+
+rdfs:Class ns1:hasMember <FeatureOfInterest>,
+        <Property>,
+        <QuantityKind> .
+
+owl:Class ns1:hasMember <FeatureOfInterest>,
+        <Property>,
+        <QuantityKind> .
+
+<hasProperty> a owl:ObjectProperty ;
+    rdfs:label "has Property"@en ;
+    dct:description "Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it."@en ;
+    dct:title "has Property"@en ;
+    rdfs:comment "Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it."@en ;
+    rdfs:domain <FeatureOfInterest> ;
+    rdfs:isDefinedBy <feature_of_interest> ;
+    rdfs:range <Property> ;
+    skos:example "Links a space to the area property of that space, a wall to the U-value property of that wall..."@en .
+
+<hasQuantityKind> a owl:ObjectProperty ;
+    rdfs:label "has quantity kind"@en ;
+    dct:description "Links a property to its quantity kind"@en ;
+    dct:title "has quantity kind"@en ;
+    rdfs:comment "Links a property to its quantity kind"@en ;
+    rdfs:domain <Property> ;
+    rdfs:isDefinedBy <feature_of_interest> ;
+    rdfs:range <QuantityKind> ;
+    skos:example "A space area property to the property kind \"area\"."@en .
 
 <feature_of_interest> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;

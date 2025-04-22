@@ -2,20 +2,30 @@
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:vann="http://purl.org/vocab/vann/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:qudt="http://qudt.org/schema/qudt/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:qudt="http://qudt.org/schema/qudt/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns1="https://w3id.org/profile/ontdoc/"
+  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:vann="http://purl.org/vocab/vann/"
   xmlns:cc="http://creativecommons.org/ns#"
 >
-  <owl:NamedIndividual rdf:about="AxialCompressionStress">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">axial compression stress</skos:prefLabel>
-    <skos:definition>also known as fc0k</skos:definition>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M-1H0T-2D0"/>
+  <owl:Class rdf:about="QuantityKind">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="QuantityKind"/>
+        <ns1:hasMember rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
+    <rdfs:comment xml:lang="en">A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+
+  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
+
+  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+    </rdfs:comment>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="quantity_kinds">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -32,26 +42,109 @@
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-29</dct:modified>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="CompressiveForce">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">compressive force</skos:prefLabel>
-    <skos:definition>Force tending to reduce the size of a body.</skos:definition>
-    <qudt:symbol>C</qudt:symbol>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-2D0"/>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Force"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="PartialSafetyFactor0">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">Partial Safety Factor</skos:prefLabel>
-    <skos:definition xml:lang="en">Also written γM0, the partial safety factor for resistance related to member resistance without instability.</skos:definition>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:broader>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <ns1:superClassOf rdf:resource="QuantityKind"/>
+        <ns1:hasMember rdf:resource="ModularRoomHeight"/>
+        <ns1:hasMember rdf:resource="WidthOfAngledCorridor"/>
+        <ns1:hasMember rdf:resource="CompressiveForce"/>
+        <ns1:hasMember rdf:resource="PartialSafetyFactor"/>
+        <ns1:hasMember rdf:resource="PartialSafetyFactor0"/>
+        <ns1:hasMember rdf:resource="PartialSafetyFactor1"/>
+        <ns1:hasMember rdf:resource="AxialCompressionStress"/>
+        <ns1:hasMember rdf:resource="ModificationFactorKmod"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region">
+        <ns1:superClassOf rdf:resource="QuantityKind"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+    <skos:example xml:lang="en">Length, Area, U-Value.</skos:example>
+    <skos:note xml:lang="en">Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as "Length" or "Thermal Transmittance" is a maximal Region, and a specific quantity value such as "13 m" or "3.5 W/(m^2.K)" is a minimal Region.</skos:note>
+    <owl:equivalentClass>
+      <owl:Class rdf:nodeID="n69665afa4c3445ff93f7bf8912ab2b55b1">
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+          <owl:Restriction rdf:nodeID="n69665afa4c3445ff93f7bf8912ab2b55b2">
+            <owl:hasValue>
+              <owl:NamedIndividual rdf:about="QuantityKindNomenclature">
+                <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+                <rdfs:label xml:lang="en">Quantity Kind nomenclature</rdfs:label>
+                <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+                <skos:definition xml:lang="en">A set of values for quantity kinds.
+    AEC3PO includes a set of values for this nomenclature.</skos:definition>
+                <dct:title xml:lang="en">Quantity Kind nomenclature</dct:title>
+                <dct:description xml:lang="en">A set of values for quantity kinds.
+    AEC3PO includes a set of values for this nomenclature.</dct:description>
+              </owl:NamedIndividual>
+            </owl:hasValue>
+            <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <dct:title xml:lang="en">Quantity Kind</dct:title>
+    <dct:description xml:lang="en">A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
+
+  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
+
+  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
+    </dct:description>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="ModularRoomHeight">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="QuantityKind"/>
+        <skos:prefLabel xml:lang="en">modular room height</skos:prefLabel>
+        <skos:definition xml:lang="en">vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling.</skos:definition>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/CentiM"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/IN"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/MilliIN"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
+        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T0D0"/>
+        <qudt:normativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/obp/ui/#iso:std:iso:6707:-1:ed-6:v1:en:term:3.7.2.47</qudt:normativeReference>
+        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+        <dct:title xml:lang="en">modular room height</dct:title>
+        <dct:description xml:lang="en">vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="WidthOfAngledCorridor">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="QuantityKind"/>
+        <skos:prefLabel xml:lang="en">width of angled corridor</skos:prefLabel>
+        <skos:definition xml:lang="en">width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions.</skos:definition>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/CentiM"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/IN"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/MilliIN"/>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
+        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T0D0"/>
+        <qudt:normativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/obp/ui/#iso:std:iso:7176:-5:ed-2:v1:en:term:3.25</qudt:normativeReference>
+        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+        <dct:title xml:lang="en">width of angled corridor</dct:title>
+        <dct:description xml:lang="en">width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="CompressiveForce">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="QuantityKind"/>
+        <skos:prefLabel xml:lang="en">compressive force</skos:prefLabel>
+        <skos:definition>Force tending to reduce the size of a body.</skos:definition>
+        <qudt:symbol>C</qudt:symbol>
+        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M1H0T-2D0"/>
+        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Force"/>
+        <dct:title xml:lang="en">compressive force</dct:title>
+        <dct:description>Force tending to reduce the size of a body.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
       <owl:NamedIndividual rdf:about="PartialSafetyFactor">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="QuantityKind"/>
@@ -60,92 +153,93 @@
         <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
         <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
         <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+        <dct:title xml:lang="en">Partial Safety Factor</dct:title>
+        <dct:description xml:lang="en">Also written γM, the partial safety factor for resistance.</dct:description>
       </owl:NamedIndividual>
-    </skos:broader>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="ModificationFactorKmod">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">Modification Factor Kmod</skos:prefLabel>
-    <skos:definition xml:lang="en">Modification Factor to take into account the duration of load</skos:definition>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="PartialSafetyFactor1">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <rdfs:label xml:lang="en">Partial Safety Factor</rdfs:label>
-    <skos:definition xml:lang="en">Also written γM1, the partial safety factor for resistance related to any limit state where instability governs.</skos:definition>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:broader rdf:resource="PartialSafetyFactor"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="WidthOfAngledCorridor">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">width of angled corridor</skos:prefLabel>
-    <skos:definition xml:lang="en">width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions.</skos:definition>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/CentiM"/>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/IN"/>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M"/>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/MilliIN"/>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T0D0"/>
-    <qudt:normativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/obp/ui/#iso:std:iso:7176:-5:ed-2:v1:en:term:3.25</qudt:normativeReference>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
-  </owl:NamedIndividual>
-  <owl:NamedIndividual rdf:about="ModularRoomHeight">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="QuantityKind"/>
-    <skos:prefLabel xml:lang="en">modular room height</skos:prefLabel>
-    <skos:definition xml:lang="en">vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling.</skos:definition>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/CentiM"/>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/IN"/>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/M"/>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/MilliIN"/>
-    <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
-    <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M0H0T0D0"/>
-    <qudt:normativeReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iso.org/obp/ui/#iso:std:iso:6707:-1:ed-6:v1:en:term:3.7.2.47</qudt:normativeReference>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
-  </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="PartialSafetyFactor0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="QuantityKind"/>
+        <skos:prefLabel xml:lang="en">Partial Safety Factor</skos:prefLabel>
+        <skos:definition xml:lang="en">Also written γM0, the partial safety factor for resistance related to member resistance without instability.</skos:definition>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
+        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
+        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+        <skos:broader rdf:resource="PartialSafetyFactor"/>
+        <dct:title xml:lang="en">Partial Safety Factor</dct:title>
+        <dct:description xml:lang="en">Also written γM0, the partial safety factor for resistance related to member resistance without instability.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="PartialSafetyFactor1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="QuantityKind"/>
+        <rdfs:label xml:lang="en">Partial Safety Factor</rdfs:label>
+        <skos:definition xml:lang="en">Also written γM1, the partial safety factor for resistance related to any limit state where instability governs.</skos:definition>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
+        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
+        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+        <skos:broader rdf:resource="PartialSafetyFactor"/>
+        <dct:title xml:lang="en">Partial Safety Factor</dct:title>
+        <dct:description xml:lang="en">Also written γM1, the partial safety factor for resistance related to any limit state where instability governs.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="AxialCompressionStress">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="QuantityKind"/>
+        <skos:prefLabel xml:lang="en">axial compression stress</skos:prefLabel>
+        <skos:definition>also known as fc0k</skos:definition>
+        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L1I0M-1H0T-2D0"/>
+        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+        <dct:title xml:lang="en">axial compression stress</dct:title>
+        <dct:description>also known as fc0k</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="ModificationFactorKmod">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="QuantityKind"/>
+        <skos:prefLabel xml:lang="en">Modification Factor Kmod</skos:prefLabel>
+        <skos:definition xml:lang="en">Modification Factor to take into account the duration of load</skos:definition>
+        <qudt:applicableUnit rdf:resource="http://qudt.org/vocab/unit/UNITLESS"/>
+        <qudt:hasDimensionVector rdf:resource="http://qudt.org/vocab/dimensionvector/A0E0L0I0M0H0T0D0"/>
+        <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
+        <dct:title xml:lang="en">Modification Factor Kmod</dct:title>
+        <dct:description xml:lang="en">Modification Factor to take into account the duration of load</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+  </owl:Class>
   <owl:Class rdf:about="http://qudt.org/schema/qudt/QuantityKind">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/qudt"/>
+    <ns1:superClassOf rdf:resource="QuantityKind"/>
   </owl:Class>
-  <owl:NamedIndividual rdf:about="QuantityKindNomenclature">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    <rdfs:label xml:lang="en">Quantity Kind nomenclature</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <skos:definition xml:lang="en">A set of values for quantity kinds.
-    AEC3PO includes a set of values for this nomenclature.</skos:definition>
-  </owl:NamedIndividual>
-  <owl:Class rdf:about="QuantityKind">
-    <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
-    <rdfs:comment xml:lang="en">A Quantity Kind is any observable property that can be quantified numerically. Familiar examples include physical properties such as length, mass, time, force, energy, power, electric charge, etc. Less familiar examples include currency, interest rate, price to earning ratio, and information capacity.
-
-  It is expected that the property kinds are organized in a hierarchy of concepts using `skos:broader`/`skos:narrower`.
-
-  Property kinds may be taken from the [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
-    </rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="quantity_kinds"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
-    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
-    <skos:example xml:lang="en">Length, Area, U-Value.</skos:example>
-    <skos:note xml:lang="en">Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as "Length" or "Thermal Transmittance" is a maximal Region, and a specific quantity value such as "13 m" or "3.5 W/(m^2.K)" is a minimal Region.</skos:note>
-    <owl:equivalentClass>
-      <rdf:Description rdf:nodeID="n87c582c9169542d9b4b8c83c6388144ab1">
-        <owl:intersectionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-          <owl:Restriction rdf:nodeID="n87c582c9169542d9b4b8c83c6388144ab2">
-            <owl:hasValue rdf:resource="QuantityKindNomenclature"/>
-            <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </rdf:Description>
-    </owl:equivalentClass>
-  </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
+    <ns1:hasMember rdf:resource="QuantityKindNomenclature"/>
+    <ns1:hasMember rdf:resource="ModularRoomHeight"/>
+    <ns1:hasMember rdf:resource="WidthOfAngledCorridor"/>
+    <ns1:hasMember rdf:resource="CompressiveForce"/>
+    <ns1:hasMember rdf:resource="PartialSafetyFactor"/>
+    <ns1:hasMember rdf:resource="PartialSafetyFactor0"/>
+    <ns1:hasMember rdf:resource="PartialSafetyFactor1"/>
+    <ns1:hasMember rdf:resource="AxialCompressionStress"/>
+    <ns1:hasMember rdf:resource="ModificationFactorKmod"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="QuantityKind"/>
+    <ns1:hasMember rdf:resource="http://qudt.org/schema/qudt/QuantityKind"/>
+    <ns1:hasMember rdf:nodeID="n69665afa4c3445ff93f7bf8912ab2b55b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="n69665afa4c3445ff93f7bf8912ab2b55b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+    <ns1:hasMember rdf:resource="QuantityKindNomenclature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="quantity_kinds"/>
+  </rdf:Description>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
 </rdf:RDF>

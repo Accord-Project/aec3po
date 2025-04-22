@@ -2,61 +2,128 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<Container> a owl:Class ;
-    rdfs:label "Container"@en ;
-    rdfs:comment "A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)" ;
-    rdfs:isDefinedBy <table> ;
-    rdfs:subClassOf <DocumentSubdivision> .
+_:n4563e970075e4db6829112c165141610b1 a rdfs:Class,
+        owl:Class ;
+    owl:unionOf ( <Table> <Image> <Row> <Column> ) ;
+    ns1:inDomainOf <contains> .
 
-<caption> a owl:DatatypeProperty ;
-    rdfs:label "caption"@en ;
-    rdfs:comment "The caption of a table, image, etc. "@en ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( <Table> <Image> ) ] ;
-    rdfs:isDefinedBy <table> .
+_:n4563e970075e4db6829112c165141610b12 a rdfs:Class,
+        owl:Class ;
+    owl:unionOf ( <Table> <Image> ) ;
+    ns1:inDomainOf <caption> .
 
-<contains> a owl:ObjectProperty ;
-    rdfs:label "Contains"@en ;
-    rdfs:comment "A container contains a table and its caption. A table contains row, columns and other elements."@en ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( <Table> <Image> <Row> <Column> ) ] ;
-    rdfs:isDefinedBy <table> .
+_:n4563e970075e4db6829112c165141610b6 a rdfs:Class,
+        owl:Class ;
+    owl:unionOf ( <Table> <Image> <Row> <Column> <Cell> ) ;
+    ns1:inRangeOf <isContainedIn> .
 
-<isContainedIn> a owl:ObjectProperty ;
-    rdfs:label "is contained by"@en ;
-    rdfs:comment "A table contains row, columns and other elements."@en ;
-    rdfs:isDefinedBy <table> ;
-    rdfs:range [ a owl:Class ;
-            owl:unionOf ( <Table> <Image> <Row> <Column> <Cell> ) ] .
-
-<Cell> a owl:Class ;
+<Cell> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Cell"@en ;
+    dct:description "A cell in a table. Cells are contained in rows and columns" ;
+    dct:title "Cell"@en ;
     rdfs:comment "A cell in a table. Cells are contained in rows and columns" ;
     rdfs:isDefinedBy <table> ;
     rdfs:subClassOf <Table> .
 
-<Column> a owl:Class ;
+<Column> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Column"@en ;
+    dct:description "A column in a table." ;
+    dct:title "Column"@en ;
     rdfs:comment "A column in a table." ;
     rdfs:isDefinedBy <table> ;
     rdfs:subClassOf <Table> .
 
-<Row> a owl:Class ;
+<Container> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Container"@en ;
+    dct:description "A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)" ;
+    dct:title "Container"@en ;
+    rdfs:comment "A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)" ;
+    rdfs:isDefinedBy <table> ;
+    rdfs:subClassOf <DocumentSubdivision> .
+
+<Row> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Row"@en ;
+    dct:description "A row in a table." ;
+    dct:title "Row"@en ;
     rdfs:comment "A row in a table." ;
     rdfs:isDefinedBy <table> ;
     rdfs:subClassOf <Table> .
 
-<Table> a owl:Class ;
+<Table> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Table"@en ;
+    dct:description "A table is a form of representing information or data in rows and columns. Tables are described by captions." ;
+    dct:title "Table"@en ;
     rdfs:comment "A table is a form of representing information or data in rows and columns. Tables are described by captions." ;
+    rdfs:isDefinedBy <table> ;
+    ns1:superClassOf <Cell>,
+        <Column>,
+        <Row> .
+
+owl:DatatypeProperty ns1:hasMember <caption> .
+
+owl:Ontology ns1:hasMember <table> .
+
+<DocumentSubdivision> ns1:superClassOf <Container> .
+
+<edlira> a prov:Agent .
+
+owl:ObjectProperty ns1:hasMember <contains>,
+        <isContainedIn> .
+
+<caption> a owl:DatatypeProperty ;
+    rdfs:label "caption"@en ;
+    dct:description "The caption of a table, image, etc. "@en ;
+    dct:title "caption"@en ;
+    rdfs:comment "The caption of a table, image, etc. "@en ;
+    rdfs:domain _:n4563e970075e4db6829112c165141610b12 ;
     rdfs:isDefinedBy <table> .
+
+<contains> a owl:ObjectProperty ;
+    rdfs:label "Contains"@en ;
+    dct:description "A container contains a table and its caption. A table contains row, columns and other elements."@en ;
+    dct:title "Contains"@en ;
+    rdfs:comment "A container contains a table and its caption. A table contains row, columns and other elements."@en ;
+    rdfs:domain _:n4563e970075e4db6829112c165141610b1 ;
+    rdfs:isDefinedBy <table> .
+
+<isContainedIn> a owl:ObjectProperty ;
+    rdfs:label "is contained by"@en ;
+    dct:description "A table contains row, columns and other elements."@en ;
+    dct:title "is contained by"@en ;
+    rdfs:comment "A table contains row, columns and other elements."@en ;
+    rdfs:isDefinedBy <table> ;
+    rdfs:range _:n4563e970075e4db6829112c165141610b6 .
+
+rdfs:Class ns1:hasMember _:n4563e970075e4db6829112c165141610b1,
+        _:n4563e970075e4db6829112c165141610b12,
+        _:n4563e970075e4db6829112c165141610b6,
+        <Cell>,
+        <Column>,
+        <Container>,
+        <Row>,
+        <Table> .
+
+owl:Class ns1:hasMember _:n4563e970075e4db6829112c165141610b1,
+        _:n4563e970075e4db6829112c165141610b12,
+        _:n4563e970075e4db6829112c165141610b6,
+        <Cell>,
+        <Column>,
+        <Container>,
+        <Row>,
+        <Table> .
 
 <table> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;

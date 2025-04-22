@@ -2,16 +2,62 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<CheckMethodComparator> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "check method comparator"@en ;
+    dct:description "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodComparatorNomenclature"@en ;
+    dct:title "check method comparator"@en ;
+    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodComparatorNomenclature"@en ;
+    rdfs:isDefinedBy <check_method_comparators> ;
+    rdfs:subClassOf skos:Concept,
+        <CheckMethod> ;
+    owl:equivalentClass _:n4414a3ff1fc64d37aaa38d52a459bdcbb1 ;
+    ns1:hasMember <CheckMethodComparator-ge>,
+        <CheckMethodComparator-gt>,
+        <CheckMethodComparator-le>,
+        <CheckMethodComparator-logicalOR>,
+        <CheckMethodComparator-lt>,
+        <CheckMethodComparator-neq>,
+        <CheckMethodcomparator-logicalAND> .
+
+rdfs:Class ns1:hasMember <CheckMethodComparator> .
+
+owl:FunctionalProperty ns1:hasMember <hasComparator> .
+
+owl:ObjectProperty ns1:hasMember <hasComparator> .
+
+owl:Ontology ns1:hasMember <check_method_comparators> .
+
+owl:Restriction ns1:hasMember _:n4414a3ff1fc64d37aaa38d52a459bdcbb2 .
+
+skos:ConceptScheme ns1:hasMember <CheckMethodComparatorNomenclature> .
+
+<CheckMethodcomparator> ns1:hasMember <CheckMethodcomparator-eq> .
+
+<amna> a prov:Agent .
+
+<hasDesign> ns1:superPropertyOf <hasComparator> .
+
+owl:Class ns1:hasMember _:n4414a3ff1fc64d37aaa38d52a459bdcbb1,
+        <CheckMethodComparator> .
+
+<CheckMethod> ns1:inRangeOf <hasComparator> ;
+    ns1:superClassOf <CheckMethodComparator> .
+
 <CheckMethodComparator-ge> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodComparator> ;
+    dct:description "greater-equal comparator."@en ;
+    dct:title "greater equal"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition "greater-equal comparator."@en ;
     skos:inScheme <CheckMethodComparatorNomenclature> ;
@@ -21,6 +67,8 @@
 <CheckMethodComparator-gt> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodComparator> ;
+    dct:description "greater-than comparator."@en ;
+    dct:title "greater than"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition "greater-than comparator."@en ;
     skos:inScheme <CheckMethodComparatorNomenclature> ;
@@ -30,6 +78,8 @@
 <CheckMethodComparator-le> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodComparator> ;
+    dct:description "less-equal comparator."@en ;
+    dct:title "less equal"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition "less-equal comparator."@en ;
     skos:inScheme <CheckMethodComparatorNomenclature> ;
@@ -39,6 +89,8 @@
 <CheckMethodComparator-logicalOR> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodComparator> ;
+    dct:description "logical OR comparator."@en ;
+    dct:title "logicalOR"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition "logical OR comparator."@en ;
     skos:inScheme <CheckMethodComparatorNomenclature> ;
@@ -48,6 +100,8 @@
 <CheckMethodComparator-lt> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodComparator> ;
+    dct:description "less-than comparator."@en ;
+    dct:title "less than"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition "less-than comparator."@en ;
     skos:inScheme <CheckMethodComparatorNomenclature> ;
@@ -57,6 +111,8 @@
 <CheckMethodComparator-neq> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodComparator> ;
+    dct:description "not equal-to comparator."@en ;
+    dct:title "not equal-to"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition "not equal-to comparator."@en ;
     skos:inScheme <CheckMethodComparatorNomenclature> ;
@@ -66,39 +122,55 @@
 <CheckMethodcomparator-eq> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodcomparator> ;
+    dct:description "equal-to comparator."@en ;
+    dct:title "equal-to"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition "equal-to comparator."@en ;
     skos:inScheme <CheckMethodComparatorNomenclature> ;
     skos:prefLabel "equal-to"@en ;
     skos:topConceptOf <CheckMethodComparatorNomenclature> .
 
-<hasComparator> a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "has comparator"@en ;
-    rdfs:comment """The comparator of a feature of interest or a property of that is needed by the check method.
-  A set of comparators is defined by aec3po in the corresponding concept scheme."""@en ;
-    rdfs:isDefinedBy <check_method_comparators> ;
-    rdfs:range <CheckMethod> ;
-    rdfs:subPropertyOf <hasDesign> .
-
 <CheckMethodcomparator-logicalAND> a owl:NamedIndividual,
         skos:Concept,
         <CheckMethodComparator> ;
+    dct:description "logical AND comparator."@en ;
+    dct:title "logicalAND"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition "logical AND comparator."@en ;
     skos:inScheme <CheckMethodComparatorNomenclature> ;
     skos:prefLabel "logicalAND"@en ;
     skos:topConceptOf <CheckMethodComparatorNomenclature> .
 
-<CheckMethodComparator> a owl:Class ;
-    rdfs:label "check method comparator"@en ;
-    rdfs:comment "Formally defined as the set of skos:Concept in concept scheme aec3po:CheckMethodComparatorNomenclature"@en ;
+<hasComparator> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has comparator"@en ;
+    dct:description """The comparator of a feature of interest or a property of that is needed by the check method.
+  A set of comparators is defined by aec3po in the corresponding concept scheme."""@en ;
+    dct:title "has comparator"@en ;
+    rdfs:comment """The comparator of a feature of interest or a property of that is needed by the check method.
+  A set of comparators is defined by aec3po in the corresponding concept scheme."""@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
-    rdfs:subClassOf skos:Concept,
-        <CheckMethod> ;
-    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue <CheckMethodComparatorNomenclature> ;
-                        owl:onProperty skos:inScheme ] ) ] .
+    rdfs:range <CheckMethod> ;
+    rdfs:subPropertyOf <hasDesign> .
+
+owl:NamedIndividual ns1:hasMember <CheckMethodComparator-ge>,
+        <CheckMethodComparator-gt>,
+        <CheckMethodComparator-le>,
+        <CheckMethodComparator-logicalOR>,
+        <CheckMethodComparator-lt>,
+        <CheckMethodComparator-neq>,
+        <CheckMethodcomparator-eq>,
+        <CheckMethodcomparator-logicalAND> .
+
+skos:Concept ns1:hasMember <CheckMethodComparator-ge>,
+        <CheckMethodComparator-gt>,
+        <CheckMethodComparator-le>,
+        <CheckMethodComparator-logicalOR>,
+        <CheckMethodComparator-lt>,
+        <CheckMethodComparator-neq>,
+        <CheckMethodcomparator-eq>,
+        <CheckMethodcomparator-logicalAND> ;
+    ns1:superClassOf <CheckMethodComparator> .
 
 <check_method_comparators> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -114,6 +186,20 @@
 
 <CheckMethodComparatorNomenclature> a skos:ConceptScheme ;
     rdfs:label "check method nomenclature"@en ;
+    dct:description """A set of comparators for the check method.
+
+  AEC3PO includes a set of comparators for this nomenclature.
+
+  These comparators are :
+
+  - _eq : equal-to comparator;
+  - comparator_neq : not equal-to comparator.
+  - comparator_lt : less-than comparator.
+  - comparator_le : less-equal comparator.
+  - comparator_gt : greater-than comparator.
+  - comparator_ge : greater-equal comparator.
+  """@en ;
+    dct:title "check method nomenclature"@en ;
     rdfs:isDefinedBy <check_method_comparators> ;
     skos:definition """A set of comparators for the check method.
 
@@ -136,4 +222,14 @@
         <CheckMethodcomparator-logicalOR>,
         <CheckMethodcomparator-lt>,
         <CheckMethodcomparator-neq> .
+
+_:n4414a3ff1fc64d37aaa38d52a459bdcbb3 rdf:first skos:Concept ;
+    rdf:rest ( _:n4414a3ff1fc64d37aaa38d52a459bdcbb2 ) .
+
+_:n4414a3ff1fc64d37aaa38d52a459bdcbb1 a owl:Class ;
+    owl:intersectionOf _:n4414a3ff1fc64d37aaa38d52a459bdcbb3 .
+
+_:n4414a3ff1fc64d37aaa38d52a459bdcbb2 a owl:Restriction ;
+    owl:hasValue <CheckMethodComparatorNomenclature> ;
+    owl:onProperty skos:inScheme .
 

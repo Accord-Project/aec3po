@@ -3,54 +3,25 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<endTime> a owl:DatatypeProperty ;
-    rdfs:label "end time"@en ;
-    rdfs:comment "the end time of the checking act"@en ;
-    rdfs:domain <CheckingAct> ;
-    rdfs:isDefinedBy <checking_act> ;
-    rdfs:range xsd:dateTime .
-
-<startTime> a owl:DatatypeProperty ;
-    rdfs:label "start time"@en ;
-    rdfs:comment "the start time of the checking act"@en ;
-    rdfs:domain <CheckingAct> ;
-    rdfs:isDefinedBy <checking_act> ;
-    rdfs:range xsd:dateTime .
-
-<checked> a owl:ObjectProperty ;
-    rdfs:label "checked"@en ;
-    rdfs:comment "Links a checking act to some entity (ex. statement, feature of interest, property) it checked."@en ;
-    rdfs:domain <CheckingAct> ;
-    rdfs:isDefinedBy <checking_act> .
-
-<hasReport> a owl:ObjectProperty ;
-    rdfs:label "has report"@en ;
-    rdfs:comment "Links a checking act to the resulting compliance verification report."@en ;
-    rdfs:domain <CheckingAct> ;
-    rdfs:isDefinedBy <checking_act> ;
-    rdfs:range <ComplianceVerificationReport> .
-
-<madeBy> a owl:ObjectProperty ;
-    rdfs:label "made by"@en ;
-    rdfs:comment "Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier)."@en ;
-    rdfs:domain <CheckingAct> ;
-    rdfs:isDefinedBy <checking_act> ;
-    rdfs:range <ProcessVerifier> .
-
-<usedMethod> a owl:ObjectProperty ;
-    rdfs:label "used method"@en ;
-    rdfs:comment "Links a checking act to the method it used (a aec3po:CheckMethod)."@en ;
-    rdfs:domain <CheckingAct> ;
-    rdfs:isDefinedBy <checking_act> ;
-    rdfs:range <CheckMethod> .
-
-<CheckingAct> a owl:Class ;
+<CheckingAct> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Checking Act"@en ;
+    dct:description """Act of checking some entities for something and generating a compliance verification report. 
+    
+- Links to the check method that was used, which operationalizes a statement in a document;
+- Links to the process verifier that made the checking act;
+- Links to the entities that are checked;
+- Links to compliance verification report that resulted.
+
+"""@en ;
+    dct:title "Checking Act"@en ;
     rdfs:comment """Act of checking some entities for something and generating a compliance verification report. 
     
 - Links to the check method that was used, which operationalizes a statement in a document;
@@ -60,19 +31,102 @@
 
 """@en ;
     rdfs:isDefinedBy <checking_act> ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <usedMethod> ;
-            owl:someValuesFrom <CheckMethod> ],
-        [ a owl:Restriction ;
-            owl:onProperty <madeBy> ;
-            owl:someValuesFrom <ProcessVerifier> ],
-        [ a owl:Restriction ;
-            owl:onProperty <checked> ;
-            owl:someValuesFrom owl:Thing ],
-        [ a owl:Restriction ;
-            owl:onProperty <hasReport> ;
-            owl:someValuesFrom <ComplianceVerificationReport> ],
-        dul:Event .
+    rdfs:subClassOf _:ndc14ae47fd7c4ab0b28c586aecca7932b1,
+        _:ndc14ae47fd7c4ab0b28c586aecca7932b2,
+        _:ndc14ae47fd7c4ab0b28c586aecca7932b3,
+        _:ndc14ae47fd7c4ab0b28c586aecca7932b4,
+        dul:Event ;
+    ns1:inDomainOf <checked>,
+        <endTime>,
+        <hasReport>,
+        <madeBy>,
+        <startTime>,
+        <usedMethod> .
+
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+dul:Event ns1:superClassOf <CheckingAct> .
+
+rdfs:Class ns1:hasMember <CheckingAct> .
+
+owl:Class ns1:hasMember <CheckingAct> .
+
+owl:Ontology ns1:hasMember <checking_act> .
+
+xsd:dateTime ns1:inRangeOf <endTime>,
+        <startTime> .
+
+owl:DatatypeProperty ns1:hasMember <endTime>,
+        <startTime> .
+
+<CheckMethod> ns1:inRangeOf <usedMethod> .
+
+<ComplianceVerificationReport> ns1:inRangeOf <hasReport> .
+
+<ProcessVerifier> ns1:inRangeOf <madeBy> .
+
+<checked> a owl:ObjectProperty ;
+    rdfs:label "checked"@en ;
+    dct:description "Links a checking act to some entity (ex. statement, feature of interest, property) it checked."@en ;
+    dct:title "checked"@en ;
+    rdfs:comment "Links a checking act to some entity (ex. statement, feature of interest, property) it checked."@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> .
+
+<endTime> a owl:DatatypeProperty ;
+    rdfs:label "end time"@en ;
+    dct:description "the end time of the checking act"@en ;
+    dct:title "end time"@en ;
+    rdfs:comment "the end time of the checking act"@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range xsd:dateTime .
+
+<startTime> a owl:DatatypeProperty ;
+    rdfs:label "start time"@en ;
+    dct:description "the start time of the checking act"@en ;
+    dct:title "start time"@en ;
+    rdfs:comment "the start time of the checking act"@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range xsd:dateTime .
+
+owl:ObjectProperty ns1:hasMember <checked>,
+        <hasReport>,
+        <madeBy>,
+        <usedMethod> .
+
+owl:Restriction ns1:hasMember _:ndc14ae47fd7c4ab0b28c586aecca7932b1,
+        _:ndc14ae47fd7c4ab0b28c586aecca7932b2,
+        _:ndc14ae47fd7c4ab0b28c586aecca7932b3,
+        _:ndc14ae47fd7c4ab0b28c586aecca7932b4 .
+
+<hasReport> a owl:ObjectProperty ;
+    rdfs:label "has report"@en ;
+    dct:description "Links a checking act to the resulting compliance verification report."@en ;
+    dct:title "has report"@en ;
+    rdfs:comment "Links a checking act to the resulting compliance verification report."@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range <ComplianceVerificationReport> .
+
+<madeBy> a owl:ObjectProperty ;
+    rdfs:label "made by"@en ;
+    dct:description "Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier)."@en ;
+    dct:title "made by"@en ;
+    rdfs:comment "Links a checking act to the process verifier that made it (a aec3po:ProcessVerifier)."@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range <ProcessVerifier> .
+
+<usedMethod> a owl:ObjectProperty ;
+    rdfs:label "used method"@en ;
+    dct:description "Links a checking act to the method it used (a aec3po:CheckMethod)."@en ;
+    dct:title "used method"@en ;
+    rdfs:comment "Links a checking act to the method it used (a aec3po:CheckMethod)."@en ;
+    rdfs:domain <CheckingAct> ;
+    rdfs:isDefinedBy <checking_act> ;
+    rdfs:range <CheckMethod> .
 
 <checking_act> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -86,4 +140,24 @@
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <check_method>,
         <compliance_verification_report> .
+
+_:ndc14ae47fd7c4ab0b28c586aecca7932b1 a owl:Restriction ;
+    owl:onProperty <usedMethod> ;
+    owl:someValuesFrom <CheckMethod> ;
+    ns1:superClassOf <CheckingAct> .
+
+_:ndc14ae47fd7c4ab0b28c586aecca7932b2 a owl:Restriction ;
+    owl:onProperty <madeBy> ;
+    owl:someValuesFrom <ProcessVerifier> ;
+    ns1:superClassOf <CheckingAct> .
+
+_:ndc14ae47fd7c4ab0b28c586aecca7932b3 a owl:Restriction ;
+    owl:onProperty <checked> ;
+    owl:someValuesFrom owl:Thing ;
+    ns1:superClassOf <CheckingAct> .
+
+_:ndc14ae47fd7c4ab0b28c586aecca7932b4 a owl:Restriction ;
+    owl:onProperty <hasReport> ;
+    owl:someValuesFrom <ComplianceVerificationReport> ;
+    ns1:superClassOf <CheckingAct> .
 

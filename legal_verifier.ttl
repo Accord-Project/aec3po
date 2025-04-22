@@ -3,30 +3,58 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<PrivateVerifier> a owl:Class ;
+<LegalVerifier> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Legal Verifier"@en ;
+    dct:description "An entity that has the legal capacity to verify compliance with this regulation."@en ;
+    dct:title "Legal Verifier"@en ;
+    rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en ;
+    rdfs:isDefinedBy <legal_verifier> ;
+    rdfs:subClassOf _:n1d1c62ba23504616b07908665d51a847b1,
+        foaf:Agent ;
+    ns1:superClassOf <PrivateVerifier>,
+        <StateVerifier> .
+
+<PrivateVerifier> a rdfs:Class,
+        owl:Class ;
     rdfs:label "Private Verifier"@en ;
+    dct:description "Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en ;
+    dct:title "Private Verifier"@en ;
     rdfs:comment "Private verifier refers to an individual or organisation in the private sector, responsible for independently assessing and verifying compliance with regulatory, safety, quality, and design requirements in a construction project. "@en ;
     rdfs:isDefinedBy <legal_verifier> ;
     rdfs:subClassOf <LegalVerifier> .
 
-<StateVerifier> a owl:Class ;
+<StateVerifier> a rdfs:Class,
+        owl:Class ;
     rdfs:label "State Verifier"@en ;
+    dct:description "State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. "@en ;
+    dct:title "State Verifier"@en ;
     rdfs:comment "State verifier refers to an individual or organisation in the greater State sector, responsible for assessing and verifying compliance with regulations, legal requirements, and building codes in a construction project. "@en ;
     rdfs:isDefinedBy <legal_verifier> ;
     rdfs:subClassOf <LegalVerifier> .
 
-<LegalVerifier> a owl:Class ;
-    rdfs:label "Legal Verifier"@en ;
-    rdfs:comment "An entity that has the legal capacity to verify compliance with this regulation."@en ;
-    rdfs:isDefinedBy <legal_verifier> ;
-    rdfs:subClassOf [ owl:allValuesFrom <Document> ;
-            owl:onProperty <forDocument> ],
-        foaf:Agent .
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+owl:Ontology ns1:hasMember <legal_verifier> .
+
+owl:Restriction ns1:hasMember _:n1d1c62ba23504616b07908665d51a847b1 .
+
+foaf:Agent ns1:superClassOf <LegalVerifier> .
+
+rdfs:Class ns1:hasMember <LegalVerifier>,
+        <PrivateVerifier>,
+        <StateVerifier> .
+
+owl:Class ns1:hasMember <LegalVerifier>,
+        <PrivateVerifier>,
+        <StateVerifier> .
 
 <legal_verifier> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -39,4 +67,9 @@
     dct:title "AEC3PO: legal verifier"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
+
+_:n1d1c62ba23504616b07908665d51a847b1 a owl:Restriction ;
+    owl:allValuesFrom <Document> ;
+    owl:onProperty <forDocument> ;
+    ns1:superClassOf <LegalVerifier> .
 

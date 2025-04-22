@@ -3,23 +3,64 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dicl: <https://w3id.org/digitalconstruction/0.5/Lifecycle#> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<PermittingStage> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Permitting Stage"@en ;
+    dct:description "The class of permitting stages."@en ;
+    dct:title "Permitting Stage"@en ;
+    rdfs:comment "The class of permitting stages."@en ;
+    rdfs:isDefinedBy <permitting_stage> ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass _:ne5dc1f8852344c34af89b3454b75ae4bb1 ;
+    ns1:hasMember <UK_Building_Control_Submission>,
+        <UK_Planning_Permission> ;
+    ns1:inRangeOf <hasPermittingStage> .
+
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+rdfs:Class ns1:hasMember <PermittingStage> .
+
+owl:ObjectProperty ns1:hasMember <hasPermittingStage> .
+
+owl:Ontology ns1:hasMember <permitting_stage> .
+
+owl:Restriction ns1:hasMember _:ne5dc1f8852344c34af89b3454b75ae4bb2 .
+
+skos:ConceptScheme ns1:hasMember <PermittingStageNomenclature> .
+
+owl:Class ns1:hasMember _:ne5dc1f8852344c34af89b3454b75ae4bb1,
+        <PermittingStage> .
+
+owl:NamedIndividual ns1:hasMember <UK_Building_Control_Submission>,
+        <UK_Planning_Permission> .
+
 <hasPermittingStage> a owl:ObjectProperty ;
     rdfs:label "has permitting stage"@en ;
+    dct:description "Links an entity to the permitting stage this entity pertains"@en ;
+    dct:title "has permitting stage"@en ;
     rdfs:comment "Links an entity to the permitting stage this entity pertains"@en ;
     rdfs:isDefinedBy <permitting_stage> ;
     rdfs:range <PermittingStage> ;
     owl:equivalentProperty dicl:hasStage .
 
+skos:Concept ns1:hasMember <UK_Building_Control_Submission>,
+        <UK_Planning_Permission> ;
+    ns1:superClassOf <PermittingStage> .
+
 <UK_Building_Control_Submission> a owl:NamedIndividual,
         skos:Concept,
         <PermittingStage> ;
+    dct:description "The UK Building Control Submission permitting stage."@en ;
+    dct:title "building control submission"@en ;
     rdfs:isDefinedBy <permitting_stage> ;
     skos:definition "The UK Building Control Submission permitting stage."@en ;
     skos:inScheme <PermittingStageNomenclature> ;
@@ -30,6 +71,8 @@
 <UK_Planning_Permission> a owl:NamedIndividual,
         skos:Concept,
         <PermittingStage> ;
+    dct:description "The UK Planning Permission permitting stage."@en ;
+    dct:title "planning permission"@en ;
     rdfs:isDefinedBy <permitting_stage> ;
     skos:definition "The UK Planning Permission permitting stage."@en ;
     skos:inScheme <PermittingStageNomenclature> ;
@@ -37,17 +80,14 @@
     skos:topConceptOf <PermittingStageNomenclature> ;
     <forAdministrativeArea> <England> .
 
-<PermittingStage> a owl:Class ;
-    rdfs:label "Permitting Stage"@en ;
-    rdfs:comment "The class of permitting stages."@en ;
-    rdfs:isDefinedBy <permitting_stage> ;
-    rdfs:subClassOf skos:Concept ;
-    owl:equivalentClass [ owl:intersectionOf ( skos:Concept [ a owl:Restriction ;
-                        owl:hasValue <PermittingStageNomenclature> ;
-                        owl:onProperty skos:inScheme ] ) ] .
-
 <PermittingStageNomenclature> a skos:ConceptScheme ;
     rdfs:label "Permitting stage nomenclature"@en ;
+    dct:description """A set of values for permitting stages.
+  AEC3PO includes a set of values for this nomenclature.
+  These values are :
+  - UK_Building_Control_Submission;
+  - UK_Planning_Permission."""@en ;
+    dct:title "Permitting stage nomenclature"@en ;
     rdfs:isDefinedBy <permitting_stage> ;
     skos:definition """A set of values for permitting stages.
   AEC3PO includes a set of values for this nomenclature.
@@ -68,4 +108,14 @@
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" ;
     owl:imports <administrative_areas> .
+
+_:ne5dc1f8852344c34af89b3454b75ae4bb3 rdf:first skos:Concept ;
+    rdf:rest ( _:ne5dc1f8852344c34af89b3454b75ae4bb2 ) .
+
+_:ne5dc1f8852344c34af89b3454b75ae4bb1 a owl:Class ;
+    owl:intersectionOf _:ne5dc1f8852344c34af89b3454b75ae4bb3 .
+
+_:ne5dc1f8852344c34af89b3454b75ae4bb2 a owl:Restriction ;
+    owl:hasValue <PermittingStageNomenclature> ;
+    owl:onProperty skos:inScheme .
 

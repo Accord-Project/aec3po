@@ -2,30 +2,57 @@
 @prefix aec3po: <https://w3id.org/lbd/aec3po/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/profile/ontdoc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<IDS> a owl:Class ;
+<DataRequirement> a rdfs:Class,
+        owl:Class ;
+    rdfs:label "Data Requirement"@en ;
+    dct:description "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en ;
+    dct:title "Data Requirement"@en ;
+    rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en ;
+    rdfs:isDefinedBy <data_requirement> ;
+    skos:example "The minimum width of a door can be a data requirement."@en ;
+    ns1:inRangeOf <hasRequiredData> ;
+    ns1:superClassOf <IDS> .
+
+<IDS> a rdfs:Class,
+        owl:Class ;
     rdfs:label "IDS"@en ;
+    dct:description "Required data defined in an Information Delivery Format (IDS)."@en ;
+    dct:title "IDS"@en ;
     rdfs:comment "Required data defined in an Information Delivery Format (IDS)."@en ;
     rdfs:isDefinedBy <data_requirement> ;
     rdfs:subClassOf <DataRequirement> .
 
-<hasRequiredData> a owl:Class ;
+<hasRequiredData> a rdfs:Class,
+        owl:Class ;
     rdfs:label "has required data"@en ;
+    dct:description "Links a statement to some data that is required in order to perform a check to demonstrate compliance checking."@en ;
+    dct:title "has required data"@en ;
     rdfs:comment "Links a statement to some data that is required in order to perform a check to demonstrate compliance checking."@en ;
     rdfs:domain <Statement> ;
     rdfs:isDefinedBy <data_requirement> ;
     rdfs:range <DataRequirement> .
 
-<DataRequirement> a owl:Class ;
-    rdfs:label "Data Requirement"@en ;
-    rdfs:comment "Data-informed by a Statement which is required in order to perform a check to demonstrate compliance checking."@en ;
-    rdfs:isDefinedBy <data_requirement> ;
-    skos:example "The minimum width of a door can be a data requirement."@en .
+<http://maxime-lefrancois.info/me#> a prov:Agent .
+
+owl:Ontology ns1:hasMember <data_requirement> .
+
+<Statement> ns1:inDomainOf <hasRequiredData> .
+
+rdfs:Class ns1:hasMember <DataRequirement>,
+        <IDS>,
+        <hasRequiredData> .
+
+owl:Class ns1:hasMember <DataRequirement>,
+        <IDS>,
+        <hasRequiredData> .
 
 <data_requirement> a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
