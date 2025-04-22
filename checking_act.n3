@@ -31,10 +31,10 @@
 
 """@en ;
     rdfs:isDefinedBy <checking_act> ;
-    rdfs:subClassOf _:ndc14ae47fd7c4ab0b28c586aecca7932b1,
-        _:ndc14ae47fd7c4ab0b28c586aecca7932b2,
-        _:ndc14ae47fd7c4ab0b28c586aecca7932b3,
-        _:ndc14ae47fd7c4ab0b28c586aecca7932b4,
+    rdfs:subClassOf _:na2e006e01ec74488b31e33de7c9425afb1,
+        _:na2e006e01ec74488b31e33de7c9425afb2,
+        _:na2e006e01ec74488b31e33de7c9425afb3,
+        _:na2e006e01ec74488b31e33de7c9425afb4,
         dul:Event ;
     ns1:inDomainOf <checked>,
         <endTime>,
@@ -96,10 +96,10 @@ owl:ObjectProperty ns1:hasMember <checked>,
         <madeBy>,
         <usedMethod> .
 
-owl:Restriction ns1:hasMember _:ndc14ae47fd7c4ab0b28c586aecca7932b1,
-        _:ndc14ae47fd7c4ab0b28c586aecca7932b2,
-        _:ndc14ae47fd7c4ab0b28c586aecca7932b3,
-        _:ndc14ae47fd7c4ab0b28c586aecca7932b4 .
+owl:Restriction ns1:hasMember _:na2e006e01ec74488b31e33de7c9425afb1,
+        _:na2e006e01ec74488b31e33de7c9425afb2,
+        _:na2e006e01ec74488b31e33de7c9425afb3,
+        _:na2e006e01ec74488b31e33de7c9425afb4 .
 
 <hasReport> a owl:ObjectProperty ;
     rdfs:label "has report"@en ;
@@ -141,22 +141,22 @@ owl:Restriction ns1:hasMember _:ndc14ae47fd7c4ab0b28c586aecca7932b1,
     owl:imports <check_method>,
         <compliance_verification_report> .
 
-_:ndc14ae47fd7c4ab0b28c586aecca7932b1 a owl:Restriction ;
+_:na2e006e01ec74488b31e33de7c9425afb1 a owl:Restriction ;
     owl:onProperty <usedMethod> ;
     owl:someValuesFrom <CheckMethod> ;
     ns1:superClassOf <CheckingAct> .
 
-_:ndc14ae47fd7c4ab0b28c586aecca7932b2 a owl:Restriction ;
+_:na2e006e01ec74488b31e33de7c9425afb2 a owl:Restriction ;
     owl:onProperty <madeBy> ;
     owl:someValuesFrom <ProcessVerifier> ;
     ns1:superClassOf <CheckingAct> .
 
-_:ndc14ae47fd7c4ab0b28c586aecca7932b3 a owl:Restriction ;
+_:na2e006e01ec74488b31e33de7c9425afb3 a owl:Restriction ;
     owl:onProperty <checked> ;
     owl:someValuesFrom owl:Thing ;
     ns1:superClassOf <CheckingAct> .
 
-_:ndc14ae47fd7c4ab0b28c586aecca7932b4 a owl:Restriction ;
+_:na2e006e01ec74488b31e33de7c9425afb4 a owl:Restriction ;
     owl:onProperty <hasReport> ;
     owl:someValuesFrom <ComplianceVerificationReport> ;
     ns1:superClassOf <CheckingAct> .

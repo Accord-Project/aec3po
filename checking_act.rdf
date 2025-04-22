@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:prov="http://www.w3.org/ns/prov#"
+  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <owl:ObjectProperty rdf:about="hasReport">
-    <rdfs:label xml:lang="en">has report</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a checking act to the resulting compliance verification report.</rdfs:comment>
-    <rdfs:domain rdf:resource="CheckingAct"/>
-    <rdfs:isDefinedBy>
-      <owl:Ontology rdf:about="checking_act">
-        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
-        <dct:description xml:lang="en">The AEC3PO Checking Act module describes the act of checking some entities for something and generating a compliance verification report.</dct:description>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-26</dct:modified>
-        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-28</dct:modified>
-        <dct:title xml:lang="en">AEC3PO: Checking Act</dct:title>
-        <owl:imports rdf:resource="check_method"/>
-        <owl:imports rdf:resource="compliance_verification_report"/>
-        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
-        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-26</dct:created>
-      </owl:Ontology>
-    </rdfs:isDefinedBy>
-    <rdfs:range>
-      <rdf:Description rdf:about="ComplianceVerificationReport">
-        <ns1:inRangeOf rdf:resource="hasReport"/>
-      </rdf:Description>
-    </rdfs:range>
-    <dct:title xml:lang="en">has report</dct:title>
-    <dct:description xml:lang="en">Links a checking act to the resulting compliance verification report.</dct:description>
-  </owl:ObjectProperty>
   <owl:Class rdf:about="CheckingAct">
     <rdf:type>
       <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
@@ -51,30 +24,44 @@
 - Links to compliance verification report that resulted.
 
 </rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="checking_act"/>
+    <rdfs:isDefinedBy>
+      <owl:Ontology rdf:about="checking_act">
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
+        <dct:description xml:lang="en">The AEC3PO Checking Act module describes the act of checking some entities for something and generating a compliance verification report.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-26</dct:modified>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-28</dct:modified>
+        <dct:title xml:lang="en">AEC3PO: Checking Act</dct:title>
+        <owl:imports rdf:resource="check_method"/>
+        <owl:imports rdf:resource="compliance_verification_report"/>
+        <vann:preferredNamespacePrefix>aec3po</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-26</dct:created>
+      </owl:Ontology>
+    </rdfs:isDefinedBy>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="ndc14ae47fd7c4ab0b28c586aecca7932b1">
+      <owl:Restriction rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb1">
         <owl:someValuesFrom rdf:resource="CheckMethod"/>
         <owl:onProperty rdf:resource="usedMethod"/>
         <ns1:superClassOf rdf:resource="CheckingAct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="ndc14ae47fd7c4ab0b28c586aecca7932b2">
+      <owl:Restriction rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb2">
         <owl:onProperty rdf:resource="madeBy"/>
         <owl:someValuesFrom rdf:resource="ProcessVerifier"/>
         <ns1:superClassOf rdf:resource="CheckingAct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="ndc14ae47fd7c4ab0b28c586aecca7932b3">
+      <owl:Restriction rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb3">
         <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <owl:onProperty rdf:resource="checked"/>
         <ns1:superClassOf rdf:resource="CheckingAct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="ndc14ae47fd7c4ab0b28c586aecca7932b4">
+      <owl:Restriction rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb4">
         <owl:someValuesFrom rdf:resource="ComplianceVerificationReport"/>
         <owl:onProperty rdf:resource="hasReport"/>
         <ns1:superClassOf rdf:resource="CheckingAct"/>
@@ -148,39 +135,52 @@
         <dct:description xml:lang="en">Links a checking act to some entity (ex. statement, feature of interest, property) it checked.</dct:description>
       </owl:ObjectProperty>
     </ns1:inDomainOf>
-    <ns1:inDomainOf rdf:resource="hasReport"/>
+    <ns1:inDomainOf>
+      <owl:ObjectProperty rdf:about="hasReport">
+        <rdfs:label xml:lang="en">has report</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a checking act to the resulting compliance verification report.</rdfs:comment>
+        <rdfs:domain rdf:resource="CheckingAct"/>
+        <rdfs:isDefinedBy rdf:resource="checking_act"/>
+        <rdfs:range rdf:resource="ComplianceVerificationReport"/>
+        <dct:title xml:lang="en">has report</dct:title>
+        <dct:description xml:lang="en">Links a checking act to the resulting compliance verification report.</dct:description>
+      </owl:ObjectProperty>
+    </ns1:inDomainOf>
   </owl:Class>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb1"/>
+    <ns1:hasMember rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb2"/>
+    <ns1:hasMember rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb3"/>
+    <ns1:hasMember rdf:nodeID="na2e006e01ec74488b31e33de7c9425afb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="CheckingAct"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
     <ns1:hasMember rdf:resource="usedMethod"/>
     <ns1:hasMember rdf:resource="madeBy"/>
     <ns1:hasMember rdf:resource="checked"/>
     <ns1:hasMember rdf:resource="hasReport"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="CheckingAct"/>
+  <rdf:Description rdf:about="ComplianceVerificationReport">
+    <ns1:inRangeOf rdf:resource="hasReport"/>
   </rdf:Description>
-  <rdf:Description rdf:about="ProcessVerifier">
-    <ns1:inRangeOf rdf:resource="madeBy"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="ndc14ae47fd7c4ab0b28c586aecca7932b1"/>
-    <ns1:hasMember rdf:nodeID="ndc14ae47fd7c4ab0b28c586aecca7932b2"/>
-    <ns1:hasMember rdf:nodeID="ndc14ae47fd7c4ab0b28c586aecca7932b3"/>
-    <ns1:hasMember rdf:nodeID="ndc14ae47fd7c4ab0b28c586aecca7932b4"/>
-  </rdf:Description>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
     <ns1:hasMember rdf:resource="checking_act"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
-    <ns1:hasMember rdf:resource="startTime"/>
-    <ns1:hasMember rdf:resource="endTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="CheckMethod">
-    <ns1:inRangeOf rdf:resource="usedMethod"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
     <ns1:inRangeOf rdf:resource="startTime"/>
     <ns1:inRangeOf rdf:resource="endTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="ProcessVerifier">
+    <ns1:inRangeOf rdf:resource="madeBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="CheckMethod">
+    <ns1:inRangeOf rdf:resource="usedMethod"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
+    <ns1:hasMember rdf:resource="startTime"/>
+    <ns1:hasMember rdf:resource="endTime"/>
   </rdf:Description>
 </rdf:RDF>

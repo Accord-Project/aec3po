@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:prov="http://www.w3.org/ns/prov#"
-  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:aec3po="https://w3id.org/lbd/aec3po/"
+  xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:vann="http://purl.org/vocab/vann/"
 >
   <owl:Ontology rdf:about="compliance_verification_report">
@@ -24,6 +24,116 @@
     <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-30</dct:created>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-22</dct:modified>
   </owl:Ontology>
+  <owl:ObjectProperty rdf:about="verificationStatement">
+    <rdfs:label xml:lang="en">verification statement</rdfs:label>
+    <rdfs:comment>Statement that was validated when the verification result was produced.</rdfs:comment>
+    <rdfs:domain rdf:resource="VerificationResult"/>
+    <rdfs:range>
+      <rdf:Description rdf:about="CheckStatement">
+        <ns1:inRangeOf rdf:resource="verificationStatement"/>
+      </rdf:Description>
+    </rdfs:range>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <dct:title xml:lang="en">verification statement</dct:title>
+    <dct:description>Statement that was validated when the verification result was produced.</dct:description>
+  </owl:ObjectProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="compliance_verification_report"/>
+  </rdf:Description>
+  <owl:ObjectProperty rdf:about="hasSeverity">
+    <rdfs:label xml:lang="en">has severity</rdfs:label>
+    <rdfs:comment>Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:hasSeverity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:hasSeverity has been specified for the statement.</rdfs:comment>
+    <rdfs:domain rdf:resource="VerificationResult"/>
+    <rdfs:range rdf:resource="Severity"/>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <dct:title xml:lang="en">has severity</dct:title>
+    <dct:description>Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:hasSeverity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:hasSeverity has been specified for the statement.</dct:description>
+  </owl:ObjectProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <ns1:hasMember>
+      <owl:Restriction rdf:nodeID="n4b0450fefeec42359415e81b21b8453cb1">
+        <owl:onProperty rdf:resource="conforms"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
+        <ns1:superClassOf rdf:resource="ComplianceVerificationReport"/>
+      </owl:Restriction>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:Restriction rdf:nodeID="n4b0450fefeec42359415e81b21b8453cb2">
+        <owl:onProperty rdf:resource="verificationFocus"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
+        <ns1:superClassOf rdf:resource="VerificationResult"/>
+      </owl:Restriction>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:Restriction rdf:nodeID="n4b0450fefeec42359415e81b21b8453cb3">
+        <owl:onProperty rdf:resource="hasSeverity"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
+        <ns1:superClassOf rdf:resource="VerificationResult"/>
+      </owl:Restriction>
+    </ns1:hasMember>
+  </rdf:Description>
+  <owl:ObjectProperty rdf:about="verificationFocus">
+    <rdfs:label xml:lang="en">verification focus</rdfs:label>
+    <rdfs:comment>Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced.</rdfs:comment>
+    <rdfs:domain rdf:resource="VerificationResult"/>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <dct:title xml:lang="en">verification focus</dct:title>
+    <dct:description>Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced.</dct:description>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasResult">
+    <rdfs:label xml:lang="en">has result</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a compliance verification report to some verification result.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <rdfs:domain rdf:resource="ComplianceVerificationReport"/>
+    <rdfs:range rdf:resource="VerificationResult"/>
+    <dct:title xml:lang="en">has result</dct:title>
+    <dct:description xml:lang="en">Links a compliance verification report to some verification result.</dct:description>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="Severity">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="ComplianceVerificationReport"/>
+        <ns1:hasMember rdf:resource="VerificationResult"/>
+        <ns1:hasMember rdf:resource="Severity"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">Severity</rdfs:label>
+    <rdfs:comment xml:lang="en">The class of validation result severity levels, including violation and warning levels.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <dct:title xml:lang="en">Severity</dct:title>
+    <dct:description xml:lang="en">The class of validation result severity levels, including violation and warning levels.</dct:description>
+    <ns1:inRangeOf rdf:resource="hasSeverity"/>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="Info">
+        <rdf:type rdf:resource="Severity"/>
+        <rdfs:label xml:lang="en">Info</rdfs:label>
+        <rdfs:comment xml:lang="en">The severity for an informational validation result.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+        <dct:title xml:lang="en">Info</dct:title>
+        <dct:description xml:lang="en">The severity for an informational validation result.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="Violation">
+        <rdf:type rdf:resource="Severity"/>
+        <rdfs:label xml:lang="en">Violation</rdfs:label>
+        <rdfs:comment xml:lang="en">The severity for a violation validation result.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+        <dct:title xml:lang="en">Violation</dct:title>
+        <dct:description xml:lang="en">The severity for a violation validation result.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+    <ns1:hasMember>
+      <owl:NamedIndividual rdf:about="Warning">
+        <rdf:type rdf:resource="Severity"/>
+        <rdfs:label xml:lang="en">Warning</rdfs:label>
+        <rdfs:comment xml:lang="en">The severity for a warning validation result.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+        <dct:title xml:lang="en">Warning</dct:title>
+        <dct:description xml:lang="en">The severity for a warning validation result.</dct:description>
+      </owl:NamedIndividual>
+    </ns1:hasMember>
+  </owl:Class>
   <owl:DatatypeProperty rdf:about="conforms">
     <rdfs:label xml:lang="en">conforms</rdfs:label>
     <rdfs:comment xml:lang="en">True if the Checking act confirms the check was validated, and false otherwise.</rdfs:comment>
@@ -37,97 +147,17 @@
     <dct:title xml:lang="en">conforms</dct:title>
     <dct:description xml:lang="en">True if the Checking act confirms the check was validated, and false otherwise.</dct:description>
   </owl:DatatypeProperty>
-  <owl:NamedIndividual rdf:about="Violation">
-    <rdf:type rdf:resource="Severity"/>
-    <rdfs:label xml:lang="en">Violation</rdfs:label>
-    <rdfs:comment xml:lang="en">The severity for a violation validation result.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-    <dct:title xml:lang="en">Violation</dct:title>
-    <dct:description xml:lang="en">The severity for a violation validation result.</dct:description>
-  </owl:NamedIndividual>
-  <owl:Class rdf:about="ComplianceVerificationReport">
-    <rdf:type>
-      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
-        <ns1:hasMember rdf:resource="ComplianceVerificationReport"/>
-        <ns1:hasMember rdf:resource="VerificationResult"/>
-        <ns1:hasMember rdf:resource="Severity"/>
-      </rdf:Description>
-    </rdf:type>
-    <rdfs:label xml:lang="en">Compliance Verification Report</rdfs:label>
-    <rdfs:comment xml:lang="en">Result of a checking act. May be compliant or not.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n97cc29a131e44a5d97f2596d9e916a27b1">
-        <owl:onProperty rdf:resource="conforms"/>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
-        <ns1:superClassOf rdf:resource="ComplianceVerificationReport"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <dct:title xml:lang="en">Compliance Verification Report</dct:title>
-    <dct:description xml:lang="en">Result of a checking act. May be compliant or not.</dct:description>
-    <ns1:inDomainOf rdf:resource="conforms"/>
-    <ns1:inDomainOf>
-      <owl:ObjectProperty rdf:about="hasResult">
-        <rdfs:label xml:lang="en">has result</rdfs:label>
-        <rdfs:comment xml:lang="en">Links a compliance verification report to some verification result.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-        <rdfs:domain rdf:resource="ComplianceVerificationReport"/>
-        <rdfs:range rdf:resource="VerificationResult"/>
-        <dct:title xml:lang="en">has result</dct:title>
-        <dct:description xml:lang="en">Links a compliance verification report to some verification result.</dct:description>
-      </owl:ObjectProperty>
-    </ns1:inDomainOf>
-  </owl:Class>
-  <owl:NamedIndividual rdf:about="Info">
-    <rdf:type rdf:resource="Severity"/>
-    <rdfs:label xml:lang="en">Info</rdfs:label>
-    <rdfs:comment xml:lang="en">The severity for an informational validation result.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-    <dct:title xml:lang="en">Info</dct:title>
-    <dct:description xml:lang="en">The severity for an informational validation result.</dct:description>
-  </owl:NamedIndividual>
   <owl:Class rdf:about="VerificationResult">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Verification Result</rdfs:label>
     <rdfs:comment xml:lang="en">Individual verification result of a Compliance Verification Report.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n97cc29a131e44a5d97f2596d9e916a27b2">
-        <owl:onProperty rdf:resource="verificationFocus"/>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
-        <ns1:superClassOf rdf:resource="VerificationResult"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="n97cc29a131e44a5d97f2596d9e916a27b3">
-        <owl:onProperty rdf:resource="hasSeverity"/>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:cardinality>
-        <ns1:superClassOf rdf:resource="VerificationResult"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:nodeID="n4b0450fefeec42359415e81b21b8453cb2"/>
+    <rdfs:subClassOf rdf:nodeID="n4b0450fefeec42359415e81b21b8453cb3"/>
     <dct:title xml:lang="en">Verification Result</dct:title>
     <dct:description xml:lang="en">Individual verification result of a Compliance Verification Report.</dct:description>
-    <ns1:inDomainOf>
-      <owl:ObjectProperty rdf:about="verificationFocus">
-        <rdfs:label xml:lang="en">verification focus</rdfs:label>
-        <rdfs:comment>Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced.</rdfs:comment>
-        <rdfs:domain rdf:resource="VerificationResult"/>
-        <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-        <dct:title xml:lang="en">verification focus</dct:title>
-        <dct:description>Each verification result has exactly one value for the property aec3po:verificationFocus that is equal to the focus entity that has caused the result. This is the focus entity that was validated when the verification result was produced.</dct:description>
-      </owl:ObjectProperty>
-    </ns1:inDomainOf>
-    <ns1:inDomainOf>
-      <owl:ObjectProperty rdf:about="verificationStatement">
-        <rdfs:label xml:lang="en">verification statement</rdfs:label>
-        <rdfs:comment>Statement that was validated when the verification result was produced.</rdfs:comment>
-        <rdfs:domain rdf:resource="VerificationResult"/>
-        <rdfs:range rdf:resource="CheckStatement"/>
-        <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-        <dct:title xml:lang="en">verification statement</dct:title>
-        <dct:description>Statement that was validated when the verification result was produced.</dct:description>
-      </owl:ObjectProperty>
-    </ns1:inDomainOf>
+    <ns1:inDomainOf rdf:resource="verificationFocus"/>
+    <ns1:inDomainOf rdf:resource="verificationStatement"/>
     <ns1:inDomainOf>
       <owl:ObjectProperty rdf:about="verificationPlanZone">
         <rdfs:label xml:lang="en">verification plan zone</rdfs:label>
@@ -148,43 +178,24 @@
         <dct:description>Verification results may have values for the property aec3po:resultMessage, for example to communicate additional textual details to humans. While aec3po:resultMessage may have multiple values, there should not be two values with the same language tag. These values may be produced based on the statements in the AEC3PO graph.</dct:description>
       </owl:DatatypeProperty>
     </ns1:inDomainOf>
-    <ns1:inDomainOf>
-      <owl:ObjectProperty rdf:about="hasSeverity">
-        <rdfs:label xml:lang="en">has severity</rdfs:label>
-        <rdfs:comment>Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:hasSeverity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:hasSeverity has been specified for the statement.</rdfs:comment>
-        <rdfs:domain rdf:resource="VerificationResult"/>
-        <rdfs:range rdf:resource="Severity"/>
-        <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-        <dct:title xml:lang="en">has severity</dct:title>
-        <dct:description>Each verification result has exactly one value for the property aec3po:resultSeverity, and this value is an IRI. The value is equal to the value of aec3po:hasSeverity of the statement in the AEC3PO graph that caused the result, defaulting to aec3po:Violation if no aec3po:hasSeverity has been specified for the statement.</dct:description>
-      </owl:ObjectProperty>
-    </ns1:inDomainOf>
+    <ns1:inDomainOf rdf:resource="hasSeverity"/>
     <ns1:inRangeOf rdf:resource="hasResult"/>
+  </owl:Class>
+  <owl:Class rdf:about="ComplianceVerificationReport">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Compliance Verification Report</rdfs:label>
+    <rdfs:comment xml:lang="en">Result of a checking act. May be compliant or not.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
+    <rdfs:subClassOf rdf:nodeID="n4b0450fefeec42359415e81b21b8453cb1"/>
+    <dct:title xml:lang="en">Compliance Verification Report</dct:title>
+    <dct:description xml:lang="en">Result of a checking act. May be compliant or not.</dct:description>
+    <ns1:inDomainOf rdf:resource="conforms"/>
+    <ns1:inDomainOf rdf:resource="hasResult"/>
   </owl:Class>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
     <ns1:hasMember rdf:resource="conforms"/>
     <ns1:hasMember rdf:resource="resultMessage"/>
   </rdf:Description>
-  <owl:NamedIndividual rdf:about="Warning">
-    <rdf:type rdf:resource="Severity"/>
-    <rdfs:label xml:lang="en">Warning</rdfs:label>
-    <rdfs:comment xml:lang="en">The severity for a warning validation result.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-    <dct:title xml:lang="en">Warning</dct:title>
-    <dct:description xml:lang="en">The severity for a warning validation result.</dct:description>
-  </owl:NamedIndividual>
-  <owl:Class rdf:about="Severity">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label xml:lang="en">Severity</rdfs:label>
-    <rdfs:comment xml:lang="en">The class of validation result severity levels, including violation and warning levels.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="compliance_verification_report"/>
-    <dct:title xml:lang="en">Severity</dct:title>
-    <dct:description xml:lang="en">The class of validation result severity levels, including violation and warning levels.</dct:description>
-    <ns1:inRangeOf rdf:resource="hasSeverity"/>
-    <ns1:hasMember rdf:resource="Info"/>
-    <ns1:hasMember rdf:resource="Violation"/>
-    <ns1:hasMember rdf:resource="Warning"/>
-  </owl:Class>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
     <ns1:hasMember rdf:resource="hasResult"/>
     <ns1:hasMember rdf:resource="verificationFocus"/>
@@ -201,16 +212,5 @@
     <ns1:hasMember rdf:resource="ComplianceVerificationReport"/>
     <ns1:hasMember rdf:resource="VerificationResult"/>
     <ns1:hasMember rdf:resource="Severity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Restriction">
-    <ns1:hasMember rdf:nodeID="n97cc29a131e44a5d97f2596d9e916a27b1"/>
-    <ns1:hasMember rdf:nodeID="n97cc29a131e44a5d97f2596d9e916a27b2"/>
-    <ns1:hasMember rdf:nodeID="n97cc29a131e44a5d97f2596d9e916a27b3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
-    <ns1:hasMember rdf:resource="compliance_verification_report"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="CheckStatement">
-    <ns1:inRangeOf rdf:resource="verificationStatement"/>
   </rdf:Description>
 </rdf:RDF>

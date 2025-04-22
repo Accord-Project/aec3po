@@ -33,7 +33,7 @@
     dct:title "Document Subdivision"@en ;
     rdfs:comment "Any subdivision of a document, including sections, paragraphs, definitions, words, etc."@en ;
     rdfs:isDefinedBy <document> ;
-    rdfs:subClassOf _:nf14cbe7c90f646f8a077207f7d30820bb1 ;
+    rdfs:subClassOf _:n5cba1efe2722418bb20954ab6eec831ab1 ;
     skos:example "Paragraph, section, definition..."@en ;
     ns1:inDomainOf <DocumentSubdivision_asLiteral>,
         <hasNextSubdivision> ;
@@ -69,7 +69,7 @@ owl:DatatypeProperty ns1:hasMember <DocumentSubdivision_asLiteral> .
 
 owl:Ontology ns1:hasMember <document> .
 
-owl:Restriction ns1:hasMember _:nf14cbe7c90f646f8a077207f7d30820bb1 .
+owl:Restriction ns1:hasMember _:n5cba1efe2722418bb20954ab6eec831ab1 .
 
 owl:FunctionalProperty ns1:hasMember <hasFirstSubdivision>,
         <hasNextSubdivision> .
@@ -131,13 +131,13 @@ rdfs:Class ns1:hasMember <Document>,
     dct:description "Links a document part to the first of its subdivision"@en ;
     dct:title "has first subdivision"@en ;
     rdfs:comment "Links a document part to the first of its subdivision"@en ;
-    rdfs:domain _:nf14cbe7c90f646f8a077207f7d30820bb5 ;
+    rdfs:domain _:n5cba1efe2722418bb20954ab6eec831ab5 ;
     rdfs:isDefinedBy <document> ;
     rdfs:range <DocumentSubdivision> ;
     rdfs:subPropertyOf <hasSubdivision> .
 
-owl:Class ns1:hasMember _:nf14cbe7c90f646f8a077207f7d30820bb2,
-        _:nf14cbe7c90f646f8a077207f7d30820bb5,
+owl:Class ns1:hasMember _:n5cba1efe2722418bb20954ab6eec831ab2,
+        _:n5cba1efe2722418bb20954ab6eec831ab5,
         <Document>,
         <DocumentSubdivision>,
         <Drawing>,
@@ -155,7 +155,7 @@ owl:ObjectProperty ns1:hasMember <forDocument>,
     dct:description "links a document part to some of its subdivision"@en ;
     dct:title "has subdivision"@en ;
     rdfs:comment "links a document part to some of its subdivision"@en ;
-    rdfs:domain _:nf14cbe7c90f646f8a077207f7d30820bb2 ;
+    rdfs:domain _:n5cba1efe2722418bb20954ab6eec831ab2 ;
     rdfs:isDefinedBy <document> ;
     rdfs:range <DocumentSubdivision> ;
     rdfs:subPropertyOf dct:hasPart ;
@@ -175,22 +175,22 @@ Document subdivisions can be described as literals, link to their first part, an
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
-_:nf14cbe7c90f646f8a077207f7d30820bb3 rdf:first <Document> ;
+_:n5cba1efe2722418bb20954ab6eec831ab3 rdf:first <Document> ;
     rdf:rest ( <DocumentSubdivision> ) .
 
-_:nf14cbe7c90f646f8a077207f7d30820bb6 rdf:first <Document> ;
+_:n5cba1efe2722418bb20954ab6eec831ab6 rdf:first <Document> ;
     rdf:rest ( <DocumentSubdivision> ) .
 
-_:nf14cbe7c90f646f8a077207f7d30820bb1 a owl:Restriction ;
+_:n5cba1efe2722418bb20954ab6eec831ab1 a owl:Restriction ;
     owl:allValuesFrom <DocumentSubdivision> ;
     owl:onProperty <hasSubdivision> ;
     ns1:superClassOf <DocumentSubdivision> .
 
-_:nf14cbe7c90f646f8a077207f7d30820bb2 a owl:Class ;
-    owl:unionOf _:nf14cbe7c90f646f8a077207f7d30820bb3 ;
+_:n5cba1efe2722418bb20954ab6eec831ab2 a owl:Class ;
+    owl:unionOf _:n5cba1efe2722418bb20954ab6eec831ab3 ;
     ns1:inDomainOf <hasSubdivision> .
 
-_:nf14cbe7c90f646f8a077207f7d30820bb5 a owl:Class ;
-    owl:unionOf _:nf14cbe7c90f646f8a077207f7d30820bb6 ;
+_:n5cba1efe2722418bb20954ab6eec831ab5 a owl:Class ;
+    owl:unionOf _:n5cba1efe2722418bb20954ab6eec831ab6 ;
     ns1:inDomainOf <hasFirstSubdivision> .
 

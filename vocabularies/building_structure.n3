@@ -20,7 +20,7 @@
     rdfs:isDefinedBy <building_structure> ;
     rdfs:subClassOf skos:Concept,
         <Design> ;
-    owl:equivalentClass _:nb488c1e92da34d6da024705e030e8470b1 ;
+    owl:equivalentClass _:nac8db227dacd4612aa74af3354a4fe94b1 ;
     ns1:hasMember <BuildingStructure-steel>,
         <BuildingStructure-timber> ;
     ns1:inRangeOf <forBuildingStructure>,
@@ -34,7 +34,7 @@ owl:FunctionalProperty ns1:hasMember <hasBuildingStructure> .
 
 owl:Ontology ns1:hasMember <building_structure> .
 
-owl:Restriction ns1:hasMember _:nb488c1e92da34d6da024705e030e8470b2 .
+owl:Restriction ns1:hasMember _:nac8db227dacd4612aa74af3354a4fe94b2 .
 
 skos:ConceptScheme ns1:hasMember <BuildingStructureNomenclature> .
 
@@ -46,7 +46,7 @@ skos:ConceptScheme ns1:hasMember <BuildingStructureNomenclature> .
 
 <hasDesign> ns1:superPropertyOf <hasBuildingStructure> .
 
-owl:Class ns1:hasMember _:nb488c1e92da34d6da024705e030e8470b1,
+owl:Class ns1:hasMember _:nac8db227dacd4612aa74af3354a4fe94b1,
         <BuildingStructure> .
 
 owl:NamedIndividual ns1:hasMember <BuildingStructure-steel>,
@@ -133,13 +133,13 @@ skos:Concept ns1:hasMember <BuildingStructure-steel>,
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
-_:nb488c1e92da34d6da024705e030e8470b3 rdf:first skos:Concept ;
-    rdf:rest ( _:nb488c1e92da34d6da024705e030e8470b2 ) .
+_:nac8db227dacd4612aa74af3354a4fe94b3 rdf:first skos:Concept ;
+    rdf:rest ( _:nac8db227dacd4612aa74af3354a4fe94b2 ) .
 
-_:nb488c1e92da34d6da024705e030e8470b1 a owl:Class ;
-    owl:intersectionOf _:nb488c1e92da34d6da024705e030e8470b3 .
+_:nac8db227dacd4612aa74af3354a4fe94b1 a owl:Class ;
+    owl:intersectionOf _:nac8db227dacd4612aa74af3354a4fe94b3 .
 
-_:nb488c1e92da34d6da024705e030e8470b2 a owl:Restriction ;
+_:nac8db227dacd4612aa74af3354a4fe94b2 a owl:Restriction ;
     owl:hasValue <BuildingStructureNomenclature> ;
     owl:onProperty skos:inScheme .
 

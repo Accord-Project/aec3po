@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:prov="http://www.w3.org/ns/prov#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dct="http://purl.org/dc/terms/"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <owl:Class rdf:about="QuantityKind">
-    <rdf:type>
-      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
-        <ns1:hasMember rdf:resource="FeatureOfInterest"/>
-        <ns1:hasMember rdf:resource="Property"/>
-        <ns1:hasMember rdf:resource="QuantityKind"/>
-      </rdf:Description>
-    </rdf:type>
-    <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
-    <rdfs:comment xml:lang="en">A kind of quantity.</rdfs:comment>
+  <owl:ObjectProperty rdf:about="hasQuantityKind">
+    <rdfs:label xml:lang="en">has quantity kind</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a property to its quantity kind</rdfs:comment>
+    <rdfs:domain rdf:resource="Property"/>
+    <rdfs:range rdf:resource="QuantityKind"/>
     <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="feature_of_interest">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -34,38 +29,15 @@
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-25</dct:created>
       </owl:Ontology>
     </rdfs:isDefinedBy>
-    <skos:example xml:lang="en">height, area, U-value</skos:example>
-    <dct:title xml:lang="en">Quantity Kind</dct:title>
-    <dct:description xml:lang="en">A kind of quantity.</dct:description>
-    <ns1:inRangeOf>
-      <owl:ObjectProperty rdf:about="hasQuantityKind">
-        <rdfs:label xml:lang="en">has quantity kind</rdfs:label>
-        <rdfs:comment xml:lang="en">Links a property to its quantity kind</rdfs:comment>
-        <rdfs:domain rdf:resource="Property"/>
-        <rdfs:range rdf:resource="QuantityKind"/>
-        <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
-        <skos:example xml:lang="en">A space area property to the property kind "area".</skos:example>
-        <dct:title xml:lang="en">has quantity kind</dct:title>
-        <dct:description xml:lang="en">Links a property to its quantity kind</dct:description>
-      </owl:ObjectProperty>
-    </ns1:inRangeOf>
-  </owl:Class>
-  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <skos:example xml:lang="en">A space area property to the property kind "area".</skos:example>
+    <dct:title xml:lang="en">has quantity kind</dct:title>
+    <dct:description xml:lang="en">Links a property to its quantity kind</dct:description>
+  </owl:ObjectProperty>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
     <ns1:hasMember rdf:resource="FeatureOfInterest"/>
     <ns1:hasMember rdf:resource="Property"/>
     <ns1:hasMember rdf:resource="QuantityKind"/>
   </rdf:Description>
-  <owl:ObjectProperty rdf:about="hasProperty">
-    <rdfs:label xml:lang="en">has Property</rdfs:label>
-    <rdfs:comment xml:lang="en">Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it.</rdfs:comment>
-    <rdfs:domain rdf:resource="FeatureOfInterest"/>
-    <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
-    <rdfs:range rdf:resource="Property"/>
-    <skos:example xml:lang="en">Links a space to the area property of that space, a wall to the U-value property of that wall...</skos:example>
-    <dct:title xml:lang="en">has Property</dct:title>
-    <dct:description xml:lang="en">Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it.</dct:description>
-  </owl:ObjectProperty>
   <owl:Class rdf:about="FeatureOfInterest">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Feature Of Interest</rdfs:label>
@@ -88,8 +60,24 @@
   - a ifc:IfcRamp, a ifc:IfcSurfaceFeature</skos:note>
     <dct:title xml:lang="en">Feature Of Interest</dct:title>
     <dct:description xml:lang="en">The object whose conformance against checks is verified.</dct:description>
-    <ns1:inDomainOf rdf:resource="hasProperty"/>
+    <ns1:inDomainOf>
+      <owl:ObjectProperty rdf:about="hasProperty">
+        <rdfs:label xml:lang="en">has Property</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it.</rdfs:comment>
+        <rdfs:domain rdf:resource="FeatureOfInterest"/>
+        <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
+        <rdfs:range rdf:resource="Property"/>
+        <skos:example xml:lang="en">Links a space to the area property of that space, a wall to the U-value property of that wall...</skos:example>
+        <dct:title xml:lang="en">has Property</dct:title>
+        <dct:description xml:lang="en">Links a feature of interest to one of its aspect that is intrinsic to and cannot exist without it.</dct:description>
+      </owl:ObjectProperty>
+    </ns1:inDomainOf>
   </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="FeatureOfInterest"/>
+    <ns1:hasMember rdf:resource="Property"/>
+    <ns1:hasMember rdf:resource="QuantityKind"/>
+  </rdf:Description>
   <owl:Class rdf:about="Property">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Property</rdfs:label>
@@ -106,11 +94,22 @@
     <ns1:inDomainOf rdf:resource="hasQuantityKind"/>
     <ns1:inRangeOf rdf:resource="hasProperty"/>
   </owl:Class>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
-    <ns1:hasMember rdf:resource="feature_of_interest"/>
-  </rdf:Description>
+  <owl:Class rdf:about="QuantityKind">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
+    <rdfs:comment xml:lang="en">A kind of quantity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="feature_of_interest"/>
+    <skos:example xml:lang="en">height, area, U-value</skos:example>
+    <dct:title xml:lang="en">Quantity Kind</dct:title>
+    <dct:description xml:lang="en">A kind of quantity.</dct:description>
+    <ns1:inRangeOf rdf:resource="hasQuantityKind"/>
+  </owl:Class>
+  <prov:Agent rdf:about="http://maxime-lefrancois.info/me#"/>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
     <ns1:hasMember rdf:resource="hasProperty"/>
     <ns1:hasMember rdf:resource="hasQuantityKind"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="feature_of_interest"/>
   </rdf:Description>
 </rdf:RDF>

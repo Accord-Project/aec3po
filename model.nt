@@ -1,171 +1,171 @@
-<https://w3id.org/lbd/aec3po/Element> <http://purl.org/dc/terms/description> "Specific attributes of individual elements, such as doors, windows, walls, etc." .
-<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "location coverage"@en .
-_:ndc68289391b84d849b4acfafc81d0c45b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/title> "AEC3PO:Model"@en .
-<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/Phase> <http://purl.org/dc/terms/description> "A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)" .
-<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/location> <http://purl.org/dc/terms/description> "The physical or geographic location of the building or structure represented in the BIM model."@en .
-<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/2000/01/rdf-schema#label> "Element"@en .
-<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/name> .
-<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
-<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Classification> .
-<https://w3id.org/lbd/aec3po/material> <http://purl.org/dc/terms/title> "material"@en .
-<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/amna> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Element> .
-<https://w3id.org/lbd/aec3po/description> <http://purl.org/dc/terms/title> "description"@en .
-<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension"@en .
-_:ndc68289391b84d849b4acfafc81d0c45b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Place> .
-_:ndc68289391b84d849b4acfafc81d0c45b1 <http://www.w3.org/2002/07/owl#unionOf> _:ndc68289391b84d849b4acfafc81d0c45b2 .
-<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Model> .
-<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Model> .
-<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/location> .
-<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/modified> "2024-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/abstract> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Dimension> .
-<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/created> "2023-08-16"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/model> .
-<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/spatial> .
-<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasBuildingPhase> .
-<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
-<https://w3id.org/lbd/aec3po/model> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Classification"@en .
-<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/modified> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/Dimension> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasDimension> .
-<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasDimension> .
-<https://w3id.org/lbd/aec3po/description> <http://purl.org/dc/terms/description> "A textual description providing additional details about the BIM model."@en .
-_:ndc68289391b84d849b4acfafc81d0c45b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Phase> .
-<https://w3id.org/lbd/aec3po/Classification> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasClassification> .
-_:ndc68289391b84d849b4acfafc81d0c45b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndc68289391b84d849b4acfafc81d0c45b3 .
-<https://w3id.org/lbd/aec3po/model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Phase> .
-<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification systems or codes used to categorise and organise building components." .
-<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model"@en .
-<https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "is used to link building components, elements, or other entities to a classification scheme that provides a standardised way of categorising and organising them.. "@en .
-<https://w3id.org/lbd/aec3po/hasDimension> <http://purl.org/dc/terms/description> "is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. "@en .
-<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
-<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/2000/01/rdf-schema#label> "has building phase"@en .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasClassification> .
-<https://w3id.org/lbd/aec3po/hasDimension> <http://purl.org/dc/terms/title> "has dimension"@en .
-<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Dimension> .
-_:ndc68289391b84d849b4acfafc81d0c45b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Model> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Classification> .
-<https://w3id.org/lbd/aec3po/hasElementPhase> <http://purl.org/dc/terms/title> "has element phase"@en .
-<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Model> .
-<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2002/07/owl#inverseOf> <https://schema.org/subjectOf> .
 <https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/spatialCoverage> .
-<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/2000/01/rdf-schema#label> "Phase"@en .
-<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en .
-<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/material> .
-<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/description> .
-<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/model> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/material> .
-<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension"@en .
-<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/2000/01/rdf-schema#comment> "A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information." .
-<https://w3id.org/lbd/aec3po/name> <http://purl.org/dc/terms/description> "The name or the identifier of the BIM model."@en .
-<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
-<https://w3id.org/lbd/aec3po/material> <http://purl.org/dc/terms/description> "The materials used for different parts of the building, such as walls, floors, and roofs."@en .
-<https://w3id.org/lbd/aec3po/Classification> <http://purl.org/dc/terms/description> "Classification systems or codes used to categorise and organise building components." .
-<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/2000/01/rdf-schema#comment> "is used to establish a relationship between a construction element or component and the specific phase of the building process in which that element is relevant or applicable. (Inspired by the BIM shared ontology)"@en .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> _:ndc68289391b84d849b4acfafc81d0c45b1 .
-<https://w3id.org/lbd/aec3po/hasClassification> <http://purl.org/dc/terms/description> "is used to link building components, elements, or other entities to a classification scheme that provides a standardised way of categorising and organising them.. "@en .
-<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/description> "The AEC3PO model module describes a model representing part or the entirety of a site, building, or piece of infrastructure. Typically, this will be in the form of a Building Information Model."@en .
-<https://w3id.org/lbd/aec3po/hasClassification> <http://purl.org/dc/terms/title> "has dimension"@en .
-<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/locationCoverage> .
-_:ndc68289391b84d849b4acfafc81d0c45b1 <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/locationCoverage> .
-<https://schema.org/Place> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/location> .
-<http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/name> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasElementPhase> .
-<https://w3id.org/lbd/aec3po/locationCoverage> <http://purl.org/dc/terms/description> "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en .
-<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
-<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Model> .
-<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2000/01/rdf-schema#range> _:ndc68289391b84d849b4acfafc81d0c45b1 .
-<https://w3id.org/lbd/aec3po/name> <http://purl.org/dc/terms/title> "name"@en .
-<https://w3id.org/lbd/aec3po/Model> <http://purl.org/dc/terms/description> "A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information." .
-<https://w3id.org/lbd/aec3po/amna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
-<https://w3id.org/lbd/aec3po/hasElementPhase> <http://purl.org/dc/terms/description> "is used to establish a relationship between a construction element or component and the specific phase of the building process in which that element is relevant or applicable. (Inspired by the BIM shared ontology)"@en .
-<https://w3id.org/lbd/aec3po/Phase> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasBuildingPhase> .
-<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Model> .
-<http://www.w3.org/2001/XMLSchema#string> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/name> .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Model> .
-<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://purl.org/dc/terms/description> "describes the relationship between a construction-related entity and the phase of the building process it is associated with. (Inspired by the BIM shared ontology)"@en .
-<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific attributes of individual elements, such as doors, windows, walls, etc." .
-<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Dimension> .
-<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
-<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
-<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/2000/01/rdf-schema#comment> "A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)" .
-<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/2000/01/rdf-schema#comment> "Measurements and sizes of various building components and elements." .
-_:ndc68289391b84d849b4acfafc81d0c45b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/AdministrativeArea> .
-<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/about> .
-<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Phase> .
-<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Model> .
-<https://w3id.org/lbd/aec3po/location> <http://purl.org/dc/terms/title> "location"@en .
-<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/locationCoverage> <http://purl.org/dc/terms/title> "location coverage"@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Dimension> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Element> .
-<https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Classification> .
-<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/2000/01/rdf-schema#label> "has element phase"@en .
-<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasBuildingPhase> .
-<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasElementPhase> .
-<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. "@en .
-<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
-<https://w3id.org/lbd/aec3po/model> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/evidence> .
-<https://w3id.org/lbd/aec3po/model> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/Model> <http://purl.org/dc/terms/title> "Model"@en .
-<https://w3id.org/lbd/aec3po/Dimension> <http://purl.org/dc/terms/description> "Measurements and sizes of various building components and elements." .
-<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://purl.org/dc/terms/title> "has building phase"@en .
-<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name or the identifier of the BIM model."@en .
-<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2000/01/rdf-schema#comment> "The materials used for different parts of the building, such as walls, floors, and roofs."@en .
-<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Classification> .
+<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/2000/01/rdf-schema#label> "Element"@en .
 <https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension"@en .
-<https://w3id.org/lbd/aec3po/Phase> <http://purl.org/dc/terms/title> "Phase"@en .
+<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/abstract> .
 <https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasClassification> .
+<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific attributes of individual elements, such as doors, windows, walls, etc." .
+<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
 <http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/material> .
-<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Element> .
-<https://w3id.org/lbd/aec3po/Dimension> <http://purl.org/dc/terms/title> "Dimension"@en .
-<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/description> .
-<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
-<https://w3id.org/lbd/aec3po/Phase> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasElementPhase> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasDimension> .
-<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
-<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/location> .
-<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Phase> .
+<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2002/07/owl#inverseOf> <https://schema.org/subjectOf> .
+<https://w3id.org/lbd/aec3po/Phase> <http://purl.org/dc/terms/description> "A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)" .
 <http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/locationCoverage> .
-<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2000/01/rdf-schema#label> "material"@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> _:ndc68289391b84d849b4acfafc81d0c45b1 .
-<https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/title> "AEC3PO:Model"@en .
+<https://w3id.org/lbd/aec3po/Element> <http://purl.org/dc/terms/description> "Specific attributes of individual elements, such as doors, windows, walls, etc." .
+<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification systems or codes used to categorise and organise building components." .
+<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "is used to link building components, elements, or other entities to a classification scheme that provides a standardised way of categorising and organising them.. "@en .
+<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Classification> .
-<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description providing additional details about the BIM model."@en .
-<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Model> .
-<http://www.w3.org/2001/XMLSchema#string> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/material> .
-<https://w3id.org/lbd/aec3po/Classification> <http://purl.org/dc/terms/title> "Classification"@en .
-<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical or geographic location of the building or structure represented in the BIM model."@en .
-<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Phase> .
-<http://www.w3.org/2001/XMLSchema#string> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/description> .
-<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
-<https://w3id.org/lbd/aec3po/Element> <http://purl.org/dc/terms/title> "Element"@en .
-<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/Dimension> <http://purl.org/dc/terms/title> "Dimension"@en .
+<https://w3id.org/lbd/aec3po/Phase> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasElementPhase> .
+<https://w3id.org/lbd/aec3po/amna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
 <https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/2000/01/rdf-schema#comment> "describes the relationship between a construction-related entity and the phase of the building process it is associated with. (Inspired by the BIM shared ontology)"@en .
+<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Phase> .
+<https://w3id.org/lbd/aec3po/hasClassification> <http://purl.org/dc/terms/description> "is used to link building components, elements, or other entities to a classification scheme that provides a standardised way of categorising and organising them.. "@en .
+<https://w3id.org/lbd/aec3po/model> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/lbd/aec3po/evidence> .
+<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:n00192119cf8147559bfc144d7d75f853b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://schema.org/Place> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Dimension> .
+<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/material> <http://purl.org/dc/terms/description> "The materials used for different parts of the building, such as walls, floors, and roofs."@en .
+<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
+<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/2000/01/rdf-schema#comment> "A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information." .
+<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/modified> "2023-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/2000/01/rdf-schema#label> "Phase"@en .
+<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Classification> .
+<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://purl.org/dc/terms/description> "describes the relationship between a construction-related entity and the phase of the building process it is associated with. (Inspired by the BIM shared ontology)"@en .
+<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
+<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/description> .
+<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/Element> <http://purl.org/dc/terms/title> "Element"@en .
+<https://w3id.org/lbd/aec3po/hasClassification> <http://purl.org/dc/terms/title> "has dimension"@en .
+<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description providing additional details about the BIM model."@en .
+<https://w3id.org/lbd/aec3po/Model> <http://purl.org/dc/terms/description> "A BIM model is a digital representation of a building or infrastructure project that includes both graphical and non-graphical information." .
+<http://www.w3.org/2001/XMLSchema#string> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/description> .
+<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/2000/01/rdf-schema#comment> "Measurements and sizes of various building components and elements." .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Phase> .
+<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name or the identifier of the BIM model."@en .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Element> .
+<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Dimension> .
+_:n00192119cf8147559bfc144d7d75f853b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/lbd/aec3po/AdministrativeArea> .
+<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/2000/01/rdf-schema#label> "has element phase"@en .
+<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
+<http://www.w3.org/2001/XMLSchema#string> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/name> .
+<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/modified> "2024-02-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/description> <http://purl.org/dc/terms/title> "description"@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Dimension> .
+<https://schema.org/Place> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/location> .
+<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2000/01/rdf-schema#comment> "The materials used for different parts of the building, such as walls, floors, and roofs."@en .
+<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Classification"@en .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasDimension> .
+<https://w3id.org/lbd/aec3po/model> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/Dimension> <http://purl.org/dc/terms/description> "Measurements and sizes of various building components and elements." .
+<https://w3id.org/lbd/aec3po/Classification> <http://purl.org/dc/terms/title> "Classification"@en .
+<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
+<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en .
+<https://w3id.org/lbd/aec3po/Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/spatial> .
+<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/2000/01/rdf-schema#label> "has building phase"@en .
+<https://w3id.org/lbd/aec3po/name> <http://purl.org/dc/terms/title> "name"@en .
+<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
+<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Phase> .
+<https://w3id.org/lbd/aec3po/description> <http://purl.org/dc/terms/description> "A textual description providing additional details about the BIM model."@en .
+<https://w3id.org/lbd/aec3po/Classification> <http://purl.org/dc/terms/description> "Classification systems or codes used to categorise and organise building components." .
+<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/model> .
+<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://purl.org/dc/terms/title> "has building phase"@en .
+<https://w3id.org/lbd/aec3po/name> <http://purl.org/dc/terms/description> "The name or the identifier of the BIM model."@en .
+<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. "@en .
+<http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/model> .
+<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/locationCoverage> .
+_:n00192119cf8147559bfc144d7d75f853b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Element> .
+<http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/description> .
+<https://w3id.org/lbd/aec3po/model> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasBuildingPhase> .
+<https://w3id.org/lbd/aec3po/locationCoverage> <http://purl.org/dc/terms/description> "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en .
+<http://www.w3.org/2002/07/owl#DatatypeProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/name> .
+<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/created> "2023-08-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/about> .
+<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/Dimension> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasDimension> .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasElementPhase> .
+<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/location> .
+<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Phase> .
+_:n00192119cf8147559bfc144d7d75f853b1 <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/locationCoverage> .
+<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/2000/01/rdf-schema#comment> "is used to establish a relationship between a construction element or component and the specific phase of the building process in which that element is relevant or applicable. (Inspired by the BIM shared ontology)"@en .
+<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/name> .
+<https://w3id.org/lbd/aec3po/hasDimension> <http://purl.org/dc/terms/description> "is used to represent the physical dimensions or measurements of an object, entity, or element within the BIM model. "@en .
+<https://w3id.org/lbd/aec3po/hasElementPhase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Phase> .
+<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
+<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2000/01/rdf-schema#label> "material"@en .
+<https://w3id.org/lbd/aec3po/hasElementPhase> <http://purl.org/dc/terms/title> "has element phase"@en .
+<https://w3id.org/lbd/aec3po/location> <http://purl.org/dc/terms/title> "location"@en .
+<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/description> "The AEC3PO model module describes a model representing part or the entirety of a site, building, or piece of infrastructure. Typically, this will be in the form of a Building Information Model."@en .
+<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasClassification> .
+_:n00192119cf8147559bfc144d7d75f853b1 <http://www.w3.org/2002/07/owl#unionOf> _:n00192119cf8147559bfc144d7d75f853b2 .
+<https://w3id.org/lbd/aec3po/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+_:n00192119cf8147559bfc144d7d75f853b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n00192119cf8147559bfc144d7d75f853b3 .
+_:n00192119cf8147559bfc144d7d75f853b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/hasElementPhase> <http://purl.org/dc/terms/description> "is used to establish a relationship between a construction element or component and the specific phase of the building process in which that element is relevant or applicable. (Inspired by the BIM shared ontology)"@en .
+<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/model> <http://purl.org/dc/terms/contributor> <https://w3id.org/lbd/aec3po/amna> .
+<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension"@en .
+<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasDimension> .
+<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Element> .
+<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model"@en .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> _:n00192119cf8147559bfc144d7d75f853b1 .
+<https://w3id.org/lbd/aec3po/Model> <http://purl.org/dc/terms/title> "Model"@en .
+<https://w3id.org/lbd/aec3po/hasDimension> <http://purl.org/dc/terms/title> "has dimension"@en .
+<https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Model> .
+_:n00192119cf8147559bfc144d7d75f853b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2000/01/rdf-schema#range> _:n00192119cf8147559bfc144d7d75f853b1 .
+<https://w3id.org/lbd/aec3po/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbd/aec3po/hasDimension> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Dimension> .
+<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
+<https://schema.org/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/material> .
+<https://w3id.org/lbd/aec3po/Dimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension"@en .
+<https://w3id.org/lbd/aec3po/Phase> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasBuildingPhase> .
+<https://w3id.org/lbd/aec3po/model> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasBuildingPhase> .
+<http://www.w3.org/2001/XMLSchema#string> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/material> .
+<https://w3id.org/lbd/aec3po/Classification> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasClassification> .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/location> .
+<https://w3id.org/lbd/aec3po/location> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical or geographic location of the building or structure represented in the BIM model."@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Model> .
+<https://w3id.org/lbd/aec3po/Model> <https://w3id.org/profile/ontdoc/inDomainOf> <https://w3id.org/lbd/aec3po/hasElementPhase> .
+<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
+<https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> _:n00192119cf8147559bfc144d7d75f853b1 .
+<https://w3id.org/lbd/aec3po/material> <http://purl.org/dc/terms/title> "material"@en .
+<https://w3id.org/lbd/aec3po/locationCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "location coverage"@en .
+<https://w3id.org/lbd/aec3po/Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://w3id.org/lbd/aec3po/description> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Model> .
+<https://w3id.org/lbd/aec3po/location> <http://purl.org/dc/terms/description> "The physical or geographic location of the building or structure represented in the BIM model."@en .
+<https://w3id.org/lbd/aec3po/material> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://schema.org/material> .
+<https://w3id.org/lbd/aec3po/Phase> <http://www.w3.org/2000/01/rdf-schema#comment> "A construction or renovation phase the building model may represent. Inspired by the BIM Shared Ontology (https://www.sciencedirect.com/science/article/pii/S0926580517302364)" .
+<https://w3id.org/lbd/aec3po/locationCoverage> <http://purl.org/dc/terms/title> "location coverage"@en .
+<https://w3id.org/lbd/aec3po/hasClassification> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Classification> .
+<https://w3id.org/lbd/aec3po/Phase> <http://purl.org/dc/terms/title> "Phase"@en .
+<https://w3id.org/lbd/aec3po/hasBuildingPhase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbd/aec3po/Model> .

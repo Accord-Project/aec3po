@@ -11,7 +11,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:ndc68289391b84d849b4acfafc81d0c45b1 a rdfs:Class,
+_:n00192119cf8147559bfc144d7d75f853b1 a rdfs:Class,
         owl:Class ;
     owl:unionOf ( schema:Place <AdministrativeArea> ) ;
     ns1:inRangeOf <locationCoverage> .
@@ -142,7 +142,7 @@ owl:DatatypeProperty ns1:hasMember <description>,
     dct:title "location coverage"@en ;
     rdfs:comment "The spatialCoverage indicates the place(s) or the administrative areas which are the focus of the BIM model."@en ;
     rdfs:domain schema:Model ;
-    rdfs:range _:ndc68289391b84d849b4acfafc81d0c45b1 ;
+    rdfs:range _:n00192119cf8147559bfc144d7d75f853b1 ;
     owl:equivalentProperty schema:spatialCoverage .
 
 <material> a owl:DatatypeProperty ;
@@ -170,14 +170,14 @@ schema:Model ns1:inDomainOf <description>,
         <material>,
         <name> .
 
-rdfs:Class ns1:hasMember _:ndc68289391b84d849b4acfafc81d0c45b1,
+rdfs:Class ns1:hasMember _:n00192119cf8147559bfc144d7d75f853b1,
         <Classification>,
         <Dimension>,
         <Element>,
         <Model>,
         <Phase> .
 
-owl:Class ns1:hasMember _:ndc68289391b84d849b4acfafc81d0c45b1,
+owl:Class ns1:hasMember _:n00192119cf8147559bfc144d7d75f853b1,
         <Classification>,
         <Dimension>,
         <Element>,

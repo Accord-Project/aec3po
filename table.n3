@@ -10,17 +10,17 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:n4563e970075e4db6829112c165141610b1 a rdfs:Class,
+_:nd64d291a23fd441387594d3a290fbdc6b1 a rdfs:Class,
         owl:Class ;
     owl:unionOf ( <Table> <Image> <Row> <Column> ) ;
     ns1:inDomainOf <contains> .
 
-_:n4563e970075e4db6829112c165141610b12 a rdfs:Class,
+_:nd64d291a23fd441387594d3a290fbdc6b12 a rdfs:Class,
         owl:Class ;
     owl:unionOf ( <Table> <Image> ) ;
     ns1:inDomainOf <caption> .
 
-_:n4563e970075e4db6829112c165141610b6 a rdfs:Class,
+_:nd64d291a23fd441387594d3a290fbdc6b6 a rdfs:Class,
         owl:Class ;
     owl:unionOf ( <Table> <Image> <Row> <Column> <Cell> ) ;
     ns1:inRangeOf <isContainedIn> .
@@ -88,7 +88,7 @@ owl:ObjectProperty ns1:hasMember <contains>,
     dct:description "The caption of a table, image, etc. "@en ;
     dct:title "caption"@en ;
     rdfs:comment "The caption of a table, image, etc. "@en ;
-    rdfs:domain _:n4563e970075e4db6829112c165141610b12 ;
+    rdfs:domain _:nd64d291a23fd441387594d3a290fbdc6b12 ;
     rdfs:isDefinedBy <table> .
 
 <contains> a owl:ObjectProperty ;
@@ -96,7 +96,7 @@ owl:ObjectProperty ns1:hasMember <contains>,
     dct:description "A container contains a table and its caption. A table contains row, columns and other elements."@en ;
     dct:title "Contains"@en ;
     rdfs:comment "A container contains a table and its caption. A table contains row, columns and other elements."@en ;
-    rdfs:domain _:n4563e970075e4db6829112c165141610b1 ;
+    rdfs:domain _:nd64d291a23fd441387594d3a290fbdc6b1 ;
     rdfs:isDefinedBy <table> .
 
 <isContainedIn> a owl:ObjectProperty ;
@@ -105,20 +105,20 @@ owl:ObjectProperty ns1:hasMember <contains>,
     dct:title "is contained by"@en ;
     rdfs:comment "A table contains row, columns and other elements."@en ;
     rdfs:isDefinedBy <table> ;
-    rdfs:range _:n4563e970075e4db6829112c165141610b6 .
+    rdfs:range _:nd64d291a23fd441387594d3a290fbdc6b6 .
 
-rdfs:Class ns1:hasMember _:n4563e970075e4db6829112c165141610b1,
-        _:n4563e970075e4db6829112c165141610b12,
-        _:n4563e970075e4db6829112c165141610b6,
+rdfs:Class ns1:hasMember _:nd64d291a23fd441387594d3a290fbdc6b1,
+        _:nd64d291a23fd441387594d3a290fbdc6b12,
+        _:nd64d291a23fd441387594d3a290fbdc6b6,
         <Cell>,
         <Column>,
         <Container>,
         <Row>,
         <Table> .
 
-owl:Class ns1:hasMember _:n4563e970075e4db6829112c165141610b1,
-        _:n4563e970075e4db6829112c165141610b12,
-        _:n4563e970075e4db6829112c165141610b6,
+owl:Class ns1:hasMember _:nd64d291a23fd441387594d3a290fbdc6b1,
+        _:nd64d291a23fd441387594d3a290fbdc6b12,
+        _:nd64d291a23fd441387594d3a290fbdc6b6,
         <Cell>,
         <Column>,
         <Container>,

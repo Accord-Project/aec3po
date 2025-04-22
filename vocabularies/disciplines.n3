@@ -19,7 +19,7 @@
     rdfs:comment "The AEC discipline to which something pertains." ;
     rdfs:isDefinedBy <discipline> ;
     rdfs:subClassOf skos:Concept ;
-    owl:equivalentClass _:na4223ab140b44ce09c06d6cf37c9990cb1 ;
+    owl:equivalentClass _:nd98c6841bd444bcf8e3f87a3c07b7a59b1 ;
     ns1:hasMember <Discipline-architecture>,
         <Discipline-buildingServices>,
         <Discipline-construction>,
@@ -35,11 +35,11 @@ owl:ObjectProperty ns1:hasMember <hasDiscipline> .
 
 owl:Ontology ns1:hasMember <discipline> .
 
-owl:Restriction ns1:hasMember _:na4223ab140b44ce09c06d6cf37c9990cb2 .
+owl:Restriction ns1:hasMember _:nd98c6841bd444bcf8e3f87a3c07b7a59b2 .
 
 skos:ConceptScheme ns1:hasMember <DisciplineNomenclature> .
 
-owl:Class ns1:hasMember _:na4223ab140b44ce09c06d6cf37c9990cb1,
+owl:Class ns1:hasMember _:nd98c6841bd444bcf8e3f87a3c07b7a59b1,
         <Discipline> .
 
 <hasDiscipline> a owl:ObjectProperty ;
@@ -155,13 +155,13 @@ skos:Concept ns1:hasMember <Discipline-architecture>,
         <Discipline-planning>,
         <Discipline-structuralEngineering> .
 
-_:na4223ab140b44ce09c06d6cf37c9990cb3 rdf:first skos:Concept ;
-    rdf:rest ( _:na4223ab140b44ce09c06d6cf37c9990cb2 ) .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b3 rdf:first skos:Concept ;
+    rdf:rest ( _:nd98c6841bd444bcf8e3f87a3c07b7a59b2 ) .
 
-_:na4223ab140b44ce09c06d6cf37c9990cb1 a owl:Class ;
-    owl:intersectionOf _:na4223ab140b44ce09c06d6cf37c9990cb3 .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b1 a owl:Class ;
+    owl:intersectionOf _:nd98c6841bd444bcf8e3f87a3c07b7a59b3 .
 
-_:na4223ab140b44ce09c06d6cf37c9990cb2 a owl:Restriction ;
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b2 a owl:Restriction ;
     owl:hasValue <DisciplineNomenclature> ;
     owl:onProperty skos:inScheme .
 

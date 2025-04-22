@@ -12,7 +12,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -41,7 +40,7 @@ qudt:QuantityKind a rdfs:Class,
     rdfs:subClassOf qudt:QuantityKind,
         dul:Region,
         skos:Concept ;
-    owl:equivalentClass _:n69665afa4c3445ff93f7bf8912ab2b55b1 ;
+    owl:equivalentClass _:na53dbc25ffbf44e280bec19b41011769b1 ;
     skos:example "Length, Area, U-Value."@en ;
     skos:note "Maxime Lefrançois argues that both qudt:QuantityKind and qudt:QuantityValue are aligned to dul:Region. A dimensional space such as \"Length\" or \"Thermal Transmittance\" is a maximal Region, and a specific quantity value such as \"13 m\" or \"3.5 W/(m^2.K)\" is a minimal Region."@en ;
     ns1:hasMember <AxialCompressionStress>,
@@ -59,14 +58,14 @@ dul:Region ns1:superClassOf <QuantityKind> .
 
 owl:Ontology ns1:hasMember <quantity_kinds> .
 
-owl:Restriction ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b2 .
+owl:Restriction ns1:hasMember _:na53dbc25ffbf44e280bec19b41011769b2 .
 
 skos:ConceptScheme ns1:hasMember <QuantityKindNomenclature> .
 
 rdfs:Class ns1:hasMember qudt:QuantityKind,
         <QuantityKind> .
 
-owl:Class ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b1,
+owl:Class ns1:hasMember _:na53dbc25ffbf44e280bec19b41011769b1,
         qudt:QuantityKind,
         <QuantityKind> .
 
@@ -97,7 +96,6 @@ owl:Class ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b1,
         <QuantityKind> ;
     dct:description "Modification Factor to take into account the duration of load"@en ;
     dct:title "Modification Factor Kmod"@en ;
-    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
     skos:definition "Modification Factor to take into account the duration of load"@en ;
@@ -108,11 +106,6 @@ owl:Class ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b1,
         <QuantityKind> ;
     dct:description "vertical distance within one storey between the modular plane of the upper surface of flooring and the modular plane of the finished ceiling."@en ;
     dct:title "modular room height"@en ;
-    qudt:applicableUnit unit:CentiM,
-        unit:IN,
-        unit:M,
-        unit:MilliIN,
-        unit:MilliM ;
     qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
     qudt:normativeReference "https://www.iso.org/obp/ui/#iso:std:iso:6707:-1:ed-6:v1:en:term:3.7.2.47"^^xsd:anyURI ;
     rdfs:isDefinedBy <quantity_kinds> ;
@@ -125,7 +118,6 @@ owl:Class ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b1,
         <QuantityKind> ;
     dct:description "Also written γM0, the partial safety factor for resistance related to member resistance without instability."@en ;
     dct:title "Partial Safety Factor"@en ;
-    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
     skos:broader <PartialSafetyFactor> ;
@@ -138,7 +130,6 @@ owl:Class ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b1,
     rdfs:label "Partial Safety Factor"@en ;
     dct:description "Also written γM1, the partial safety factor for resistance related to any limit state where instability governs."@en ;
     dct:title "Partial Safety Factor"@en ;
-    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
     skos:broader <PartialSafetyFactor> ;
@@ -159,11 +150,6 @@ owl:Class ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b1,
         <QuantityKind> ;
     dct:description "width of a corridor with a right angled turn in which the wheelchair can be driven in both forward and rearward directions."@en ;
     dct:title "width of angled corridor"@en ;
-    qudt:applicableUnit unit:CentiM,
-        unit:IN,
-        unit:M,
-        unit:MilliIN,
-        unit:MilliM ;
     qudt:hasDimensionVector qkdv:A0E0L1I0M0H0T0D0 ;
     qudt:normativeReference "https://www.iso.org/obp/ui/#iso:std:iso:7176:-5:ed-2:v1:en:term:3.25"^^xsd:anyURI ;
     rdfs:isDefinedBy <quantity_kinds> ;
@@ -176,7 +162,6 @@ owl:Class ns1:hasMember _:n69665afa4c3445ff93f7bf8912ab2b55b1,
         <QuantityKind> ;
     dct:description "Also written γM, the partial safety factor for resistance."@en ;
     dct:title "Partial Safety Factor"@en ;
-    qudt:applicableUnit unit:UNITLESS ;
     qudt:hasDimensionVector qkdv:A0E0L0I0M0H0T0D0 ;
     rdfs:isDefinedBy <quantity_kinds> ;
     skos:definition "Also written γM, the partial safety factor for resistance."@en ;
@@ -211,18 +196,18 @@ skos:Concept ns1:hasMember <AxialCompressionStress>,
   Whenever applicable, instances of qudt:QuantityKind from the QUDT Quantity Kind vocabulary should be reused [QUDT Quantity Kind vocabulary](http://qudt.org/2.1/vocab/quantitykind) 
 
   This AEC3PO module defines `c3po:QuantityKind` as an equivalent to `qudt:QuantityKind`, and some instances that a relevant for the AEC3PO domain."""@en ;
-    dct:modified "2023-09-29"^^xsd:date ;
+    dct:modified "2025-04-22"^^xsd:date ;
     dct:title "AEC3PO: Quantity Kinds"@en ;
     vann:preferredNamespacePrefix "aec3po" ;
     vann:preferredNamespaceUri "https://w3id.org/lbd/aec3po/" .
 
-_:n69665afa4c3445ff93f7bf8912ab2b55b3 rdf:first skos:Concept ;
-    rdf:rest ( _:n69665afa4c3445ff93f7bf8912ab2b55b2 ) .
+_:na53dbc25ffbf44e280bec19b41011769b3 rdf:first skos:Concept ;
+    rdf:rest ( _:na53dbc25ffbf44e280bec19b41011769b2 ) .
 
-_:n69665afa4c3445ff93f7bf8912ab2b55b1 a owl:Class ;
-    owl:intersectionOf _:n69665afa4c3445ff93f7bf8912ab2b55b3 .
+_:na53dbc25ffbf44e280bec19b41011769b1 a owl:Class ;
+    owl:intersectionOf _:na53dbc25ffbf44e280bec19b41011769b3 .
 
-_:n69665afa4c3445ff93f7bf8912ab2b55b2 a owl:Restriction ;
+_:na53dbc25ffbf44e280bec19b41011769b2 a owl:Restriction ;
     owl:hasValue <QuantityKindNomenclature> ;
     owl:onProperty skos:inScheme .
 

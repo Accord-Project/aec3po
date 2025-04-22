@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xml:base="https://w3id.org/lbd/aec3po/"
-  xmlns:dct="http://purl.org/dc/terms/"
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:ns1="https://w3id.org/profile/ontdoc/"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:prov="http://www.w3.org/ns/prov#"
   xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
-    <ns1:hasMember>
+  <owl:Class rdf:about="Column">
+    <rdf:type>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <ns1:hasMember rdf:resource="Container"/>
+        <ns1:hasMember rdf:resource="Table"/>
+        <ns1:hasMember rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b1"/>
+        <ns1:hasMember rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b6"/>
+        <ns1:hasMember rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b12"/>
+        <ns1:hasMember rdf:resource="Column"/>
+        <ns1:hasMember rdf:resource="Row"/>
+        <ns1:hasMember rdf:resource="Cell"/>
+      </rdf:Description>
+    </rdf:type>
+    <rdfs:label xml:lang="en">Column</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Table"/>
+    <rdfs:comment>A column in a table.</rdfs:comment>
+    <rdfs:isDefinedBy>
       <owl:Ontology rdf:about="table">
         <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dct:contributor rdf:resource="edlira"/>
@@ -23,33 +38,32 @@
         <vann:preferredNamespaceUri>https://w3id.org/lbd/aec3po/</vann:preferredNamespaceUri>
         <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-26</dct:created>
       </owl:Ontology>
-    </ns1:hasMember>
-  </rdf:Description>
-  <owl:Class rdf:about="Cell">
-    <rdf:type>
-      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
-        <ns1:hasMember rdf:resource="Container"/>
-        <ns1:hasMember rdf:resource="Table"/>
-        <ns1:hasMember rdf:nodeID="n4563e970075e4db6829112c165141610b1"/>
-        <ns1:hasMember rdf:nodeID="n4563e970075e4db6829112c165141610b6"/>
-        <ns1:hasMember rdf:nodeID="n4563e970075e4db6829112c165141610b12"/>
-        <ns1:hasMember rdf:resource="Column"/>
-        <ns1:hasMember rdf:resource="Row"/>
-        <ns1:hasMember rdf:resource="Cell"/>
-      </rdf:Description>
-    </rdf:type>
-    <rdfs:label xml:lang="en">Cell</rdfs:label>
-    <rdfs:subClassOf rdf:resource="Table"/>
-    <rdfs:comment>A cell in a table. Cells are contained in rows and columns</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="table"/>
-    <dct:title xml:lang="en">Cell</dct:title>
-    <dct:description>A cell in a table. Cells are contained in rows and columns</dct:description>
+    </rdfs:isDefinedBy>
+    <dct:title xml:lang="en">Column</dct:title>
+    <dct:description>A column in a table.</dct:description>
   </owl:Class>
+  <owl:DatatypeProperty rdf:about="caption">
+    <rdfs:label xml:lang="en">caption</rdfs:label>
+    <rdfs:comment xml:lang="en">The caption of a table, image, etc. </rdfs:comment>
+    <rdfs:domain>
+      <owl:Class rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b12">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="Table"/>
+          <rdf:Description rdf:about="Image"/>
+        </owl:unionOf>
+        <ns1:inDomainOf rdf:resource="caption"/>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:isDefinedBy rdf:resource="table"/>
+    <dct:title xml:lang="en">caption</dct:title>
+    <dct:description xml:lang="en">The caption of a table, image, etc. </dct:description>
+  </owl:DatatypeProperty>
   <owl:ObjectProperty rdf:about="contains">
     <rdfs:label xml:lang="en">Contains</rdfs:label>
     <rdfs:comment xml:lang="en">A container contains a table and its caption. A table contains row, columns and other elements.</rdfs:comment>
     <rdfs:domain>
-      <owl:Class rdf:nodeID="n4563e970075e4db6829112c165141610b1">
+      <owl:Class rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b1">
         <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
         <owl:unionOf rdf:parseType="Collection">
           <rdf:Description rdf:about="Table"/>
@@ -64,38 +78,6 @@
     <dct:title xml:lang="en">Contains</dct:title>
     <dct:description xml:lang="en">A container contains a table and its caption. A table contains row, columns and other elements.</dct:description>
   </owl:ObjectProperty>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
-    <ns1:hasMember rdf:resource="Container"/>
-    <ns1:hasMember rdf:resource="Table"/>
-    <ns1:hasMember rdf:nodeID="n4563e970075e4db6829112c165141610b1"/>
-    <ns1:hasMember>
-      <owl:Class rdf:nodeID="n4563e970075e4db6829112c165141610b6">
-        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="Table"/>
-          <rdf:Description rdf:about="Image"/>
-          <rdf:Description rdf:about="Row"/>
-          <rdf:Description rdf:about="Column"/>
-          <rdf:Description rdf:about="Cell"/>
-        </owl:unionOf>
-        <ns1:inRangeOf rdf:resource="isContainedIn"/>
-      </owl:Class>
-    </ns1:hasMember>
-    <ns1:hasMember>
-      <owl:Class rdf:nodeID="n4563e970075e4db6829112c165141610b12">
-        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="Table"/>
-          <rdf:Description rdf:about="Image"/>
-        </owl:unionOf>
-        <ns1:inDomainOf rdf:resource="caption"/>
-      </owl:Class>
-    </ns1:hasMember>
-    <ns1:hasMember rdf:resource="Column"/>
-    <ns1:hasMember rdf:resource="Row"/>
-    <ns1:hasMember rdf:resource="Cell"/>
-  </rdf:Description>
-  <prov:Agent rdf:about="edlira"/>
   <owl:Class rdf:about="Container">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:subClassOf>
@@ -109,6 +91,28 @@
     <dct:title xml:lang="en">Container</dct:title>
     <dct:description>A rectangular shape within a document containing and object such as table, image, equation and their respective caption. (Inspired by DoCo ontology)</dct:description>
   </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <ns1:hasMember rdf:resource="contains"/>
+    <ns1:hasMember>
+      <owl:ObjectProperty rdf:about="isContainedIn">
+        <rdfs:label xml:lang="en">is contained by</rdfs:label>
+        <rdfs:comment xml:lang="en">A table contains row, columns and other elements.</rdfs:comment>
+        <rdfs:range rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b6"/>
+        <rdfs:isDefinedBy rdf:resource="table"/>
+        <dct:title xml:lang="en">is contained by</dct:title>
+        <dct:description xml:lang="en">A table contains row, columns and other elements.</dct:description>
+      </owl:ObjectProperty>
+    </ns1:hasMember>
+  </rdf:Description>
+  <owl:Class rdf:about="Cell">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label xml:lang="en">Cell</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Table"/>
+    <rdfs:comment>A cell in a table. Cells are contained in rows and columns</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="table"/>
+    <dct:title xml:lang="en">Cell</dct:title>
+    <dct:description>A cell in a table. Cells are contained in rows and columns</dct:description>
+  </owl:Class>
   <owl:Class rdf:about="Table">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Table</rdfs:label>
@@ -120,31 +124,6 @@
     <ns1:superClassOf rdf:resource="Row"/>
     <ns1:superClassOf rdf:resource="Cell"/>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="isContainedIn">
-    <rdfs:label xml:lang="en">is contained by</rdfs:label>
-    <rdfs:comment xml:lang="en">A table contains row, columns and other elements.</rdfs:comment>
-    <rdfs:range rdf:nodeID="n4563e970075e4db6829112c165141610b6"/>
-    <rdfs:isDefinedBy rdf:resource="table"/>
-    <dct:title xml:lang="en">is contained by</dct:title>
-    <dct:description xml:lang="en">A table contains row, columns and other elements.</dct:description>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:about="caption">
-    <rdfs:label xml:lang="en">caption</rdfs:label>
-    <rdfs:comment xml:lang="en">The caption of a table, image, etc. </rdfs:comment>
-    <rdfs:domain rdf:nodeID="n4563e970075e4db6829112c165141610b12"/>
-    <rdfs:isDefinedBy rdf:resource="table"/>
-    <dct:title xml:lang="en">caption</dct:title>
-    <dct:description xml:lang="en">The caption of a table, image, etc. </dct:description>
-  </owl:DatatypeProperty>
-  <owl:Class rdf:about="Column">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:label xml:lang="en">Column</rdfs:label>
-    <rdfs:subClassOf rdf:resource="Table"/>
-    <rdfs:comment>A column in a table.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="table"/>
-    <dct:title xml:lang="en">Column</dct:title>
-    <dct:description>A column in a table.</dct:description>
-  </owl:Class>
   <owl:Class rdf:about="Row">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:label xml:lang="en">Row</rdfs:label>
@@ -154,11 +133,37 @@
     <dct:title xml:lang="en">Row</dct:title>
     <dct:description>A row in a table.</dct:description>
   </owl:Class>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <ns1:hasMember rdf:resource="Container"/>
+    <ns1:hasMember rdf:resource="Table"/>
+    <ns1:hasMember rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b1"/>
+    <ns1:hasMember>
+      <owl:Class rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b6">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="Table"/>
+          <rdf:Description rdf:about="Image"/>
+          <rdf:Description rdf:about="Row"/>
+          <rdf:Description rdf:about="Column"/>
+          <rdf:Description rdf:about="Cell"/>
+        </owl:unionOf>
+        <ns1:inRangeOf rdf:resource="isContainedIn"/>
+      </owl:Class>
+    </ns1:hasMember>
+    <ns1:hasMember rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b12"/>
+    <ns1:hasMember rdf:resource="Column"/>
+    <ns1:hasMember rdf:resource="Row"/>
+    <ns1:hasMember rdf:resource="Cell"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
     <ns1:hasMember rdf:resource="caption"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
-    <ns1:hasMember rdf:resource="contains"/>
-    <ns1:hasMember rdf:resource="isContainedIn"/>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <ns1:hasMember rdf:resource="table"/>
+  </rdf:Description>
+  <prov:Agent rdf:about="edlira"/>
+  <rdf:Description rdf:nodeID="nd64d291a23fd441387594d3a290fbdc6b11">
+    <rdf:first rdf:resource="Cell"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
 </rdf:RDF>

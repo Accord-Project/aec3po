@@ -1,121 +1,121 @@
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2004/02/skos/core#prefLabel> "planning"@en .
-<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."@en .
-<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2004/02/skos/core#definition> "The Architecture discipline."@en .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
-<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2004/02/skos/core#definition> "The Planning discipline."@en .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://purl.org/dc/terms/description> "A set of values for disciplines.\n  AEC3PO includes a set of values for this nomenclature.\n  These values are :\n  - architecture;\n  - construction;\n  - structural engineering;\n  - building services;\n  - planning."@en .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-construction> .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> .
-<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/modified> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-_:na4223ab140b44ce09c06d6cf37c9990cb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:na4223ab140b44ce09c06d6cf37c9990cb2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://purl.org/dc/terms/title> "Discipline nomenclature"@en .
-<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
-<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
-<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
-<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
-<https://w3id.org/lbd/aec3po/Discipline> <http://purl.org/dc/terms/description> "The AEC discipline to which something pertains." .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for disciplines.\n  AEC3PO includes a set of values for this nomenclature.\n  These values are :\n  - architecture;\n  - construction;\n  - structural engineering;\n  - building services;\n  - planning."@en .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> .
+<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
 <https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-construction> .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-architecture> .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
-_:na4223ab140b44ce09c06d6cf37c9990cb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:na4223ab140b44ce09c06d6cf37c9990cb2 .
-<https://w3id.org/lbd/aec3po/hasDiscipline> <http://purl.org/dc/terms/description> "Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."@en .
-<https://w3id.org/lbd/aec3po/discipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/description> "Definition of a disciplines concept scheme for AEC3PO."@en .
-<https://w3id.org/lbd/aec3po/Discipline> <http://purl.org/dc/terms/title> "Discipline"@en .
-<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-construction> .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Discipline nomenclature"@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline> .
-<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:na4223ab140b44ce09c06d6cf37c9990cb2 .
-<http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
+<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2004/02/skos/core#definition> "The Architecture discipline."@en .
 <https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#label> "has discipline"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline> .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasDiscipline> .
+<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/modified> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2004/02/skos/core#prefLabel> "planning"@en .
+<http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-planning> .
 <https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
 <http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-architecture> .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2004/02/skos/core#definition> "The Structural Engineering discipline."@en .
-<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> _:na4223ab140b44ce09c06d6cf37c9990cb1 .
-<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/title> "AEC3PO: Disciplines"@en .
-_:na4223ab140b44ce09c06d6cf37c9990cb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2004/02/skos/core#definition> "The Construction discipline."@en .
-_:na4223ab140b44ce09c06d6cf37c9990cb2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
 <https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> .
-<http://www.w3.org/2000/01/rdf-schema#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline> .
-<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-architecture> .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://purl.org/dc/terms/description> "The Planning discipline."@en .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-buildingServices> .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
-<https://w3id.org/lbd/aec3po/discipline> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2000/01/rdf-schema#comment> "The AEC discipline to which something pertains." .
-<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2000/01/rdf-schema#label> "Discipline"@en .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/vocab/vann/preferredNamespacePrefix> "aec3po" .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-planning> .
+<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://purl.org/dc/terms/description> "The Architecture discipline."@en .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-architecture> .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2004/02/skos/core#definition> "The Planning discipline."@en .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> _:nd98c6841bd444bcf8e3f87a3c07b7a59b1 .
 <http://www.w3.org/2002/07/owl#Ontology> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/discipline> .
 <https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-architecture> .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Discipline> .
-<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-planning> .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
-<https://w3id.org/lbd/aec3po/Discipline-construction> <http://purl.org/dc/terms/title> "construction"@en .
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
-<https://w3id.org/lbd/aec3po/hasDiscipline> <http://purl.org/dc/terms/title> "has discipline"@en .
-<http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-buildingServices> .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://purl.org/dc/terms/title> "structural engineering"@en .
-<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2004/02/skos/core#prefLabel> "construction"@en .
 <https://w3id.org/lbd/aec3po/Discipline-architecture> <http://purl.org/dc/terms/title> "architecture"@en .
-<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2004/02/skos/core#prefLabel> "structural engineering"@en .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-planning> .
-<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-buildingServices> .
-<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://purl.org/dc/terms/title> "building services"@en .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
-<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2004/02/skos/core#prefLabel> "architecture"@en .
-<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:na4223ab140b44ce09c06d6cf37c9990cb1 <http://www.w3.org/2002/07/owl#intersectionOf> _:na4223ab140b44ce09c06d6cf37c9990cb3 .
-<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/superClassOf> <https://w3id.org/lbd/aec3po/Discipline> .
+<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2002/07/owl#equivalentClass> _:nd98c6841bd444bcf8e3f87a3c07b7a59b1 .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-construction> .
+<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."@en .
+<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/created> "2023-05-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://purl.org/dc/terms/description> "The Structural Engineering discipline."@en .
-<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Discipline> .
-<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/2004/02/skos/core#prefLabel> "building services"@en .
-_:na4223ab140b44ce09c06d6cf37c9990cb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
-<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
-<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-buildingServices> .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
-<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasDiscipline> .
-<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#label> "has discipline"@en .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
+<http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> .
+<http://www.w3.org/2002/07/owl#Class> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline> .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-construction> .
+<https://w3id.org/lbd/aec3po/discipline> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2000/01/rdf-schema#label> "Discipline"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> .
+<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
+<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2004/02/skos/core#prefLabel> "construction"@en .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:nd98c6841bd444bcf8e3f87a3c07b7a59b3 .
+<https://w3id.org/lbd/aec3po/Discipline> <http://purl.org/dc/terms/title> "Discipline"@en .
 <https://w3id.org/lbd/aec3po/Discipline-construction> <http://purl.org/dc/terms/description> "The Construction discipline."@en .
-_:na4223ab140b44ce09c06d6cf37c9990cb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na4223ab140b44ce09c06d6cf37c9990cb4 .
-<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-planning> .
-<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://purl.org/dc/terms/description> "The Building Services discipline."@en .
-_:na4223ab140b44ce09c06d6cf37c9990cb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.w3.org/2002/07/owl#ObjectProperty> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/hasDiscipline> .
-<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://purl.org/dc/terms/description> "The Architecture discipline."@en .
-<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-construction> .
-<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2002/07/owl#equivalentClass> _:na4223ab140b44ce09c06d6cf37c9990cb1 .
-<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-planning> .
-<https://w3id.org/lbd/aec3po/Discipline-planning> <http://purl.org/dc/terms/title> "planning"@en .
-<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
 <https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://maxime-lefrancois.info/me#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-buildingServices> .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://purl.org/dc/terms/description> "A set of values for disciplines.\n  AEC3PO includes a set of values for this nomenclature.\n  These values are :\n  - architecture;\n  - construction;\n  - structural engineering;\n  - building services;\n  - planning."@en .
+<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/title> "AEC3PO: Disciplines"@en .
+<http://www.w3.org/2002/07/owl#Restriction> <https://w3id.org/profile/ontdoc/hasMember> _:nd98c6841bd444bcf8e3f87a3c07b7a59b2 .
+<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://purl.org/dc/terms/title> "building services"@en .
+<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/modified> "2023-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#definition> "A set of values for disciplines.\n  AEC3PO includes a set of values for this nomenclature.\n  These values are :\n  - architecture;\n  - construction;\n  - structural engineering;\n  - building services;\n  - planning."@en .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/lbd/aec3po/hasDiscipline> <http://purl.org/dc/terms/title> "has discipline"@en .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/lbd/aec3po/Discipline> <http://purl.org/dc/terms/description> "The AEC discipline to which something pertains." .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-buildingServices> .
+<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2004/02/skos/core#prefLabel> "architecture"@en .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b2 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
+<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-planning> .
+<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-architecture> .
+<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://purl.org/dc/terms/title> "planning"@en .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-planning> .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-architecture> .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2004/02/skos/core#prefLabel> "structural engineering"@en .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2000/01/rdf-schema#label> "Discipline nomenclature"@en .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://www.w3.org/2004/02/skos/core#inScheme> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://purl.org/dc/terms/title> "Discipline nomenclature"@en .
 <https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/2004/02/skos/core#definition> "The Building Services discipline."@en .
 <https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
-<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2004/02/skos/core#definition> "The Structural Engineering discipline."@en .
+<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/dc/terms/description> "Definition of a disciplines concept scheme for AEC3PO."@en .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://purl.org/dc/terms/title> "structural engineering"@en .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:nd98c6841bd444bcf8e3f87a3c07b7a59b2 .
+<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/inRangeOf> <https://w3id.org/lbd/aec3po/hasDiscipline> .
+<https://w3id.org/lbd/aec3po/Discipline-planning> <http://purl.org/dc/terms/description> "The Planning discipline."@en .
+<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://purl.org/dc/terms/description> "The Building Services discipline."@en .
+<https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/2000/01/rdf-schema#comment> "The AEC discipline to which something pertains." .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nd98c6841bd444bcf8e3f87a3c07b7a59b4 .
+<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/lbd/aec3po/discipline> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/lbd/aec3po/" .
+<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-construction> .
+<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/2004/02/skos/core#prefLabel> "building services"@en .
+<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:nd98c6841bd444bcf8e3f87a3c07b7a59b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<https://w3id.org/lbd/aec3po/Discipline> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2004/02/skos/core#definition> "The Construction discipline."@en .
+<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/lbd/aec3po/discipline> .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-construction> .
+<https://w3id.org/lbd/aec3po/hasDiscipline> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbd/aec3po/Discipline> .
+<http://www.w3.org/2002/07/owl#NamedIndividual> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-buildingServices> .
+<https://w3id.org/lbd/aec3po/discipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbd/aec3po/Discipline-construction> <http://purl.org/dc/terms/title> "construction"@en .
+<https://w3id.org/lbd/aec3po/hasDiscipline> <http://purl.org/dc/terms/description> "Links an entity (procedure, statement, verifier, ...) to the discipline to which it pertains."@en .
+<https://w3id.org/lbd/aec3po/DisciplineNomenclature> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://w3id.org/lbd/aec3po/Discipline-structuralEngineering> .
+<https://w3id.org/lbd/aec3po/Discipline-buildingServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .
+<https://w3id.org/lbd/aec3po/Discipline-construction> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/lbd/aec3po/DisciplineNomenclature> .
+<https://w3id.org/lbd/aec3po/Discipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/profile/ontdoc/hasMember> <https://w3id.org/lbd/aec3po/Discipline-buildingServices> .
+<https://w3id.org/lbd/aec3po/Discipline-architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/lbd/aec3po/Discipline> .

@@ -13,12 +13,12 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-_:n7daa7dbb2c72452aaceb86aedabb4ad3b10 a rdfs:Class,
+_:n2d0bb0f3ab4447bdafe928e111d9eae6b10 a rdfs:Class,
         owl:Class ;
     owl:unionOf ( <FeatureOfInterest> <Property> <CheckMethod> ) ;
     ns1:inDomainOf <hasUnit> .
 
-_:n7daa7dbb2c72452aaceb86aedabb4ad3b6 a rdfs:Class,
+_:n2d0bb0f3ab4447bdafe928e111d9eae6b6 a rdfs:Class,
         owl:Class ;
     owl:unionOf ( <FeatureOfInterest> <Property> <CheckMethod> ) ;
     ns1:inDomainOf <hasBSDDTarget> .
@@ -81,7 +81,7 @@ _:n7daa7dbb2c72452aaceb86aedabb4ad3b6 a rdfs:Class,
     rdfs:comment "Refers to a process of inspecting and verifying specific components or elements of a building or infrastructure to ensure they meet the required standards, specifications, and regulations. This method is used to assess the quality, functionality, and safety of individual components used in construction projects. Formally defined as checks for some feature of interest"@en ;
     rdfs:isDefinedBy <check_method> ;
     rdfs:subClassOf <CheckMethod> ;
-    owl:intersectionOf ( <CheckMethod> _:n7daa7dbb2c72452aaceb86aedabb4ad3b1 ) .
+    owl:intersectionOf ( <CheckMethod> _:n2d0bb0f3ab4447bdafe928e111d9eae6b1 ) .
 
 <CompositeCheckMethod> a rdfs:Class,
         owl:Class ;
@@ -200,8 +200,8 @@ owl:Ontology ns1:hasMember <check_method> .
     dct:title "hasTarget"@en ;
     rdfs:comment ""@en .
 
-owl:Restriction ns1:hasMember _:n7daa7dbb2c72452aaceb86aedabb4ad3b1,
-        _:n7daa7dbb2c72452aaceb86aedabb4ad3b2 .
+owl:Restriction ns1:hasMember _:n2d0bb0f3ab4447bdafe928e111d9eae6b1,
+        _:n2d0bb0f3ab4447bdafe928e111d9eae6b2 .
 
 <CheckStatement> ns1:inDomainOf <isOperationalizedBy> ;
     ns1:inRangeOf <operationalizes> .
@@ -240,7 +240,7 @@ owl:FunctionalProperty ns1:hasMember <hasBSDDTarget>,
     dct:description "The target refers to either the name of an object, the name of property or a function."@en ;
     dct:title "hasBSSDDTarget"@en ;
     rdfs:comment "The target refers to either the name of an object, the name of property or a function."@en ;
-    rdfs:domain _:n7daa7dbb2c72452aaceb86aedabb4ad3b6 ;
+    rdfs:domain _:n2d0bb0f3ab4447bdafe928e111d9eae6b6 ;
     rdfs:isDefinedBy <check_method> .
 
 <hasComparator> a owl:ObjectProperty ;
@@ -267,7 +267,7 @@ owl:FunctionalProperty ns1:hasMember <hasBSDDTarget>,
     dct:description "the hasUnit property is used to link a specific property or feature of interest to its corresponding unit of measurement. For example, it could be a property related to physical quantities, such as temperature, length, or weight."@en ;
     dct:title "hasUnit"@en ;
     rdfs:comment "the hasUnit property is used to link a specific property or feature of interest to its corresponding unit of measurement. For example, it could be a property related to physical quantities, such as temperature, length, or weight."@en ;
-    rdfs:domain _:n7daa7dbb2c72452aaceb86aedabb4ad3b10 ;
+    rdfs:domain _:n2d0bb0f3ab4447bdafe928e111d9eae6b10 ;
     rdfs:isDefinedBy <check_method> ;
     rdfs:range qudt:Unit ;
     owl:eqivalentProperty qudt:hasValue .
@@ -302,8 +302,8 @@ owl:ObjectProperty ns1:hasMember <hasBSDDTarget>,
         <isOperationalizedBy>,
         <operationalizes> .
 
-rdfs:Class ns1:hasMember _:n7daa7dbb2c72452aaceb86aedabb4ad3b10,
-        _:n7daa7dbb2c72452aaceb86aedabb4ad3b6,
+rdfs:Class ns1:hasMember _:n2d0bb0f3ab4447bdafe928e111d9eae6b10,
+        _:n2d0bb0f3ab4447bdafe928e111d9eae6b6,
         <BooleanCheckMethod>,
         <CategoryCheckMethod>,
         <CertificateCheckMethod>,
@@ -320,8 +320,8 @@ rdfs:Class ns1:hasMember _:n7daa7dbb2c72452aaceb86aedabb4ad3b10,
         <SPARQLCheckMethod>,
         <SWRLCheckMethod> .
 
-owl:Class ns1:hasMember _:n7daa7dbb2c72452aaceb86aedabb4ad3b10,
-        _:n7daa7dbb2c72452aaceb86aedabb4ad3b6,
+owl:Class ns1:hasMember _:n2d0bb0f3ab4447bdafe928e111d9eae6b10,
+        _:n2d0bb0f3ab4447bdafe928e111d9eae6b6,
         <BooleanCheckMethod>,
         <CategoryCheckMethod>,
         <CertificateCheckMethod>,
@@ -351,13 +351,13 @@ owl:Class ns1:hasMember _:n7daa7dbb2c72452aaceb86aedabb4ad3b10,
     owl:imports <compliance_verification_report>,
         <statement> .
 
-_:n7daa7dbb2c72452aaceb86aedabb4ad3b3 owl:inverseOf <forDesign> .
+_:n2d0bb0f3ab4447bdafe928e111d9eae6b3 owl:inverseOf <forDesign> .
 
-_:n7daa7dbb2c72452aaceb86aedabb4ad3b1 a owl:Restriction ;
-    owl:allValuesFrom _:n7daa7dbb2c72452aaceb86aedabb4ad3b2 ;
+_:n2d0bb0f3ab4447bdafe928e111d9eae6b1 a owl:Restriction ;
+    owl:allValuesFrom _:n2d0bb0f3ab4447bdafe928e111d9eae6b2 ;
     owl:onProperty <forDesign> .
 
-_:n7daa7dbb2c72452aaceb86aedabb4ad3b2 a owl:Restriction ;
+_:n2d0bb0f3ab4447bdafe928e111d9eae6b2 a owl:Restriction ;
     owl:allValuesFrom <FeatureOfInterest> ;
-    owl:onProperty _:n7daa7dbb2c72452aaceb86aedabb4ad3b3 .
+    owl:onProperty _:n2d0bb0f3ab4447bdafe928e111d9eae6b3 .
 
