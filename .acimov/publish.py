@@ -145,10 +145,9 @@ def process_turtle_file(input_file_path:str, dest_path:str):
     with open(dest_path+ ".html", "w") as output:
         output.write(soup.prettify())
 
-    # print ttl
-    shutil.copy(input_file_path, dest_path+ ".ttl")
-
     # print other RDF variants
+    with open(dest_path+ ".ttl", "wb") as output:
+        output.write(g.serialize(format='ttl', encoding='utf-8'))
     with open(dest_path+ ".rdf", "wb") as output:
         output.write(g.serialize(format='pretty-xml', encoding='utf-8'))
     with open(dest_path+ ".n3", "wb") as output:
