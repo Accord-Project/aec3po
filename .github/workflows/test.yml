@@ -18,3 +18,8 @@ jobs:
         cache: 'pip'
     - run: pip install -r .acimov/requirements.txt
     - run: python .acimov/publish.py
+    - uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        publish_branch: documentation
