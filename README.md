@@ -91,7 +91,7 @@ Below is an overview of each module and its sub-components:
   
 6. **Module 6: FeatureOfInterest**: This module describes objects whose conformance against checks is verified, and those aspects of a feature of interest that are intrinsic to and cannot exist without the feature of interest, that must be checked for conformance.
   - Classes: _FeatureOfInterest_, _Property_, _PropertyKind_, _QuantityKind_
-  -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_, _hasDesign_, _hasContext_, _etc_.
+  -	Properties: _hasProperty_, _hasQuantityKind_, _hasPropertyKind_,  _hasContext_, _etc_.
   
 7. **CheckingAct**: This AEC3PO module describes the act of checking some entities for something and generating a compliance verification report.
     - Classes: _CheckingAct_, _ProcessVerifier_, _etc_.
@@ -101,24 +101,19 @@ Below is an overview of each module and its sub-components:
     - Classes: _ComplianceVerificationReport_, _result_, _ValidationResult_,_Severity_, _etc_.
     - Properties: _conforms_, _focus_, _resultMessage_, _resultSeverity_,_etc._
       
-9. **Design**: This AEC3PO module describes descriptions of some design of features of interest, in terms of structure, geometry, and function. 
-    - Classes: _Design_, _PropertyDesign_.
-    - Properties: _hasDesign_.
-
-10. **Legal Verifier**: This AEC3PO module defines state and private verifiers. 
+9. **Legal Verifier**: This AEC3PO module defines state and private verifiers. 
     - Classes: _LegalVerifier_, _PrivateVerifier_, _StateVerifier_.
-    - Properties: _hasDesign_.
 
-11. **Model**: This AEC3PO module describes BIM models.
+10. **Model**: This AEC3PO module describes BIM models.
     - Classes: _Model_, _Phase_, _Element_, _Classification_, _etc_.
     - Properties: _name_, _description_, _location_, _locationCoverage_, _material_, _hasBuildingPhase_, _hasDimensions_, _hasElementPhase_, _hasClassification_, _etc._
 
-12. **Table**: This AEC3PO module describes tables as representations of data in rows and columns. Tables are described by captions.
+11. **Table**: This AEC3PO module describes tables as representations of data in rows and columns. Tables are described by captions.
     - Classes: _Container_, _Table_, _Column_, _Row_, _Cell_.
     - Properties: _contains_, _isContainedIn_, _caption_.
       
 Each module encompasses classes that represent specific entities or concepts in the construction domain. For example, the **_Document_** module deals with different types of statements, evidence, and related properties. The **_CheckMethod_** module focuses on different types of check methods, such as procedural, declarative, boolean, component, SHACL and composite checks. 
-Similarly, the **_Design_** module includes classes representing design-related concepts, while the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the **_ComplianceVerificationReport_** stores the outcomes of the check, their validation results and the corresponding messages. 
+Similarly, the **_FeatureOfInterest_** module deals with features like building components and spaces. The **_CheckingAct_** module represents different verifier roles, their associated methods, and the **_ComplianceVerificationReport_** stores the outcomes of the check, their validation results and the corresponding messages. 
 
 ### AEC3PO Vocabularies <a name="vocabularies"></a>
 
